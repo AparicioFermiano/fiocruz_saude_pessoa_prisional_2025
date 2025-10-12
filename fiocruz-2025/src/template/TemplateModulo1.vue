@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { onMounted, computed, ref } from 'vue'
-import HeaderCapa from '@/components/HeaderCapa.vue'
-import Sumario from '@/components/Sumario.vue'
+import { onMounted, ref, computed } from 'vue'
 import { useProgress } from '@/utils/useProgress'
 import { getChaptersByModule } from '@/utils/progressService'
+import Sidebar from '@/components/Sidebar.vue'
 import { capitulosM1 } from '@/utils/Capitulos'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const { course, loadAll, saveChapter } = useProgress()
+const { course, loadAll } = useProgress()
 
 const capitulo1Chapters = ref()
 
-onMounted(async () => {
-    await loadAll()
-    capitulo1Chapters.value = await getChaptersByModule(1)
-})
+defineSlots<{
+    'conteudo-site': () => any;
+}>();
 
 const modulo1 = computed(() =>
     course.modules.find(m => m.module === 1) ?? {
@@ -24,18 +24,26 @@ const modulo1 = computed(() =>
     }
 )
 
+onMounted(async () => {
+    await loadAll()
+    capitulo1Chapters.value = await getChaptersByModule(1)
+})
+
 </script>
 
 <template>
-
-    <div class="w-full max-w-[700px] mx-auto py-10 px-5">
-        <h2 class="title">Módulo I - Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
-            Sistema
-            Prisional
-        </h2>
-        <Sumario :sidebar="true" color="--modulo1-main" :capitulos="capitulosM1" :progresso="capitulo1Chapters">
-        </Sumario>
-    </div>
+    <main class="w-full flex">
+        <Sidebar :modulo=1 color="--modulo1-main" titulo="Módulo 1 - Unidade 1" :progressoMod="modulo1?.percent ?? 0"
+            :capitulos="capitulosM1" :progressoCap="capitulo1Chapters"></Sidebar>
+        <div class="w-full shadow-[-3px_0_10px_rgba(0,0,0,0.2)]">
+            <div class="p-5">
+                <button class="cursor-pointer">
+                    <font-awesome-icon :icon="faBars" />
+                </button>
+            </div>
+            <slot name="conteudo-site" />
+        </div>
+    </main>
 </template>
 
 <style></style>

@@ -34,7 +34,7 @@ const modulo1 = computed(() =>
             Sistema
             Prisional
         </h2>
-        <Sumario color="--modulo1-main" :capitulos="capitulosM1" :progresso="capitulo1Chapters"></Sumario>
+        <Sumario :modulo="1" color="--modulo1-main" :capitulos="capitulosM1" :progresso="capitulo1Chapters"></Sumario>
     </div>
 </template>
 

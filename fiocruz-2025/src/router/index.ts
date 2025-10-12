@@ -9,9 +9,9 @@ const router = createRouter({
             component: () => import('@/views/Modulo1/Capa.vue'),
         },
         {
-            path: '/modulo1/conteudo',
+            path: '/modulo1/minicurriculo-do-autor',
             name: 'modulo1',
-            component: () => import('@/views/Modulo1/Conteudo.vue'),
+            component: () => import('@/views/Modulo1/Minicurriculo.vue'),
         },
     ],
 })

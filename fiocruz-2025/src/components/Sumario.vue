@@ -3,12 +3,17 @@ import { computed, toRefs } from 'vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faBarsStaggered, faCheck } from '@fortawesome/free-solid-svg-icons';
 import type { Capitulo, Progresso } from '@/utils/Capitulos'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const url = route.path.split('/').filter(Boolean).pop()
 
 const props = defineProps<{
     color: string;
     capitulos?: Capitulo[];
     progresso?: Progresso[];
     sidebar?: boolean;
+    modulo: number
 }>()
 
 const { capitulos, progresso } = toRefs(props)
@@ -26,15 +31,14 @@ const capitulosWithProgress = computed(() =>
 )
 </script>
 
-
 <template>
     <div class="flex flex-col my-10">
-        <div v-for="(cap, index) in capitulosWithProgress" :key="index"
-            class="group flex gap-2 justify-between items-center hover:bg-gray-200 transition-colors duration-200 px-3 py-5">
-
+        <a v-for="(cap, index) in capitulosWithProgress" :key="index" :href="`/modulo${modulo}/${cap.url}`"
+            class="group flex gap-2 justify-between items-center  transition-colors duration-200 cursor-pointer"
+            :class="[sidebar ? 'p-5' : 'px-3 py-5', cap.url === url ? 'bg-gray-200' : 'hover:bg-gray-200']">
             <div class="flex gap-3 items-center">
-                <font-awesome-icon class="text-gray-400 group-hover:text-black transition-colors duration-200"
-                    :icon="faBarsStaggered" />
+                <font-awesome-icon class="text-gray-400  transition-colors duration-200"
+                    :class="!sidebar ? 'group-hover:text-black' : ''" :icon="faBarsStaggered" />
                 <p class="text-sm font-bold my-auto">{{ cap.title }}</p>
             </div>
             <div class="min-w-5">
@@ -50,12 +54,10 @@ const capitulosWithProgress = computed(() =>
                     class="w-5 h-5 rounded-full flex items-center justify-center relative" :style="{
                         background: `conic-gradient(var(--modulo1-main) ${cap.progressPercent}%, #d1d5db ${cap.progressPercent}%)`
                     }">
-                    <div
-                        class="w-[14px] h-[14px] bg-white group-hover:bg-gray-200 transition-colors duration-200 rounded-full flex items-center justify-center" />
+                    <div class="w-[14px] h-[14px] transition-colors duration-200 rounded-full flex items-center justify-center"
+                        :class="cap.url === url ? 'bg-gray-200' : 'bg-white group-hover:bg-gray-200'" />
                 </div>
             </div>
-
-
-        </div>
+        </a>
     </div>
 </template>
