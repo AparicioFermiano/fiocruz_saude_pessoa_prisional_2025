@@ -22,6 +22,7 @@ export async function saveChapterProgress(
         id,
         module,
         chapter,
+        name,
         completed,
         progressPercent: Math.min(100, Math.max(0, Math.round(progressPercent))),
         timeWatched,
@@ -35,6 +36,16 @@ export async function saveChapterProgress(
 export async function getChapter(module: number, chapter: number) {
     const db = await getDB()
     return db.get('chapters', makeId(module, chapter))
+}
+
+export async function getAllChapters() {
+    const db = await getDB()
+    return db.getAll('chapters')
+}
+
+export async function getChaptersByModule(moduleNumber: number) {
+    const allChapters = await getAllChapters()
+    return allChapters.filter(c => c.module === moduleNumber)
 }
 
 export async function getModuleChapters(module: number) {

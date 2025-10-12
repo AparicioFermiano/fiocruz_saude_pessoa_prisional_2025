@@ -12,10 +12,10 @@
     --font-family-ui: Lato;
 }
 
-body {
+html {
     user-select: none;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 * {
@@ -27,9 +27,7 @@ body {
 
 .btn {
     border-radius: 50rem;
-    background-color: black;
-    color: white;
-    padding: 0.5rem 2rem;
+    padding: 0.8rem 2rem;
     font-size: 0.8rem;
     cursor: pointer;
     width: auto;
@@ -55,4 +53,10 @@ body {
 
 a {
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
 }

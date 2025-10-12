@@ -27,14 +27,14 @@ const modulo1 = computed(() =>
 </script>
 
 <template>
-    <HeaderCapa bgColor="--modulo1-main" titulo="Módulo 1 - Unidade 1" imgbanner="/src/assets/20_wfh.jpg" redirect=""
-        :progress="modulo1?.inProgress ?? true" alt=""></HeaderCapa>
+
     <div class="w-full max-w-[700px] mx-auto py-10 px-5">
         <h2 class="title">Módulo I - Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
             Sistema
             Prisional
         </h2>
-        <Sumario color="--modulo1-main" :capitulos="capitulosM1" :progresso="capitulo1Chapters"></Sumario>
+        <Sumario :sidebar="true" color="--modulo1-main" :capitulos="capitulosM1" :progresso="capitulo1Chapters">
+        </Sumario>
     </div>
 </template>
 

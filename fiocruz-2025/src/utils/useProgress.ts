@@ -14,7 +14,7 @@ export function useProgress() {
         course.modules = data.modules
     }
 
-    const saveChapter = debounce(
+    const saveChapter =
         async (module: number, chapter: number, progressPercent: number) => {
             await service.saveChapterProgress(module, chapter, { progressPercent })
             const updatedModule = await service.getModuleProgress(module)
@@ -24,9 +24,7 @@ export function useProgress() {
 
             const overall = await service.getCourseProgress()
             course.percent = overall.percent
-        },
-        400
-    )
+        }
 
     return { course, loadAll, saveChapter }
 }
