@@ -1,4 +1,6 @@
 import { getDB } from '@/utils/indexDBcache'
+import { defineStore } from 'pinia'
+import { ref } from 'vue'
 
 export interface SaveProgressParams {
     progressPercent: number
@@ -78,3 +80,23 @@ export async function clearAllProgress() {
     const db = await getDB()
     await db.clear('chapters')
 }
+
+export const useProgressoStore = defineStore('progresso', () => {
+    const progresso = ref<Record<string, number>>({})
+
+    async function carregarDoCache() {
+        const chapters = await getAllChapters()
+        progresso.value = {}
+        for (const ch of chapters) {
+            progresso.value[ch.id] = ch.progressPercent
+        }
+    }
+
+    function setProgresso(id: string, percent: number) {
+        if (!progresso.value[id] || percent > progresso.value[id]) {
+            progresso.value[id] = Math.min(100, percent)
+        }
+    }
+
+    return { progresso, setProgresso, carregarDoCache }
+})

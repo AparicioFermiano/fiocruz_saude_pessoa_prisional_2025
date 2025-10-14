@@ -21,6 +21,7 @@
         "floating-vue": "^5.2.2",
         "idb": "^8.0.3",
         "lodash": "^4.17.21",
+        "pinia": "^3.0.3",
         "typeface-lato": "^1.1.13",
         "typeface-merriweather": "^1.1.13",
         "vite-plugin-html": "^3.2.2",

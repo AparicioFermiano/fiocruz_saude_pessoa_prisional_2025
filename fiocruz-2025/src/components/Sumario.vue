@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faBarsStaggered, faCheck } from '@fortawesome/free-solid-svg-icons';
 import type { Capitulo, Progresso } from '@/utils/Capitulos'
 import { useRoute } from 'vue-router'
+import { useProgressoStore } from '@/utils/progressService'
+import { storeToRefs } from 'pinia'
 
 const route = useRoute()
 const url = route.path.split('/').filter(Boolean).pop()
@@ -16,11 +18,13 @@ const props = defineProps<{
     modulo: number
 }>()
 
-const { capitulos, progresso } = toRefs(props)
+const progressoStore = useProgressoStore()
+const { progresso } = storeToRefs(progressoStore)
+const { capitulos } = toRefs(props)
 
 const capitulosWithProgress = computed(() =>
     (capitulos.value ?? []).map(cap => {
-        const chapterProgress = (progresso.value ?? []).find(c => c.id === cap.id)?.progressPercent ?? 0
+        const chapterProgress = progresso.value[cap.id] ?? 0
         return {
             ...cap,
             progressPercent: chapterProgress,

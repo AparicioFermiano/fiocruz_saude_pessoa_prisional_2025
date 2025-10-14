@@ -1,6 +1,8 @@
 <script setup lang="ts">
+
 import Sumario from '@/components/Sumario.vue'
 import type { Capitulo, Progresso } from '@/utils/Capitulos'
+import { sidebarOpen } from '@/utils/sidebar'
 
 defineProps<{
     color: string;
@@ -14,7 +16,8 @@ defineProps<{
 </script>
 
 <template>
-    <div class="flex flex-col h-full max-w-[280px]">
+    <div class="fixed top-0 left-0 h-full w-[280px] bg-white shadow-lg transition-transform duration-500"
+        :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full'">
         <div :class="`bg-[var(${color})] p-5 h-[175px] flex flex-col justify-between`">
             <h1 class="text-3xl font-black">{{ titulo }}</h1>
             <div>
