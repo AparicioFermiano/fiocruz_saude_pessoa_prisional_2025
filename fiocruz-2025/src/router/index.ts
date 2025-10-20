@@ -13,6 +13,11 @@ const router = createRouter({
             name: 'M1-Minicurriculo',
             component: () => import('@/views/Modulo1/Minicurriculo.vue'),
         },
+        {
+            path: '/modulo1/apresentacao-da-unidade',
+            name: 'M1-ApresentacaoUnidade',
+            component: () => import('@/views/Modulo1/ApresentacaoUnidade.vue'),
+        },
     ],
 })
 

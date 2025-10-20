@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+/* @import 'nprogress/nprogress.css'; */
+
+@theme {
+    --white: #fff;
+    --black: #000;
+    --modulo1-primary: #ffefe9;
+    --modulo2-transparent: #ff631e1a;
+    --modulo1-main: #ff631e;
+    --font-family-body: Merriweather;
+    --font-family-head: Lato;
+    --font-family-ui: Lato;
+}
+
+html {
+    user-select: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'lnum' 1;
+    -webkit-font-feature-settings: 'lnum' 1;
+    -moz-font-feature-settings: 'lnum' 1;
+}
+
+.btn {
+    border-radius: 50rem;
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    width: auto;
+    touch-action: manipulation;
+    user-select: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    height: fit-content;
+}
+
+.font-sans-serif {
+    font-family: Merriweather, sans-serif;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: ease-in 0.1s;
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+a {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
