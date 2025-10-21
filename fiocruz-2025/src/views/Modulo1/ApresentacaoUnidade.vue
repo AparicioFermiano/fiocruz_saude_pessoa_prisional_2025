@@ -9,7 +9,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 const progressoStore = useProgressoStore()
 
 const moduloAtual = 1
-const capituloAtual = 1
+const capituloAtual = 2
 
 const progressoCapitulo = ref(0)
 

@@ -18,6 +18,11 @@ const router = createRouter({
             name: 'M1-ApresentacaoUnidade',
             component: () => import('@/views/Modulo1/ApresentacaoUnidade.vue'),
         },
+        {
+            path: '/modulo1/unidade-1-estrutura-e-sistema-prisional',
+            name: 'M1-ApresentacaoUnidade',
+            component: () => import('@/views/Modulo1/estruturaSistemaPrisional.vue'),
+        },
     ],
 })
 
