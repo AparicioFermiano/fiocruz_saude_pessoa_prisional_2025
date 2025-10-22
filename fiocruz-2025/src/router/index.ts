@@ -20,8 +20,23 @@ const router = createRouter({
         },
         {
             path: '/modulo1/unidade-1-estrutura-e-sistema-prisional',
-            name: 'M1-ApresentacaoUnidade',
+            name: 'M1-ApresentacaoEstruturaSistema',
             component: () => import('@/views/Modulo1/estruturaSistemaPrisional.vue'),
+        },
+        {
+            path: '/modulo1/referencias-importantes',
+            name: 'M1-ReferenciasImportantes',
+            component: () => import('@/views/Modulo1/ReferenciasImportantes.vue'),
+        },
+        {
+            path: '/modulo1/referencias',
+            name: 'M1-Referencias',
+            component: () => import('@/views/Modulo1/Referencias.vue'),
+        },
+        {
+            path: '/modulo1/encerramento-da-unidade',
+            name: 'M1-Encerramento',
+            component: () => import('@/views/Modulo1/Encerramento.vue'),
         },
     ],
 })

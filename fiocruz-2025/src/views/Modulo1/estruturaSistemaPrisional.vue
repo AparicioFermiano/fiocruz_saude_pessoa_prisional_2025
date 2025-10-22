@@ -447,10 +447,167 @@ watch(progressoCapitulo, async (novoValor) => {
 
                 <p class="font-bold text-xl md:text-2xl py-10 md:py-20">Carga Horária de Estudo: 5 horas</p>
 
+
+
+                <div id="exercicio" class="w-full max-w-[800px] mx-auto px-2 py-10 flex flex-col gap-7">
+                    <p>Gabarito</p>
+                    <p>1 → A / 2 → B / 3 → C / 4 → D / 5 → E / 6 → F</p>
+                </div>
+
+                <div class="w-full max-w-[800px] mx-auto px-2 py-10 flex flex-col gap-7">
+                    <h2 class="text-2xl md:text-3xl font-bold">1.6 Estrutura física (projeto arquitetônico) e jurídica
+                        voltada às pessoas privadas de liberdade no Brasil</h2>
+                    <p>
+                        Será que a estrutura física (projeto arquitetônico) dos estabelecimentos voltados às pessoas
+                        privadas de liberdade tem alguma relação com o regime de cumprimento da pena? A resposta é sim.
+                        Os projetos arquitetônicos e as estruturas físicas dos estabelecimentos penais estão diretamente
+                        relacionados ao regime de cumprimento da pena, porque cada regime exige determinadas
+                        características arquitetônicas e físicas, como capacidade máxima e grau de segurança. A Lei de
+                        Execução Penal (Brasil, 1984) prevê, em seu Art. 88, que a pessoa privada de liberdade deve ser
+                        alojada em cela individual com área mínima de seis metros quadrados que contenha dormitório,
+                        aparelho sanitário e lavatório para a manutenção da salubridade, considerando fatores como
+                        aeração, insolação e condicionamento térmico adequado.
+                    </p>
+                    <p>
+                        Duas resoluções orientam a construção e a segurança dessas unidades: a Resolução nº 9, de 9 de
+                        novembro de 2011 (Brasil, 2011), e a Resolução nº 16, de 10 de junho de 2021 (Brasil, 2021),
+                        ambas publicadas pelo Conselho Nacional de Política Criminal e Penitenciária (CNPCP), vinculado
+                        ao Ministério da Justiça e Segurança Pública.
+                    </p>
+                    <p>
+                        A Resolução nº 9/2011 estabelece as orientações e recomendações técnicas para a construção de
+                        estabelecimentos prisionais. Entre os principais pontos estão: a capacidade dos
+                        estabelecimentos, os parâmetros arquitetônicos que devem ser adotados, a localização das
+                        instituições penais, as medidas de segurança contra incêndios e as condições de conforto
+                        ambiental, como ventilação e iluminação (Brasil, 2011). Já a Resolução nº 16/2021 trata da
+                        segurança interna dos estabelecimentos penais, proibindo, por exemplo, a instalação de tomadas e
+                        pontos de energia dentro e nas proximidades das celas. Essa medida tem como principal objetivo
+                        reduzir o uso de aparelhos celulares nos estabelecimentos para limitar a comunicação entre as
+                        pessoas privadas de liberdade e o ambiente externo (Brasil, 2021).
+                    </p>
+                </div>
+
+                <div class="w-full  bg-green-200 text-xl leading-10 font-serif">
+                    <div class="max-w-[800px] mx-auto py-10 flex flex-col gap-7">
+                        <p class="font-bold">Saiba mais</p>
+                        <p><b>Título:</b> <i>Manual de Intervenções Ambientais para o Controle da Tuberculose nas
+                                Prisões</i></p>
+                        <p><b>Autores:</b> Mauro Santos et al. (2012).</p>
+                        <p><b>Descrição:</b> em 2012, o projeto Fundo Global Tuberculose - Brasil, com o apoio dos
+                            Ministérios da Justiça e da Saúde, publicou esse manual.</p>
+                        <p><b>Acesse:</b> <a class="underline text-blue-500 break-words"
+                                href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_intervencoes_ambientais_controle_tuberculose_prisoes.pdf">https://bvsms.saude.gov.br/bvs/publicacoes/manual_intervencoes_ambientais_controle_tuberculose_prisoes.pdf</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-[800px] mx-auto px-2 py-10 flex flex-col gap-7 font-serif text-xl leading-10">
+                    <p>Já a estrutura jurídica do sistema prisional no Brasil é composta por diversos órgãos
+                        responsáveis pela execução penal. Cada um deles tem atribuições específicas, como veremos a
+                        seguir, incluindo o Conselho Nacional de Política Criminal e Penitenciária (CNPCP), o Juízo da
+                        Execução, o Ministério Público, o Conselho Penitenciário (COPEN), a Secretaria Nacional de
+                        Políticas Penais (SENAPPEN), o Patronato Penitenciário, o Conselho da Comunidade e a Defensoria
+                        Pública (Brasil, 1984). Além disso, cada estado tem sua Secretaria de Estado de Administração
+                        Penitenciária, responsável pela administração das instituições penais em sua região. A seguir,
+                        discutiremos de forma mais detalhada as funções de cada um desses órgãos.</p>
+                    <div id="accordion">
+
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold font-sans">1.7 Segurança e dinamismo do sistema prisional
+                        brasileiro
+                    </h2>
+                    <p>
+                        Uma importante classificação no âmbito do sistema prisional brasileiro é a do grau de segurança
+                        das penitenciárias. Essa classificação é feita pelo Ministério da Justiça e Segurança Pública e
+                        tem três categorias: Segurança Média, Segurança Máxima e Segurança Máxima Especial. As
+                        penitenciárias de Segurança Média e de Segurança Máxima contam com celas individuais e
+                        coletivas. As penitenciárias de Segurança Máxima Especial se diferenciam por serem equipadas
+                        exclusivamente com celas individuais, oferecendo maior controle e segurança (Barbosa, 2022).
+                    </p>
+                    <p>
+                        A escolha do nível de segurança leva em consideração o perfil das pessoas privadas de liberdade
+                        que serão alocadas na penitenciária. Indivíduos que pertencem a facções criminosas ou que
+                        cometeram crimes graves, como os hediondos, e pessoas cuja segurança pessoal esteja em risco são
+                        alocados em penitenciárias de Segurança Máxima. Já as pessoas condenadas por crimes de menor
+                        gravidade são encaminhadas às penitenciárias de Segurança Média, que são compostas, geralmente,
+                        por celas coletivas.
+                    </p>
+                    <p>
+                        As penitenciárias estaduais são de Segurança Média ou de Segurança Máxima, enquanto as
+                        penitenciárias federais são todas de Segurança Máxima Especial (Barbosa, 2022). Em 2025, o
+                        Brasil tem cinco penitenciárias federais, localizadas nas seguintes cidades: Brasília (Distrito
+                        Federal), Porto Velho (Rondônia), Mossoró (Rio Grande do Norte), Campo Grande (Mato Grosso do
+                        Sul) e Catanduvas (Paraná) (Brasil, 2025b).
+                    </p>
+                    <h2 class="text-2xl md:text-3xl font-bold font-sans">1.8 Direito à saúde</h2>
+                </div>
+
+                <div class="w-full bg-gray-100 text-xl leading-10 font-serif">
+                    <div class="max-w-[900px] mx-auto py-10 flex flex-col gap-7">
+                        <div class="w-[85px] border-3 border-orange-500"></div>
+                        <h3 class="text-xl md:text-2xl font-bold leading-10">Você sabia que, mesmo estando privada de
+                            liberdade,
+                            uma pessoa não perde todos os seus direitos?</h3>
+                        <p class="text-md leading-8 font-sans">Pois é, muita gente acredita que a privação
+                            da
+                            liberdade
+                            suspende
+                            completamente os direitos, mas isso não é verdade. O Código Penal Brasileiro (Brasil, 1940)
+                            estabelece, em seu Art. 38, que a pessoa privada de liberdade mantém todos os direitos não
+                            atingidos pela perda da liberdade. Em outras palavras, ela perde o direito de ir e vir, mas
+                            continua tendo direito à dignidade, à saúde e à integridade física e moral. Além disso, a
+                            Lei de Execução Penal trata da assistência às pessoas privadas de liberdade e egressas e
+                            prevê que lhes seja ofertada assistência material, à saúde, jurídica, educacional, social e
+                            religiosa (Brasil, 1984).</p>
+                        <div class="w-[85px] border-3 border-orange-500 mt-10"></div>
+                        <h3 class="text-xl md:text-2xl font-bold leading-10">Você já parou para pensar como deve ser
+                            difícil garantir direitos em uma instituição penal?</h3>
+                        <p class="text-md leading-8 font-sans">Costumamos falar de direitos como algo universal, mas, na
+                            prática, o ambiente prisional impõe muitos desafios para que esses direitos sejam garantidos
+                            e protegidos.</p>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-[800px] mx-auto px-2 py-10 flex flex-col gap-7 font-serif text-xl leading-10">
+                    <p>E, quando o assunto é saúde, a situação se torna ainda mais complicada. Fazel e Baillargeon
+                        (2011) chamam a atenção para um dado alarmante: transtornos mentais e doenças infecciosas são
+                        mais comuns entre pessoas privadas de liberdade do que na população em geral. Quais razões você
+                        acha que explicam esse cenário? Um dos motivos é justamente as condições de vida que essas
+                        pessoas enfrentaram antes mesmo da prisão, um histórico de desigualdades sociais profundas,
+                        muitas vezes transmitidas de geração em geração (Organização Mundial da Saúde, 2019).</p>
+                    <p>
+                        Diante disso, a conclusão é clara: o direito à saúde precisa ser encarado como uma prerrogativa
+                        básica nos estabelecimentos penais. Mais do que isso: esse direito deve ser garantido com
+                        qualidade e efetividade; não como uma concessão, mas como um dever do Estado.
+                    </p>
+                    <h2 class="text-2xl md:text-3xl font-bold">1.9 Experiências exitosas no sistema prisional brasileiro
+                    </h2>
+                    <p>
+                        Uma experiência bem-sucedida relacionada ao direito à saúde é o Projeto Agentes Promotores de
+                        Saúde: cuidando e ressocializando vidas, realizado na cidade de Cuiabá, capital do estado de
+                        Mato Grosso. A iniciativa propõe a participação de pessoas privadas de liberdade como agentes de
+                        promoção da saúde no ambiente prisional. Elas circulam pelas alas e pavilhões das instituições
+                        penais com a missão de identificar demandas relacionadas à saúde, promover ações preventivas,
+                        apoiar processos de reabilitação e contribuir para o bem-estar da população privada de
+                        liberdade.
+                    </p>
+                    <p>
+                        Dentre os principais resultados do projeto, destacam-se: a redução no número de novos casos de
+                        diversas doenças; a ampliação da capacidade de monitoramento de pessoas com problemas de saúde;
+                        o aumento do acesso aos serviços de saúde no sistema prisional; e a criação de oportunidades
+                        para a ressocialização dos participantes, fortalecendo seu papel social e contribuindo para a
+                        sua reintegração à sociedade.
+                    </p>
+                    <small>Essa iniciativa pode ser acessada pelo endereço:
+                        <br> <a
+                            href="https://www.prisoeslivresdetbcesp.com.br/projetoagentespromotoresdesaudecuidandoeressocializandovidas"
+                            class="underline text-orange-500">https://www.prisoeslivresdetbcesp.com.br/projetoagentespromotoresdesaudecuidandoeressocializandovidas</a>
+                    </small>
+                </div>
+
                 <a href="" class="w-full">
                     <div class="group bg-gray-300 hover:bg-gray-400 p-5">
-                        <p class="text-center font-bold group-hover:underline">Lesson 3 - Unidade 1 - Estrutura e
-                            Sistema Prisional</p>
+                        <p class="text-center font-bold group-hover:underline">Lesson 4 - Encerramento da Unidade</p>
                         <div class="flex justify-center">
                             <font-awesome-icon :icon="faChevronDown" />
                         </div>
@@ -460,25 +617,3 @@ watch(progressoCapitulo, async (novoValor) => {
         </template>
     </TemplateModulo1>
 </template>
-
-<style>
-.timeline {
-    position: relative;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 3px;
-    background: linear-gradient(to bottom, #ddd, #ccc);
-    transform: translateX(-50%);
-}
-
-.timeline-item {
-    position: relative;
-    z-index: 10;
-}
-</style>

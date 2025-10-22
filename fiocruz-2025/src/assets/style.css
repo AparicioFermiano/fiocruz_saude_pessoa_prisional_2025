@@ -55,6 +55,26 @@ html {
     line-height: 2rem;
 }
 
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: linear-gradient(to bottom, #ddd, #ccc);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 10;
+}
+
 a {
     cursor: pointer;
 }
