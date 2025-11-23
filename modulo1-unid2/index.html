@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Curso sobre SUS e Participação Social" name="keywords" />
+    <meta content="Aprenda sobre o Sistema Único de Saúde e Participação Social" name="description" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fonts//fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/tippy.min.css" />
+
+    <title>
+        Política Nacional de Atenção Integral à Saúde das Pessoas Privadas
+        de Liberdade no Sistema Prisional (PNAISP)
+    </title>
+</head>
+
+<body>
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-gray-800 max-w-[150px] overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full p-4 object-contain" alt="Logo" />
+            </a>
+
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5">
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+            </button>
+
+            <nav id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-14 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-blue-300">Apresentação</a>
+                <a href="#1.1" class="p-4 text-gray-800 hover:text-blue-300">Unidade 02</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle"
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-blue-300">
+                        Referências
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <div id="dropdown-menu"
+                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px]">
+                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100">Referências
+                            Importantes</a>
+                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100">Referências</a>
+                    </div>
+                </div>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-blue-300">Autor</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modalInstrucao" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] md:max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Instruções para navegação
+                </h2>
+            </div>
+
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    Você pode ajustar a visualização do material de acordo
+                    com o nível de zoom do seu navegador, pressione:
+                </p>
+                <div class="text-center">
+                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modalInstrucao')" class="btn bg-blue-200 text-black">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalFicha" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Ficha técnica
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-5">
+                <div>
+                    <p>
+                        <b>MINISTÉRIO DA SAÚDE</b>
+                    </p>
+                    <span>Alexandre Rocha Santos Padilha - Ministro da
+                        Saúde</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ - FIOCRUZ </b>
+                    </p>
+                    <span>Mário Santos Moreira - Presidente</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL -
+                            FIOCRUZ MS
+                        </b>
+                    </p>
+                    <span>Jislaine de Fátima Guilhermino - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DE EDUCAÇÃO DA FIOCRUZ MS </b>
+                    </p>
+                    <span>Débora Dupas Gonçalves do Nascimento - Vice
+                        Coordenadora de Educação</span>
+                </div>
+                <div>
+                    <p>
+                        <b>SECRETARIA DE ATENÇÃO PRIMÁRIA À SAÚDE (SAPS)
+                        </b>
+                    </p>
+                    <span>Ana Luiza Ferreira Rodrigues Caldas -
+                        Secretária</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DEPARTAMENTO DE ESTRATÉGIAS E POLÍTICAS DE
+                            SAÚDE COMUNITÁRIA
+                        </b>
+                    </p>
+                    <span>José Eudes Barroso Vieira - Diretor</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO-GERAL DE SAÚDE DA FAMÍLIA E
+                            COMUNIDADE (CGESCO)
+                        </b>
+                    </p>
+                    <span>Ana Cláudia Cardozo Chaves - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DO ACESSO E EQUIDADE (CAEQ) </b>
+                    </p>
+                    <span>Lilian Silva Gonçalves - Coordenadora</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modalFicha')" class="btn bg-blue-200 text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCreditos" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-5">
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO GERAL</b>
+                    </p>
+                    <span>Sandra Maria do Valle Leone de Oliveira (FIOCRUZ
+                        MS)
+                    </span>
+                </div>
+                <div>
+                    <p>
+                        <b>VALIDAÇÃO DO PROTOCOLO DE PESQUISA COM AS
+                            PARTES INTERESSADAS (CONDUÇÃO DO DIÁLOGO DE
+                            POLITICAS)
+                        </b>
+                    </p>
+                    <span>Aurelina Aguiar de Lima <br />
+                        Liara Ferreira dos Santos</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO TÉCNICO-CIENTÍFICA </b>
+                    </p>
+                    <span>Rebeca de Lima Pompilio <br />
+                        Everton Ferreira Lemos</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO E NORMATIZAÇÃO </b>
+                    </p>
+                    <span>Davi Bagnatori Tavares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>AVALIAÇÃO EXTERNA </b>
+                    </p>
+                    <span>Águida Luana Veriato Schultz - Assessoria Técnica -
+                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS) <br />
+                        Anna Karolline dos Anjos de Morais - Assessoria
+                        Técnica - Saúde Prisional
+                        (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
+                        Dieni Oliveira Rodrigues - Assessoria Técnica -
+                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
+                        Evellyn Waleska Silva dos Santos - Assessoria
+                        Técnica - Saúde Prisional
+                        (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
+                        Marianna do Prado Sampaio - Assessoria Técnica -
+                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)
+                    </span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADOR DE PRODUÇÃO E DESIGNER INSTRUCIONAL
+                        </b>
+                    </p>
+                    <span>Marcos Paulo dos Santos de Souza</span>
+                </div>
+                <div>
+                    <p>
+                        <b>WEBDESIGNER E DESENVOLVEDOR </b>
+                    </p>
+                    <span>Aparício Fermiano</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DESENVOLVEDOR AVA-MOODLE </b>
+                    </p>
+                    <span>Vinícius Vicente Soares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO </b>
+                    </p>
+                    <span>André Julien de Sousa Morato</span>
+                </div>
+                <div>
+                    <p>
+                        <b>PRODUÇÃO DO MAPA DE EVIDÊNCIA </b>
+                    </p>
+                    <span>Víctor Leone de Oliveira <br />Ana Cristina Atz dos
+                        Santos</span>
+                </div>
+                <div class="text-center">
+                    <small>Esse produto faz parte das atividades do Núcleo de
+                        Evidências de Mato Grosso do Sul (NEVMS), com nome
+                        de NEV Pantanal e o as ações do Programa de
+                        Avaliação e Qualificação da Política Nacional de
+                        Atenção Integral à Saúde das Pessoas Privadas de
+                        Liberdade no Sistema Prisional (QUALI-SaP-PNAISP).
+                        TED 81/2023.</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modalCreditos')" class="btn bg-blue-200 text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContatar" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Informações de contato
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-2">
+                <h3 class="font-bold">
+                    FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                </h3>
+                <p>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo
+                    Grande-MS - CEP 79081-746
+                </p>
+                <p>
+                    <b>Telefone:</b>
+                    (67) 3346-7220
+                </p>
+                <p>
+                    <b>E-mail:</b>
+                    <a href="mail:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a>
+                </p>
+                <p>
+                    <b>Site:</b>
+                    <a href="www.matogrossodosul.fiocruz.br">www.matogrossodosul.fiocruz.br</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modalContatar')" class="btn bg-blue-200 text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex flex-col justify-between">
+        <div id="scrollTopBtn" class="hidden fixed bottom-10 right-10 z-99">
+            <div class="flex flex-col gap-3">
+                <button id="btnContatar" onclick="openModal('modalContatar')" title="Instruções para usar o curso."
+                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-address-book"></i>
+                </button>
+
+                <button id="btnInstrucoes" onclick="openModal('modalInstrucao')" title="Instruções para usar o curso."
+                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-exclamation"></i>
+                </button>
+
+                <a href="#" id="btnTopo"
+                    class="bottom-10 right-10 bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div class="w-full bg-blue-200 py-5">
+                <div class="max-w-[900px] mx-auto py-10 px-5 text-center">
+                    <span class="px-3 py-2 rounded-full bg-blue-800 text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 block mt-3">
+                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
+                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
+                        PRISIONAL
+                    </span>
+                    <h1 class="text-xl md:text-2xl font-black mt-3">
+                        Política Nacional de Atenção Integral à Saúde das
+                        Pessoas Privadas de Liberdade no Sistema Prisional
+                        (PNAISP)
+                    </h1>
+                    <p class="px-3 py-2 block">
+                        Unidade - A Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
+                    </p>
+                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+                        <button onclick="openModal('modalInstrucao')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            INSTRUÇÕES
+                        </button>
+                        <button onclick="openModal('modalFicha')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            FICHA TÉCNICA
+                        </button>
+                        <button onclick="openModal('modalCreditos')"
+                            class="px-4 py-2 btn border-2 border-blue-600 text-white bg-blue-600">
+                            CRÉDITOS
+                        </button>
+                        <div class="w-full">
+                            <a href="#apresentacao"
+                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="apresentacao" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[800px] mx-auto px-5 flex flex-col gap-7">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-5xl font-bold">
+                        Apresentação da Unidade
+                    </h1>
+                    <h3>Olá, estudante-trabalhador! Seja bem-vindo!</h3>
+                </div>
+                <p>
+                    Nesta Unidade, propomos uma reflexão sobre as políticas públicas no sistema prisional, espaço em
+                    que, muitas vezes, os
+                    direitos fundamentais são invisibilizados. Nosso olhar se voltará, especialmente, para o direito à
+                    saúde, entendendo-o
+                    não como um privilégio, mas como um princípio que deve alcançar a todos, inclusive as pessoas
+                    privadas de liberdade.
+                </p>
+                <p>
+                    Discutiremos os fundamentos e as diretrizes da Política Nacional de Atenção Integral à Saúde das
+                    Pessoas Privadas de
+                    Liberdade (PNAISP) a fim de mostrar a complexidade do desafio de garantir dignidade a pessoas em um
+                    contexto marcado por
+                    exclusões históricas. Ao longo do conteúdo, serão apresentados os caminhos para a adesão e
+                    implementação da PNAISP nos
+                    estados, municípios e Distrito Federal com o objetivo de sistematizar e ampliar o acesso às
+                    informações essenciais. Mais
+                    do que apresentar informações técnicas, trata-se de reforçar um compromisso ético do poder público
+                    com a equidade, a
+                    justiça social e o reconhecimento da saúde como um direito humano inalienável, mesmo dentro dos
+                    muros das instituições
+                    penais.
+                </p>
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    Objetivos de Aprendizagem da Unidade
+                </h2>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                            <p class="text-center">
+                                Conhecer o histórico das políticas públicas voltadas à população privada de liberdade no
+                                Brasil;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                            <p class="text-center">
+                                Descrever os princípios, diretrizes e objetivos da Política Nacional de Atenção à Saúde
+                                das Pessoas Privadas de
+                                Liberdade no Sistema Prisional;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                            <p class="text-center">
+                                Especificar os procedimentos relacionados à adesão e à implementação da Política
+                                Nacional de Atenção à Saúde das Pessoas
+                                Privadas de Liberdade no Sistema Prisional em estados e municípios;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Reconhecer os critérios exigidos para o credenciamento das equipes de Atenção Primária
+                                Prisional e implantação dessas
+                                equipes em estabelecimentos penais de regime fechado, considerando aspectos como
+                                recursos humanos e registro em sistemas
+                                de informação nacionais;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200 h-full">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                            <p class="text-center">
+                                Compreender os critérios relacionados ao cofinanciamento federal destinado a essas
+                                equipes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 md:px-3">
+                    <p class="bg-gray-600 font-bold text-xl md:text-2xl p-5 rounded-md text-white">
+                        Carga Horária de Estudo: 5 horas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="2.1" class="w-full max-w-[800px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                2.1 Políticas Públicas voltadas ao Sistema Prisional
+            </h2>
+            <p>
+                Para entender como as políticas públicas funcionam no sistema prisional, você precisará analisar com
+                atenção a Lei de
+                Execução Penal, a famosa LEP, especialmente o Capítulo II, que trata da assistência às pessoas privadas
+                de liberdade e
+                egressas, aquelas que já cumpriram pena.
+            </p>
+            <p>
+                Mas sobre que tipo de assistência estamos falando aqui? Vamos detalhar um pouco mais agora.
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-blue-400">
+                        <button id="item1" onclick="toggleAccordion('item1', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Assistência Material</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                Você sabia que é obrigação do Estado fornecer alimentação, vestuário e condições mínimas
+                                de higiene às pessoas presas?
+                                Isso está no artigo 12º e se aplica às pessoas que estão cumprindo pena em regime
+                                fechado.
+                                Assistência à Saúde: o artigo 14º é o que garante o direito à saúde. Estamos falando de
+                                atendimentos médicos,
+                                farmacêuticos e odontológicos. Isso inclui a assistência pré-natal, ao parto e ao
+                                pós-parto para mulheres gestantes,
+                                além do cuidado com a saúde do recém-nascido.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item2" onclick="toggleAccordion('item2', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Assistência Jurídica</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                Você sabia que é obrigação do Estado fornecer alimentação, vestuário e condições mínimas
+                                de higiene às
+                                pessoas presas?
+                                Isso está no artigo 12º e se aplica às pessoas que estão cumprindo pena em regime
+                                fechado.
+                                Assistência à Saúde: o artigo 14º é o que garante o direito à saúde. Estamos falando de
+                                atendimentos
+                                médicos,
+                                farmacêuticos e odontológicos. Isso inclui a assistência pré-natal, ao parto e ao
+                                pós-parto para mulheres
+                                gestantes,
+                                além do cuidado com a saúde do recém-nascido.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item3" onclick="toggleAccordion('item3', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Assistência Educacional</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                Quanto à educação, está contemplada nos artigos 18º e 19º da LEP, que garantem o acesso
+                                ao ensino fundamental e
+                                profissionalizante dentro das instituições penais.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item4" onclick="toggleAccordion('item4', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Assistência Social</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                Esse tipo de assistência tem a finalidade de preparar a pessoa privada de liberdade para
+                                o retorno à sociedade, mas não
+                                só isso: essa assistência também inclui o apoio aos familiares das pessoas condenadas e
+                                até mesmo às vítimas e suas
+                                famílias.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item5" onclick="toggleAccordion('item5', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Assistência Religiosa</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                A liberdade de crença também é prevista na LEP. O artigo 24º assegura o direito à
+                                assistência religiosa. Isso quer dizer
+                                que o Estado deve oferecer locais apropriados para celebração de cultos religiosos e
+                                permitir o acesso a livros
+                                religiosos, respeitando o direito de cada um de manifestar e exercer sua fé.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item6" onclick="toggleAccordion('item6', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Assistência à Saúde</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                O artigo 14º é o que garante o direito à saúde. Estamos falando de atendimentos médicos,
+                                farmacêuticos e odontológicos.
+                                Isso inclui a assistência pré-natal, ao parto e ao pós-parto para mulheres gestantes,
+                                além do cuidado com a saúde do
+                                recém-nascido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Além de todas essas formas de assistência, a LEP trata do acesso ao trabalho no ambiente prisional,
+                considerado um dos
+                pilares da ressocialização. O trabalho é obrigatório para todos no sistema prisional, com exceção dos
+                presos políticos e
+                aqueles em regime provisório, e deve acontecer por 6 a 8 horas diárias, com descanso aos sábados e
+                domingos. Além disso,
+                o trabalho deve ser remunerado, para ajudar tanto na manutenção da pessoa no sistema quanto na reparação
+                de danos e no
+                pagamento de despesas processuais (Brasil, 1984).
+            </p>
+            <p>
+                Viu como o sistema prisional tem uma estrutura pensada para garantir direitos? O desafio, claro, está em
+                fazer tudo isso acontecer na prática.
+            </p>
+        </div>
+
+        <div id="2.2" class="w-full bg-gray-100 py-10">
+            <div class="px-5 max-w-[800px] mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                    2.2 Histórico do Plano Nacional de Saúde no Sistema Prisional
+                </h2>
+                <p>
+                    Como vimos, a LEP, em 1984, previu o direito à saúde das pessoas privadas de liberdade, mas será que
+                    isso funcionou na
+                    prática? Na época, essa garantia existia no plano jurídico, mas dificilmente se concretizava nas
+                    prisões. A saúde das
+                    pessoas privadas de liberdade era tratada apenas como uma questão de segurança pública, não como
+                    parte de uma política
+                    de saúde.
+                </p>
+                <p>
+                    A partir de 2003, um novo cenário começou a se desenhar com a criação do Plano Nacional de Saúde no
+                    Sistema Prisional (PNSSP). Você já ouviu falar dele? Esse plano foi fruto de uma parceria entre os
+                    Ministérios da Saúde e da Justiça e oficializado pela Portaria Interministerial nº 1.777 em 9 de
+                    setembro de 2003 (Brasil, 2003). Com a implementação do PNSSP, as ações e os serviços de saúde nas
+                    prisões passaram a ser organizados de acordo com os princípios e diretrizes do Sistema Único de
+                    Saúde (SUS). A responsabilidade por essa organização é compartilhada entre os setores da saúde e da
+                    segurança pública.
+                </p>
+                <p>
+                    Esse momento foi considerado um dos grandes marcos da implementação de políticas de saúde no sistema
+                    prisional (Lermen et al., 2015). Por quê? A partir de então, o direito à saúde da pessoa privada de
+                    liberdade deixou de ser uma intenção distante e passou a ser efetivamente aplicado em ambientes
+                    prisionais. O principal objetivo do plano era oferecer ações integrais de saúde, que incluíam
+                    assistência, prevenção e promoção da saúde, para combater os problemas de saúde enfrentados pela
+                    população privada de liberdade (Brasil, 2003).
+                </p>
+                <p>
+                    Como isso começou a funcionar na prática? A atenção à saúde passou a ser prestada por uma equipe
+                    multiprofissional, formada por médico, enfermeiro, cirurgião-dentista, assistente social, psicólogo,
+                    auxiliar de enfermagem e auxiliar de consultório dentário. Esses profissionais trabalhavam 20 horas
+                    por semana e eram responsáveis por até 500 pessoas privadas de liberdade. Em instituições penais
+                    menores, com até 100 pessoas, o atendimento à saúde era feito pela Unidade Básica de Saúde (UBS)
+                    local, ou seja, a unidade de saúde da comunidade em que a instituição penal estava localizada
+                    (Brasil, 2003).
+                </p>
+                <p>
+                    Todavia, nem tudo foi resolvido pelo PNSSP. Apesar de ter representado um grande avanço em termos de
+                    acesso a serviços de saúde em ambientes prisionais, o Plano deixou algumas lacunas. Por exemplo, ele
+                    não garantiu o mesmo direito às pessoas que cumpriam pena em regimes abertos e provisórios. Além
+                    disso, em relação à saúde das mulheres em privação de liberdade, embora previsse a assistência
+                    pré-natal e cuidados durante o puerpério (período após o parto), essas ações nem sempre eram
+                    realizadas de forma efetiva. As ações acabavam se limitando à maternidade e a outras questões, como
+                    ginecológicas, de saúde mental e prevenção de outros agravos. Doenças ficavam em segundo plano
+                    (Lermen et al., 2015). Isso mostra que, apesar de inovador, o PNSSP ainda apresentava limitações
+                    significativas, principalmente quando o assunto era atender de forma plena e específica as mulheres
+                    no sistema prisional.
+                </p>
+            </div>
+        </div>
+
+        <div id="2.3" class="w-full px-5 max-w-[800px] mx-auto py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                2.3 Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
+            </h2>
+            <p>
+                Você sabia que existe uma política específica para cuidar da saúde de quem está preso no Brasil? Pois é,
+                ela se chama
+                Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional, ou
+                simplesmente
+                PNAISP. Em 2 de janeiro de 2014, os Ministérios da Saúde e da Justiça publicaram a Portaria
+                Interministerial nº 1
+                (Brasil, 2014a), que estabeleceu a PNAISP. Ela foi operacionalizada no âmbito do Ministério da Saúde por
+                meio da
+                Portaria nº 482, de 1º de abril de 2014 (Brasil, 2014b), posteriormente reformulada pela Portaria nº
+                2.298, de 9 de
+                setembro de 2021 (Brasil, 2021), que garantiram a todas as pessoas sob custódia do Estado,
+                independentemente do regime
+                prisional (fechado, semiaberto, aberto ou em cumprimento de medida de segurança), o acesso às políticas
+                de saúde no
+                sistema prisional (Brasil, 2021).
+            </p>
+            <p>
+                Uma das inovações da PNAISP foi incluir ações de promoção da saúde e prevenção de doenças no ambiente
+                prisional. Essas
+                ações não estavam restritas às pessoas privadas de liberdade, mas também contemplaram trabalhadores,
+                familiares e outros
+                indivíduos relacionados aos estabelecimentos prisionais (Brasil, 2014a).
+            </p>
+            <p>
+                A PNAISP integrou os serviços de saúde prestados nos estabelecimentos penais à Rede de Atenção à Saúde
+                (RAS), garantindo
+                que recebessem o suporte necessário para que pudessem promover práticas preventivas voltadas para a
+                população privada de
+                liberdade, assim como fazer diagnósticos e tratamentos. No sistema prisional, as ações de saúde para as
+                pessoas privadas
+                de liberdade seguem as diretrizes da Atenção Primária à Saúde (APS), um modelo de atenção que tem um
+                papel fundamental
+                no SUS por ser caracterizado como a porta de entrada preferencial para o atendimento à população, além
+                de ser
+                responsável por organizar e coordenar a RAS (Brasil, 2017a).
+            </p>
+            <p>
+                O cuidado prestado pela APS deve ser ofertado de acordo com as necessidades das pessoas, considerando os
+                fatores que
+                determinam e condicionam sua saúde, como é o caso da privação de liberdade. Por exemplo, pessoas
+                privadas de liberdade
+                têm mais doenças infecciosas e transtornos mentais do que a população em geral (Fazel; Baillargeon,
+                2011), por isso o
+                cuidado prestado sob a ótica da APS é tão importante.
+            </p>
+            <p>
+                Os princípios e diretrizes da APS estão apresentados no Quadro 1.
+            </p>
+            <div id="quadro-2">
+
+            </div>
+            <p>
+                É importante destacar que a equipe com 6 horas semanais deve ser responsabilidade do ente municipal e
+                deve compartilhar profissionais com as equipes de Saúde da Família (eSF) e equipes de Saúde Bucal (eSB).
+                Se a instituição penal tiver mais de 2.700 pessoas privadas de liberdade, a gestão de saúde do estado ou
+                município pode solicitar ao Ministério da Saúde o credenciamento de mais de uma eAPP para atender a essa
+                demanda.
+            </p>
+            <p>
+                Há ainda a possibilidade de solicitar o credenciamento de Equipe de Avaliação e Acompanhamento de
+                Medidas Terapêuticas Aplicáveis à Pessoa com Transtorno Mental em Conflito com a Lei (EAP-Desinst),
+                equipe multidisciplinar responsável pelo acompanhamento psicossocial durante todas as fases do
+                procedimento criminal com o objetivo de apoiar ações e serviços para oferecer atenção à pessoa com
+                transtorno mental em conflito com a lei na RAS e para viabilizar o acesso dela à Rede de Atenção
+                Psicossocial (RAPS).
+            </p>
+            <div>
+                <button onclick="openModal('modalSaibaMais1')" class="btn bg-blue-800 text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+
+            <div id="modalSaibaMais1" class="modal-overlay hidden">
+                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título:</b>
+                            Portaria GM/MS nº 4.876, de 18 de julho de 2024
+                        </p>
+                        <p>
+                            <b>Autor:</b>
+                            Brasil (2024).
+                        </p>
+                        <p>
+                            <b>Descrição:</b>
+                            para mais informações sobre as EAP, vide essa Portaria, que dispõe sobre a Equipe de
+                            Avaliação e Acompanhamento de
+                            Medidas Terapêuticas Aplicáveis à Pessoa com Transtorno Mental em Conflito com a Lei
+                            (EAP-Desinst) no âmbito da RAPS do
+                            Sistema Único de Saúde (SUS).
+                        </p>
+                        <p>
+                            <b>Veja mais:</b>
+                            <a class="hover:underline text-blue-800"
+                                href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
+                                target="_blank">Clique aqui</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="2.3.1" class="w-full bg-gray-100 py-10">
+            <div class="px-5 max-w-[800px] mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                    2.3.1 Princípios, diretrizes e objetivos da PNAISP
+                </h2>
+                <p>
+                    Você conhece a PNAISP? Sabe qual é o principal objetivo dessa política? A PNAISP tem um objetivo
+                    geral e uma série de
+                    objetivos específicos. O objetivo geral é “garantir o acesso das pessoas privadas de liberdade no
+                    sistema prisional ao
+                    cuidado integral no SUS” (Brasil, 2014a). Já os objetivos específicos da PNAISP tratam de outros
+                    tipos de ação. São eles
+                    (Brasil, 2014a):
+                </p>
+                <div id="carrousel">
+
+                </div>
+                <p>
+                    Além disso, a PNAISP também é regida por uma série de princípios e diretrizes, conforme Art. 3º e 4º
+                    da Portaria, que
+                    são apresentados no Quadro 3.
+                </p>
+                <div id="quadro-3">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="2.3" class="w-full px-5 max-w-[800px] mx-auto py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                2.3.2 Adesão à PNAISP
+            </h2>
+            <p>
+                Como é feita a adesão à PNAISP? O que é necessário? A implementação da PNAISP, em todo o território
+                nacional, é feita
+                mediante adesão dos estados e municípios. A adesão estadual é obrigatória, enquanto a municipal é
+                facultativa (Brasil,
+                2014a). A adesão é formalizada por meio de um processo de pactuação, que envolve as etapas a seguir.
+            </p>
+            <div id="cards">
+
+            </div>
+            <p>
+                Após a aprovação, a adesão, seja estadual, seja municipal, é publicada no Diário Oficial da União pelo
+                Ministério da
+                Saúde.
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                2.3.2.1 Credenciamento das eAPP
+            </h2>
+            <p>
+                Os estados e os municípios com população privada de liberdade podem solicitar o credenciamento das eAPP,
+                requisito para receber incentivo financeiro federal. A solicitação é feita por meio da plataforma
+                e-Gestor APS (Gerencia APS). É importante destacar que o perfil de acesso a esse sistema específico deve
+                ser solicitado ao Fundo de Saúde do Estado ou do Município, órgão responsável pela criação dos perfis de
+                acesso.
+            </p>
+            <p>
+                Uma vez solicitado o credenciamento da eAPP, o Ministério da Saúde procede à análise técnica e
+                orçamentária do pedido, que pode ser deferido ou indeferido, caso seja constatada alguma inconsistência.
+                Sendo deferida a solicitação de credenciamento, o Ministério da Saúde publica uma portaria de
+                credenciamento de eAPP no Diário Oficial da União, momento a partir do qual é iniciado o prazo de três
+                meses para que a gestão do estado ou município requerente cadastre a eAPP no Sistema de Cadastro
+                Nacional de Estabelecimento de Saúde (SCNES), sob pena de descredenciamento da equipe, caso o prazo não
+                seja cumprido (Brasil, 2017a).
+            </p>
+            <p>
+                O cadastro no SCNES é essencial para que o Ministério da Saúde realize a transferência de incentivos
+                financeiros. O procedimento para registrar as eAPP no SCNES requer:
+            </p>
+            <div id="box">
+
+            </div>
+            <div>
+                <button onclick="openModal('modalSaibaMais2')" class="btn bg-blue-800 text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+
+            <div id="modalSaibaMais2" class="modal-overlay hidden">
+                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            O passo a passo para registrar corretamente as eAPP no SCNES pode ser consultado no
+                            endereço:
+                            <a
+                                href="https://wiki.saude.gov.br/cnes/index.php/Cadastro_de_Equipes#:~:text=explicado%20mais%20adiante.-,Cadastro%20de%20Equipe,ser%20realizado%20na%20aba%20Caracteriza%C3%A7%C3%A3o">Clique
+                                aqui</a>
+                        </p>
+                        <p>
+                            Demais orientações sobre a solicitação de credenciamento e adesão de equipes, serviços e
+                            programas da APS podem ser
+                            consultadas na Nota Técnica nº 282 (Brasil, 2023).
+                        </p>
+                        <p>
+                            Veja sobre a nota técnica:
+                            <a href="" target="_blank"></a>
+                        </p>
+                        <p>
+                            <b>Veja mais:</b>
+                            <a class="hover:underline text-blue-800"
+                                href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
+                                target="_blank">Clique aqui</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="autor" class="w-full bg-gray-100">
+            <div class="flex flex-col justify-between py-10 px-5 max-w-[800px] mx-auto">
+                <h1 class="text-3xl md:text-5xl font-bold">
+                    Minicurrículo do Autor
+                </h1>
+                <div class="flex flex-wrap mt-5">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/Marianna.jpg"
+                            alt="Marianna do Prado Sampaio" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Marianna do Prado Sampaio</small>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 px-5">
+                        <p>
+                            Graduada em Terapia Ocupacional pela
+                            Universidade de Brasília e Especialista em Saúde
+                            Coletiva pela Escola Superior de Ciências da
+                            Saúde do Distrito Federal. Já atuou como
+                            Terapeuta Ocupacional na Organização Social
+                            Santa Marcelina, em São Paulo, como gerente na
+                            Gerência de qualidade da Atenção Primária à
+                            Saúde e na Gerência de Atenção à Saúde de
+                            Populações em Situação Vulnerável e Programas
+                            Especiais da Secretaria de Estado de Saúde do
+                            Distrito Federal. Atuou como consultora no
+                            Ministério da Saúde na Coordenação-Geral de
+                            Programação do Financiamento da Atenção Primária
+                            à Saúde e como assessora técnica de saúde
+                            prisional na Coordenação de Acesso e Equidade da
+                            Secretaria de Atenção Primária. Também atuou
+                            como Apoiadora regional do Projeto Implementação
+                            e Fortalecimento do Apoio Matricial em Saúde
+                            Mental na Atenção Primária à Saúde do Distrito
+                            Federal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-10 bg-blue-200 text-center">
+        <div class="max-w-[800px] mx-auto px-5">
+            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
+                    alt="Logo" />
+            </a>
+            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
+                disseminação e a utilização desta obra, em parte ou em sua
+                totalidade, nos Termos de uso do ARES. Deve ser citada a
+                fonte e é vedada sua utilização comercial. © 2025.
+                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
+                Sul.
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/tippy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script>
+        initMapTooltips();
+        TooltipsUnit1();
+    </script>
+</body>
+
+</html>

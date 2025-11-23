@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Curso sobre SUS e Participação Social" name="keywords" />
+    <meta content="Aprenda sobre o Sistema Único de Saúde e Participação Social" name="description" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fonts//fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/tippy.min.css" />
+
+    <title>
+        Política Nacional de Atenção Integral à Saúde das Pessoas Privadas
+        de Liberdade no Sistema Prisional (PNAISP)
+    </title>
+</head>
+
+<body>
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-gray-800 max-w-[150px] overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full p-4 object-contain" alt="Logo" />
+            </a>
+
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5">
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+            </button>
+
+            <nav id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-14 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-blue-300">Apresentação</a>
+                <a href="#1.1" class="p-4 text-gray-800 hover:text-blue-300">Unidade 01</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle"
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-blue-300">
+                        Referências
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <div id="dropdown-menu"
+                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px]">
+                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100">Referências
+                            Importantes</a>
+                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100">Referências</a>
+                    </div>
+                </div>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-blue-300">Autor</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modalInstrucao" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] md:max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Instruções para navegação
+                </h2>
+            </div>
+
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    Você pode ajustar a visualização do material de acordo
+                    com o nível de zoom do seu navegador, pressione:
+                </p>
+                <div class="text-center">
+                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modalInstrucao')" class="btn bg-blue-200 text-black">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalFicha" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Ficha técnica
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-5">
+                <div>
+                    <p>
+                        <b>MINISTÉRIO DA SAÚDE</b>
+                    </p>
+                    <span>Alexandre Rocha Santos Padilha - Ministro da
+                        Saúde</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ - FIOCRUZ </b>
+                    </p>
+                    <span>Mário Santos Moreira - Presidente</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL -
+                            FIOCRUZ MS
+                        </b>
+                    </p>
+                    <span>Jislaine de Fátima Guilhermino - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DE EDUCAÇÃO DA FIOCRUZ MS </b>
+                    </p>
+                    <span>Débora Dupas Gonçalves do Nascimento - Vice
+                        Coordenadora de Educação</span>
+                </div>
+                <div>
+                    <p>
+                        <b>SECRETARIA DE ATENÇÃO PRIMÁRIA À SAÚDE (SAPS)
+                        </b>
+                    </p>
+                    <span>Ana Luiza Ferreira Rodrigues Caldas -
+                        Secretária</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DEPARTAMENTO DE ESTRATÉGIAS E POLÍTICAS DE
+                            SAÚDE COMUNITÁRIA
+                        </b>
+                    </p>
+                    <span>José Eudes Barroso Vieira - Diretor</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO-GERAL DE SAÚDE DA FAMÍLIA E
+                            COMUNIDADE (CGESCO)
+                        </b>
+                    </p>
+                    <span>Ana Cláudia Cardozo Chaves - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DO ACESSO E EQUIDADE (CAEQ) </b>
+                    </p>
+                    <span>Lilian Silva Gonçalves - Coordenadora</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modalFicha')" class="btn bg-blue-200 text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCreditos" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-5">
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO GERAL</b>
+                    </p>
+                    <span>Sandra Maria do Valle Leone de Oliveira (FIOCRUZ
+                        MS)
+                    </span>
+                </div>
+                <div>
+                    <p>
+                        <b>VALIDAÇÃO DO PROTOCOLO DE PESQUISA COM AS
+                            PARTES INTERESSADAS (CONDUÇÃO DO DIÁLOGO DE
+                            POLITICAS)
+                        </b>
+                    </p>
+                    <span>Aurelina Aguiar de Lima <br />
+                        Liara Ferreira dos Santos</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO TÉCNICO-CIENTÍFICA </b>
+                    </p>
+                    <span>Rebeca de Lima Pompilio <br />
+                        Everton Ferreira Lemos</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO E NORMATIZAÇÃO </b>
+                    </p>
+                    <span>Davi Bagnatori Tavares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>AVALIAÇÃO EXTERNA </b>
+                    </p>
+                    <span>Águida Luana Veriato Schultz - Assessoria Técnica -
+                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS) <br />
+                        Anna Karolline dos Anjos de Morais - Assessoria
+                        Técnica - Saúde Prisional
+                        (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
+                        Dieni Oliveira Rodrigues - Assessoria Técnica -
+                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
+                        Evellyn Waleska Silva dos Santos - Assessoria
+                        Técnica - Saúde Prisional
+                        (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
+                        Marianna do Prado Sampaio - Assessoria Técnica -
+                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)
+                    </span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADOR DE PRODUÇÃO E DESIGNER INSTRUCIONAL
+                        </b>
+                    </p>
+                    <span>Marcos Paulo dos Santos de Souza</span>
+                </div>
+                <div>
+                    <p>
+                        <b>WEBDESIGNER E DESENVOLVEDOR </b>
+                    </p>
+                    <span>Aparício Fermiano</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DESENVOLVEDOR AVA-MOODLE </b>
+                    </p>
+                    <span>Vinícius Vicente Soares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO </b>
+                    </p>
+                    <span>André Julien de Sousa Morato</span>
+                </div>
+                <div>
+                    <p>
+                        <b>PRODUÇÃO DO MAPA DE EVIDÊNCIA </b>
+                    </p>
+                    <span>Víctor Leone de Oliveira <br />Ana Cristina Atz dos
+                        Santos</span>
+                </div>
+                <div class="text-center">
+                    <small>Esse produto faz parte das atividades do Núcleo de
+                        Evidências de Mato Grosso do Sul (NEVMS), com nome
+                        de NEV Pantanal e o as ações do Programa de
+                        Avaliação e Qualificação da Política Nacional de
+                        Atenção Integral à Saúde das Pessoas Privadas de
+                        Liberdade no Sistema Prisional (QUALI-SaP-PNAISP).
+                        TED 81/2023.</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modalCreditos')" class="btn bg-blue-200 text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContatar" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Informações de contato
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-2">
+                <h3 class="font-bold">
+                    FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                </h3>
+                <p>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo
+                    Grande-MS - CEP 79081-746
+                </p>
+                <p>
+                    <b>Telefone:</b>
+                    (67) 3346-7220
+                </p>
+                <p>
+                    <b>E-mail:</b>
+                    <a href="mail:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a>
+                </p>
+                <p>
+                    <b>Site:</b>
+                    <a href="www.matogrossodosul.fiocruz.br">www.matogrossodosul.fiocruz.br</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modalContatar')" class="btn bg-blue-200 text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex flex-col justify-between">
+        <div id="scrollTopBtn" class="hidden fixed bottom-10 right-10 z-99">
+            <div class="flex flex-col gap-3">
+                <button id="btnContatar" onclick="openModal('modalContatar')" title="Instruções para usar o curso."
+                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-address-book"></i>
+                </button>
+
+                <button id="btnInstrucoes" onclick="openModal('modalInstrucao')" title="Instruções para usar o curso."
+                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-exclamation"></i>
+                </button>
+
+                <a href="#" id="btnTopo"
+                    class="bottom-10 right-10 bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div class="w-full bg-blue-200 py-5">
+                <div class="max-w-[900px] mx-auto py-10 px-5 text-center">
+                    <span class="px-3 py-2 rounded-full bg-blue-800 text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 block mt-3">
+                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
+                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
+                        PRISIONAL
+                    </span>
+                    <h1 class="text-xl md:text-2xl font-black mt-3">
+                        Política Nacional de Atenção Integral à Saúde das
+                        Pessoas Privadas de Liberdade no Sistema Prisional
+                        (PNAISP)
+                    </h1>
+                    <p class="px-3 py-2 block">
+                        Unidade - Estrutura e Sistema prisional
+                    </p>
+                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+                        <button onclick="openModal('modalInstrucao')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            INSTRUÇÕES
+                        </button>
+                        <button onclick="openModal('modalFicha')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            FICHA TÉCNICA
+                        </button>
+                        <button onclick="openModal('modalCreditos')"
+                            class="px-4 py-2 btn border-2 border-blue-600 text-white bg-blue-600">
+                            CRÉDITOS
+                        </button>
+                        <div class="w-full">
+                            <a href="#apresentacao"
+                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="apresentacao" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[800px] mx-auto px-5 flex flex-col gap-7">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-5xl font-bold">
+                        Apresentação da Unidade
+                    </h1>
+                    <h3>Olá, estudante-trabalhador! Seja bem-vindo!</h3>
+                </div>
+                <p>
+                    Nesta Unidade, vamos apresentar como se estruturam os
+                    sistemas prisionais no Brasil e no mundo. Iniciaremos
+                    com um breve panorama histórico do surgimento das
+                    instituições penais modernas.
+                </p>
+                <p>
+                    Em seguida, abordaremos os diferentes modelos de
+                    organização prisional adotados em outros países e
+                    exploraremos como o sistema prisional brasileiro está
+                    organizado em termos de estrutura, filosofia e
+                    objetivos, destacando os tipos de pena existentes, os
+                    regimes de cumprimento e as principais características
+                    da população privada de liberdade brasileira.
+                </p>
+                <p>
+                    Apresentaremos como se dá a gestão do sistema, os
+                    diferentes tipos de estabelecimento penal existentes,
+                    além de aspectos relacionados à estrutura física (como
+                    os projetos arquitetônicos e padrões de segurança), à
+                    estrutura jurídica voltada às pessoas privadas de
+                    liberdade e às classificações adotadas para os
+                    estabelecimentos penais brasileiros.
+                </p>
+                <p>
+                    Por fim, discutiremos o direito à saúde nas instituições
+                    penais e os desafios enfrentados pelo sistema prisional
+                    e apresentaremos uma experiência exitosa brasileira, que
+                    oferece caminhos possíveis para a efetivação do acesso à
+                    saúde no sistema prisional.
+                </p>
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    Objetivos de Aprendizagem da Unidade
+                </h2>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                            <p class="text-center">
+                                Conhecer os principais modelos de
+                                organização prisional no mundo;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                            <p class="text-center">
+                                Conhecer a história do sistema prisional no
+                                Brasil;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                            <p class="text-center">
+                                Especificar o modelo adotado em território
+                                brasileiro;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Identificar os tipos de estabelecimento
+                                penal os tipos de gestão adotados e as
+                                estruturas físicas e jurídicas voltadas às
+                                pessoas privadas de liberdade;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200 h-full">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                            <p class="text-center">
+                                Apontar as características da população
+                                privada de liberdade brasileira;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-0 py-3 md:px-3">
+                        <div
+                            class="rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200 h-full">
+                            <span
+                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">06</span>
+                            <p class="text-center">
+                                Reconhecer a importância da garantia do
+                                direito à saúde dessa população.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 md:px-3">
+                    <p class="bg-gray-600 font-bold text-xl md:text-2xl p-5 rounded-md text-white">
+                        Carga Horária de Estudo: 5 horas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="1.1" class="w-full max-w-[800px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.1 Breve história do sistema prisional no mundo e no Brasil
+            </h2>
+            <p>
+                Para entender como surgiram as instituições penais modernas,
+                precisamos compreender como o Estado passou a ser
+                responsável pela execução das penas criminais e como essas
+                penas foram mudando ao longo do tempo..
+            </p>
+            <p>
+                Você sabia que a expressão “olho por olho, dente por dente”,
+                que às vezes ouvimos em conversas do dia a dia, tem origem
+                em uma antiga lei chamada Lei de Talião? Pois é, essa lei
+                foi utilizada por muitos povos antigos, como é o caso dos
+                babilônios e hebreus. O princípio dessa lei era simples: a
+                punição deveria ser proporcional ao crime cometido (Muraro,
+                2017). Se alguém fizesse algo de ruim para outra pessoa, a
+                punição seria equivalente a esse ato.
+            </p>
+            <p>
+                Essa lei baseava-se na ideia de vingança privada, onde a
+                vítima era responsável por aplicar a justiça, ou seja, era
+                ela quem decidia a punição. Não havia intervenção do Estado
+                nesse processo.
+            </p>
+            <p>
+                Com o tempo, toda a lógica de punição foi mudando, mas foi
+                só na Revolução Industrial que as bases do sistema prisional
+                moderno foram estabelecidas. Muita gente saiu do campo e foi
+                para as cidades, o que causou superlotação urbana e falta de
+                empregos. O aumento da pobreza e, consequentemente, dos
+                pequenos crimes levou o Estado a criar instituições para
+                controlar a população, como as primeiras casas de correição,
+                que são os antecessores das instituições penais como as
+                conhecemos hoje. Nessas casas, o objetivo era reformar as
+                pessoas por meio do trabalho, buscando reintegrá-las à
+                sociedade de maneira produtiva (Muraro, 2017).
+            </p>
+        </div>
+
+        <div id="timeline" class="bg-gray-100 py-10">
+            <div class="timeline max-w-[800px] px-5 mx-auto flex flex-col gap-10 md:gap-20">
+                <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <h2 class="text-blue-500 font-bold mb-5 text-2xl">
+                        <i> Estados Unidos </i>
+                    </h2>
+                    <p>
+                        Nos Estados Unidos, a origem das instituições penais
+                        modernas também teve forte influência do racismo.
+                        Mesmo após a abolição da escravidão, o regime de
+                        segregação permanecia inalterado e pessoas negras
+                        eram legalmente consideradas de segunda classe,
+                        ocasionando a restrição ou a completa negação de
+                        direitos a essas pessoas. O regulamento das
+                        primeiras prisões nos Estados Unidos mantinha
+                        características intrínsecas do período escravocrata,
+                        como é o exemplo da obrigação de trabalhar por
+                        longos períodos e a dependência de outras pessoas
+                        para o fornecimento de comida e abrigo (Davis,
+                        2018).
+                    </p>
+                </div>
+                <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <h2 class="text-blue-500 font-bold mb-5 text-2xl">
+                        <i> Brasil </i>
+                    </h2>
+                    <p class="font-bold">
+                        Colonização até a Constituição de 1824
+                    </p>
+                    <p>
+                        Já no Brasil, da colonização até a Constituição de
+                        1824, as leis eram baseadas nas Ordenações
+                        portuguesas, que aplicavam penas severas, como
+                        tortura e morte. Pessoas escravizadas eram julgadas
+                        e punidas diretamente por seus senhores. Com a
+                        Independência e a Constituição de 1824, começou-se a
+                        proibir penas cruéis, mas, mesmo com a criação das
+                        prisões, a lógica de punição de pessoas escravizadas
+                        se manteve, acentuando a diferenciação da punição
+                        entre as pessoas negras escravizadas e não
+                        escravizadas.
+                    </p>
+                </div>
+                <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <h2 class="text-blue-500 font-bold mb-5 text-2xl">
+                        <i> Brasil </i>
+                    </h2>
+                    <p class="font-bold">Código Criminal de 1830</p>
+                    <p>
+                        Depois, o Código Criminal de 1830 introduziu a pena
+                        de privação de liberdade, marcando a transição para
+                        o atual modelo prisional. A partir da Proclamação da
+                        República (1889), novos códigos penais foram
+                        criados.
+                    </p>
+                </div>
+                <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <h2 class="text-blue-500 font-bold mb-5 text-2xl">
+                        <i> Brasil </i>
+                    </h2>
+                    <p class="font-bold">
+                        Código Penal de 1940 e Código Penal de 1969
+                    </p>
+                    <p>
+                        O atual Código Penal, de 1940, eliminou a pena de
+                        morte e introduziu a progressão da pena. Durante a
+                        Ditadura Militar (1964-1985), no entanto, o Código
+                        Penal de 1969 voltou a prever penas de prisão
+                        perpétua e de morte, mas, com a redemocratização,
+                        essas medidas foram revistas.
+                    </p>
+                </div>
+                <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <h2 class="text-blue-500 font-bold mb-5 text-2xl">
+                        <i> Brasil </i>
+                    </h2>
+                    <p class="font-bold">Lei de Execução Penal de 1984</p>
+                    <p>
+                        Em 1984, foi aprovada a Lei de Execução Penal, que
+                        organiza e determina como as penas devem ser
+                        aplicadas, respeitando os direitos das pessoas
+                        privadas de liberdade e fortalecendo o papel do
+                        Estado nesse processo (Muraro, 2017).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="1.2" class="w-full max-w-[800px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.2 Modelos de organização prisional no mundo
+            </h2>
+            <p>
+                Vamos conversar um pouco sobre os modelos de organização
+                prisional no mundo? Para entender como eles funcionam hoje,
+                é essencial compreender por que estamos aprisionando tantas
+                pessoas e quais fatores levaram ao aumento expressivo no
+                número de pessoas privadas de liberdade.
+            </p>
+            <p>
+                A partir da década de 1970, houve um crescimento
+                significativo nas taxas de aprisionamento em diversos
+                países. Mas por quê? Segundo Pavarini (2006
+                <i>apud</i> Muraro, 2017), esse aumento aconteceu devido a
+                uma combinação de fatores, como: a crise do Estado de
+                Bem-Estar Social; o crescimento da criminalidade entre as
+                décadas de 1970 e 1980; a criminalização das drogas; e o
+                aumento da sensação de insegurança social, amplificada pelos
+                meios de comunicação de massa. Mas vamos por partes. A
+                seguir trataremos brevemente de cada um desses pontos.
+            </p>
+            <p>
+                A ideia de Estado de Bem-Estar Social foi criada pelos
+                ingleses em 1945, logo após a Segunda Guerra Mundial, e
+                visava proteger os cidadãos em momentos de vulnerabilidade.
+                Na década de 1960, uma crise econômica originada por
+                conflitos relacionados ao modelo de Estado de Bem-Estar
+                Social fez com que muitas pessoas que antes eram assistidas
+                financeiramente pelo governo passassem a não receber mais
+                essa ajuda, e isso levou a um aumento da criminalidade nas
+                décadas seguintes.
+            </p>
+            <p>
+                Enquanto isso, nos Estados Unidos, o uso de drogas começou a
+                crescer, e tanto o uso como o tráfico de drogas passaram a
+                ser caracterizados como responsáveis pelo aumento da
+                criminalidade (National Research Council, 2014). Nesse
+                contexto, a Lei Antidrogas, criada em 1986, durante o
+                governo Reagan, gerou uma política penal desigual, que punia
+                mais severamente o uso e o porte de crack do que de outras
+                drogas. O problema era: o crack era muito mais barato do que
+                outras drogas e, por isso, era mais consumido por pessoas
+                pobres e minorias raciais, o que acabou criando uma situação
+                de desigualdade social mais aprofundada.
+            </p>
+            <p>
+                De acordo com Pavarini (2006 <i>apud</i> Muraro, 2017),
+                outro fator que contribui para o aumento das taxas de
+                aprisionamento é o aumento da sensação de insegurança
+                social, amplificada pelos meios de comunicação de massa, que
+                está ligada ao fenômeno do neoliberalismo, em que os
+                cidadãos excluídos pelo mercado de trabalho são vistos como
+                um problema a ser “neutralizado”, levando à criminalização
+                da pobreza.
+            </p>
+            <p>
+                Esse modelo penal ampliou a repressão e influenciou outros
+                países, inclusive o Brasil. Por aqui, também começamos a ver
+                um aprisionamento em massa, principalmente de pessoas que
+                carregavam marcadores sociais de raça, gênero e classe. A
+                população privada de liberdade não parou de crescer e
+                aumentou consideravelmente no Brasil nas últimas décadas,
+                sobretudo a partir da promulgação da Lei nº 11.343, de 23 de
+                agosto de 2006, a Lei Antidrogas brasileira (Brasil, 2006),
+                que intensificou a criminalização do tráfico de drogas e,
+                por consequência, o aprisionamento (Campos, 2018). Para se
+                ter uma ideia, entre os anos de 2000 e 2015, enquanto a
+                população mundial cresceu em média 18% ao ano, a população
+                privada de liberdade aumentou 20% (Muraro, 2017). O número
+                de pessoas privadas de liberdade cresceu mais rápido que o
+                número de pessoas no mundo!
+            </p>
+            <p>
+                Esses dados demonstram quanto as políticas punitivas
+                adotadas ao redor do mundo têm sido repressivas. Em 2025, de
+                acordo com a base de dados World Prison Brief (2025), os
+                países com o maior número de pessoas em cumprimento de pena
+                são Estados Unidos, China, Brasil, Índia e Rússia, conforma
+                Figura 1.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold">
+                <i class="fa-solid fa-image text-[var(--modulo1-primary)]"></i>
+                Figura Países com maior número de pessoas em cumprimento de
+                pena
+            </h3>
+            <div>
+                <div id="mapa" class="relative">
+                    <img class="w-full h-full rounded-xl" src="./images/mapa-mundi.jpg" loading="lazy"
+                        alt="Mapa-múndi monocromático (branco/cinza) que mostra os continentes em alto-relevo com efeito de sombra"
+                        title="Mapa-múndi monocromático (branco/cinza) que mostra os continentes em alto-relevo com efeito de sombra" />
+                    <button id="tooltip_1" class="botao-flutuante" style="top: 39%; left: 21%">
+                        +
+                    </button>
+                    <button id="tooltip_2" class="botao-flutuante" style="top: 67%; left: 31%">
+                        +
+                    </button>
+                    <button id="tooltip_3" class="botao-flutuante" style="top: 20%; right: 30%">
+                        +
+                    </button>
+                    <button id="tooltip_4" class="botao-flutuante" style="top: 31%; right: 22%">
+                        +
+                    </button>
+                    <button id="tooltip_5" class="botao-flutuante" style="top: 45%; right: 31%">
+                        +
+                    </button>
+                </div>
+                <p class="mt-2">
+                    <small>Fonte: World Prison Brief (2025).</small>
+                </p>
+            </div>
+            <p>
+                Enquanto muitos países, especialmente nas Américas,
+                adotaram, ao longo das últimas décadas, políticas cada vez
+                mais punitivas e, com isso, aumentaram o número de pessoas
+                presas, alguns países da Europa seguiram por um caminho
+                diferente, o de adotar políticas menos repressivas, que
+                ajudaram a reduzir as taxas de aprisionamento em 21%
+                (Muraro, 2017). De acordo com Muraro (2017), alguns dos
+                países com as menores taxas de aprisionamento são:
+            </p>
+            <div>
+                <p class="text-center">
+                    <small>Clique para interagir</small>
+                </p>
+                <div class="flex flex-wrap justify-center">
+                    <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="toggleCard(this, 'cardInner1')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-56">
+                                <div id="cardInner1" class="card-inner preserve-3d w-full h-full relative">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Islândia
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <h3 class="text-lg font-semibold mb-2">
+                                            Islândia
+                                        </h3>
+                                        <p class="text-sm">
+                                            45 pessoas presas para cada 100
+                                            mil habitantes;
+                                        </p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="toggleCard(this, 'cardInner2')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-56">
+                                <div id="cardInner2" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Suécia
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <h3 class="text-lg font-semibold mb-2">
+                                            Suécia
+                                        </h3>
+                                        <p class="text-sm">
+                                            55 para cada 100 mil;
+                                        </p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="toggleCard(this, 'cardInner3')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-56">
+                                <div id="cardInner3" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Finlândia
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <h3 class="text-lg font-semibold mb-2">
+                                            Finlândia
+                                        </h3>
+                                        <p class="text-sm">
+                                            57 para cada 100 mil;
+                                        </p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="toggleCard(this, 'cardInner4')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-56">
+                                <div id="cardInner4" class="card-inner preserve-3d w-full h-full relative">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Dinamarca
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <h3 class="text-lg font-semibold mb-2">
+                                            Dinamarca
+                                        </h3>
+                                        <p class="text-sm">
+                                            61 para cada 100 mil;
+                                        </p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="toggleCard(this, 'cardInner5')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-56">
+                                <div id="cardInner5" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Noruega
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <h3 class="text-lg font-semibold mb-2">
+                                            Noruega
+                                        </h3>
+                                        <p class="text-sm">
+                                            71 para cada 100 mil.
+                                        </p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                O que será que explica esse cenário? Será que esses países
+                têm menores taxas de criminalidade ou lidam de forma
+                diferente com esse assunto? De acordo com Zaffaroni (2013
+                <i>apud</i> Muraro 2017, p. 59), o número de pessoas presas
+                em um país não está relacionado apenas à quantidade de
+                crimes cometidos, mas principalmente às escolhas políticas e
+                culturais daquele lugar.
+            </p>
+        </div>
+
+        <div id="1.3" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[800px] px-5 mx-auto flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                    1.3 Organização (estrutura, filosofia e objetivos) do
+                    sistema prisional brasileiro
+                </h2>
+                <p>
+                    Para compreender como funciona a aplicação de penas no
+                    Brasil em 2025, é importante recapitular que essa é uma
+                    atribuição do Estado, que a exerce por meio de uma
+                    estrutura e com base em uma filosofia e objetivos
+                    próprios. Antes da aplicação de uma pena, é necessário
+                    que haja um processo judicial, no qual o Estado deve
+                    apurar os fatos por meio de um juiz imparcial e
+                    competente, para só então aplicar a pena, caso seja
+                    confirmada alguma ilicitude (Brasil, 1984).
+                </p>
+                <p>
+                    Você já ouviu falar do Código Penal (Decreto-Lei nº
+                    2.848, de 7 de dezembro de 1940) (Brasil, 1940) e da Lei
+                    de Execução Penal (Lei nº 7.210, de 11 de julho de 1984)
+                    (Brasil, 1984)? Elas são as principais normas que tratam
+                    do direito penal no Brasil. A principal diferença entre
+                    elas é que o Código Penal define as penalidades,
+                    enquanto a Lei de Execução Penal regulamenta como essas
+                    penas devem ser cumpridas.
+                </p>
+                <p>
+                    De acordo com o Código Penal Brasileiro, as penas podem
+                    ser de três tipos: privativas de liberdade, restritivas
+                    de direitos ou multa. O sistema de cumprimento de penas
+                    é progressivo e abrange três regimes: fechado,
+                    semiaberto e aberto (Brasil, 1940).
+                </p>
+                <p>
+                    A pena privativa de liberdade é dividida em duas
+                    categorias: reclusão e detenção. A reclusão é uma pena
+                    mais grave, aplicada em crimes mais sérios, e pode ser
+                    cumprida em regime fechado, semiaberto ou aberto,
+                    dependendo do caso. O regime de reclusão é executado de
+                    forma progressiva, o que significa que a pena pode ser
+                    atenuada ao longo do tempo, se forem verificados bom
+                    comportamento da pessoa e o cumprimento de certos
+                    critérios (Brasil, 1940). Já a detenção é uma pena mais
+                    leve, aplicada em crimes menos graves, cumprida,
+                    geralmente, em regime semiaberto ou aberto. Os regimes
+                    funcionam assim (Brasil, 1940):
+                </p>
+                <div>
+                    <p class="text-center">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div class="flex flex-wrap justify-center">
+                        <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="toggleCard(this, 'cardFechado')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="cardFechado" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Fechado
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-sm">
+                                                A pessoa fica em
+                                                estabelecimentos de
+                                                segurança máxima ou média,
+                                                com restrição total de
+                                                liberdade;
+                                            </p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="toggleCard(this, 'CardSemiAberto')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="CardSemiAberto" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Semiaberto
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-sm">
+                                                A pessoa pode sair para
+                                                trabalhar durante o dia, mas
+                                                precisa retornar às colônias
+                                                agrícolas, industriais ou
+                                                estabelecimentos similares
+                                                para passar a noite;
+                                            </p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="toggleCard(this, 'cardAberto')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="cardAberto" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Aberto
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-sm">
+                                                A pessoa vive em liberdade,
+                                                mas precisa se apresentar
+                                                periodicamente à Justiça.
+                                            </p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    As penas restritivas de direitos, por sua vez, são
+                    diferentes e, em vez de impor a privação de liberdade a
+                    alguém, o juiz pode aplicar uma das seguintes medidas:
+                    prestação pecuniária (pagamento de uma quantia em
+                    dinheiro à vítima); perda de bens e valores (em favor do
+                    Fundo Penitenciário Nacional); limitação de fim de
+                    semana (obrigação de permanecer por cinco horas diárias
+                    aos sábados e domingos em estabelecimento penal);
+                    prestação de serviços à comunidade ou a entidades
+                    públicas, aplicável às condenações superiores a seis
+                    meses de privação da liberdade; e interdição temporária
+                    de direitos, como a proibição do exercício de certos
+                    cargos ou profissões (Brasil, 1940). Além disso, a pena
+                    de multa consiste no pagamento da quantia fixada na
+                    sentença ao Fundo Penitenciário Nacional.
+                </p>
+                <p>
+                    A principal norma reguladora desse assunto é a Lei de
+                    Execução Penal. Ela é baseada na teoria da prevenção
+                    especial positiva, que defende que a pena tem o objetivo
+                    de melhorar o indivíduo a fim de possibilitar a sua
+                    ressocialização, reeducação e reinserção na sociedade
+                    (Fernandes; Matos, 2016). Para que a ressocialização
+                    ocorra de forma efetiva, a Lei de Execução Penal
+                    (Brasil, 1984) estabelece parâmetros que incluem:
+                </p>
+                <div>
+                    <p class="text-center pb-3">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                        <div class="border-b border-blue-400">
+                            <button id="item1" onclick="toggleAccordion('item1', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Classificação</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3">
+                                <p class="p-5">
+                                    É feita com base na personalidade e nos
+                                    antecedentes da pessoa e é realizada
+                                    pela Comissão Técnica de Classificação,
+                                    composta por diversos profissionais como
+                                    médico psiquiatra, psicólogo e
+                                    assistente social;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-b border-blue-400">
+                            <button id="item2" onclick="toggleAccordion('item2', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Assistência</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3">
+                                <p class="p-5">
+                                    É dever do Estado fornecer assistência
+                                    material, à saúde, jurídica,
+                                    educacional, social e religiosa, com o
+                                    intuito de prevenir novos crimes e
+                                    facilitar o retorno da pessoa à
+                                    convivência social;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-b border-blue-400">
+                            <button id="item3" onclick="toggleAccordion('item3', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Trabalho</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3">
+                                <p class="p-5">
+                                    O acesso ao trabalho é considerado um
+                                    dos pilares da ressocialização, com a
+                                    finalidade educativa e produtiva; e
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-blue-400">
+                            <button id="item4" onclick="toggleAccordion('item4', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Deveres, direitos e disciplina</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="p-5">
+                                    Um conjunto de normas que funcionam como
+                                    um código de postura, que orienta a
+                                    forma como as pessoas em cumprimento de
+                                    pena devem se comportar no sistema penal
+                                    (Brasil, 1984 apud Muraro, 2017).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="1.4" class="w-full max-w-[800px] mx-auto px-5 flex flex-col gap-7 py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.4 Caracterização da população privada de liberdade
+                brasileira
+            </h2>
+            <p>
+                No segundo semestre de 2024, a população privada de
+                liberdade no Brasil era de 909.594 pessoas (Brasil, 2025a),
+                das quais 674.543 cumpriam pena em estabelecimentos penais
+                físicos e 235.051, em prisão domiciliar. Esse número tem
+                crescido consideravelmente ao longo dos anos. A Figura 2
+                ilustra esse crescimento desde 2016.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold">
+                <i class="fa-regular fa-image text-[var(--modulo1-primary)]"></i>
+                Figura 2 - Crescimento da população privada de liberdade no
+                Brasil, 2016/2-2024/2
+            </h3>
+            <div class="w-full flex flex-col gap-3">
+                <img class="zoomable rounded-xl shadow-md" src="./images/grafico-pag8-word.jpg" loading="lazy"
+                    title="População carcerária cresceu de 701.674 (2016/2) para 909.067 (2024/2), com alta após 2020. O aumento total é de cerca de 207 mil."
+                    alt="População carcerária cresceu de 701.674 (2016/2) para 909.067 (2024/2), com alta após 2020. O aumento total é de cerca de 207 mil."
+                    onclick="openModal('modalFoto2')" />
+                <small>Fonte: Brasil (2025a).</small>
+                <hr />
+            </div>
+
+            <div id="modalFoto2" class="modal-overlay hidden" onclick="closeOnOverlay(event, this)">
+                <div class="modal-content">
+                    <div class="modal-body w-full">
+                        <img class="w-full h-full object-contain rounded-xl shadow-md"
+                            src="./images/grafico-pag8-word.jpg" loading="lazy" alt="Gráfico população" />
+                    </div>
+
+                    <div class="modal-footer">
+                        <button onclick="closeModal('modalFoto2')" class="btn bg-blue-200 text-black">
+                            FECHAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Com relação ao perfil da população privada de liberdade, das
+                909.594 pessoas, apenas 53.880 (5,9%) são mulheres, enquanto
+                855.714 (94,1%) são homens. A faixa etária predominante em
+                ambos os sexos está entre 35 e 45 anos. Há quase 22.000
+                pessoas privadas de liberdade com mais de 60 anos, das quais
+                4.618 têm mais de 70 anos.
+            </p>
+            <p>
+                No que diz respeito à cor, a predominante entre as pessoas
+                privadas de liberdade no Brasil é a parda, seguida pelas
+                cores branca e preta. Já com relação à população indígena,
+                existem pouco mais de 2.000 indígenas privados de liberdade
+                (Brasil, 2025a).
+            </p>
+            <p>
+                Há pouco mais de 9.000 pessoas privadas de liberdade com
+                algum tipo de deficiência, das quais 513 são cadeirantes. Na
+                população masculina, a deficiência física é a mais
+                prevalente. Já na população feminina, a mais prevalente é a
+                deficiência intelectual (Brasil, 2025a).
+            </p>
+            <p>
+                Dados sobre a orientação sexual das pessoas privadas de
+                liberdade são escassos, já que nem todos os estados e
+                estabelecimentos penais têm essas informações de forma
+                detalhada. De acordo com a Secretaria Nacional de Políticas
+                Penais (SENAPPEN), que realizou uma coleta de dados em 2022
+                para reunir informações sobre a população privada de
+                liberdade de Lésbicas, Gays, Bissexuais, Travestis,
+                Transexuais e Intersexos (LGBTI), no total, 12.356 pessoas
+                privadas de liberdade se autodeclararam LGBTI (Brasil,
+                2023a).
+            </p>
+            <p>
+                No que diz respeito à escolaridade, quando se analisa o
+                perfil educacional das pessoas privadas de liberdade, é
+                possível perceber que tanto homens quanto mulheres não
+                concluíram o ensino fundamental, totalizando 350.037
+                pessoas. Esse dado é seguido de um número significativo de
+                pessoas que também não concluíram o ensino médio (139.982).
+                Ao todo, 490.019 pessoas em cumprimento de pena no Brasil
+                não concluíram o ensino fundamental ou o ensino médio
+                (Brasil, 2025a). Essa realidade já foi denunciada por
+                estudos internacionais, como o relatório de tendências
+                prisionais globais (Penal Reform International, 2015).
+                Segundo o relatório, a grande maioria das pessoas privadas
+                de liberdade ao redor do mundo provém das camadas mais
+                pobres da sociedade, que têm pouco acesso ao sistema de
+                ensino formal. A Figura 3 ilustra a distribuição das pessoas
+                privadas de liberdade por grau de instrução.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold">
+                <i class="fa-solid fa-image text-[var(--modulo1-primary)]"></i>
+                Figura 3 - Quantidade de pessoas privadas de liberdade no
+                Brasil por grau de instrução, 2024/2
+            </h3>
+            <div class="w-full flex flex-col gap-3">
+                <img class="zoomable rounded-xl shadow-md" src="./images/grafico-pag9-word.jpg" loading="lazy"
+                    title="Gráfico de barras sobre escolaridade de presos. O maior grupo é Ensino Fundamental Incompleto (295.765). Superior Completo é de 5.887."
+                    alt="Gráfico de barras sobre escolaridade de presos. O maior grupo é Ensino Fundamental Incompleto (295.765). Superior Completo é de 5.887."
+                    onclick="openModal('modalFoto3')" />
+                <small>Fonte: Brasil (2025a).</small>
+                <hr />
+            </div>
+
+            <div id="modalFoto3" class="modal-overlay hidden" onclick="closeOnOverlay(event, this)">
+                <div class="modal-content">
+                    <div class="modal-body w-full">
+                        <img class="w-full h-full object-contain rounded-xl shadow-md"
+                            src="./images/grafico-pag9-word.jpg" loading="lazy" alt="Gráfico população" />
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="closeModal('modalFoto3')" class="btn bg-blue-200 text-black">
+                            FECHAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Outro dado que chama bastante a atenção é o déficit de vagas
+                nos estabelecimentos prisionais de regime fechado. No
+                segundo semestre de 2024, a capacidade do sistema prisional
+                era de 495.419 vagas pessoas para o cumprimento de penas em
+                regime fechado. No entanto, havia 674.543 pessoas privadas
+                de liberdade em regime fechado no país, o que caracteriza
+                superlotação. Isso significa que há um excesso de quase 200
+                mil pessoas no sistema, portanto a taxa de ocupação é de
+                136,15% (Brasil, 2025a).
+            </p>
+            <p>
+                A instituição penal, por si só, é um ambiente desafiador
+                para a prestação de cuidados em saúde. Imagine esse cenário
+                sendo agravado por celas superlotadas, pouca ventilação,
+                falta de higiene etc. Não é difícil concluir que os
+                estabelecimentos prisionais, frequentemente insalubres,
+                acabam contribuindo ainda mais para o adoecimento das
+                pessoas.
+            </p>
+            <p>
+                E qual é o resultado disso? As taxas de infecção por HIV,
+                hepatite B e C e tuberculose entre pessoas privadas de
+                liberdade são significativamente maiores do que na população
+                em geral (World Health Organization; United Nations Office
+                On Drugs And Crime, 2013), o que demonstra a necessidade de
+                se efetivar o acesso a serviços de saúde com alta capacidade
+                resolutiva em ambientes prisionais.
+            </p>
+        </div>
+
+        <div id="1.5" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[800px] px-5 mx-auto flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                    1.5 Gestão do sistema prisional (tipos de
+                    estabelecimento penal) brasileiro
+                </h2>
+                <p>
+                    Um tema complexo e muito relevante para a garantia dos
+                    direitos humanos e efetividade das políticas de
+                    segurança pública é a gestão do sistema prisional. Você
+                    conhece o papel e a responsabilidade das esferas de
+                    governo nessa gestão? A gestão do sistema prisional
+                    brasileiro é dividida em duas esferas: federal e
+                    estadual. Cada uma delas desempenha um papel diferente
+                    na administração dos estabelecimentos penais.
+                </p>
+                <p>
+                    No âmbito federal, a administração desses
+                    estabelecimentos é responsabilidade do Ministério da
+                    Justiça e Segurança Pública. Estão sob sua
+                    responsabilidade as chamadas Penitenciárias Federais,
+                    que abrigam pessoas envolvidas em questões de segurança
+                    pública. Já os sistemas prisionais estaduais e do
+                    Distrito Federal são administrados pelos respectivos
+                    governos por meio das Secretarias de Administração
+                    Penitenciária ou órgão congênere.
+                </p>
+                <p>
+                    Você deve estar se perguntando: quais são os tipos de
+                    estabelecimento penal e por que são divididos assim?
+                    Eles são organizados de acordo com o tipo de regime
+                    (fechado, semiaberto e aberto) e com a situação jurídica
+                    da pessoa, ou seja, se ela já foi condenada ou ainda
+                    está aguardando julgamento. No Brasil, existem seis
+                    tipos de estabelecimento penal (Brasil, 1984):
+                </p>
+                <div class="flex flex-col gap-5 my-5">
+                    <div class="flex">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">1</span>
+                        <p class="px-2 md:px-3">Penitenciária;</p>
+                    </div>
+                    <div class="flex">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">2</span>
+                        <p class="px-2 md:px-3">
+                            Colônia Agrícola, Industrial ou Similar;
+                        </p>
+                    </div>
+                    <div class="flex">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">3</span>
+                        <p class="px-2 md:px-3">Casa do Albergado;</p>
+                    </div>
+                    <div class="flex">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">4</span>
+                        <p class="px-2 md:px-3">Centro de Observação;</p>
+                    </div>
+                    <div class="flex">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">5</span>
+                        <p class="px-2 md:px-3">
+                            Hospital de Custódia e Tratamento Psiquiátrico;
+                        </p>
+                    </div>
+                    <div class="flex">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">6</span>
+                        <p class="px-2 md:px-3">Cadeia Pública.</p>
+                    </div>
+                </div>
+                <p>
+                    As penitenciárias são o tipo mais conhecido de
+                    estabelecimento penal. São destinadas ao cumprimento de
+                    pena em regime fechado, no qual a pessoa condenada deve
+                    ser alojada em cela.
+                </p>
+                <p>
+                    As colônias agrícolas, industriais ou similares são
+                    destinadas ao cumprimento de pena em regime semiaberto.
+                    Nesse regime, a pessoa cumpre pena por um período de
+                    quatro a oito anos, com possibilidade de progressão do
+                    regime aberto ou regressão ao regime fechado.
+                </p>
+                <p>
+                    As casas do albergado são voltadas para o cumprimento de
+                    pena em regime aberto ou para a limitação de fim de
+                    semana. No entanto, a falta desses locais em muitos
+                    estados brasileiros resulta na substituição da pena por
+                    prisão domiciliar, que frequentemente carece de
+                    fiscalização (Muraro, 2017).
+                </p>
+                <p>
+                    Já a função dos centros de observação é realizar exames
+                    criminológicos e outros testes, cujos resultados são
+                    encaminhados à Comissão Técnica de Classificação. O
+                    objetivo desses exames é classificar a pessoa com base
+                    em sua personalidade, no crime cometido e na
+                    reincidência, garantindo sua alocação em estabelecimento
+                    adequado.
+                </p>
+                <p>
+                    Os hospitais de custódia e tratamento psiquiátrico
+                    acolhem pessoas consideradas inimputáveis ou
+                    semi-inimputáveis, ou seja, aquelas que não podem ser
+                    responsabilizadas totalmente por seus atos (Brasil,
+                    1984) e para as quais é aplicada a chamada medida de
+                    segurança. Em 2023, uma resolução importante foi
+                    publicada: a Resolução nº 487, de 15 de fevereiro de
+                    2023, do Conselho Nacional de Justiça, que estabelece
+                    diretrizes para a implementação da Política
+                    Antimanicomial no Poder Judiciário. O objetivo foi
+                    revisar processos de pessoas internadas em hospitais de
+                    custódia e estabelecimentos penais ou similares, com
+                    foco na adoção de ações e estratégias que promovessem o
+                    cuidado e a inclusão social das pessoas em sofrimento
+                    psíquico, a chamada reabilitação psicossocial, e na
+                    progressiva extinção desse tipo de estabelecimento penal
+                    (Conselho Nacional de Justiça, 2023).
+                </p>
+                <p>
+                    Por último, as cadeias públicas são estabelecimentos
+                    destinados às pessoas em prisão provisória e àquelas que
+                    ainda não foram condenadas, mas que tiveram prisão
+                    preventiva ou temporária decretada (Brasil, 1984).
+                </p>
+            </div>
+        </div>
+
+        <div id="exercicio" class="w-full bg-blue-200 px-5 py-10">
+            <div class="max-w-[800px] px-5 mx-auto flex flex-col gap-7">
+                <div>
+                    <h3 class="text-xl md:text-2xl font-bold">
+                        Vamos praticar?
+                    </h3>
+                    <p>
+                        Caro estudante-trabalhador, agora que você já sabe
+                        os principais tipos de estabelecimento penal
+                        existentes no Brasil, é hora de fixar esse
+                        conhecimento de forma prática e rápida!
+                    </p>
+                    <p>
+                        Preparamos um exercício especial para que você possa
+                        relacionar cada tipo de estabelecimento com sua
+                        principal função. Essa atividade vai te ajudar a
+                        consolidar o conteúdo e a entender melhor como
+                        funciona a organização do sistema prisional.
+                    </p>
+                </div>
+                <div class="quiz-container p-3 md:rounded-xl shadow-xl bg-white">
+                    <h3 class="text-lg md:text-xl font-bold p-2">
+                        Vamos lá? Relacione corretamente o tipo de
+                        estabelecimento penal com sua função principal.
+                    </h3>
+                    <div id="drag-drop-area" class="mt-3 flex flex-wrap justify-between">
+                        <div class="w-full md:w-1/3 termos-coluna p-2">
+                            <div id="termos-lista" class="flex flex-wrap md:flex-col gap-3">
+                                <div class="termo-item text-xs bg-blue-200 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                                    data-match="c">
+                                    Casa do Albergado
+                                </div>
+                                <div class="termo-item text-xs bg-blue-200 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                                    data-match="b">
+                                    Colônia Agrícola, Industrial ou Similar
+                                </div>
+                                <div class="termo-item text-xs bg-blue-200 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                                    data-match="e">
+                                    Hostpital de custódia e tratamento
+                                    psiquiátrico
+                                </div>
+                                <div class="termo-item text-xs bg-blue-200 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                                    data-match="d">
+                                    Centro de Observação
+                                </div>
+                                <div class="termo-item text-xs bg-blue-200 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                                    data-match="a">
+                                    Penitenciária
+                                </div>
+                                <div class="termo-item text-xs bg-blue-200 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                                    data-match="f">
+                                    Cadeia Pública
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/3 p-2 definicoes-coluna bg-gray-200 rounded-lg">
+                            <div class="dropzone-container mb-2" data-id="a">
+                                <span class="mb-1 text-sm">Cumprimento de pensa em regime
+                                    fechado</span>
+                                <div id="def-a"
+                                    class="mt-1 dropzone bg-white p-2 min-h-12 border border-gray-400 rounded-md"></div>
+                            </div>
+                            <div class="dropzone-container mb-2" data-id="b">
+                                <span class="mb-1 text-sm">Cumprimento de pena em regime
+                                    semiaberto com trabalho</span>
+                                <div id="def-b"
+                                    class="mt-1 dropzone bg-white p-2 min-h-12 border border-gray-400 rounded-md"></div>
+                            </div>
+                            <div class="dropzone-container mb-2" data-id="c">
+                                <span class="mb-1 text-sm">Cumprimento de pena em regime
+                                    aberto</span>
+                                <div id="def-c"
+                                    class="mt-1 dropzone bg-white p-2 min-h-12 border border-gray-400 rounded-md"></div>
+                            </div>
+                            <div class="dropzone-container mb-2" data-id="d">
+                                <span class="mb-1 text-sm">Avaliação para classificação
+                                    penal</span>
+                                <div id="def-d"
+                                    class="mt-1 dropzone bg-white p-2 min-h-12 border border-gray-400 rounded-md"></div>
+                            </div>
+                            <div class="dropzone-container mb-2" data-id="e">
+                                <span class="mb-1 text-sm">Tratamento de pessoas com transtornos
+                                    mentais infratores</span>
+                                <div id="def-e"
+                                    class="mt-1 dropzone bg-white p-2 min-h-12 border border-gray-400 rounded-md"></div>
+                            </div>
+                            <div class="dropzone-container mb-2" data-id="f">
+                                <span class="mb-1 text-sm">Custódia provisória de presos
+                                    aguardando julgamento</span>
+                                <div id="def-f"
+                                    class="mt-1 dropzone bg-white p-2 min-h-12 border border-gray-400 rounded-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mt-3 justify-between">
+                        <button onclick="verificarRespostas()" class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                            Submeter
+                        </button>
+                        <div id="feedback-final" class="w-full md:w-1/2 text-center text-md rounded-lg font-semibold">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10 w-full max-w-[800px] mx-auto px-5 flex flex-col gap-7 relative">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.6 Estrutura física (projeto arquitetônico) e jurídica
+                voltada às pessoas privadas de liberdade no Brasil
+            </h2>
+            <p>
+                Será que a estrutura física (projeto arquitetônico) dos
+                estabelecimentos voltados às pessoas privadas de liberdade
+                tem alguma relação com o regime de cumprimento da pena? A
+                resposta é sim. Os projetos arquitetônicos e as estruturas
+                físicas dos estabelecimentos penais estão diretamente
+                relacionados ao regime de cumprimento da pena, porque cada
+                regime exige determinadas características arquitetônicas e
+                físicas, como capacidade máxima e grau de segurança. A Lei
+                de Execução Penal (Brasil, 1984) prevê, em seu Art. 88, que
+                a pessoa privada de liberdade deve ser alojada em cela
+                individual com área mínima de seis metros quadrados que
+                contenha dormitório, aparelho sanitário e lavatório para a
+                manutenção da salubridade, considerando fatores como
+                aeração, insolação e condicionamento térmico adequado.
+            </p>
+            <p>
+                Duas resoluções orientam a construção e a segurança dessas
+                unidades: a Resolução nº 9, de 9 de novembro de 2011
+                (Brasil, 2011), e a Resolução nº 16, de 10 de junho de 2021
+                (Brasil, 2021), ambas publicadas pelo Conselho Nacional de
+                Política Criminal e Penitenciária (CNPCP), vinculado ao
+                Ministério da Justiça e Segurança Pública.
+            </p>
+            <p>
+                A Resolução nº 9/2011 estabelece as orientações e
+                recomendações técnicas para a construção de estabelecimentos
+                prisionais. Entre os principais pontos estão: a capacidade
+                dos estabelecimentos, os parâmetros arquitetônicos que devem
+                ser adotados, a localização das instituições penais, as
+                medidas de segurança contra incêndios e as condições de
+                conforto ambiental, como ventilação e iluminação (Brasil,
+                2011). Já a Resolução nº 16/2021 trata da segurança interna
+                dos estabelecimentos penais, proibindo, por exemplo, a
+                instalação de tomadas e pontos de energia dentro e nas
+                proximidades das celas. Essa medida tem como principal
+                objetivo reduzir o uso de aparelhos celulares nos
+                estabelecimentos para limitar a comunicação entre as pessoas
+                privadas de liberdade e o ambiente externo (Brasil, 2021).
+            </p>
+            <div>
+                <button onclick="openModal('modalSaibaMais1')" class="btn bg-blue-800 text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="modalSaibaMais1" class="modal-overlay hidden">
+            <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-header">
+                    <h2 class="font-bold text-3xl text-center">
+                        Saiba mais
+                    </h2>
+                </div>
+
+                <div class="modal-body md flex flex-col gap-4">
+                    <p>
+                        <b>Título:</b>
+                        Manual de Intervenções Ambientais para o Controle da
+                        Tuberculose nas Prisões
+                    </p>
+                    <p>
+                        <b>Autores:</b>
+                        Mauro Santos et al. (2012).
+                    </p>
+                    <p>
+                        <b>Descrição:</b>
+                        em 2012, o projeto Fundo Global Tuberculose -
+                        Brasil, com o apoio dos Ministérios da Justiça e da
+                        Saúde, publicou esse manual.
+                    </p>
+                    <p>
+                        <b>Veja o manual de intervenções:</b>
+                        <a class="hover:underline text-blue-800"
+                            href="./arquivos/manual_intervencoes_ambientais_controle_tuberculose_prisoes.pdf"
+                            target="_blank">Clique aqui</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pb-10 w-full max-w-[800px] mx-auto px-5 flex flex-col gap-7">
+            <p>
+                Já a estrutura jurídica do sistema prisional no Brasil é
+                composta por diversos órgãos responsáveis pela execução
+                penal. Cada um deles tem atribuições específicas, como
+                veremos a seguir, incluindo o Conselho Nacional de Política
+                Criminal e Penitenciária (CNPCP), o Juízo da Execução, o
+                Ministério Público, o Conselho Penitenciário (COPEN), a
+                Secretaria Nacional de Políticas Penais (SENAPPEN), o
+                Patronato Penitenciário, o Conselho da Comunidade e a
+                Defensoria Pública (Brasil, 1984). Além disso, cada estado
+                tem sua Secretaria de Estado de Administração Penitenciária,
+                responsável pela administração das instituições penais em
+                sua região. A seguir, discutiremos de forma mais detalhada
+                as funções de cada um desses órgãos.
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-blue-400">
+                        <button id="item_2_1" onclick="toggleAccordion('item_2_1', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Conselho Nacional de Política Criminal e
+                                Penitenciária (CNPCP)</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                O CNPCP é um órgão vinculado à SENAPPEN do
+                                Ministério da Justiça e Segurança Pública e
+                                tem várias funções importantes, como propor
+                                diretrizes para a política criminal e a
+                                instauração de sindicâncias e procedimentos
+                                administrativos, incluindo a interdição de
+                                estabelecimentos penais (Brasil, 1984).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item_2_2" onclick="toggleAccordion('item_2_2', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Juízo da Execução</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                O Juízo da Execução é o juiz responsável
+                                pela execução da pena, conforme determinado
+                                pela lei de organização judiciária de cada
+                                localidade. Quando este juiz estiver
+                                ausente, ele pode ser substituído pelo juiz
+                                que proferiu a sentença original.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item_2_3" onclick="toggleAccordion('item_2_3', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Ministério Público</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                Ao Ministério Público cabe a defesa da ordem
+                                jurídica, dos interesses individuais e
+                                coletivos e do regime democrático, atuando
+                                na execução penal e exercendo a função de
+                                fiscal da lei (Marcão, 2015
+                                <i>apud</i> Muraro, 2017).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item_2_4" onclick="toggleAccordion('item_2_4', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Conselho Penitenciário (COPEN)</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5">
+                                O COPEN tem a função de fiscalizar a
+                                execução da pena e funciona também como um
+                                órgão consultivo. Cada estado tem um
+                                Conselho Penitenciário próprio.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item_2_5" onclick="toggleAccordion('item_2_5', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Secretaria Nacional de Políticas Penais
+                                (SENAPPEN)</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5">
+                                A SENAPPEN é vinculada ao Ministério da
+                                Justiça e Segurança Pública e tem a
+                                responsabilidade de acompanhar e controlar a
+                                aplicação da Lei de Execução Penal, bem como
+                                implementar as diretrizes da Política
+                                Penitenciária Nacional, estabelecidas, em
+                                grande parte, pelo CNPCP (Brasil, 2023b).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item_2_6" onclick="toggleAccordion('item_2_6', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Patronato Penitenciário</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5">
+                                O Patronato Penitenciário atua na recepção
+                                de pessoas condenadas que cumprem pena em
+                                regime semiaberto ou aberto, pessoas que
+                                estão em liberdade condicional, pessoas em
+                                prisão domiciliar, pessoas que estão com
+                                suspensão condicional da pena ou exercendo
+                                trabalho externo e pessoas que saíram do
+                                sistema prisional. O principal objetivo do
+                                Patronato é promover a ressocialização e a
+                                reintegração da pessoa à família e à
+                                comunidade, com vistas à redução da
+                                reincidência criminal (Brasil, 1984).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item_2_7" onclick="toggleAccordion('item_2_7', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Conselho da Comunidade</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5">
+                                O Conselho da Comunidade deve existir em
+                                cada unidade territorial de justiça e tem a
+                                responsabilidade de visitar mensalmente os
+                                estabelecimentos penais, entrevistar as
+                                pessoas presas, elaborar relatórios mensais
+                                e buscar recursos materiais e humanos para
+                                melhorar a assistência aos presos (Brasil,
+                                1984).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item_2_8" onclick="toggleAccordion('item_2_8', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Defensoria Pública</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5">
+                                A Defensoria Pública atua na defesa das
+                                pessoas privadas de liberdade que não têm
+                                condições financeiras de contratar um
+                                advogado. A assistência oferecida pela
+                                Defensoria pode ser realizada em todos os
+                                graus e instâncias, tanto de forma
+                                individual quanto coletiva. Também atua como
+                                um importante órgão de controle, que age
+                                para garantir o cumprimento da lei e
+                                defender os direitos das pessoas privadas de
+                                liberdade (Brasil, 1984).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="1.7" class="w-full bg-gray-100">
+            <div class="max-w-[800px] px-5 py-10 mx-auto flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                    1.7 Segurança e dinamismo do sistema prisional
+                    brasileiro
+                </h2>
+                <p>
+                    Uma importante classificação no âmbito do sistema
+                    prisional brasileiro é a do grau de segurança das
+                    penitenciárias. Essa classificação é feita pelo
+                    Ministério da Justiça e Segurança Pública e tem três
+                    categorias: Segurança Média, Segurança Máxima e
+                    Segurança Máxima Especial. As penitenciárias de
+                    Segurança Média e de Segurança Máxima contam com celas
+                    individuais e coletivas. As penitenciárias de Segurança
+                    Máxima Especial se diferenciam por serem equipadas
+                    exclusivamente com celas individuais, oferecendo maior
+                    controle e segurança (Barbosa, 2022).
+                </p>
+                <p>
+                    A escolha do nível de segurança leva em consideração o
+                    perfil das pessoas privadas de liberdade que serão
+                    alocadas na penitenciária. Indivíduos que pertencem a
+                    facções criminosas ou que cometeram crimes graves, como
+                    os hediondos, e pessoas cuja segurança pessoal esteja em
+                    risco são alocados em penitenciárias de Segurança
+                    Máxima. Já as pessoas condenadas por crimes de menor
+                    gravidade são encaminhadas às penitenciárias de
+                    Segurança Média, que são compostas, geralmente, por
+                    celas coletivas.
+                </p>
+                <p>
+                    As penitenciárias estaduais são de Segurança Média ou de
+                    Segurança Máxima, enquanto as penitenciárias federais
+                    são todas de Segurança Máxima Especial (Barbosa, 2022).
+                    Em 2025, o Brasil tem cinco penitenciárias federais,
+                    localizadas nas seguintes cidades: Brasília (Distrito
+                    Federal), Porto Velho (Rondônia), Mossoró (Rio Grande do
+                    Norte), Campo Grande (Mato Grosso do Sul) e Catanduvas
+                    (Paraná) (Brasil, 2025b).
+                </p>
+            </div>
+        </div>
+
+        <div id="1.8" class="py-10 w-full max-w-[800px] mx-auto px-5 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>1.8 Direito à saúde
+            </h2>
+            <div class="w-full p-10 bg-blue-200 rounded-xl my-5 flex flex-col gap-5">
+                <h3 class="text-xl md:text-2xl font-bold">
+                    Você sabia que, mesmo estando privada de liberdade, uma
+                    pessoa não perde todos os seus direitos?
+                </h3>
+                <p>
+                    Pois é, muita gente acredita que a privação da liberdade
+                    suspende completamente os direitos, mas isso não é
+                    verdade. O Código Penal Brasileiro (Brasil, 1940)
+                    estabelece, em seu Art. 38, que a pessoa privada de
+                    liberdade mantém todos os direitos não atingidos pela
+                    perda da liberdade. Em outras palavras, ela perde o
+                    direito de ir e vir, mas continua tendo direito à
+                    dignidade, à saúde e à integridade física e moral. Além
+                    disso, a Lei de Execução Penal trata da assistência às
+                    pessoas privadas de liberdade e egressas e prevê que
+                    lhes seja ofertada assistência material, à saúde,
+                    jurídica, educacional, social e religiosa (Brasil,
+                    1984).
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold">
+                    Você já parou para pensar como deve ser difícil garantir
+                    direitos em uma instituição penal?
+                </h3>
+                <p>
+                    Costumamos falar de direitos como algo universal, mas,
+                    na prática, o ambiente prisional impõe muitos desafios
+                    para que esses direitos sejam garantidos e protegidos.
+                </p>
+            </div>
+            <p>
+                E, quando o assunto é saúde, a situação se torna ainda mais
+                complicada. Fazel e Baillargeon (2011) chamam a atenção para
+                um dado alarmante: transtornos mentais e doenças infecciosas
+                são mais comuns entre pessoas privadas de liberdade do que
+                na população em geral. Quais razões você acha que explicam
+                esse cenário? Um dos motivos é justamente as condições de
+                vida que essas pessoas enfrentaram antes mesmo da prisão, um
+                histórico de desigualdades sociais profundas, muitas vezes
+                transmitidas de geração em geração (Organização Mundial da
+                Saúde, 2019).
+            </p>
+            <p>
+                Diante disso, a conclusão é clara: o direito à saúde precisa
+                ser encarado como uma prerrogativa básica nos
+                estabelecimentos penais. Mais do que isso: esse direito deve
+                ser garantido com qualidade e efetividade; não como uma
+                concessão, mas como um dever do Estado.
+            </p>
+        </div>
+
+        <div id="1.9" class="w-full bg-gray-100">
+            <div class="max-w-[800px] px-5 py-10 mx-auto flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>1.9 Experiências exitosas
+                    no sistema prisional
+                    brasileiro
+                </h2>
+                <p>
+                    Uma experiência bem-sucedida relacionada ao direito à
+                    saúde é o Projeto
+                    <i>Agentes Promotores de Saúde: cuidando e
+                        ressocializando vidas</i>, realizado na cidade de Cuiabá, capital do estado de
+                    Mato Grosso. A iniciativa propõe a participação de
+                    pessoas privadas de liberdade como agentes de promoção
+                    da saúde no ambiente prisional. Elas circulam pelas alas
+                    e pavilhões das instituições penais com a missão de
+                    identificar demandas relacionadas à saúde, promover
+                    ações preventivas, apoiar processos de reabilitação e
+                    contribuir para o bem-estar da população privada de
+                    liberdade.
+                </p>
+                <p>
+                    Dentre os principais resultados do projeto, destacam-se:
+                    a redução no número de novos casos de diversas doenças;
+                    a ampliação da capacidade de monitoramento de pessoas
+                    com problemas de saúde; o aumento do acesso aos serviços
+                    de saúde no sistema prisional; e a criação de
+                    oportunidades para a ressocialização dos participantes,
+                    fortalecendo seu papel social e contribuindo para a sua
+                    reintegração à sociedade.
+                </p>
+                <p>
+                    Essa iniciativa pode ser acessada pelo endereço:
+                    <a class="hover:underline text-blue-800"
+                        href="https://www.prisoeslivresdetbcesp.com.br/projetoagentespromotoresdesaudecuidandoeressocializandovidas "
+                        target="">https://www.prisoeslivresdetbcesp.com.br/projetoagentespromotoresdesaudecuidandoeressocializandovidas</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="referencias_importantes" class="w-full max-w-[800px] mx-auto px-5 flex flex-col gap-7 py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                Referências Importantes
+            </h2>
+            <p>
+                BRASIL. Secretaria Nacional de Políticas Penais. SISDEPEN.
+                Levantamento de Informações Penitenciárias. 2025a.
+                Disponível em:
+                <a class="underline text-blue-500" href="https://www.gov.br/depen/pt-br/servicos/sisdepen"
+                    target="_blank">https://www.gov.br/depen/pt-br/servicos/sisdepen</a>. Acesso em: 6 abr. 2025.
+            </p>
+            <p>
+                BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de
+                Execução Penal. Diário Oficial da União, Brasília, DF, 13
+                jul. 1984. Disponível em:
+                <a class="underline text-blue-500" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
+                    target="_blank">http://www.planalto.gov.br/ccivil_03/leis/l7210.htm</a>. Acesso em: 15 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Decreto-Lei nº 2.848, de 7 de dezembro de 1940.
+                Código Penal. Diário Oficial da União, Rio de Janeiro, RJ,
+                31 dez. 1940. Disponível em:
+                <a class="underline text-blue-500"
+                    href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"
+                    target="_blank">https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm</a>. cesso
+                em: 15 jul. 2025.
+            </p>
+            <p>
+                MURARO, M. Sistema penitenciário e execução penal. Curitiba:
+                InterSaberes, 2017.
+            </p>
+        </div>
+
+        <div id="referencias" class="w-full max-w-[800px] mx-auto px-5 flex flex-col gap-7 py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                Referências
+            </h2>
+            <p>
+                BARBOSA, A. C. As penitenciárias de segurança máxima.
+                Jusbrasil, 3 out. 2022. Disponível em:
+                <a class="underline text-blue-500"
+                    href="https://www.jusbrasil.com.br/artigos/as-penitenciarias-de-seguranca-maxima/1652257134"
+                    target="_blank">https://www.jusbrasil.com.br/artigos/as-penitenciarias-de-seguranca-maxima/1652257134</a>.
+                Acesso em: 15 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Secretaria Nacional de Políticas Penais. SISDEPEN.
+                Levantamento de Informações Penitenciárias. 2025a.
+                Disponível em:
+                <a class="underline text-blue-500" href="https://www.gov.br/depen/pt-br/servicos/sisdepen"
+                    target="_blank">https://www.gov.br/depen/pt-br/servicos/sisdepen</a>. Acesso em: 6 abr. 2025.
+            </p>
+            <p>
+                BRASIL. Secretaria Nacional de Políticas Penais.
+                Penitenciárias Federais.
+                <a class="underline text-blue-500" href="gov.br" target="_blank">gov.br</a>, 2 jun. 2025b. Disponível
+                em:
+                <a href="https://www.gov.br/senappen/pt-br/composicao/penitenciarias-federais" target="_blank"
+                    class="underline text-blue-500">https://www.gov.br/senappen/pt-br/composicao/penitenciarias-federais</a>
+                Acesso em: 4 set. 2025.
+            </p>
+            <p>
+                BRASIL. Conselho Nacional de Política Criminal e
+                Penitenciária. Resolução nº 16, de 10 de junho de 2021.
+                Estabelece medidas de eliminação de tomadas e pontos de
+                energia do interior e das proximidades das celas nos
+                estabelecimentos penais. Diário Oficial da União, Brasília,
+                DF, 23 jun. 2021. Disponível em:
+                <a class="underline text-blue-500"
+                    href="https://www.gov.br/senappen/pt-br/composicao/cnpcp/resolucoes/resolucoes-2021/resolucao-no-16-de-10-de-junho-de-2021.pdf/view"
+                    target="_blank">https://www.gov.br/senappen/pt-br/composicao/cnpcp/resolucoes/resolucoes-2021/resolucao-no-16-de-10-de-junho-de-2021.pdf/view</a>.
+                Acesso em: 27 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Lei nº 11.343, de 23 de agosto de 2006. Institui o
+                Sistema Nacional de Políticas Públicas sobre Drogas -
+                Sisnad; prescreve medidas para prevenção do uso indevido,
+                atenção e reinserção social de usuários e dependentes de
+                drogas; estabelece normas para repressão à produção não
+                autorizada e ao tráfico ilícito de drogas; define crimes e
+                dá outras providências. Diário Oficial da União, Brasília,
+                DF, 24 ago. 2006. Disponível em:
+                <a class="underline text-blue-500"
+                    href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11343.htm" target="_blank"></a>
+                Acesso em: 17 jul. 2025.
+            </p>
+        </div>
+
+        <div id="autor" class="w-full bg-gray-100">
+            <div class="flex flex-col justify-between py-10 px-5 max-w-[800px] mx-auto">
+                <h1 class="text-3xl md:text-5xl font-bold">
+                    Minicurrículo do Autor
+                </h1>
+                <div class="flex flex-wrap mt-5">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/Marianna.jpg"
+                            alt="Marianna do Prado Sampaio" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Marianna do Prado Sampaio</small>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 px-5">
+                        <p>
+                            Graduada em Terapia Ocupacional pela
+                            Universidade de Brasília e Especialista em Saúde
+                            Coletiva pela Escola Superior de Ciências da
+                            Saúde do Distrito Federal. Já atuou como
+                            Terapeuta Ocupacional na Organização Social
+                            Santa Marcelina, em São Paulo, como gerente na
+                            Gerência de qualidade da Atenção Primária à
+                            Saúde e na Gerência de Atenção à Saúde de
+                            Populações em Situação Vulnerável e Programas
+                            Especiais da Secretaria de Estado de Saúde do
+                            Distrito Federal. Atuou como consultora no
+                            Ministério da Saúde na Coordenação-Geral de
+                            Programação do Financiamento da Atenção Primária
+                            à Saúde e como assessora técnica de saúde
+                            prisional na Coordenação de Acesso e Equidade da
+                            Secretaria de Atenção Primária. Também atuou
+                            como Apoiadora regional do Projeto Implementação
+                            e Fortalecimento do Apoio Matricial em Saúde
+                            Mental na Atenção Primária à Saúde do Distrito
+                            Federal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-10 bg-blue-200 text-center">
+        <div class="max-w-[800px] mx-auto px-5">
+            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
+                    alt="Logo" />
+            </a>
+            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
+                disseminação e a utilização desta obra, em parte ou em sua
+                totalidade, nos Termos de uso do ARES. Deve ser citada a
+                fonte e é vedada sua utilização comercial. © 2025.
+                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
+                Sul.
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/tippy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script>
+        initMapTooltips();
+        TooltipsUnit1();
+    </script>
+</body>
+
+</html>
