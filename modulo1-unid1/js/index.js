@@ -1,9 +1,8 @@
-// function toggleSidebar(elemento, menu) {
-//     const menuToggle = document.getElementById(elemento);
-//     const menu = document.getElementById(menu);
-
-//     menu.classList.toggle("hidden");
-// }
+function toggleSidebar() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+}
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {

@@ -1,9 +1,9 @@
-// function toggleSidebar(elemento, menu) {
-//     const menuToggle = document.getElementById(elemento);
-//     const menu = document.getElementById(menu);
+function toggleSidebar() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+}
 
-//     menu.classList.toggle("hidden");
-// }
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
@@ -61,6 +61,107 @@ function closeOnOverlay(event, modal) {
     }
 }
 
+const carousels = {};
+
+// Inicializa todos os carrosséis
+function initCarousels() {
+	const containers = document.querySelectorAll(".carousel-container");
+
+	containers.forEach((container) => {
+		const id = container.dataset.carouselId;
+		const track = container.querySelector(".carousel-track");
+		const slides = track.querySelectorAll(".min-w-full");
+
+		carousels[id] = {
+			currentIndex: 0,
+			totalSlides: slides.length,
+			track: track,
+		};
+	});
+}
+
+const tabsState = {};
+
+    // Inicializa todos os conjuntos de abas
+    function initTabs() {
+      const containers = document.querySelectorAll('.tabs-container');
+      
+      containers.forEach(container => {
+        const id = container.dataset.tabsId;
+        const buttons = container.querySelectorAll('.tab-button');
+        const contents = container.querySelectorAll('.tab-content');
+        
+        tabsState[id] = {
+          currentIndex: 0,
+          buttons: buttons,
+          contents: contents
+        };
+      });
+    }
+
+    // Troca de aba
+    function switchTab(tabsId, index) {
+      const tabs = tabsState[tabsId];
+      
+      tabs.buttons.forEach((button, i) => {
+        if (i === index) {
+          if (button.classList.contains('border-b-2')) {
+            button.classList.remove('border-transparent');
+            button.classList.add('border-blue-400', 'text-blue-400');
+          } else {
+            button.classList.remove('text-gray-700', 'hover:bg-gray-200');
+            button.classList.add('bg-blue-400', 'text-blue-400');
+          }
+        } else {
+          if (button.classList.contains('border-b-2')) {
+            button.classList.remove('border-blue-400', 'text-blue-400');
+            button.classList.add('border-transparent');
+          } else {
+            button.classList.remove('bg-blue-400');
+          }
+        }
+      });
+      
+      // Mostra apenas o conteúdo selecionado
+      tabs.contents.forEach((content, i) => {
+        if (i === index) {
+          content.classList.remove('hidden');
+        } else {
+          content.classList.add('hidden');
+        }
+      });
+      
+      tabs.currentIndex = index;
+    }
+
+// Atualiza a posição do carrossel
+function updateCarousel(carouselId) {
+	const carousel = carousels[carouselId];
+	carousel.track.style.transform = `translateX(-${
+		carousel.currentIndex * 100
+	}%)`;
+}
+
+// Vai para o próximo slide
+function nextSlide(carouselId) {
+	const carousel = carousels[carouselId];
+	carousel.currentIndex = (carousel.currentIndex + 1) % carousel.totalSlides;
+	updateCarousel(carouselId);
+}
+
+// Vai para o slide anterior
+function prevSlide(carouselId) {
+	const carousel = carousels[carouselId];
+	carousel.currentIndex =
+		(carousel.currentIndex - 1 + carousel.totalSlides) %
+		carousel.totalSlides;
+	updateCarousel(carouselId);
+}
+
+
+document.addEventListener("DOMContentLoaded", initCarousels);
+document.addEventListener('DOMContentLoaded', initTabs);
+
 function TooltipsUnit1() {
     tippy("#btnInstrucoes", {
         content: 'Instruções para usar o curso.',
@@ -88,63 +189,6 @@ function TooltipsUnit1() {
         animation: "scale",
         touch: ["hold", 500],
         trigger: "mouseenter focus click",
-        interactive: true,
-        delay: [100, 0],
-    });
-}
-
-function initMapTooltips() {
-    tippy("#tooltip_1", {
-        content: '<p class="text-2xl"><b>Estados Unidos</b></p><p> 1,8 milhão</p>',
-        placement: "right",
-        allowHTML: true,
-        animation: "scale",
-        trigger: "click",
-        touch: true,
-        interactive: true,
-        delay: [100, 0],
-    });
-
-    tippy("#tooltip_2", {
-        content: '<p class="text-2xl"><b>Brasil</b></p><p>mais de 909 mil</p>',
-        placement: "left",
-        allowHTML: true,
-        animation: "scale",
-        trigger: "click",
-        touch: true,
-        interactive: true,
-        delay: [100, 0],
-    });
-
-    tippy("#tooltip_3", {
-        content: '<p class="text-2xl"><b>Rússia</b></p><p>433 mil</p>',
-        placement: "left",
-        allowHTML: true,
-        animation: "scale",
-        trigger: "click",
-        touch: true,
-        interactive: true,
-        delay: [100, 0],
-    });
-
-    tippy("#tooltip_4", {
-        content: '<p class="text-2xl"><b>China</b></p><p>1,6 milhão</p>',
-        placement: "left",
-        allowHTML: true,
-        animation: "scale",
-        trigger: "click",
-        touch: true,
-        interactive: true,
-        delay: [100, 0],
-    });
-
-    tippy("#tooltip_5", {
-        content: '<p class="text-2xl"><b>Índia</b></p><p>573 mil</p>',
-        placement: "left",
-        allowHTML: true,
-        animation: "scale",
-        trigger: "click",
-        touch: true,
         interactive: true,
         delay: [100, 0],
     });
@@ -220,6 +264,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    document.getElementById("dropdown-toggle").addEventListener("click", function () {
+            const menu = document.getElementById("dropdown-menu");
+            menu.classList.toggle("hidden");
+    });
     // --- 3. Função de Validação ---
     window.verificarRespostas = function () {
         let acertos = 0;
