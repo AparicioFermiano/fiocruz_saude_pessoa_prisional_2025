@@ -25,7 +25,7 @@
                 <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full p-4 object-contain" alt="Logo" />
             </a>
 
-            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5" onclick="toggleSidebar()">
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5" onclick="estrutura.toggleSidebar()">
                 <span class="w-6 h-0.5 bg-gray-800"></span>
                 <span class="w-6 h-0.5 bg-gray-800"></span>
                 <span class="w-6 h-0.5 bg-gray-800"></span>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="closeModal('modalInstrucao')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-blue-200 text-black">
                     Entendido
                 </button>
             </div>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="closeModal('modalFicha')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-blue-200 text-black">
                     Fechar
                 </button>
             </div>
@@ -256,7 +256,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="closeModal('modalCreditos')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-blue-200 text-black">
                     Fechar
                 </button>
             </div>
@@ -302,12 +302,14 @@
     <main class="flex flex-col justify-between">
         <div id="scrollTopBtn" class="hidden fixed bottom-10 right-10 z-99">
             <div class="flex flex-col gap-3">
-                <button id="btnContatar" onclick="openModal('modalContatar')" title="Instruções para usar o curso."
+                <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
+                    title="Instruções para usar o curso."
                     class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-address-book"></i>
                 </button>
 
-                <button id="btnInstrucoes" onclick="openModal('modalInstrucao')" title="Instruções para usar o curso."
+                <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
+                    title="Instruções para usar o curso."
                     class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-exclamation"></i>
                 </button>
@@ -340,15 +342,15 @@
                         Unidade 01 - Estrutura e Sistema prisional
                     </p>
                     <div class="py-5 flex flex-wrap gap-5 justify-center">
-                        <button onclick="openModal('modalInstrucao')"
+                        <button onclick="estrutura.openModal('modalInstrucao')"
                             class="px-4 py-2 btn border-2 border-black text-black">
                             INSTRUÇÕES
                         </button>
-                        <button onclick="openModal('modalFicha')"
+                        <button onclick="estrutura.openModal('modalFicha')"
                             class="px-4 py-2 btn border-2 border-black text-black">
                             FICHA TÉCNICA
                         </button>
-                        <button onclick="openModal('modalCreditos')"
+                        <button onclick="estrutura.openModal('modalCreditos')"
                             class="px-4 py-2 btn border-2 border-blue-600 text-white bg-blue-600">
                             CRÉDITOS
                         </button>
@@ -740,7 +742,7 @@
                 </p>
                 <div class="flex flex-wrap justify-center">
                     <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="toggleCard(this, 'cardInner1')" aria-pressed="false"
+                        <button onclick="animacao.toggleCard(this, 'cardInner1')" aria-pressed="false"
                             class="w-full focus:outline-none">
                             <div class="relative w-full h-56">
                                 <div id="cardInner1" class="card-inner preserve-3d w-full h-full relative">
@@ -771,7 +773,7 @@
                         </button>
                     </div>
                     <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="toggleCard(this, 'cardInner2')" aria-pressed="false"
+                        <button onclick="animacao.toggleCard(this, 'cardInner2')" aria-pressed="false"
                             class="w-full focus:outline-none">
                             <div class="relative w-full h-56">
                                 <div id="cardInner2" class="card-inner preserve-3d relative w-full h-full">
@@ -801,7 +803,7 @@
                         </button>
                     </div>
                     <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="toggleCard(this, 'cardInner3')" aria-pressed="false"
+                        <button onclick="animacao.toggleCard(this, 'cardInner3')" aria-pressed="false"
                             class="w-full focus:outline-none">
                             <div class="relative w-full h-56">
                                 <div id="cardInner3" class="card-inner preserve-3d relative w-full h-full">
@@ -831,7 +833,7 @@
                         </button>
                     </div>
                     <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="toggleCard(this, 'cardInner4')" aria-pressed="false"
+                        <button onclick="animacao.toggleCard(this, 'cardInner4')" aria-pressed="false"
                             class="w-full focus:outline-none">
                             <div class="relative w-full h-56">
                                 <div id="cardInner4" class="card-inner preserve-3d w-full h-full relative">
@@ -861,7 +863,7 @@
                         </button>
                     </div>
                     <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="toggleCard(this, 'cardInner5')" aria-pressed="false"
+                        <button onclick="animacao.toggleCard(this, 'cardInner5')" aria-pressed="false"
                             class="w-full focus:outline-none">
                             <div class="relative w-full h-56">
                                 <div id="cardInner5" class="card-inner preserve-3d relative w-full h-full">
@@ -958,7 +960,7 @@
                     </p>
                     <div class="flex flex-wrap justify-center">
                         <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                            <button onclick="toggleCard(this, 'cardFechado')" aria-pressed="false"
+                            <button onclick="animacao.toggleCard(this, 'cardFechado')" aria-pressed="false"
                                 class="w-full focus:outline-none">
                                 <div class="relative w-full h-80">
                                     <div id="cardFechado" class="card-inner preserve-3d relative w-full h-full">
@@ -989,7 +991,7 @@
                             </button>
                         </div>
                         <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                            <button onclick="toggleCard(this, 'CardSemiAberto')" aria-pressed="false"
+                            <button onclick="animacao.toggleCard(this, 'CardSemiAberto')" aria-pressed="false"
                                 class="w-full focus:outline-none">
                                 <div class="relative w-full h-80">
                                     <div id="CardSemiAberto" class="card-inner preserve-3d relative w-full h-full">
@@ -1021,7 +1023,7 @@
                             </button>
                         </div>
                         <div class="perspective w-full md:w-1/2 lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                            <button onclick="toggleCard(this, 'cardAberto')" aria-pressed="false"
+                            <button onclick="animacao.toggleCard(this, 'cardAberto')" aria-pressed="false"
                                 class="w-full focus:outline-none">
                                 <div class="relative w-full h-80">
                                     <div id="cardAberto" class="card-inner preserve-3d relative w-full h-full">
@@ -1084,7 +1086,7 @@
                     </p>
                     <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
                         <div class="border-b border-blue-400">
-                            <button id="item1" onclick="toggleAccordion('item1', 'grupo1')"
+                            <button id="item1" onclick="animacao.toggleAccordion('item1', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Classificação</span>
                                 <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1105,7 +1107,7 @@
                             </div>
                         </div>
                         <div class="border-b border-blue-400">
-                            <button id="item2" onclick="toggleAccordion('item2', 'grupo1')"
+                            <button id="item2" onclick="animacao.toggleAccordion('item2', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Assistência</span>
                                 <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1126,7 +1128,7 @@
                             </div>
                         </div>
                         <div class="border-b border-blue-400">
-                            <button id="item3" onclick="toggleAccordion('item3', 'grupo1')"
+                            <button id="item3" onclick="animacao.toggleAccordion('item3', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Trabalho</span>
                                 <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1144,7 +1146,7 @@
                             </div>
                         </div>
                         <div class="border-blue-400">
-                            <button id="item4" onclick="toggleAccordion('item4', 'grupo1')"
+                            <button id="item4" onclick="animacao.toggleAccordion('item4', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Deveres, direitos e disciplina</span>
                                 <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1191,12 +1193,12 @@
                 <img class="zoomable rounded-xl shadow-md" src="./images/grafico-pag8-word.jpg" loading="lazy"
                     title="População carcerária cresceu de 701.674 (2016/2) para 909.067 (2024/2), com alta após 2020. O aumento total é de cerca de 207 mil."
                     alt="População carcerária cresceu de 701.674 (2016/2) para 909.067 (2024/2), com alta após 2020. O aumento total é de cerca de 207 mil."
-                    onclick="openModal('modalFoto2')" />
+                    onclick="estrutura.openModal('modalFoto2')" />
                 <small>Fonte: Brasil (2025a).</small>
                 <hr />
             </div>
 
-            <div id="modalFoto2" class="modal-overlay hidden" onclick="closeOnOverlay(event, this)">
+            <div id="modalFoto2" class="modal-overlay hidden" onclick="estrutura.closeOnOverlay(event, this)">
                 <div class="modal-content">
                     <div class="modal-body w-full">
                         <img class="w-full h-full object-contain rounded-xl shadow-md"
@@ -1204,7 +1206,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button onclick="closeModal('modalFoto2')" class="btn bg-blue-200 text-black">
+                        <button onclick="estrutura.closeModal('modalFoto2')" class="btn bg-blue-200 text-black">
                             FECHAR
                         </button>
                     </div>
@@ -1271,19 +1273,19 @@
                 <img class="zoomable rounded-xl shadow-md" src="./images/grafico-pag9-word.jpg" loading="lazy"
                     title="Gráfico de barras sobre escolaridade de presos. O maior grupo é Ensino Fundamental Incompleto (295.765). Superior Completo é de 5.887."
                     alt="Gráfico de barras sobre escolaridade de presos. O maior grupo é Ensino Fundamental Incompleto (295.765). Superior Completo é de 5.887."
-                    onclick="openModal('modalFoto3')" />
+                    onclick="estrutura.openModal('modalFoto3')" />
                 <small>Fonte: Brasil (2025a).</small>
                 <hr />
             </div>
 
-            <div id="modalFoto3" class="modal-overlay hidden" onclick="closeOnOverlay(event, this)">
+            <div id="modalFoto3" class="modal-overlay hidden" onclick="estrutura.closeOnOverlay(event, this)">
                 <div class="modal-content">
                     <div class="modal-body w-full">
                         <img class="w-full h-full object-contain rounded-xl shadow-md"
                             src="./images/grafico-pag9-word.jpg" loading="lazy" alt="Gráfico população" />
                     </div>
                     <div class="modal-footer">
-                        <button onclick="closeModal('modalFoto3')" class="btn bg-blue-200 text-black">
+                        <button onclick="estrutura.closeModal('modalFoto3')" class="btn bg-blue-200 text-black">
                             FECHAR
                         </button>
                     </div>
@@ -1603,7 +1605,7 @@
                 privadas de liberdade e o ambiente externo (Brasil, 2021).
             </p>
             <div>
-                <button onclick="openModal('modalSaibaMais1')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-blue-800 text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
@@ -1642,7 +1644,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button onclick="closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                    <button onclick="estrutura.closeModal('modalSaibaMais1')" class="btn bg-white text-black">
                         Fechar
                     </button>
                 </div>
@@ -1671,7 +1673,7 @@
                 </p>
                 <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
                     <div class="border-b border-blue-400">
-                        <button id="item_2_1" onclick="toggleAccordion('item_2_1', 'grupo2')"
+                        <button id="item_2_1" onclick="animacao.toggleAccordion('item_2_1', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Conselho Nacional de Política Criminal e
                                 Penitenciária (CNPCP)</span>
@@ -1694,7 +1696,7 @@
                         </div>
                     </div>
                     <div class="border-b border-blue-400">
-                        <button id="item_2_2" onclick="toggleAccordion('item_2_2', 'grupo2')"
+                        <button id="item_2_2" onclick="animacao.toggleAccordion('item_2_2', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Juízo da Execução</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1715,7 +1717,7 @@
                         </div>
                     </div>
                     <div class="border-b border-blue-400">
-                        <button id="item_2_3" onclick="toggleAccordion('item_2_3', 'grupo2')"
+                        <button id="item_2_3" onclick="animacao.toggleAccordion('item_2_3', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Ministério Público</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1736,7 +1738,7 @@
                         </div>
                     </div>
                     <div class="border-b border-blue-400">
-                        <button id="item_2_4" onclick="toggleAccordion('item_2_4', 'grupo2')"
+                        <button id="item_2_4" onclick="animacao.toggleAccordion('item_2_4', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Conselho Penitenciário (COPEN)</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1755,7 +1757,7 @@
                         </div>
                     </div>
                     <div class="border-b border-blue-400">
-                        <button id="item_2_5" onclick="toggleAccordion('item_2_5', 'grupo2')"
+                        <button id="item_2_5" onclick="animacao.toggleAccordion('item_2_5', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Secretaria Nacional de Políticas Penais
                                 (SENAPPEN)</span>
@@ -1778,7 +1780,7 @@
                         </div>
                     </div>
                     <div class="border-b border-blue-400">
-                        <button id="item_2_6" onclick="toggleAccordion('item_2_6', 'grupo2')"
+                        <button id="item_2_6" onclick="animacao.toggleAccordion('item_2_6', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Patronato Penitenciário</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1805,7 +1807,7 @@
                         </div>
                     </div>
                     <div class="border-b border-blue-400">
-                        <button id="item_2_7" onclick="toggleAccordion('item_2_7', 'grupo2')"
+                        <button id="item_2_7" onclick="animacao.toggleAccordion('item_2_7', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Conselho da Comunidade</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -1828,7 +1830,7 @@
                         </div>
                     </div>
                     <div class="border-b border-blue-400">
-                        <button id="item_2_8" onclick="toggleAccordion('item_2_8', 'grupo2')"
+                        <button id="item_2_8" onclick="animacao.toggleAccordion('item_2_8', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Defensoria Pública</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
@@ -2094,7 +2096,7 @@
                 </h1>
                 <div class="flex flex-wrap mt-5">
                     <div class="w-full md:w-1/3">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/"
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/Marianna.jpg"
                             alt="Marianna do Prado Sampaio" />
                         <div class="py-3">
                             <small class="font-bold py-2">Marianna do Prado Sampaio</small>
@@ -2151,9 +2153,19 @@
     <script src="./js/tippy.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
-    <script>
-        initMapTooltips();
-        TooltipsUnit1();
+    <script type="text/javascript">
+        personalizado.initModulo1Unidade1();
+        document.addEventListener("click", function (e) {
+            const overlay = e.target.closest(".modal-overlay");
+
+            if (!overlay) return;
+
+            const content = overlay.querySelector(".modal-content");
+
+            if (!content.contains(e.target)) {
+                estrutura.closeModal(overlay.id)
+            }
+        });
     </script>
 </body>
 
