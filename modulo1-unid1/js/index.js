@@ -253,7 +253,7 @@ var personalizado = {
         });
     },
 
-    initModulo1Unidade1: function () {
+    init: function () {
         personalizado.initMapTooltips();
         personalizado.TooltipsUnit1();
         personalizado.exercicio1();

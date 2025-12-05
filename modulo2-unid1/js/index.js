@@ -276,7 +276,7 @@ var personalizado = {
         });
     },
 
-    initModulo1Unidade1: function () {
+    init: function () {
         animacao.initCarousels();
         animacao.initTabs();
         personalizado.TooltipsUnit1();
