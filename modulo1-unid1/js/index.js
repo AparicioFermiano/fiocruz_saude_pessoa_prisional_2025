@@ -21,6 +21,24 @@ var animacao = {
         content.classList.toggle("open");
         icon.classList.toggle("rotate-180");
     },
+
+    toggleDropdown: function () {
+		if (window.innerWidth < 768) {
+			const menu = document.getElementById("dropdown-menu");
+			const arrow = document.getElementById("dropdown-arrow");
+			menu.classList.toggle("hidden");
+			arrow.classList.toggle("rotate-180");
+		}
+	},
+
+	closeDropdown: function () {
+		if (window.innerWidth < 768) {
+			document.getElementById("dropdown-menu").classList.add("hidden");
+			document
+				.getElementById("dropdown-arrow")
+				.classList.remove("rotate-180");
+		}
+	},
 }
 
 var estrutura = {

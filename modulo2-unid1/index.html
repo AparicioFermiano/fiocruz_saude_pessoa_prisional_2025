@@ -32,11 +32,11 @@
             </button>
 
             <nav id="menu"
-                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-14 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
+                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
                 <a href="#apresentacao" class="p-4 text-gray-800 hover:text-blue-300">Apresentação</a>
-                <a href="#2.1" class="p-4 text-gray-800 hover:text-blue-300">Unidade 01</a>
+                <a href="#1.1" class="p-4 text-gray-800 hover:text-blue-300">Unidade 01</a>
                 <div class="relative group">
-                    <button id="dropdown-toggle"
+                    <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
                         class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-blue-300">
                         Referências
                         <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
@@ -45,10 +45,12 @@
                         </svg>
                     </button>
                     <div id="dropdown-menu"
-                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px]">
-                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100">Referências
+                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
+                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências
                             Importantes</a>
-                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100">Referências</a>
+                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências</a>
                     </div>
                 </div>
                 <a href="#autor" class="p-4 text-gray-800 hover:text-blue-300">Autor</a>
@@ -173,20 +175,27 @@
                 </div>
                 <div>
                     <p>
-                        <b>VALIDAÇÃO DO PROTOCOLO DE PESQUISA COM AS
-                            PARTES INTERESSADAS (CONDUÇÃO DO DIÁLOGO DE
-                            POLITICAS)
-                        </b>
+                        <b>COORDENADOR TÉCNICO</b>
                     </p>
-                    <span>Aurelina Aguiar de Lima <br />
-                        Liara Ferreira dos Santos</span>
+                    <span>Everton Ferreira Lemos</span>
                 </div>
                 <div>
                     <p>
-                        <b>REVISÃO TÉCNICO-CIENTÍFICA </b>
+                        <b>COORDENADORA PEDAGÓGICA</b>
                     </p>
-                    <span>Rebeca de Lima Pompilio <br />
-                        Everton Ferreira Lemos</span>
+                    <span>Ewângela Aparecida Pereira</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADORA TEMÁTICA</b>
+                    </p>
+                    <span>Caroline Busatto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>APOIO DA COORDENAÇÃO</b>
+                    </p>
+                    <span>Antonio Luiz Dal Bello Gasparoto</span>
                 </div>
                 <div>
                     <p>
@@ -198,19 +207,7 @@
                     <p>
                         <b>AVALIAÇÃO EXTERNA </b>
                     </p>
-                    <span>Águida Luana Veriato Schultz - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS) <br />
-                        Anna Karolline dos Anjos de Morais - Assessoria
-                        Técnica - Saúde Prisional
-                        (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
-                        Dieni Oliveira Rodrigues - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
-                        Evellyn Waleska Silva dos Santos - Assessoria
-                        Técnica - Saúde Prisional
-                        (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
-                        Marianna do Prado Sampaio - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)
-                    </span>
+                    <span>Jorge Esteves</span>
                 </div>
                 <div>
                     <p>
@@ -233,16 +230,9 @@
                 </div>
                 <div>
                     <p>
-                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO </b>
+                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO</b>
                     </p>
                     <span>André Julien de Sousa Morato</span>
-                </div>
-                <div>
-                    <p>
-                        <b>PRODUÇÃO DO MAPA DE EVIDÊNCIA </b>
-                    </p>
-                    <span>Víctor Leone de Oliveira <br />Ana Cristina Atz dos
-                        Santos</span>
                 </div>
                 <div class="text-center">
                     <small>Esse produto faz parte das atividades do Núcleo de
@@ -333,12 +323,10 @@
                         PRISIONAL
                     </span>
                     <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo 01 - Política Nacional de Atenção Integral à Saúde das
-                        Pessoas Privadas de Liberdade no Sistema Prisional
-                        (PNAISP)
+                        Módulo 02 - Direito, Diversidade e Equidade no Sistema Prisional
                     </h1>
                     <p class="px-3 py-2 block">
-                        Unidade 02 - A Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
+                        Unidade 01 - Violência e Saúde
                     </p>
                     <div class="py-5 flex flex-wrap gap-5 justify-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
@@ -451,395 +439,1566 @@
             </div>
         </div>
 
-        <div id="referencias_importantes" class="w-full max-w-[800px] mx-auto flex flex-col gap-7 py-10 px-5">
+        <div id="1.1" class="w-full max-w-[800px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.1 Violência, sistema prisional e direitos humanos
+            </h2>
+            <h3
+                class="text-2xl md:text-3xl border-b-2 py-5 border-blue-300 font-light text-center leading-10 md:leading-12">
+                A violência é um fenômeno complexo e multifacetado. Você já parou para pensar sobre quantas formas
+                diferentes a
+                violência pode assumir?
+            </h3>
+            <p>
+                Segundo Krug et al. (2002), a violência pode ser entendida como o uso intencional da força ou do poder,
+                seja de forma
+                real, seja sob a forma de ameaça, contra si mesmo, outra pessoa, um grupo ou uma comunidade. Essa ação
+                pode resultar, ou
+                ter o potencial de resultar, em lesão, morte, danos psicológicos, problemas no desenvolvimento ou
+                privação de direitos.
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.1.1 A violência na história do Brasil
             </h2>
             <p>
-                CALICCHIO, M. G. M. S. <b>Além das Celas</b>: experiência de mulheres com familiar em cumprimento de
-                pena em
-                regime fechado,
-                Mato Grosso. Tese (Doutorado em Saúde Coletiva) - Programa de Pós-Graduação em Saúde Coletiva,
-                Universidade Federal de
-                Mato Grosso, Cuiabá, 2019.
+                Quando olhamos para a história do Brasil, percebemos que a violência sempre esteve presente, desde o
+                período colonial
+                até os dias de hoje. Desde a colonização, o Brasil é marcado por relações desiguais de poder. A
+                violência foi utilizada
+                para subjugar povos indígenas, escravizar africanos e consolidar a exploração econômica. O sistema
+                escravocrata, que
+                perdurou por mais de 300 anos, deixou marcas profundas na sociedade, perpetuando desigualdades e
+                marginalizando grande
+                parte da população.
             </p>
             <p>
-                CARDOSO, M. C. V. As assistências previstas na Lei de Execução Penal: uma tentativa de inclusão social
-                do apenado. <b>SER
-                    Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746" target="_blank"
-                    rel="noopener noreferrer">https://periodicos.unb.br/index.php/SER_Social/article/view/12746(opens in
-                    a new tab)</a>. Acesso em: 1 set. 2025.
+                Alguns autores destacam que a violência foi uma ferramenta utilizada para manter o poder e a ordem, o
+                que gerou
+                desigualdade social e aprofundou o racismo. Essas marcas históricas ainda estão presentes em nossa
+                sociedade (Holanda,
+                1995; Freyre, 2003; Fernandes, 1978).
             </p>
             <p>
-                CONECTAS DIREITOS HUMANOS. Regras de Mandela: os problemas do sistema carcerário brasileiro. São Paulo:
-                Conectas, 18
-                jul. 2024. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
-                    target="_blank"
-                    rel="noopener noreferrer">https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/</a>.
-                Acesso em: 22 ago. 2025.
+                O Brasil cresceu territorial e economicamente, mas esse avanço não veio acompanhado de uma distribuição
+                justa de
+                oportunidades. A desigualdade social e racial permaneceu, afetando principalmente a população negra e
+                periférica, o que
+                contribuiu para o aumento da criminalidade e do número de pessoas privadas de liberdade (PPL).
             </p>
             <p>
-                MACHADO, N. O.; GUIMARÃES, I. S. A realidade do sistema prisional brasileiro e o princípio da dignidade
-                da pessoa
-                humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer">https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf</a>.
-                Acesso em: 5 ago. 2025.
-            </p>
-        </div>
-
-        <div id="referencias" class="w-full max-w-[800px] mx-auto flex flex-col gap-7 py-10 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
-                Referências
-            </h2>
-            <p>
-                ASSIS, R. D. A realidade atual do sistema penitenciário brasileiro. <b>Revista CEJ</b>, v. 11, n. 39, p.
-                74-78,
-                2007.
-                Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://revistacej.cjf.jus.br/cej/index.php/revcej/article/view/949" target="_blank"
-                    rel="noopener noreferrer">
-                    https://revistacej.cjf.jus.br/cej/index.php/revcej/article/view/949
-                </a>
-                . Acesso em: 5 ago. 2025.
+                O país tem um dos maiores sistemas prisionais do mundo, com um aprisionamento em massa que reflete a
+                exclusão social
+                histórica. A maioria das PPL vem de contextos de vulnerabilidade, com pouco acesso à educação e ao
+                mercado de trabalho,
+                reforçando um ciclo difícil de romper.
             </p>
             <p>
-                BBC. Presos no Brasil: 96% homens, 48% pardos, 30% sem julgamento: o perfil dos detentos no Brasil.
-                <b>BBC
-                    News Brasil</b>, 17
-                out. 2024. Disponível em:
-                <a class="underline text-blue-500" href="https://www.bbc.com/portuguese/articles/c0k4nmd3e2xo"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.bbc.com/portuguese/articles/c0k4nmd3e2xo
-                </a>
-                . Acesso em: 1 set. 2025.
+                <b>Você já percebeu como a violência e a insegurança se manifestam no seu dia a dia?</b>
             </p>
             <p>
-                BRASIL. Secretaria Nacional de Políticas Penais. <b>Relatório de Informações Penais</b>. 16º ciclo
-                SISDEPEN, 1º
-                semestre de
-                2024. RELIPEN. Brasília: SENAPPEN, 2024. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
-                </a>
-                . Acesso em: 1 set. 2025.
+                Insegurança e violência não são sinônimos, embora estejam profundamente relacionadas. A insegurança é a
+                sensação de
+                ameaça constante, o medo de que algo ruim possa acontecer e essa sensação muitas vezes se alimenta de
+                estereótipos e
+                preconceitos, como o racismo estrutural, que transforma determinadas pessoas em “criminosos em
+                potencial”. Já a
+                violência é a manifestação concreta desse medo em ações e estruturas: pode ser física, simbólica ou
+                institucional. Isso
+                pode aparecer de várias formas:
             </p>
-            <p>
-                BRASIL. Plano Nacional para o Enfrentamento do Estado de Coisas Inconstitucional nas Prisões Brasileiras
-                - Pena Justa.
-                ADPF 347/DF. <b>gov.br</b>, 2023. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/pena-justa"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/pena-justa
-                </a>
-                . Acesso em: 16 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Conselho Nacional do Ministério Público (CNMP). <b>Cidadania</b>. c2015. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.cnmp.mp.br/portal/institucional/476-glossario/8144-cidadania" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.cnmp.mp.br/portal/institucional/476-glossario/8144-cidadania
-                </a>
-                . Acesso em: 1 set. 2025.
-            </p>
-            <p>
-                BRASIL. Decreto nº 7.626, de 24 de novembro de 2011. Institui o Plano Estratégico de Educação no âmbito
-                do Sistema
-                Prisional. <b>Diário Oficial da União, Brasília</b>, DF, 25 nov. 2011. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7626.htm" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7626.htm
-                </a>
-                . Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Decreto nº 592, de 6 de julho de 1992. Atos internacionais. Pacto Internacional sobre Direitos
-                Civis e
-                Políticos. Promulgação. <b>Diário Oficial da União</b>, Brasília, DF, 7 jul. 1992. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0592.htm" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0592.htm
-                </a>
-                . Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Lei nº 8.080, de 19 de setembro de 1990. Dispõe sobre as condições para a promoção, proteção e
-                recuperação da
-                saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. <b>Diário
-                    Oficial da União</b>,
-                Brasília, DF, 20 set. 1990. Disponível em:
-                <a class="underline text-blue-500" href="https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
-                </a>
-                . Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de Execução Penal. <b>Diário Oficial da União</b>,
-                Brasília,
-                DF, 13 jul.
-                1984. Disponível em:
-                <a class="underline text-blue-500" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
-                    target="_blank" rel="noopener noreferrer">
-                    http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BUSS, P. M.; PELLEGRINI FILHO, A. A saúde e seus Determinantes Sociais. <b>Physis: Revista de Saúde
-                    Coletiva</b>, v. 17, n. 1,
-                p. 77-93, 2007. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.scielo.br/j/physis/a/msNmfGf74RqZsbpKYXxNKhm/?format=pdf&lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/physis/a/msNmfGf74RqZsbpKYXxNKhm/?format=pdf&lang=pt
-                </a>
-                . Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                CALICCHIO, M. G. M. S. <b>Além das Celas</b>: experiência de mulheres com familiar em cumprimento de
-                pena em
-                regime fechado,
-                Mato Grosso. Tese (Doutorado em Saúde Coletiva) - Programa de Pós-Graduação em Saúde Coletiva,
-                Universidade Federal de
-                Mato Grosso, Cuiabá, 2019.
-            </p>
-            <p>
-                CARDOSO, M. C. V. As assistências previstas na Lei de Execução Penal: uma tentativa de inclusão social
-                do apenado. <b>SER
-                    Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746" target="_blank"
-                    rel="noopener noreferrer">
-                    https://periodicos.unb.br/index.php/SER_Social/article/view/12746
-                </a>
-                . Acesso em: 1 set. 2025.
-            </p>
-            <p>
-                CONECTAS DIREITOS HUMANOS. <b>Regras de Mandela</b>: os problemas do sistema carcerário brasileiro. São
-                Paulo:
-                Conectas, 18
-                jul. 2024. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/
-                </a>
-                . Acesso em: 22 ago. 2025.
-            </p>
-            <p>
-                FERNANDES, F. <b>A integração do negro na sociedade de classes</b>. São Paulo: Ática, 1978. 2 v.
-            </p>
-            <p>
-                FIOCRUZ. Os DSS na OMS. <b>Portal DSSBR</b>, c2020. Disponível em:
-                <a class="underline text-blue-500" href="https://dssbr.ensp.fiocruz.br/dss-o-que-e/os-dss-na-oms/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://dssbr.ensp.fiocruz.br/dss-o-que-e/os-dss-na-oms/
-                </a>
-                . Acesso em: 1 set. 2025.
-            </p>
-            <p>
-                FONSECA, R. R. et al. Como a organização do sistema prisional influencia na taxa de ressocialização: uma
-                comparação
-                entre Brasil e Noruega. <b>Jornal Eletrônico Faculdades Integradas Vianna Júnior</b>, v. 16, n. 1, p.
-                70-90,
-                2024. Disponível
-                em:
-                <a class="underline text-blue-500" href="https://www.jornaleletronicofivj.com.br/jefvj/article/view/932"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.jornaleletronicofivj.com.br/jefvj/article/view/932
-                </a>
-                . Acesso em: 1 set. 2025.
-            </p>
-            <p>
-                FREYRE, G. <b>Casa-grande & senzala</b>: formação da família brasileira sob o regime da economia
-                patriarcal.
-                48. ed. Rio de
-                Janeiro: Record, 2003.
-            </p>
-            <p>
-                GOMES, M. E. R C.; RIBEIRO, L. M. L.; MIRANDA, G. G. R. "Todo homem precisa de uma mãe", mas nem todo
-                merece uma: o
-                cuidado em notícias sobre o sistema penitenciário mineiro. <b>Sexualidad, Salud y Sociedad</b>, n. 40,
-                e22203,
-                2024. Disponível
-                em:
-                <a class="underline text-blue-500" href="https://www.scielo.br/j/sess/a/QrBk7TvLt65yq3Z58Vmvr9H/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/sess/a/QrBk7TvLt65yq3Z58Vmvr9H/
-                </a>
-                . Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                HÖFLING, E. M. Estado e políticas (públicas) sociais. <b>Cadernos CEDES</b>, v. 21, n. 55, p. 30-41,
-                2001.
-                Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.scielo.br/j/ccedes/a/pqNtQNWnT6B98Lgjpc5YsHq/?format=html&lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/ccedes/a/pqNtQNWnT6B98Lgjpc5YsHq/?format=html&lang=pt
-                </a>
-                . Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                HOLANDA, S. B. <b>Raízes do Brasil</b>. 26. ed. São Paulo: Companhia das Letras, 1995.
-            </p>
-            <p>
-                KRUG, E. G. et al. (org.). <b>Relatório mundial sobre violência e saúde</b>. Genebra: Organização
-                Mundial da
-                Saúde, 2002.
-                Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://portaldeboaspraticas.iff.fiocruz.br/biblioteca/relatorio-mundial-sobre-violencia-e-saude/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://portaldeboaspraticas.iff.fiocruz.br/biblioteca/relatorio-mundial-sobre-violencia-e-saude/
-                </a>
-                . Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                LERMEN, H. S. Preso tem família: sofrimentos e resistências de familiares de encarcerados ao longo de um
-                ano de
-                pandemia. <b>Cadernos Ibero-Americanos de Direito Sanitário</b>, v. 11, n. 2, p. 71-87, 2022. Disponível
-                em:
-                <a class="underline text-blue-500" href="https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1377954"
-                    target="_blank" rel="noopener noreferrer">
-                    https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1377954
-                </a>
-                Acesso em: 1 set. 2025.
-            </p>
-            <p>
-                MACHADO, N. O.; GUIMARÃES, I. S. A realidade do sistema prisional brasileiro e o princípio da dignidade
-                da pessoa
-                humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf
-                </a>
-                Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                MINAYO, M. . S.; CONSTANTINO, P. (org.). <b>Deserdados Sociais</b>: condições de vida e saúde dos presos
-                do
-                estado. Rio de
-                Janeiro: Fiocruz, 2015.
-            </p>
-            <p>
-                OLIVEIRA, H. K. P.; LOPES, J. A. B. Ressocialização e reintegração social no sistema prisional.
-                <b>Revista
-                    Ibero-Americana
-                    de Humanidades, Ciências e Educação</b>, v. 11, n. 4, p. 2196-2212, 2025. Disponível em:
-                <a class="underline text-blue-500" href="https://periodicorease.pro.br/rease/article/view/18814"
-                    target="_blank" rel="noopener noreferrer">
-                    https://periodicorease.pro.br/rease/article/view/18814
-                </a>
-                . Acesso em: 1 set. 2025.
-            </p>
-            <p>
-                ORGANIZAÇÃO DAS NAÇÕES UNIDAS. <b>Pacto Internacional dos Direitos Civis e Políticos</b>. 1966.
-                Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.oas.org/dil/port/1966%20Pacto%20Internacional%20sobre%20Direitos%20Civis%20e%20Pol%C3%ADticos.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.oas.org/dil/port/1966%20Pacto%20Internacional%20sobre%20Direitos%20Civis%20e%20Pol%C3%ADticos.pdf
-                </a>
-                . Acesso em: 10 set. 2025.
-            </p>
-            <p>
-                PEREIRA, Y. S.; SANTOS, B. X.; SANTOS, D. S. Justiça Restaurativa na Execução Penal: Caminhos para a
-                Humanização do
-                Sistema Penitenciário Brasileiro. <b>Revista FOCO</b>, v. 17, n. 12, e7071, 2024. Disponível em:
-                <a class="underline text-blue-500" href="https://ojs.focopublicacoes.com.br/foco/article/view/7071"
-                    target="_blank" rel="noopener noreferrer">
-                    https://ojs.focopublicacoes.com.br/foco/article/view/7071
-                </a>
-                . Acesso em: 1 set. 2025.
-            </p>
-            <p>
-                ROBERTS, A. et al. Family intervention in a prison environment: a systematic literature review.
-                <b>Criminal
-                    Behaviour and
-                    Mental Health</b>, v. 27, n. 4, p. 326-340, 2017. Disponível em:
-                <a class="underline text-blue-500" href="https://pubmed.ncbi.nlm.nih.gov/27104884/" target="_blank"
-                    rel="noopener noreferrer">
-                    https://pubmed.ncbi.nlm.nih.gov/27104884/
-                </a>
-                . Acesso em: 1 set. 2025.
-            </p>
-            <p>
-                SAPORI, L. F.; SANTOS, R. F.; MAAS, L. W. D. Fatores sociais determinantes da reincidência criminal no
-                Brasil: o caso de
-                Minas Gerais. <b>Revista Brasileira de Ciências Sociais</b>, v. 32, n. 94, e329409, 2017. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.scielo.br/j/rbcsoc/a/hsHmd9MqqNkWDscr3ps7bFy/?lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/rbcsoc/a/hsHmd9MqqNkWDscr3ps7bFy/?lang=pt
-                </a>
-                . Acesso em: 5 ago. 2025.
-            </p>
-            <p>
-                WACQUANT, L. <b>As prisões da miséria</b>. Rio de Janeiro: Jorge Zahar Ed., 2001.
-            </p>
-            <p>
-                WORLD HEALTH ORGANIZATION. <b>Declaration on prison health</b> as part of public health: adopted in
-                Moscow on
-                24 October 2003.
-                Genebra: World Health Organization; Regional Office for Europe, 2003. Disponível em:
-                <a class="underline text-blue-500" href="https://iris.who.int/handle/10665/352130" target="_blank"
-                    rel="noopener noreferrer">
-                    https://iris.who.int/handle/10665/352130
-                </a>
-                . Acesso em: 1 set. 2025.
-            </p>
-        </div>
-
-        <div id="autor" class="w-full bg-gray-100">
-            <div class="flex flex-col justify-between py-10 px-5 max-w-[800px] mx-auto">
-                <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo do Autor
-                </h1>
-                <div class="flex flex-wrap mt-5">
-                    <div class="w-full md:w-1/3">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/imagem-autor.jpg"
-                            alt="Ciro César de Carvalho" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Ciro César de Carvalho</small>
-                            <hr />
-                        </div>
+            <div>
+                <p class="text-center">
+                    <small>Clique para interagir</small>
+                </p>
+                <div class="flex flex-wrap justify-center">
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card1')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="card1" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
+                                            src="./images/imagem1.png" alt="Mulher andando a noite pela rua" />
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">No medo de andar sozinho à noite;</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
                     </div>
-                    <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'Card2')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="Card2" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
+                                            src="./images/imagem2.png" alt="Homem cansado no transporte público" />
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">
+                                            No assédio sofrido no transporte público;
+                                        </p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'Card3')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="Card3" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
+                                            src="./images/imagem3.png" alt="Mulher preta no transporte público" />
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">
+                                            Na falta de acesso às mesmas oportunidades por causa da cor da pele ou
+                                            classe social.
+                                        </p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Quando confundimos violência com insegurança, corremos o risco de legitimar respostas cruéis, como o
+                endurecimento
+                penal, sem enfrentar as verdadeiras causas da violência. A violência vai além da agressão física. Ela
+                também afeta a
+                saúde mental e as relações interpessoais. Em muitos casos, pode levar à insegurança na própria família.
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.1.2 O sistema prisional e os direitos humanos
+            </h2>
+            <p>
+                Segundo a corporação britânica de rádio difusão (BBC, 2024), o Brasil tem uma das maiores populações
+                prisionais do
+                mundo, mas o sistema prisional realmente cumpre seu papel de ressocialização? Quem são as pessoas que
+                estão privadas de
+                liberdade e por quais motivos? Dados da matéria apontam que as PPL, em sua maioria, são jovens, negros e
+                de baixa renda,
+                evidenciando um padrão social que reflete a desigualdade histórica do país.
+            </p>
+            <p>
+                Os direitos humanos são garantidos a todas as pessoas, inclusive às que estão privadas de liberdade. No
+                entanto, o
+                Conectas Direitos Humanos (2024), organização não governamental brasileira focada na manutenção dos
+                direitos humanos,
+                aponta que a realidade do sistema prisional é de superlotação, violência e falta de condições mínimas de
+                dignidade.
+                Diante do cenário brasileiro, o Supremo Tribunal Federal (STF) reconheceu, em 2023, a Arguição de
+                Descumprimento de
+                Preceito Fundamental (ADPF 347/DF), instrumento jurídico usado para contestar atos do poder público que
+                violem preceitos
+                essenciais da Constituição, a existência de um Estado de Coisas Inconstitucional (ECI) (Brasil, 2023).
+                Isso significa
+                que o funcionamento e a estrutura do sistema prisional violam de forma persistente e generalizada
+                direitos fundamentais,
+                como a integridade física, a saúde e a dignidade humana, exigindo do Estado medidas urgentes e
+                estruturais para reverter
+                esse quadro.
+            </p>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-blue-800 text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais1" class="modal-overlay hidden">
+                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
                         <p>
-                            Profissional com sólida experiência nas áreas de gestão pública, recursos humanos,
-                            planejamento estratégico, políticas
-                            públicas e administração geral. Atualmente exerce o cargo de Especialista em Políticas
-                            Públicas e Gestão Governamental
-                            na Secretaria de Estado de Saúde de Minas Gerais (SES/MG), atuando diretamente na
-                            coordenação e implementação de ações
-                            de promoção à saúde e políticas de equidade, com foco em populações vulneráveis, como
-                            prisional, indígena e negra e em
-                            comunidades LGBTQIA+.
-                            Administrador Público formado pela Fundação João Pinheiro, com graduações em História e
-                            Administração Geral, tem
-                            pós-graduação em Inclusão Social e diversos cursos voltados à liderança, diversidade, gestão
-                            e inovação. Mestrando em
-                            Gestão de Serviços de Saúde pela Universidade Federal de Minas Gerais.
+                            <b>Título: </b>Pena Justa
+                        </p>
+                        <p>
+                            <b>Autor: </b> Brasil (2023).
+                        </p>
+                        <p>
+                            <b>Descrição: </b>
+                            conheça a ADPF 347/DF, o Plano Nacional “Pena Justa”, e as estratégias para transformar o
+                            sistema prisional brasileiro
+                            com um conjunto de ações para garantir justiça, dignidade e reintegração social.
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="hover:underline text-blue-800"
+                                href="https://www.cnj.jus.br/wp-content/uploads/2024/04/resumo-adpf-7.pdf"
+                                target="_blank">Clique aqui</a>
                         </p>
                     </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Isso gera um ciclo de violência que afeta não apenas as PPL, mas toda a sociedade. Afinal, como podemos
+                esperar que uma
+                pessoa saia do sistema prisional melhor do que entrou se o ambiente é desumano?
+            </p>
+            <p>
+                Fica evidente que a violência no sistema prisional é reflexo da violência estrutural e histórica do
+                país. Para
+                compreender melhor essa dinâmica, podemos classificar a violência nesse contexto em diferentes tipos,
+                conforme
+                apresentado no Quadro 1.
+            </p>
+            <div id="quadro-1" class="flex flex-col gap-5 mt-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    Quadro 1 - Classificando as diferentes formas de violência: institucional e interpessoal
+                </h2>
+                <table class="w-full rounded-2xl overflow-hidden">
+                    <thead>
+                        <tr class="border border-white divide-x">
+                            <th class="text-center p-2 bg-blue-800 text-white">Tipo de Violência</th>
+                            <th class="text-center p-2 bg-blue-800 text-white">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-blue-200">
+                        <tr class="text-center border">
+                            <td class="p-2 border border-white">
+                                Violência Pregressa
+                            </td>
+                            <td class="p-2 border border-white">
+                                Atos de violência que a população privada de liberdade sofreu ou cometeu antes do
+                                aprisionamento.
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="p-2 border border-white">
+                                Violência Institucional
+                            </td>
+                            <td class="p-2 border border-white">
+                                Atos de violência cometidos pelo Estado no sistema prisional por meio de funcionários da
+                                instituição. Pode incluir
+                                abusos físicos, psicológicos e estruturais, sendo passível de multa e detenção de 3
+                                meses a 1 ano.
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="p-2 border border-white">
+                                Violência Interpessoal
+                            </td>
+                            <td class="p-2 border border-white">
+                                Atos de violência que acontecem nas instituições penais entre as pessoas presas
+                                envolvendo conflitos pessoais que
+                                resultam em agressões físicas.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <small>Fonte: elaboração do autor (2025).</small>
+            </div>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-blue-800 text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais2" class="modal-overlay hidden">
+                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b><i>Violência no Brasil</i>
+                        </p>
+                        <p>
+                            <b>Autor: </b> Maria Cecília Minayo (2018).
+                        </p>
+                        <p>
+                            <b>Descrição: </b>
+                            se você quer compreender um pouco mais a violência no Brasil, confira o vídeo com duração de
+                            11 minutos e 40 segundos
+                            publicado pela Fiocruz em que Minayo discute as diferentes dimensões da violência no país,
+                            analisando suas causas
+                            estruturais, implicações sociais e possíveis caminhos para a redução da criminalidade e da
+                            insegurança.
+                        </p>
+                        <p>
+                            A autora também fez um grande estudo sobre as condições de vida das PPL no estado do Rio de
+                            Janeiro e registrou no livro
+                            Deserdados Sociais (Minayo; Constantino, 2015). Vale a leitura!
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="hover:underline text-blue-800" href="https://www.youtube.com/watch?v=MPKYGWtYrec"
+                                target="_blank">Clique
+                                aqui</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais2')" class="btn bg-white text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Dessa forma, é possível perceber que a violência no sistema prisional não é um fenômeno isolado, mas um
+                reflexo das
+                desigualdades estruturais da sociedade. O aprisionamento em massa de pessoas em situação de
+                vulnerabilidade social
+                demonstra a relação entre a violência e os fatores socioeconômicos. Isso nos leva a outro ponto
+                essencial para a
+                compreensão desse cenário: os determinantes sociais da saúde, que afetam diretamente a qualidade de vida
+                da população,
+                incluindo aqueles privados de liberdade.
+            </p>
+            <p>
+                A Lei nº 8.080 (Brasil, 1990) definiu a saúde como um direito fundamental do ser humano e dever do
+                Estado, que deve
+                garantir, por meio de políticas públicas, a promoção, proteção e recuperação da saúde de qualquer
+                indivíduo de forma
+                igualitária, ressaltando a equidade.
+            </p>
+            <p>
+                Um conceito crucial para a compreensão da necessidade da equidade como princípio e fundamento pilar do
+                Sistema Único de
+                Saúde (SUS) é o de Determinante Social da Saúde (DSS). Os primeiros a definir os DSS foram Dahlgren e
+                Whitehead em 1991
+                (apud Buss; Pellegrini, 2007) (Figura 1), estabelecendo-os como fatores socioeconômicos, culturais e
+                ambientais que
+                influenciam diretamente a condição de vida das pessoas, como habitação, saneamento, ambiente, trabalho,
+                educação, além
+                dos fatores individuais. Na saúde coletiva, o território não é apenas um espaço físico delimitado, mas
+                um espaço vivido
+                e construído por relações sociais, econômicas, culturais e políticas. Ele reflete desigualdades, acessos
+                e
+                vulnerabilidades que interferem diretamente nos DSS.
+            </p>
+            <p>
+                Essas características afetam diretamente o acesso à saúde e as formas de adoecimento. A Organização
+                Mundial da Saúde
+                (OMS) adere ao conceito, confirmando sua relação com as principais iniquidades em saúde (Fiocruz, 2020).
+            </p>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 md:pr-5 py-2">
+                    <img class="w-full h-auto rounded-lg overflow-hidden object-cover" src="./images/imagem4.png"
+                        alt="Gráfico sobre as condições socioeconômicas, culturais e ambientais gerais" />
+                    <small>Fonte: Dahlgren e Whitehead (1991 apud Buss; Pellegrini, 2007).</small>
+                    <hr>
+                </div>
+                <div class="w-full md:w-1/2 py-2">
+                    É possível identificar diversas condições de vida que afetam a saúde da população privada de
+                    liberdade, como baixa
+                    escolaridade e ambientes insalubres. A Organização das Nações Unidas (ONU), em 1966, aprovou o Pacto
+                    Internacional dos
+                    Direitos Civis e Políticos, que reconheceu que toda PPL deveria ser tratada com humanidade e
+                    respeito à dignidade
+                    inerente à pessoa humana (Organização das Nações Unidas, 1966). No Brasil, esse pacto foi
+                    incorporado ao ordenamento
+                    jurídico pelo Decreto nº 592, de 1992 (Brasil, 1992).
+                </div>
+            </div>
+            <p>
+                No entanto, a realidade do sistema prisional é bem diferente, caracterizando-se por um ambiente
+                insalubre,
+                frequentemente tema de discussão por violar diversos direitos humanos, incluindo o direito à saúde. Essa
+                população é
+                acometida por várias doenças em decorrência do ambiente em que está inserida. A tríade confinamento,
+                insalubridade e
+                superlotação, por exemplo, contribui para o surgimento e agravamento de doenças infecciosas, agudas e
+                crônicas, além de
+                agravos em saúde mental e doenças, como as cardiovasculares. Tuberculose, infecções sexualmente
+                transmissíveis (ISTs) e
+                hanseníase são exemplos de enfermidades que tornam os estabelecimentos penais uma urgência em saúde
+                pública. Nesse
+                sentido, a Declaração de Moscou sobre Saúde Prisional, elaborada pela OMS (World Health Organization,
+                2003), reforça que
+                a saúde nos estabelecimentos penais é parte integrante da saúde pública e que a negligência nesse
+                ambiente compromete
+                toda a sociedade. O documento destaca ainda a necessidade de articulação entre os sistemas de saúde
+                dentro e fora dos
+                estabelecimentos penais, reafirmando que o direito à saúde deve ser assegurado a todas as pessoas,
+                inclusive àquelas
+                privadas de liberdade.
+            </p>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-blue-800 text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais3" class="modal-overlay hidden">
+                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b><i>Determinantes Sociais de Saúde</i>
+                        </p>
+                        <p>
+                            <b>Autor: </b> ENSP/FIOCRUZ (2013).
+                        </p>
+                        <p>
+                            <b>Descrição: </b>
+                            se você quer compreender um pouco mais sobre os DSS, confira o vídeo apresentado por Alberto
+                            Pellegrini Filho, da
+                            ENSP/FIOCRUZ, com duração aproximada de 9 minutos. Esse vídeo explora como fatores sociais,
+                            econômicos e ambientais
+                            influenciam a saúde das populações, destacando a importância de políticas públicas
+                            intersetoriais.
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="hover:underline text-blue-800" href="https://www.youtube.com/watch?v=bVmc-gngyVI"
+                                target="_blank">Clique
+                                aqui</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais3')" class="btn bg-white text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Nesse contexto, surge a necessidade de políticas públicas que não apenas garantam direitos, mas promovam
+                um sistema
+                prisional menos punitivo e mais voltado para a reintegração social. Höfling (2001) define as políticas
+                sociais como
+                políticas responsáveis pela redistribuição de benefícios sociais, visando à redução das desigualdades
+                estruturais. No
+                entanto, como aponta Cardoso (2009), o sistema prisional brasileiro prioriza a punição do delito em
+                detrimento da
+                reintegração, ignorando a necessidade de contemplar essa população nas políticas sociais.
+            </p>
+            <p>
+                É interessante destacar que, segundo Oliveira e Lopes (2025), há uma diferenciação entre ressocialização
+                e reintegração
+                social: a ressocialização refere-se ao processo pelo qual o indivíduo reconstrói sua capacidade de
+                conviver socialmente,
+                enquanto a reintegração diz respeito à inserção efetiva do indivíduo na sociedade após cumprir a pena.
+                Essa distinção
+                evidencia que políticas públicas voltadas para o sistema prisional devem ir além da simples manutenção
+                de direitos,
+                promovendo medidas que não só preparem o indivíduo para a vida social (ressocialização), mas também
+                garantam sua
+                participação plena na sociedade (reintegração).
+            </p>
+            <h3
+                class="text-2xl md:text-3xl border-b-2 py-5 border-blue-300 font-light text-center leading-10 md:leading-12">
+                Para transformar essa realidade, é fundamental que as políticas públicas promovam a qualificação das
+                equipes que atuam
+                diretamente com essa população, na ampliação do acesso à saúde e à educação e na revisão da estrutura do
+                sistema
+                prisional. A ética e a justiça social devem caminhar juntas para que o país seja mais justo e
+                equitativo.
+            </h3>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-blue-800 text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais4" class="modal-overlay hidden">
+                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b><i>Ressocialização e reintegração social no sistema prisional</i>
+                        </p>
+                        <p>
+                            <b>Autores: </b> Helder Kayky Pimenta de Oliveira e José Augusto Bezerra Lopes (2025).
+                        </p>
+                        <p>
+                            <b>Descrição: </b>
+                            se você deseja compreender com mais profundidade as diferenças entre reinserção,
+                            reintegração e ressocialização no
+                            sistema prisional, este artigo apresenta uma análise crítica do tema, destacando seus
+                            aspectos jurídicos e sociais.
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="hover:underline text-blue-800"
+                                href="https://periodicorease.pro.br/rease/article/view/18814" target="_blank">Clique
+                                aqui</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais4')" class="btn bg-white text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                O Conselho Nacional do Ministério Público define cidadania como o vínculo entre o indivíduo e o Estado
+                (2015), que
+                estabelece direitos e deveres políticos e civis. Com a população privada de liberdade, o Estado tem a
+                obrigação de
+                garantir os demais direitos fundamentais, embora o direito de ir e vir esteja temporariamente suspenso.
+                Cabe à equipe
+                prisional zelar pela integridade física e moral das PPL.
+            </p>
+            <p>
+                Entretanto, como mencionado anteriormente, o sistema prisional brasileiro não cumpre plenamente as
+                condições previstas
+                na Lei de Execução Penal (LEP), Lei nº 7.210 (Brasil, 1984). A superlotação e a violação dos direitos
+                humanos são
+                recorrentes, gerando revolta entre as PPL. Machado e Guimarães (2014) apontam que essa insatisfação tem
+                como
+                consequência um novo ciclo de violência, reforçando a necessidade urgente de reforma do sistema
+                prisional para que ele
+                cumpra seu papel ressocializador, em vez de apenas punir.
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-blue-400">
+                        <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Assis (2007)</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5">
+                                Assis (2007) faz uma análise ainda mais crítica, destacando que, apesar da igualdade ser
+                                um princípio constitucional, a
+                                realidade prisional demonstra o contrário: a maioria das PPL é composta por indivíduos
+                                das classes mais baixas e
+                                historicamente marginalizados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Dados do SISDEPEN</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5">
+                                Segundo dados do SISDEPEN (Brasil, 2024), no primeiro semestre de 2024, 68,9% das PPL
+                                era negra ou parda. Além disso,
+                                apenas 82,3% das pessoas tiveram seu dado cor de pele/raça/etnia preenchido, o que
+                                também mostra a necessidade de o
+                                sistema prisional atentar para esses dados, pois a incompletude já pode ser vista como
+                                um dado para análise. Esse dado
+                                reforça a importância de discutir os DSS, que não influenciam nem determinam diretamente
+                                o aprisionamento em si, mas
+                                ajudam a compreender as taxas, características e desigualdades do aprisionamento no
+                                Brasil, como, por exemplo, quem é
+                                mais afetado, em que contexto e de que maneira.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center pt-3 text-left">
+                            <span class="font-bold text-xl px-5">Sapori, Santos e Mass (2017)</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5">
+                                A pesquisa de Sapori, Santos e Maas (2017) sobre o perfil dos egressos em Minas Gerais
+                                revelou que, em sua maioria, são
+                                jovens, pardos e com baixa escolaridade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Ainda segundo o SISDEPEN, no primeiro semestre de 2024, 76,92% das PPL não haviam concluído o ensino
+                básico. Esses
+                números evidenciam a importância de promover ações socioeducativas nos estabelecimentos penais e de
+                aumentar os
+                investimentos na educação. O Decreto nº 7.626 (Brasil, 2011) instituiu o Plano Estratégico de Educação
+                no Sistema
+                Prisional, visando à qualificação profissional das PPL para que, ao serem libertadas, tivessem mais
+                oportunidades no
+                mercado de trabalho, contribuindo para o caráter ressocializador do sistema.
+            </p>
+            <p>
+                A busca pela manutenção dos vínculos familiares é relevante para a saúde mental, como revela a revisão
+                sistemática de
+                Roberts et al. (2017) ao destacar os efeitos positivos das intervenções familiares no contexto
+                prisional.
+            </p>
+            <p>
+                Esses vínculos são mantidos, em grande medida, pelos esforços dos próprios familiares nas visitas a seus
+                entes em
+                situação de prisão. No entanto, Gomes, Ribeiro e Miranda (2024) apontam que essas visitas nem sempre
+                ocorrem de forma
+                respeitosa e segura, havendo denúncias de abusos e assédios cometidos por policiais penais contra
+                familiares. Pereira,
+                Santos e Santos (2024) destacam que, diante das fragilidades institucionais, os familiares costumam
+                recorrer a redes
+                informais de apoio, compostas por outras pessoas que vivem a mesma realidade. Nos depoimentos, emergem
+                sentimentos como
+                “cansaço”, diante das dificuldades enfrentadas para obter senhas e lidar com os inúmeros obstáculos
+                relacionados ao
+                direito à visitação. Nesse sentido, diferentes estudos (Pereira; Santos; Santos, 2024; Calicchio, 2019;
+                Lermen, 2022)
+                evidenciam as limitações das políticas públicas em promover e facilitar o fortalecimento dos laços
+                familiares no
+                contexto prisional.
+            </p>
+            <p>
+                É importante considerar também que policiais penais estão frequentemente submetidos a condições
+                precárias de trabalho, o
+                que pode afetar sua saúde mental e interferir na qualidade das interações com familiares e PPL.
+            </p>
+            <p>
+                Um estudo comparativo de Fonseca et al. (2024) aponta países como a Noruega como exemplo de boas
+                práticas no sistema
+                prisional, com taxas de reincidência inferiores a 20%. De fato, o modelo norueguês se destaca por
+                priorizar a
+                reintegração social, com infraestrutura adequada, acesso à educação, apoio psicológico e oportunidades
+                de trabalho. No
+                entanto, é importante reconhecer que os resultados não podem ser atribuídos exclusivamente ao modelo
+                prisional em si,
+                mas também às condições sociais mais amplas. Como argumenta Wacquant (2001) em As Prisões da Miséria, o
+                sistema
+                prisional é apenas um dos elementos envolvidos na produção e no controle da criminalidade e, em muitos
+                contextos, ele
+                ganha um protagonismo desproporcional em relação às políticas públicas.
+            </p>
+            <p>
+                O caso brasileiro exemplifica isso: o aprisionamento em massa está profundamente relacionado à
+                criminalização da pobreza
+                e à chamada guerra às drogas, que seleciona corpos e territórios marcados pela desigualdade racial e
+                social. Assim,
+                pensar em uma reforma do sistema prisional exige também enfrentar as raízes estruturais da violência e
+                do crime, que vão
+                muito além dos muros dos estabelecimentos penais.
+            </p>
+            <div class="flex flex-wrap py-10">
+                <div class="w-full md:w-1/2 max-h-[500px] overflow-hidden pr-5">
+                    <img class="w-full h-auto rounded-lg overflow-hidden object-cover" src="./images/comunidade.gif"
+                        alt="Comunidade de classe baixa" />
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col gap-3">
+                    <p>
+                        <b>
+                            Você já parou para pensar por que algumas regiões enfrentam mais violência do que outras?
+                            Que fatores sociais e
+                            econômicos estão por trás dessa realidade?
+                        </b>
+                    </p>
+                    <p>
+                        É importante compreender que o planejamento de políticas públicas voltadas à prevenção da
+                        violência precisa contemplar
+                        muito mais que o reforço policial. Ele exige uma análise racional e profunda das causas da
+                        insegurança.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-gray-100">
+            <div class="flex flex-col justify-between py-10 px-5 max-w-[800px] mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold">
+                    Reflexão
+                </h2>
+                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                    Como a fome, a pobreza e o desemprego contribuem para o aumento da violência? E mais - como garantir
+                    que a prevenção
+                    passe também pelo acesso à educação, à moradia e à saúde pública de qualidade?
+                </h2>
+            </div>
+        </div>
+        <div class="w-full max-w-[800px] mx-auto flex flex-col gap-7 py-10 px-5">
+            <p>
+                A complexidade desse problema está justamente na intersecção desses fatores. Por isso, discutir
+                segurança pública
+                implica também falar sobre justiça social. A reforma do sistema prisional, por exemplo, só será eficaz
+                se vier
+                acompanhada de medidas que assegurem condições de vida dignas para quem cumpre suas penas. Essa
+                abordagem mais ampla
+                pode ser decisiva para reduzir os índices de reincidência criminal.
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.2 Políticas públicas para enfrentamento da violência
+            </h2>
+            <p>
+                A violência é um problema que afeta toda a sociedade, com implicações diretas na segurança, nos direitos
+                humanos, na
+                saúde, na educação e no desenvolvimento social. Para combatê-la de maneira eficaz, é essencial que
+                existam políticas
+                públicas que atuem tanto na prevenção quanto na punição e ressocialização.
+            </p>
+            <p>
+                Aqui vamos explorar algumas estratégias e iniciativas utilizadas para enfrentar a violência,
+                incentivando a reflexão
+                sobre o papel do Estado e da sociedade nesse processo.
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.2.1 Estratégias de prevenção da violência
+            </h2>
+            <p>
+                As políticas públicas de prevenção da violência devem ser baseadas na identificação dos fatores de risco
+                e na
+                implementação de estratégias educativas, sociais e culturais. Veja no Quadro 2 o que as políticas
+                públicas de prevenção
+                da violência devem contemplar.
+            </p>
+            <div id="quadro-1" class="flex flex-col gap-5 mt-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    Quadro 1 - Classificando as diferentes formas de violência: institucional e interpessoal
+                </h2>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-blue-400">
+                        <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Promoção da inclusão social</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-5 py-3 flex flex-col gap-3">
+                                <p>
+                                    <b>Objetivo:</b><br>
+                                    Reduzir desigualdades, oferecendo educação, capacitação profissional, cultura e
+                                    lazer.
+                                </p>
+                                <p>
+                                    <b>Exemplo de ação relacionada:</b><br>
+                                    <b><i>Movimento</i>
+                                        <a class="text-blue-300 underline" href="https://todospelaeducacao.org.br/"
+                                            target="_blank" rel="noopener noreferrer">Todos pela Educação</a></b><br>
+                                    Trabalha para garantir educação de qualidade para todos, combatendo a desigualdade
+                                    social
+                                    e promovendo inclusão. A
+                                    educação é um dos fatores-chave para prevenir a violência a longo prazo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b border-blue-400">
+                        <button id="item22" onclick="animacao.toggleAccordion('item22', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Fortalecimento das redes de proteção</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-5 py-3 flex flex-col gap-3">
+
+                                <p>
+                                    <b>Objetivo:</b><br>
+                                    Apoiar famílias e criar programas de orientação e prevenção da violência infantil.
+                                    Atuar diretamente na redução de comportamentos violentos nas gerações futuras com a
+                                    realização de campanhas de
+                                    conscientização para a prevenção do abuso e negligência infantil.
+                                </p>
+
+                                <p>
+                                    <b>Exemplo de ação relacionada:</b><br>
+                                    <b><i>Programa</i>
+                                        <a class="text-blue-300 underline"
+                                            href="https://www.seguranca.mg.gov.br/index.php/prevencao/programas/fica-vivo"
+                                            target="_blank" rel="noopener noreferrer">Fica Vivo!</a></b><br>
+                                    Criado para prevenir homicídios entre jovens em áreas de vulnerabilidade, oferece
+                                    atividades culturais, esportivas e
+                                    profissionalizantes para afastá-los da criminalidade.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item23" onclick="animacao.toggleAccordion('item23', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center pt-3 text-left">
+                            <span class="font-bold text-xl px-5">Educação para convivência pacífica</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-5 py-3 flex flex-col gap-3">
+                                <p>
+                                    <b>Objetivo:</b><br>
+                                    Ensinar direitos humanos, resolução de conflitos e empatia nas escolas, além de
+                                    promover
+                                    o espaço escolar como um lugar
+                                    de cultura pacificadora.
+                                </p>
+
+                                <p>
+                                    <b>Exemplo de ação relacionada:</b><br>
+                                    <b><i>Escola Aberta</i></b><br>
+                                    Abre escolas nos fins de semana para oferecer atividades culturais e esportivas,
+                                    promovendo a convivência pacífica e
+                                    fortalecendo a comunidade escolar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <small>Fonte: elaboração do autor (2025).</small>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                1.2.2 Políticas de combate à violência
+            </h2>
+            <p>
+                Além das ações preventivas, é fundamental que o sistema de segurança pública e a justiça sejam
+                fortalecidos para
+                garantir a responsabilização dos agressores e a proteção das vítimas.
+            </p>
+            <p>
+                O Quadro 3 apresenta algumas experiências e propostas como possibilidades de enfrentamento da violência.
+                É importante
+                destacar que essas ações não se encerram nas sugestões indicadas, uma vez que o tema é complexo e nem
+                mesmo entre
+                especialistas em segurança pública há consenso sobre as estratégias mais eficazes.
+            </p>
+            <p>
+                Também é necessário considerar a inclusão do SUS nessas políticas. O SUS desempenha um papel fundamental
+                tanto no
+                acolhimento e cuidado das vítimas quanto na prevenção de novos episódios de violência por meio da
+                Atenção Primária à
+                Saúde (APS), da saúde mental (Centros de Atenção Psicossocial – CAPS – com apoio psicológico e
+                acompanhamento de vítimas
+                em sofrimento emocional) e das notificações compulsórias, que podem contribuir para a formulação de
+                políticas mais
+                eficazes.
+            </p>
+            <div id="quadro-3" class="flex flex-col gap-5 mt-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    Quadro 3 - Programas e medidas de enfrentamento da violência e proteção das vítimas
+                </h2>
+                <div>
+                    <p class="text-center pb-3">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div id="grupo3" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                        <div class="border-b border-blue-400">
+                            <button id="item31" onclick="animacao.toggleAccordion('item31', 'grupo3')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Apoio e proteção às vítimas</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-5 py-3 flex flex-col gap-3">
+                                    <p>
+                                        <b>Objetivo:</b><br>
+                                        Criar delegacias especializadas, centros de referência e abrigos. Esses serviços
+                                        devem garantir segurança, acolhimento,
+                                        orientação jurídica e psicossocial, promovendo a recuperação e a autonomia das
+                                        vítimas.
+                                    </p>
+
+                                    <p>
+                                        <b>Confira ações relacionadas:</b><br>
+                                        <a href="https://www.compromissoeatitude.org.br/rede-de-atendimento-as-mulheres-em-situacao-de-violencia/"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="text-blue-300 underline">Rede
+                                            de Atendimento às Mulheres em Situação de Violência</a><br>
+                                        Serviço público que reúne ações e serviços das áreas de assistência social,
+                                        justiça,
+                                        segurança pública e saúde para
+                                        apoiar mulheres em situação de violência.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-b border-blue-400">
+                            <button id="item32" onclick="animacao.toggleAccordion('item32', 'grupo3')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Fortalecimento da segurança pública</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-5 py-3 flex flex-col gap-3">
+                                    <p>
+                                        <b>Objetivo:</b><br>
+                                        Capacitar agentes e ampliar o policiamento comunitário e as tecnologias de
+                                        monitoramento.
+                                    </p>
+                                    <p>
+                                        <b>Confira ações relacionadas:</b><br>
+                                        <a href="https://www.gov.br/mulheres/pt-br/acesso-a-informacao/acoes-e-programas-1/acoes-e-programas-de-gestoes-anteriores/politicas-para-mulheres/acoes-e-programas/programa-mulher-segura-e-protegida"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="text-blue-300 underline">Programa Mulher Segura e
+                                            Protegida</a><br>
+                                        Desenvolvido para ampliar serviços de proteção a mulheres vítimas de violência
+                                        em parceria com governos estaduais e municipais.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="item33" onclick="animacao.toggleAccordion('item33', 'grupo3')"
+                                class="accordion-header w-full flex justify-between items-center pt-3 text-left">
+                                <span class="font-bold text-xl px-5">Aperfeiçoamento do sistema de justiça</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-5 py-3 flex flex-col gap-3">
+                                    <p>
+                                        <b>Objetivo:</b><br>
+                                        Agilizar processos, garantir medidas protetivas e punir agressores, além de
+                                        investir
+                                        em sistemas que facilitem o
+                                        acompanhamento dos processos e que garantam que a justiça chegue rapidamente aos
+                                        casos de violência.
+                                    </p>
+
+                                    <p>
+                                        <b>Confira ações relacionadas:</b><br>
+                                        <b>Relatório: </b><br>
+                                        <a href="https://www.cnj.jus.br/wp-content/uploads/conteudo/arquivo/2019/08/7b7cb6d9ac9042c8d3e40700b80bf207.pdf"
+                                            target="_blank" rel="noopener noreferrer" class="text-blue-300 underline">O
+                                            Poder Judiciário no Enfrentamento à Violência Doméstica e Familiar contra as
+                                            Mulheres</a><br>
+                                        Iniciativa conjunta do Conselho Nacional de Justiça (CNJ) e do Instituto de
+                                        Pesquisa
+                                        Econômica Aplicada (Ipea) para
+                                        aprimorar a atuação do Poder Judiciário no atendimento integral e
+                                        multidisciplinar a
+                                        mulheres vítimas de violência
+                                        doméstica e familiar.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <small>Fonte: elaboração do autor (2025).</small>
+            </div>
+            <p>
+                Para que a violência seja efetivamente enfrentada, é preciso também pensar em políticas de reabilitação
+                e reintegração
+                daqueles que cometeram atos violentos. Nesse sentido, é interessante destacar alguns projetos e
+                estratégias de inclusão
+                social de pessoas egressas do sistema prisional, conforme Quadro 4.
+            </p>
+            <div id="quadro-4" class="flex flex-col gap-5 mt-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    Quadro 4 - Programas e iniciativas para reintegração social de egressos do sistema prisional
+                </h2>
+                <div>
+                    <p class="text-center pb-3">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div id="grupo4" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                        <div class="border-b border-blue-400">
+                            <button id="item41" onclick="animacao.toggleAccordion('item41', 'grupo4')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Programas educativos e de capacitação</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-5 py-3 flex flex-col gap-3">
+                                    <p>
+                                        <b>Objetivo:</b><br>
+                                        Oferecer oportunidades para mudança de vida.
+                                    </p>
+                                    <p>
+                                        <b>Confira ações relacionadas:</b><br>
+                                        <a href="https://www.cnj.jus.br/campanha/comecar-de-novo-artigo-campanha/"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="text-blue-300 underline">Projeto Começar de Novo</a>
+                                        Incentiva a contratação de pessoas que cumpriram pena para facilitar a
+                                        reintegração
+                                        social e reduzir a reincidência
+                                        criminal.
+                                    </p>
+                                    <p>
+                                        <a href="https://novoscaminhos.mec.gov.br/conheca-o-programa" target="_blank"
+                                            rel="noopener noreferrer" class="text-blue-300 underline">Programa Novos
+                                            Caminhos</a><br>
+                                        Oferece capacitação profissional para egressos do sistema prisional, com foco na
+                                        reintegração ao mercado de trabalho.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="item42" onclick="animacao.toggleAccordion('item42', 'grupo4')"
+                                class="accordion-header w-full flex justify-between items-center pt-3 text-left">
+                                <span class="font-bold text-xl px-5">Tratamento psicológico e assistência social</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="px-5 py-3 flex flex-col gap-3">
+
+                                    <p>
+                                        <b>Objetivo:</b><br>
+                                        Ajudar na reabilitação emocional e social.
+                                    </p>
+
+                                    <p>
+                                        <b>Confira ações relacionadas:</b><br>
+                                        <a href="https://recomecar360.org/" target="_blank" rel="noopener noreferrer"
+                                            class="text-blue-300 underline">Instituto Recomeçar</a><br>
+                                        Organização social que atua com o objetivo de reintegrar à sociedade homens e
+                                        mulheres egressos do sistema prisional com
+                                        diferentes tipos de suporte.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <small>Fonte: elaboração do autor (2025).</small>
+            </div>
+            <p>
+                A implementação dessas políticas públicas requer o envolvimento de toda a sociedade, com destaque para a
+                participação da
+                sociedade civil organizada. Movimentos sociais, Organizações Não Governamentais (ONGs), lideranças
+                comunitárias e outros
+                atores são fundamentais não só na elaboração e implementação de programas, mas também na fiscalização e
+                cobrança de
+                resultados. A parceria entre governo e sociedade fortalece a legitimidade das ações e amplia seu
+                alcance.
+            </p>
+            <p>
+                No SUS, essa participação se concretiza principalmente por meio dos Conselhos e Conferências de Saúde,
+                espaços em que
+                usuários, profissionais, prestadores e gestores debatem, fiscalizam e propõem melhorias nas políticas
+                públicas. Além
+                dessas instâncias formais, a população também pode se engajar por meio de ouvidorias, consultas
+                públicas, movimentos
+                sociais e atividades de educação popular em saúde, fortalecendo o controle social e a democracia
+                participativa.
+            </p>
+            <p>
+                Esse protagonismo da sociedade é ainda mais necessário no contexto do sistema prisional. A Política
+                Nacional de Atenção
+                Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional (PNAISP) prevê a participação
+                ativa de PPL,
+                familiares e trabalhadores prisionais nas ações de saúde. Garantir esse envolvimento é fundamental para
+                promover o
+                acesso ao SUS, combater desigualdades e ampliar a cidadania durante a privação de liberdade.
+            </p>
+            <p>
+                A participação social, portanto, não é apenas um direito, mas uma ferramenta estratégica na construção
+                de políticas
+                públicas mais justas, inclusivas e efetivas, especialmente nos contextos de maior vulnerabilidade.
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)]"></i>
+                1.2.5 Ações interinstitucionais
+            </h2>
+            <p>
+                O enfrentamento da violência exige ações articuladas entre diferentes áreas do governo, como saúde,
+                educação,
+                assistência social, segurança pública, justiça e cultura. A integração dessas políticas facilita o
+                atendimento integral
+                às vítimas e a atuação governamental mais eficaz na resolução dos problemas estruturais que geram a
+                violência.
+            </p>
+        </div>
+
+        <div id="referencias_importantes" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[800px] mx-auto flex flex-col gap-7 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                    Referências importantes
+                </h2>
+                <p>
+                    CALICCHIO, M. G. M. S. <b>Além das Celas</b>: experiência de mulheres com familiar em cumprimento de
+                    pena em
+                    regime fechado,
+                    Mato Grosso. Tese (Doutorado em Saúde Coletiva) - Programa de Pós-Graduação em Saúde Coletiva,
+                    Universidade Federal de
+                    Mato Grosso, Cuiabá, 2019.
+                </p>
+                <p>
+                    CARDOSO, M. C. V. As assistências previstas na Lei de Execução Penal: uma tentativa de inclusão
+                    social
+                    do apenado. <b>SER
+                        Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746" target="_blank"
+                        rel="noopener noreferrer">https://periodicos.unb.br/index.php/SER_Social/article/view/12746(opens
+                        in
+                        a new tab)</a>. Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    CONECTAS DIREITOS HUMANOS. Regras de Mandela: os problemas do sistema carcerário brasileiro. São
+                    Paulo:
+                    Conectas, 18
+                    jul. 2024. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
+                        target="_blank"
+                        rel="noopener noreferrer">https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/</a>.
+                    Acesso em: 22 ago. 2025.
+                </p>
+                <p>
+                    MACHADO, N. O.; GUIMARÃES, I. S. A realidade do sistema prisional brasileiro e o princípio da
+                    dignidade
+                    da pessoa
+                    humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível
+                    em:
+                    <a class="underline text-blue-500"
+                        href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf</a>.
+                    Acesso em: 5 ago. 2025.
+                </p>
+            </div>
+            <div id="referencias" class="w-full max-w-[800px] mx-auto flex flex-col gap-7 py-10 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                    Referências
+                </h2>
+                <p>
+                    ASSIS, R. D. A realidade atual do sistema penitenciário brasileiro. <b>Revista CEJ</b>, v. 11, n.
+                    39, p.
+                    74-78,
+                    2007.
+                    Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://revistacej.cjf.jus.br/cej/index.php/revcej/article/view/949" target="_blank"
+                        rel="noopener noreferrer">
+                        https://revistacej.cjf.jus.br/cej/index.php/revcej/article/view/949
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    BBC. Presos no Brasil: 96% homens, 48% pardos, 30% sem julgamento: o perfil dos detentos no Brasil.
+                    <b>BBC
+                        News Brasil</b>, 17
+                    out. 2024. Disponível em:
+                    <a class="underline text-blue-500" href="https://www.bbc.com/portuguese/articles/c0k4nmd3e2xo"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.bbc.com/portuguese/articles/c0k4nmd3e2xo
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Secretaria Nacional de Políticas Penais. <b>Relatório de Informações Penais</b>. 16º ciclo
+                    SISDEPEN, 1º
+                    semestre de
+                    2024. RELIPEN. Brasília: SENAPPEN, 2024. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Plano Nacional para o Enfrentamento do Estado de Coisas Inconstitucional nas Prisões
+                    Brasileiras
+                    - Pena Justa.
+                    ADPF 347/DF. <b>gov.br</b>, 2023. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/pena-justa"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/pena-justa
+                    </a>
+                    . Acesso em: 16 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Conselho Nacional do Ministério Público (CNMP). <b>Cidadania</b>. c2015. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://www.cnmp.mp.br/portal/institucional/476-glossario/8144-cidadania" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.cnmp.mp.br/portal/institucional/476-glossario/8144-cidadania
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Decreto nº 7.626, de 24 de novembro de 2011. Institui o Plano Estratégico de Educação no
+                    âmbito
+                    do Sistema
+                    Prisional. <b>Diário Oficial da União, Brasília</b>, DF, 25 nov. 2011. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7626.htm"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7626.htm
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Decreto nº 592, de 6 de julho de 1992. Atos internacionais. Pacto Internacional sobre
+                    Direitos
+                    Civis e
+                    Políticos. Promulgação. <b>Diário Oficial da União</b>, Brasília, DF, 7 jul. 1992. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0592.htm" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0592.htm
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Lei nº 8.080, de 19 de setembro de 1990. Dispõe sobre as condições para a promoção, proteção
+                    e
+                    recuperação da
+                    saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências.
+                    <b>Diário
+                        Oficial da União</b>,
+                    Brasília, DF, 20 set. 1990. Disponível em:
+                    <a class="underline text-blue-500" href="https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de Execução Penal. <b>Diário Oficial da União</b>,
+                    Brasília,
+                    DF, 13 jul.
+                    1984. Disponível em:
+                    <a class="underline text-blue-500" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
+                        target="_blank" rel="noopener noreferrer">
+                        http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BUSS, P. M.; PELLEGRINI FILHO, A. A saúde e seus Determinantes Sociais. <b>Physis: Revista de Saúde
+                        Coletiva</b>, v. 17, n. 1,
+                    p. 77-93, 2007. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://www.scielo.br/j/physis/a/msNmfGf74RqZsbpKYXxNKhm/?format=pdf&lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/physis/a/msNmfGf74RqZsbpKYXxNKhm/?format=pdf&lang=pt
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    CALICCHIO, M. G. M. S. <b>Além das Celas</b>: experiência de mulheres com familiar em cumprimento de
+                    pena em
+                    regime fechado,
+                    Mato Grosso. Tese (Doutorado em Saúde Coletiva) - Programa de Pós-Graduação em Saúde Coletiva,
+                    Universidade Federal de
+                    Mato Grosso, Cuiabá, 2019.
+                </p>
+                <p>
+                    CARDOSO, M. C. V. As assistências previstas na Lei de Execução Penal: uma tentativa de inclusão
+                    social
+                    do apenado. <b>SER
+                        Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746" target="_blank"
+                        rel="noopener noreferrer">
+                        https://periodicos.unb.br/index.php/SER_Social/article/view/12746
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    CONECTAS DIREITOS HUMANOS. <b>Regras de Mandela</b>: os problemas do sistema carcerário brasileiro.
+                    São
+                    Paulo:
+                    Conectas, 18
+                    jul. 2024. Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/
+                    </a>
+                    . Acesso em: 22 ago. 2025.
+                </p>
+                <p>
+                    FERNANDES, F. <b>A integração do negro na sociedade de classes</b>. São Paulo: Ática, 1978. 2 v.
+                </p>
+                <p>
+                    FIOCRUZ. Os DSS na OMS. <b>Portal DSSBR</b>, c2020. Disponível em:
+                    <a class="underline text-blue-500" href="https://dssbr.ensp.fiocruz.br/dss-o-que-e/os-dss-na-oms/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://dssbr.ensp.fiocruz.br/dss-o-que-e/os-dss-na-oms/
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    FONSECA, R. R. et al. Como a organização do sistema prisional influencia na taxa de ressocialização:
+                    uma
+                    comparação
+                    entre Brasil e Noruega. <b>Jornal Eletrônico Faculdades Integradas Vianna Júnior</b>, v. 16, n. 1,
+                    p.
+                    70-90,
+                    2024. Disponível
+                    em:
+                    <a class="underline text-blue-500"
+                        href="https://www.jornaleletronicofivj.com.br/jefvj/article/view/932" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.jornaleletronicofivj.com.br/jefvj/article/view/932
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    FREYRE, G. <b>Casa-grande & senzala</b>: formação da família brasileira sob o regime da economia
+                    patriarcal.
+                    48. ed. Rio de
+                    Janeiro: Record, 2003.
+                </p>
+                <p>
+                    GOMES, M. E. R C.; RIBEIRO, L. M. L.; MIRANDA, G. G. R. "Todo homem precisa de uma mãe", mas nem
+                    todo
+                    merece uma: o
+                    cuidado em notícias sobre o sistema penitenciário mineiro. <b>Sexualidad, Salud y Sociedad</b>, n.
+                    40,
+                    e22203,
+                    2024. Disponível
+                    em:
+                    <a class="underline text-blue-500" href="https://www.scielo.br/j/sess/a/QrBk7TvLt65yq3Z58Vmvr9H/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/sess/a/QrBk7TvLt65yq3Z58Vmvr9H/
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    HÖFLING, E. M. Estado e políticas (públicas) sociais. <b>Cadernos CEDES</b>, v. 21, n. 55, p. 30-41,
+                    2001.
+                    Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://www.scielo.br/j/ccedes/a/pqNtQNWnT6B98Lgjpc5YsHq/?format=html&lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/ccedes/a/pqNtQNWnT6B98Lgjpc5YsHq/?format=html&lang=pt
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    HOLANDA, S. B. <b>Raízes do Brasil</b>. 26. ed. São Paulo: Companhia das Letras, 1995.
+                </p>
+                <p>
+                    KRUG, E. G. et al. (org.). <b>Relatório mundial sobre violência e saúde</b>. Genebra: Organização
+                    Mundial da
+                    Saúde, 2002.
+                    Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://portaldeboaspraticas.iff.fiocruz.br/biblioteca/relatorio-mundial-sobre-violencia-e-saude/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://portaldeboaspraticas.iff.fiocruz.br/biblioteca/relatorio-mundial-sobre-violencia-e-saude/
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    LERMEN, H. S. Preso tem família: sofrimentos e resistências de familiares de encarcerados ao longo
+                    de um
+                    ano de
+                    pandemia. <b>Cadernos Ibero-Americanos de Direito Sanitário</b>, v. 11, n. 2, p. 71-87, 2022.
+                    Disponível
+                    em:
+                    <a class="underline text-blue-500"
+                        href="https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1377954" target="_blank"
+                        rel="noopener noreferrer">
+                        https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1377954
+                    </a>
+                    Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    MACHADO, N. O.; GUIMARÃES, I. S. A realidade do sistema prisional brasileiro e o princípio da
+                    dignidade
+                    da pessoa
+                    humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível
+                    em:
+                    <a class="underline text-blue-500"
+                        href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf
+                    </a>
+                    Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    MINAYO, M. . S.; CONSTANTINO, P. (org.). <b>Deserdados Sociais</b>: condições de vida e saúde dos
+                    presos
+                    do
+                    estado. Rio de
+                    Janeiro: Fiocruz, 2015.
+                </p>
+                <p>
+                    OLIVEIRA, H. K. P.; LOPES, J. A. B. Ressocialização e reintegração social no sistema prisional.
+                    <b>Revista
+                        Ibero-Americana
+                        de Humanidades, Ciências e Educação</b>, v. 11, n. 4, p. 2196-2212, 2025. Disponível em:
+                    <a class="underline text-blue-500" href="https://periodicorease.pro.br/rease/article/view/18814"
+                        target="_blank" rel="noopener noreferrer">
+                        https://periodicorease.pro.br/rease/article/view/18814
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    ORGANIZAÇÃO DAS NAÇÕES UNIDAS. <b>Pacto Internacional dos Direitos Civis e Políticos</b>. 1966.
+                    Disponível em:
+                    <a class="underline text-blue-500"
+                        href="https://www.oas.org/dil/port/1966%20Pacto%20Internacional%20sobre%20Direitos%20Civis%20e%20Pol%C3%ADticos.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.oas.org/dil/port/1966%20Pacto%20Internacional%20sobre%20Direitos%20Civis%20e%20Pol%C3%ADticos.pdf
+                    </a>
+                    . Acesso em: 10 set. 2025.
+                </p>
+                <p>
+                    PEREIRA, Y. S.; SANTOS, B. X.; SANTOS, D. S. Justiça Restaurativa na Execução Penal: Caminhos para a
+                    Humanização do
+                    Sistema Penitenciário Brasileiro. <b>Revista FOCO</b>, v. 17, n. 12, e7071, 2024. Disponível em:
+                    <a class="underline text-blue-500" href="https://ojs.focopublicacoes.com.br/foco/article/view/7071"
+                        target="_blank" rel="noopener noreferrer">
+                        https://ojs.focopublicacoes.com.br/foco/article/view/7071
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    ROBERTS, A. et al. Family intervention in a prison environment: a systematic literature review.
+                    <b>Criminal
+                        Behaviour and
+                        Mental Health</b>, v. 27, n. 4, p. 326-340, 2017. Disponível em:
+                    <a class="underline text-blue-500" href="https://pubmed.ncbi.nlm.nih.gov/27104884/" target="_blank"
+                        rel="noopener noreferrer">
+                        https://pubmed.ncbi.nlm.nih.gov/27104884/
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+                <p>
+                    SAPORI, L. F.; SANTOS, R. F.; MAAS, L. W. D. Fatores sociais determinantes da reincidência criminal
+                    no
+                    Brasil: o caso de
+                    Minas Gerais. <b>Revista Brasileira de Ciências Sociais</b>, v. 32, n. 94, e329409, 2017. Disponível
+                    em:
+                    <a class="underline text-blue-500"
+                        href="https://www.scielo.br/j/rbcsoc/a/hsHmd9MqqNkWDscr3ps7bFy/?lang=pt" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.scielo.br/j/rbcsoc/a/hsHmd9MqqNkWDscr3ps7bFy/?lang=pt
+                    </a>
+                    . Acesso em: 5 ago. 2025.
+                </p>
+                <p>
+                    WACQUANT, L. <b>As prisões da miséria</b>. Rio de Janeiro: Jorge Zahar Ed., 2001.
+                </p>
+                <p>
+                    WORLD HEALTH ORGANIZATION. <b>Declaration on prison health</b> as part of public health: adopted in
+                    Moscow on
+                    24 October 2003.
+                    Genebra: World Health Organization; Regional Office for Europe, 2003. Disponível em:
+                    <a class="underline text-blue-500" href="https://iris.who.int/handle/10665/352130" target="_blank"
+                        rel="noopener noreferrer">
+                        https://iris.who.int/handle/10665/352130
+                    </a>
+                    . Acesso em: 1 set. 2025.
+                </p>
+
+            </div>
+        </div>
+
+        <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[800px] mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold">
+                Minicurrículo do Autor
+            </h1>
+            <div class="flex flex-wrap mt-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/imagem-autor.jpg"
+                        alt="Ciro César de Carvalho" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Ciro César de Carvalho</small>
+                        <hr />
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Profissional com sólida experiência nas áreas de gestão pública, recursos humanos,
+                        planejamento estratégico, políticas
+                        públicas e administração geral. Atualmente exerce o cargo de Especialista em Políticas
+                        Públicas e Gestão Governamental
+                        na Secretaria de Estado de Saúde de Minas Gerais (SES/MG), atuando diretamente na
+                        coordenação e implementação de ações
+                        de promoção à saúde e políticas de equidade, com foco em populações vulneráveis, como
+                        prisional, indígena e negra e em
+                        comunidades LGBTQIA+.
+                        Administrador Público formado pela Fundação João Pinheiro, com graduações em História e
+                        Administração Geral, tem
+                        pós-graduação em Inclusão Social e diversos cursos voltados à liderança, diversidade,
+                        gestão
+                        e inovação. Mestrando em
+                        Gestão de Serviços de Saúde pela Universidade Federal de Minas Gerais.
+                    </p>
                 </div>
             </div>
         </div>
@@ -867,7 +2026,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript">
-        personalizado.initModulo1Unidade1();
+        personalizado.init();
         document.addEventListener("click", function (e) {
             const overlay = e.target.closest(".modal-overlay");
 

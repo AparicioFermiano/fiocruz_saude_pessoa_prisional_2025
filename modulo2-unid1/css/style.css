@@ -371,7 +371,7 @@ kbd {
 
 .accordion-content.open {
     opacity: 1;
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .zoomable {

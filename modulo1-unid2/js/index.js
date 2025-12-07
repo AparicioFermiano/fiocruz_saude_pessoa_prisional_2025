@@ -25,21 +25,23 @@ var animacao = {
         icon.classList.toggle("rotate-180");
     },
 
-    initCarousels: function() {
-        const containers = document.querySelectorAll(".carousel-container");
-    
-        containers.forEach((container) => {
-            const id = container.dataset.carouselId;
-            const track = container.querySelector(".carousel-track");
-            const slides = track.querySelectorAll(".min-w-full");
-    
-            carousels[id] = {
-                currentIndex: 0,
-                totalSlides: slides.length,
-                track: track,
-            };
-        });
-    },
+    toggleDropdown: function () {
+		if (window.innerWidth < 768) {
+			const menu = document.getElementById("dropdown-menu");
+			const arrow = document.getElementById("dropdown-arrow");
+			menu.classList.toggle("hidden");
+			arrow.classList.toggle("rotate-180");
+		}
+	},
+
+	closeDropdown: function () {
+		if (window.innerWidth < 768) {
+			document.getElementById("dropdown-menu").classList.add("hidden");
+			document
+				.getElementById("dropdown-arrow")
+				.classList.remove("rotate-180");
+		}
+	},
 
     initTabs: function() {
         const containers = document.querySelectorAll('.tabs-container');
@@ -89,6 +91,22 @@ var animacao = {
         });
     
         tabs.currentIndex = index;
+    },
+
+    initCarousels: function() {
+        const containers = document.querySelectorAll(".carousel-container");
+
+        containers.forEach((container) => {
+            const id = container.dataset.carouselId;
+            const track = container.querySelector(".carousel-track");
+            const slides = track.querySelectorAll(".min-w-full");
+
+            carousels[id] = {
+                currentIndex: 0,
+                totalSlides: slides.length,
+                track: track,
+            };
+        });
     },
 
     updateCarousel: function(carouselId) {
