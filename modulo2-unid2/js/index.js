@@ -141,6 +141,284 @@ var personalizado = {
 		});
 	},
 
+    exercicioFixacao1: function (e) {
+        e.preventDefault();
+        const feedback = document.getElementById("feedback1");
+        const respostas = document.querySelectorAll(
+            'input[name="resposta1"]:checked'
+        );
+        if (respostas.length === 0) {
+            feedback.className =
+                "mt-6 p-4 rounded-lg bg-yellow-100 text-yellow-800";
+            feedback.textContent = "⚠️ Por favor, selecione ao menos uma alternativa.";
+            feedback.classList.remove("hidden");
+            return;
+        }
+        const corretas = ["A", "B"];
+        const marcadas = Array.from(respostas).map(r => r.value);
+        const acertou =
+            corretas.every(v => marcadas.includes(v)) &&
+            marcadas.every(v => corretas.includes(v));
+        let mensagem = `
+            <p><strong>(V)</strong> - A Lei de Execução Penal (LEP), em seu artigo 41,
+            assegura ao preso o direito à visita do cônjuge, parentes e amigos,
+            justamente para preservar os vínculos afetivos.</p>
+            <p class="mt-2"><strong>(V)</strong> - As Regras de Nelson Mandela e as Regras
+            de Bangkok (ONU) destacam que manter o contato com a família é essencial
+            para a dignidade humana e a reintegração social da pessoa privada de
+            liberdade.</p>
+            <p class="mt-2"><strong>(F)</strong> - Embora a LEP seja a principal norma
+            federal, cada estado brasileiro pode editar normas complementares
+            (como portarias e resoluções) para regulamentar o funcionamento dos
+            estabelecimentos penais em seu território.</p>
+        `;
+        feedback.className = `mt-6 p-4 rounded-lg ${
+            acertou ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+        }`;
+        feedback.innerHTML = mensagem;
+        feedback.classList.remove("hidden");
+    },
+
+    exercicioFixacao2: function (e) {
+        e.preventDefault();
+        const feedback = document.getElementById("feedback2");
+        const resposta = document.querySelector('input[name="resposta2"]:checked');
+        if (!resposta) {
+            feedback.className =
+                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
+            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
+            feedback.classList.remove("hidden");
+            return;
+        }
+        let mensagem = "";
+        let estilo = "";
+        switch (resposta.value) {
+            case "A":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                break;
+            case "B":
+                mensagem =
+                    "❌ Incorreto.";
+                estilo = "bg-red-100 text-red-800";
+                break;
+            case "C":
+                mensagem =
+                    "✅ Resposta correta! Esse é um dos princípios centrais da LEP, que busca a ressocialização como forma de prevenir a reincidência.";
+                    estilo = "bg-green-100 text-green-800";
+                    break;
+            case "D":
+                mensagem =
+                    "❌ Incorreto.";
+                estilo = "bg-red-100 text-red-800";
+                break;
+        }
+        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
+        feedback.textContent = mensagem;
+        feedback.classList.remove("hidden");
+    },
+
+    exercicioFixacao3: function (e) {
+        e.preventDefault();
+        const feedback = document.getElementById("feedback3");
+        const resposta = document.querySelector('input[name="resposta3"]:checked');
+        if (!resposta) {
+            feedback.className =
+                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
+            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
+            feedback.classList.remove("hidden");
+            return;
+        }
+        let mensagem = "";
+        let estilo = "";
+        switch (resposta.value) {
+            case "A":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                break;
+            case "B":
+                mensagem =
+                    "❌ Incorreto.";
+                estilo = "bg-red-100 text-red-800";
+                break;
+            case "C":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                    break;
+            case "D":
+                mensagem =
+                    "✅ Resposta correta! As famílias enfrentam estigma, limitações financeiras, longas viagens e barreiras institucionais, o que afeta diretamente o vínculo familiar com as PPL.";
+                    estilo = "bg-green-100 text-green-800";
+                break;
+        }
+        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
+        feedback.textContent = mensagem;
+        feedback.classList.remove("hidden");
+    },
+
+    exercicioFixacao4: function (e) {
+        e.preventDefault();
+        const feedback = document.getElementById("feedback4");
+        const resposta = document.querySelector('input[name="resposta4"]:checked');
+        if (!resposta) {
+            feedback.className =
+                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
+            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
+            feedback.classList.remove("hidden");
+            return;
+        }
+        let mensagem = "";
+        let estilo = "";
+        switch (resposta.value) {
+            case "A":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                break;
+            case "B":
+                mensagem =
+                    "✅ Resposta correta! A precariedade estrutural e o sucateamento da educação pública.";
+                estilo = "bg-green-100 text-green-800";
+                break;
+            case "C":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                    break;
+            case "D":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                break;
+        }
+        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
+        feedback.textContent = mensagem;
+        feedback.classList.remove("hidden");
+    },
+
+    exercicioFixacao5: function (e) {
+        e.preventDefault();
+        const feedback = document.getElementById("feedback5");
+        const resposta = document.querySelector('input[name="resposta5"]:checked');
+        if (!resposta) {
+            feedback.className =
+                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
+            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
+            feedback.classList.remove("hidden");
+            return;
+        }
+        let mensagem = "";
+        let estilo = "";
+        switch (resposta.value) {
+            case "A":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                break;
+            case "B":
+                mensagem =
+                    "✅ Resposta correta! b) A ausência de políticas públicas de reintegração e o abandono familiar.";
+                estilo = "bg-green-100 text-green-800";
+                break;
+            case "C":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                    break;
+            case "D":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                break;
+        }
+        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
+        feedback.textContent = mensagem;
+        feedback.classList.remove("hidden");
+    },
+
+    exercicioFixacao6: function (e) {
+        e.preventDefault();
+        const feedback = document.getElementById("feedback6");
+        const resposta = document.querySelector('input[name="resposta6"]:checked');
+        if (!resposta) {
+            feedback.className =
+                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
+            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
+            feedback.classList.remove("hidden");
+            return;
+        }
+        let mensagem = "";
+        let estilo = "";
+        switch (resposta.value) {
+            case "A":
+                mensagem =
+                "✅ Resposta correta! a) Que segurança e educação são funções incompatíveis.";
+                estilo = "bg-green-100 text-green-800";
+                break;
+            case "B":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                    break;
+            case "C":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                    break;
+            case "D":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                break;
+        }
+        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
+        feedback.textContent = mensagem;
+        feedback.classList.remove("hidden");
+    },
+
+    exercicioFixacao7: function (e) {
+        e.preventDefault();
+        const feedback = document.getElementById("feedback7");
+        const resposta = document.querySelector('input[name="resposta7"]:checked');
+        if (!resposta) {
+            feedback.className =
+                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
+            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
+            feedback.classList.remove("hidden");
+            return;
+        }
+        let mensagem = "";
+        let estilo = "";
+        switch (resposta.value) {
+            case "A":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                    break;
+            case "B":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                    break;
+            case "C":
+                mensagem =
+                "✅ Resposta correta! c) Que muitos privados de liberdade recebem apenas remição da pena, sem compensações financeiras ou previdenciárias.";
+                estilo = "bg-green-100 text-green-800";
+                break;
+            case "D":
+                mensagem =
+                    "❌ Incorreto.";
+                    estilo = "bg-red-100 text-red-800";
+                break;
+        }
+        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
+        feedback.textContent = mensagem;
+        feedback.classList.remove("hidden");
+    },
+
 	init: function () {
 		personalizado.TooltipsUnit1();
         animacao.initCarousels();
