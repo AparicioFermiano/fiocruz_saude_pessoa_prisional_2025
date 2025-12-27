@@ -33,11 +33,11 @@
 
             <nav id="menu"
                 class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
-                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-blue-300">Apresentação</a>
-                <a href="#2.1" class="p-4 text-gray-800 hover:text-blue-300">Unidade 02</a>
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#2.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 02</a>
                 <div class="relative group">
                     <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
-                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-blue-300">
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
                         Referências
                         <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
                             stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
                 </div>
-                <a href="#autor" class="p-4 text-gray-800 hover:text-blue-300">Autor</a>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
             </nav>
         </div>
     </header>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
                     Entendido
                 </button>
             </div>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -244,7 +244,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -280,7 +280,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -292,18 +292,18 @@
             <div class="flex flex-col gap-3">
                 <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
                     title="Instruções para usar o curso."
-                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-address-book"></i>
                 </button>
 
                 <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
                     title="Instruções para usar o curso."
-                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-exclamation"></i>
                 </button>
 
                 <a href="#" id="btnTopo"
-                    class="bottom-10 right-10 bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
                     </svg>
@@ -312,9 +312,9 @@
         </div>
 
         <div id="banner">
-            <div class="w-full bg-blue-200 py-5">
+            <div class="w-full bg-[var(--primary)] py-5">
                 <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-blue-800 text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
                     <span class="px-3 py-2 block mt-3">
                         CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
                         FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
@@ -339,7 +339,7 @@
                             FICHA TÉCNICA
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-blue-600 text-white bg-blue-600">
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
                             CRÉDITOS
                         </button>
                         <div class="w-full">
@@ -381,9 +381,9 @@
                 <div class="flex flex-wrap items-stretch justify-center">
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
                             <p class="text-center">
                                 Conhecer a importância da reintegração
                                 social, da educação, do trabalho e do apoio
@@ -394,9 +394,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
                             <p class="text-center">
                                 Conhecer as políticas de ressocialização e
                                 reintegração social;
@@ -405,9 +405,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
                             <p class="text-center">
                                 Identificar as iniciativas de apoio à
                                 família;
@@ -416,9 +416,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
                             <p class="text-center">
                                 Identificar as formas e tipos de violência
                                 presentes no sistema prisional;
@@ -427,9 +427,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
                             <p class="text-center">
                                 Reconhecer o abandono da mulher no sistema
                                 prisional;
@@ -438,9 +438,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
                             <p class="text-center">
                                 Reconhecer as redes de apoio e a construção
                                 de estratégias eficazes de reintegração;
@@ -449,9 +449,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
                             <p class="text-center">
                                 Conhecer o conceito de comunidade em
                                 articulação às possibilidades
@@ -476,7 +476,7 @@
                 social
             </h2>
             <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-blue-300 font-light text-center leading-10 md:leading-12">
+                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
                 Você já parou para pensar na importância que a família e a
                 comunidade têm na vida de uma pessoa que está cumprindo
                 pena? A reintegração social não acontece sozinha. Ela
@@ -515,13 +515,13 @@
                 prisional que voltam a cometer crimes.
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -546,7 +546,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://revistapesquisa.fapesp.br/quantos-ex-detentos-voltam-a-cometer-crimes/"
                                 target="_blank">Clique aqui</a>
                         </p>
@@ -586,7 +586,8 @@
                 <div class="carousel-container relative w-full" data-carousel-id="1">
                     <div class="overflow-hidden rounded-2xl">
                         <div class="carousel-track flex transition-transform duration-500 ease-out">
-                            <div class="min-w-full h-80 p-8 bg-blue-200 overflow-y-auto flex flex-col justify-center">
+                            <div
+                                class="min-w-full h-80 p-8 bg-[var(--primary)] overflow-y-auto flex flex-col justify-center">
                                 <h2 class="text-2xl font-bold mb-4 text-center">
                                     Prevenir a reincidência criminal
                                 </h2>
@@ -599,7 +600,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="min-w-full h-80 p-8 bg-blue-200 overflow-y-auto flex flex-col justify-center">
+                            <div
+                                class="min-w-full h-80 p-8 bg-[var(--primary)] overflow-y-auto flex flex-col justify-center">
                                 <h2 class="text-2xl font-bold mb-4 text-center">
                                     Preparar para o retorno à sociedade
                                 </h2>
@@ -656,14 +658,15 @@
                 </p>
                 <div>
                     <button onclick="estrutura.openModal('modalSaibaMais2')"
-                        class="btn bg-blue-800 text-white flex! gap-2 mt-5">
+                        class="btn bg-black text-white flex! gap-2 mt-5">
                         <i class="fa-solid fa-question-circle text-2xl"></i>
                         <span class="font-bold my-auto">Saiba mais</span>
                     </button>
                 </div>
 
                 <div id="modalSaibaMais2" class="modal-overlay hidden">
-                    <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div
+                        class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                         <div class="modal-header">
                             <h2 class="font-bold text-3xl text-center">
                                 Saiba mais
@@ -692,7 +695,7 @@
                             </p>
                             <p>
                                 <b>Veja mais:</b>
-                                <a class="hover:underline text-blue-800"
+                                <a class="hover:underline text-black"
                                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
                                     target="_blank">Clique aqui</a>
                             </p>
@@ -735,7 +738,7 @@
             </p>
             <small>Clique para interagir</small>
             <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                <div class="border-b border-blue-400">
+                <div class="border-b border-[var(--primary)]">
                     <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
                         class="accordion-header w-full flex justify-between items-center py-3 text-left">
                         <span class="font-bold text-xl px-5">Lei Complementar nº 529, de 17 de janeiro de
@@ -931,7 +934,7 @@
                         </label>
                         <div class="flex justify-center mt-8">
                             <button type="button" onclick="personalizado.exercicioFixacao1(event)"
-                                class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                                class="w-full md:w-1/2 btn bg-black text-white">
                                 Submeter
                             </button>
                         </div>
@@ -978,7 +981,7 @@
                         </label>
                         <div class="flex justify-center mt-8">
                             <button type="button" onclick="personalizado.exercicioFixacao2(event)"
-                                class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                                class="w-full md:w-1/2 btn bg-black text-white">
                                 Submeter
                             </button>
                         </div>
@@ -1024,7 +1027,7 @@
                         </label>
                         <div class="flex justify-center mt-8">
                             <button type="button" onclick="personalizado.exercicioFixacao3(event)"
-                                class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                                class="w-full md:w-1/2 btn bg-black text-white">
                                 Submeter
                             </button>
                         </div>
@@ -1063,7 +1066,7 @@
                 falta de materiais didáticos e de infraestrutura adequada.
             </p>
             <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-blue-300 font-light text-center leading-10 md:leading-12">
+                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
                 Nesse contexto, como garantir que o direito à educação seja
                 efetivado no ambiente prisional? A reflexão se torna ainda
                 mais relevante quando consideramos que a negação desse
@@ -1232,12 +1235,12 @@
                                             Educação e trabalho
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-black rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             Educação e trabalho são
                                             essenciais para a reintegração
@@ -1262,12 +1265,12 @@
                                             Pessoas Privadas de Liberdade
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-black rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             Poucas PPL têm acesso à educação
                                             formal, e a baixa adesão se
@@ -1293,12 +1296,12 @@
                                             Remição de Pena
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-black rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             A remição de pena por estudo ou
                                             trabalho, garantida por lei,
@@ -1324,12 +1327,12 @@
                                             População Privada de Liberdade
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-black rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             Menos de 25% da população
                                             privada de liberdade trabalha, e
@@ -1355,12 +1358,12 @@
                                             prisional
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-black rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             A precarização do trabalho
                                             prisional e a falta de políticas
@@ -1464,13 +1467,13 @@
             </p>
             <div>
                 <button onclick="estrutura.openModal('modalSaibaMais3')"
-                    class="btn bg-blue-800 text-white flex! gap-2 mt-5">
+                    class="btn bg-black text-white flex! gap-2 mt-5">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1499,7 +1502,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800" href="https://www.youtube.com/watch?v=IvFjMTzHjgM"
+                            <a class="hover:underline text-black" href="https://www.youtube.com/watch?v=IvFjMTzHjgM"
                                 target="_blank">Clique aqui</a>
                         </p>
                     </div>
@@ -1614,13 +1617,13 @@
                 eficiente e humanizado (Brasil, 2021).
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais4" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1645,7 +1648,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.gov.br/senappen/pt-br/assuntos/noticias/depen-divulga-coletanea-com-relatos-de-boas-praticas-do-trabalho-prisional"
                                 target="_blank">Clique aqui</a>
                         </p>
@@ -1658,7 +1661,7 @@
                 </div>
             </div>
             <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                <div class="border-b border-blue-400">
+                <div class="border-b border-[var(--primary)]">
                     <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
                         class="accordion-header w-full flex justify-between items-center py-3 text-left">
                         <span class="font-bold text-xl px-5">Mocellim (2011)</span>
@@ -1710,7 +1713,7 @@
                 </div>
             </div>
             <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-blue-300 font-light text-center leading-10 md:leading-12">
+                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
                 Você já parou para pensar no peso de carregar um rótulo que
                 lhe fecha as portas antes mesmo de bater nelas?
             </h3>
@@ -1765,13 +1768,13 @@
                 justiça e privação de liberdade.
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais5')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais5')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais5" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1796,7 +1799,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2022/23102022-Apac-a-dignidade-como-ferramenta-de-recuperacao-do-preso.aspx"
                                 target="_blank">Clique aqui</a>
                         </p>
@@ -1866,7 +1869,7 @@
                         </label>
                         <div class="flex justify-center mt-8">
                             <button type="button" onclick="personalizado.exercicioFixacao4(event)"
-                                class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                                class="w-full md:w-1/2 btn bg-black text-white">
                                 Submeter
                             </button>
                         </div>
@@ -1908,7 +1911,7 @@
                         </label>
                         <div class="flex justify-center mt-8">
                             <button type="button" onclick="personalizado.exercicioFixacao5(event)"
-                                class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                                class="w-full md:w-1/2 btn bg-black text-white">
                                 Submeter
                             </button>
                         </div>
@@ -1950,7 +1953,7 @@
                         </label>
                         <div class="flex justify-center mt-8">
                             <button type="button" onclick="personalizado.exercicioFixacao6(event)"
-                                class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                                class="w-full md:w-1/2 btn bg-black text-white">
                                 Submeter
                             </button>
                         </div>
@@ -1991,7 +1994,7 @@
                         </label>
                         <div class="flex justify-center mt-8">
                             <button type="button" onclick="personalizado.exercicioFixacao7(event)"
-                                class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                                class="w-full md:w-1/2 btn bg-black text-white">
                                 Submeter
                             </button>
                         </div>
@@ -2031,9 +2034,8 @@
                 pena por estudo ou por trabalho.
                 <b>Diário Oficial da União</b>, Brasília, DF, 30 jun. 2011.
                 Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12433.htm" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12433.htm"
+                    target="_blank" rel="noopener noreferrer">
                     https://revistacej.cjf.jus.br/cej/index.php/revcej/article/view/949
                 </a>
                 . Acesso em: 7 ago. 2025.
@@ -2044,9 +2046,8 @@
                 brasileiro.
                 <b>EPISTIMONIKI: Revista de Educação, Práticas
                     Interdisciplinares e Inovação Científica</b>, v. 1, n. 4, 2024. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://revistas.luminascholar.org/epistimoniki/article/view/26" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://revistas.luminascholar.org/epistimoniki/article/view/26"
+                    target="_blank" rel="noopener noreferrer">
                     https://revistas.luminascholar.org/epistimoniki/article/view/26
                 </a>
                 . Acesso em: 7 ago. 2025.
@@ -2056,7 +2057,7 @@
                 <b>Regulamento e Normas de Procedimentos do Sistema
                     Prisional de Minas Gerais</b>. Belo Horizonte: Departamento Penitenciário de Minas
                 Gerais, 2016. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://depen.seguranca.mg.gov.br/images/Publicacoes/Subsecretariadeadministracaoprisional/Regulamento-e-Normas-de-Procedimentos-do-Sistema-Prisional-de-Minas-Gerais-28.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://depen.seguranca.mg.gov.br/images/Publicacoes/Subsecretariadeadministracaoprisional/Regulamento-e-Normas-de-Procedimentos-do-Sistema-Prisional-de-Minas-Gerais-28.pdf
@@ -2073,9 +2074,9 @@
             <p>
                 BRASIL. Secretaria Nacional de Políticas Penais. SENAPPEN
                 inicia implementação do Segundo Ciclo do Projeto Alvorada.
-                <a class="underline text-blue-500" href="gov.br" target="_blank" rel="noopener noreferrer">gov.br</a>,
+                <a class="underline link" href="gov.br" target="_blank" rel="noopener noreferrer">gov.br</a>,
                 17 fev. 2025. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-inicia-novo-ciclo-do-projeto-alvorada-para-promover-inclusao-de-egressos-do-sistema-prisional-no-mercado-de-trabalho"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-inicia-novo-ciclo-do-projeto-alvorada-para-promover-inclusao-de-egressos-do-sistema-prisional-no-mercado-de-trabalho
@@ -2087,7 +2088,7 @@
                 <b>Relatório de Informações Penais</b>. 16º ciclo SISDEPEN,
                 1º semestre de 2024. RELIPEN. Brasília: SENAPPEN, 2024.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
@@ -2102,7 +2103,7 @@
                 Nacional de Atenção à Pessoa Egressa do Sistema Prisional.
                 <b>Diário Oficial da União</b>, Brasília, DF, 22 dez. 2023.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2023/Decreto/D11843.htm" target="_blank"
                     rel="noopener noreferrer">
                     https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2023/Decreto/D11843.htm
@@ -2113,7 +2114,7 @@
                 BRASIL. Superior Tribunal de Justiça. <b>Apac</b>: a
                 dignidade como ferramenta de recuperação do preso. 2022.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2022/23102022-Apac-a-dignidade-como-ferramenta-de-recuperacao-do-preso.aspx"
                     target="_blank" rel="noopener noreferrer">
                     https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2022/23102022-Apac-a-dignidade-como-ferramenta-de-recuperacao-do-preso.aspx
@@ -2125,7 +2126,7 @@
                 <b>1ª coletânea boas práticas trabalho e renda</b>.
                 Brasília: Ministério da Justiça e Segurança Pública, 2021.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/senappen/pt-br/assuntos/noticias/depen-divulga-coletanea-com-relatos-de-boas-praticas-do-trabalho-prisional/1a_Coletanea___Boas_Praticas___Versao_Final.pdf(opens in a new tab)"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/senappen/pt-br/assuntos/noticias/depen-divulga-coletanea-com-relatos-de-boas-praticas-do-trabalho-prisional/1a_Coletanea___Boas_Praticas___Versao_Final.pdf(opens
@@ -2138,7 +2139,7 @@
                 Departamento Penitenciário Nacional.
                 <b>Nota Técnica nº 17/2020/DIAMGE/CGCAP/DIRPP/DEPEN/MJ</b>.
                 Brasília, 2020. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/senappen/pt-br/assuntos/noticias/depen-divulga-coletanea-com-relatos-de-boas-praticas-do-trabalho-prisional/1a_Coletanea___Boas_Praticas___Versao_Final.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/senappen/pt-br/assuntos/noticias/depen-divulga-coletanea-com-relatos-de-boas-praticas-do-trabalho-prisional/1a_Coletanea___Boas_Praticas___Versao_Final.pdf
@@ -2152,9 +2153,8 @@
                 Privação de Liberdade e Egressas do Sistema Prisional, e dá
                 outras providências. <b>Diário Oficial da União</b>,
                 Brasília, DF, 17 jan. 2014. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
+                    target="_blank" rel="noopener noreferrer">
                     https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
                 </a>
                 . Acesso em: 7 ago. 2025.
@@ -2166,9 +2166,8 @@
                 pena por estudo ou por trabalho.
                 <b>Diário Oficial da União</b>, Brasília, DF, 30 jun. 2011.
                 Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12433.htm" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12433.htm"
+                    target="_blank" rel="noopener noreferrer">
                     https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12433.htm
                 </a>
                 . Acesso em: 7 ago. 2025.
@@ -2178,9 +2177,8 @@
                 Federativa do Brasil de 1988.
                 <b>Diário Oficial da União</b>, Brasília, DF, 5 out. 1988.
                 Disponível em:
-                <a class="underline text-blue-500"
-                    href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+                    target="_blank" rel="noopener noreferrer">
                     http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
                 </a>
                 . Acesso em: 31 jul. 2025.
@@ -2189,8 +2187,8 @@
                 BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de
                 Execução Penal. <b>Diário Oficial da União</b>, Brasília,
                 DF, 13 jul. 1984. Disponível em:
-                <a class="underline text-blue-500" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
-                    target="_blank" rel="noopener noreferrer">
+                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
+                    rel="noopener noreferrer">
                     http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
                 </a>
                 . Acesso em: 24 jul. 2025.
@@ -2200,7 +2198,7 @@
                 desafios estruturais e potencial transformador.
                 <b>International Integralize Scientific</b>, v. 5, n. 48,
                 2025. Disponível em:
-                <a class="underline text-blue-500" href="https://iiscientific.com/artigos/044370/" target="_blank"
+                <a class="underline link" href="https://iiscientific.com/artigos/044370/" target="_blank"
                     rel="noopener noreferrer">
                     https://iiscientific.com/artigos/044370/
                 </a>
@@ -2212,8 +2210,8 @@
                 sistema penitenciário.
                 <b>Revista Família, Ciclos de Vida e Saúde no Contexto
                     Social</b>, v. 8, p. 503-511, 2020. Disponível em:
-                <a class="underline text-blue-500" href="https://www.redalyc.org/journal/4979/497964427007/"
-                    target="_blank" rel="noopener noreferrer">
+                <a class="underline link" href="https://www.redalyc.org/journal/4979/497964427007/" target="_blank"
+                    rel="noopener noreferrer">
                     https://www.redalyc.org/journal/4979/497964427007/
                 </a>
                 . Acesso em: 7 ago. 2025.
@@ -2223,7 +2221,7 @@
                 <b>Política Nacional de Atenção às Pessoas Egressas do
                     Sistema Prisional.</b>
                 Brasília: CNJ, 2020. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.cnj.jus.br/wp-content/uploads/2020/09/Pol%C3%ADtica-Nacional-de-Aten%C3%A7%C3%A3o-%C3%A0s-Pessoas-Egressas-do-Sistema-Prisional_eletronico.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.cnj.jus.br/wp-content/uploads/2020/09/Pol%C3%ADtica-Nacional-de-Aten%C3%A7%C3%A3o-%C3%A0s-Pessoas-Egressas-do-Sistema-Prisional_eletronico.pdf
@@ -2233,7 +2231,7 @@
             <p>
                 CONSELHO NACIONAL DE JUSTIÇA. <b>Regras de Bangkok</b>.
                 Brasília: Conselho Nacional de Justiça, 2016. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf
@@ -2246,9 +2244,8 @@
                 brasileiro.
                 <b>EPISTIMONIKI: Revista de Educação, Práticas
                     Interdisciplinares e Inovação Científica</b>, v. 1, n. 4, 2024. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://revistas.luminascholar.org/epistimoniki/article/view/26" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://revistas.luminascholar.org/epistimoniki/article/view/26"
+                    target="_blank" rel="noopener noreferrer">
                     https://revistas.luminascholar.org/epistimoniki/article/view/26
                 </a>
                 . Acesso em: 7 ago. 2025.
@@ -2260,9 +2257,8 @@
                 2010. Monografia (Graduação em Direito) - Instituto
                 Municipal de Ensino Superior de Assis (IMESA), Assis, 2010.
                 Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://cepein.femanet.com.br/BDigital/arqTccs/0711230894.pdf#page=3.11" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://cepein.femanet.com.br/BDigital/arqTccs/0711230894.pdf#page=3.11"
+                    target="_blank" rel="noopener noreferrer">
                     https://cepein.femanet.com.br/BDigital/arqTccs/0711230894.pdf#page=3.11
                 </a>
                 . Acesso em: 7 ago. 2025.
@@ -2272,7 +2268,7 @@
                 <b>Regulamento e Normas de Procedimentos do Sistema
                     Prisional de Minas Gerais</b>. Belo Horizonte: Departamento Penitenciário de Minas
                 Gerais, 2016. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://depen.seguranca.mg.gov.br/images/Publicacoes/Subsecretariadeadministracaoprisional/Regulamento-e-Normas-de-Procedimentos-do-Sistema-Prisional-de-Minas-Gerais-28.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://depen.seguranca.mg.gov.br/images/Publicacoes/Subsecretariadeadministracaoprisional/Regulamento-e-Normas-de-Procedimentos-do-Sistema-Prisional-de-Minas-Gerais-28.pdf
@@ -2283,7 +2279,7 @@
                 MINAS GERAIS. Secretaria de Estado de Segurança Pública.
                 <b>Programa de Inclusão Social de Egressos do Sistema
                     Prisional</b>. 2003. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.seguranca.mg.gov.br/index.php/prevencao/programas/programa-de-inclusao-social-de-egresso-do-sistema-prisional-presp"
                     target="_blank" rel="noopener noreferrer">
                     https://www.seguranca.mg.gov.br/index.php/prevencao/programas/programa-de-inclusao-social-de-egresso-do-sistema-prisional-presp
@@ -2294,8 +2290,8 @@
                 MOCELLIM, A. D. A comunidade: da sociologia clássica à
                 sociologia contemporânea. <b>Plural</b>, v. 17, n. 2, p.
                 105-125, 2011. Disponível em:
-                <a class="underline text-blue-500" href="https://revistas.usp.br/plural/article/view/74542/78151"
-                    target="_blank" rel="noopener noreferrer">
+                <a class="underline link" href="https://revistas.usp.br/plural/article/view/74542/78151" target="_blank"
+                    rel="noopener noreferrer">
                     https://revistas.usp.br/plural/article/view/74542/78151
                 </a>
                 . Acesso em: 2 set. 2025.
@@ -2306,7 +2302,7 @@
                     reclusos</b>
                 (Regras de Nelson Mandela). Viena: Escritório das Nações
                 Unidas sobre Drogas e Crime, 2015. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-P-ebook.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-P-ebook.pdf
@@ -2319,7 +2315,7 @@
                 Santa Catarina e estabelece outras providências.
                 <b>Diário do Executivo</b>, Florianópolis, SC, 28 out. 2021.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.lexml.gov.br/urn/urn:lex:br;santa.catarina:estadual:lei.complementar:2021-10-27;774"
                     target="_blank" rel="noopener noreferrer">
                     https://www.lexml.gov.br/urn/urn:lex:br;santa.catarina:estadual:lei.complementar:2021-10-27;774
@@ -2331,7 +2327,7 @@
                 2011. Aprova o Regimento Interno dos Estabelecimentos Penais
                 do Estado de Santa Catarina. <b>Diário do Executivo</b>,
                 Florianópolis, SC, 18 jan. 2011. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.lexml.gov.br/urn/urn:lex:br;santa.catarina:estadual:lei.complementar:2011-01-17;529"
                     target="_blank" rel="noopener noreferrer">
                     https://www.lexml.gov.br/urn/urn:lex:br;santa.catarina:estadual:lei.complementar:2011-01-17;529
@@ -2345,7 +2341,7 @@
                 Federal de Ouro Preto, Escola de Direito, Turismo e
                 Museologia, Departamento de Direito, Ouro Preto-MG, 2023.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://monografias.ufop.br/bitstream/35400000/5332/1/MONOGRAFIA_Precariza%C3%A7%C3%A3oTrabalhoDesemprego.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://monografias.ufop.br/bitstream/35400000/5332/1/MONOGRAFIA_Precariza%C3%A7%C3%A3oTrabalhoDesemprego.pdf
@@ -2357,7 +2353,7 @@
                 <b>A educação como processo de ressocialização da pessoa
                     privada de liberdade</b>. 2021. Monografia (Graduação em Pedagogia) - Universidade
                 Federal da Paraíba, João Pessoa-PB, 2021. Disponível em:
-                <a class="underline text-blue-500" href="https://repositorio.ufpb.br/jspui/handle/123456789/20587"
+                <a class="underline link" href="https://repositorio.ufpb.br/jspui/handle/123456789/20587"
                     target="_blank" rel="noopener noreferrer">
                     https://repositorio.ufpb.br/jspui/handle/123456789/20587
                 </a>
@@ -2368,7 +2364,7 @@
                 sistema de justiça, é um negócio”.
                 <b>Revista do Ministério Público do Rio de Janeiro</b>, n.
                 70, p. 201-207, 2018. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.mprj.mp.br/documents/20184/1183784/Nicole_Mitchell_Ribeiro_da_Silva.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.mprj.mp.br/documents/20184/1183784/Nicole_Mitchell_Ribeiro_da_Silva.pdf
@@ -2385,7 +2381,7 @@
             <p>
                 VIANA, D. Quantos ex-detentos voltam a cometer crimes?
                 Revista <b>Pesquisa FAPESP</b>, v. 328, 2023. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://revistapesquisa.fapesp.br/quantos-ex-detentos-voltam-a-cometer-crimes/(opens in a new tab)"
                     target="_blank" rel="noopener noreferrer">
                     https://revistapesquisa.fapesp.br/quantos-ex-detentos-voltam-a-cometer-crimes/(opens
@@ -2433,7 +2429,7 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-blue-200 text-center">
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
         <div class="max-w-[1000px] mx-auto px-5">
             <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
                 <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"

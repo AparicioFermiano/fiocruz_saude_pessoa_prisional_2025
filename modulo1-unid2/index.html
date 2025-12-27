@@ -33,11 +33,11 @@
 
             <nav id="menu"
                 class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
-                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-blue-300">Apresentação</a>
-                <a href="#2.1" class="p-4 text-gray-800 hover:text-blue-300">Unidade 02</a>
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#2.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 02</a>
                 <div class="relative group">
                     <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
-                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-blue-300">
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
                         Referências
                         <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
                             stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -53,7 +53,7 @@
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
                 </div>
-                <a href="#autor" class="p-4 text-gray-800 hover:text-blue-300">Autor</a>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
             </nav>
         </div>
     </header>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
                     Entendido
                 </button>
             </div>
@@ -152,7 +152,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -257,7 +257,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -293,7 +293,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -305,18 +305,18 @@
             <div class="flex flex-col gap-3">
                 <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
                     title="Instruções para usar o curso."
-                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-address-book"></i>
                 </button>
 
                 <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
                     title="Instruções para usar o curso."
-                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-exclamation"></i>
                 </button>
 
                 <a href="#" id="btnTopo"
-                    class="bottom-10 right-10 bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
                     </svg>
@@ -325,9 +325,9 @@
         </div>
 
         <div id="banner">
-            <div class="w-full bg-blue-200 py-5">
+            <div class="w-full bg-[var(--primary)] py-5">
                 <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-blue-800 text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
                     <span class="px-3 py-2 block mt-3">
                         CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
                         FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
@@ -352,7 +352,7 @@
                             FICHA TÉCNICA
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-blue-600 text-white bg-blue-600">
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
                             CRÉDITOS
                         </button>
                         <div class="w-full">
@@ -401,9 +401,9 @@
                 <div class="flex flex-wrap items-stretch justify-center">
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
                             <p class="text-center">
                                 Conhecer o histórico das políticas públicas voltadas à população privada de liberdade no
                                 Brasil;
@@ -412,9 +412,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
                             <p class="text-center">
                                 Descrever os princípios, diretrizes e objetivos da Política Nacional de Atenção à Saúde
                                 das Pessoas Privadas de
@@ -424,9 +424,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
                             <p class="text-center">
                                 Especificar os procedimentos relacionados à adesão e à implementação da Política
                                 Nacional de Atenção à Saúde das Pessoas
@@ -436,9 +436,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
                             <p class="text-center">
                                 Reconhecer os critérios exigidos para o credenciamento das equipes de Atenção Primária
                                 Prisional e implantação dessas
@@ -450,9 +450,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
                             <p class="text-center">
                                 Compreender os critérios relacionados ao cofinanciamento federal destinado a essas
                                 equipes.
@@ -488,7 +488,7 @@
                     <small>Clique para interagir</small>
                 </p>
                 <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item1" onclick="animacao.toggleAccordion('item1', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Assistência Material</span>
@@ -512,7 +512,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item2" onclick="animacao.toggleAccordion('item2', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Assistência Jurídica</span>
@@ -539,7 +539,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item3" onclick="animacao.toggleAccordion('item3', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Assistência Educacional</span>
@@ -557,7 +557,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item4" onclick="animacao.toggleAccordion('item4', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Assistência Social</span>
@@ -577,7 +577,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item5" onclick="animacao.toggleAccordion('item5', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Assistência Religiosa</span>
@@ -753,7 +753,8 @@
                 </h2>
                 <div class="flex flex-wrap">
                     <div class="w-1/2 flex flex-col gap-3 px-2">
-                        <h3 class="font-bold text-sm md:text-2xl p-2 md:p-5 rounded-l-full bg-blue-300 text-center">
+                        <h3
+                            class="font-bold text-sm md:text-2xl p-2 md:p-5 rounded-l-full bg-[var(--primary)] text-center">
                             Princípios
                         </h3>
                         <p class="p-2 md:p-3 rounded-l-full bg-gray-200 text-center text-sm! md:text-2xl!">
@@ -767,7 +768,8 @@
                         </p>
                     </div>
                     <div class="w-1/2 flex flex-col gap-3 px-2">
-                        <h3 class="font-bold text-sm md:text-2xl p-2 md:p-5 rounded-r-full bg-blue-300 text-center">
+                        <h3
+                            class="font-bold text-sm md:text-2xl p-2 md:p-5 rounded-r-full bg-[var(--primary)] text-center">
                             Diretrizes
                         </h3>
                         <p class="p-2 md:p-3 rounded-r-full bg-gray-200 text-center text-sm! md:text-2xl!">
@@ -826,7 +828,7 @@
                 <div class="carousel-container relative w-full" data-carousel-id="1">
                     <div class="overflow-hidden rounded-2xl">
                         <div class="carousel-track flex transition-transform duration-500 ease-out">
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-blue-200 overflow-y-auto">
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
                                 <h2 class="text-2xl font-bold mb-4 text-center">Equipe de Atenção Primária Prisional com
                                     carga horária de 6 horas semanais:</h2>
                                 <div class="px-7">
@@ -859,7 +861,7 @@
                                 </div>
 
                             </div>
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-blue-200 overflow-y-auto">
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
                                 <h2 class="text-2xl font-bold mb-4 text-center">Equipe de Atenção Primária Prisional
                                     Essencial com carga horária de 20 ou 30 horas semanais:</h2>
                                 <div class="px-7">
@@ -882,7 +884,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-blue-200 overflow-y-auto">
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
                                 <h2 class="text-2xl font-bold mb-4 text-center">Equipe de Atenção Primária Prisional
                                     Ampliada com carga horária de 20 ou 30 horas semanais:</h2>
                                 <div class="px-7">
@@ -910,7 +912,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-blue-200 overflow-y-auto">
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
                                 <h2 class="text-2xl font-bold mb-4 text-center">Equipe Complementar Psicossocial de
                                     Atenção Primária Prisional (20 ou 30 horas semanais):</h2>
                                 <div class="px-7">
@@ -933,7 +935,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-blue-200 overflow-y-auto">
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
                                 <h2 class="text-2xl font-bold mb-4 text-center">Profissional complementar de saúde
                                     bucal:</h2>
                                 <div class="px-7">
@@ -988,14 +990,15 @@
                 </p>
                 <div>
                     <button onclick="estrutura.openModal('modalSaibaMais1')"
-                        class="btn bg-blue-800 text-white flex! gap-2 mt-5">
+                        class="btn bg-black text-white flex! gap-2 mt-5">
                         <i class="fa-solid fa-question-circle text-2xl"></i>
                         <span class="font-bold my-auto">Saiba mais</span>
                     </button>
                 </div>
 
                 <div id="modalSaibaMais1" class="modal-overlay hidden">
-                    <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div
+                        class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                         <div class="modal-header">
                             <h2 class="font-bold text-3xl text-center">
                                 Saiba mais
@@ -1021,7 +1024,7 @@
                             </p>
                             <p>
                                 <b>Veja mais:</b>
-                                <a class="hover:underline text-blue-800"
+                                <a class="hover:underline text-black"
                                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
                                     target="_blank">Clique aqui</a>
                             </p>
@@ -1055,30 +1058,35 @@
                 <div class="carousel-container relative w-full" data-carousel-id="2">
                     <div class="overflow-hidden rounded-2xl">
                         <div class="carousel-track flex transition-transform duration-500 ease-out">
-                            <div class="min-w-full h-96 px-10 bg-blue-200 flex flex-col justify-center align-middle">
+                            <div
+                                class="min-w-full h-96 px-10 bg-[var(--primary)] flex flex-col justify-center align-middle">
                                 <p class="font-bold mb-4 text-center">I - promover o acesso das pessoas privadas de
                                     liberdade à Rede de Atenção à Saúde, visando ao cuidado integral;</p>
                             </div>
-                            <div class="min-w-full h-96 px-10 bg-blue-200 flex flex-col justify-center align-middle">
+                            <div
+                                class="min-w-full h-96 px-10 bg-[var(--primary)] flex flex-col justify-center align-middle">
                                 <p class="font-bold mb-4 text-center">II - garantir a autonomia dos profissionais de
                                     saúde para a realização do cuidado integral das pessoas privadas de
                                     liberdade;</p>
                             </div>
-                            <div class="min-w-full h-96 px-10 bg-blue-200 flex flex-col justify-center align-middle">
+                            <div
+                                class="min-w-full h-96 px-10 bg-[var(--primary)] flex flex-col justify-center align-middle">
                                 <p class="font-bold mb-4 text-center">
                                     III - qualificar e humanizar a atenção à saúde no sistema prisional por meio de
                                     ações conjuntas das áreas da saúde e da
                                     justiça;
                                 </p>
                             </div>
-                            <div class="min-w-full h-96 px-10 bg-blue-200 flex flex-col justify-center align-middle">
+                            <div
+                                class="min-w-full h-96 px-10 bg-[var(--primary)] flex flex-col justify-center align-middle">
                                 <p class="font-bold mb-4 text-center">
                                     IV - promover as relações intersetoriais com as políticas de direitos humanos,
                                     afirmativas e sociais básicas, bem como
                                     com as da Justiça Criminal; e
                                 </p>
                             </div>
-                            <div class="min-w-full h-96 px-10 bg-blue-200 flex flex-col justify-center align-middle">
+                            <div
+                                class="min-w-full h-96 px-10 bg-[var(--primary)] flex flex-col justify-center align-middle">
                                 <p class="font-bold mb-4 text-center">
                                     V - fomentar e fortalecer a participação e o controle social (Brasil, 2014a).
                                 </p>
@@ -1116,11 +1124,11 @@
                     <div class="tabs-container" data-tabs-id="1">
                         <div class="flex border-b">
                             <button onclick="animacao.switchTab(1, 0)"
-                                class="tab-button flex-1 px-6 py-4 text-center text-blue-400 border-b-2 hover:text-blue-400 hover:border-blue-400 border-blue-400">
+                                class="tab-button flex-1 px-6 py-4 text-center text-[var(--primary)] border-b-2 hover:text-[var(--primary)] hover:border-[var(--primary)] border-[var(--primary)]">
                                 PRINCÍPIOS
                             </button>
                             <button onclick="animacao.switchTab(1, 1)"
-                                class="tab-button flex-1 px-6 py-4 text-center border-b-2 hover:text-blue-400 hover:border-blue-400 border-transparent">
+                                class="tab-button flex-1 px-6 py-4 text-center border-b-2 hover:text-[var(--primary)] hover:border-[var(--primary)] border-transparent">
                                 DIRETRIZES
                             </button>
                         </div>
@@ -1206,12 +1214,12 @@
                                             Adesão estadual
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <ul class="text-left list-disc px-5 flex flex-col gap-3">
                                             <li>Assinatura do Termo de Adesão à política;</li>
                                             <li>Elaboração de Plano de Ação Estadual para a Atenção à Saúde da
@@ -1236,12 +1244,12 @@
                                             Adesão Municipal
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <ul class="text-left list-disc px-5 flex flex-col gap-3">
                                             <li>A adesão do estado à PNAISP deve ser feita antes da adesão
                                                 municipal;</li>
@@ -1306,14 +1314,14 @@
                 </p>
             </div>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
 
             <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1335,12 +1343,12 @@
                         </p>
                         <p>
                             Veja sobre a nota técnica:
-                            <a class="hover:underline text-blue-800" href="./media/nota-tecnica-no-282-2023.pdf"
+                            <a class="hover:underline text-black" href="./media/nota-tecnica-no-282-2023.pdf"
                                 target="_blank">Clique aqui</a>
                         </p>
                         <p>
                             <b>Veja mais:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
                                 target="_blank">Clique aqui</a>
                         </p>
@@ -1359,26 +1367,26 @@
             </h2>
             <p> <b>Instruções:</b> relacione corretamente cada etapa do processo de credenciamento da eAPP à sua
                 descrição.</p>
-            <div class="quiz-container p-3 md:rounded-xl shadow-xl bg-blue-200">
+            <div class="quiz-container p-3 md:rounded-xl shadow-xl bg-[var(--primary)]">
                 <h3 class="text-lg md:text-xl font-bold p-2">
                     <div class="max-w-[1000px] px-5 mx-auto flex flex-col gap-7">
                 </h3>
                 <div id="drag-drop-area" class="mt-3 flex flex-wrap justify-between">
                     <div class="w-full md:w-1/3 termos-coluna p-2">
                         <div id="termos-lista" class="flex flex-wrap md:flex-col gap-3">
-                            <div class="termo-item text-xs bg-blue-50 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                            <div class="termo-item text-xs  font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
                                 data-match="d">
                                 Cadastro no SCNES
                             </div>
-                            <div class="termo-item text-xs bg-blue-50 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                            <div class="termo-item text-xs  font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
                                 data-match="b">
                                 Análise Técnica e Orçamentária
                             </div>
-                            <div class="termo-item text-xs bg-blue-50 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                            <div class="termo-item text-xs  font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
                                 data-match="c">
                                 Publicação de Portaria
                             </div>
-                            <div class="termo-item text-xs bg-blue-50 font-bold py-2 px-1 rounded-xl shadow-md hover:bg-blue-300 transition duration-150 ease-in-out cursor-grab text-center"
+                            <div class="termo-item text-xs  font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
                                 data-match="a">
                                 Solicitação de Credenciamento
                             </div>
@@ -1418,14 +1426,14 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap mt-3 justify-between">
-                    <button onclick="verificarRespostas()" class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                    <button onclick="verificarRespostas()" class="w-full md:w-1/2 btn bg-black text-white">
                         Submeter
                     </button>
                     <div id="feedback-final" class="w-full md:w-1/2 text-center text-md rounded-lg font-semibold">
                     </div>
                 </div>
             </div>
-            <div id="dica_ouro" class="bg-blue-800 p-5 rounded-2xl mt-5 text-white">
+            <div id="dica_ouro" class="bg-black p-5 rounded-2xl mt-5 text-white">
                 <p class="font-bold">Dicas de Ouro para não esquecer!</p>
                 <ul class="text-left list-disc px-5 flex flex-col gap-3 mt-3">
                     <li>Sem registro no SCNES dentro do prazo ➔ risco de descredenciamento!</li>
@@ -1500,20 +1508,20 @@
             <div class="flex flex-col gap-5 my-5">
                 <div class="flex">
                     <span
-                        class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">1</span>
+                        class="w-10 h-10 rounded-full bg-[var(--primary)] flex justify-center items-center my-auto font-bold text-2xl">1</span>
                     <p class="px-2 md:px-3">Cadastrar a eAPP em estabelecimento de saúde da APS, conforme códigos
                         específicos;</p>
                 </div>
                 <div class="flex">
                     <span
-                        class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">2</span>
+                        class="w-10 h-10 rounded-full bg-[var(--primary)] flex justify-center items-center my-auto font-bold text-2xl">2</span>
                     <p class="px-2 md:px-3">
                         Registrar a INE, criada sob o código 74 - eAPP, no SCNES;
                     </p>
                 </div>
                 <div class="flex">
                     <span
-                        class="w-10 h-10 rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">3</span>
+                        class="w-10 h-10 rounded-full bg-[var(--primary)] flex justify-center items-center my-auto font-bold text-2xl">3</span>
                     <p class="px-2 md:px-3">Cadastrar a composição profissional e carga horária mínima exigida, de
                         acordo com a modalidade da eAPP.</p>
                 </div>
@@ -1550,12 +1558,12 @@
                 <table class="w-full rounded-2xl overflow-hidden">
                     <thead>
                         <tr class="border border-white divide-x">
-                            <th class="text-center p-2 bg-blue-800 text-white">Modalidade</th>
-                            <th class="text-center p-2 bg-blue-800 text-white">Carga Horária</th>
-                            <th class="text-center p-2 bg-blue-800 text-white">Valor Mensal</th>
+                            <th class="text-center p-2 bg-black text-white">Modalidade</th>
+                            <th class="text-center p-2 bg-black text-white">Carga Horária</th>
+                            <th class="text-center p-2 bg-black text-white">Valor Mensal</th>
                         </tr>
                     </thead>
-                    <tbody class="bg-blue-200">
+                    <tbody class="bg-[var(--primary)]">
                         <tr class="text-center border ">
                             <td class="p-2 border border-white">Vinculada eSF/eSB</td>
                             <td class="p-2 border border-white">6h</td>
@@ -1615,7 +1623,7 @@
                     <small>Clique para interagir</small>
                 </p>
                 <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Irregularidade identificada por órgãos de
@@ -1634,7 +1642,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item22" onclick="animacao.toggleAccordion('item22', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Equipe incompleta</span>
@@ -1651,7 +1659,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item23" onclick="animacao.toggleAccordion('item23', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Não envio de produção</span>
@@ -1669,7 +1677,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item24" onclick="animacao.toggleAccordion('item24', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Carga horária excessiva</span>
@@ -1687,7 +1695,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item25" onclick="animacao.toggleAccordion('item25', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Registro de carga horária inferior à mínima
@@ -1746,7 +1754,7 @@
                     <small>Clique para interagir</small>
                 </p>
                 <div id="grupo3" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item31" onclick="animacao.toggleAccordion('item31', 'grupo3')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Suspensão do financiamento federal por 12 meses
@@ -1791,14 +1799,14 @@
                 Psicossocial também será descredenciada.
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
 
             <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1820,7 +1828,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017.html"
                                 target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017.html</a>
                         </p>
@@ -1852,14 +1860,14 @@
             </h2>
             <div>
                 <table class="w-full overflow-x-auto">
-                    <thead class="bg-blue-800">
+                    <thead class="bg-black">
                         <tr class="text-center divide-x text-white">
                             <th class="p-3">Modalidade</th>
                             <th class="p-3">Carga Horária</th>
                             <th class="p-3">Composição Profissional</th>
                         </tr>
                     </thead>
-                    <tbody class="bg-blue-200 text-center ">
+                    <tbody class="bg-[var(--primary)] text-center ">
                         <tr>
                             <td class="p-2 border border-white">Vinculada eSF/eSB</td>
                             <td class="p-2 border border-white">6h</td>
@@ -2047,7 +2055,7 @@
                 políticas nacionais de saúde do Sistema Único de Saúde. Diário Oficial da União, Brasília, DF, 3
                 out.
                 2017a. Disponível
-                em: <a class="underline text-blue-500"
+                em: <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017.html</a>.
                 Acesso em: 17 jul.
@@ -2060,7 +2068,7 @@
                 do
                 Sistema Único de
                 Saúde. Diário Oficial da União, Brasília, DF, 3 out. 2017b. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017.html</a>.
                 Acesso em: 17 jul. 2025.
@@ -2075,7 +2083,7 @@
                 (PNAISP) no âmbito do Sistema Único de Saúde (SUS). Diário Oficial da União, Brasília, DF, 3 jan.
                 2014a.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html</a>
                 . Acesso em: 17 jul. 2025.
@@ -2084,7 +2092,7 @@
                 BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de Execução Penal. Diário Oficial da União,
                 Brasília,
                 DF, 13 jul.
-                1984. Disponível em: <a class="underline text-blue-500"
+                1984. Disponível em: <a class="underline link"
                     href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
                     target="_blank">http://www.planalto.gov.br/ccivil_03/leis/l7210.htm</a>
                 . Acesso em: 15 jul. 2025.
@@ -2106,7 +2114,7 @@
                 -
                 RAPS do Sistema
                 Único de Saúde - SUS. Diário Oficial da União, Brasília, DF, 19 jul. 2024. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html</a>.
                 Acesso em: 17 jul. 2025.
@@ -2118,7 +2126,7 @@
                 Atenção
                 Primária à Saúde
                 (APS). 17 ago. 2023. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2023/nota-tecnica-no-282-2023.pdf"
                     target="_blank">https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2023/nota-tecnica-no-282-2023.pdf</a>.
                 Acesso em: 17 jul. 2025.
@@ -2130,7 +2138,7 @@
                 (PNAISP), no
                 âmbito do
                 Sistema Único de Saúde (SUS). Diário Oficial da União, Brasília, DF, 10 set. 2021. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html</a>.
                 Acesso em: 17 jul. 2025.
@@ -2142,7 +2150,7 @@
                 políticas nacionais de saúde do Sistema Único de Saúde. Diário Oficial da União, Brasília, DF, 3
                 out.
                 2017a. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0002_03_10_2017.html</a>.
                 Acesso em: 17 jul. 2025.
@@ -2154,7 +2162,7 @@
                 do
                 Sistema Único de
                 Saúde. Diário Oficial da União, Brasília, DF, 3 out. 2017b. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017.html</a>.
                 Acesso em: 17 jul. 2025.
@@ -2169,7 +2177,7 @@
                 (PNAISP) no âmbito do Sistema Único de Saúde (SUS). Diário Oficial da União, Brasília, DF, 3 jan.
                 2014a.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html</a>.
                 Acesso em: 17 jul. 2025.
@@ -2180,7 +2188,7 @@
                 Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                 (PNAISP) no âmbito
                 do Sistema Único de Saúde (SUS). Diário Oficial da União, Brasília, DF, 2 abr. 2014b. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt0482_01_04_2014.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt0482_01_04_2014.html</a>.
                 Acesso em: 17 jul. 2025.
@@ -2189,7 +2197,7 @@
                 BRASIL. Ministério da Saúde. Portaria Interministerial nº 1.777, de 9 de setembro de 2003. Aprova o
                 Plano Nacional de
                 Saúde no Sistema Penitenciário. Diário Oficial da União, Brasília, DF, 11 set. 2003. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html"
                     target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html</a>.
                 Acesso em: 17 jul. 2025.
@@ -2199,7 +2207,7 @@
                 Brasília,
                 DF, 13 jul.
                 1984. Disponível em:
-                <a class="underline text-blue-500" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
+                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
                     target="_blank">http://www.planalto.gov.br/ccivil_03/leis/l7210.htm</a>.
                 Acesso em: 15 jul. 2025.
             </p>
@@ -2211,8 +2219,7 @@
                 LERMEN, H. S. et al. Saúde no cárcere: análise das políticas sociais de saúde voltadas à população
                 prisional brasileira.
                 Physis Revista de Saúde Coletiva, v. 25, n. 3, p. 905-924, 2015. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.scielo.br/j/physis/a/zJDxMf6BFhqhN5NX5DmjptH/?lang=pt"
+                <a class="underline link" href="https://www.scielo.br/j/physis/a/zJDxMf6BFhqhN5NX5DmjptH/?lang=pt"
                     target="_blank">https://www.scielo.br/j/physis/a/zJDxMf6BFhqhN5NX5DmjptH/?lang=pt</a>.
                 Acesso em: 17 jul. 2025.
             </p>
@@ -2268,7 +2275,7 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-blue-200 text-center">
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
         <div class="max-w-[1000px] mx-auto px-5">
             <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
                 <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"

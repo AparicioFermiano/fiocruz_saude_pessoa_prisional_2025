@@ -33,11 +33,11 @@
 
             <nav id="menu"
                 class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
-                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-blue-300">Apresentação</a>
-                <a href="#3.1" class="p-4 text-gray-800 hover:text-blue-300">Unidade 03</a>
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#3.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 03</a>
                 <div class="relative group">
                     <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
-                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-blue-300">
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
                         Referências
                         <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
                             stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -53,7 +53,7 @@
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
                 </div>
-                <a href="#autor" class="p-4 text-gray-800 hover:text-blue-300">Autor</a>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
             </nav>
         </div>
     </header>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
                     Entendido
                 </button>
             </div>
@@ -152,7 +152,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -245,7 +245,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -281,7 +281,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -293,18 +293,18 @@
             <div class="flex flex-col gap-3">
                 <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
                     title="Instruções para usar o curso."
-                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-address-book"></i>
                 </button>
 
                 <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
                     title="Instruções para usar o curso."
-                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-exclamation"></i>
                 </button>
 
                 <a href="#" id="btnTopo"
-                    class="bottom-10 right-10 bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
                     </svg>
@@ -313,9 +313,9 @@
         </div>
 
         <div id="banner">
-            <div class="w-full bg-blue-200 py-5">
+            <div class="w-full bg-[var(--primary)] py-5">
                 <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-blue-800 text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
                     <span class="px-3 py-2 block mt-3">
                         CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
                         FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
@@ -338,7 +338,7 @@
                             FICHA TÉCNICA
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-blue-600 text-white bg-blue-600">
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
                             CRÉDITOS
                         </button>
                         <div class="w-full">
@@ -385,9 +385,9 @@
                 <div class="flex flex-wrap items-stretch justify-center">
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
                             <p class="text-center">
                                 Conhecer os direitos das pessoas privadas de liberdade, com foco na promoção da saúde e
                                 na inclusão social, considerando
@@ -398,9 +398,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
                             <p class="text-center">
                                 Reconhecer a importância da cidadania e da garantia de documentos como RG e CPF
                                 (documento único) para as pessoas
@@ -410,9 +410,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
                             <p class="text-center">
                                 Identificar as iniciativas de apoio à família;
                             </p>
@@ -420,9 +420,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
                             <p class="text-center">
                                 Identificar as formas de discriminação, como racismo, LGBTIA+fobia e outras;
                             </p>
@@ -430,9 +430,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
                             <p class="text-center">
                                 Entender a interseccionalidade dos determinantes sociais da saúde e a proteção de
                                 direitos e o acesso igualitário a
@@ -451,7 +451,7 @@
 
         <div id="3.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
                 3.1 Diversidade e inclusão no sistema prisional: direitos e garantias das populações específicas
             </h2>
             <div class="flex flex-wrap">
@@ -494,13 +494,13 @@
                 Justiça, 2016).
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -521,7 +521,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-P-ebook.pdf"
                                 target="_blank">Clique
                                 aqui</a>
@@ -541,7 +541,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
                                 target="_blank">Clique
                                 aqui</a>
@@ -563,7 +563,7 @@
             </p>
             <div id="quadro-1" class="flex flex-col gap-5 mt-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
                     Quadro 1 - Levantamento de dados de grupos historicamente vulnerabilizados
                 </h2>
                 <div>
@@ -571,7 +571,7 @@
                         <small>Clique para interagir</small>
                     </p>
                     <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md px-4 mb-6">
-                        <div class="border-b border-blue-400">
+                        <div class="border-b border-[var(--primary)]">
                             <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Mulheres</span>
@@ -606,7 +606,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-b border-blue-400">
+                        <div class="border-b border-[var(--primary)]">
                             <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Pessoas LGBTIA+</span>
@@ -642,7 +642,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-b border-blue-400">
+                        <div class="border-b border-[var(--primary)]">
                             <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Pessoas com Deficiência</span>
@@ -673,7 +673,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-b border-blue-400">
+                        <div class="border-b border-[var(--primary)]">
                             <button id="item14" onclick="animacao.toggleAccordion('item14', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Pessoas Idosas</span>
@@ -707,7 +707,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-b border-blue-400">
+                        <div class="border-b border-[var(--primary)]">
                             <button id="item15" onclick="animacao.toggleAccordion('item15', 'grupo1')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Povos Indígenas</span>
@@ -791,7 +791,7 @@
                 social para todas as pessoas, independentemente de sua condição.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
                 3.1.1 A população LGBTIA+ no sistema penal: desafios, dados e o papel da equidade
             </h2>
             <p>
@@ -849,7 +849,7 @@
             <div class="flex flex-col gap-5 my-5">
                 <div class="flex items-start">
                     <span
-                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-blue-200 flex items-center justify-center font-bold text-2xl">
+                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-[var(--primary)] flex items-center justify-center font-bold text-2xl">
                         1
                     </span>
                     <p class="px-2 md:px-3">
@@ -859,7 +859,7 @@
 
                 <div class="flex items-start">
                     <span
-                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-blue-200 flex items-center justify-center font-bold text-2xl">
+                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-[var(--primary)] flex items-center justify-center font-bold text-2xl">
                         2
                     </span>
                     <p class="px-2 md:px-3">
@@ -897,20 +897,20 @@
             <div class="flex flex-col gap-5 my-5">
                 <div class="flex">
                     <span
-                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">1</span>
+                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-[var(--primary)] flex justify-center items-center my-auto font-bold text-2xl">1</span>
                     <p class="px-2 md:px-3">Formar continuamente as equipes de trabalhadores prisionais, com foco em
                         diversidade e direitos humanos;</p>
                 </div>
                 <div class="flex">
                     <span
-                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">2</span>
+                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-[var(--primary)] flex justify-center items-center my-auto font-bold text-2xl">2</span>
                     <p class="px-2 md:px-3">
                         Aplicar e fiscalizar as normativas existentes, como a Resolução nº 348;
                     </p>
                 </div>
                 <div class="flex">
                     <span
-                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-blue-200 flex justify-center items-center my-auto font-bold text-2xl">3</span>
+                        class="w-10 h-10 shrink-0 my-auto rounded-full bg-[var(--primary)] flex justify-center items-center my-auto font-bold text-2xl">3</span>
                     <p class="px-2 md:px-3">
                         Reconhecer e valorizar a identidade de gênero como parte essencial da proteção de direitos no
                         sistema penal.
@@ -953,13 +953,13 @@
                 mais humana, inclusiva e comprometida com os direitos fundamentais de todas as PPL.
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -989,7 +989,7 @@
                         </p>
                         <p>
                             <b>Veja:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf"
                                 target="_blank">Clique aqui</a>
                         </p>
@@ -1006,31 +1006,35 @@
         <div id="timeline" class="bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5">
                 <h2 class="text-2xl md:text-3xl font-bold py-5">
-                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
                     Resumo do que vimos até aqui:
                 </h2>
                 <div class="timeline mx-auto flex flex-col gap-10 md:gap-20">
-                    <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <div
+                        class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                         <p>
                             A Constituição Federal e normas internacionais garantem equidade e dignidade para todos,
                             incluindo para as PPL, com foco
                             na proteção de direitos humanos;
                         </p>
                     </div>
-                    <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <div
+                        class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                         <p>
                             A população LGBTIA+ enfrenta discriminação e a falta de unidades adequadas, que tenham celas
                             específicas;
                         </p>
                     </div>
-                    <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <div
+                        class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                         <p>
                             Tratar grupos vulneráveis de forma diferenciada é essencial para garantir seus direitos e
                             bem-estar, com a necessidade
                             de fiscalização e formação das equipes de trabalhadores prisionais;
                         </p>
                     </div>
-                    <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <div
+                        class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                         <p>
                             Consequências do abandono familiar: a falta de visitas a pessoas LGBTIA+ no sistema
                             prisional
@@ -1056,11 +1060,11 @@
                 realmente assegurem a igualdade e o respeito para todos.
             </h2>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
                 3.1.2 Direito à cidadania no sistema prisional
             </h2>
             <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-blue-300 font-light text-center leading-10 md:leading-12">
+                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
                 Você já parou para pensar sobre a cidadania no sistema prisional?
             </h3>
             <p>
@@ -1115,13 +1119,13 @@
                 exclusão social, mesmo fora do sistema prisional.
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1142,7 +1146,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-P-ebook.pdf"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1164,7 +1168,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2019/setembro/CARTILHAREGISTROCIVIL_2019_Pop_Privao_de_Liberdade.pdf"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1219,7 +1223,7 @@
                 penais e afetando toda a sociedade.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
                 Confira alguns pontos importantes que vimos até aqui:
             </h2>
         </div>
@@ -1227,7 +1231,8 @@
         <div id="timeline-2" class="bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5">
                 <div class="timeline mx-auto flex flex-col gap-10 md:gap-20">
-                    <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <div
+                        class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                         <h3 class="font-bold text-xl mb-3">Direito à Cidadania e Documentação Civil:</h3>
                         <p>
                             A Constituição Federal e normas internacionais garantem equidade e dignidade para todos,
@@ -1235,7 +1240,8 @@
                             na proteção de direitos humanos;
                         </p>
                     </div>
-                    <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <div
+                        class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                         <h3 class="font-bold text-xl mb-3">Direito ao Voto:</h3>
                         <p>
                             A LEP garante que as pessoas presas tenham acesso à regularização de sua documentação civil,
@@ -1245,7 +1251,8 @@
                             desses documentos perpetua a exclusão social, dificultando a reintegração à sociedade.
                         </p>
                     </div>
-                    <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-blue-200 rounded-md bg-white">
+                    <div
+                        class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                         <h3 class="font-bold text-xl mb-3">Acesso a Saúde, Educação e Trabalho:</h3>
                         <p>
                             Embora esses direitos sejam garantidos por lei, na prática, o acesso a serviços de saúde,
@@ -1272,7 +1279,7 @@
                 dignidade.
             </h2>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
                 3.1.3 Racismo, discriminação e o sistema prisional: o que os números não mostram, a realidade escancara
             </h2>
             <p>
@@ -1309,13 +1316,13 @@
                 renda, minorias raciais e étnicas e indivíduos com histórico criminal.
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais4" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1339,7 +1346,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://portal.fiocruz.br/video/violencia-e-desigualdade-racial-sala-de-convidados"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1359,7 +1366,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1381,7 +1388,7 @@
                 (Figura 1).
             </p>
             <h3 class="text-xl md:text-2xl font-bold">
-                <i class="fa-solid fa-image text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-image text-[var(--primary)]"></i>
                 Figura 1 - Evolução das populações privadas de liberdade negra e branca no Brasil, 2016-2024
             </h3>
             <div class="w-full flex flex-col gap-3">
@@ -1430,13 +1437,13 @@
                 ele deixe de ser?
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais5')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais5')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais5" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1460,7 +1467,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://portal.fiocruz.br/video/violencia-e-desigualdade-racial-sala-de-convidados"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1480,7 +1487,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1494,7 +1501,7 @@
                 </div>
             </div>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
                 3.1.4 LGBTIA+fobia: violência, direitos e avanços no sistema de justiça
             </h2>
             <p>
@@ -1542,9 +1549,9 @@
             <div class="flex flex-wrap items-stretch justify-center">
                 <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                     <div
-                        class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                        class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                         <span
-                            class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                            class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
                         <p class="text-center">
                             A possibilidade de retificação de nome e gênero no registro civil para pessoas trans e não
                             binárias, sem necessidade de
@@ -1554,9 +1561,9 @@
                 </div>
                 <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                     <div
-                        class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                        class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                         <span
-                            class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                            class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
                         <p class="text-center">
                             A concessão de direitos sucessórios e previdenciários a casais homoafetivos;
                         </p>
@@ -1564,9 +1571,9 @@
                 </div>
                 <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                     <div
-                        class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                        class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                         <span
-                            class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                            class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
                         <p class="text-center">
                             A autorização da doação de sangue por pessoas LGBTIA+, superando restrições discriminatórias
                             anteriores.
@@ -1621,22 +1628,22 @@
                 LGBTIA+ (Figura 2).
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
                 Diferenças entre ADI, ADC e ADO
             </h2>
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div class="tabs-container" data-tabs-id="1">
                     <div class="flex border-b">
                         <button onclick="animacao.switchTab(1, 0)"
-                            class="tab-button flex-1 px-6 py-4 text-center text-blue-400 border-b-2 hover:text-blue-400 hover:border-blue-400 border-blue-400">
+                            class="tab-button flex-1 px-6 py-4 text-center text-[var(--primary)] border-b-2 hover:text-[var(--primary)] hover:border-[var(--primary)] border-[var(--primary)]">
                             ADI
                         </button>
                         <button onclick="animacao.switchTab(1, 1)"
-                            class="tab-button flex-1 px-6 py-4 text-center border-b-2 hover:text-blue-400 hover:border-blue-400 border-transparent">
+                            class="tab-button flex-1 px-6 py-4 text-center border-b-2 hover:text-[var(--primary)] hover:border-[var(--primary)] border-transparent">
                             ADC
                         </button>
                         <button onclick="animacao.switchTab(1, 2)"
-                            class="tab-button flex-1 px-6 py-4 text-center border-b-2 hover:text-blue-400 hover:border-blue-400 border-transparent">
+                            class="tab-button flex-1 px-6 py-4 text-center border-b-2 hover:text-[var(--primary)] hover:border-[var(--primary)] border-transparent">
                             ADO
                         </button>
                     </div>
@@ -1656,7 +1663,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold">
-                <i class="fa-solid fa-image text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-image text-[var(--primary)]"></i>
                 Figura 2 - Infográfico ADI, ADC e ADO e dados relacionados à violência contra a população LGBTIA+
             </h3>
             <div>
@@ -1669,7 +1676,7 @@
         <div id="exercicio_fixacao" class="bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
                     Exercício de fixação
                 </h2>
                 <div class="flex flex-wrap">
@@ -1738,7 +1745,7 @@
                         </label>
                         <div class="flex justify-center mt-8">
                             <button type="button" onclick="personalizado.exercicioFixacao(event)"
-                                class="w-full md:w-1/2 btn bg-blue-800 text-white">
+                                class="w-full md:w-1/2 btn bg-black text-white">
                                 Submeter
                             </button>
                         </div>
@@ -1751,7 +1758,7 @@
 
         <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
                 3.1.5 Determinantes Sociais da Saúde e Interseccionalidade: o que molda o acesso aos direitos?
             </h2>
             <p>
@@ -1782,7 +1789,7 @@
                 fundamental para construirmos um sistema de saúde mais justo e acessível para todos (Figura 3).
             </p>
             <h3 class="text-xl md:text-2xl font-bold">
-                <i class="fa-solid fa-image text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-image text-[var(--primary)]"></i>
                 Figura 3 - Interseccionalidade: o entrecruzamento de Determinantes Sociais da Saúde
             </h3>
             <div>
@@ -1876,7 +1883,7 @@
 
         <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
                 Encerramento da Unidade
             </h2>
             <p>
@@ -1907,7 +1914,7 @@
 
         <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
                 Referências importantes
             </h2>
             <p>
@@ -1917,7 +1924,7 @@
                 <b>Diário
                     Oficial da
                     União</b>, 10 abr. 2024b. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1
@@ -1929,7 +1936,7 @@
                     egressas
                     do sistema
                     prisional</b>. Brasília: CNJ, 2023a. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.cnj.jus.br/wp-content/uploads/2023/07/cartilha-de-direitos-das-pessoas-privadas-e-egressas.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.cnj.jus.br/wp-content/uploads/2023/07/cartilha-de-direitos-das-pessoas-privadas-e-egressas.pdf
@@ -1939,9 +1946,8 @@
             <p>
                 BRASIL. Secretaria Nacional de Políticas Penais. <b>Brasil</b>: relatórios analíticos. 2023d. Disponível
                 em:
-                <a class="underline text-blue-500"
-                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/brasil" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/brasil"
+                    target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/brasil
                 </a>
                 . Acesso em: 2 set. 2025.
@@ -1951,7 +1957,7 @@
                 os
                 fatores que
                 contribuem para essa trajetória. Brasília: Instituto Igarapé, 2022. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://igarape.org.br/wp-content/uploads/2022/07/AE56_Reincidencia-e-reentrada-na-prisao-no-Brasil.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://igarape.org.br/wp-content/uploads/2022/07/AE56_Reincidencia-e-reentrada-na-prisao-no-Brasil.pdf
@@ -1962,14 +1968,14 @@
 
         <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
                 Referências
             </h2>
             <p>
                 BRASIL. Secretaria Nacional de Políticas Penais. Relatório de Informações Penais. 16º ciclo SISDEPEN, 1º
                 semestre de
                 2024. RELIPEN. Brasília: SENAPPEN, 2024a. Disponível em:
-                <a class="underline text-blue-500" href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios"
+                <a class="underline link" href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios
                 </a>
@@ -1979,7 +1985,7 @@
                 BRASIL. Secretaria Nacional de Políticas Penais. <b>Relatórios de Informações Penais (RELIPEN)</b>.
                 2025.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
@@ -1991,7 +1997,7 @@
                 de março de 2024. Estabelece parâmetros para o acolhimento de pessoas LGBTQIA+ em privação de liberdade
                 no Brasil.
                 <b>Diário Oficial da União</b>, 10 abr. 2024b. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1
@@ -2003,7 +2009,7 @@
                     egressas
                     do sistema
                     prisional</b>. Brasília: CNJ, 2023a. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.cnj.jus.br/wp-content/uploads/2023/07/cartilha-de-direitos-das-pessoas-privadas-e-egressas.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.cnj.jus.br/wp-content/uploads/2023/07/cartilha-de-direitos-das-pessoas-privadas-e-egressas.pdf
@@ -2018,7 +2024,7 @@
                 Atenção à Pessoa Egressa do Sistema Prisional. <b>Diário Oficial da União</b>, Brasília, DF, 22 dez.
                 2023b.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11843.htm" target="_blank"
                     rel="noopener noreferrer">
                     https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11843.htm
@@ -2033,7 +2039,7 @@
                 Pessoa com Deficiência (PNAISPD) e Rede de Cuidados à Pessoa com Deficiência (RCPD) no âmbito do Sistema
                 Único de Saúde
                 (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 13 out. 2023c. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2023/prt1526_16_10_2023.html" target="_blank"
                     rel="noopener noreferrer">
                     https://bvsms.saude.gov.br/bvs/saudelegis/gm/2023/prt1526_16_10_2023.html
@@ -2043,9 +2049,8 @@
             <p>
                 BRASIL. Secretaria Nacional de Políticas Penais. <b>Brasil</b>: relatórios analíticos. 2023d. Disponível
                 em:
-                <a class="underline text-blue-500"
-                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/brasil" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/brasil"
+                    target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/brasil
                 </a>
                 . Acesso em: 2 set. 2025.
@@ -2057,7 +2062,7 @@
                 procedimentos institucionais e experiências de encarceramento. Brasília: Ministério da Mulher, da
                 Família e dos Direitos
                 Humanos, 2020.
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf
@@ -2069,7 +2074,7 @@
                     básica</b>:
                 população privada
                 de liberdade. Brasília: Ministério da Mulher, da Família e dos Direitos Humanos, 2019. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2019/setembro/CARTILHAREGISTROCIVIL_2019_Pop_Privao_de_Liberdade.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/mdh/pt-br/assuntos/noticias/2019/setembro/CARTILHAREGISTROCIVIL_2019_Pop_Privao_de_Liberdade.pdf
@@ -2082,9 +2087,8 @@
                 a Política Nacional de Atenção às Mulheres em Situação de Privação de Liberdade e Egressas do Sistema
                 Prisional, e dá
                 outras providências. <b>Diário Oficial da União</b>, Brasília, DF, 17 jan. 2014a. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
+                    target="_blank" rel="noopener noreferrer">
                     https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
                 </a>
                 . Acesso em: 9 ago. 2025.
@@ -2097,7 +2101,7 @@
                 (PNAISP) no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 3 jan.
                 2014b.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html" target="_blank"
                     rel="noopener noreferrer">
                     https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
@@ -2108,7 +2112,7 @@
                 BRASIL. Ministério da Saúde. Portaria nº 2.528, de 19 de outubro de 2006. Aprova a Política Nacional de
                 Saúde da Pessoa
                 Idosa. <b>Diário Oficial da União</b>, Brasília, DF, 20 out. 2006. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2006/prt2528_19_10_2006.html" target="_blank"
                     rel="noopener noreferrer">
                     https://bvsms.saude.gov.br/bvs/saudelegis/gm/2006/prt2528_19_10_2006.html
@@ -2119,7 +2123,7 @@
                 BRASIL. Ministério da Saúde. Portaria GM/MS nº 1.060, de 5 de junho de 2002. Institui a Política
                 Nacional de Saúde da
                 Pessoa com Deficiência. <b>Diário Oficial da União</b>, Brasília, DF, 6 jun. 2002. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2002/prt1060_05_06_2002.html" target="_blank"
                     rel="noopener noreferrer">
                     https://bvsms.saude.gov.br/bvs/saudelegis/gm/2002/prt1060_05_06_2002.html
@@ -2130,8 +2134,8 @@
                 BRASIL. Lei nº 9.394, de 20 de dezembro de 1996. Estabelece as diretrizes e bases da educação nacional.
                 <b>Diário Oficial
                     da União</b>, Brasília, DF, 23 dez. 1996. Disponível em:
-                <a class="underline text-blue-500" href="https://www.planalto.gov.br/ccivil_03/leis/l9394.htm"
-                    target="_blank" rel="noopener noreferrer">
+                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/leis/l9394.htm" target="_blank"
+                    rel="noopener noreferrer">
                     https://www.planalto.gov.br/ccivil_03/leis/l9394.htm
                 </a>
                 . Acesso em: 9 ago. 2025.
@@ -2141,9 +2145,8 @@
                     da
                     União</b>, Brasília,
                 DF, 5 out. 1988. Disponível em:
-                <a class="underline text-blue-500"
-                    href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+                    target="_blank" rel="noopener noreferrer">
                     http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
                 </a>
                 . Acesso em: 9 ago. 2025.
@@ -2153,8 +2156,8 @@
                 Brasília,
                 DF, 13 jul.
                 1984. Disponível em:
-                <a class="underline text-blue-500" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
-                    target="_blank" rel="noopener noreferrer">
+                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
+                    rel="noopener noreferrer">
                     http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
                 </a>
                 . Acesso em: 9 ago. 2025.
@@ -2163,7 +2166,7 @@
                 COELHO, G. G.; DESIDÉRIO, P. M. M.; ROCHA, L. P. Afinal, o que é a LGBTfobia? <b>Revista Brasileira de
                     Sexualidade Humana</b>,
                 v. 34, p. 11-15, 2023. Disponível em:
-                <a class="underline text-blue-500" href="https://www.rbsh.org.br/revista_sbrash/article/view/1115"
+                <a class="underline link" href="https://www.rbsh.org.br/revista_sbrash/article/view/1115"
                     target="_blank" rel="noopener noreferrer">
                     https://www.rbsh.org.br/revista_sbrash/article/view/1115
                 </a>
@@ -2180,7 +2183,7 @@
                     da
                     Justiça
                     Eletrônico do Conselho Nacional de Justiça</b>, Brasília, DF, 9 jul. 2021. Disponível em:
-                <a class="underline text-blue-500" href="https://atos.cnj.jus.br/atos/detalhar/4030" target="_blank"
+                <a class="underline link" href="https://atos.cnj.jus.br/atos/detalhar/4030" target="_blank"
                     rel="noopener noreferrer">
                     https://atos.cnj.jus.br/atos/detalhar/4030
                 </a>
@@ -2197,7 +2200,7 @@
                     de
                     Justiça</b>,
                 Brasília, DF, 15 out. 2020. Disponível em:
-                <a class="underline text-blue-500" href="https://atos.cnj.jus.br/atos/detalhar/3519" target="_blank"
+                <a class="underline link" href="https://atos.cnj.jus.br/atos/detalhar/3519" target="_blank"
                     rel="noopener noreferrer">
                     https://atos.cnj.jus.br/atos/detalhar/3519
                 </a>
@@ -2212,7 +2215,7 @@
                     de
                     Justiça</b>,
                 Brasília, DF, 2 jul. 2019. Disponível em:
-                <a class="underline text-blue-500" href="https://atos.cnj.jus.br/atos/detalhar/2959" target="_blank"
+                <a class="underline link" href="https://atos.cnj.jus.br/atos/detalhar/2959" target="_blank"
                     rel="noopener noreferrer">
                     https://atos.cnj.jus.br/atos/detalhar/2959
                 </a>
@@ -2221,7 +2224,7 @@
             <p>
                 CONSELHO NACIONAL DE JUSTIÇA. <b>Regras de Bangkok</b>. Brasília: Conselho Nacional de Justiça, 2016.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf
@@ -2234,7 +2237,7 @@
                 Feminist Theory and Antiracist Politics. <b>University of Chicago Legal Forum</b>, v. 1989, n. 1, art.
                 8, 1989.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=1052&context=uclf"
                     target="_blank" rel="noopener noreferrer">
                     https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=1052&context=uclf
@@ -2245,7 +2248,7 @@
                 CRUZ, E. P. Número de estupros de LGBTQIA+ cresceu 88% em 2021. <b>Agência Brasil</b>, 28 jun. 2022.
                 Disponível
                 em
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://agenciabrasil.ebc.com.br/geral/noticia/2022-06/numero-de-estupros-de-lgbtqia-cresceu-88-em-2021"
                     target="_blank" rel="noopener noreferrer">
                     https://agenciabrasil.ebc.com.br/geral/noticia/2022-06/numero-de-estupros-de-lgbtqia-cresceu-88-em-2021
@@ -2257,7 +2260,7 @@
                     presos
                     provisórios</b>.
                 Brasília, 2023. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://direitoshumanos.dpu.def.br/wp-content/uploads/2023/02/Relatorio-da-Defensoria-Publica-da-Uniao-Sobre-do-Direito-ao-Voto-dos-Presos-Provisorios-versao1-.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://direitoshumanos.dpu.def.br/wp-content/uploads/2023/02/Relatorio-da-Defensoria-Publica-da-Uniao-Sobre-do-Direito-ao-Voto-dos-Presos-Provisorios-versao1-.pdf
@@ -2269,7 +2272,7 @@
                 FBSP,
                 2022. Disponível
                 em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://forumseguranca.org.br/wp-content/uploads/2022/06/anuario-2022.pdf" target="_blank"
                     rel="noopener noreferrer">
                     https://forumseguranca.org.br/wp-content/uploads/2022/06/anuario-2022.pdf
@@ -2280,7 +2283,7 @@
                 INSTITUTO DE PESQUISA ECONÔMICA APLICADA. Fórum Brasileiro de Segurança Pública. <b>Atlas da violência
                     2025</b>. Brasília,
                 2025. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://forumseguranca.org.br/wp-content/uploads/2025/05/atlas-violencia-2025.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://forumseguranca.org.br/wp-content/uploads/2025/05/atlas-violencia-2025.pdf
@@ -2295,7 +2298,7 @@
                 Professores do Sistema Prisional) - Universidade Federal do Ceará, Faculdade de Educação, Escola de
                 Gestão Penitenciária
                 e Ressocialização, Fortaleza, 2012. Disponível em:
-                <a class="underline text-blue-500" href="https://repositorio.ufc.br/handle/riufc/29226" target="_blank"
+                <a class="underline link" href="https://repositorio.ufc.br/handle/riufc/29226" target="_blank"
                     rel="noopener noreferrer">
                     https://repositorio.ufc.br/handle/riufc/29226
                 </a>. Acesso em: 2 set. 2025.
@@ -2305,7 +2308,7 @@
                 (Regras de
                 Nelson
                 Mandela). Viena: Escritório das Nações Unidas sobre Drogas e Crime, 2015. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-P-ebook.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-P-ebook.pdf
@@ -2316,7 +2319,7 @@
                 os
                 fatores que
                 contribuem para essa trajetória. Brasília: Instituto Igarapé, 2022. Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://igarape.org.br/wp-content/uploads/2022/07/AE56_Reincidencia-e-reentrada-na-prisao-no-Brasil.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://igarape.org.br/wp-content/uploads/2022/07/AE56_Reincidencia-e-reentrada-na-prisao-no-Brasil.pdf
@@ -2327,9 +2330,8 @@
                 <b>Ciência
                     & Saúde
                     Coletiva</b>, v. 10, supl., p. 243-253, 2005. Disponível em:
-                <a class="underline text-blue-500"
-                    href="https://www.scielo.br/j/csc/a/5BG6sHmKrJFH4jsrvh58V9s/abstract/?lang=pt" target="_blank"
-                    rel="noopener noreferrer">
+                <a class="underline link" href="https://www.scielo.br/j/csc/a/5BG6sHmKrJFH4jsrvh58V9s/abstract/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
                     https://www.scielo.br/j/csc/a/5BG6sHmKrJFH4jsrvh58V9s/abstract/?lang=pt
                 </a>. Acesso em: 2 set. 2025.
             </p>
@@ -2337,7 +2339,7 @@
                 TRIBUNAL DE JUSTIÇA DO DISTRITO FEDERAL E DOS TERRITÓRIOS. Diferenças entre ADI, ADC e ADO. <b>Direito
                     Fácil</b>, 6 dez. 2024.
                 Disponível em:
-                <a class="underline text-blue-500"
+                <a class="underline link"
                     href="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/diferencas-entre-adi-adc-e-ado"
                     target="_blank" rel="noopener noreferrer">
                     https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/diferencas-entre-adi-adc-e-ado
@@ -2381,7 +2383,7 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-blue-200 text-center">
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
         <div class="max-w-[1000px] mx-auto px-5">
             <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
                 <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"

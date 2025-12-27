@@ -102,17 +102,17 @@ var animacao = {
             if (i === index) {
                 if (button.classList.contains('border-b-2')) {
                     button.classList.remove('border-transparent');
-                    button.classList.add('border-blue-400', 'text-blue-400');
+                    button.classList.add('border-[var(--primary)]', 'text-[var(--primary)]');
                 } else {
                     button.classList.remove('text-gray-700', 'hover:bg-gray-200');
-                    button.classList.add('bg-blue-400', 'text-blue-400');
+                    button.classList.add('bg-[var(--primary)]', 'text-[var(--primary)]');
                 }
             } else {
                 if (button.classList.contains('border-b-2')) {
-                    button.classList.remove('border-blue-400', 'text-blue-400');
+                    button.classList.remove('border-[var(--primary)]', 'text-[var(--primary)]');
                     button.classList.add('border-transparent');
                 } else {
-                    button.classList.remove('bg-blue-400');
+                    button.classList.remove('bg-[var(--primary)]');
                 }
             }
         });

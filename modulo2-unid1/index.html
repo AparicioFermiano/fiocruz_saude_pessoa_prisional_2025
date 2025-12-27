@@ -33,11 +33,11 @@
 
             <nav id="menu"
                 class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
-                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-blue-300">Apresentação</a>
-                <a href="#1.1" class="p-4 text-gray-800 hover:text-blue-300">Unidade 01</a>
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#1.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 01</a>
                 <div class="relative group">
                     <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
-                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-blue-300">
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
                         Referências
                         <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
                             stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -53,7 +53,7 @@
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
                 </div>
-                <a href="#autor" class="p-4 text-gray-800 hover:text-blue-300">Autor</a>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
             </nav>
         </div>
     </header>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
                     Entendido
                 </button>
             </div>
@@ -152,7 +152,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -245,7 +245,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -281,7 +281,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-blue-200 text-black">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
                     Fechar
                 </button>
             </div>
@@ -293,18 +293,18 @@
             <div class="flex flex-col gap-3">
                 <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
                     title="Instruções para usar o curso."
-                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-address-book"></i>
                 </button>
 
                 <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
                     title="Instruções para usar o curso."
-                    class="bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <i class="fa-solid fa-exclamation"></i>
                 </button>
 
                 <a href="#" id="btnTopo"
-                    class="bottom-10 right-10 bg-blue-200 shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
                     </svg>
@@ -313,9 +313,9 @@
         </div>
 
         <div id="banner">
-            <div class="w-full bg-blue-200 py-5">
+            <div class="w-full bg-[var(--primary)] py-5">
                 <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-blue-800 text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
                     <span class="px-3 py-2 block mt-3">
                         CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
                         FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
@@ -338,7 +338,7 @@
                             FICHA TÉCNICA
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-blue-600 text-white bg-blue-600">
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
                             CRÉDITOS
                         </button>
                         <div class="w-full">
@@ -379,9 +379,9 @@
                 <div class="flex flex-wrap items-stretch justify-center">
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
                             <p class="text-center">
                                 Reconhecer a violência na sociedade e no contexto familiar;
                             </p>
@@ -389,9 +389,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
                             <p class="text-center">
                                 Compreender os efeitos da violência, tanto institucional quanto externa, na saúde das
                                 pessoas privadas de liberdade;
@@ -400,9 +400,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
                             <p class="text-center">
                                 Conhecer as políticas públicas de prevenção da violência;
                             </p>
@@ -410,9 +410,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
                             <p class="text-center">
                                 Identificar as formas e tipos de violência presentes no sistema prisional;
                             </p>
@@ -420,9 +420,9 @@
                     </div>
                     <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
                         <div
-                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-blue-200">
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
                             <span
-                                class="my-3 rounded-md bg-blue-200 w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
                             <p class="text-center">
                                 Reconhecer medidas de prevenção à violência e mediação de conflitos com abordagem
                                 centrada na pessoa e no respeito aos
@@ -445,7 +445,7 @@
                 1.1 Violência, sistema prisional e direitos humanos
             </h2>
             <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-blue-300 font-light text-center leading-10 md:leading-12">
+                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
                 A violência é um fenômeno complexo e multifacetado. Você já parou para pensar sobre quantas formas
                 diferentes a
                 violência pode assumir?
@@ -523,11 +523,11 @@
                                         <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
                                             src="./images/imagem1.png" alt="Mulher andando a noite pela rua" />
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">No medo de andar sozinho à noite;</p>
                                         <span
                                             class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
@@ -546,11 +546,11 @@
                                         <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
                                             src="./images/imagem2.png" alt="Homem cansado no transporte público" />
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">
                                             No assédio sofrido no transporte público;
                                         </p>
@@ -571,11 +571,11 @@
                                         <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
                                             src="./images/imagem3.png" alt="Mulher preta no transporte público" />
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-blue-800 text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">
                                             Na falta de acesso às mesmas oportunidades por causa da cor da pele ou
                                             classe social.
@@ -629,13 +629,13 @@
                 esse quadro.
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -656,7 +656,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://www.cnj.jus.br/wp-content/uploads/2024/04/resumo-adpf-7.pdf"
                                 target="_blank">Clique aqui</a>
                         </p>
@@ -688,11 +688,11 @@
                 <table class="w-full rounded-2xl overflow-hidden">
                     <thead>
                         <tr class="border border-white divide-x">
-                            <th class="text-center p-2 bg-blue-800 text-white">Tipo de Violência</th>
-                            <th class="text-center p-2 bg-blue-800 text-white">Descrição</th>
+                            <th class="text-center p-2 bg-black text-white">Tipo de Violência</th>
+                            <th class="text-center p-2 bg-black text-white">Descrição</th>
                         </tr>
                     </thead>
-                    <tbody class="bg-blue-200">
+                    <tbody class="bg-[var(--primary)]">
                         <tr class="text-center border">
                             <td class="p-2 border border-white">
                                 Violência Pregressa
@@ -728,13 +728,13 @@
                 <small>Fonte: elaboração do autor (2025).</small>
             </div>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -763,7 +763,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800" href="https://www.youtube.com/watch?v=MPKYGWtYrec"
+                            <a class="hover:underline text-black" href="https://www.youtube.com/watch?v=MPKYGWtYrec"
                                 target="_blank">Clique
                                 aqui</a>
                         </p>
@@ -856,13 +856,13 @@
                 privadas de liberdade.
             </p>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -886,7 +886,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800" href="https://www.youtube.com/watch?v=bVmc-gngyVI"
+                            <a class="hover:underline text-black" href="https://www.youtube.com/watch?v=bVmc-gngyVI"
                                 target="_blank">Clique
                                 aqui</a>
                         </p>
@@ -923,7 +923,7 @@
                 participação plena na sociedade (reintegração).
             </p>
             <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-blue-300 font-light text-center leading-10 md:leading-12">
+                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
                 Para transformar essa realidade, é fundamental que as políticas públicas promovam a qualificação das
                 equipes que atuam
                 diretamente com essa população, na ampliação do acesso à saúde e à educação e na revisão da estrutura do
@@ -932,13 +932,13 @@
                 equitativo.
             </h3>
             <div>
-                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-blue-800 text-white flex! gap-2">
+                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-black text-white flex! gap-2">
                     <i class="fa-solid fa-question-circle text-2xl"></i>
                     <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais4" class="modal-overlay hidden">
-                <div class="modal-content bg-blue-200! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -960,7 +960,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-blue-800"
+                            <a class="hover:underline text-black"
                                 href="https://periodicorease.pro.br/rease/article/view/18814" target="_blank">Clique
                                 aqui</a>
                         </p>
@@ -997,7 +997,7 @@
                     <small>Clique para interagir</small>
                 </p>
                 <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Assis (2007)</span>
@@ -1017,7 +1017,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Dados do SISDEPEN</span>
@@ -1208,7 +1208,7 @@
                     <small>Clique para interagir</small>
                 </p>
                 <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Promoção da inclusão social</span>
@@ -1228,8 +1228,9 @@
                                 <p>
                                     <b>Exemplo de ação relacionada:</b><br>
                                     <b><i>Movimento</i>
-                                        <a class="text-blue-300 underline" href="https://todospelaeducacao.org.br/"
-                                            target="_blank" rel="noopener noreferrer">Todos pela Educação</a></b><br>
+                                        <a class="text-[var(--primary)] underline"
+                                            href="https://todospelaeducacao.org.br/" target="_blank"
+                                            rel="noopener noreferrer">Todos pela Educação</a></b><br>
                                     Trabalha para garantir educação de qualidade para todos, combatendo a desigualdade
                                     social
                                     e promovendo inclusão. A
@@ -1238,7 +1239,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="border-b border-blue-400">
+                    <div class="border-b border-[var(--primary)]">
                         <button id="item22" onclick="animacao.toggleAccordion('item22', 'grupo2')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Fortalecimento das redes de proteção</span>
@@ -1262,7 +1263,7 @@
                                 <p>
                                     <b>Exemplo de ação relacionada:</b><br>
                                     <b><i>Programa</i>
-                                        <a class="text-blue-300 underline"
+                                        <a class="text-[var(--primary)] underline"
                                             href="https://www.seguranca.mg.gov.br/index.php/prevencao/programas/fica-vivo"
                                             target="_blank" rel="noopener noreferrer">Fica Vivo!</a></b><br>
                                     Criado para prevenir homicídios entre jovens em áreas de vulnerabilidade, oferece
@@ -1342,7 +1343,7 @@
                         <small>Clique para interagir</small>
                     </p>
                     <div id="grupo3" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                        <div class="border-b border-blue-400">
+                        <div class="border-b border-[var(--primary)]">
                             <button id="item31" onclick="animacao.toggleAccordion('item31', 'grupo3')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Apoio e proteção às vítimas</span>
@@ -1366,7 +1367,7 @@
                                         <b>Confira ações relacionadas:</b><br>
                                         <a href="https://www.compromissoeatitude.org.br/rede-de-atendimento-as-mulheres-em-situacao-de-violencia/"
                                             target="_blank" rel="noopener noreferrer"
-                                            class="text-blue-300 underline">Rede
+                                            class="text-[var(--primary)] underline">Rede
                                             de Atendimento às Mulheres em Situação de Violência</a><br>
                                         Serviço público que reúne ações e serviços das áreas de assistência social,
                                         justiça,
@@ -1376,7 +1377,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-b border-blue-400">
+                        <div class="border-b border-[var(--primary)]">
                             <button id="item32" onclick="animacao.toggleAccordion('item32', 'grupo3')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Fortalecimento da segurança pública</span>
@@ -1397,7 +1398,7 @@
                                         <b>Confira ações relacionadas:</b><br>
                                         <a href="https://www.gov.br/mulheres/pt-br/acesso-a-informacao/acoes-e-programas-1/acoes-e-programas-de-gestoes-anteriores/politicas-para-mulheres/acoes-e-programas/programa-mulher-segura-e-protegida"
                                             target="_blank" rel="noopener noreferrer"
-                                            class="text-blue-300 underline">Programa Mulher Segura e
+                                            class="text-[var(--primary)] underline">Programa Mulher Segura e
                                             Protegida</a><br>
                                         Desenvolvido para ampliar serviços de proteção a mulheres vítimas de violência
                                         em parceria com governos estaduais e municipais.
@@ -1430,7 +1431,8 @@
                                         <b>Confira ações relacionadas:</b><br>
                                         <b>Relatório: </b><br>
                                         <a href="https://www.cnj.jus.br/wp-content/uploads/conteudo/arquivo/2019/08/7b7cb6d9ac9042c8d3e40700b80bf207.pdf"
-                                            target="_blank" rel="noopener noreferrer" class="text-blue-300 underline">O
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="text-[var(--primary)] underline">O
                                             Poder Judiciário no Enfrentamento à Violência Doméstica e Familiar contra as
                                             Mulheres</a><br>
                                         Iniciativa conjunta do Conselho Nacional de Justiça (CNJ) e do Instituto de
@@ -1466,7 +1468,7 @@
                         <small>Clique para interagir</small>
                     </p>
                     <div id="grupo4" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                        <div class="border-b border-blue-400">
+                        <div class="border-b border-[var(--primary)]">
                             <button id="item41" onclick="animacao.toggleAccordion('item41', 'grupo4')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
                                 <span class="font-bold text-xl px-5">Programas educativos e de capacitação</span>
@@ -1486,7 +1488,7 @@
                                         <b>Confira ações relacionadas:</b><br>
                                         <a href="https://www.cnj.jus.br/campanha/comecar-de-novo-artigo-campanha/"
                                             target="_blank" rel="noopener noreferrer"
-                                            class="text-blue-300 underline">Projeto Começar de Novo</a>
+                                            class="text-[var(--primary)] underline">Projeto Começar de Novo</a>
                                         Incentiva a contratação de pessoas que cumpriram pena para facilitar a
                                         reintegração
                                         social e reduzir a reincidência
@@ -1494,7 +1496,8 @@
                                     </p>
                                     <p>
                                         <a href="https://novoscaminhos.mec.gov.br/conheca-o-programa" target="_blank"
-                                            rel="noopener noreferrer" class="text-blue-300 underline">Programa Novos
+                                            rel="noopener noreferrer" class="text-[var(--primary)] underline">Programa
+                                            Novos
                                             Caminhos</a><br>
                                         Oferece capacitação profissional para egressos do sistema prisional, com foco na
                                         reintegração ao mercado de trabalho.
@@ -1523,7 +1526,7 @@
                                     <p>
                                         <b>Confira ações relacionadas:</b><br>
                                         <a href="https://recomecar360.org/" target="_blank" rel="noopener noreferrer"
-                                            class="text-blue-300 underline">Instituto Recomeçar</a><br>
+                                            class="text-[var(--primary)] underline">Instituto Recomeçar</a><br>
                                         Organização social que atua com o objetivo de reintegrar à sociedade homens e
                                         mulheres egressos do sistema prisional com
                                         diferentes tipos de suporte.
@@ -1602,8 +1605,8 @@
                     social
                     do apenado. <b>SER
                         Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
-                    <a class="underline text-blue-500"
-                        href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746" target="_blank"
+                    <a class="underline link" href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746"
+                        target="_blank"
                         rel="noopener noreferrer">https://periodicos.unb.br/index.php/SER_Social/article/view/12746(opens
                         in
                         a new tab)</a>. Acesso em: 1 set. 2025.
@@ -1613,7 +1616,7 @@
                     Paulo:
                     Conectas, 18
                     jul. 2024. Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
                         target="_blank"
                         rel="noopener noreferrer">https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/</a>.
@@ -1625,7 +1628,7 @@
                     da pessoa
                     humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível
                     em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
                         target="_blank"
                         rel="noopener noreferrer">https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf</a>.
@@ -1643,9 +1646,8 @@
                     74-78,
                     2007.
                     Disponível em:
-                    <a class="underline text-blue-500"
-                        href="https://revistacej.cjf.jus.br/cej/index.php/revcej/article/view/949" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="underline link" href="https://revistacej.cjf.jus.br/cej/index.php/revcej/article/view/949"
+                        target="_blank" rel="noopener noreferrer">
                         https://revistacej.cjf.jus.br/cej/index.php/revcej/article/view/949
                     </a>
                     . Acesso em: 5 ago. 2025.
@@ -1655,7 +1657,7 @@
                     <b>BBC
                         News Brasil</b>, 17
                     out. 2024. Disponível em:
-                    <a class="underline text-blue-500" href="https://www.bbc.com/portuguese/articles/c0k4nmd3e2xo"
+                    <a class="underline link" href="https://www.bbc.com/portuguese/articles/c0k4nmd3e2xo"
                         target="_blank" rel="noopener noreferrer">
                         https://www.bbc.com/portuguese/articles/c0k4nmd3e2xo
                     </a>
@@ -1666,7 +1668,7 @@
                     SISDEPEN, 1º
                     semestre de
                     2024. RELIPEN. Brasília: SENAPPEN, 2024. Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
                         target="_blank" rel="noopener noreferrer">
                         https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
@@ -1678,7 +1680,7 @@
                     Brasileiras
                     - Pena Justa.
                     ADPF 347/DF. <b>gov.br</b>, 2023. Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/pena-justa"
                         target="_blank" rel="noopener noreferrer">
                         https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/pena-justa
@@ -1687,7 +1689,7 @@
                 </p>
                 <p>
                     BRASIL. Conselho Nacional do Ministério Público (CNMP). <b>Cidadania</b>. c2015. Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.cnmp.mp.br/portal/institucional/476-glossario/8144-cidadania" target="_blank"
                         rel="noopener noreferrer">
                         https://www.cnmp.mp.br/portal/institucional/476-glossario/8144-cidadania
@@ -1699,7 +1701,7 @@
                     âmbito
                     do Sistema
                     Prisional. <b>Diário Oficial da União, Brasília</b>, DF, 25 nov. 2011. Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7626.htm"
                         target="_blank" rel="noopener noreferrer">
                         https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7626.htm
@@ -1711,9 +1713,8 @@
                     Direitos
                     Civis e
                     Políticos. Promulgação. <b>Diário Oficial da União</b>, Brasília, DF, 7 jul. 1992. Disponível em:
-                    <a class="underline text-blue-500"
-                        href="https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0592.htm" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0592.htm"
+                        target="_blank" rel="noopener noreferrer">
                         https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0592.htm
                     </a>
                     . Acesso em: 5 ago. 2025.
@@ -1726,7 +1727,7 @@
                     <b>Diário
                         Oficial da União</b>,
                     Brasília, DF, 20 set. 1990. Disponível em:
-                    <a class="underline text-blue-500" href="https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
+                    <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
                         target="_blank" rel="noopener noreferrer">
                         https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
                     </a>
@@ -1737,8 +1738,8 @@
                     Brasília,
                     DF, 13 jul.
                     1984. Disponível em:
-                    <a class="underline text-blue-500" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
-                        target="_blank" rel="noopener noreferrer">
+                    <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
+                        rel="noopener noreferrer">
                         http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
                     </a>
                     . Acesso em: 24 jul. 2025.
@@ -1747,7 +1748,7 @@
                     BUSS, P. M.; PELLEGRINI FILHO, A. A saúde e seus Determinantes Sociais. <b>Physis: Revista de Saúde
                         Coletiva</b>, v. 17, n. 1,
                     p. 77-93, 2007. Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.scielo.br/j/physis/a/msNmfGf74RqZsbpKYXxNKhm/?format=pdf&lang=pt"
                         target="_blank" rel="noopener noreferrer">
                         https://www.scielo.br/j/physis/a/msNmfGf74RqZsbpKYXxNKhm/?format=pdf&lang=pt
@@ -1767,9 +1768,8 @@
                     social
                     do apenado. <b>SER
                         Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
-                    <a class="underline text-blue-500"
-                        href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="underline link" href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746"
+                        target="_blank" rel="noopener noreferrer">
                         https://periodicos.unb.br/index.php/SER_Social/article/view/12746
                     </a>
                     . Acesso em: 1 set. 2025.
@@ -1780,7 +1780,7 @@
                     Paulo:
                     Conectas, 18
                     jul. 2024. Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
                         target="_blank" rel="noopener noreferrer">
                         https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/
@@ -1792,7 +1792,7 @@
                 </p>
                 <p>
                     FIOCRUZ. Os DSS na OMS. <b>Portal DSSBR</b>, c2020. Disponível em:
-                    <a class="underline text-blue-500" href="https://dssbr.ensp.fiocruz.br/dss-o-que-e/os-dss-na-oms/"
+                    <a class="underline link" href="https://dssbr.ensp.fiocruz.br/dss-o-que-e/os-dss-na-oms/"
                         target="_blank" rel="noopener noreferrer">
                         https://dssbr.ensp.fiocruz.br/dss-o-que-e/os-dss-na-oms/
                     </a>
@@ -1807,9 +1807,8 @@
                     70-90,
                     2024. Disponível
                     em:
-                    <a class="underline text-blue-500"
-                        href="https://www.jornaleletronicofivj.com.br/jefvj/article/view/932" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="underline link" href="https://www.jornaleletronicofivj.com.br/jefvj/article/view/932"
+                        target="_blank" rel="noopener noreferrer">
                         https://www.jornaleletronicofivj.com.br/jefvj/article/view/932
                     </a>
                     . Acesso em: 1 set. 2025.
@@ -1829,7 +1828,7 @@
                     e22203,
                     2024. Disponível
                     em:
-                    <a class="underline text-blue-500" href="https://www.scielo.br/j/sess/a/QrBk7TvLt65yq3Z58Vmvr9H/"
+                    <a class="underline link" href="https://www.scielo.br/j/sess/a/QrBk7TvLt65yq3Z58Vmvr9H/"
                         target="_blank" rel="noopener noreferrer">
                         https://www.scielo.br/j/sess/a/QrBk7TvLt65yq3Z58Vmvr9H/
                     </a>
@@ -1839,7 +1838,7 @@
                     HÖFLING, E. M. Estado e políticas (públicas) sociais. <b>Cadernos CEDES</b>, v. 21, n. 55, p. 30-41,
                     2001.
                     Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.scielo.br/j/ccedes/a/pqNtQNWnT6B98Lgjpc5YsHq/?format=html&lang=pt"
                         target="_blank" rel="noopener noreferrer">
                         https://www.scielo.br/j/ccedes/a/pqNtQNWnT6B98Lgjpc5YsHq/?format=html&lang=pt
@@ -1854,7 +1853,7 @@
                     Mundial da
                     Saúde, 2002.
                     Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://portaldeboaspraticas.iff.fiocruz.br/biblioteca/relatorio-mundial-sobre-violencia-e-saude/"
                         target="_blank" rel="noopener noreferrer">
                         https://portaldeboaspraticas.iff.fiocruz.br/biblioteca/relatorio-mundial-sobre-violencia-e-saude/
@@ -1868,9 +1867,8 @@
                     pandemia. <b>Cadernos Ibero-Americanos de Direito Sanitário</b>, v. 11, n. 2, p. 71-87, 2022.
                     Disponível
                     em:
-                    <a class="underline text-blue-500"
-                        href="https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1377954" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="underline link" href="https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1377954"
+                        target="_blank" rel="noopener noreferrer">
                         https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1377954
                     </a>
                     Acesso em: 1 set. 2025.
@@ -1881,7 +1879,7 @@
                     da pessoa
                     humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível
                     em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
                         target="_blank" rel="noopener noreferrer">
                         https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf
@@ -1900,7 +1898,7 @@
                     <b>Revista
                         Ibero-Americana
                         de Humanidades, Ciências e Educação</b>, v. 11, n. 4, p. 2196-2212, 2025. Disponível em:
-                    <a class="underline text-blue-500" href="https://periodicorease.pro.br/rease/article/view/18814"
+                    <a class="underline link" href="https://periodicorease.pro.br/rease/article/view/18814"
                         target="_blank" rel="noopener noreferrer">
                         https://periodicorease.pro.br/rease/article/view/18814
                     </a>
@@ -1909,7 +1907,7 @@
                 <p>
                     ORGANIZAÇÃO DAS NAÇÕES UNIDAS. <b>Pacto Internacional dos Direitos Civis e Políticos</b>. 1966.
                     Disponível em:
-                    <a class="underline text-blue-500"
+                    <a class="underline link"
                         href="https://www.oas.org/dil/port/1966%20Pacto%20Internacional%20sobre%20Direitos%20Civis%20e%20Pol%C3%ADticos.pdf"
                         target="_blank" rel="noopener noreferrer">
                         https://www.oas.org/dil/port/1966%20Pacto%20Internacional%20sobre%20Direitos%20Civis%20e%20Pol%C3%ADticos.pdf
@@ -1920,7 +1918,7 @@
                     PEREIRA, Y. S.; SANTOS, B. X.; SANTOS, D. S. Justiça Restaurativa na Execução Penal: Caminhos para a
                     Humanização do
                     Sistema Penitenciário Brasileiro. <b>Revista FOCO</b>, v. 17, n. 12, e7071, 2024. Disponível em:
-                    <a class="underline text-blue-500" href="https://ojs.focopublicacoes.com.br/foco/article/view/7071"
+                    <a class="underline link" href="https://ojs.focopublicacoes.com.br/foco/article/view/7071"
                         target="_blank" rel="noopener noreferrer">
                         https://ojs.focopublicacoes.com.br/foco/article/view/7071
                     </a>
@@ -1931,7 +1929,7 @@
                     <b>Criminal
                         Behaviour and
                         Mental Health</b>, v. 27, n. 4, p. 326-340, 2017. Disponível em:
-                    <a class="underline text-blue-500" href="https://pubmed.ncbi.nlm.nih.gov/27104884/" target="_blank"
+                    <a class="underline link" href="https://pubmed.ncbi.nlm.nih.gov/27104884/" target="_blank"
                         rel="noopener noreferrer">
                         https://pubmed.ncbi.nlm.nih.gov/27104884/
                     </a>
@@ -1943,9 +1941,8 @@
                     Brasil: o caso de
                     Minas Gerais. <b>Revista Brasileira de Ciências Sociais</b>, v. 32, n. 94, e329409, 2017. Disponível
                     em:
-                    <a class="underline text-blue-500"
-                        href="https://www.scielo.br/j/rbcsoc/a/hsHmd9MqqNkWDscr3ps7bFy/?lang=pt" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="underline link" href="https://www.scielo.br/j/rbcsoc/a/hsHmd9MqqNkWDscr3ps7bFy/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
                         https://www.scielo.br/j/rbcsoc/a/hsHmd9MqqNkWDscr3ps7bFy/?lang=pt
                     </a>
                     . Acesso em: 5 ago. 2025.
@@ -1958,7 +1955,7 @@
                     Moscow on
                     24 October 2003.
                     Genebra: World Health Organization; Regional Office for Europe, 2003. Disponível em:
-                    <a class="underline text-blue-500" href="https://iris.who.int/handle/10665/352130" target="_blank"
+                    <a class="underline link" href="https://iris.who.int/handle/10665/352130" target="_blank"
                         rel="noopener noreferrer">
                         https://iris.who.int/handle/10665/352130
                     </a>
@@ -2004,7 +2001,7 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-blue-200 text-center">
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
         <div class="max-w-[1000px] mx-auto px-5">
             <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
                 <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
