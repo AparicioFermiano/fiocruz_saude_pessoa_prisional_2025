@@ -335,12 +335,12 @@
                         PRISIONAL
                     </span>
                     <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo 01 - Política Nacional de Atenção Integral à Saúde das
+                        Módulo I - Política Nacional de Atenção Integral à Saúde das
                         Pessoas Privadas de Liberdade no Sistema Prisional
                         (PNAISP)
                     </h1>
                     <p class="px-3 py-2 block">
-                        Unidade 02 - A Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
+                        Unidade 2 - A Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
                     <div class="py-5 flex flex-wrap gap-5 justify-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
@@ -500,15 +500,31 @@
                         </button>
                         <div class="accordion-content pb-3">
                             <p class="p-5">
-                                Você sabia que é obrigação do Estado fornecer alimentação, vestuário e condições mínimas
-                                de higiene às pessoas presas?
-                                Isso está no artigo 12º e se aplica às pessoas que estão cumprindo pena em regime
-                                fechado.
-                                Assistência à Saúde: o artigo 14º é o que garante o direito à saúde. Estamos falando de
-                                atendimentos médicos,
-                                farmacêuticos e odontológicos. Isso inclui a assistência pré-natal, ao parto e ao
-                                pós-parto para mulheres gestantes,
-                                além do cuidado com a saúde do recém-nascido.
+                                Imagine estar privado de liberdade e não ter condições de pagar um advogado. O artigo
+                                15º garante a assistência jurídica
+                                para pessoas que não têm recursos para contratar advogados e, quando o estabelecimento
+                                prisional não oferece essa
+                                assistência, ela deve ser fornecida pela Defensoria Pública.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item6" onclick="animacao.toggleAccordion('item6', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center pt-3 text-left">
+                            <span class="font-bold text-xl px-5">Assistência à Saúde</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                O artigo 14º é o que garante o direito à saúde. Estamos falando de atendimentos médicos,
+                                farmacêuticos e odontológicos.
+                                Isso inclui a assistência pré-natal, ao parto e ao pós-parto para mulheres gestantes,
+                                além do cuidado com a saúde do
+                                recém-nascido.
                             </p>
                         </div>
                     </div>
@@ -577,7 +593,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-b border-[var(--primary)]">
+                    <div>
                         <button id="item5" onclick="animacao.toggleAccordion('item5', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Assistência Religiosa</span>
@@ -594,26 +610,6 @@
                                 que o Estado deve oferecer locais apropriados para celebração de cultos religiosos e
                                 permitir o acesso a livros
                                 religiosos, respeitando o direito de cada um de manifestar e exercer sua fé.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <button id="item6" onclick="animacao.toggleAccordion('item6', 'grupo1')"
-                            class="accordion-header w-full flex justify-between items-center pt-3 text-left">
-                            <span class="font-bold text-xl px-5">Assistência à Saúde</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3">
-                            <p class="p-5">
-                                O artigo 14º é o que garante o direito à saúde. Estamos falando de atendimentos médicos,
-                                farmacêuticos e odontológicos.
-                                Isso inclui a assistência pré-natal, ao parto e ao pós-parto para mulheres gestantes,
-                                além do cuidado com a saúde do
-                                recém-nascido.
                             </p>
                         </div>
                     </div>
@@ -1008,7 +1004,7 @@
                         <div class="modal-body md flex flex-col gap-4">
                             <p>
                                 <b>Título:</b>
-                                Portaria GM/MS nº 4.876, de 18 de julho de 2024
+                                <i>Portaria GM/MS nº 4.876, de 18 de julho de 2024</i>
                             </p>
                             <p>
                                 <b>Autor:</b>
@@ -1023,8 +1019,8 @@
                                 Sistema Único de Saúde (SUS).
                             </p>
                             <p>
-                                <b>Veja mais:</b>
-                                <a class="hover:underline text-black"
+                                <b>Acesse:</b>
+                                <a class="link"
                                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
                                     target="_blank">Clique aqui</a>
                             </p>
@@ -1332,7 +1328,7 @@
                         <p>
                             O passo a passo para registrar corretamente as eAPP no SCNES pode ser consultado no
                             endereço:
-                            <a
+                            <a class="link"
                                 href="https://wiki.saude.gov.br/cnes/index.php/Cadastro_de_Equipes#:~:text=explicado%20mais%20adiante.-,Cadastro%20de%20Equipe,ser%20realizado%20na%20aba%20Caracteriza%C3%A7%C3%A3o">Clique
                                 aqui</a>
                         </p>
@@ -1342,15 +1338,8 @@
                             consultadas na Nota Técnica nº 282 (Brasil, 2023).
                         </p>
                         <p>
-                            Veja sobre a nota técnica:
-                            <a class="hover:underline text-black" href="./media/nota-tecnica-no-282-2023.pdf"
-                                target="_blank">Clique aqui</a>
-                        </p>
-                        <p>
-                            <b>Veja mais:</b>
-                            <a class="hover:underline text-black"
-                                href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
-                                target="_blank">Clique aqui</a>
+                            Acesse:
+                            <a class="link" href="./media/nota-tecnica-no-282-2023.pdf" target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -1374,19 +1363,19 @@
                 <div id="drag-drop-area" class="mt-3 flex flex-wrap justify-between">
                     <div class="w-full md:w-1/3 termos-coluna p-2">
                         <div id="termos-lista" class="flex flex-wrap md:flex-col gap-3">
-                            <div class="termo-item text-xs  font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
+                            <div class="bg-white termo-item text-xs font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
                                 data-match="d">
                                 Cadastro no SCNES
                             </div>
-                            <div class="termo-item text-xs  font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
+                            <div class="bg-white termo-item text-xs font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
                                 data-match="b">
                                 Análise Técnica e Orçamentária
                             </div>
-                            <div class="termo-item text-xs  font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
+                            <div class="bg-white termo-item text-xs font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
                                 data-match="c">
                                 Publicação de Portaria
                             </div>
-                            <div class="termo-item text-xs  font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
+                            <div class="bg-white termo-item text-xs font-bold py-2 px-1 rounded-xl shadow-md hover:bg-[var(--primary)] transition duration-150 ease-in-out cursor-grab text-center"
                                 data-match="a">
                                 Solicitação de Credenciamento
                             </div>
@@ -1437,7 +1426,7 @@
                 <p class="font-bold">Dicas de Ouro para não esquecer!</p>
                 <ul class="text-left list-disc px-5 flex flex-col gap-3 mt-3">
                     <li>Sem registro no SCNES dentro do prazo ➔ risco de descredenciamento!</li>
-                    <li>Pe rfil de acesso ao e-Gestor APS deve ser solicitado ao Fundo de Saúde do Estado ou
+                    <li>Perfil de acesso ao e-Gestor APS deve ser solicitado ao Fundo de Saúde do Estado ou
                         Município!</li>
                 </ul>
             </div>
@@ -1446,8 +1435,9 @@
                 2.3.2.2 Teto de eAPP e carga horária
             </h2>
             <p>
-                xiste um número máximo de eAPP que o estado e o município podem credenciar? Estados e municípios têm
-                um número máximo de eAPP que podem credenciar, o denominado teto de equipes. Esse limite é calculado
+                Existe um número máximo de eAPP que o estado e o município podem credenciar? Estados e municípios têm
+                um número máximo de eAPP que podem credenciar, o denominado <i>teto de equipes</i>. Esse limite é
+                calculado
                 com base na quantidade de pessoas que estão privadas de liberdade no estado ou município, conforme
                 dados do Sistema Nacional de Informações Penais (SISDEPEN), do Ministério da Justiça e Segurança
                 Pública.
@@ -1745,9 +1735,8 @@
                 2.3.3.2 Descredenciamento das eAPP
             </h2>
             <p>
-                É necessário cumprir alguns critérios para que o recurso federal seja transferido mensalmente. Caso
-                contrário, ocorre a
-                suspensão dos repasses financeiros. As situações que geram suspensão do financiamento federal são:
+                Há ainda a possibilidade de a eAPP ser descredenciada pelo Ministério da Saúde. Esse procedimento se
+                aplica aos casos de:
             </p>
             <div>
                 <p class="text-center pb-3">
@@ -1755,6 +1744,24 @@
                 </p>
                 <div id="grupo3" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
                     <div class="border-b border-[var(--primary)]">
+                        <button id="item32" onclick="animacao.toggleAccordion('item32', 'grupo3')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Não homologação no prazo</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3">
+                            <p class="p-5">
+                                Se a homologação da eAPP não ocorrer dentro do prazo de três meses a contar da data de
+                                publicação da portaria de
+                                credenciamento;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
                         <button id="item31" onclick="animacao.toggleAccordion('item31', 'grupo3')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
                             <span class="font-bold text-xl px-5">Suspensão do financiamento federal por 12 meses
@@ -1768,23 +1775,6 @@
                         <div class="accordion-content pb-3">
                             <p class="p-5">
                                 Se houver suspensão do incentivo financeiro federal por 12 meses consecutivos.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <button id="item32" onclick="animacao.toggleAccordion('item32', 'grupo3')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Equipe incompleta</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3">
-                            <p class="p-5">
-                                Após dois meses consecutivos de ausência de categorias profissionais mínimas
-                                exigidas;
                             </p>
                         </div>
                     </div>
@@ -1828,7 +1818,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017.html"
                                 target="_blank">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prc0006_03_10_2017.html</a>
                         </p>
@@ -1869,14 +1859,14 @@
                     </thead>
                     <tbody class="bg-[var(--primary)] text-center ">
                         <tr>
-                            <td class="p-2 border border-white">Vinculada eSF/eSB</td>
+                            <td class="p-2 border border-white font-bold">Vinculada eSF/eSB</td>
                             <td class="p-2 border border-white">6h</td>
                             <td class="p-2 border border-white">Médicos clínicos, Enfermeiros, Técnicos e Auxiliares
                                 de Enfermagem,
                                 Cirurgiões-dentistas, Técnicos de odontologia</td>
                         </tr>
                         <tr>
-                            <td rowspan="2" class="p-2 border border-white">Essencial</td>
+                            <td rowspan="2" class="p-2 border border-white font-bold">Essencial</td>
                             <td>20h</td>
                             <td rowspan="2" class="p-2 border border-white">Médicos clínicos, Enfermeiros, Técnicos
                                 e Auxiliares de Enfermagem,
@@ -1886,7 +1876,7 @@
                             <td class="p-2 border border-white">30h</td>
                         </tr>
                         <tr>
-                            <td rowspan="2" class="p-2 border border-white">Ampliada</td>
+                            <td rowspan="2" class="p-2 border border-white font-bold">Ampliada</td>
                             <td class="p-2 border border-white">20h</td>
                             <td rowspan="2" class="p-2 border border-white">Médicos clínicos, Enfermeiros, Técnicos
                                 e Auxiliares de Enfermagem,
@@ -1898,7 +1888,7 @@
                             <td class="p-2 border border-white">30h</td>
                         </tr>
                         <tr>
-                            <td rowspan="2" class="p-2 border border-white">Adicional Saúde Bucal</td>
+                            <td rowspan="2" class="p-2 border border-white font-bold">Adicional Saúde Bucal</td>
                             <td class="p-2 border border-white">20h</td>
                             <td rowspan="2" class="p-2 border border-white">Técnicos de odontologia</td>
                         </tr>
@@ -1906,7 +1896,7 @@
                             <td class="p-2 border border-white">30h</td>
                         </tr>
                         <tr>
-                            <td rowspan="2" class="p-2 border border-white">Complementar Psicossocial</td>
+                            <td rowspan="2" class="p-2 border border-white font-bold">Complementar Psicossocial</td>
                             <td class="p-2 border border-white">20h</td>
                             <td rowspan="2" class="p-2 border border-white">Médicos psiquiatras, Psicólogos,
                                 Assistentes Sociais, Enfermeiros</td>

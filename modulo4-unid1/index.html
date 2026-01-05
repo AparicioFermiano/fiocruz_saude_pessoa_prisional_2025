@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Curso sobre SUS e Participação Social" name="keywords" />
+    <meta content="Aprenda sobre o Sistema Único de Saúde e Participação Social" name="description" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/tippy.min.css" />
+
+    <title>
+        Política Nacional de Atenção Integral à Saúde das Pessoas Privadas
+        de Liberdade no Sistema Prisional (PNAISP)
+    </title>
+</head>
+
+<body>
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="max-w-[1000px] mx-auto px-2 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-gray-800 max-w-[150px] overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full p-4 object-contain" alt="Logo" />
+            </a>
+
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5" onclick="estrutura.toggleSidebar()">
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+            </button>
+
+            <nav id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#2.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 01</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
+                        Referências
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu"
+                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
+                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências
+                            Importantes</a>
+                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências</a>
+                    </div>
+                </div>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modalInstrucao" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] md:max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Instruções para navegação
+                </h2>
+            </div>
+
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    Você pode ajustar a visualização do material de acordo
+                    com o nível de zoom do seu navegador, pressione:
+                </p>
+                <div class="text-center">
+                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalFicha" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Ficha técnica
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-5">
+                <div>
+                    <p>
+                        <b>MINISTÉRIO DA SAÚDE</b>
+                    </p>
+                    <span>Alexandre Rocha Santos Padilha - Ministro da
+                        Saúde</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ - FIOCRUZ </b>
+                    </p>
+                    <span>Mário Santos Moreira - Presidente</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL -
+                            FIOCRUZ MS
+                        </b>
+                    </p>
+                    <span>Jislaine de Fátima Guilhermino - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DE EDUCAÇÃO DA FIOCRUZ MS </b>
+                    </p>
+                    <span>Débora Dupas Gonçalves do Nascimento - Vice
+                        Coordenadora de Educação</span>
+                </div>
+                <div>
+                    <p>
+                        <b>SECRETARIA DE ATENÇÃO PRIMÁRIA À SAÚDE (SAPS)
+                        </b>
+                    </p>
+                    <span>Ana Luiza Ferreira Rodrigues Caldas -
+                        Secretária</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DEPARTAMENTO DE ESTRATÉGIAS E POLÍTICAS DE
+                            SAÚDE COMUNITÁRIA
+                        </b>
+                    </p>
+                    <span>José Eudes Barroso Vieira - Diretor</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO-GERAL DE SAÚDE DA FAMÍLIA E
+                            COMUNIDADE (CGESCO)
+                        </b>
+                    </p>
+                    <span>Ana Cláudia Cardozo Chaves - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DO ACESSO E EQUIDADE (CAEQ) </b>
+                    </p>
+                    <span>Lilian Silva Gonçalves - Coordenadora</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCreditos" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-5">
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO GERAL</b>
+                    </p>
+                    <span>Sandra Maria do Valle Leone de Oliveira (FIOCRUZ
+                        MS)
+                    </span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADOR TÉCNICO</b>
+                    </p>
+                    <span>Everton Ferreira Lemos</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADORA PEDAGÓGICA</b>
+                    </p>
+                    <span>Ewângela Aparecida Pereira</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADORA TEMÁTICA</b>
+                    </p>
+                    <span>Caroline Busatto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>APOIO DA COORDENAÇÃO</b>
+                    </p>
+                    <span>Antonio Luiz Dal Bello Gasparoto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO E NORMATIZAÇÃO </b>
+                    </p>
+                    <span>Davi Bagnatori Tavares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>AVALIAÇÃO EXTERNA </b>
+                    </p>
+                    <span>Jorge Esteves</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADOR DE PRODUÇÃO E DESIGNER INSTRUCIONAL
+                        </b>
+                    </p>
+                    <span>Marcos Paulo dos Santos de Souza</span>
+                </div>
+                <div>
+                    <p>
+                        <b>WEBDESIGNER E DESENVOLVEDOR </b>
+                    </p>
+                    <span>Aparício Fermiano</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DESENVOLVEDOR AVA-MOODLE </b>
+                    </p>
+                    <span>Vinícius Vicente Soares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO</b>
+                    </p>
+                    <span>André Julien de Sousa Morato</span>
+                </div>
+                <div class="text-center">
+                    <small>Esse produto faz parte das atividades do Núcleo de
+                        Evidências de Mato Grosso do Sul (NEVMS), com nome
+                        de NEV Pantanal e o as ações do Programa de
+                        Avaliação e Qualificação da Política Nacional de
+                        Atenção Integral à Saúde das Pessoas Privadas de
+                        Liberdade no Sistema Prisional (QUALI-SaP-PNAISP).
+                        TED 81/2023.</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContatar" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Informações de contato
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-2">
+                <h3 class="font-bold">
+                    FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                </h3>
+                <p>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo
+                    Grande-MS - CEP 79081-746
+                </p>
+                <p>
+                    <b>Telefone:</b>
+                    (67) 3346-7220
+                </p>
+                <p>
+                    <b>E-mail:</b>
+                    <a href="mail:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a>
+                </p>
+                <p>
+                    <b>Site:</b>
+                    <a href="www.matogrossodosul.fiocruz.br">www.matogrossodosul.fiocruz.br</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex flex-col justify-between">
+        <div id="scrollTopBtn" class="hidden fixed bottom-10 right-10 z-99">
+            <div class="flex flex-col gap-3">
+                <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-address-book"></i>
+                </button>
+
+                <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-exclamation"></i>
+                </button>
+
+                <a href="#" id="btnTopo"
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div class="w-full bg-[var(--primary)] py-5">
+                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 block mt-3">
+                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
+                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
+                        PRISIONAL
+                    </span>
+                    <h1 class="text-xl md:text-2xl font-black mt-3">
+                        Módulo IV - Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                    </h1>
+                    <p class="px-3 py-2 block">
+                        Unidade 1 - Promoção da Saúde
+                    </p>
+                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+                        <button onclick="estrutura.openModal('modalInstrucao')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            INSTRUÇÕES
+                        </button>
+                        <button onclick="estrutura.openModal('modalFicha')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            FICHA TÉCNICA
+                        </button>
+                        <button onclick="estrutura.openModal('modalCreditos')"
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
+                            CRÉDITOS
+                        </button>
+                        <div class="w-full">
+                            <a href="#apresentacao"
+                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="apresentacao" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-5xl font-bold">
+                        Apresentação da Unidade
+                    </h1>
+                    <h3>Olá, estudante-trabalhador! Seja bem-vindo!</h3>
+                </div>
+                <p>
+                    Nesta Unidade, iremos estudar as políticas de promoção da saúde e de prevenção de agravos e doenças
+                    no contexto da
+                    Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
+                    (PNAISP), suas
+                    implicações no processo de trabalho de todos que atuam no sistema prisional e interlocuções com
+                    outras políticas de
+                    saúde voltadas ao sistema prisional.
+                </p>
+                <p>
+                    Vamos nos aprofundar nos conceitos, elementos e atores que compõem tais políticas e, com base nisso,
+                    discutir
+                    estratégias para realizar ações em saúde considerando que cada ator do sistema prisional é um
+                    potencial agente de
+                    mudanças intramuros. Sobretudo, faremos uma reflexão crítica sobre os desafios e as oportunidades
+                    para a realização de
+                    ações integradas de promoção da saúde e de prevenção de agravos e doenças, buscando a melhoria da
+                    qualidade de vida das
+                    pessoas privadas de liberdade (PPL) e de todos que atuam no ambiente prisional.
+                </p>
+                <p>
+                    Que seja uma rica jornada!
+                </p>
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    Objetivos de Aprendizagem da Unidade
+                </h2>
+                <div class="flex flex-wrap items-stretch justify-center">
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                            <p class="text-center">
+                                Diferenciar os conceitos e as ações de Promoção da Saúde e Prevenção de Agravos e
+                                Doenças;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                            <p class="text-center">
+                                Compreender o conceito ampliado de saúde e suas implicações;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                            <p class="text-center">
+                                Identificar os atores da comunidade prisional que podem contribuir com a promoção da
+                                saúde no ambiente prisional;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Conhecer o papel dos agentes promotores de saúde;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Reconhecer os desafios e oportunidades para o planejamento/adaptação de ações integradas
+                                de promoção da saúde e
+                                prevenção de agravos e doenças no âmbito prisional;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Conhecer os resultados esperados e ações indicadas no Plano Nacional de Saúde no Sistema
+                                Prisional para o controle dos
+                                agravos e doenças mais prevalentes;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Identificar parcerias que propiciem o desenvolvimento de ações integradas de promoção da
+                                saúde e prevenção de agravos e
+                                doenças, incluindo a vigilância em saúde e a segurança, no sistema prisional;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Reconhecer as implicações dos processos de trabalho na promoção da saúde e prevenção de
+                                agravos e doenças.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 md:px-3">
+                    <p class="bg-gray-600 font-bold text-xl md:text-2xl p-5 rounded-md text-white">
+                        Carga Horária de Estudo: 6 horas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="1.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                1.1 A promoção da saúde e a prevenção de agravos e doenças
+            </h2>
+            <p>
+                A palavra saúde pode não ter o mesmo significado para todas as pessoas e, a depender do contexto social,
+                econômico,
+                político e cultural, sofre modificações ao longo do tempo (Scliar, 2007).
+            </p>
+            <p>
+                A partir da Reforma Sanitária e da VIII Conferência Nacional de Saúde, em 1986, o conceito de saúde
+                passou a compreender
+                fatores da nossa vida que se estendem para além da simples ausência de doença, como o acesso à educação,
+                as condições de
+                moradia e trabalho, o meio ambiente e o acesso aos serviços de saúde. Essa nova forma de compreender a
+                saúde é tida hoje
+                como “conceito ampliado de saúde”, considerando que tais fatores condicionam e determinam a situação de
+                saúde das
+                pessoas (Brasil, 1986).
+            </p>
+            <p>
+                Foi com base nessa e em outras premissas que a Política Nacional de Promoção da Saúde (PNPS) foi
+                instituída em 2006 com
+                o objetivo de promover a equidade e melhorar as condições de saúde e modos de viver (Brasil, 2018).
+            </p>
+            <p>
+                A promoção da saúde representa um esforço coletivo para reduzir as desigualdades por meio do
+                enfrentamento dos
+                determinantes sociais da saúde individual e coletiva nos diferentes ambientes (Brasil, 2021).
+            </p>
+            <p>
+                Para compreender melhor como a promoção da saúde acontece na prática, veja os temas prioritários
+                estabelecidos pela PNPS
+                e algumas experiências realizadas no sistema prisional (Brasil, 2021):
+            </p>
+            <div class="flex flex-wrap max-w-[800px] mx-auto">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl">
+                        <b>Formação e educação permanente</b>
+                    </h3>
+                    <small>
+                        Veja o exemplo do projeto <b><i>Quebrando Barreiras</i></b>, no Rio Grande do Sul. O projeto
+                        realizou oficinas de educação permanente
+                        com diferentes atores do sistema prisional.
+                    </small>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                    <a href="https://www.estado.rs.gov.br/combate-a-tuberculose-e-hepatite-c-no-sistema-prisional-mobiliza-acoes-integradas-em-todo-o-rs"
+                        target="_blank"
+                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
+                        aqui!</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap max-w-[800px] mx-auto">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl">
+                        <b>Alimentação adequada e saudável</b>
+                    </h3>
+                    <small>
+                        A <b><i>Horta da Esperança</i></b>, de Campo Grande, promove a ressocialização dos trabalhadores
+                        e a integração com a sociedade por meio do cultivo e
+                        distribuição de alimentos saudáveis.
+                    </small>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                    <a href="https://www.senarms.org.br/noticias/cultivando-esperan%c3%a7a-horta-%c3%a9-oportunidade-de-ressocializa%c3%a7%c3%a3o-para-detentos-e-alimenta%c3%a7%c3%a3o"
+                        target="_blank"
+                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
+                        aqui!</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap max-w-[800px] mx-auto">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl">
+                        <b>Práticas corporais e atividades físicas</b>
+                    </h3>
+                    <small>
+                        O projeto instituído pela Agência Estadual de Administração Penitenciária de Mato Grosso do Sul
+                        promove atividades de
+                        alongamento, relaxamento e exercícios aeróbicos para minimizar os efeitos do sedentarismo na
+                        PPL.
+                    </small>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                    <a href="https://www.agepen.ms.gov.br/em-ano-de-olimpiadas-pratica-de-atividades-fisicas-em-presidios-estimulam-disciplina-e-melhoram-a-saude-de-detentos/"
+                        target="_blank"
+                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
+                        aqui!</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap max-w-[800px] mx-auto">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl">
+                        <b>Enfrentamento do uso do tabaco e de seus derivados</b>
+                    </h3>
+                    <small>
+                        Conheça a iniciativa da Secretaria de Saúde do Distrito Federal de elaborar um plano de controle
+                        do tabagismo para o
+                        sistema prisional.
+                    </small>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                    <a href="https://www.saude.df.gov.br/web/guest/w/saude-prisional-traca-estrategias-para-evitar-o-consumo-de-tabaco-dentro-das-unidades-prisionais"
+                        target="_blank"
+                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
+                        aqui!</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap max-w-[800px] mx-auto">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl">
+                        <b>Enfrentamento do uso abusivo de álcool e de outras drogas</b>
+                    </h3>
+                    <small>
+                        Veja a estratégia utilizada no Espírito Santo em que equipes psicossociais promovem grupos para
+                        acompanhar a PPL e
+                        abordar questões relacionadas à saúde mental e à dependência química.
+                    </small>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                    <a href="https://sejus.es.gov.br/Not%c3%adcia/programa-de-saude-mental-e-desenvolvido-em-unidades-prisionais-do-estado"
+                        target="_blank"
+                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
+                        aqui!</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap max-w-[800px] mx-auto">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl">
+                        <b>Promoção da cultura da paz e dos direitos humanos</b>
+                    </h3>
+                    <small>
+                        Conheça a oficina de fotografia em uma penitenciária feminina em Porto Alegre (RS) que
+                        reverberou em discussões sobre
+                        direitos humanos.
+                    </small>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                    <a href="https://www.unodc.org/lpo-brazil/pt/frontpage/2013/10/02-oficinas-de-fotografia-em-presidios-abrem-dialogo-sobre-direitos-humanos-genero-saude-e-violencia-no-sistema-prisional.html"
+                        target="_blank"
+                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
+                        aqui!</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap max-w-[800px] mx-auto">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl">
+                        <b>Promoção do desenvolvimento sustentável</b>
+                    </h3>
+                    <small>
+                        Conheça o exemplo do estado de São Paulo, uma iniciativa de horta orgânica sustentável que
+                        promove também alimentação
+                        saudável e ressocialização.
+                    </small>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                    <a href="https://www.sap.sp.gov.br/sec_adm_penitenciaria/Noticias/horta-organica-na-penitenciaria-2-de-sorocaba-uma-iniciativa-de-sustentabilidade-alimentacao-saudavel-e-ressocializacao"
+                        target="_blank"
+                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
+                        aqui!</a>
+                </div>
+                <p>
+                    Perceba que, em todos os casos, a saúde não está exatamente no centro das ações, mas acaba sendo
+                    contemplada pelas
+                    atividades desenvolvidas. É possível perceber também que, em todas as ações, há um trabalho
+                    intersetorial entre saúde,
+                    justiça e segurança pública.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-3xl md:text-5xl font-bold">
+                    Reflexão
+                </h2>
+                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                    Olhando para as experiências compartilhadas, você consegue visualizar alguma que poderia ser
+                    desenvolvida na instituição
+                    penal em que você trabalha ou conhece?
+                </h2>
+            </div>
+        </div>
+
+        <div id="1.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                1.1.1 Promoção e prevenção: quais são as diferenças?
+            </h2>
+            <p>
+                Como já vimos, a promoção da saúde almeja melhorar as condições de vida, considerando os determinantes sociais da saúde,
+                por meio de ações intersetoriais. Ações de prevenção, por sua vez, buscam evitar o surgimento ou a proliferação de
+                agravos e doenças, considerando os riscos de cada indivíduo desenvolver determinada condição de saúde (Brasil, 2013a).
+            </p>
+            <p>
+                Como já vimos, a promoção da saúde almeja melhorar as condições de vida, considerando os determinantes sociais da saúde,
+                por meio de ações intersetoriais. Ações de prevenção, por sua vez, buscam evitar o surgimento ou a proliferação de
+                agravos e doenças, considerando os riscos de cada indivíduo desenvolver determinada condição de saúde (Brasil, 2013a).
+            </p>
+            <p>
+                Quando se trata de prevenção de doenças, podemos classificar os esforços em quatro níveis (Brasil, 2013a; Leavell;
+                Clark, 1976):
+            </p>
+            
+        </div>
+
+        <div id="encerramento" class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                Encerramento da Unidade
+            </h2>
+            <p>
+                O ambiente prisional impõe desafios importantes no âmbito da promoção da saúde e prevenção de agravos e
+                doenças. Nesta
+                Unidade, discutimos estratégias e propostas de ações em saúde para o sistema prisional com uma abordagem
+                ampliada e
+                humanizada, considerando os determinantes sociais e os diversos atravessadores da garantia do direito à
+                saúde e vida
+                digna da população privada de liberdade.
+                <br><br>
+                A promoção da saúde no sistema prisional vai muito além do atendimento clínico. Ela é, sobretudo, um
+                instrumento potente
+                de transformação social e de fortalecimento da cidadania. Ao assegurar o acesso universal e integral à
+                saúde para as
+                PPL, reafirma o princípio de que os direitos humanos não são suspensos pela condição de privação de
+                liberdade. Promover
+                a saúde nesse contexto é reconhecer a dignidade intrínseca de cada indivíduo, combater as desigualdades
+                estruturais e
+                criar oportunidades reais de reintegração social.
+                <br><br>
+                <small>Investir em saúde prisional significa não apenas prevenir agravos e doenças, mas também construir
+                    caminhos de inclusão,
+                    reduzir a reincidência criminal e fortalecer o pacto democrático que sustenta uma sociedade mais
+                    justa, humana e
+                    igualitária.</small>
+            </p>
+        </div>
+
+        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências importantes
+            </h2>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Análise em Saúde e
+                Doenças não
+                Transmissíveis. <b>Promoção da Saúde</b>: aproximações ao tema. Caderno 1. Brasília, 2021. Disponível
+                em:
+                <a class="underline link"
+                    href="http://bvsms.saude.gov.br/bvs/publicacoes/promocao_saude_aproximacoes_tema.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    http://bvsms.saude.gov.br/bvs/publicacoes/promocao_saude_aproximacoes_tema.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica.
+                <b>Rastreamento</b>. Brasília,
+                2013a. (Cadernos de Atenção Primária: v. 2, n. 29). Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/rastreamento_caderno_atencao_primaria_n29.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/rastreamento_caderno_atencao_primaria_n29.pdf
+                </a>
+                . Acesso em: 2 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. <b>Política Nacional de Humanização</b>: o
+                que é,
+                como implementar
+                (uma síntese das diretrizes e dispositivos da PNH em perguntas e respostas). Brasília, 2010. Disponível
+                em:
+                <a class="underline link"
+                    href="https://www.redehumanizasus.net/sites/default/files/diretrizes_e_dispositivos_da_pnh1.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.redehumanizasus.net/sites/default/files/diretrizes_e_dispositivos_da_pnh1.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                POSSUELO, L. G. et al. (org.). <b>Tuberculose e hepatite C no sistema prisional</b>: contribuições e
+                orientações à sociedade
+                civil. (Quebrando Barreiras). Santa Cruz do Sul: Ed. do Autor, 2024. Disponível em:
+                <a class="underline link" href="http://repositorio.unisc.br:8080/jspui/handle/11624/3773"
+                    target="_blank" rel="noopener noreferrer">
+                    http://repositorio.unisc.br:8080/jspui/handle/11624/3773
+                </a>
+                . Acesso em: 28 jul. 2024.
+            </p>
+        </div>
+
+        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências
+            </h2>
+            <p>
+                ANDREWS, J. R.; LIU, Y. E.; CRODA, J. Enduring Injustice: Infectious Disease Outbreaks in Carceral
+                Settings. <b>The Journal
+                    of Infectious Diseases</b>, v. 229, n. 2, p. 307-309, 2023. Disponível em:
+                <a class="underline link" href="https://academic.oup.com/jid/article/229/2/307/7231239" target="_blank"
+                    rel="noopener noreferrer">
+                    https://academic.oup.com/jid/article/229/2/307/7231239
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Instituto Brasileiro de Geografia e Estatística. Em 2023, expectativa de vida chega aos 76,4
+                anos e supera
+                patamar pré-pandemia. <b>Agência IBGE notícias</b>, 29 nov. 2024. Disponível em:
+                <a class="underline link"
+                    href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41984-em-2023-expectativa-de-vida-chega-aos-76-4-anos-e-supera-patamar-pre-pandemia"
+                    target="_blank" rel="noopener noreferrer">
+                    https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41984-em-2023-expectativa-de-vida-chega-aos-76-4-anos-e-supera-patamar-pre-pandemia
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública. Ministério da Saúde. Secretaria Nacional de Políticas
+                Penais.
+                Fundação Oswaldo Cruz. <b>Pesquisa Cenários da saúde física e mental dos servidores do sistema
+                    penitenciário brasileiro.</b>
+                Brasília, 2023. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/pesquisa-cenario-da-saude-fisica-e-mental-dos-servidores.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/pesquisa-cenario-da-saude-fisica-e-mental-dos-servidores.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Análise em Saúde e
+                Doenças não
+                Transmissíveis. <b>Promoção da Saúde</b>: aproximações ao tema. Caderno 1. Brasília, 2021. Disponível
+                em:
+                <a class="underline link"
+                    href="http://bvsms.saude.gov.br/bvs/publicacoes/promocao_saude_aproximacoes_tema.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    http://bvsms.saude.gov.br/bvs/publicacoes/promocao_saude_aproximacoes_tema.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Secretaria de Atenção à Saúde.
+                <b>Política
+                    Nacional de
+                    Promoção da Saúde (PNPS)</b>: Anexo I da Portaria de Consolidação nº 2, de 28 de setembro de 2017,
+                que
+                consolida as normas
+                sobre as políticas nacionais de saúde do SUS. Brasília, 2018. Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. <b>A Experiência da Diretriz de Ambiência da Política Nacional de
+                    Humanização</b>
+                - PNH. Brasília,
+                2017. Disponível em:
+                <a class="underline link" href="http://redehumanizasus.net/lancamento-da-cartilha-humanizasus"
+                    target="_blank" rel="noopener noreferrer">
+                    http://redehumanizasus.net/lancamento-da-cartilha-humanizasus
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº 1,
+                de 2 de janeiro
+                de 2014. Institui a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
+                Sistema Prisional
+                (PNAISP) no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 3 jan.
+                2014.
+                Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html" target="_blank"
+                    rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica.
+                <b>Rastreamento</b>. Brasília,
+                2013a. (Cadernos de Atenção Primária: v. 2, n. 29). Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/rastreamento_caderno_atencao_primaria_n29.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/rastreamento_caderno_atencao_primaria_n29.pdf
+                </a>
+                . Acesso em: 2 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Ministério da Justiça. <b>Política Nacional de Atenção Integral à Saúde das
+                    Pessoas Privadas
+                    de Liberdade no Sistema Prisional</b>. Brasília, 2013b. (Fôlder). Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/folder/politica_nacional_saude_sistema_prisional.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/folder/politica_nacional_saude_sistema_prisional.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. <b>Política Nacional de Humanização</b>:
+                PNH.
+                Brasília, 2013c.
+                Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_humanizacao_pnh_folheto.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_humanizacao_pnh_folheto.pdf
+                </a>
+                . Acesso em: 3 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. <b>Política Nacional de Humanização</b>: o
+                que é,
+                como implementar
+                (uma síntese das diretrizes e dispositivos da PNH em perguntas e respostas). Brasília, 2010. Disponível
+                em
+                <a class="underline link"
+                    href="https://www.redehumanizasus.net/sites/default/files/diretrizes_e_dispositivos_da_pnh1.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.redehumanizasus.net/sites/default/files/diretrizes_e_dispositivos_da_pnh1.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Portaria Interministerial nº 1.777, de 9 de setembro de 2003. Aprova o
+                Plano Nacional de
+                Saúde no Sistema Penitenciário. <b>Diário Oficial da União</b>, Brasília, DF, 11 set. 2003. Disponível
+                em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html" target="_blank"
+                    rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Constituição (1988). Constituição da República Federativa do Brasil de 1988. <b>Diário Oficial
+                    da
+                    União</b>, Brasília,
+                DF, 5 out. 1988. Disponível em:
+                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+                </a>
+                . Acesso em: 29 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. <b>VIII Conferência Nacional de Saúde</b>: relatório final. Brasília, 1986.
+                Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/8_conferencia_nacional_saude_relatorio_final.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/8_conferencia_nacional_saude_relatorio_final.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                CASTRO, V. D.; SÁNCHEZ, A.; LAROUZÉ, B. Para uma abordagem comunitária da saúde penitenciária.
+                <b>Cadernos
+                    Saúde Coletiva</b>,
+                v. 22, n. 2, p. 111-112, 2014. Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/cadsc/a/N3pzNmNb3xMb6T7QFKR4cDN/?lang=pt#"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/cadsc/a/N3pzNmNb3xMb6T7QFKR4cDN/?lang=pt#
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                CONSELHO NACIONAL DE JUSTIÇA. <b>Letalidade prisional</b>: uma questão de justiça e de saúde pública.
+                Brasília,
+                2023. (Justiça
+                Pesquisa, 5). Disponível em:
+                <a class="underline link"
+                    href="https://bibliotecadigital.cnj.jus.br/bitstream/123456789/637/1/sumario_executivo_letalidade_prisional_12_05_23_v2.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bibliotecadigital.cnj.jus.br/bitstream/123456789/637/1/sumario_executivo_letalidade_prisional_12_05_23_v2.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                CONSELHO NACIONAL DE JUSTIÇA. <b>Os Conselhos da Comunidade no Brasil</b>. Brasília, 2021. (Série
+                Fazendo
+                Justiça. Coleção
+                Política Prisional). Disponível em:
+                <a class="underline link"
+                    href="https://www.cnj.jus.br/wp-content/uploads/2022/03/relatorio-conselhos-comunidade.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.cnj.jus.br/wp-content/uploads/2022/03/relatorio-conselhos-comunidade.pdf
+                </a>
+                . Acesso em: 3 jul. 2025.
+            </p>
+            <p>
+                ELY, K. Z. et al. A Educação Permanente em Saúde e os atores do sistema prisional no cenário pandêmico.
+                <b>Trabalho,
+                    Educação e Saúde</b>, v. 21, e01224207, 2023. Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                FERREIRA, M. C.; PASCHOAL, T. As principais fontes de mal-estar no trabalho no Depen/MJSP. <b>Revista
+                    Brasileira de
+                    Execução Penal</b>, v. 4, n. 1, p. 151-162, 2023. Disponível em:
+                <a class="underline link" href="https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/661"
+                    target="_blank" rel="noopener noreferrer">
+                    https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/661
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                LEAVELL, H.; CLARK, E. G. <b>Medicina preventiva</b>. São Paulo: McGrawHill do Brasil, 1976.
+            </p>
+            <p>
+                LIU, Y. E. et al. All-cause and cause-specific mortality during and following incarceration in Brazil: A
+                retrospective
+                cohort study. <b>PLoS Medicine</b>, v. 18, n. 9, e1003789, 2021. Disponível em:
+                <a class="underline link"
+                    href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789"
+                    target="_blank" rel="noopener noreferrer">
+                    https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                MATO GROSSO DO SUL. <b>Projeto “Agentes Promotores de Saúde no Sistema Penitenciário”</b>. Cuiabá:
+                Centro de
+                Ressocialização de
+                Cuiabá - CRC, 2014. Disponível em:
+                <a class="underline link"
+                    href="https://www.sesp.mt.gov.br/documents/4713378/11999663/Projeto+Promotores+de+Sa%C3%BAde+CRC.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.sesp.mt.gov.br/documents/4713378/11999663/Projeto+Promotores+de+Sa%C3%BAde+CRC.pdf
+                </a>
+                . Acesso em: 29 ago. 2025.
+            </p>
+            <p>
+                PADILHA, W. S. <b>Entre grades e cuidados</b>: os agentes promotores de saúde no sistema prisional e o
+                desafio
+                da Covid-19.
+                2023. Tese (Doutorado em Saúde Pública) - Escola Nacional de Saúde Pública Sergio Arouca, Fundação
+                Oswaldo Cruz, Rio de
+                Janeiro, 2023. Disponível em:
+                <a class="underline link" href="https://www.arca.fiocruz.br/handle/icict/61800" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.arca.fiocruz.br/handle/icict/61800
+                </a>
+                . Acesso em: 28 jul. 2024.
+            </p>
+            <p>
+                PASCHOAL, T.; FERREIRA, M. C. As principais fontes de bem-estar no trabalho do Depen/MJSP. <b>Revista
+                    Brasileira de
+                    Execução Penal</b>, v. 4, n. 1, p. 141-149, 2023. Disponível em:
+                <a class="underline link" href="https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/659"
+                    target="_blank" rel="noopener noreferrer">
+                    https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/659
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                POSSUELO, L. G. et al. (org.). <b>Tuberculose e hepatite C no sistema prisional</b>: contribuições e
+                orientações à sociedade
+                civil. (Quebrando Barreiras). Santa Cruz do Sul: Ed. do Autor, 2024. Disponível em:
+                <a class="underline link" href="http://repositorio.unisc.br:8080/jspui/handle/11624/3773"
+                    target="_blank" rel="noopener noreferrer">
+                    http://repositorio.unisc.br:8080/jspui/handle/11624/3773
+                </a>
+                . Acesso em: 28 jul. 2024.
+            </p>
+            <p>
+                SCLIAR, M. História do conceito de saúde. <b>Physis Revista de Saúde Coletiva</b>, v. 17, n. 1, p.
+                29-41, 2007.
+                Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/physis/a/WNtwLvWQRFbscbzCywV9wGq/"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/physis/a/WNtwLvWQRFbscbzCywV9wGq/
+                </a>
+                . Acesso em: 28 jul. 2024.
+            </p>
+            <p>
+                VERDI, M.; MATIAS, M. C. S.; GARCIA JÚNIOR, C. A. S. <b>Atenção à saúde das pessoas privadas de
+                    liberdade</b>.
+                Acolhimento e
+                Humanização nas Práticas de Gestão e Atenção à Saúde de Pessoas Privadas de Liberdade. Florianópolis,
+                2014. Disponível
+                em:
+                <a class="underline link"
+                    href="https://ares.unasus.gov.br/acervo/html/ARES/7430/1/Acolhimento%20e%20Humanizacao%20nas%20Praticas%20de%20Gestao%20e%20Atencao%20a%20Saude%20de%20Pessoas%20Privadas%20de%20Liberdade.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://ares.unasus.gov.br/acervo/html/ARES/7430/1/Acolhimento%20e%20Humanizacao%20nas%20Praticas%20de%20Gestao%20e%20Atencao%20a%20Saude%20de%20Pessoas%20Privadas%20de%20Liberdade.pdf
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+            <p>
+                ZORZETTO, R. Prisões brasileiras aumentam risco de adoecer e de morrer por causas violentas. <b>Pesquisa
+                    Fapesp</b>, 5 ago.
+                2024. Disponível em:
+                <a class="underline link"
+                    href="https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/"
+                    target="_blank" rel="noopener noreferrer">
+                    https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/
+                </a>
+                . Acesso em: 28 jul. 2025.
+            </p>
+        </div>
+
+        <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold">
+                Minicurrículo do Autor
+            </h1>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/"
+                        alt="Milena Mantelli Dall' Soto" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Milena Mantelli Dall' Soto</small>
+                        <hr />
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Milena Mantelli Dall' Soto (<a class="link" href="http://lattes.cnpq.br/1096438834177966"
+                            target="_blank" rel="noopener noreferrer">http://lattes.cnpq.br/1096438834177966</a>).
+                        Biomédica, especialista em
+                        Saúde Coletiva, atuou na Saúde Prisional da Secretaria Estadual de Saúde do Rio Grande do Sul
+                        enquanto residente, atua
+                        como pesquisadora extensionista na Universidade de Santa Cruz do Sul (UNISC) em projetos de
+                        educação em saúde e
+                        desenvolvimento de novas tecnologias para o sistema prisional e compõe o Núcleo de Pesquisa e
+                        Extensão com Foco no
+                        Sistema Prisional (NUPESISP).
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
+                    <p>
+                        Thales Ávila Pedroso (<a class="link" href="http://lattes.cnpq.br/3770093516575134"
+                            target="_blank" rel="noopener noreferrer">http://lattes.cnpq.br/3770093516575134</a>).
+                        Fisioterapeuta, especialista em
+                        Gestão em Saúde, mestrando em Saúde Coletiva, atuou na Secretaria Estadual de Saúde do Estado do
+                        Rio Grande do Sul
+                        (SES/RS) como chefe de seção de qualificação na Política Estadual de Promoção de Equidade em
+                        Saúde. Participou da
+                        construção da Nota Técnica e da Cartilha sobre o Pré-Natal, Parto e Puerpério para Mulheres
+                        Privadas de Liberdade e
+                        Parceiros, produzidas pela SES/RS.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 order-1 md:order-2">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/thales.jpg"
+                        alt="Thales Ávila Pedroso" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Thales Ávila Pedroso</small>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/lia.jpg"
+                        alt="Lia Gonçalves Possuelo" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Lia Gonçalves Possuelo</small>
+                        <hr />
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Lia Gonçalves Possuelo (<a class="link" href="http://lattes.cnpq.br/9903194013924888"
+                            target="_blank" rel="noopener noreferrer">http://lattes.cnpq.br/9903194013924888</a>).
+                        Bióloga, doutora em Ciências
+                        Biológicas, atua como professora titular e docente do corpo permanente do Programa de
+                        Pós-Graduação em Promoção da Saúde
+                        na Universidade de Santa Cruz do Sul (UNISC); coordenadora do Núcleo de Pesquisa e Extensão com
+                        Foco no Sistema
+                        Prisional (NUPESISP) e da área de Tuberculose no Sistema Prisional da Rede Brasileira de
+                        Pesquisa em Tuberculose
+                        (REDE-TB); é membro do Comitê Estadual de Enfrentamento da Tuberculose/RS (CEETB/RS), do Comitê
+                        Técnico de
+                        Assessoramento da FAPERGS (2025-2027), do Conselho da Comunidade de Santa Cruz do Sul e do
+                        Conselho Municipal de Saúde
+                        de Santa Cruz do Sul.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
+        <div class="max-w-[1000px] mx-auto px-5">
+            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
+                    alt="Logo" />
+            </a>
+            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
+                disseminação e a utilização desta obra, em parte ou em sua
+                totalidade, nos Termos de uso do ARES. Deve ser citada a
+                fonte e é vedada sua utilização comercial. © 2025.
+                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
+                Sul.
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/tippy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+        personalizado.init();
+        document.addEventListener("click", function (e) {
+            const overlay = e.target.closest(".modal-overlay");
+
+            if (!overlay) return;
+
+            const content = overlay.querySelector(".modal-content");
+
+            if (!content.contains(e.target)) {
+                estrutura.closeModal(overlay.id)
+            }
+        });
+    </script>
+</body>
+
+</html>
