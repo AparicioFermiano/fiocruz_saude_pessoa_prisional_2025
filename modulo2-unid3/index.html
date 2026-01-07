@@ -84,12 +84,10 @@
         </div>
     </div>
 
-    <div id="modalFicha" class="modal-overlay hidden">
+    <div id="modalCreditos" class="modal-overlay hidden">
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">
-                    Ficha técnica
-                </h2>
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
             </div>
             <div class="modal-body md flex flex-col gap-5">
                 <div>
@@ -150,21 +148,6 @@
                     </p>
                     <span>Lilian Silva Gonçalves - Coordenadora</span>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="modalCreditos" class="modal-overlay hidden">
-        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
-            <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-            </div>
-            <div class="modal-body md flex flex-col gap-5">
                 <div>
                     <p>
                         <b>COORDENAÇÃO GERAL</b>
@@ -333,10 +316,6 @@
                             class="px-4 py-2 btn border-2 border-black text-black">
                             INSTRUÇÕES
                         </button>
-                        <button onclick="estrutura.openModal('modalFicha')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            FICHA TÉCNICA
-                        </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
                             class="px-4 py-2 btn border-2 border-black text-white bg-black">
                             CRÉDITOS
@@ -500,7 +479,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -521,7 +500,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-P-ebook.pdf"
                                 target="_blank">Clique
                                 aqui</a>
@@ -541,14 +520,15 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
                                 target="_blank">Clique
                                 aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -959,7 +939,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -989,13 +969,14 @@
                         </p>
                         <p>
                             <b>Veja:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf"
                                 target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais2')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais2')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -1125,7 +1106,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1146,7 +1127,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-P-ebook.pdf"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1168,14 +1149,15 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2019/setembro/CARTILHAREGISTROCIVIL_2019_Pop_Privao_de_Liberdade.pdf"
                                 target="_blank">Clique
                                 aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais3')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais3')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -1322,7 +1304,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais4" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1346,7 +1328,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://portal.fiocruz.br/video/violencia-e-desigualdade-racial-sala-de-convidados"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1366,14 +1348,15 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
                                 target="_blank">Clique
                                 aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais4')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais4')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -1443,7 +1426,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais5" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1467,7 +1450,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://portal.fiocruz.br/video/violencia-e-desigualdade-racial-sala-de-convidados"
                                 target="_blank">Clique
                                 aqui</a>
@@ -1487,14 +1470,15 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://www.cnj.jus.br/wp-content/uploads/2016/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
                                 target="_blank">Clique
                                 aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais5')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais5')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>

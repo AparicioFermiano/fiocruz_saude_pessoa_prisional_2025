@@ -84,12 +84,10 @@
         </div>
     </div>
 
-    <div id="modalFicha" class="modal-overlay hidden">
+    <div id="modalCreditos" class="modal-overlay hidden">
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">
-                    Ficha técnica
-                </h2>
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
             </div>
             <div class="modal-body md flex flex-col gap-5">
                 <div>
@@ -150,69 +148,47 @@
                     </p>
                     <span>Lilian Silva Gonçalves - Coordenadora</span>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="modalCreditos" class="modal-overlay hidden">
-        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
-            <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-            </div>
-            <div class="modal-body md flex flex-col gap-5">
                 <div>
                     <p>
                         <b>COORDENAÇÃO GERAL</b>
                     </p>
-                    <span>Sandra Maria do Valle Leone de Oliveira (FIOCRUZ
-                        MS)
-                    </span>
+                    <span>Sandra Maria do Valle Leone de Oliveira (FIOCRUZ MS)</span>
                 </div>
                 <div>
                     <p>
-                        <b>VALIDAÇÃO DO PROTOCOLO DE PESQUISA COM AS
-                            PARTES INTERESSADAS (CONDUÇÃO DO DIÁLOGO DE
-                            POLITICAS)
-                        </b>
+                        <b>COORDENADOR TÉCNICO</b>
                     </p>
-                    <span>Aurelina Aguiar de Lima <br />
-                        Liara Ferreira dos Santos</span>
+                    <span>Everton Ferreira Lemos</span>
                 </div>
                 <div>
                     <p>
-                        <b>REVISÃO TÉCNICO-CIENTÍFICA </b>
+                        <b>COORDENADORA PEDAGÓGICA</b>
                     </p>
-                    <span>Rebeca de Lima Pompilio <br />
-                        Everton Ferreira Lemos</span>
+                    <span>Ewângela Aparecida Pereira</span>
                 </div>
                 <div>
                     <p>
-                        <b>REVISÃO E NORMATIZAÇÃO </b>
+                        <b>COORDENADORA TEMÁTICA</b>
+                    </p>
+                    <span>Caroline Busatto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>APOIO DA COORDENAÇÃO</b>
+                    </p>
+                    <span>Antonio Luiz Dal Bello Gasparoto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO E NORMATIZAÇÃO</b>
                     </p>
                     <span>Davi Bagnatori Tavares</span>
                 </div>
                 <div>
                     <p>
-                        <b>AVALIAÇÃO EXTERNA </b>
+                        <b>AVALIAÇÃO EXTERNA</b>
                     </p>
-                    <span>Águida Luana Veriato Schultz - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS) <br />
-                        Anna Karolline dos Anjos de Morais - Assessoria
-                        Técnica - Saúde Prisional
-                        (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
-                        Dieni Oliveira Rodrigues - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
-                        Evellyn Waleska Silva dos Santos - Assessoria
-                        Técnica - Saúde Prisional
-                        (CAEQ/CGESCO/DESCO/SAPS/MS)<br />
-                        Marianna do Prado Sampaio - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)
-                    </span>
+                    <span>Jorge Esteves</span>
                 </div>
                 <div>
                     <p>
@@ -223,28 +199,21 @@
                 </div>
                 <div>
                     <p>
-                        <b>WEBDESIGNER E DESENVOLVEDOR </b>
+                        <b>WEBDESIGNER E DESENVOLVEDOR</b>
                     </p>
                     <span>Aparício Fermiano</span>
                 </div>
                 <div>
                     <p>
-                        <b>DESENVOLVEDOR AVA-MOODLE </b>
+                        <b>DESENVOLVEDOR AVA-MOODLE</b>
                     </p>
                     <span>Vinícius Vicente Soares</span>
                 </div>
                 <div>
                     <p>
-                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO </b>
+                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO</b>
                     </p>
                     <span>André Julien de Sousa Morato</span>
-                </div>
-                <div>
-                    <p>
-                        <b>PRODUÇÃO DO MAPA DE EVIDÊNCIA </b>
-                    </p>
-                    <span>Víctor Leone de Oliveira <br />Ana Cristina Atz dos
-                        Santos</span>
                 </div>
                 <div class="text-center">
                     <small>Esse produto faz parte das atividades do Núcleo de
@@ -346,10 +315,6 @@
                         <button onclick="estrutura.openModal('modalInstrucao')"
                             class="px-4 py-2 btn border-2 border-black text-black">
                             INSTRUÇÕES
-                        </button>
-                        <button onclick="estrutura.openModal('modalFicha')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            FICHA TÉCNICA
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
                             class="px-4 py-2 btn border-2 border-black text-white bg-black">
@@ -822,10 +787,12 @@
                 </h2>
                 <small>Clique nas setas para interagir</small>
                 <div class="carousel-container relative w-full" data-carousel-id="1">
-                    <div class="overflow-hidden rounded-2xl">
+                    <div class="overflow-hidden rounded-2xl shadow-xl">
                         <div class="carousel-track flex transition-transform duration-500 ease-out">
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
-                                <h2 class="text-2xl font-bold mb-4 text-center">Equipe de Atenção Primária Prisional com
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-white overflow-y-auto">
+                                <h2 class="text-2xl font-bold text-center p-5 bg-[var(--primary)] rounded-2xl mb-3">
+                                    Equipe de
+                                    Atenção Primária Prisional com
                                     carga horária de 6 horas semanais:</h2>
                                 <div class="px-7">
                                     <p>
@@ -857,8 +824,9 @@
                                 </div>
 
                             </div>
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
-                                <h2 class="text-2xl font-bold mb-4 text-center">Equipe de Atenção Primária Prisional
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-white overflow-y-auto">
+                                <h2 class="text-2xl font-bold text-center p-5 bg-[var(--primary)] rounded-2xl mb-3">
+                                    Equipe de Atenção Primária Prisional
                                     Essencial com carga horária de 20 ou 30 horas semanais:</h2>
                                 <div class="px-7">
                                     <p>
@@ -880,8 +848,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
-                                <h2 class="text-2xl font-bold mb-4 text-center">Equipe de Atenção Primária Prisional
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-white overflow-y-auto">
+                                <h2 class="text-2xl font-bold text-center p-5 bg-[var(--primary)] rounded-2xl mb-3">
+                                    Equipe de Atenção Primária Prisional
                                     Ampliada com carga horária de 20 ou 30 horas semanais:</h2>
                                 <div class="px-7">
                                     <p>
@@ -908,8 +877,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
-                                <h2 class="text-2xl font-bold mb-4 text-center">Equipe Complementar Psicossocial de
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-white overflow-y-auto">
+                                <h2 class="text-2xl font-bold text-center p-5 bg-[var(--primary)] rounded-2xl mb-3">
+                                    Equipe Complementar Psicossocial de
                                     Atenção Primária Prisional (20 ou 30 horas semanais):</h2>
                                 <div class="px-7">
                                     <p>
@@ -931,8 +901,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="min-w-full h-120 md:h-96 p-8 bg-[var(--primary)] overflow-y-auto">
-                                <h2 class="text-2xl font-bold mb-4 text-center">Profissional complementar de saúde
+                            <div class="min-w-full h-120 md:h-96 p-8 bg-white overflow-y-auto">
+                                <h2 class="text-2xl font-bold text-center p-5 bg-[var(--primary)] rounded-2xl mb-3">
+                                    Profissional complementar de saúde
                                     bucal:</h2>
                                 <div class="px-7">
                                     <p>
@@ -993,8 +964,7 @@
                 </div>
 
                 <div id="modalSaibaMais1" class="modal-overlay hidden">
-                    <div
-                        class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-content bg-white shadow-2xl md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                         <div class="modal-header">
                             <h2 class="font-bold text-3xl text-center">
                                 Saiba mais
@@ -1020,13 +990,14 @@
                             </p>
                             <p>
                                 <b>Acesse:</b>
-                                <a class="link"
+                                <a class="link undeline"
                                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt4876_19_07_2024.html"
                                     target="_blank">Clique aqui</a>
                             </p>
                         </div>
                         <div class="modal-footer">
-                            <button onclick="estrutura.closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                            <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                                class="btn bg-[var(--primary)] text-black">
                                 Fechar
                             </button>
                         </div>
@@ -1317,7 +1288,7 @@
             </div>
 
             <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1328,7 +1299,7 @@
                         <p>
                             O passo a passo para registrar corretamente as eAPP no SCNES pode ser consultado no
                             endereço:
-                            <a class="link"
+                            <a class="link undeline"
                                 href="https://wiki.saude.gov.br/cnes/index.php/Cadastro_de_Equipes#:~:text=explicado%20mais%20adiante.-,Cadastro%20de%20Equipe,ser%20realizado%20na%20aba%20Caracteriza%C3%A7%C3%A3o">Clique
                                 aqui</a>
                         </p>
@@ -1339,11 +1310,13 @@
                         </p>
                         <p>
                             Acesse:
-                            <a class="link" href="./media/nota-tecnica-no-282-2023.pdf" target="_blank">Clique aqui</a>
+                            <a class="link undeline" href="./media/nota-tecnica-no-282-2023.pdf" target="_blank">Clique
+                                aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais2')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais2')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -1796,7 +1769,7 @@
             </div>
 
             <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1824,7 +1797,8 @@
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais3')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais3')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -2225,7 +2199,7 @@
         <div id="autor" class="w-full bg-gray-100">
             <div class="flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
                 <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo do Autor
+                    Minicurrículo da Autora
                 </h1>
                 <div class="flex flex-wrap mt-5">
                     <div class="w-full md:w-1/3">

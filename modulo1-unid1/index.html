@@ -84,12 +84,10 @@
         </div>
     </div>
 
-    <div id="modalFicha" class="modal-overlay hidden">
+    <div id="modalCreditos" class="modal-overlay hidden">
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">
-                    Ficha técnica
-                </h2>
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
             </div>
             <div class="modal-body md flex flex-col gap-5">
                 <div>
@@ -150,73 +148,47 @@
                     </p>
                     <span>Lilian Silva Gonçalves - Coordenadora</span>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="modalCreditos" class="modal-overlay hidden">
-        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
-            <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-            </div>
-            <div class="modal-body md flex flex-col gap-5">
                 <div>
                     <p>
                         <b>COORDENAÇÃO GERAL</b>
                     </p>
-                    <span>Sandra Maria do Valle Leone de Oliveira (FIOCRUZ
-                        MS)
-                    </span>
+                    <span>Sandra Maria do Valle Leone de Oliveira (FIOCRUZ MS)</span>
                 </div>
                 <div>
                     <p>
-                        <b>VALIDAÇÃO DO PROTOCOLO DE PESQUISA COM AS
-                            PARTES INTERESSADAS (CONDUÇÃO DO DIÁLOGO DE
-                            POLITICAS)
-                        </b>
+                        <b>COORDENADOR TÉCNICO</b>
                     </p>
-                    <span>Aurelina Aguiar de Lima <br />
-                        Liara Ferreira dos Santos</span>
+                    <span>Everton Ferreira Lemos</span>
                 </div>
                 <div>
                     <p>
-                        <b>REVISÃO TÉCNICO-CIENTÍFICA </b>
+                        <b>COORDENADORA PEDAGÓGICA</b>
                     </p>
-                    <span>Rebeca de Lima Pompilio <br />
-                        Everton Ferreira Lemos</span>
+                    <span>Ewângela Aparecida Pereira</span>
                 </div>
                 <div>
                     <p>
-                        <b>REVISÃO E NORMATIZAÇÃO </b>
+                        <b>COORDENADORA TEMÁTICA</b>
+                    </p>
+                    <span>Caroline Busatto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>APOIO DA COORDENAÇÃO</b>
+                    </p>
+                    <span>Antonio Luiz Dal Bello Gasparoto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO E NORMATIZAÇÃO</b>
                     </p>
                     <span>Davi Bagnatori Tavares</span>
                 </div>
                 <div>
                     <p>
-                        <b>AVALIAÇÃO EXTERNA </b>
+                        <b>AVALIAÇÃO EXTERNA</b>
                     </p>
-                    <span>Águida Luana Veriato Schultz - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)
-                        <br />
-                        Anna Karolline dos Anjos de Morais - Assessoria
-                        Técnica - Saúde Prisional
-                        (CAEQ/CGESCO/DESCO/SAPS/MS)
-                        <br />
-                        Dieni Oliveira Rodrigues - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)
-                        <br />
-                        Evellyn Waleska Silva dos Santos - Assessoria
-                        Técnica - Saúde Prisional
-                        (CAEQ/CGESCO/DESCO/SAPS/MS)
-                        <br />
-                        Marianna do Prado Sampaio - Assessoria Técnica -
-                        Saúde Prisional (CAEQ/CGESCO/DESCO/SAPS/MS)
-                    </span>
+                    <span>Jorge Esteves</span>
                 </div>
                 <div>
                     <p>
@@ -227,28 +199,21 @@
                 </div>
                 <div>
                     <p>
-                        <b>WEBDESIGNER E DESENVOLVEDOR </b>
+                        <b>WEBDESIGNER E DESENVOLVEDOR</b>
                     </p>
                     <span>Aparício Fermiano</span>
                 </div>
                 <div>
                     <p>
-                        <b>DESENVOLVEDOR AVA-MOODLE </b>
+                        <b>DESENVOLVEDOR AVA-MOODLE</b>
                     </p>
                     <span>Vinícius Vicente Soares</span>
                 </div>
                 <div>
                     <p>
-                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO </b>
+                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO</b>
                     </p>
                     <span>André Julien de Sousa Morato</span>
-                </div>
-                <div>
-                    <p>
-                        <b>PRODUÇÃO DO MAPA DE EVIDÊNCIA </b>
-                    </p>
-                    <span>Víctor Leone de Oliveira <br />Ana Cristina Atz dos
-                        Santos</span>
                 </div>
                 <div class="text-center">
                     <small>Esse produto faz parte das atividades do Núcleo de
@@ -350,10 +315,6 @@
                         <button onclick="estrutura.openModal('modalInstrucao')"
                             class="px-4 py-2 btn border-2 border-black text-black">
                             INSTRUÇÕES
-                        </button>
-                        <button onclick="estrutura.openModal('modalFicha')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            FICHA TÉCNICA
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
                             class="px-4 py-2 btn border-2 border-black text-white bg-black">
@@ -708,6 +669,7 @@
             </h3>
             <div>
                 <div id="mapa" class="relative">
+                    <small class="text-center">Clique para interagir</small>
                     <img class="w-full h-full rounded-xl" src="./images/mapa-mundi.jpg" loading="lazy"
                         alt="Mapa-múndi monocromático (branco/cinza) que mostra os continentes em alto-relevo com efeito de sombra"
                         title="Mapa-múndi monocromático (branco/cinza) que mostra os continentes em alto-relevo com efeito de sombra" />
@@ -1195,7 +1157,7 @@
                 Brasil, 2016/2-2024/2
             </h3>
             <div class="w-full flex flex-col gap-3">
-                <img class="zoomable rounded-xl shadow-md" src="./images/grafico-pag8-word.jpg" loading="lazy"
+                <img class="zoomable rounded-xl shadow-md" src="./images/grafico-pag8-word.png" loading="lazy"
                     title="População carcerária cresceu de 701.674 (2016/2) para 909.067 (2024/2), com alta após 2020. O aumento total é de cerca de 207 mil."
                     alt="População carcerária cresceu de 701.674 (2016/2) para 909.067 (2024/2), com alta após 2020. O aumento total é de cerca de 207 mil."
                     onclick="estrutura.openModal('modalFoto2')" />
@@ -1207,7 +1169,7 @@
                 <div class="modal-content">
                     <div class="modal-body w-full">
                         <img class="w-full h-full object-contain rounded-xl shadow-md"
-                            src="./images/grafico-pag8-word.jpg" loading="lazy" alt="Gráfico população" />
+                            src="./images/grafico-pag8-word.png" loading="lazy" alt="Gráfico população" />
                     </div>
 
                     <div class="modal-footer">
@@ -1274,7 +1236,7 @@
                 Brasil por grau de instrução, 2024/2
             </h3>
             <div class="w-full flex flex-col gap-3">
-                <img class="zoomable rounded-xl shadow-md" src="./images/grafico-pag9-word.jpg" loading="lazy"
+                <img class="zoomable rounded-xl shadow-md" src="./images/grafico-pag9-word.png" loading="lazy"
                     title="Gráfico de barras sobre escolaridade de presos. O maior grupo é Ensino Fundamental Incompleto (295.765). Superior Completo é de 5.887."
                     alt="Gráfico de barras sobre escolaridade de presos. O maior grupo é Ensino Fundamental Incompleto (295.765). Superior Completo é de 5.887."
                     onclick="estrutura.openModal('modalFoto3')" />
@@ -1286,7 +1248,7 @@
                 <div class="modal-content">
                     <div class="modal-body w-full">
                         <img class="w-full h-full object-contain rounded-xl shadow-md"
-                            src="./images/grafico-pag9-word.jpg" loading="lazy" alt="Gráfico população" />
+                            src="./images/grafico-pag9-word.png" loading="lazy" alt="Gráfico população" />
                     </div>
                     <div class="modal-footer">
                         <button onclick="estrutura.closeModal('modalFoto3')" class="btn bg-[var(--primary)] text-black">
@@ -1617,7 +1579,7 @@
         </div>
 
         <div id="modalSaibaMais1" class="modal-overlay hidden">
-            <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                 <div class="modal-header">
                     <h2 class="font-bold text-3xl text-center">
                         Saiba mais
@@ -1648,7 +1610,8 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button onclick="estrutura.closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                    <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                        class="btn bg-[var(--primary)] text-black">
                         Fechar
                     </button>
                 </div>
@@ -2057,12 +2020,20 @@
                     target="_blank">https://www.gov.br/depen/pt-br/servicos/sisdepen</a>. Acesso em: 6 abr. 2025.
             </p>
             <p>
-                BRASIL. Secretaria Nacional de Políticas Penais.
-                Penitenciárias Federais.
-                <a class="underline link" href="gov.br" target="_blank">gov.br</a>, 2 jun. 2025b. Disponível
-                em:
-                <a href="https://www.gov.br/senappen/pt-br/composicao/penitenciarias-federais" target="_blank"
-                    class="underline link">https://www.gov.br/senappen/pt-br/composicao/penitenciarias-federais</a>
+                BRASIL. Secretaria Nacional de Políticas Penais. SENAPPEN divulga nota técnica referente aos dados de
+                pessoas presas
+                LGBTI.
+                <a class="underline link" href="gov.br" target="_blank">gov.br</a>, 1 fev. 2023a. Disponível em:
+                <a href="https://www.gov.br/senappen/pt-br/assuntos/noticias/nota-tecnica-referente-a-politica-de-atencao-as-mulheres-e-aos-grupos-especificos-e-divulgada-pela-senappen"
+                    target="_blank"
+                    class="underline link">https://www.gov.br/senappen/pt-br/assuntos/noticias/nota-tecnica-referente-a-politica-de-atencao-as-mulheres-e-aos-grupos-especificos-e-divulgada-pela-senappen</a>
+                Acesso em: 4 set. 2025.
+            </p>
+            <p>
+                BRASIL. Secretaria Nacional de Políticas Penais. Secretaria Nacional de Políticas Penais.
+                <a class="underline link" href="gov.br" target="_blank">gov.br</a>, 2023b. Disponível em:
+                <a href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/institucional" target="_blank"
+                    class="underline link">https://www.gov.br/senappen/pt-br/acesso-a-informacao/institucional</a>
                 Acesso em: 4 set. 2025.
             </p>
             <p>
@@ -2078,6 +2049,14 @@
                 Acesso em: 27 ago. 2025.
             </p>
             <p>
+                BRASIL. Conselho Nacional de Política Criminal e Penitenciária. Resolução nº 9, de 18 de novembro de
+                2011. Institui as
+                Diretrizes Básicas para Arquitetura Penal. Diário Oficial da União, Brasília, DF, 21 nov. 2011.
+                Disponível em:
+                <a class="underline link" href="https://dspace.mj.gov.br/handle/1/371" target="_blank"></a>.
+                Acesso em: 27 ago. 2025.
+            </p>
+            <p>
                 BRASIL. Lei nº 11.343, de 23 de agosto de 2006. Institui o
                 Sistema Nacional de Políticas Públicas sobre Drogas -
                 Sisnad; prescreve medidas para prevenção do uso indevido,
@@ -2087,15 +2066,110 @@
                 dá outras providências. Diário Oficial da União, Brasília,
                 DF, 24 ago. 2006. Disponível em:
                 <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11343.htm"
-                    target="_blank"></a>
+                    target="_blank">https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11343.htm</a>
                 Acesso em: 17 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de Execução Penal. Diário Oficial da União, Brasília,
+                DF, 13 jul.
+                1984. Disponível em:
+                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
+                    target="_blank">http://www.planalto.gov.br/ccivil_03/leis/l7210.htm</a>
+                Acesso em: 15 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Decreto-Lei nº 2.848, de 7 de dezembro de 1940. Código Penal. Diário Oficial da União, Rio de
+                Janeiro, RJ, 31
+                dez. 1940. Disponível em:
+                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"
+                    target="_blank">https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm</a>
+                Acesso em: 15 jul. 2025.
+            </p>
+            <p>
+                CAMPOS, M. S. O novo nem sempre vem: Lei de Drogas e encarceramento no Brasil. Atlas da Violência, 18
+                dez. 2018.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.ipea.gov.br/atlasviolencia/artigo/134/o-novo-nem-sempre-vem-lei-de-drogas-e-encarceramento-no-brasil"
+                    target="_blank">https://www.ipea.gov.br/atlasviolencia/artigo/134/o-novo-nem-sempre-vem-lei-de-drogas-e-encarceramento-no-brasil</a>
+                Acesso em: 15 jul. 2025.
+            </p>
+            <p>
+                CONSELHO NACIONAL DE JUSTIÇA. Resolução nº 487, de 15 de fevereiro de 2023. Institui a Política
+                Antimanicomial do Poder
+                Judiciário e estabelece procedimentos e diretrizes para implementar a Convenção Internacional dos
+                Direitos das Pessoas
+                com Deficiência e a Lei n. 10.216/2001, no âmbito do processo penal e da execução das medidas de
+                segurança. DJe/CNJ,
+                Brasília, DF, 27 fev. 2023. Disponível em:
+                <a class="underline link" href="https://atos.cnj.jus.br/files/original2015232023022863fe60db44835.pdf"
+                    target="_blank">https://atos.cnj.jus.br/files/original2015232023022863fe60db44835.pdf</a>
+                Acesso em: 27 ago. 2025.
+            </p>
+            <p>
+                DAVIS, A. Estarão as prisões obsoletas? Rio de Janeiro: Difel, 2018.
+            </p>
+            <p>
+                FAZEL, S.; BAILLARGEON, J. The health of prisoners. Lancet, v. 377, n. 9769, p. 956-965, 2011. DOI:
+                10.1016/S0140-6736(10)61053-7.
+            </p>
+            <p>
+                FERNANDES, D. F.; MATOS, L. V. Apesar da pena: execução penal e redução de danos. Panóptica, n. 31, p.
+                158-183, 2016.
+            </p>
+            <p>
+                MURARO, M. Sistema penitenciário e execução penal. Curitiba: InterSaberes, 2017.
+            </p>
+            <p>
+                NATIONAL RESEARCH COUNCIL. The Growth of Incarceration in the United States: Exploring Causes and
+                Consequences.
+                Washington, D.C.: The National Academies Press, 2014. Disponível em:
+                <a class="underline link" href="https://nap.nationalacademies.org/read/18613/chapter/6#119"
+                    target="_blank">https://nap.nationalacademies.org/read/18613/chapter/6#119</a>
+                Acesso em: 1 set. 2025.
+            </p>
+            <p>
+                ORGANIZAÇÃO MUNDIAL DA SAÚDE. Relatório sobre a situação da saúde prisional na Região Europeia da OMS.
+                Copenhague:
+                Escritório Regional da OMS para a Europa, 2019.
+            </p>
+            <p>
+                PENAL REFORM INTERNATIONAL. Global Prison Trends 2015. Londres: PRI, 2015. Disponível em:
+                <a class="underline link"
+                    href="https://cdn.penalreform.org/wp-content/uploads/2015/04/PRI-Prisons-global-trends-report-LR.pdf"
+                    target="_blank">https://cdn.penalreform.org/wp-content/uploads/2015/04/PRI-Prisons-global-trends-report-LR.pdf</a>
+                Acesso em: 27 ago. 2025.
+            </p>
+            <p>
+                SANTOS, M. et al. Manual de intervenções ambientais para o controle da tuberculose nas prisões. Rio de
+                Janeiro:
+                Departamento Penitenciário Nacional, 2012.
+            </p>
+            <p>
+                WORLD HEALTH ORGANIZATION; UNITED NATIONS OFFICE ON DRUGS AND CRIME. Good governance for prison health
+                in the 21st
+                century: a policy brief on the organization of prison health. Copenhagen: WHO Regional Office for
+                Europe, 2013.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.unodc.org/documents/hiv-aids/publications/Prisons_and_other_closed_settings/Good-governance-for-prison-health-in-the-21st-century.pdf"
+                    target="_blank">https://www.unodc.org/documents/hiv-aids/publications/Prisons_and_other_closed_settings/Good-governance-for-prison-health-in-the-21st-century.pdf</a>
+                Acesso em: 2 set. 2025.
+            </p>
+            <p>
+                WORLD PRISON BRIEF. Institute for Crime & Justice Policy Research. Highest to Lowest - Prison Population
+                Total. 2025.
+                Disponível em:
+                <a class="underline link" href="https://www.prisonstudies.org/highest-to-lowest/prison-population-total"
+                    target="_blank">https://www.prisonstudies.org/highest-to-lowest/prison-population-total</a>
+                Acesso em: 15 jul. 2025.
             </p>
         </div>
 
         <div id="autor" class="w-full bg-gray-100">
             <div class="flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
                 <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo do Autor
+                    Minicurrículo da Autora
                 </h1>
                 <div class="flex flex-wrap mt-5">
                     <div class="w-full md:w-1/3">

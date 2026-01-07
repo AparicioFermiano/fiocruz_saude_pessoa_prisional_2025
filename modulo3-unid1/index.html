@@ -84,12 +84,10 @@
         </div>
     </div>
 
-    <div id="modalFicha" class="modal-overlay hidden">
+    <div id="modalCreditos" class="modal-overlay hidden">
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">
-                    Ficha técnica
-                </h2>
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
             </div>
             <div class="modal-body md flex flex-col gap-5">
                 <div>
@@ -150,21 +148,6 @@
                     </p>
                     <span>Lilian Silva Gonçalves - Coordenadora</span>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="modalCreditos" class="modal-overlay hidden">
-        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
-            <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-            </div>
-            <div class="modal-body md flex flex-col gap-5">
                 <div>
                     <p>
                         <b>COORDENAÇÃO GERAL</b>
@@ -332,10 +315,6 @@
                         <button onclick="estrutura.openModal('modalInstrucao')"
                             class="px-4 py-2 btn border-2 border-black text-black">
                             INSTRUÇÕES
-                        </button>
-                        <button onclick="estrutura.openModal('modalFicha')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            FICHA TÉCNICA
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
                             class="px-4 py-2 btn border-2 border-black text-white bg-black">
@@ -592,7 +571,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -614,13 +593,14 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
                                 target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -833,7 +813,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -852,13 +832,14 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/prt4279_30_12_2010.html"
                                 target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais2')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais2')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -1064,16 +1045,16 @@
             <div id="mapa" class="relative">
                 <img class="w-full h-full rounded-xl" src="./images/carton-mulher-fumante.jpg" loading="lazy"
                     alt="Mulher fumante em carton" />
-                <button id="tooltip_1" class="botao-flutuante font-bold" style="top: 44%; right: 21%">
+                <button id="tooltip_1" class="botao-flutuante font-bold text-black!" style="top: 44%; right: 21%">
                     1
                 </button>
-                <button id="tooltip_2" class="botao-flutuante font-bold" style="bottom: 7%; left: 10%">
+                <button id="tooltip_2" class="botao-flutuante font-bold text-black!" style="bottom: 7%; left: 10%">
                     2
                 </button>
-                <button id="tooltip_3" class="botao-flutuante font-bold" style="bottom: 40%; left: 22%">
+                <button id="tooltip_3" class="botao-flutuante font-bold text-black!" style="bottom: 40%; left: 22%">
                     3
                 </button>
-                <button id="tooltip_4" class="botao-flutuante font-bold" style="bottom: 45%; left: 47%">
+                <button id="tooltip_4" class="botao-flutuante font-bold text-black!" style="bottom: 45%; left: 47%">
                     4
                 </button>
             </div>
@@ -1688,7 +1669,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -1715,13 +1696,13 @@
                         <p>
                             <b>Para mais informações sobre o programa e as enfermidades previstas para eliminação,
                                 acesse:</b>
-                            <a class="hover:underline text-black"
-                                href="https://www.gov.br/saude/pt-br/assuntos/brasil-saudavel"
+                            <a class="link" href="https://www.gov.br/saude/pt-br/assuntos/brasil-saudavel"
                                 target="_blank">https://www.gov.br/saude/pt-br/assuntos/brasil-saudavel</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais3')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais3')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -1772,13 +1753,13 @@
             <div id="mapa" class="relative">
                 <img class="w-full h-full rounded-xl" src="./images/guia-quadrinho.jpg" loading="lazy"
                     alt="Guia quadrinho">
-                <button id="quadrinho_1" class="botao-flutuante font-bold" style="bottom: 40%; left: 12%">
+                <button id="quadrinho_1" class="botao-flutuante font-bold text-black!" style="bottom: 40%; left: 12%">
                     1
                 </button>
-                <button id="quadrinho_2" class="botao-flutuante font-bold" style="bottom: 40%; left: 37%">
+                <button id="quadrinho_2" class="botao-flutuante font-bold text-black!" style="bottom: 40%; left: 37%">
                     2
                 </button>
-                <button id="quadrinho_3" class="botao-flutuante font-bold" style="bottom: 40%; right: 36%">
+                <button id="quadrinho_3" class="botao-flutuante font-bold text-black!" style="bottom: 40%; right: 36%">
                     3
                 </button>
                 <small>Fonte: elaboração dos autores (2025).</small>
@@ -2150,7 +2131,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais4" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -2169,13 +2150,14 @@
                         <p>
                             <b>Para mais informações sobre o programa e as enfermidades previstas para eliminação,
                                 acesse:</b>
-                            <a class="hover:underline text-black"
+                            <a class="link"
                                 href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/bases-de-dados/arquivos/formulario-sobre-informacoes-prisionais.pdf"
                                 target="_blank">https://www.gov.br/senappen/pt-br/servicos/sisdepen/bases-de-dados/arquivos/formulario-sobre-informacoes-prisionais.pdf</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais4')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais4')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -2603,7 +2585,7 @@
 
         <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
             <h1 class="text-3xl md:text-5xl font-bold">
-                Minicurrículo do Autor
+                Minicurrículo dos Autores
             </h1>
             <div class="flex flex-wrap my-5">
                 <div class="w-full md:w-1/3">

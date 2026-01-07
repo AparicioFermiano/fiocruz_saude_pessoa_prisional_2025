@@ -386,15 +386,19 @@ kbd {
 }
 
 .botao-flutuante {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: var(--primary);
-    color: black;
-    border: none;
-    font-size: 10px;
+    color: white;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    box-shadow:
+        0 0 0 0 rgba(59, 130, 246, 0.7),
+        0px 8px 25px rgba(0, 0, 0, 0.4);
     animation: pulso 2s infinite;
     transform-origin: center center;
     position: absolute;
@@ -404,19 +408,15 @@ kbd {
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.6);
 }
 
-.link {
-    color: #3b9aff;
-}
-
 @keyframes pulso {
     0% {
         transform: scale(1);
-        box-shadow: 0 0 0 0 var(--c);
+        box-shadow: 0 0 0 0 var(--primary);
     }
 
     50% {
         transform: scale(1.05);
-        box-shadow: 0 0 15px var(--primary);
+        box-shadow: 0px 8px 25px var(--primary);
     }
 
     100% {
@@ -425,14 +425,19 @@ kbd {
     }
 }
 
+.link {
+    color: #3b9aff;
+    text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
     }
 
-    .botao-flutuante {
-        width: 25px;
-        height: 25px;
-        font-size: 16px;
-    }
+        .botao-flutuante {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
 }

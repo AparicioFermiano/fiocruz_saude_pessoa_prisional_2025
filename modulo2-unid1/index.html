@@ -84,12 +84,10 @@
         </div>
     </div>
 
-    <div id="modalFicha" class="modal-overlay hidden">
+    <div id="modalCreditos" class="modal-overlay hidden">
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">
-                    Ficha técnica
-                </h2>
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
             </div>
             <div class="modal-body md flex flex-col gap-5">
                 <div>
@@ -150,21 +148,6 @@
                     </p>
                     <span>Lilian Silva Gonçalves - Coordenadora</span>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button onclick="estrutura.closeModal('modalFicha')" class="btn bg-[var(--primary)] text-black">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="modalCreditos" class="modal-overlay hidden">
-        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
-            <div class="modal-header">
-                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-            </div>
-            <div class="modal-body md flex flex-col gap-5">
                 <div>
                     <p>
                         <b>COORDENAÇÃO GERAL</b>
@@ -332,10 +315,6 @@
                         <button onclick="estrutura.openModal('modalInstrucao')"
                             class="px-4 py-2 btn border-2 border-black text-black">
                             INSTRUÇÕES
-                        </button>
-                        <button onclick="estrutura.openModal('modalFicha')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            FICHA TÉCNICA
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
                             class="px-4 py-2 btn border-2 border-black text-white bg-black">
@@ -635,7 +614,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -656,13 +635,13 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
-                                href="https://www.cnj.jus.br/wp-content/uploads/2024/04/resumo-adpf-7.pdf"
+                            <a class="link" href="https://www.cnj.jus.br/wp-content/uploads/2024/04/resumo-adpf-7.pdf"
                                 target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais1')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -734,7 +713,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -763,13 +742,13 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black" href="https://www.youtube.com/watch?v=MPKYGWtYrec"
-                                target="_blank">Clique
+                            <a class="link" href="https://www.youtube.com/watch?v=MPKYGWtYrec" target="_blank">Clique
                                 aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais2')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais2')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -862,7 +841,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -886,13 +865,13 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black" href="https://www.youtube.com/watch?v=bVmc-gngyVI"
-                                target="_blank">Clique
+                            <a class="link" href="https://www.youtube.com/watch?v=bVmc-gngyVI" target="_blank">Clique
                                 aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais3')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais3')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
@@ -938,7 +917,7 @@
                 </button>
             </div>
             <div id="modalSaibaMais4" class="modal-overlay hidden">
-                <div class="modal-content bg-[var(--primary)]! md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
                             Saiba mais
@@ -960,13 +939,14 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="hover:underline text-black"
-                                href="https://periodicorease.pro.br/rease/article/view/18814" target="_blank">Clique
+                            <a class="link" href="https://periodicorease.pro.br/rease/article/view/18814"
+                                target="_blank">Clique
                                 aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais4')" class="btn bg-white text-black">
+                        <button onclick="estrutura.closeModal('modalSaibaMais4')"
+                            class="btn bg-[var(--primary)] text-black">
                             Fechar
                         </button>
                     </div>
