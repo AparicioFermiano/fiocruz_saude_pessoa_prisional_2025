@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-    --primary: #b7e7f3;
+    --primary: #FFF699;
     --white: #fff;
     --black: #000;
     --font-family-body: Merriweather;
@@ -342,15 +342,15 @@ kbd {
     height: 100%;
 }
 
-.modal-body.md {
+.modal-content.md {
     max-width: 700px;
 }
 
-.modal-body.sm {
+.modal-content.sm {
     max-width: 500px;
 }
 
-.modal-body.lg {
+.modal-content.lg {
     max-width: 900px;
 }
 

@@ -347,15 +347,15 @@ kbd {
     height: 100%;
 }
 
-.modal-body.md {
+.modal-content.md {
     max-width: 700px;
 }
 
-.modal-body.sm {
+.modal-content.sm {
     max-width: 500px;
 }
 
-.modal-body.lg {
+.modal-content.lg {
     max-width: 900px;
 }
 
