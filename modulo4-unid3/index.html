@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Curso sobre SUS e Participação Social" name="keywords" />
+    <meta content="Aprenda sobre o Sistema Único de Saúde e Participação Social" name="description" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/tippy.min.css" />
+
+    <title>
+        Política Nacional de Atenção Integral à Saúde das Pessoas Privadas
+        de Liberdade no Sistema Prisional (PNAISP)
+    </title>
+</head>
+
+<body>
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="max-w-[1000px] mx-auto px-2 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-gray-800 max-w-[150px] overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full p-4 object-contain" alt="Logo" />
+            </a>
+
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5" onclick="estrutura.toggleSidebar()">
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+            </button>
+
+            <nav id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#3.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 03</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
+                        Referências
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu"
+                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
+                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências
+                            Importantes</a>
+                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências</a>
+                    </div>
+                </div>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modalInstrucao" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] md:max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Instruções para navegação
+                </h2>
+            </div>
+
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    Você pode ajustar a visualização do material de acordo
+                    com o nível de zoom do seu navegador, pressione:
+                </p>
+                <div class="text-center">
+                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCreditos" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
+                <img src="./images/regua-logos-prisional-800px.png"
+                    alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
+            </div>
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                    SAÚDE DAS PESSOAS
+                    PRIVADAS DE LIBERDADE NO SISTEMA PRISIONAL (QUALISaP-PNAISP)
+                </p>
+                <p>
+                    <b>MÓDULO 4:</b> Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                </p>
+                <div>
+                    <p>
+                        <b>UNIDADE 1:</b> Promoção da Saúde
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Milena Mantelli Dall’ Soto
+                        </li>
+                        <li>
+                            Thales Ávila Pedroso
+                        </li>
+                        <li>
+                            Lia Gonçalves Possuelo
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>UNIDADE 2:</b> Agravos e Doenças Transmissíveis e Não Transmissíveis
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Eduarda Gassen Boeira
+                        </li>
+                        <li>
+                            Lia Possuelo
+                        </li>
+                        <li>
+                            Karine Zenatti Ely
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>UNIDADE 3:</b> Saúde da Mulher
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Karine Zenatti Ely
+                        </li>
+                        <li>
+                            Lia Gonçalves Possuelo
+                        </li>
+                        <li>
+                            Samantha Lopes de Moraes Longo
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>UNIDADE 4:</b> Saúde Mental
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Daiane Raquel Kist
+                        </li>
+                        <li>
+                            Milena Mantelli Dall’ Soto
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>UNIDADE 5:</b> Saúde Bucal
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Lucas Moura de Oliveira
+                        </li>
+                        <li>
+                            Giovana Soares Buzinaro
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>MINISTÉRIO DA SAÚDE</b>
+                    </p>
+                    <span>Alexandre Rocha Santos Padilha - Ministro da
+                        Saúde</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ - FIOCRUZ </b>
+                    </p>
+                    <span>Mário Santos Moreira - Presidente</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL -
+                            FIOCRUZ MS
+                        </b>
+                    </p>
+                    <span>Jislaine de Fátima Guilhermino - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DE EDUCAÇÃO DA FIOCRUZ MS </b>
+                    </p>
+                    <span>Débora Dupas Gonçalves do Nascimento - Vice
+                        Coordenadora de Educação</span>
+                </div>
+                <div>
+                    <p>
+                        <b>SECRETARIA DE ATENÇÃO PRIMÁRIA À SAÚDE (SAPS)
+                        </b>
+                    </p>
+                    <span>Ana Luiza Ferreira Rodrigues Caldas -
+                        Secretária</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DEPARTAMENTO DE ESTRATÉGIAS E POLÍTICAS DE
+                            SAÚDE COMUNITÁRIA
+                        </b>
+                    </p>
+                    <span>José Eudes Barroso Vieira - Diretor</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO-GERAL DE SAÚDE DA FAMÍLIA E
+                            COMUNIDADE (CGESCO)
+                        </b>
+                    </p>
+                    <span>Ana Cláudia Cardozo Chaves - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DO ACESSO E EQUIDADE (CAEQ) </b>
+                    </p>
+                    <span>Lilian Silva Gonçalves - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADOR TÉCNICO</b>
+                    </p>
+                    <span>Everton Ferreira Lemos</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADORA PEDAGÓGICA</b>
+                    </p>
+                    <span>Ewângela Aparecida Pereira</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADORA TEMÁTICA</b>
+                    </p>
+                    <span>Caroline Busatto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>APOIO DA COORDENAÇÃO</b>
+                    </p>
+                    <span>Antonio Luiz Dal Bello Gasparoto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO E NORMATIZAÇÃO </b>
+                    </p>
+                    <span>Davi Bagnatori Tavares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>AVALIAÇÃO EXTERNA </b>
+                    </p>
+                    <span>Jorge Esteves</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADOR DE PRODUÇÃO E DESIGNER INSTRUCIONAL
+                        </b>
+                    </p>
+                    <span>Marcos Paulo dos Santos de Souza</span>
+                </div>
+                <div>
+                    <p>
+                        <b>WEBDESIGNER E DESENVOLVEDOR </b>
+                    </p>
+                    <span>Aparício Fermiano</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DESENVOLVEDOR AVA-MOODLE </b>
+                    </p>
+                    <span>Vinícius Vicente Soares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO</b>
+                    </p>
+                    <span>André Julien de Sousa Morato</span>
+                </div>
+                <div class="text-center">
+                    <small>Esse produto faz parte das atividades do Núcleo de
+                        Evidências de Mato Grosso do Sul (NEVMS), com nome
+                        de NEV Pantanal e o as ações do Programa de
+                        Avaliação e Qualificação da Política Nacional de
+                        Atenção Integral à Saúde das Pessoas Privadas de
+                        Liberdade no Sistema Prisional (QUALI-SaP-PNAISP).
+                        TED 81/2023.</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContatar" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Informações de contato
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-2">
+                <h3 class="font-bold">
+                    FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                </h3>
+                <p>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo
+                    Grande-MS - CEP 79081-746
+                </p>
+                <p>
+                    <b>Telefone:</b>
+                    (67) 3346-7220
+                </p>
+                <p>
+                    <b>E-mail:</b>
+                    <a href="mail:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a>
+                </p>
+                <p>
+                    <b>Site:</b>
+                    <a href="www.matogrossodosul.fiocruz.br">www.matogrossodosul.fiocruz.br</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex flex-col justify-between">
+        <div id="scrollTopBtn" class="hidden fixed bottom-10 right-10 z-99">
+            <div class="flex flex-col gap-3">
+                <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-address-book"></i>
+                </button>
+
+                <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-exclamation"></i>
+                </button>
+
+                <a href="#" id="btnTopo"
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div class="w-full bg-[var(--primary)] py-5">
+                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 block mt-3">
+                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
+                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
+                        PRISIONAL
+                    </span>
+                    <h1 class="text-xl md:text-2xl font-black mt-3">
+                        Módulo IV - Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                    </h1>
+                    <p class="px-3 py-2 block">
+                        Unidade 3 - Saúde da Mulher
+                    </p>
+                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+                        <button onclick="estrutura.openModal('modalInstrucao')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            INSTRUÇÕES
+                        </button>
+                        <button onclick="estrutura.openModal('modalCreditos')"
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
+                            CRÉDITOS
+                        </button>
+                        <div class="w-full">
+                            <a href="#apresentacao"
+                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="apresentacao" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-5xl font-bold">
+                        Apresentação da Unidade
+                    </h1>
+                    <h3>Olá, estudante-trabalhador! Seja bem-vindo!</h3>
+                </div>
+                <p>
+                    Nesta Unidade, vamos reconhecer as mulheres privadas de liberdade como sujeitos de direitos e
+                    entender como as políticas
+                    públicas podem garantir cuidado e qualidade de vida para essas mulheres. Vamos discutir a saúde
+                    sexual e reprodutiva das
+                    mulheres no sistema prisional e tratar da promoção da saúde delas e da prevenção de agravos no
+                    sistema prisional.
+                </p>
+                <p>
+                    Bons estudos!
+                </p>
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    Objetivos de Aprendizagem da Unidade
+                </h2>
+                <div class="flex flex-wrap items-stretch justify-center">
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                            <p class="text-center">
+                                Reconhecer os direitos sociais e a legislação vigente sobre saúde das mulheres privadas
+                                de liberdade;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                            <p class="text-center">
+                                Identificar aspectos referentes à saúde sexual e reprodutiva no sistema prisional e à
+                                dignidade menstrual da mulher
+                                privada de liberdade;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                            <p class="text-center">
+                                Listar as ações de prevenção de agravos e doenças e promoção da saúde da mulher e suas
+                                especificações no sistema
+                                prisional;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Identificar as ações de planejamento familiar para a mulher privada de liberdade;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Conhecer as principais ações de saúde relacionadas ao ciclo gravídico-puerperal no
+                                sistema prisional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 md:px-3">
+                    <p class="bg-gray-600 font-bold text-xl md:text-2xl p-5 rounded-md text-white">
+                        Carga Horária de Estudo: 6 horas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="3.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                3.1 Direitos sociais e saúde da mulher no sistema prisional
+            </h2>
+            <p>
+                As questões de gênero no sistema prisional são complexas e multifacetadas, envolvendo desafios
+                específicos quando se
+                trata de saúde da mulher. No sistema prisional brasileiro, assim como em muitos outros ao redor do
+                mundo, as mulheres
+                são minoria (World Prison Brief, 2024), o que pode levar à negligência de suas necessidades específicas
+                nas políticas
+                públicas. Conhecer o perfil das mulheres privadas de liberdade nos ajuda a pensar estratégias de cuidado
+                direcionadas à
+                saúde da mulher.
+            </p>
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                    Você sabe quem são as <b>mulheres privadas de liberdade no Brasil?</b>
+                </h2>
+            </div>
+        </div>
+
+        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <p>
+                Considerando as celas físicas, sem os quantitativos do Sistema Penitenciário Federal, 28.770 mulheres
+                foram privadas de
+                liberdade no Brasil no 1º semestre de 2024, conforme a Figura 1.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 1 - Caracterização das mulheres privadas de liberdade no Brasil no 1º semestre de 2024
+            </h3>
+            <div>
+                <img src="./images/infografico-pizza.jpg"
+                    alt="Caracterização das mulheres privadas de liberdade no Brasil no 1º semestre de 2024">
+                <small>Fonte: Brasil (2024a).</small>
+                <hr>
+            </div>
+            <p>
+                As mulheres privadas de liberdade, em sua maioria, têm entre 35 e 45 anos, são mães, solteiras, pardas e
+                com baixa
+                escolaridade. Muitas delas não têm cartão SUS nem carteira de trabalho e outras não têm nenhum
+                documento. O percentual
+                de mulheres em prisão provisória supera em muito o percentual de homens em prisão provisória, que é de
+                aproximadamente
+                25%. Além disso, o número de mulheres com alguma deficiência supera o número de mulheres gestantes e
+                lactantes (Brasil,
+                2024a). Todos esses aspectos devem ser considerados na elaboração de políticas públicas direcionadas à
+                garantia dos
+                direitos sociais e de saúde das mulheres no sistema prisional.
+            </p>
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                    Você conhece os <b>direitos</b> das mulheres <b>privadas de liberdade?</b>
+                </h2>
+            </div>
+        </div>
+
+        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <p>
+                Os direitos sociais e de saúde das mulheres privadas de liberdade são garantidos por normativas
+                nacionais e
+                internacionais que visam assegurar dignidade, integridade física e psicológica e acesso a condições
+                adequadas de
+                aprisionamento (Brasil, 1984; Brasil, 1988; United Nations, 2010). Os principais diretos das mulheres
+                privadas de
+                liberdade estão resumidos no Quadro 1.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                Quadro 1 - Direitos das mulheres privadas de liberdade no Brasil
+            </h3>
+            <div class="w-full p-10 max-w-[800px] bg-gray-100 mx-auto rounded-2xl">
+                <ul class="list-disc pl-5 flex flex-col gap-5">
+                    <li>Não ser discriminadas com base em gênero, raça/cor, religião ou outra condição;</li>
+                    <li>Ter proteção contra qualquer forma de violência, abuso, assédio sexual e maus-tratos;</li>
+                    <li>Ter as revistas íntimas respeitadas, realizadas preferencialmente por agente do mesmo sexo e sem
+                        exposições
+                        desnecessárias;</li>
+                    <li>Ser alojadas em celas separadas dos homens, com banheiro, cama e espaços de convivência
+                        exclusivos;</li>
+                    <li>Ter sua privacidade respeitada, especialmente durante o banho e o uso do banheiro;</li>
+                    <li>Ter acesso a cuidados de saúde e assistência médica, incluindo consulta ginecológica, exames
+                        preventivos (como
+                        papanicolau) e acompanhamento durante a gravidez, parto e puerpério;</li>
+                    <li>Não ser algemada durante o trabalho de parto;</li>
+                    <li>Ter progressão para o regime aberto se estiver grávida, tiver filho de até 12 anos ou for
+                        responsável por pessoa com
+                        deficiência;</li>
+                    <li>Receber visitas de familiares, amamentar o filho e ter sua solicitação atendida caso peça
+                        transferência para
+                        unidades especiais, que oferecem condições para cuidar dos filhos;</li>
+                    <li>Ter acesso a produtos de higiene, como absorventes e sabonetes.</li>
+                    <small>Fonte: elaboração das autoras com base em Brasil (1984, 1988) e United Nations
+                        (2010).</small>
+                </ul>
+            </div>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais1" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            A Lei nº 13.769/2018 autoriza a progressão de regime para mulher gestante, mãe de filho de
+                            até 12 anos ou pessoa com
+                            deficiência, mesmo em casos de crimes hediondos, desde que: não tenha cometido crime com
+                            violência ou grave ameaça; não
+                            tenha cometido o crime contra seu filho ou dependente; tenha cumprido 1/8 da pena; seja
+                            primária e tenha bom
+                            comportamento; e não tenha integrado organização criminosa (Brasil, 2018).
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Em 2014, a Secretaria Nacional de Políticas Penais (SENAPPEN) apresentou a Política Nacional de Atenção
+                às Mulheres em
+                Situação de Privação de Liberdade e Egressas do Sistema Prisional (PNAMPE) com o objetivo de atender
+                demandas
+                específicas dessa população. A confecção dos Planos Estaduais configura-se como oportunidade de
+                aproximar as políticas
+                do sistema prisional às particularidades das mulheres privadas de liberdade e de assegurar o cuidado
+                direcionado à saúde
+                da mulher no sistema prisional (Brasil, 2014).
+            </p>
+            <p>
+                No Rio Grande do Sul (RS), o processo de construção coletiva da política de atenção às mulheres privadas
+                de liberdade,
+                por meio do Plano Estadual, ensejou a criação do Comitê Gestor Interinstitucional instituído via Decreto
+                Estadual nº
+                56.220, de 2021, com o objetivo de ser o responsável pela implantação, aperfeiçoamento e capilaridade
+                estadual da
+                política de atenção às mulheres. Entre as atribuições do Comitê, está o fortalecimento das ações
+                articuladas com
+                diversos órgãos estaduais dos Poderes Executivo e Judiciário para elaboração e aplicação de políticas
+                voltadas à saúde,
+                à educação e ao trabalho das mulheres privadas de liberdade e egressas do sistema prisional (Rio Grande
+                do Sul, 2021).
+            </p>
+            <p>
+                O <i>Plano Estadual de Atenção às Mulheres Privadas de Liberdade e Egressas do Sistema Prisional do
+                    Estado do Rio Grande do
+                    Sul</i>, que inicialmente tinha previsão de atuação para o biênio 2022/2023, teve sua versão e
+                vigência atualizadas para o
+                triênio 2024/2027 e tem por finalidade acolher integralmente as diretrizes da PNAMPE, bem como
+                estabelecer diretrizes
+                próprias de atuação, levando em consideração as peculiaridades locais (Rio Grande do Sul, 2024a).
+            </p>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais2" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b><i>Plano Estadual de Atenção às Mulheres Privadas de Liberdade e Egressas do
+                                Sistema Prisional e Socioeducativo do Rio
+                                Grande do Sul (2024-2027)</i>
+                        </p>
+                        <p>
+                            <b>Autor: </b>Governo do Estado do Rio Grande do Sul (2024a).
+                        <p>
+                            <b>Descrição: </b>
+                            apresenta diretrizes e estratégias para assegurar o cuidado integral às mulheres privadas de
+                            liberdade com foco na
+                            saúde, educação, trabalho e reintegração social.
+                        </p>
+                        <p>
+                            <b>Para mais informações sobre o programa e as enfermidades previstas para eliminação,
+                                acesse:</b>
+                            <a class="link"
+                                href="https://ssps.rs.gov.br/upload/arquivos/202412/18120550-plano-estadual-de-atencao-as-mulheres-privadas-de-liberdade-e-egressas-2024-2027.pdf"
+                                target="_blank">https://ssps.rs.gov.br/upload/arquivos/202412/18120550-plano-estadual-de-atencao-as-mulheres-privadas-de-liberdade-e-egressas-2024-2027.pdf</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais2')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Além disso, é importante que, na elaboração de políticas públicas para mulheres privadas de liberdade e
+                egressas do
+                sistema prisional, sejam consideradas também as questões familiares, como apresentado no relato de
+                experiência de
+                <a class="link" href="https://www.scielo.br/j/csc/a/drFhdDfh5S4xStN6zkcBk7B/?lang=pt"
+                    target="_blank">Pereira (2016)</a>
+                sobre o Distrito Federal.
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                3.2 Saúde sexual e reprodutiva da mulher no sistema prisional
+            </h2>
+            <p>
+                De acordo com Brasil (2025a),
+            </p>
+            <h3
+                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+                a <b>saúde sexual</b> diz respeito à possibilidade de mulheres e homens, ao longo de suas vidas,
+                vivenciarem e expressarem sua
+                sexualidade de maneira saudável, evitando riscos como infecções sexualmente transmissíveis, gestações
+                não planejadas,
+                coerção, violência e discriminação. A saúde sexual valoriza a vida, as relações pessoais e a expressão
+                genuína de quem
+                somos. Ela é enriquecedora, inclui o prazer e incentiva a autoconfiança e a comunicação nas relações
+                (Brasil, 2025a).
+            </h3>
+            <p>
+                Apesar de as normativas legais garantirem direitos, a saúde sexual e reprodutiva das mulheres no sistema
+                prisional é um
+                tema crítico, que envolve múltiplas questões intersetoriais, incluindo direitos humanos, saúde pública e
+                políticas
+                voltadas ao sistema prisional. De acordo com Schultz et al. (2020) e Prado (2024), estas são algumas
+                dificuldades que as
+                mulheres encontram no sistema prisional e que representam desafios aos profissionais desses locais:
+            </p>
+            <div>
+                <p class="text-center">
+                    <small>Clique para interagir</small>
+                </p>
+                <div class="flex flex-wrap justify-center">
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card1')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="card1" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Dificuldade 1
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">Dificuldade de acesso à Rede de Atenção à Saúde (RAS),
+                                            que inclui cuidados ginecológicos, obstétricos e saúde
+                                            reprodutiva;</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card2')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="card2" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Dificuldade 2
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">Gestação, parto e puerpério em condições precárias;</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card3')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="card3" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Dificuldade 3
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">Dificuldade de encaminhamentos extramuros;</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card4')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="card4" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Dificuldade 4
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">Questões de saúde mental e uso de drogas;</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card5')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="card5" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Dificuldade 5
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">Condições sanitárias inadequadas e falta de absorventes
+                                            que podem levar a infecções ginecológicas e outros problemas de
+                                            saúde;</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card6')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="card6" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Dificuldade 6
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">Alta carga de infecções sexualmente transmissíveis (ISTs)
+                                            no sistema prisional, como HIV e sífilis;</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card7')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-80">
+                                <div id="card7" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Dificuldade 7
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">Vulnerabilidade e todas as formas de violência, incluindo
+                                            a violência sexual.</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                3.3 Como podemos promover a saúde da mulher e prevenir agravos no sistema prisional?
+            </h2>
+            <p>
+                Para promover a saúde da mulher e prevenir agravos no sistema prisional, são necessárias estratégias
+                robustas e ações
+                direcionadas. Nesta seção, relacionamos ações e estratégias necessárias para ampliação do atendimento
+                ginecológico e
+                obstétrico e tratamos da disponibilização de contraceptivos e absorventes de forma gratuita, da garantia
+                de pré-natal e
+                parto humanizado e da fiscalização e do cumprimento das normas existentes.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                3.3.1 Ampliação do atendimento ginecológico e obstétrico
+            </h3>
+            <p>
+                De acordo com a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
+                Sistema Prisional
+                (PNAISP), a equipe de Atenção Primária Prisional (eAPP) precisa ser integrada por um médico generalista,
+                uma vez que não
+                se exige um médico ginecologista nas instituições penais femininas. Dessa forma, torna-se relevante a
+                capacitação da
+                eAPP para atendimento das questões referentes à saúde da mulher, considerando idade reprodutiva,
+                climatério e prevenção
+                de agravos crônicos e degenerativos. Torna-se igualmente importante a implementação de programas de
+                educação sexual e
+                reprodutiva voltados para mulheres privadas de liberdade.
+            </p>
+            <p>
+                Conheça as principais infecções ginecológicas e sexualmente transmissíveis e os meios de prevenção no
+                sistema prisional
+                no Quadro 2 (Brasil, 2016).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                Quadro 2 - Prevenção das infecções ginecológicas e sexualmente transmissíveis no sistema prisional
+            </h3>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Candidíase vaginal</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causada pelo fungo <i><b>Candida albicans</b></i>, que se prolifera na falta de higiene,
+                                uso
+                                prolongado de roupas úmidas, alimentação
+                                pobre em nutrientes e estresse.
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    <b>
+                                        <i>Higiene e limpeza</i>
+                                    </b> - celas, galerias e pátio devem ter condições mínimas
+                                    de limpeza e higiene, e a mulher deve ter acesso a banho
+                                    diariamente e a itens de higiene, como absorventes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Vaginose bacteriana</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causada pela bactéria <i>Gardnerella vaginalis</i>, que se desenvolve em ambiente de
+                                desequilíbrio da flora vaginal por falta
+                                de higiene, baixa imunidade e estresse.
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    <b>
+                                        <i>Prevenção:</i>
+                                    </b> - celas, galerias e pátio devem ter condições mínimas de limpeza e higiene, e a
+                                    mulher deve ter acesso a banho diariamente
+                                    e a itens de higiene, como absorventes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Tricomoníase</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causada pelo protozoário <b><i>Trichomonas vaginalis</i></b>, transmitida principalmente
+                                por
+                                relações sexuais desprotegidas.
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    <b>
+                                        <i>Prevenção:</i>
+                                    </b> - celas, galerias e pátio devem ter condições mínimas de limpeza e higiene, e a
+                                    mulher deve ter acesso a banho diariamente
+                                    e a itens de higiene, como absorventes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item14" onclick="animacao.toggleAccordion('item14', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Infecção pelo HPV</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causado pelo papilomavírus humano, pode causar verrugas genitais e está associado ao
+                                câncer de colo de útero. Os fatores
+                                de risco são: relações sexuais desprotegidas, múltiplos parceiros sexuais e ausência de
+                                exame preventivo (papanicolau).
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    Uso de preservativo masculino ou feminino e gel lubrificante em todas as relações
+                                    sexuais;
+                                </li>
+                                <li>
+                                    Realizar o exame papanicolau (preventivo) conforme
+                                    <a href="https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//diretrizes_para_o_rastreamento_do_cancer_do_colo_do_utero_2016_corrigido.pdf"
+                                        class="link" target="_blank" rel="noopener noreferrer">protocolo do Instituto
+                                        Nacional de Câncer (INCA)/Ministério da Saúde</a>
+                                    protocolo do Instituto Nacional de Câncer (INCA)/Ministério da Saúde;
+                                </li>
+                                <li>
+                                    Vacinação contra HPV, que está disponível no SUS para meninos e meninas de 9 a 14
+                                    anos e usuárias de Profilaxia
+                                    Pré-Exposição (PrEP) com idade inferior a 45 anos.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item15" onclick="animacao.toggleAccordion('item15', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Gonorreia e clamídia</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                São ISTs transmitidas pelas bactérias <b><i>Neisseria gonorrhoeae e Chlamydia
+                                        trachomatis.</i></b>
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    Uso de preservativo masculino ou feminino e gel lubrificante em todas as relações
+                                    sexuais;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item16" onclick="animacao.toggleAccordion('item16', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Sífilis</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causada pela bactéria <b><i>Treponema pallidum</i></b> e transmitida principalmente por
+                                relação sexual desprotegida.
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    Uso de preservativo masculino ou feminino e gel lubrificante em todas as relações
+                                    sexuais;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item17" onclick="animacao.toggleAccordion('item17', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Síndrome da imunodeficiência adquirida (Aids)</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                IST transmitida pelo vírus HIV e pelo compartilhamento de materiais contaminados (como
+                                materiais utilizados para fazer
+                                tatuagens).
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    Uso de preservativo masculino ou feminino e gel lubrificante em todas as relações
+                                    sexuais;
+                                </li>
+                                <li>
+                                    Orientação para não compartilhar itens pessoais, como materiais de manicure,
+                                    pedicure e tatuagens, pinças, lixa de unha
+                                    e aparelho de barbear;
+                                </li>
+                                <li>
+                                    Disponibilização da <a
+                                        href="https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_profilaxia_prep.pdf"
+                                        class="link" target="_blank" rel="noopener noreferrer">PrEP</a> e da <a
+                                        href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2021/hiv-aids/prot_clinico_diretrizes_terap_pep_-risco_infeccao_hiv_ist_hv_2021.pdf"
+                                        class="link" target="_blank" rel="noopener noreferrer">Profilaxia Pós-Exposição
+                                        (PEP)</a> para HIV conforme
+                                    protocolos do Ministério da Saúde;
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.br/aids/pt-br/assuntos/prevencao-combinada" class="link"
+                                        target="_blank" rel="noopener noreferrer">Prevenção combinada.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item18" onclick="animacao.toggleAccordion('item18', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Hepatite B</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causada pelo vírus HBV, é transmitida por relação sexual desprotegida e contato com
+                                sangue contaminado.
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    Uso de preservativo masculino ou feminino e gel lubrificante em todas as relações
+                                    sexuais;
+                                </li>
+                                <li>
+                                    Orientação para não compartilhar itens pessoais, como materiais de manicure,
+                                    pedicure e tatuagens, pinças, lixa de unha
+                                    e aparelho de barbear;
+                                </li>
+                                <li>
+                                    Vacinação contra a hepatite B conforme <a
+                                        href="https://www.gov.br/saude/pt-br/vacinacao/calendario" class="link"
+                                        target="_blank" rel="noopener noreferrer">protocolo</a> do Ministério da Saúde.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item19" onclick="animacao.toggleAccordion('item19', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Hepatite C</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causada pelo vírus HCV, é transmitida principalmente pelo compartilhamento de materiais
+                                contaminados, incluindo os
+                                materiais utilizados para manicure e pedicure.
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    Orientação para não compartilhar itens pessoais, como materiais de manicure,
+                                    pedicure e tatuagens, pinças, lixa de unha
+                                    e aparelho de barbear.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item1a" onclick="animacao.toggleAccordion('item1a', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Herpes genital</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causada pelo herpes vírus simples, é transmitida principalmente por contato sexual.
+                            </p>
+                            <p>
+                                <b>Prevenção:</b>
+                            </p>
+                            <ul class="list-disc pl-5">
+                                <li>
+                                    Uso de preservativo masculino ou feminino e gel lubrificante em todas as relações
+                                    sexuais.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <small>Fonte: adaptado de Instituto Nacional de Câncer (2016) e Brasil (2016, 2022, 2024b, 2025b,
+                    2025c).
+                    <br>Clique nos termos em destaque da coluna Prevenção para saber mais.
+                </small>
+            </div>
+            <p>
+                Além das medidas específicas de prevenção para cada uma das doenças infecciosas e ISTs, você precisa
+                estar atento às
+                seguintes questões para propor ações que irão colaborar com a promoção da saúde das mulheres nas
+                instituições penais:
+            </p>
+            <div class="w-full p-10 max-w-[800px] bg-gray-100 mx-auto rounded-2xl">
+                <ul class="list-disc pl-5 flex flex-col gap-5">
+                    <li>Educação sexual, que envolve questões de gênero e autocuidado;</li>
+                    <li>Disponibilização de exames preventivos e testes rápidos para HIV, sífilis e hepatites virais no
+                        momento do ingresso no
+                        sistema prisional e posteriormente, no mínimo uma vez ao ano;</li>
+                    <li>Disponibilização de preservativos nas visitas íntimas e em locais estratégicos;</li>
+                    <li>Orientação quanto à automedicação, principalmente de antibióticos que desregulam a flora vaginal
+                        e predispõem a
+                        infecções;</li>
+                    <li>Combate à violência sexual intra e extramuros;</li>
+                    <li>Ações de redução de danos.</li>
+                </ul>
+            </div>
+            <p>
+                Você também precisa desenvolver ações de promoção da saúde no ambiente prisional que possam melhorar a
+                qualidade de vida dessas mulheres. Alimentação saudável, organização de uma horta, atividades físicas no
+                horário do banho de sol são algumas das possibilidades exequíveis nesse contexto. Quando a mulher é
+                gestante e é diagnosticada com uma ou mais infecções, é de fundamental importância identificar os riscos
+                de transmissão vertical, ou seja, de transmissão da mãe para o recém-nascido durante a gestação, parto e
+                amamentação, e instituir o tratamento imediatamente.
+            </p>
+            <div>
+                <p class="text-center">
+                    <small>Clique para interagir</small>
+                </p>
+                <div class="flex flex-wrap justify-center">
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card21')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-110">
+                                <div id="card21" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            HIV
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 overflow-y-auto rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">A gestante deve manter o tratamento durante o pré-natal e
+                                            receber o tratamento específico durante o parto; o
+                                            recém-nascido também deve receber antirretroviral nos primeiros meses de
+                                            vida. Além disso, no Brasil, nesse caso, a
+                                            amamentação é absolutamente contraindicada;</p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card22')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-110">
+                                <div id="card22" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Sífilis
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl overflow-y-auto shadow-lg bg-black text-white flex flex-col items-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">A gestante que apresentou teste rápido reagente para
+                                            sífilis deve iniciar o tratamento com penicilina benzatina
+                                            intramuscular imediatamente, mesmo antes de realizar outros exames. É de
+                                            extrema importância que a gestante faça o
+                                            tratamento correto, de acordo com o estadiamento, incluindo a parceria
+                                            sexual para evitar a reinfecção e,
+                                            consequentemente, a transmissão vertical, e que seja monitorada com exames
+                                            de controle (VDRL quantitativo);</p>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                        <button onclick="animacao.toggleCard(this, 'card23')" aria-pressed="false"
+                            class="w-full focus:outline-none">
+                            <div class="relative w-full h-110">
+                                <div id="card23" class="card-inner preserve-3d relative w-full h-full">
+                                    <article
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                        <h3 class="text-lg font-bold mb-2">
+                                            Hepatite B e C
+                                        </h3>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            para ver</span>
+                                    </article>
+                                    <aside
+                                        class="absolute inset-0 rounded-xl overflow-y-auto shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        <p class="text-center">
+                                            As gestantes com hepatite B e C devem ser avaliadas individualmente quanto
+                                            ao uso de medicamentos antivirais, indicação
+                                            de cesariana eletiva e alimentação com fórmulas infantis a fim de diminuir o
+                                            risco de transmissão.
+                                        </p>
+                                        <span
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                    </aside>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais3" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b><i>Saúde da mulher privada de liberdade: pré-natal, parto e puerpério</i>
+                        </p>
+                        <p>
+                            <b>Autor: </b>Governo do Estado do Rio Grande do Sul (2024b).
+                        <p>
+                            <b>Descrição: </b>
+                            cartilha complementar ao Guia do Pré-Natal e Puerpério na Atenção Primária à Saúde (APS).
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="link"
+                                href="https://atencaoprimaria.rs.gov.br/upload/arquivos/202404/15105209-isbn-impressa-saude-da-mulher-privada-de-liberdade-pre-natal-parto-e-puerperio-2.pdf"
+                                target="_blank">https://atencaoprimaria.rs.gov.br/upload/arquivos/202404/15105209-isbn-impressa-saude-da-mulher-privada-de-liberdade-pre-natal-parto-e-puerperio-2.pdf</a>
+                        </p>
+                        <p>
+                            <b>Título: </b>Rede Alyne: conheça a história da jovem negra que deu o nome ao novo programa
+                            de cuidado integral à gestante e bebê
+                        </p>
+                        <p>
+                            <b>Autor: </b>Ministério da Saúde (Brasil, 2024d).
+                        </p>
+                        <p>
+                            <b>Descrição: </b>a matéria apresenta a história de Alyne Pimentel e fala sobre a
+                            reestruturação da Rede Materno-Infantil e suas
+                            diretrizes.
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="link"
+                                href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/setembro/rede-alyne-conheca-a-historia-da-jovem-negra-que-deu-nome-ao-novo-programa-de-cuidado-integral-a-gestante-e-bebe"
+                                target="_blank">https://www.gov.br/saude/pt-br/assuntos/noticias/2024/setembro/rede-alyne-conheca-a-historia-da-jovem-negra-que-deu-nome-ao-novo-programa-de-cuidado-integral-a-gestante-e-bebe</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais3')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                3.3.2 Disponibilização de contraceptivos e absorventes de forma gratuita
+            </h3>
+            <p>
+                As orientações sobre planejamento familiar e a disponibilização de contraceptivos devem considerar a
+                orientação sexual, expressão e identidade de gênero, religião, especificidades étnico-raciais e livre
+                exercício da sexualidade. Os profissionais da saúde devem prestar todas as informações necessárias para
+                que a mulher possa escolher de forma consciente os melhores métodos para evitar a gestação indesejada e
+                as ISTs.
+            </p>
+            <p>
+                A Política Nacional de Atenção Integral à Saúde da Mulher (PNAISM) prevê a ampliação do acesso à saúde
+                de todas as
+                mulheres brasileiras, incluindo o acesso aos métodos contraceptivos disponibilizados pelo SUS (Brasil,
+                2011). As
+                mulheres privadas de liberdade também fazem parte deste escopo, e os contraceptivos devem ser
+                disponibilizados inclusive
+                no puerpério. O método de escolha depende do histórico clínico e ginecológico da mulher. Geralmente,
+                recomenda-se um
+                método farmacológico associado a um método de barreira, como preservativo masculino ou feminino, para
+                dupla proteção,
+                conforme Figura 2 (Rio Grande do Sul, 2024b).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 2 - Métodos contraceptivos disponibilizados pelo SUS
+            </h3>
+            <small>(clique nos ícones de + para acessar o conteúdo)</small>
+            <div id="mapa" class="relative">
+                <img class="w-full h-full rounded-xl" src="./images/metodos.png"
+                    alt="Métodos contraceptivos disponibilizados pelo SUS" loading="lazy" />
+                <button id="tooltip_1" class="botao-flutuante bg-blue-500! font-bold" style="top: 30%; left: 25%">
+                    +
+                </button>
+                <button id="tooltip_2" class="botao-flutuante bg-blue-500! font-bold" style="top: 30%; left: 65%">
+                    +
+                </button>
+                <button id="tooltip_3" class="botao-flutuante bg-blue-500! font-bold" style="top: 55%; left: 47%">
+                    +
+                </button>
+                <button id="tooltip_4" class="botao-flutuante bg-blue-500! font-bold" style="top: 90%; left: 25%">
+                    +
+                </button>
+                <button id="tooltip_5" class="botao-flutuante bg-blue-500! font-bold" style="top: 90%; left: 65%">
+                    +
+                </button>
+                <small>Fonte: Brasil (2024a).</small>
+            </div>
+            <p>
+                Trabalhar com mulheres privadas de liberdade exige estar atento às questões que dizem respeito à vida
+                das mulheres.
+                Entre elas, está a pobreza menstrual, que é a falta de acesso aos absorventes, banheiros e água para a
+                realização da
+                higiene pessoal, o que pode representar riscos para a saúde. Na falta de absorventes higiênicos, as
+                mulheres utilizam
+                materiais improvisados, como tiras de roupas, meias, miolo de pão e jornal, para conter o fluxo. O
+                resultado dessa
+                prática é a exposição da mulher a alergias e doenças, como candidíase, infecções urinárias de repetição
+                e vaginoses
+                bacterianas (UNICEF, 2021).
+            </p>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais4" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            O <i>Programa Dignidade Menstrual</i> do Governo Federal é uma iniciativa que promove
+                            conscientização sobre a naturalidade do
+                            ciclo menstrual e a oferta gratuita de absorventes higiênicos. Ele busca desenvolver ações
+                            de formação e educação
+                            menstrual, garantir escuta qualificada para as mulheres beneficiárias do programa, promover
+                            igualdade de gênero e
+                            redução de desigualdades e estimar o autocuidado (Brasil, 2024e). A entrega de absorventes
+                            às pessoas privadas de
+                            liberdade no sistema prisional deve ser realizada pelo Ministério da Justiça e Segurança
+                            Pública.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais4')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                3.3.3 Garantia de acompanhamento pré-natal e parto humanizado, sem uso de algemas
+            </h3>
+            <p>
+                O pré-natal de risco habitual deve ser realizado pela eAPP quando a instituição penal dispõe de equipe
+                de saúde intramuros e pela Estratégia Saúde da Família (ESF) do território quando não há equipe de saúde
+                na instituição penal.
+            </p>
+            <p>
+                As consultas de pré-natal seguem as diretrizes do pré-natal de risco habitual da Atenção Primária à
+                Saúde (APS), que preconiza um número mínimo de seis consultas: mensais até a 28ª semana, quinzenais até
+                a 36ª semana e semanais até o parto. As consultas podem ser intercaladas entre médico e enfermeiro.
+                Quando a gestante for encaminhada ao pré-natal de alto risco, deve manter o vínculo com a APS ou eAPP,
+                com cuidados compartilhados.
+            </p>
+            <p>
+                É necessário conhecer a RAS, os serviços de referência para intercorrências da gestação e as formas de
+                deslocamento. Os
+                servidores das instituições penais devem ser orientados pela equipe de saúde sobre os sinais de alerta e
+                de trabalho de
+                parto que precisam ser encaminhados para avaliação hospitalar (Rio Grande do Sul, 2024b).
+            </p>
+            <p>
+                Durante a internação hospitalar para o parto, a mulher privada de liberdade não deve ser algemada em
+                nenhum momento (Brasil, 2017). Nos períodos de pré-parto, parto e pós-parto, a mulher privada de
+                liberdade tem direito a um acompanhante, da mesma forma que as mulheres em situação de liberdade
+                (Brasil, 2005).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                3.3.4 Fortalecimento da fiscalização e cumprimento das normas existentes
+            </h3>
+            <p>
+                O tema exige atenção para garantir que os direitos humanos, sociais e de saúde das mulheres privadas de
+                liberdade sejam
+                respeitados e que elas possam ter acesso a cuidados de saúde dignos. As instituições penais e de saúde
+                devem enfrentar o
+                racismo, respeitar especificidades étnico-raciais e de gênero e dar apoio às mulheres quando
+                identificarem
+                vulnerabilidades socioemocionais. O racismo institucional e a violência de gênero devem ser combatidos,
+                denunciados e
+                fiscalizados.
+            </p>
+            <p>
+                A fiscalização e o cumprimento das normas no sistema prisional são garantidos por diferentes órgãos e
+                mecanismos, como o
+                Ministério Público, o Conselho Nacional de Justiça (CNJ), o Conselho Nacional do Ministério Público
+                (CNMP) e a
+                Secretaria Nacional de Políticas Penais (SENAPPEN).
+            </p>
+            <p>
+                No âmbito do sistema prisional, os Conselhos da Comunidade representam as forças locais institucionais e
+                da comunidade
+                prisional. Entre as atribuições dos Conselhos da Comunidade, estão as ações de integração com os
+                serviços de saúde e o
+                apoio à reinserção social dos egressos (Allgayer et al., 2022). Os Conselhos da Comunidade também buscam
+                trabalhar ações
+                de apoio à família da pessoa privada de liberdade (PPL), promover acesso às políticas públicas e
+                fiscalizar o
+                cumprimento das normas existentes.
+            </p>
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-3xl md:text-5xl font-bold">
+                    Reflexão
+                </h2>
+                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                    Você conhece o Conselho da Comunidade da sua Comarca? Participou de alguma reunião do Conselho da
+                    Comunidade? Quem são
+                    os representantes dos trabalhadores da segurança pública, da justiça e da saúde no Conselho da
+                    Comunidade da sua região?
+                </h2>
+            </div>
+        </div>
+
+        <div id="encerramento" class="bg-gray-100 py-10">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    Encerramento da Unidade
+                </h2>
+                <p>
+                    Nesta Unidade, você aprendeu sobre os direitos das mulheres privadas de liberdade, refletiu sobre a
+                    saúde sexual e
+                    reprodutiva, conheceu ações voltadas para a prevenção de agravos e para a promoção da saúde e
+                    descobriu detalhes sobre
+                    planejamento familiar, dignidade menstrual e ciclo gravídico-puerperal no sistema prisional.
+                </p>
+            </div>
+        </div>
+
+        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências importantes
+            </h2>
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº 210, de 16 de janeiro de
+                2014. Institui
+                a Política Nacional de Atenção às Mulheres em Situação de Privação de Liberdade e Egressas do Sistema
+                Prisional, e dá
+                outras providências. <b>Diário Oficial da União</b>, Brasília, DF, 17 jan. 2014. Disponível em:
+                <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
+                </a>
+                . Acesso em: 11 set. 2025.
+            </p>
+            <p>
+                RIO GRANDE DO SUL. <b>Saúde da mulher privada de liberdade</b>: pré-natal, parto e puerpério. Porto
+                Alegre:
+                SES/RS, 2024b.
+            </p>
+            <p>
+                SCHULTZ, A. L. V. et al. Limites e desafios para o acesso das mulheres privadas de liberdade e egressas
+                do sistema
+                prisional nas Redes de Atenção à Saúde. <b>Physis: Revista de Saúde Coletiva</b>, v. 30, n. 3, e300325,
+                2020.
+                Disponível em:
+                <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
+                </a>
+                . Acesso em: 31 jul. 2025.
+            </p>
+            <p>
+                UNITED NATIONS. <b>United Nations Rules for the Treatment of Women Prisoners and Non-custodial Measures
+                    for
+                    Women
+                    Offenders (the Bangkok Rules)</b>. Genebra, 2010. Disponível em:
+                <a class="underline link"
+                    href="https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial
+                </a>.
+                Acesso em: 31 ago. 2025.
+            </p>
+        </div>
+
+        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências
+            </h2>
+            <p>
+                ALLGAYER, M. F. et al. Conselhos da comunidade: controle social e interlocução para a saúde prisional.
+                <b>Revista
+                    Brasileira de Segurança</b>, v. 16, n. 2, p. 122-137, 2022. Disponível em:
+                <a class="underline link" href="https://revista.forumseguranca.org.br/index.php/rbsp/article/view/1340"
+                    target="_blank" rel="noopener noreferrer">
+                    https://revista.forumseguranca.org.br/index.php/rbsp/article/view/1340
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. Saúde da Mulher. <a class="underline link" href="https://gov.br"
+                    target="_blank" rel="noopener noreferrer">gov.br</a>, 2025a. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. <b>Prevenção Combinada</b>. 2025b. Disponível em:
+                <a class="underline link" href="https://www.gov.br/aids/pt-br/assuntos/prevencao-combinada"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/aids/pt-br/assuntos/prevencao-combinada
+                </a>.
+                Acesso em: 31 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. <b>Calendário de Vacinação</b>. Brasília: Ministério da Saúde, c2025c.
+                Disponível
+                em:
+                <a class="underline link" href="https://www.gov.br/saude/pt-br/vacinacao/calendario" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/vacinacao/calendario
+                </a>.
+                Acesso em: 11 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Secretaria Nacional de Políticas Penais. <b>Relatório de Informações Penais</b>. 16º ciclo
+                SISDEPEN, 1º
+                semestre de
+                2024. RELIPEN. Brasília: SENAPPEN, 2024a. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
+                </a>.
+                Acesso em: 11 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. Protocolo clínico e diretrizes terapêuticas para Profilaxia Pós-Exposição
+                (PEP) de
+                risco à infecção pelo HIV, ISTs e hepatites virais. Brasília: Ministério da Saúde, 2024b. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2021/hiv-aids/prot_clinico_diretrizes_terap_pep_-risco_infeccao_hiv_ist_hv_2021.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2021/hiv-aids/prot_clinico_diretrizes_terap_pep_-risco_infeccao_hiv_ist_hv_2021.pdf
+                </a>.
+                Acesso em: 11 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção Primária à Saúde (SAPS). Diretoria-Geral do Sistema
+                de Informação
+                em Saúde (DGCI). <b>Nota Técnica Conjunta nº 220/2024</b> - DGCI/SAPS/MS DAHU/SAES/ME. Brasília, DF, 27
+                nov.
+                2024c.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-tecnica-conjunta-no-220-2024-dgci-saps-ms-e-dahu-saes-ms.pdf/view"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2024/nota-tecnica-conjunta-no-220-2024-dgci-saps-ms-e-dahu-saes-ms.pdf/view
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. Rede Alyne: conheça a história da jovem negra que deu nome ao novo programa
+                de cuidado
+                integral à gestante e bebê. <a class="underline link" href="https://gov.br" target="_blank"
+                    rel="noopener noreferrer">gov.br</a>, 20 set. 2024d. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/setembro/rede-alyne-conheca-a-historia-da-jovem-negra-que-deu-nome-ao-novo-programa-de-cuidado-integral-a-gestante-e-bebe"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/assuntos/noticias/2024/setembro/rede-alyne-conheca-a-historia-da-jovem-negra-que-deu-nome-ao-novo-programa-de-cuidado-integral-a-gestante-e-bebe
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. <b>Programa Dignidade Menstrual</b>: um ciclo de respeito. Brasília:
+                Ministério da
+                Saúde,
+                2024e. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/cartilhas/2024/dignidademenstrual"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/cartilhas/2024/dignidademenstrual
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. <b>Protocolo clínico e diretrizes terapêuticas para Profilaxia
+                    Pré-Exposição
+                    (PrEP) de
+                    risco à infecção pelo HIV</b>. Brasília: Ministério da Saúde, 2022. Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_profilaxia_prep.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_profilaxia_prep.pdf
+                </a>.
+                Acesso em: 11 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Lei nº 13.769, de 19 de dezembro de 2018. Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941
+                (Código de
+                Processo Penal), as Leis nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), e 8.072, de 25 de
+                julho de 1990
+                (Lei dos Crimes Hediondos), para estabelecer a substituição da prisão preventiva por prisão domiciliar
+                da mulher
+                gestante. <b>Diário Oficial da União</b>, Brasília, DF, 20 dez. 2018. Disponível em:
+                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13769.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13769.htm
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Lei nº 13.434, de 12 de abril de 2017. Acrescenta parágrafo único ao art. 292 do Decreto-Lei nº
+                3.689, de 3
+                de outubro de 1941 (Código de Processo Penal), para vedar o uso de algemas em mulheres grávidas durante
+                o parto e em
+                mulheres durante a fase de puerpério imediato. <b>Diário Oficial da União</b>, Brasília, DF, 13 abr.
+                2017.
+                Disponível em:
+                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13434.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13434.htm
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. <b>Protocolos da Atenção Básica</b>: saúde das mulheres. Brasília:
+                Ministério da
+                Saúde, 2016.
+                Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/protocolos_atencao_basica_saude_mulheres.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/protocolos_atencao_basica_saude_mulheres.pdf
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº 210, de 16 de janeiro de
+                2014.
+                Institui a Política Nacional de Atenção às Mulheres em Situação de Privação de Liberdade e Egressas do
+                Sistema
+                Prisional, e dá outras providências. <b>Diário Oficial da União</b>, Brasília, DF, 17 jan. 2014.
+                Disponível em:
+                <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
+                </a>.
+                Acesso em: 11 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Ações Programáticas
+                Estratégicas.
+                <b>Política Nacional de Atenção Integral à Saúde da Mulher</b>: Princípios e Diretrizes. Brasília:
+                Editora do
+                Ministério da
+                Saúde, 2011. Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_mulher_principios_diretrizes.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_mulher_principios_diretrizes.pdf
+                </a>.
+                Acesso em: 31 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Lei nº 11.108, de 7 de abril de 2005. Altera a Lei nº 8.080, de 19 de setembro de 1990, para
+                garantir às
+                parturientes o direito à presença de acompanhante durante o trabalho de parto, parto e pós-parto
+                imediato, no âmbito
+                do Sistema Único de Saúde - SUS. <b>Diário Oficial da União</b>, Brasília, DF, 8 abr. 2005. Disponível
+                em:
+                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11108.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11108.htm
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Constituição (1988). Constituição da República Federativa do Brasil de 1988. <b>Diário Oficial
+                    da
+                    União</b>,
+                Brasília, DF, 5 out. 1988. Disponível em:
+                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                BRASIL. Lei nº 7.210, de 11 de julho de 1984. Institui a Lei de Execução Penal. <b>Diário Oficial da
+                    União</b>,
+                Brasília,
+                DF, 13 jul. 1984. Disponível em:
+                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/leis/l7210.htm
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                Instituto Nacional de Câncer (Brasil). Coordenação de Prevenção e Vigilância. Divisão de Detecção
+                Precoce e Apoio à
+                Organização de Rede. <b>Diretrizes brasileiras para o rastreamento do câncer do colo do útero</b>. 2.
+                ed. Rio de Janeiro: INCA,
+                2016.
+            </p>
+
+            <p>
+                PEREIRA, E. L. Famílias de mulheres presas, promoção da saúde e acesso às políticas sociais no Distrito
+                Federal,
+                Brasil. <b>Ciência & Saúde Coletiva</b>, v. 21, n. 7, p. 2123-2134, 2016. Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/csc/a/drFhdDfh5S4xStN6zkcBk7B/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/csc/a/drFhdDfh5S4xStN6zkcBk7B/?lang=pt
+                </a>.
+                Acesso em: 31 ago. 2025.
+            </p>
+
+            <p>
+                PRADO, I. C. A. Políticas Públicas sobre a Saúde Menstrual no Brasil: Olhares pelas Lentes dos
+                Movimentos Sociais da
+                Menstruação. <b>Mediações</b>, v. 29, n. 1, e49150, 2024. Disponível em:
+                <a class="underline link" href="https://ojs.uel.br/revistas/uel/index.php/mediacoes/article/view/49150"
+                    target="_blank" rel="noopener noreferrer">
+                    https://ojs.uel.br/revistas/uel/index.php/mediacoes/article/view/49150
+                </a>.
+                Acesso em: 31 ago. 2025.
+            </p>
+
+            <p>
+                RIO GRANDE DO SUL. Secretaria Sistemas Penal e Socioeducativo. <b>Plano Estadual de Atenção às Mulheres
+                    Privadas de
+                    Liberdade e Egressas do Sistema Prisional</b>. Porto Alegre: SSPS/RS, 2024a. Disponível em:
+                <a class="underline link"
+                    href="https://ssps.rs.gov.br/upload/arquivos/202412/18120550-plano-estadual-de-atencao-as-mulheres-privadas-de-liberdade-e-egressas-2024-2027.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://ssps.rs.gov.br/upload/arquivos/202412/18120550-plano-estadual-de-atencao-as-mulheres-privadas-de-liberdade-e-egressas-2024-2027.pdf
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                RIO GRANDE DO SUL. <b>Saúde da mulher privada de liberdade</b>: pré-natal, parto e puerpério. Porto
+                Alegre:
+                SES/RS, 2024b.
+            </p>
+
+            <p>
+                RIO GRANDE DO SUL. Decreto nº 56.220, de 30 de novembro de 2021. Institui Comitê de Políticas Públicas
+                de Atenção às
+                Mulheres em Privação de Liberdade e Egressas do Sistema Prisional do Estado. <b>Diário Oficial do
+                    Estado</b>,
+                Porto Alegre,
+                1º dez. 2021. Disponível em:
+                <a class="underline link"
+                    href="https://www.policiapenal.rs.gov.br/upload/arquivos/202501/07110814-decreto-56-220-doe-30-11-21.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.policiapenal.rs.gov.br/upload/arquivos/202501/07110814-decreto-56-220-doe-30-11-21.pdf
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                SCHULTZ, A. L. V. et al. Limites e desafios para o acesso das mulheres privadas de liberdade e egressas
+                do sistema
+                prisional nas Redes de Atenção à Saúde. <b>Physis: Revista de Saúde Coletiva</b>, v. 30, n. 3, e300325,
+                2020.
+                Disponível
+                em:
+                <a class="underline link" href="https://www.scielo.br/j/physis/a/9ZG5kXknWnwXNJFkyTmBV9m/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/physis/a/9ZG5kXknWnwXNJFkyTmBV9m/?lang=pt
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+            <p>
+                UNICEF. Fundo das Nações Unidas para a Infância. <b>Pobreza Menstrual no Brasil</b>: desigualdades e
+                violações
+                de direitos.
+                Fundo de População das Nações Unidas (UNFPA), 2021.
+            </p>
+
+            <p>
+                UNITED NATIONS. <b>United Nations Rules for the Treatment of Women Prisoners and Non-custodial Measures
+                    for
+                    Women
+                    Offenders (the Bangkok Rules)</b>. Genebra, 2010. Disponível em:
+                <a class="underline link"
+                    href="https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial
+                </a>.
+                Acesso em: 31 ago. 2025.
+            </p>
+
+            <p>
+                WORLD PRISON BRIEF. <b>Brazil</b>. 2024. Disponível em:
+                <a class="underline link" href="https://www.prisonstudies.org/country/brazil" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.prisonstudies.org/country/brazil
+                </a>.
+                Acesso em: 31 jul. 2025.
+            </p>
+
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+                <h1 class="text-3xl md:text-5xl font-bold">
+                    Minicurrículo dos Autores
+                </h1>
+                <div class="flex flex-wrap my-5">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/karine.jpg"
+                            alt="Karine Zenatti Ely" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Karine Zenatti Ely</small>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 px-0 md:px-5">
+                        <p>
+                            Karine Zenatti Ely. Enfermeira, servidora pública na Secretaria Estadual de Saúde do Rio
+                            Grande do Sul, Doutora em
+                            Promoção da Saúde, pesquisadora do Núcleo de Pesquisa e Extensão com Foco no Sistema
+                            Prisional (NUPESISP/UNISC).
+                            <br><br>
+                            Lattes: <a class="link" href="http://lattes.cnpq.br/9035441979308817" target="_blank"
+                                rel="noopener noreferrer">http://lattes.cnpq.br/9035441979308817</a>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex flex-wrap my-5">
+                    <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
+                        <p>
+                            Lia Possuelo. Bióloga. Doutora em Ciências Biológicas, professora titular da
+                            Universidade de
+                            Santa Cruz do Sul, docente
+                            do corpo permanente do Programa de Pós-Graduação em Promoção da Saúde da UNISC.
+                            Coordenadora
+                            do Núcleo de pesquisa e
+                            extensão com foco no Sistema Prisional (NUPESISP) e da área de Tuberculose no Sistema
+                            Prisional da Rede Brasileira de
+                            Pesquisa em Tuberculose (REDE-TB), Membro do Comitê Estadual de Enfrentamento da
+                            Tuberculose/RS (CEETB/RS), do Comitê
+                            Técnico de Assessoramento da FAPERGS (2025-2027), do Conselho da Comunidade de Santa
+                            Cruz do
+                            Sul e do Conselho Municipal
+                            de Saúde de Santa Cruz do Sul.
+                            <br><br>
+                            Lattes: <a class="link" href="http://lattes.cnpq.br/9903194013924888" target="_blank"
+                                rel="noopener noreferrer">http://lattes.cnpq.br/9903194013924888</a>
+                        </p>
+                    </div>
+                    <div class="w-full md:w-1/3 order-1 md:order-2">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/lia.jpg"
+                            alt="Lia Possuelo" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Lia Possuelo</small>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex flex-wrap my-5">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/samantha.png"
+                            alt="Samantha Lopes de Moraes Longo" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Samantha Lopes de Moraes Longo</small>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 px-0 md:px-5">
+                        <p>
+                            Samantha Lopes de Moraes Longo. Advogada. Graduada pela Universidade de Santa Cruz do Sul
+                            (UNISC), Servidora pública do
+                            Sistema Prisional do Estado do Rio Grande do Sul, Mestranda em Promoção da Saúde (UNISC),
+                            Especialista em Segurança
+                            Pública e Gestão de Sistemas Prisionais, ambas pela Faculdade Dom Alberto, Membro do Núcleo
+                            de pesquisa e extensão com
+                            foco no Sistema Prisional (NUPESISP/UNISC). Membro do Comitê Interinstitucional de Políticas
+                            Públicas para as Mulheres
+                            Privadas de Liberdade e Egressas do Sistema Prisional, Membro da Comissão de Elaboração,
+                            Monitoramento e Implementação
+                            da Política Penal de Enfrentamento do Racismo no Âmbito do Sistema Prisional do RS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
+        <div class="max-w-[1000px] mx-auto px-5">
+            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
+                    alt="Logo" />
+            </a>
+            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
+                disseminação e a utilização desta obra, em parte ou em sua
+                totalidade, nos Termos de uso do ARES. Deve ser citada a
+                fonte e é vedada sua utilização comercial. © 2025.
+                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
+                Sul.
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/tippy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+        personalizado.init();
+        document.addEventListener("click", function (e) {
+            const overlay = e.target.closest(".modal-overlay");
+
+            if (!overlay) return;
+
+            const content = overlay.querySelector(".modal-content");
+
+            if (!content.contains(e.target)) {
+                estrutura.closeModal(overlay.id)
+            }
+        });
+    </script>
+</body>
+
+</html>

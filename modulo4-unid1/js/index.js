@@ -188,24 +188,12 @@ var personalizado = {
             interactive: true,
             delay: [100, 0],
         });
-
-        tippy("#tooltip_rede_alyne", {
-            content: "A Rede Alyne foi criada em 2024 para reestruturar a Rede Cegonha, nome de origem da Portaria. Saiba mais sobre a história e a Rede Alyne <a class='text-blue-600 undeline' target='_blank' href='https://www.gov.br/saude/pt-br/assuntos/noticias/2024/setembro/rede-alyne-conheca-a-historia-da-jovem-negra-que-deu-nome-ao-novo-programa-de-cuidado-integral-a-gestante-e-bebe'>clicando aqui!</a>",
-            placement: "left",
-            animation: "scale",
-            touch: ["hold", 500],
-            trigger: "mouseenter focus click",
-            interactive: true,
-            delay: [100, 0],
-            allowHTML: true,
-            interactive: true
-        });
     },
 
     initMapTooltips: function () {
         tippy("#tooltip_1", {
-            content: '<p class="text-2xl"><b>Equipe Base</b></p><p>Médico</p>',
-            placement: "bottom",
+            content: '<p class="text-2xl"><b>Policiais Penais</b></p><p>Atuam na manutenção da segurança, organização e administração do ambiente prisional. Por essa razão, toda e qualquer ação em saúde envolvendo a PPL deve ser construída em conjunto com a polícia penal, uma vez que irá interferir diretamente na sua organização e rotinas de trabalho.</p>',
+            placement: "right",
             allowHTML: true,
             animation: "scale",
             trigger: "click",
@@ -215,8 +203,8 @@ var personalizado = {
         });
 
         tippy("#tooltip_2", {
-            content: '<p class="text-2xl"><b>Equipe Base</b></p><p>Enfermeiro Auxiliar e/ou Técnico de Enfermagem</p>',
-            placement: "bottom",
+            content: '<p class="text-2xl"><b>Profissionais de saúde</b></p><p>Responsáveis por prestar os atendimentos em saúde no ambiente prisional. Atuam na promoção da saúde e na prevenção e controle de agravos e doenças, realizando atendimentos e tratamentos caso a caso.</p>',
+            placement: "right",
             allowHTML: true,
             animation: "scale",
             trigger: "click",
@@ -226,8 +214,8 @@ var personalizado = {
         });
 
         tippy("#tooltip_3", {
-            content: '<p class="text-2xl"><b>Equipe Base</b></p><p>Agente Comunitário de Saúde (ACS)</p>',
-            placement: "bottom",
+            content: '<p class="text-2xl"><b>Pessoas privadas de liberdade</b></p><p>Desempenham papel fundamental no direcionamento de estratégias de promoção da saúde e prevenção de agravos e doenças, especialmente na figura de agentes promotores de saúde, conforme veremos a seguir.</p>',
+            placement: "right",
             allowHTML: true,
             animation: "scale",
             trigger: "click",
@@ -237,8 +225,8 @@ var personalizado = {
         });
 
         tippy("#tooltip_4", {
-            content: '<p class="text-2xl"><b>Profissionais Adicionais</b></p><p>Profissionais de Saúde Bucal</p>',
-            placement: "bottom",
+            content: '<p class="text-2xl"><b>Profissionais da educação</b></p><p>Atuam na oferta de educação formal para a população privada de liberdade, garantindo a alfabetização, formação em nível fundamental e médio por meio da Educação de Jovens e Adultos (EJA). Apresentam um potencial significativo para a promoção da saúde, principalmente em virtude do vínculo criado em sala de aula.</p>',
+            placement: "right",
             allowHTML: true,
             animation: "scale",
             trigger: "click",
@@ -247,8 +235,38 @@ var personalizado = {
             delay: [100, 0],
         });
         tippy("#tooltip_5", {
-            content: '<p class="text-2xl"><b>Profissionais Adicionais</b></p><p>Agente de Combate a Endemias (ACE)</p>',
-            placement: "bottom",
+            content: '<p class="text-2xl"><b>Trabalhadores da justiça</b></p><p>Atuam na execução de leis penais na condução do caso de cada PPL. Podem contribuir com a promoção da saúde propondo projetos e apoiando a realização de ações em saúde promovidas pelas instituições prisionais.</p>',
+            placement: "left",
+            allowHTML: true,
+            animation: "scale",
+            trigger: "click",
+            touch: true,
+            interactive: true,
+            delay: [100, 0],
+        });
+        tippy("#tooltip_6", {
+            content: '<p class="text-2xl"><b>Conselhos da comunidade</b></p><p>Representam o controle social no sistema prisional, atuando na representação da comunidade em espaços de decisão; na promoção de atividades educativas; e na fiscalização, monitoramento e avaliação de políticas e recursos implementados no sistema prisional (Conselho Nacional de Justiça, 2021).</p>',
+            placement: "left",
+            allowHTML: true,
+            animation: "scale",
+            trigger: "click",
+            touch: true,
+            interactive: true,
+            delay: [100, 0],
+        });
+        tippy("#tooltip_7", {
+            content: '<p class="text-2xl"><b>Familiares e redes de apoio</b></p><p>Constituem a ponte entre o intra e o extramuros durante a privação de liberdade e contribuem, muitas vezes, para a manutenção da saúde da PPL e ressocialização após a liberdade.</p>',
+            placement: "left",
+            allowHTML: true,
+            animation: "scale",
+            trigger: "click",
+            touch: true,
+            interactive: true,
+            delay: [100, 0],
+        });
+        tippy("#tooltip_8", {
+            content: '<p class="text-2xl"><b>Organizações da Sociedade Civil</b></p><p>Entidades privadas sem fins lucrativos que promovem ações de interesse público. No sistema prisional, funcionam como rede de apoio às PPL e garantem acesso a lazer, cultura, atividades recreativas e protetivas (exemplos: instituições religiosas, projetos universitários, entre outros).</p>',
+            placement: "left",
             allowHTML: true,
             animation: "scale",
             trigger: "click",
@@ -291,46 +309,6 @@ var personalizado = {
             interactive: true,
             delay: [100, 0],
         });
-    },
-
-    exercicioFixacao: function (e) {
-        e.preventDefault();
-        const feedback = document.getElementById("feedback");
-        const resposta = document.querySelector('input[name="resposta"]:checked');
-        if (!resposta) {
-            feedback.className =
-                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
-            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
-            feedback.classList.remove("hidden");
-            return;
-        }
-        let mensagem = "";
-        let estilo = "";
-        switch (resposta.value) {
-            case "A":
-                mensagem =
-                    "✅ Resposta correta! O direito à identidade de gênero foi violado, já que a pessoa trans não teve seu nome social e identidade respeitados no sistema prisional, contrariando as garantias legais estabelecidas no Brasil; o direito à assistência à saúde foi violado porque a personagem relatou a dificuldade de acesso a tratamentos médicos adequados, mostrando a violação do direito básico de assistência integral à saúde da pessoa privada de liberdade; o direito à proteção contra violência e discriminação foi violado porque a história evidencia a LGBTfobia sofrida na instituição penal, caracterizando falha na proteção contra violência e discriminação, o que é um direito garantido.";
-                estilo = "bg-green-100 text-green-800";
-                break;
-            case "B":
-                mensagem =
-                    "❌ Incorreto. Apenas com a ilustração não é possível realizar essa afirmação.";
-                estilo = "bg-red-100 text-red-800";
-                break;
-            case "C":
-                mensagem =
-                    "❌ Incorreto. Apenas com a ilustração não é possível realizar essa afirmação.";
-                estilo = "bg-red-100 text-red-800";
-                break;
-            case "D":
-                mensagem =
-                    "❌ Incorreto. O caso apresentado revela a violação de diversos direitos fundamentais, demonstrando a necessidade urgente de avanços na garantia da dignidade e cidadania de pessoas privadas de liberdade.";
-                estilo = "bg-red-100 text-red-800";
-                break;
-        }
-        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
-        feedback.textContent = mensagem;
-        feedback.classList.remove("hidden");
     },
 
     init: function () {

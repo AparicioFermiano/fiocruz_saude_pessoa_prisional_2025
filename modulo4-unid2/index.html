@@ -1,0 +1,2938 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Curso sobre SUS e Participação Social" name="keywords" />
+    <meta content="Aprenda sobre o Sistema Único de Saúde e Participação Social" name="description" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/tippy.min.css" />
+
+    <title>
+        Política Nacional de Atenção Integral à Saúde das Pessoas Privadas
+        de Liberdade no Sistema Prisional (PNAISP)
+    </title>
+</head>
+
+<body>
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="max-w-[1000px] mx-auto px-2 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-gray-800 max-w-[150px] overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full p-4 object-contain" alt="Logo" />
+            </a>
+
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5" onclick="estrutura.toggleSidebar()">
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+            </button>
+
+            <nav id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#2.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 02</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
+                        Referências
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu"
+                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
+                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências
+                            Importantes</a>
+                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências</a>
+                    </div>
+                </div>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modalInstrucao" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] md:max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Instruções para navegação
+                </h2>
+            </div>
+
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    Você pode ajustar a visualização do material de acordo
+                    com o nível de zoom do seu navegador, pressione:
+                </p>
+                <div class="text-center">
+                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCreditos" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
+                <img src="./images/regua-logos-prisional-800px.png"
+                    alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
+            </div>
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                    SAÚDE DAS PESSOAS
+                    PRIVADAS DE LIBERDADE NO SISTEMA PRISIONAL (QUALISaP-PNAISP)
+                </p>
+                <p>
+                    <b>MÓDULO 4:</b> Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                </p>
+                <div>
+                    <p>
+                        <b>UNIDADE 1:</b> Promoção da Saúde
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Milena Mantelli Dall’ Soto
+                        </li>
+                        <li>
+                            Thales Ávila Pedroso
+                        </li>
+                        <li>
+                            Lia Gonçalves Possuelo
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>UNIDADE 2:</b> Agravos e Doenças Transmissíveis e Não Transmissíveis
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Eduarda Gassen Boeira
+                        </li>
+                        <li>
+                            Lia Possuelo
+                        </li>
+                        <li>
+                            Karine Zenatti Ely
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>UNIDADE 3:</b> Saúde da Mulher
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Karine Zenatti Ely
+                        </li>
+                        <li>
+                            Lia Gonçalves Possuelo
+                        </li>
+                        <li>
+                            Samantha Lopes de Moraes Longo
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>UNIDADE 4:</b> Saúde Mental
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Daiane Raquel Kist
+                        </li>
+                        <li>
+                            Milena Mantelli Dall’ Soto
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>UNIDADE 5:</b> Saúde Bucal
+                    </p>
+                    <p>AUTORES:</p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Lucas Moura de Oliveira
+                        </li>
+                        <li>
+                            Giovana Soares Buzinaro
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <b>MINISTÉRIO DA SAÚDE</b>
+                    </p>
+                    <span>Alexandre Rocha Santos Padilha - Ministro da
+                        Saúde</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ - FIOCRUZ </b>
+                    </p>
+                    <span>Mário Santos Moreira - Presidente</span>
+                </div>
+                <div>
+                    <p>
+                        <b>FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL -
+                            FIOCRUZ MS
+                        </b>
+                    </p>
+                    <span>Jislaine de Fátima Guilhermino - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DE EDUCAÇÃO DA FIOCRUZ MS </b>
+                    </p>
+                    <span>Débora Dupas Gonçalves do Nascimento - Vice
+                        Coordenadora de Educação</span>
+                </div>
+                <div>
+                    <p>
+                        <b>SECRETARIA DE ATENÇÃO PRIMÁRIA À SAÚDE (SAPS)
+                        </b>
+                    </p>
+                    <span>Ana Luiza Ferreira Rodrigues Caldas -
+                        Secretária</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DEPARTAMENTO DE ESTRATÉGIAS E POLÍTICAS DE
+                            SAÚDE COMUNITÁRIA
+                        </b>
+                    </p>
+                    <span>José Eudes Barroso Vieira - Diretor</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO-GERAL DE SAÚDE DA FAMÍLIA E
+                            COMUNIDADE (CGESCO)
+                        </b>
+                    </p>
+                    <span>Ana Cláudia Cardozo Chaves - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENAÇÃO DO ACESSO E EQUIDADE (CAEQ) </b>
+                    </p>
+                    <span>Lilian Silva Gonçalves - Coordenadora</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADOR TÉCNICO</b>
+                    </p>
+                    <span>Everton Ferreira Lemos</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADORA PEDAGÓGICA</b>
+                    </p>
+                    <span>Ewângela Aparecida Pereira</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADORA TEMÁTICA</b>
+                    </p>
+                    <span>Caroline Busatto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>APOIO DA COORDENAÇÃO</b>
+                    </p>
+                    <span>Antonio Luiz Dal Bello Gasparoto</span>
+                </div>
+                <div>
+                    <p>
+                        <b>REVISÃO E NORMATIZAÇÃO </b>
+                    </p>
+                    <span>Davi Bagnatori Tavares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>AVALIAÇÃO EXTERNA </b>
+                    </p>
+                    <span>Jorge Esteves</span>
+                </div>
+                <div>
+                    <p>
+                        <b>COORDENADOR DE PRODUÇÃO E DESIGNER INSTRUCIONAL
+                        </b>
+                    </p>
+                    <span>Marcos Paulo dos Santos de Souza</span>
+                </div>
+                <div>
+                    <p>
+                        <b>WEBDESIGNER E DESENVOLVEDOR </b>
+                    </p>
+                    <span>Aparício Fermiano</span>
+                </div>
+                <div>
+                    <p>
+                        <b>DESENVOLVEDOR AVA-MOODLE </b>
+                    </p>
+                    <span>Vinícius Vicente Soares</span>
+                </div>
+                <div>
+                    <p>
+                        <b>PROJETO GRÁFICO E DIAGRAMAÇÃO</b>
+                    </p>
+                    <span>André Julien de Sousa Morato</span>
+                </div>
+                <div class="text-center">
+                    <small>Esse produto faz parte das atividades do Núcleo de
+                        Evidências de Mato Grosso do Sul (NEVMS), com nome
+                        de NEV Pantanal e o as ações do Programa de
+                        Avaliação e Qualificação da Política Nacional de
+                        Atenção Integral à Saúde das Pessoas Privadas de
+                        Liberdade no Sistema Prisional (QUALI-SaP-PNAISP).
+                        TED 81/2023.</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContatar" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Informações de contato
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-2">
+                <h3 class="font-bold">
+                    FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                </h3>
+                <p>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo
+                    Grande-MS - CEP 79081-746
+                </p>
+                <p>
+                    <b>Telefone:</b>
+                    (67) 3346-7220
+                </p>
+                <p>
+                    <b>E-mail:</b>
+                    <a href="mail:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a>
+                </p>
+                <p>
+                    <b>Site:</b>
+                    <a href="www.matogrossodosul.fiocruz.br">www.matogrossodosul.fiocruz.br</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex flex-col justify-between">
+        <div id="scrollTopBtn" class="hidden fixed bottom-10 right-10 z-99">
+            <div class="flex flex-col gap-3">
+                <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-address-book"></i>
+                </button>
+
+                <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-exclamation"></i>
+                </button>
+
+                <a href="#" id="btnTopo"
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div class="w-full bg-[var(--primary)] py-5">
+                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 block mt-3">
+                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
+                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
+                        PRISIONAL
+                    </span>
+                    <h1 class="text-xl md:text-2xl font-black mt-3">
+                        Módulo IV - Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                    </h1>
+                    <p class="px-3 py-2 block">
+                        Unidade 2 - Agravos e Doenças Transmissíveis e Não Transmissíveis
+                    </p>
+                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+                        <button onclick="estrutura.openModal('modalInstrucao')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            INSTRUÇÕES
+                        </button>
+                        <button onclick="estrutura.openModal('modalCreditos')"
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
+                            CRÉDITOS
+                        </button>
+                        <div class="w-full">
+                            <a href="#apresentacao"
+                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="apresentacao" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-5xl font-bold">
+                        Apresentação da Unidade
+                    </h1>
+                    <h3>Olá, estudante-trabalhador! Seja bem-vindo!</h3>
+                </div>
+                <p>
+                    Neste momento da sua formação, vamos aprofundar um tema essencial: a prevenção de agravos e doenças
+                    transmissíveis e não
+                    transmissíveis no contexto prisional.
+                </p>
+                <p>
+                    Você já se perguntou como a vigilância epidemiológica pode transformar a realidade da saúde nas
+                    instituições penais? Ou
+                    como as estratégias de prevenção podem garantir um ambiente mais seguro para pessoas presas e
+                    profissionais? Aqui, vamos
+                    discutir desde aspectos importantes de doenças transmissíveis como tuberculose, hepatites virais,
+                    HIV/Aids e hanseníase
+                    até os desafios impostos por doenças crônicas como hipertensão, diabetes e síndrome metabólica.
+                </p>
+                <p>
+                    Esta Unidade não apresenta apenas conceitos; também propõe uma reflexão prática: como integrar
+                    vigilância e assistência
+                    de forma eficiente? Como garantir o acesso oportuno à vacinação, a tratamentos e à promoção da saúde
+                    no sistema
+                    prisional?
+                </p>
+                <p>
+                    A proposta é criar um espaço de aprendizado dinâmico e colaborativo, no qual você poderá analisar e
+                    debater estratégias
+                    fundamentais para a promoção da saúde, refletindo sobre como aplicá-las de forma prática no cenário
+                    desafiador em que
+                    você está inserido. Vamos juntos construir soluções?
+                </p>
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    Objetivos de Aprendizagem da Unidade
+                </h2>
+                <div class="flex flex-wrap items-stretch justify-center">
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                            <p class="text-center">
+                                Conhecer o conceito e a aplicação das ações integradas de vigilância e assistência em
+                                saúde;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                            <p class="text-center">
+                                Identificar as ações de prevenção de doenças transmissíveis no contexto prisional:
+                                tuberculose, hanseníase, hepatites
+                                virais, HIV/Aids e outras infecções sexualmente transmissíveis, doenças diarreicas e
+                                infecções cutâneas/dermatoses de
+                                interesse sanitário;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                            <p class="text-center">
+                                Identificar as ações de prevenção de doenças não transmissíveis e agravos não
+                                infecciosos no contexto prisional:
+                                dislipidemia, hipovitaminose, diabetes mellitus, hipertensão arterial sistêmica, excesso
+                                de peso e síndrome metabólica;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Conhecer o calendário vacinal do adulto e principais medidas de proteção, como a
+                                vacinação contra hepatites e influenza;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Reconhecer a importância do atendimento integrado e do acesso às redes de atenção
+                                especializada, hospitalar e de
+                                urgência e a redes temáticas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 md:px-3">
+                    <p class="bg-gray-600 font-bold text-xl md:text-2xl p-5 rounded-md text-white">
+                        Carga Horária de Estudo: 6 horas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="2.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1 Vigilância em saúde no sistema prisional: desafios e estratégias para a promoção de ambientes
+                seguros e humanizados
+            </h2>
+            <p>
+                O ambiente prisional, muitas vezes, favorece a disseminação de doenças infecciosas e o agravamento de
+                condições crônicas
+                devido a fatores como superlotação, ventilação inadequada, baixa imunização e dificuldades no acesso à
+                assistência em
+                saúde. Além disso, a vulnerabilidade social em que a maioria das pessoas privadas de liberdade (PPL)
+                está antes do
+                aprisionamento faz com que muitas vezes cheguem ao sistema prisional já em condições de saúde precárias
+                (Brasil, 2024a).
+            </p>
+            <p>
+                A vigilância em saúde no sistema prisional desempenha um papel estratégico na prevenção, detecção e
+                resposta rápida a
+                doenças e agravos que afetam tanto as PPL quanto os profissionais que atuam nesse ambiente, mas como
+                garantir que essas
+                ações sejam eficazes? Como integrar os serviços de saúde à segurança para oferecer um atendimento
+                eficiente? Vamos
+                refletir sobre esses desafios e caminhos possíveis!
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.1 Saúde nas instituições penais: integrando vigilância e assistência
+            </h3>
+            <p>
+                A vigilância em saúde no sistema prisional deve ser entendida como um processo contínuo de observação,
+                análise e
+                resposta aos agravos e determinantes que afetam a saúde da população privada de liberdade, visando à
+                redução dos riscos
+                e à melhoria das condições sanitárias e de saúde (Brasil, 2014). Nessa perspectiva, podemos destacar
+                três pilares
+                fundamentais: vigilância epidemiológica, vigilância sanitária e saúde do trabalhador no sistema
+                prisional (Figura 1).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 1 - Pilares para um ambiente prisional mais saudável e seguro
+            </h3>
+            <div>
+                <img src="./images/infografico1.png" alt="Infografico AMbiente prisional mais saudável e seguro">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.1.1 Vigilância epidemiológica
+            </h3>
+            <p>
+                A vigilância epidemiológica tem o objetivo de identificar, monitorar e controlar doenças transmissíveis
+                e não
+                transmissíveis nas instituições penais. Para isso, é essencial:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Rastrear e notificar os casos</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>Doenças como tuberculose, hepatites virais, HIV/Aids e infecções sexualmente
+                                transmissíveis (ISTs) (Brasil, 2024b);</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Monitorar surtos</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>Infecções gastrointestinais e doenças de pele, como escabiose, especialmente em
+                                instituições superlotadas, onde as
+                                condições favorecem a disseminação dessas doenças (United Nations Office On Drugs And
+                                Crime, 2024);</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Adotar protocolos de testagem rápida</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>Fazer acompanhamento contínuo dos casos identificados para reduzir a transmissão nas
+                                instituições penais (Brasil, 2022).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais1" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b>PPLifeP
+                        </p>
+                        <p>
+                            <b>Autor: </b>Karine Zenatti Ely et al.
+                        <p>
+                            <b>Descrição: </b>
+                            o PPLife é uma ferramenta desenvolvida com o objetivo de fortalecer a educação em saúde e o
+                            autocuidado no contexto
+                            prisional. Por meio de uma linguagem acessível e visual, o aplicativo auxilia na vigilância
+                            epidemiológica nas
+                            instituições penais. O objetivo do aplicativo PPLife é compartilhar informações sobre as
+                            principais doenças
+                            infectocontagiosas - tuberculose, HIV/Aids, hepatite B, hepatite C e sífilis – que afetam a
+                            população privada de
+                            liberdade, tendo como público-alvo os profissionais da saúde e da segurança que trabalham no
+                            sistema prisional.
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="link"
+                                href="https://play.google.com/store/apps/details?id=com.unisc.pplife&pcampaignid=web_share"
+                                target="_blank">https://play.google.com/store/apps/details?id=com.unisc.pplife&pcampaignid=web_share</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.1.2 Vigilância sanitária
+            </h3>
+            <p>
+                A vigilância sanitária tem o objetivo de garantir condições adequadas de infraestrutura, higiene e
+                alimentação nas
+                instituições penais (Brasil, 2014). Dentre as ações prioritárias, destacam-se:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Monitorar a qualidade da água e dos alimentos</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Com a finalidade de prevenir surtos de doenças gastrointestinais (Brasil, 2021a);
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item22" onclick="animacao.toggleAccordion('item22', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Controlar os vetores e pragas, como ratos, baratas e
+                                escorpiões</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Para evitar a disseminação de doenças infecciosas nas celas, como é realizado em
+                                ambientes fora do sistema prisional
+                                (Brasil, 2016);
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item23" onclick="animacao.toggleAccordion('item23', 'grupo2')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Avaliar as condições de ventilação, iluminação e
+                                saneamento</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Para garantir um ambiente minimamente adequado à saúde da população privada de liberdade
+                                (Brasil, 2014).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.1.3 Saúde do trabalhador no sistema prisional
+            </h3>
+            <p>
+                Os profissionais de saúde e segurança que atuam nas instituições penais estão expostos a diversos riscos
+                ocupacionais,
+                incluindo doenças infectocontagiosas, estresse e esgotamento mental (Brasil, 2024c). Por isso, é
+                fundamental implementar
+                medidas como:
+            </p>
+            <div class="max-w-[800px] py-10 mx-auto flex flex-wrap">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full max-w-[200px]" src="./images/icone-mascara.png" alt="Icone mascara">
+                </div>
+                <div class="w-full md:w-2/3 my-auto px-3">
+                    <p>
+                        Uso de equipamentos de proteção individual (EPIs) adequados para cada tipo de atendimento;
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-[800px] py-10 mx-auto flex flex-wrap">
+                <div class="w-full md:w-2/3 md:text-end order-2 md:order-1 my-auto px-3">
+                    <p>
+                        Promoção da saúde mental dos trabalhadores por meio de capacitações voltadas ao cuidado
+                        emocional e
+                        suporte psicossocial
+                        contínuo, com ações que visem fortalecer a resiliência, a escuta qualificada e o manejo do
+                        estresse
+                        no
+                        contexto
+                        prisional, reconhecido por suas condições adversas e de alta pressão;
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 order-1 md:order-2">
+                    <img class="w-full max-w-[200px]" src="./images/icon-laco.png" alt="Icone Laço">
+                </div>
+            </div>
+            <div class="max-w-[800px] py-10 mx-auto flex flex-wrap">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full max-w-[200px]" src="./images/icone-escudo.png" alt="Icone Escudo">
+                </div>
+                <div class="w-full md:w-2/3 my-auto px-3">
+                    <p>
+                        Acompanhamento da saúde ocupacional, com a realização de exames periódicos e aplicação de
+                        protocolos de segurança bem
+                        estabelecidos (Evers et al., 2019).
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                Diante das múltiplas vulnerabilidades existentes no ambiente prisional, como os altos níveis de
+                violência, a restrição
+                de vínculos afetivos e sociais, a insegurança alimentar e as tensões institucionais, é necessário
+                refletir criticamente:
+                de que forma ações integradas de vigilância, cuidado e promoção da saúde poderiam, de fato, contribuir
+                para a construção
+                de um ambiente mais digno, seguro e verdadeiramente saudável para todos que atuam no sistema prisional
+                de alguma forma?
+            </p>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais2" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b> <i>Saúde e qualidade de vida dos trabalhadores do sistema prisional: revisão
+                                integrativa da literatura</i>
+                        </p>
+                        <p>
+                            <b>Autor: </b>Brasil (2024d).
+                        <p>
+                            <b>Descrição: </b>
+                            o relatório apresenta os resultados da etapa quantitativa da pesquisa chamada Cenários da
+                            saúde física e mental dos
+                            servidores do sistema penitenciário brasileiro, desenvolvida no âmbito do projeto Valoriza:
+                            Saúde em Foco. É uma
+                            iniciativa do Ministério da Justiça e Segurança Pública, por meio da SENAPPEN, em parceria
+                            com a Fundação Oswaldo Cruz
+                            (Fiocruz).
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="link"
+                                href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf"
+                                target="_blank">https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais2')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2 Cuidar para conter: o enfrentamento das doenças transmissíveis nas instituições penais
+            </h3>
+            <p>
+                A presença de doenças no sistema prisional não afeta apenas as PPL, mas também os profissionais que
+                atuam nos
+                estabelecimentos penais e a comunidade em geral. Vamos pensar em dois grandes grupos de doenças que
+                precisam ser
+                enfrentadas: doenças transmissíveis e doenças não transmissíveis.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.1 Doenças transmissíveis
+            </h3>
+            <p>
+                A prevenção de doenças transmissíveis no sistema prisional é um desafio constante, dada a alta
+                vulnerabilidade da
+                população privada de liberdade. Superlotação, ventilação inadequada, baixa cobertura vacinal e
+                dificuldades no acesso à
+                saúde contribuem para a rápida disseminação de infecções nas instituições penais (Conselho Nacional de
+                Justiça, 2023).
+            </p>
+            <p>
+                Por isso, é essencial discutir estratégias eficazes de rastreamento, diagnóstico e controle das
+                principais doenças
+                transmissíveis que afetam essa população. Vamos explorar cada uma delas e refletir sobre como podemos
+                aprimorar as ações
+                de prevenção!
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.1.1 Tuberculose
+            </h3>
+            <p>
+                A tuberculose, também conhecida como TB, é uma das doenças mais prevalentes no sistema prisional, com
+                incidência até 26
+                vezes maior do que na população em geral (Brasil, 2025a). Isso se deve a diversos fatores:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo3" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item31" onclick="animacao.toggleAccordion('item31', 'grupo3')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Superlotação e ventilação inadequada</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Facilitam a transmissão do Mycobacterium tuberculosis e de outras doenças respiratórias,
+                                como aconteceu na pandemia de
+                                covid-19 (Carvalho; Santos; Santos, 2020);
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item32" onclick="animacao.toggleAccordion('item32', 'grupo3')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Alto fluxo de entrada e saída de PPL</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Dificultando o controle da infecção (Carvalho; Santos; Santos, 2020).
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item33" onclick="animacao.toggleAccordion('item33', 'grupo3')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">A vulnerabilidade imunológica da PPL</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Pode ser agravada por diversos fatores amplamente descritos na literatura, como
+                                desnutrição, presença de comorbidades
+                                crônicas, coinfecções e doenças imunossupressoras, que são frequentemente associadas às
+                                precárias condições de vida na
+                                instituição penal (United Nations Office On Drugs And Crime, 2024).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                gora, pense: como podemos minimizar esses riscos na rotina prisional? Para reduzir a transmissão da
+                tuberculose, é
+                essencial implementar estratégias de rastreamento ativo, educação permanente em saúde para profissionais
+                e diagnóstico
+                precoce incluindo:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo4" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item41" onclick="animacao.toggleAccordion('item41', 'grupo4')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">A realização sistemática de triagem na admissão de
+                                novas pessoas presas</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Aliada ao acompanhamento periódico dos casos, porque a exposição frequente à bactéria da
+                                tuberculose eleva
+                                significativamente o risco de infecção e adoecimento (Nogueira; Abrahão; Galesi, 2011;
+                                Brasil, 2019a).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item42" onclick="animacao.toggleAccordion('item42', 'grupo4')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Uso de exames de imagem, como raio-X portátil</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Associado à inteligência artificial para identificar rapidamente casos suspeitos (Min et
+                                al., 2025).
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item43" onclick="animacao.toggleAccordion('item43', 'grupo4')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Testes moleculares rápidos, como o Xpert MTB/RIF</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                para garantir o diagnóstico em poucas horas (Brasil, 2022);
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block mx-auto max-w-[800px] rounded-2xl border-3 border-red-500 p-5">
+                <h3 class="text-2xl font-bold flex gap-2">
+                    <div class="text-red-500 border-2 border-red rounded-full w-10 h-10 flex shrink-0 justify-center">
+                        <i class="fa-solid fa-info bloxk my-auto"></i>
+                    </div>
+                    <span class="my-auto">Atenção!</span>
+                </h3>
+                <p class="mt-3">
+                    Atenção!
+
+                    NÃO PODEMOS ESQUECER DOS MÉTODOS DIAGNÓSTICOS TRADICIONAIS. A baciloscopia é um método simples e
+                    rápido que contribui
+                    para a detecção precoce de casos com maior potencial de transmissão. Já a cultura, embora seja mais
+                    demorada, é
+                    considerada o padrão-ouro para confirmação da doença, uma vez que apresenta maior sensibilidade e
+                    possibilita a
+                    realização de testes de sensibilidade aos medicamentos, sendo essencial para o diagnóstico preciso e
+                    para o
+                    monitoramento da resistência bacteriana. Portanto, a associação desses exames fortalece a acurácia
+                    diagnóstica e orienta
+                    adequadamente o tratamento dos casos identificados.
+                </p>
+            </div>
+            <ul class="list-disc pl-5">
+                <li>
+                    <b>Tratamento Diretamente Observado (TDO)</b>, estratégia recomendada pela Organização Mundial da
+                    Saúde (OMS) para garantir a adesão ao tratamento, reduzindo a
+                    resistência medicamentosa (Brasil, 2022) (Figura 2);
+                </li>
+                <li>
+                    <b>Uso adequado de máscaras e ventilação nos espaços compartilhados;</b>
+                </li>
+                <li>
+                    <b>Capacitação contínua de profissionais para o manejo adequado da tuberculose no sistema
+                        prisional</b> (Ely et al., 2023).
+                </li>
+            </ul>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 2 - Caminhos para prevenção de novos casos de tuberculose
+            </h3>
+            <div>
+                <img src="./images/infografico2.png" alt="Caminhos para prevenção de novos casos de tuberculos">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.1.2 Hepatites virais e HIV/Aids
+            </h3>
+            <p>
+                Quando comparamos as taxas de infecção por hepatite C na população privada de liberdade com as taxas de
+                infecção na
+                população em geral, vemos uma diferença notável. A prevalência de 9,7% encontrada entre as PPL é muito
+                superior à
+                prevalência de 1,5% na população brasileira (Rosa et al., 2012). Entre julho e dezembro de 2019, foram
+                registrados 8.523
+                casos de HIV no sistema prisional brasileiro. Considerando que a população privada de liberdade
+                totalizava 748.009
+                pessoas naquele período, a prevalência de HIV era de 11,39 casos a cada 1.000 PPL (Brasil, 2019b).
+            </p>
+            <p>
+                A transmissão do HIV e das hepatites B e C ocorre principalmente por contato com sangue e fluidos
+                corporais, sendo
+                facilitada por fatores como:
+            </p>
+            <ul class="list-disc pl-5">
+                <li>
+                    <b>Uso compartilhado de objetos perfurocortantes</b>, como lâminas de barbear e seringas (Brasil,
+                    2022);
+                </li>
+                <li>
+                    <b>
+                        Relações sexuais desprotegidas
+                    </b> (Brasil, 2017a);
+                </li>
+                <li>
+                    <b>Baixa adesão a políticas de redução de danos</b>, dificultando a prevenção entre usuários de
+                    drogas injetáveis (Inglez-Dias et al., 2014).
+                </li>
+            </ul>
+            <p>
+                Existem estratégias de prevenção e tratamento, incluindo Profilaxia Pré-Exposição (PrEP) e Profilaxia
+                Pós-Exposição
+                (PEP). A prevenção combinada é a estratégia mais eficaz para reduzir a ocorrência de novos casos (Figura
+                3), englobando
+                diferentes ações complementares, como:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo5" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item51" onclick="animacao.toggleAccordion('item51', 'grupo5')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">PrEP</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Para indivíduos em maior risco (Brasil, 2025b);
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item52" onclick="animacao.toggleAccordion('item52', 'grupo5')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">PEP</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Para situações de exposição ao vírus;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item53" onclick="animacao.toggleAccordion('item53', 'grupo5')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Testagem e diagnóstico precoce</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Que permitem a introdução imediata da terapia antirretroviral (TARV) (Brasil, 2024e)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 3 - Estratégias de prevenção combinada para HIV
+            </h3>
+            <div>
+                <img src="./images/infografico3.png" alt="Estratégias de prevenção combinada para HIV">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.1.3 Hanseníase e infecções sexualmente transmissíveis
+            </h3>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo6" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item61" onclick="animacao.toggleAccordion('item61', 'grupo6')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Ampliar o reconhecimento da hanseníase</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Como agravo relevante à saúde pública no sistema prisional articulando ações de
+                                vigilância ativa para detecção precoce
+                                de casos e estratégias voltadas à redução do estigma associado à doença;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item62" onclick="animacao.toggleAccordion('item62', 'grupo6')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Realizar exames dermatoneurológicos periódicos</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Com especial atenção às PPL recém-ingressas no sistema (Brasil, 2002);
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item63" onclick="animacao.toggleAccordion('item63', 'grupo6')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Garantir o acesso imediato ao tratamento com
+                                poliquimioterapia (PQT)</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Para todas as pessoas diagnosticadas de forma segura e supervisionada (Brasil, 2001);
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item64" onclick="animacao.toggleAccordion('item64', 'grupo6')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Desenvolver ações educativas sobre sinais e sintomas da
+                                doença</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Com a participação da equipe de Atenção Primária Prisional (eAPP) e policiais penais
+                                para facilitar a identificação
+                                precoce
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Já as ISTs, como sífilis, gonorreia e clamídia, têm alta prevalência nas instituições penais e são
+                frequentemente
+                subdiagnosticadas. Dada a vulnerabilidade das PPL, o acesso à testagem e ao tratamento oportuno deve ser
+                prioridade das
+                políticas de saúde. Assim, é fundamental:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo7" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item71" onclick="animacao.toggleAccordion('item71', 'grupo7')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Oferecer testagens rápidas e periódicas</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Inclusive na triagem de entrada e em momentos estratégicos da permanência da PPL no
+                                sistema prisional (Brasil, 2005);
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item72" onclick="animacao.toggleAccordion('item72', 'grupo7')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Assegurar tratamento integral e acompanhamento clínico
+                                contínuo</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Com fluxo articulado entre a Atenção Primária à Saúde (APS) e os serviços de referência
+                                (Organización Panamericana de la
+                                Salud, 2025);
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item73" onclick="animacao.toggleAccordion('item73', 'grupo7')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Promover ações educativas regulares</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Com linguagem acessível e que abordem prevenção, autocuidado e combate ao estigma
+                                relacionado às ISTs (Brasil, 2017b).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                A prevenção da hanseníase e das ISTs exige uma abordagem interdisciplinar e intersetorial que envolva
+                profissionais de
+                saúde, segurança, educação e assistência social, visando não apenas ao controle das doenças, mas à
+                promoção da dignidade
+                e do cuidado no sistema prisional (Figura 4).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 4 - Abordagem intersetorial e interdisciplinar para promoção do cuidado
+            </h3>
+            <div>
+                <img src="./images/figura4.png"
+                    alt="Abordagem intersetorial e interdisciplinar para promoção do cuidado">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais3" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b> <i>1º Caderno de Educação em Saúde no Contexto Prisional: Quebrando
+                                Barreiras no Combate à Tuberculose e Hepatite C</i>
+                        </p>
+                        <p>
+                            <b>Autor: </b>Milena Mantelli Dall' Soto e Lia Gonçalves Possuelo (org.) (2024).
+                        <p>
+                            <b>Descrição: </b>
+                            o caderno oferece conteúdos educativos, atividades práticas e orientações para profissionais
+                            de saúde, segurança e
+                            educação que atuam com a população privada de liberdade. Seu objetivo é fortalecer ações
+                            intersetoriais e promover o
+                            cuidado em saúde de forma humanizada e eficaz.
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="link"
+                                href="https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf"
+                                target="_blank">https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais3')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.1.4 Doenças diarreicas e infecções dermatológicas
+            </h3>
+            <p>
+                As condições estruturais do sistema prisional facilitam a disseminação de doenças diarreicas e as
+                infecções
+                dermatológicas. Problemas como água contaminada, ventilação precária e falta de higiene favorecem surtos
+                de:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo8" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item81" onclick="animacao.toggleAccordion('item81', 'grupo8')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Diarreias infecciosas</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Causadas por agentes como rotavírus e Escherichia coli (Evans Junior; Evans, 1996);
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item82" onclick="animacao.toggleAccordion('item82', 'grupo8')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Escabiose e impetigo</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Se espalham rapidamente pelo contato pele a pele. Não tomar banho diariamente e lavar
+                                roupas menos de uma vez por semana
+                                são comportamentos que já foram identificados como fatores associados à ocorrência de
+                                escabiose em pessoas presas
+                                (Kouotou et al., 2016).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.2 Doenças não transmissíveis
+            </h3>
+            <p>
+                O sistema prisional também enfrenta desafios para fazer o controle de doenças crônicas e agravos
+                metabólicos, que muitas
+                vezes passam despercebidos. Há fatores ambientais que aumentam os riscos dessas condições na população
+                privada de
+                liberdade. Um estudo realizado em uma instituição penal no interior paulista encontrou prevalência de
+                24,8% de
+                hipertensão arterial, 54,5% de dislipidemia, 49,9% de excesso de peso, 16,8% de síndrome metabólica e
+                2,5% de diabetes
+                (Serra et al., 2022).
+            </p>
+            <p>
+                A superlotação, a alimentação inadequada, o sedentarismo e o estresse contínuo são elementos que
+                favorecem o surgimento
+                e a piora de doenças como hipertensão, diabetes, dislipidemia e síndrome metabólica, que aumentam o
+                risco cardiovascular
+                (Brasil, 2008). Vamos analisar como essas condições afetam a população privada de liberdade e quais
+                estratégias podem
+                ser adotadas para preveni-las e controlá-las de forma eficaz.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.2.1 Dislipidemia
+            </h3>
+            <p>
+                A dislipidemia se caracteriza por níveis elevados de colesterol total, LDL (colesterol ruim) e
+                triglicerídeos, além da
+                redução do HDL (colesterol bom). No contexto prisional, sua prevalência é elevada devido à (Figura 5):
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo9" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item91" onclick="animacao.toggleAccordion('item91', 'grupo9')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Alimentação baseada em produtos ultraprocessados</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Ricos em gorduras trans e saturadas;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item92" onclick="animacao.toggleAccordion('item92', 'grupo9')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Falta de acesso a exames periódicos</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Dificultando o diagnóstico precoce (Serra et al., 2022);
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item93" onclick="animacao.toggleAccordion('item93', 'grupo9')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Rotina restritiva</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Somada à limitação de acesso a áreas externas e a programas de lazer e esporte, o que
+                                contribui para o <b>sedentarismo</b>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 5 - Fatores de risco para dislipidemia
+            </h3>
+            <div>
+                <img src="./images/infografico4.png" alt="Fatores de risco para dislipidemia">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <p>
+                O acompanhamento regular e a implementação de ações nutricionais que visem reduzir o consumo de gorduras
+                nocivas são
+                fundamentais para a prevenção e controle da dislipidemia.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.2.2 Hipovitaminose (deficiência de vitaminas)
+            </h3>
+            <p>
+                A baixa exposição ao sol e a alimentação limitada em nutrientes geralmente levam a carências vitamínicas
+                nas
+                instituições penais, principalmente:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo10" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item101" onclick="animacao.toggleAccordion('item101', 'grupo10')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Hipovitaminose</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Altamente prevalente entre as PPL, especialmente em contextos de longa permanência e com
+                                baixa exposição à luz solar,
+                                fatores agravados pela arquitetura das instituições e pela rotina prisional restrita
+                                (Figura 6). Essa deficiência está
+                                associada ao aumento do risco de osteoporose, doenças cardiovasculares e desregulação
+                                imunológica. Diante disso, é
+                                fundamental destacar a importância da exposição diária ao sol como estratégia simples e
+                                de baixo custo para prevenção e
+                                tratamento da hipovitaminose. Medidas como a promoção de banhos de sol regulares e
+                                organizados, respeitando as condições
+                                de segurança, devem ser incorporadas à rotina prisional. Ressalta-se que a suplementação
+                                de vitamina D e de cálcio sem a
+                                adequada exposição solar tem eficácia limitada e acarreta custos adicionais para o
+                                sistema de saúde;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item102" onclick="animacao.toggleAccordion('item102', 'grupo10')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Deficiência de vitamina C</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Favorecendo o surgimento de escorbuto e a redução da imunidade;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item103" onclick="animacao.toggleAccordion('item103', 'grupo10')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Falta de vitamina B12</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Pode causar anemia megaloblástica e neuropatias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 6 - Fatores de risco para hipovitaminoses
+            </h3>
+            <div>
+                <img class="block mx-auto" src="./images/Imagem2.jpg" alt="Fatores de risco para hipovitaminoses">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <p>
+                A suplementação direcionada, aliada ao enriquecimento da dieta por meio de uma oferta nutricional
+                adequada, assegura
+                refeições balanceadas que promovem a saúde integral e contribuem para a prevenção de agravos entre as
+                pessoas privadas
+                de liberdade (Brasil, 2007).
+            </p>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais4" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b> <i>Peva também terá 'marmitas' individualizadas para os presos</i>
+                        </p>
+                        <p>
+                            <b>Autor: </b>Álvaro Pegoraro (2020).
+                        <p>
+                            <b>Descrição: </b>
+                            o uso de marmitas individuais nas instituições penais é uma boa forma de garantir que todas
+                            as pessoas presas tenham
+                            acesso igualitário a todos os alimentos.
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="link"
+                                href="https://folhadomate.com/noticias/policia/peva-tambem-tera-marmitas-individualizada-para-os-presos/"
+                                target="_blank">https://folhadomate.com/noticias/policia/peva-tambem-tera-marmitas-individualizada-para-os-presos/</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais4')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.2.3 Diabetes mellitus
+            </h3>
+            <p>
+                A diabetes tipo 2 tem se tornado mais prevalente na população privada de liberdade devido a fatores como
+                (Figura 7):
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo11" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item111" onclick="animacao.toggleAccordion('item111', 'grupo11')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Consumo excessivo de carboidratos refinados</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Como pães brancos e doces fornecidos nas refeições prisionais;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item112" onclick="animacao.toggleAccordion('item112', 'grupo11')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Baixa oferta de alimentos ricos em fibras</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Essenciais para o controle glicêmico;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item113" onclick="animacao.toggleAccordion('item113', 'grupo11')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Falta de acesso a exames de glicemia e hemoglobina
+                                glicada</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Dificulta o diagnóstico precoce;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item114" onclick="animacao.toggleAccordion('item114', 'grupo11')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Estresse crônico e privação de sono</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Desregulam a resistência à insulina.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 7 - Fatores de risco para diabetes <i>mellitus</i>
+            </h3>
+            <div>
+                <img src="./images/infografico5.png" alt="Fatores de risco para diabetes mellitus">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.2.4 Hipertensão arterial sistêmica
+            </h3>
+            <p>
+                A hipertensão arterial sistêmica é um dos agravos mais comuns na população privada de liberdade, sendo
+                influenciada por:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo12" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item121" onclick="animacao.toggleAccordion('item121', 'grupo12')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Consumo elevado de sal</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                É utilizado em excesso nos alimentos fornecidos nas instituições penais;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item122" onclick="animacao.toggleAccordion('item122', 'grupo12')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Sedentarismo</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                E a ausência de espaços adequados para exercícios físicos;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item123" onclick="animacao.toggleAccordion('item123', 'grupo12')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Estresse e privação de sono</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Elevam os níveis de cortisol e a pressão arterial (Dias et al., 2019).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                A triagem regular da pressão arterial e a redução do sal nos alimentos fornecidos nas instituições
+                penais são medidas
+                essenciais para prevenir complicações graves, como acidente vascular cerebral (AVC) e infarto.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.2.5 Excesso de peso e obesidade
+            </h3>
+            <p>
+                O ambiente prisional pode favorecer o ganho excessivo de peso devido a alguns fatores (Figura 8):
+            </p>
+            <ul class="list-disc pl-5">
+                <li>
+                    <b>Alimentação hipercalórica e pobre em proteínas magras e fibras</b>, promovendo acúmulo de gordura
+                    corporal;
+                </li>
+                <li>
+                    <b>Redução extrema da mobilidade e aumento do sedentarismo;</b>
+                </li>
+                <li>
+                    <b>Psicológicos, como ansiedade e depressão</b>, que podem levar à compulsão alimentar (Fusco et
+                    al., 2020).
+                </li>
+            </ul>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 8 - Fatores associados ao excesso de peso e obesidade no sistema prisional
+            </h3>
+            <div>
+                <img src="./images/infografico6.jpg"
+                    alt="Fatores associados ao excesso de peso e obesidade no sistema prisional">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais5')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais5" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b> <i>Panorama Nacional de Alimentação e Acesso à Água no Sistema Prisional</i>
+                        </p>
+                        <p>
+                            <b>Autor: </b>Juciane Prado Lourenço da Silva e Hellen Karine da Cunha Carreiro (2024).
+                        <p>
+                            <b>Descrição: </b>
+                            o relatório apresenta um diagnóstico abrangente sobre as condições de alimentação e acesso à
+                            água nas instituições
+                            penais brasileiras. A pesquisa abrangeu 80% das 1.384 instituições penais estaduais,
+                            representando 90,32% da população
+                            privada de liberdade nacional.
+                        </p>
+                        <p>
+                            <b>Acesse:</b>
+                            <a class="link"
+                                href="https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf"
+                                target="_blank">https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais5')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.2.2.6 Síndrome metabólica
+            </h3>
+            <p>
+                A síndrome metabólica é caracterizada pela presença de três ou mais dos seguintes fatores (Figura 9):
+            </p>
+            <ul class="list-disc pl-5">
+                <li>
+                    <b>Obesidade abdominal</b> (circunferência da cintura aumentada);
+                </li>
+                <li>
+                    <b>Hipertensão arterial;</b>
+                </li>
+                <li>
+                    <b>Glicemia elevada</b> (pré-diabetes ou diabetes);
+                </li>
+                <li>
+                    <b>Dislipidemia</b> (níveis elevados de triglicerídeos e/ou colesterol ruim).
+                </li>
+            </ul>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo13" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item131" onclick="animacao.toggleAccordion('item131', 'grupo13')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Reformulação das diretrizes nutricionais para a
+                                população privada de liberdade</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Garantir uma alimentação equilibrada e com menor índice glicêmico;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item132" onclick="animacao.toggleAccordion('item132', 'grupo13')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Promoção de práticas esportivas</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Adaptadas ao ambiente prisional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                A implementação dessas ações pode reduzir significativamente a incidência de agravos não infecciosos nas
+                instituições
+                penais e melhorar a qualidade de vida das PPL.
+            </p>
+            <p>
+                Essas condições não só afetam a saúde individual das PPL, mas também sobrecarregam os serviços de saúde
+                e aumentam a
+                reincidência de hospitalizações.
+            </p>
+            <p>
+                Aqui, precisamos questionar: o que pode ser feito para melhorar a qualidade de vida dessas pessoas e
+                reduzir as
+                consequências dessas doenças?
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.3 Vacinação no sistema prisional: proteção e direito à saúde
+            </h3>
+            <p>
+                A vacinação é uma das estratégias mais eficazes para prevenir doenças transmissíveis, especialmente em
+                ambientes de alta
+                vulnerabilidade como o sistema prisional. A implementação de um calendário vacinal completo para a PPL e
+                para os
+                trabalhadores das instituições penais é essencial para a promoção da saúde coletiva e para o controle de
+                surtos (Brasil,
+                2012) (Figura 10).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 9 - Fatores associados ao desenvolvimento da síndrome metabólica
+            </h3>
+            <div>
+                <img src="./images/infograficao7.jpg"
+                    alt="Fatores associados ao desenvolvimento da síndrome metabólica">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+            <p>
+                A falta de acompanhamento contínuo e a escassez de medidas preventivas tornam a síndrome metabólica um
+                problema grave
+                nas instituições penais. Entre as estratégias mais eficazes para seu controle estão:
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 10 - Calendário vacinal do adulto no sistema prisional
+            </h3>
+            <div>
+                <img src="./images/infografico8.jpg" alt="Calendário vacinal do adulto no sistema prisional">
+                <small>Fonte: Brasil (2012).</small>
+                <hr>
+            </div>
+            <p><b>
+                    Por que isso é importante?
+                </b></p>
+            <p>
+                As PPL têm maior risco de adoecimento devido a condições como superlotação, ventilação inadequada e
+                acesso limitado
+                aos
+                serviços de saúde. A vacinação, portanto, não é apenas uma medida preventiva, mas um direito garantido e
+                um
+                compromisso
+                com a saúde pública.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.4 Acesso a redes de atenção especializada e de urgência/emergência
+            </h3>
+            <p>
+                O acesso da população privada de liberdade aos serviços de saúde especializados e de urgência/emergência
+                é um desafio
+                estrutural no Brasil e em diversos países. Embora a Política Nacional de Atenção Integral à Saúde das
+                Pessoas Privadas
+                de Liberdade no Sistema Prisional (PNAISP) integre o sistema prisional ao Sistema Único de Saúde (SUS),
+                persistem
+                barreiras que limitam a efetividade desse atendimento (Brasil, 2014).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.4.1 Articulação entre estabelecimentos penais e o Sistema Único de Saúde
+            </h3>
+            <p>
+                A PNAISP estabelece que as Unidades Básicas de Saúde Prisional (UBSP) devem estar vinculadas às redes
+                municipais e
+                estaduais do SUS, garantindo a continuidade do cuidado para além dos serviços básicos. Essa articulação
+                envolve:
+            </p>
+            <ul class="list-disc pl-5">
+                <li>
+                    <b>Encaminhamento para serviços de média e alta complexidade</b>, como consultas especializadas,
+                    exames laboratoriais e procedimentos cirúrgicos;
+                </li>
+                <li>
+                    <b>Integração com unidades de pronto atendimento (UPAs) e hospitais de referência</b>, especialmente
+                    para tratar agravos como infarto, AVC e complicações infecciosas;
+                </li>
+                <li>
+                    <b>Acompanhamento de condições crônicas</b>, como câncer, insuficiência renal e transtornos
+                    psiquiátricos (Brasil, 2021b).
+                </li>
+                <li>
+                    Entretanto, a falta de protocolos bem definidos para a transferência e acompanhamento das PPL no SUS
+                    ainda compromete a
+                    resolutividade dos casos.
+                </li>
+            </ul>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1.4.2 Barreiras no acesso à atenção hospitalar e especializada
+            </h3>
+            <p>
+                As principais dificuldades enfrentadas pela população privada de liberdade para acessar a rede
+                hospitalar e
+                especializada incluem:
+            </p>
+            <div>
+                <p class="text-center pb-3">
+                    <small>Clique para interagir</small>
+                </p>
+                <div id="grupo14" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item141" onclick="animacao.toggleAccordion('item141', 'grupo14')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Falta de escolta para transporte das PPL</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Devido ao déficit de agentes de segurança;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item142" onclick="animacao.toggleAccordion('item142', 'grupo14')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Restrições impostas por hospitais e unidades de
+                                saúde</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Que nem sempre estão preparados para atender a população privada de liberdade com
+                                segurança;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-b border-[var(--primary)]">
+                        <button id="item143" onclick="animacao.toggleAccordion('item143', 'grupo14')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Demora nos encaminhamentos</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                O que agrava doenças que necessitam de intervenção precoce (Figura 11);
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="item144" onclick="animacao.toggleAccordion('item144', 'grupo14')"
+                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                            <span class="font-bold text-xl px-5">Preconceito e discriminação</span>
+                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                            <p>
+                                Que geram a resistência de profissionais de saúde em atender a população privada de
+                                liberdade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 11 - Acesso aos serviços especializados pela pessoa privada de liberdade
+            </h3>
+            <div>
+                <img class="w-full block mx-auto max-w-[400px]" src="./images/infografico9.jpg"
+                    alt="Acesso aos serviços especializados pela pessoa privada de liberdade">
+                <small>Fonte: elaboração das autoras (2025).</small>
+                <hr>
+            </div>
+        </div>
+
+        <div id="encerramento" class="bg-gray-100 py-10">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    Encerramento da Unidade
+                </h2>
+                <p>
+                    Chegamos ao fim desta Unidade, mas o aprendizado continua! Ao longo deste percurso, refletimos
+                    sobre
+                    os principais
+                    desafios sanitários enfrentados no sistema prisional e analisamos como a vigilância em saúde, a
+                    prevenção e o cuidado
+                    integrado podem transformar realidades e proteger vidas.
+                    <br><br>
+                    Entendemos que a população privada de liberdade está exposta a condições que favorecem o
+                    surgimento
+                    tanto de doenças
+                    infecciosas quanto crônicas, exigindo ações intersetoriais, contínuas e humanizadas. Vimos
+                    também
+                    que profissionais que
+                    atuam nesse contexto, como você, têm papel estratégico na identificação precoce de agravos, na
+                    promoção de ambientes
+                    saudáveis e na garantia do direito à saúde.
+                    <br><br>
+                    Agora, deixamos um convite: como você pode aplicar os conhecimentos adquiridos para fortalecer a
+                    promoção da saúde em
+                    sua instituição? Que ações podem ser planejadas, em conjunto com sua equipe, para garantir mais
+                    acesso, mais cuidado e
+                    mais dignidade?
+                    <br><br>
+                    A vigilância, a assistência e a prevenção só se tornam reais quando colocadas em prática.
+                    Contamos
+                    com você para
+                    continuar construindo um sistema prisional mais justo, saudável e comprometido com a vida.
+                    <br><br>
+                    “Ninguém conhece verdadeiramente uma nação até ver como ela trata seus prisioneiros.”
+                    <br><i>(Nelson
+                        Mandela)</i>
+                </p>
+            </div>
+        </div>
+
+        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências importantes
+            </h2>
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública. Pessoas privadas de liberdade. <b>ObservaDH -
+                    Observatório Nacional de
+                    Direitos Humanos</b>, 2024a. Disponível em:
+                <a class="underline link"
+                    href="https://experience.arcgis.com/experience/54febd2948d54d68a1a462581f89d920/page/Pessoas-Privadas-de-Liberdade"
+                    target="_blank" rel="noopener noreferrer">
+                    https://experience.arcgis.com/experience/54febd2948d54d68a1a462581f89d920/page/Pessoas-Privadas-de-Liberdade
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das
+                Doenças
+                Transmissíveis.
+                <b>Manual de Recomendações para o controle da tuberculose no Brasil</b>. 2. ed. Brasília: Ministério
+                da
+                Saúde,
+                2019a.
+                Disponível em:
+                <a class="underline link"
+                    href="https://d1xe7tfg0uwul9.cloudfront.net/sbpt-portal/wp-content/uploads/2019/06/manual_recomendacoes_tb_2ed_atualizada_8maio19.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://d1xe7tfg0uwul9.cloudfront.net/sbpt-portal/wp-content/uploads/2019/06/manual_recomendacoes_tb_2ed_atualizada_8maio19.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância,
+                Prevenção e
+                Controle das
+                Infecções Sexualmente Transmissíveis, do HIV/Aids e das Hepatites Virais. <b>Prevenção combinada do
+                    HIV</b>: bases conceituais
+                para profissionais, trabalhadores(as) e gestores(as) de saúde. Brasília: Ministério da Saúde, 2017b.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2017/prevencao_combinada_-_bases_conceituais_web.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2017/prevencao_combinada_-_bases_conceituais_web.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                DALL' SOTO, M. M.; POSSUELO, L. G. <b>1º Caderno de Educação em Saúde no contexto prisional</b>:
+                quebrando barreiras no combate
+                à tuberculose e hepatite C. São Carlos: Pedro & João Editores, 2024. Disponível em:
+                <a class="underline link"
+                    href="https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+        </div>
+
+        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências
+            </h2>
+            <p>
+                BRASIL. Ministério da Saúde. <b>Populações em situação de vulnerabilidade</b>. c2025a. Disponível
+                em:
+                <a class="underline link"
+                    href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/situacao-de-vulnerabilidade"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/situacao-de-vulnerabilidade
+                </a>
+                . Acesso em: 25 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. <b>Protocolo Clínico e Diretrizes Terapêuticas para Profilaxia
+                    Pré-Exposição
+                    (PrEP) Oral à
+                    Infecção pelo HIV</b>. Brasília: Ministério da Saúde, 2025b. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/protocolo-clinico-e-diretrizes-terapeuticas-para-profilaxia-pre-exposicao-prep-oral-a-infeccao-pelo-hiv.pdf/view"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/protocolo-clinico-e-diretrizes-terapeuticas-para-profilaxia-pre-exposicao-prep-oral-a-infeccao-pelo-hiv.pdf/view
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública. Pessoas privadas de liberdade. <b>ObservaDH -
+                    Observatório Nacional de
+                    Direitos Humanos</b>, 2024a. Disponível em:
+                <a class="underline link"
+                    href="https://experience.arcgis.com/experience/54febd2948d54d68a1a462581f89d920/page/Pessoas-Privadas-de-Liberdade"
+                    target="_blank" rel="noopener noreferrer">
+                    https://experience.arcgis.com/experience/54febd2948d54d68a1a462581f89d920/page/Pessoas-Privadas-de-Liberdade
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento de
+                Articulação
+                Estratégica de
+                Vigilância em Saúde e Ambiente. <b>Guia de vigilância em saúde</b>. 6. ed. Brasília: Ministério da
+                Saúde,
+                2024b. v. 1.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública. <b>Saúde e qualidade de vida dos trabalhadores do
+                    sistema prisional</b>:
+                revisão integrativa da literatura. Rio de Janeiro: Ministério da Justiça e Segurança Pública, 2024c.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf
+                </a>
+                . Acesso em: 18 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública. <b>Saúde e qualidade de vida dos trabalhadores do
+                    sistema prisional</b>:
+                revisão integrativa da literatura. Brasília, 2024d. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Ciência, Tecnologia, Inovação e Complexo da Saúde.
+                Secretaria
+                de Vigilância
+                em Saúde e Ambiente. <b>Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV
+                    em
+                    Adultos</b>. Módulo I -
+                Tratamento. Brasília: Ministério da Saúde, 2024e. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/pcdt_hiv_modulo_1_2024.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/pcdt_hiv_modulo_1_2024.pdf
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Imunizações e
+                Doenças
+                Transmissíveis.
+                <b>Vigilância epidemiológica das doenças de transmissão hídrica e alimentar</b>: manual de
+                treinamento.
+                Brasília: Ministério da
+                Saúde, 2021a. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-transmitidas-por-alimentos-dta/manual_dtha_2021_web.pdf/view"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-transmitidas-por-alimentos-dta/manual_dtha_2021_web.pdf/view
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. <b>Plano de Ações Estratégicas para o Enfrentamento das Doenças
+                    Crônicas e
+                    Agravos Não
+                    Transmissíveis no Brasil 2021-2030</b>. Brasília: Ministério da Saúde, 2021. Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/09-plano-de-dant-2022_2030.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/09-plano-de-dant-2022_2030.pdf
+                </a>
+                . Acesso em: 17 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das
+                Doenças
+                Transmissíveis.
+                <b>Manual de Recomendações para o controle da tuberculose no Brasil</b>. 2. ed. Brasília: Ministério
+                da
+                Saúde,
+                2019a.
+                Disponível em:
+                <a class="underline link"
+                    href="https://d1xe7tfg0uwul9.cloudfront.net/sbpt-portal/wp-content/uploads/2019/06/manual_recomendacoes_tb_2ed_atualizada_8maio19.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://d1xe7tfg0uwul9.cloudfront.net/sbpt-portal/wp-content/uploads/2019/06/manual_recomendacoes_tb_2ed_atualizada_8maio19.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública. Secretaria Nacional de Políticas Penais.
+                <b>Relatório
+                    de
+                    informações
+                    penitenciárias Jul-Dez/2019</b>. Brasília: Ministério da Justiça e Segurança Pública, 2019b.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relatorios-analiticos/br/brasil-dez-2019.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relatorios-analiticos/br/brasil-dez-2019.pdf
+                </a>
+                . Acesso em: 17 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. <b>Cinco passos para a prevenção combinada ao HIV na Atenção
+                    Básica</b>.
+                Brasília:
+                Ministério da
+                Saúde, 2017a. Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/cinco_passos_revencao_combinada_hiv_atencao_basica.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/cinco_passos_revencao_combinada_hiv_atencao_basica.pdf
+                </a>
+                . Acesso em: 18 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância,
+                Prevenção e
+                Controle das
+                Infecções Sexualmente Transmissíveis, do HIV/Aids e das Hepatites Virais. <b>Prevenção combinada do
+                    HIV</b>:
+                bases conceituais
+                para profissionais, trabalhadores(as) e gestores(as) de saúde. Brasília: Ministério da Saúde, 2017b.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2017/prevencao_combinada_-_bases_conceituais_web.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2017/prevencao_combinada_-_bases_conceituais_web.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das
+                Doenças
+                Transmissíveis.
+                <b>Manual de vigilância, prevenção e controle de zoonoses: normas técnicas e operacionais</b>.
+                Brasília:
+                Ministério da Saúde,
+                2016. Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_vigilancia_prevencao_controle_zoonoses.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/manual_vigilancia_prevencao_controle_zoonoses.pdf
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº
+                1,
+                de 2 de janeiro
+                de 2014. Institui a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade
+                no
+                Sistema Prisional
+                (PNAISP) no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 3
+                jan.
+                2014.
+                Disponível em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html" target="_blank"
+                    rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
+                </a>
+                . Acesso em: 18 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. SI-PNI. <b>Calendário de Vacinação do Adulto e do Idoso</b>. Brasília:
+                Ministério
+                da Saúde, c2012.
+                Disponível em:
+                <a class="underline link"
+                    href="https://sipni.datasus.gov.br/si-pni-web/faces/estatico/calendarioVacinacao/adultoIdoso.jsf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://sipni.datasus.gov.br/si-pni-web/faces/estatico/calendarioVacinacao/adultoIdoso.jsf
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância à Saúde. <b>Diretrizes e recomendações para o
+                    cuidado
+                    integral de
+                    doenças crônicas não-transmissíveis</b>: promoção da saúde, vigilância, prevenção e assistência.
+                Brasília:
+                Ministério da
+                Saúde, 2008. Disponível em:
+                <a class="underline link"
+                    href="http://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_recomendacoes_cuidado_doencas_cronicas.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    http://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_recomendacoes_cuidado_doencas_cronicas.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica.
+                <b>Carências
+                    de
+                    micronutrientes</b>. Brasília: Ministério da Saúde, 2007. (Cadernos de Atenção Básica; n. 20).
+                Disponível
+                em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_carencias_micronutrientes.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_carencias_micronutrientes.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Ações Programáticas
+                Estratégicas. <b>Plano
+                    Nacional de Saúde no Sistema Prisional</b>. 2. ed. Brasília: Ministério da Saúde, 2005.
+                Disponível
+                em:
+                <a class="underline link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf
+                </a>
+                . Acesso em: 17 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Políticas de Saúde. Departamento de Atenção Básica.
+                <b>Guia
+                    para
+                    o Controle da
+                    Hanseníase</b>. Brasília: Ministério da Saúde, 2002. (Série A. Normas e Manuais Técnicos; n.
+                111).
+                Disponível em:
+                <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_de_hanseniase.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/guia_de_hanseniase.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Políticas de Saúde. Departamento de Atenção Básica.
+                <b>Controle
+                    da hanseníase na
+                    atenção básica</b>: guia prático para profissionais da equipe de saúde da família. Brasília:
+                Ministério da
+                Saúde, 2001.
+                (Série A. Normas e Manuais Técnicos; n. 111). Disponível em:
+                <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/hanseniase_atencao.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/hanseniase_atencao.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                CARVALHO, S. G.; SANTOS, A. B. S.; SANTOS, I. M. A pandemia no cárcere: intervenções no
+                superisolamento.
+                <b>Ciência & Saúde
+                    Coletiva</b>, v. 25, n. 9, p. 3493-3502, 2020. Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/csc/a/GCbXVPLqVYQ7Kxz7SsVCjVS/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/csc/a/GCbXVPLqVYQ7Kxz7SsVCjVS/?lang=pt
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                CONSELHO NACIONAL DE JUSTIÇA. <b>Letalidade prisional</b>: uma questão de justiça e de saúde
+                pública. 5.
+                ed.
+                Brasília: CNJ,
+                2023. Disponível em:
+                <a class="underline link"
+                    href="https://www.cnj.jus.br/wp-content/uploads/2023/05/sumario-executivo-letalidade-prisional-12-05-23-v2.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.cnj.jus.br/wp-content/uploads/2023/05/sumario-executivo-letalidade-prisional-12-05-23-v2.pdf
+                </a>
+                . Acesso em: 18 set. 2025.
+            </p>
+            <p>
+                DALL' SOTO, M. M.; POSSUELO, L. G. <b>1º Caderno de Educação em Saúde no contexto prisional</b>:
+                quebrando
+                barreiras no combate
+                à tuberculose e hepatite C. São Carlos: Pedro & João Editores, 2024. Disponível em:
+                <a class="underline link"
+                    href="https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                DIAS, E. G. et al. Hipertensão Arterial Sistêmica e o Hormônio Cortisol: uma revisão integrativa
+                sobre
+                as associações e
+                os métodos de análises clínicas. <b>Revista de Epidemiologia e Controle de Infecção</b>, v. 9, n. 1,
+                2019.
+                Disponível em:
+                <a class="underline link" href="https://online.unisc.br/seer/index.php/epidemiologia/article/view/12275"
+                    target="_blank" rel="noopener noreferrer">
+                    https://online.unisc.br/seer/index.php/epidemiologia/article/view/12275
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                ELY, K. Z. et al. A Educação Permanente em Saúde e os atores do sistema prisional no cenário
+                pandêmico.
+                <b>Trabalho,
+                    Educação e Saúde</b>, v. 21, e01224207, 2023. Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                EVANS JUNIOR, D. J.; EVANS, D. G. Escherichia coli in Diarrheal Disease. In: BARON, S. (ed.).
+                <b>Medical
+                    Microbiology</b>. 4.
+                ed. Galveston: University of Texas Medical Branch at Galveston, 1996. cap. 25. Disponível em:
+                <a class="underline link" href="https://www.ncbi.nlm.nih.gov/books/NBK7710/" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.ncbi.nlm.nih.gov/books/NBK7710/
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                EVERS, T. J. et al. Well-being interventions for correctional officers in a prison setting: a review
+                and
+                meta-analysis.
+                <b>Criminal Justice and Behavior</b>, v. 47, n. 1, p. 3-21, 2019. Disponível em:
+                <a class="underline link" href="https://journals.sagepub.com/doi/10.1177/0093854819869975"
+                    target="_blank" rel="noopener noreferrer">
+                    https://journals.sagepub.com/doi/10.1177/0093854819869975
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                FUSCO, S. F. B. et al. Ansiedade, qualidade do sono e compulsão alimentar em adultos com sobrepeso
+                ou
+                obesidade. <b>Revista
+                    da Escola de Enfermagem da USP</b>, v. 54, 2020. Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/reeusp/a/VbCfRCz8XWkBF7bTnXhS44G#"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/reeusp/a/VbCfRCz8XWkBF7bTnXhS44G#
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                INGLEZ-DIAS, A. et al. Políticas de redução de danos no Brasil. <b>Ciência & Saúde Coletiva</b>, v.
+                19,
+                n. 1,
+                p. 147-158, 2014.
+                Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/csc/a/6pVn96fF4WHzTkktfZTVWfC/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/csc/a/6pVn96fF4WHzTkktfZTVWfC/?lang=pt
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                KOUOTOU, E. A. et al. Prevalence, Drivers and Clinical Features of Human Scabies at the Mfou
+                Principal
+                Prison, Centre
+                Region of Cameroon. <b>Journal of Clinical & Experimental Dermatology Research</b>, v. 7, n. 3,
+                2016.
+                Disponível em:
+                <a class="underline link"
+                    href="https://www.longdom.org/open-access/prevalence-drivers-and-clinical-features-of-human-scabies-at-the-mfou-principal-prison-centre-region-of-cameroon-14031.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.longdom.org/open-access/prevalence-drivers-and-clinical-features-of-human-scabies-at-the-mfou-principal-prison-centre-region-of-cameroon-14031.html
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                LAROUZÉ, B.; SÁNCHEZ, A.; DIUANA, V. Tuberculosis behind bars in developing countries: a hidden
+                shame to
+                public health.
+                <b>Transactions of the Royal Society of Tropical Medicine and Hygiene</b>, v. 102, n. 9, p. 841-842,
+                2008. DOI:
+                10.1016/j.trstmh.2008.04.020.
+            </p>
+            <p>
+                LUCINDO, A. et al. Prática de atividade física no sistema prisional como alternativa didática e de
+                qualidade de vida.
+                <b>Revista de Estudos Interdisciplinares</b>, v. 5, n. 7, p. 233-247, 2024. Disponível em:
+                <a class="underline link"
+                    href="https://revistas.ceeinter.com.br/revistadeestudosinterdisciplinar/article/view/999"
+                    target="_blank" rel="noopener noreferrer">
+                    https://revistas.ceeinter.com.br/revistadeestudosinterdisciplinar/article/view/999
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                MIN, J. et al. Scanned: The global investments in computer-aided detection and ultraportable X-ray
+                for
+                tuberculosis.
+                <b>PLOS Global Public Health</b>, v. 5, n. 3, e0004232, 2025. Disponível em:
+                <a class="underline link"
+                    href="https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0004232"
+                    target="_blank" rel="noopener noreferrer">
+                    https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0004232
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                NOGUEIRA, P. A.; ABRAHÃO, R. M. C. M.; GALESI, V. M. N. Infecção tuberculosa latente em
+                profissionais
+                contatos e não
+                contatos de detentos de duas penitenciárias do Estado de São Paulo, Brasil, 2008. <b>Revista
+                    Brasileira
+                    de
+                    Epidemiologia</b>,
+                v. 14, n. 3, p. 486-494, 2011. Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/rbepid/a/xSthsK5v6jsycZTCT4xvWWx/"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/rbepid/a/xSthsK5v6jsycZTCT4xvWWx/
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                ORGANIZACIÓN PANAMERICANA DE LA SALUD. <b>Lineamientos para la respuesta a la tuberculosis, el VIH,
+                    las
+                    ITS
+                    y a las
+                    hepatitis virales en personas privadas de libertad en América Latina y el Caribe</b>.
+                Washington,
+                D.C.:
+                OPAS, 2025.
+                Disponível em:
+                <a class="underline link"
+                    href="https://iris.paho.org/bitstream/handle/10665.2/65423/OPSCDEAFT250001_spa.pdf?sequence=5&isAllowed=y"
+                    target="_blank" rel="noopener noreferrer">
+                    https://iris.paho.org/bitstream/handle/10665.2/65423/OPSCDEAFT250001_spa.pdf?sequence=5&isAllowed=y
+                </a>
+                . Acesso em: 11 set. 2025.
+            </p>
+            <p>
+                PEGORARO, Á. Peva também terá 'marmitas' individualizadas para os presos. <b>Folha do Mate</b>, 9
+                jul.
+                2020.
+                Disponível em:
+                <a class="underline link"
+                    href="https://folhadomate.com/noticias/policia/peva-tambem-tera-marmitas-individualizada-para-os-presos/"
+                    target="_blank" rel="noopener noreferrer">
+                    https://folhadomate.com/noticias/policia/peva-tambem-tera-marmitas-individualizada-para-os-presos/
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                ROSA, F. et al. Prevalência de anti-HCV em uma população privada de liberdade. <b>Revista da
+                    Associação
+                    Médica Brasileira</b>,
+                v. 58, n. 5, p. 557-560, 2012. Disponível em:
+                <a class="underline link"
+                    href="https://www.scielo.br/j/ramb/a/YY5vfkbcv83yqgtgYg6VDWf/?format=html&lang=pt" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/ramb/a/YY5vfkbcv83yqgtgYg6VDWf/?format=html&lang=pt
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                SERRA, R. M. et al. Prevalência de doenças crônicas não transmissíveis no sistema prisional: um
+                desafio
+                para a saúde
+                pública. <b>Ciência & Saúde Coletiva</b>, v. 27, n. 12, p. 4475-4484, 2022. Disponível em:
+                <a class="underline link" href="https://www.scielo.br/j/csc/a/BqFTDBnq8xgNz9rqFttRDcN/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/csc/a/BqFTDBnq8xgNz9rqFttRDcN/?lang=pt
+                </a>
+                . Acesso em: 30 jul. 2025.
+            </p>
+            <p>
+                SILVA, J. P. L.; CARREIRO, H. K. C. <b>Panorama Nacional de Alimentação e Acesso à Água no Sistema
+                    Prisional</b>. Brasília:
+                Ministério da Justiça e Segurança Pública; Secretaria Nacional de Políticas Penais, 2024. Disponível
+                em:
+                <a class="underline link"
+                    href="https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+            <p>
+                UNITED NATIONS OFFICE ON DRUGS AND CRIME. <b>Global prison population and trends</b>: a focus on
+                rehabilitation. Viena: UNODC,
+                2024. Disponível em:
+                <a class="underline link"
+                    href="https://www.unodc.org/documents/data-and-analysis/briefs/Prison_brief_2024.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.unodc.org/documents/data-and-analysis/briefs/Prison_brief_2024.pdf
+                </a>
+                . Acesso em: 31 ago. 2025.
+            </p>
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+                <h1 class="text-3xl md:text-5xl font-bold">
+                    Minicurrículo dos Autores
+                </h1>
+                <div class="flex flex-wrap my-5">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/eduarda.jpg"
+                            alt="Eduarda Gassen Boeira" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Eduarda Gassen Boeira</small>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 px-0 md:px-5">
+                        <p>
+                            Eduarda Gassen Boeira. Biomédica pela Universidade de Santa Cruz do Sul (UNISC).
+                            Mestranda
+                            em Promoção da Saúde pelo
+                            Programa de Pós-Graduação em Promoção da Saúde da UNISC. Pós-graduada em "Saúde Pública"
+                            e
+                            "Epidemiologia e Vigilância
+                            em Saúde" pela Faculdade de Pós-Graduação Facuminas. Colaboradora no Núcleo de Pesquisa
+                            e
+                            Extensão com Foco no Sistema
+                            Prisional (NUPESISP) da UNISC. Membro da Diretoria do Conselho da Comunidade no âmbito
+                            da
+                            Execução Penal de Santa Cruz
+                            do Sul. Colaboradora do Projeto Elas 360, voltado a mulheres privadas de liberdade. Ao
+                            longo
+                            do último ano desenvolveu a
+                            pesquisa intitulada "Procura-C no Sistema Prisional do Rio Grande do Sul". Atualmente
+                            desenvolve seu projeto de mestrado
+                            intitulado "Implementação do Raio-X Digital Portátil com Interpretação por Inteligência
+                            Artificial na Rotina da Unidade
+                            de Saúde Prisional para Triagem de Mycobacterium tuberculosis".
+                            <br><br>
+                            Email: <a class="link" href="mail:eboeira@mx2.unisc.br" target="_blank"
+                                rel="noopener noreferrer">eboeira@mx2.unisc.br</a> <br>
+                            Lattes: <a class="link" href="http://lattes.cnpq.br/4221329924609182" target="_blank"
+                                rel="noopener noreferrer">http://lattes.cnpq.br/4221329924609182</a>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex flex-wrap my-5">
+                    <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
+                        <p>
+                            Lia Possuelo. Bióloga. Doutora em Ciências Biológicas, professora titular da
+                            Universidade de
+                            Santa Cruz do Sul, docente
+                            do corpo permanente do Programa de Pós-Graduação em Promoção da Saúde da UNISC.
+                            Coordenadora
+                            do Núcleo de pesquisa e
+                            extensão com foco no Sistema Prisional (NUPESISP) e da área de Tuberculose no Sistema
+                            Prisional da Rede Brasileira de
+                            Pesquisa em Tuberculose (REDE-TB), Membro do Comitê Estadual de Enfrentamento da
+                            Tuberculose/RS (CEETB/RS), do Comitê
+                            Técnico de Assessoramento da FAPERGS (2025-2027), do Conselho da Comunidade de Santa
+                            Cruz do
+                            Sul e do Conselho Municipal
+                            de Saúde de Santa Cruz do Sul.
+                            <br><br>
+                            Lattes: <a class="link" href="http://lattes.cnpq.br/9903194013924888" target="_blank"
+                                rel="noopener noreferrer">http://lattes.cnpq.br/9903194013924888</a>
+                        </p>
+                    </div>
+                    <div class="w-full md:w-1/3 order-1 md:order-2">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/lia.jpg"
+                            alt="Lia Possuelo" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Lia Possuelo</small>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex flex-wrap my-5">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/karine.jpg"
+                            alt="Karine Zenatti Ely" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Karine Zenatti Ely</small>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 px-0 md:px-5">
+                        <p>
+                            Karine Zenatti Ely. Enfermeira, servidora pública na Secretaria Estadual de Saúde do Rio
+                            Grande do Sul, Doutora em
+                            Promoção da Saúde, pesquisadora do Núcleo de Pesquisa e Extensão com Foco no Sistema
+                            Prisional (NUPESISP/UNISC).
+                            <br><br>
+                            Lattes: <a class="link" href="http://lattes.cnpq.br/9035441979308817" target="_blank"
+                                rel="noopener noreferrer">http://lattes.cnpq.br/9035441979308817</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
+        <div class="max-w-[1000px] mx-auto px-5">
+            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
+                    alt="Logo" />
+            </a>
+            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
+                disseminação e a utilização desta obra, em parte ou em sua
+                totalidade, nos Termos de uso do ARES. Deve ser citada a
+                fonte e é vedada sua utilização comercial. © 2025.
+                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
+                Sul.
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/tippy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+        personalizado.init();
+        document.addEventListener("click", function (e) {
+            const overlay = e.target.closest(".modal-overlay");
+
+            if (!overlay) return;
+
+            const content = overlay.querySelector(".modal-content");
+
+            if (!content.contains(e.target)) {
+                estrutura.closeModal(overlay.id)
+            }
+        });
+    </script>
+</body>
+
+</html>
