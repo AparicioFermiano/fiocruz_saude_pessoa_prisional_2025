@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Curso sobre SUS e Participação Social" name="keywords" />
+    <meta content="Aprenda sobre o Sistema Único de Saúde e Participação Social" name="description" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/tippy.min.css" />
+
+    <title>
+        Política Nacional de Atenção Integral à Saúde das Pessoas Privadas
+        de Liberdade no Sistema Prisional (PNAISP)
+    </title>
+</head>
+
+<body>
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="max-w-[1000px] mx-auto px-2 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-gray-800 max-w-[150px] overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full p-4 object-contain" alt="Logo" />
+            </a>
+
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5" onclick="estrutura.toggleSidebar()">
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+            </button>
+
+            <nav id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#2.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 02</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
+                        Referências
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu"
+                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
+                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências
+                            Importantes</a>
+                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências</a>
+                    </div>
+                </div>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modalInstrucao" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] md:max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Instruções para navegação
+                </h2>
+            </div>
+
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    Você pode ajustar a visualização do material de acordo
+                    com o nível de zoom do seu navegador, pressione:
+                </p>
+                <div class="text-center">
+                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCreditos" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
+                <img src="./images/regua-logos-prisional-800px.png"
+                    alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
+            </div>
+            <div class="modal-body md flex flex-col gap-5 text-center">
+                <p>
+                    <b>MINISTÉRIO DA SAÚDE</b>
+                    <br>
+                    Alexandre Rocha Santos Padilha - Ministro da
+                    Saúde
+                </p>
+                <p>
+                    <b>FUNDAÇÃO OSWALDO CRUZ - FIOCRUZ </b>
+                    <br>
+                    Mário Santos Moreira - Presidente
+                </p>
+                <p>
+                    <b>FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL -
+                        FIOCRUZ MS
+                    </b>
+                    Jislaine de Fátima Guilhermino - Coordenadora
+                </p>
+                <p>
+                    <b>COORDENAÇÃO DE EDUCAÇÃO DA FIOCRUZ MS </b>
+                    <br>
+                    Débora Dupas Gonçalves do Nascimento - Vice
+                    Coordenadora de Educação
+                </p>
+                <p>
+                    <b>SECRETARIA DE ATENÇÃO PRIMÁRIA À SAÚDE (SAPS)
+                    </b><br>
+                    Ana Luiza Ferreira Rodrigues Caldas -
+                    Secretária
+                </p>
+                <p>
+                    <b>DEPARTAMENTO DE ESTRATÉGIAS E POLÍTICAS DE
+                        SAÚDE COMUNITÁRIA
+                    </b><br>
+                    José Eudes Barroso Vieira - Direto
+                </p>
+                <p>
+                    <b>COORDENAÇÃO- GERAL DO ACESSO E EQUIDADE (CGAEQ)
+                    </b><br>
+                    Lilian Silva Gonçalves - Coordenadora
+                </p>
+                <p>
+                    <b>
+                        COORDENAÇÃO DA ATENÇÃO ÀS PESSOAS EM CONFLITO COM A LEI
+                    </b><br>
+                    Ethel Proença Braga - Coordenadora
+                </p>
+                <p>
+                    <b>
+                        FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                    </b>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo Grande - MS CEP 79081-746 Telefone: (67) 3346-7220
+                    E-mail:
+                    <a href="mailto:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a> Site: <a
+                        href="www.matogrossodosul.fiocruz.br" target="_blank"
+                        rel="noopener noreferrer">www.matogrossodosul.fiocruz.br</a>
+                </p>
+                <small>
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
+                    parte ou em sua
+                    totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
+                    © 2025. Ministério
+                    da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
+                </small>
+                <p>
+                    CAMPO GRANDE, MS - 2026
+                </p>
+                <p>
+                    <b>
+                        COORDENADORA GERAL
+                    </b><br>
+                    Sandra Maria do Valle Leone de Oliveira
+                </p>
+                <p>
+                    <b>
+                        COORDENADOR ACADÊMICO
+                    </b><br>
+                    Everton Ferreira Lemos
+                </p>
+                <p>
+                    <b>
+                        COORDENADORAS PEDAGÓGICAS
+                    </b><br>
+                    Ewângela Aparecida Pereira
+                    <br>
+                    Silvia Helena Mendonça de Moraes
+                </p>
+                <p>
+                    <b>
+                        APOIO DA COORDENAÇÃO
+                    </b><br>
+                    Antonio Luiz Dal Bello Gasparoto
+                </p>
+                <p>
+                    <b>
+                        AVALIAÇÃO EXTERNA
+                    </b><br>
+                    Águida Luana Veriato Schultz
+                    <br>
+                    Anna Karolline dos Anjos de Morais
+                    <br>
+                    Evellyn Waleska Silva dos Santos
+                    <br>
+                    Jorge Esteves Teixeira Junior
+                </p>
+                <p>
+                    <b>
+                        REVISÃO E NORMATIZAÇÃO
+                    </b><br>
+                    Davi Bagnatori Tavares
+                </p>
+                <p>
+                    <b>
+                        COORDENADOR DE PRODUÇÃO E DESIGNER INSTRUCIONAL
+                    </b><br>
+                    Marcos Paulo dos Santos de Souza
+                </p>
+                <p>
+                    <b>
+                        DESENVOLVEDOR AVA-MOODLE
+                    </b><br>
+                    Vinícius Vicente Soares
+                </p>
+                <p>
+                    <b>
+                        WEBDESIGNER E DESENVOLVEDOR
+                    </b><br>
+                    Aparício Fermiano dos Santos Junior
+                </p>
+                <p>
+                    <b>
+                        PROJETO GRÁFICO E DIAGRAMAÇÃO
+                    </b><br>
+                    André Julien de Sousa Morato
+                </p>
+                <p>
+                    <b>
+                        COORDENADORA TEMÁTICA
+                    </b><br>
+                    Mariana Trinidad Ribeiro da Costa Garcia Croda
+                </p>
+                <p>
+                    <b>
+                        AUTORES
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        Unidade 1
+                    </b><br>
+                    Renata Terumi Shiguematsu Yassuda
+                </p>
+                <p>
+                    <b>
+                        Unidade 2
+                    </b><br>
+                    Renata Terumi Shiguematsu Yassuda
+                </p>
+                <p>
+                    <b>
+                        Unidade 3
+                    </b><br>
+                    José Victor Bortolotto Bampi
+                </p>
+                <p>
+                    <b>
+                        Unidade 4
+                    </b><br>
+                    Renata Terumi Shiguematsu Yassuda
+                </p>
+                <p>
+                    <b>
+                        Unidade 5
+                    </b><br>
+                    Lucas Moura de Oliveira <br>
+                    Giovana Soares Buzinaro
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContatar" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Informações de contato
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-2">
+                <h3 class="font-bold">
+                    FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                </h3>
+                <p>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo
+                    Grande-MS - CEP 79081-746
+                </p>
+                <p>
+                    <b>Telefone:</b>
+                    (67) 3346-7220
+                </p>
+                <p>
+                    <b>E-mail:</b>
+                    <a class="link" href="mail:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a>
+                </p>
+                <p>
+                    <b>Site:</b>
+                    <a class="link" href="www.matogrossodosul.fiocruz.br">www.matogrossodosul.fiocruz.br</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex flex-col justify-between">
+        <div id="scrollTopBtn" class="hidden fixed bottom-10 right-10 z-99">
+            <div class="flex flex-col gap-3">
+                <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-address-book"></i>
+                </button>
+
+                <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-exclamation"></i>
+                </button>
+
+                <a href="#" id="btnTopo"
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div class="w-full bg-[var(--primary)] py-5">
+                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 block mt-3">
+                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
+                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
+                        PRISIONAL
+                    </span>
+                    <h1 class="text-xl md:text-2xl font-black mt-3">
+                        Módulo V - O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não
+                        Transmissíveis no Âmbito da PNAISP
+                    </h1>
+                    <p class="px-3 py-2 block">
+                        Unidade 2 - Cuidado na Saúde da Mulher
+                    </p>
+                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+                        <button onclick="estrutura.openModal('modalInstrucao')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            INSTRUÇÕES
+                        </button>
+                        <button onclick="estrutura.openModal('modalCreditos')"
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
+                            CRÉDITOS
+                        </button>
+                        <div class="w-full">
+                            <a href="#apresentacao"
+                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="apresentacao" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-5xl font-bold">
+                        Apresentação da Unidade
+                    </h1>
+                    <h3>Olá, estudante-trabalhador! Seja bem-vindo!</h3>
+                </div>
+                <p>
+                    Nesta Unidade, abordaremos os procedimentos em saúde voltados às mulheres privadas de liberdade com
+                    base na Política
+                    Nacional de Atenção Integral à Saúde da Mulher (PNAISM) (2011). Nosso objetivo com este estudo é
+                    fortalecer as ações
+                    referentes à saúde reprodutiva, pré-natal, parto, puerpério e aos principais agravos no sistema
+                    prisional feminino
+                    brasileiro por meio da melhoria das ações prestadas pelos profissionais da equipe de Atenção
+                    Primária Prisional (eAPP),
+                    incorporando a discussão sobre a Política Nacional de Atenção às Mulheres em Situação de Privação de
+                    Liberdade e
+                    Egressas do Sistema Prisional (PNAMPE).
+                </p>
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    Objetivos de Aprendizagem da Unidade
+                </h2>
+                <div class="flex flex-wrap items-stretch justify-center">
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                            <p class="text-center">
+                                Descrever formas de atendimento adequado às mulheres privadas de liberdade;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                            <p class="text-center">
+                                Conhecer o processo de encaminhamento da gestante privada de liberdade ao atendimento de
+                                urgência e emergência
+                                obstétrica de acordo com os fluxos da Rede de Atenção à Saúde;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                            <p class="text-center">
+                                Detectar meios acessíveis que possibilitem às mulheres privadas de liberdade regular a
+                                fecundidade com base no direito
+                                ao planejamento familiar;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">04</span>
+                            <p class="text-center">
+                                Identificar agravos e doenças mais prevalentes nas mulheres privadas de liberdade;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">05</span>
+                            <p class="text-center">
+                                Relacionar os protocolos terapêuticos nacionais para o cuidado da saúde nas doenças e
+                                agravos transmissíveis e não
+                                transmissíveis mais prevalentes;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">06</span>
+                            <p class="text-center">
+                                Conhecer procedimentos em saúde voltados às mulheres gestantes e lactantes e à criança
+                                durante a permanência dela no
+                                estabelecimento penal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 md:px-3">
+                    <p class="bg-gray-600 font-bold text-xl md:text-2xl p-5 rounded-md text-white">
+                        Carga Horária de Estudo: 5 horas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="2.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.1 Saúde da mulher privada de liberdade
+            </h2>
+            <p>
+                Considerando a intensificação do aprisionamento de mulheres no Brasil e os desafios do profissional de
+                saúde ao atuar no
+                sistema prisional, faremos um estudo sobre as doenças específicas do sexo feminino: vulvovaginites,
+                câncer de colo de
+                útero e câncer de mama, com uma abordagem voltada às mulheres que estão privadas de liberdade.
+            </p>
+            <p>
+                Vamos lá?
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.2 Vulvovaginites e vaginoses
+            </h2>
+            <p>
+                A vulvovaginite e a vaginose são as causas mais comuns de corrimento vaginal patológico. São afecções do
+                epitélio
+                estratificado da vulva e/ou vagina causadas por fungos, principalmente Candida albicans, bactérias
+                anaeróbicas, em
+                especial Gardnerella vaginalis, e o protozoário Trichomonas vaginalis (Brasil, 2022a). Essas afecções
+                podem causar
+                também estes sintomas: prurido vulvovaginal, alterações na cor e odor do corrimento e presença de
+                irritação local
+                (Brasil, 2022a).
+            </p>
+            <p>
+                Por serem casos de difícil diagnóstico e manejo, é comum que as mulheres privadas de liberdade procurem
+                a APS Prisional
+                (Atenção Primária à Saúde no Sistema Prisional) já em uso de medicamentos, muitas vezes automedicadas, o
+                que dificulta o
+                diagnóstico e a terapêutica adequada. Dessa forma, quando procuram o serviço de saúde, é importante que
+                sejam orientadas
+                sobre as diferenças entre as infecções do trato reprodutor e o corrimento fisiológico (Brasil, 2022a).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.2.1 Diagnóstico das vulvovaginites e vaginoses
+            </h3>
+            <p>
+                O diagnóstico das vulvovaginites e vaginoses é realizado por meio da anamnese, que é uma investigação
+                minuciosa da
+                história clínica da mulher. A anamnese avalia qual foi a data da última menstruação, como estão as
+                práticas de higiene
+                vaginal, quais medicamentos tópicos ou sistêmicos estão sendo usados, se foram utilizados potenciais
+                agentes irritantes
+                locais, comportamentos e práticas sexuais. Além disso, é importante realizar o exame ginecológico, no
+                qual se observam
+                as características do corrimento e se há ulcerações, edema e/ou eritema (Brasil, 2022a). Esse
+                procedimento é viável na
+                prática diária das Unidades Básicas de Saúde Prisional (UBSP) que têm eAPP e estrutura física adequada.
+            </p>
+            <div>
+                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
+                </button>
+            </div>
+            <div id="modalSaibaMais1" class="modal-overlay hidden">
+                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                    <div class="modal-header">
+                        <h2 class="font-bold text-3xl text-center">
+                            Saiba mais
+                        </h2>
+                    </div>
+                    <div class="modal-body md flex flex-col gap-4">
+                        <p>
+                            <b>Título: </b>Protocolo clínico e diretrizes terapêuticas para atenção integral às pessoas
+                            com infecções sexualmente transmissíveis
+                            (IST)
+                        </p>
+                        <p>
+                            <b>Autor: </b>Brasil (2022a).
+                        <p>
+                            <b>Descrição: </b>para você compreender melhor as infecções que causam corrimento vaginal,
+                            consulte o protocolo clínico.
+                        </p>
+                        <p>
+                            <b>acesse:</b>
+                            <a class="link"
+                                href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf"
+                                target="_blank">
+                                https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                            class="btn bg-[var(--primary)] text-black">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.3 Câncer de colo do útero
+            </h2>
+            <p>
+                Colo do útero é a parte localizada no final da vagina (Figura 1). Como está localizado entre os órgãos
+                sexuais externos
+                e internos, fica mais exposto ao risco de contrair doenças (Instituto Nacional de Câncer, 2022a).
+            </p>
+            <p>
+                O câncer de colo do útero, ou câncer cervical, tem como principais sintomas: sangramento vaginal,
+                corrimento e dor.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                Figura 1 - Sistema Reprodutor Feminino
+            </h3>
+            <div id="mapa" class="relative">
+                <small>(clique nos ícones de + para acessar o conteúdo)</small>
+                <img class="w-full h-full rounded-xl" src="./images/dor-dente.jpeg"
+                    alt="Refoma psiquiátrica e as raps ttrouxeram avançoes essenciais" loading="lazy" />
+                <button id="tooltip_1" class="botao-flutuante bg-blue-500! font-bold" style="top: 42%; left: 40%">
+                    +
+                </button>
+                <button id="tooltip_2" class="botao-flutuante bg-blue-500! font-bold" style="top: 50%; left: 42%">
+                    +
+                </button>
+                <button id="tooltip_3" class="botao-flutuante bg-blue-500! font-bold" style="bottom: 50%; right: 18%">
+                    +
+                </button>
+                <button id="tooltip_4" class="botao-flutuante bg-blue-500! font-bold" style="bottom: 34%; right: 5%">
+                    +
+                </button>
+                <small>Fonte: Santos (2024).</small>
+            </div>
+            <p>
+                O câncer de colo do útero é causado pela infecção genital persistente de alguns tipos oncogênicos do papilomavírus
+                humano (HPV), transmitido por via sexual, e é de alta prevalência na população (Instituto Nacional de Câncer, 2022a).
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold py-5">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                2.3.1 Fatores de risco para câncer de colo do útero
+            </h3>
+            <p>
+                Os fatores de risco conhecidos para o desenvolvimento do câncer de colo do útero são: início precoce da atividade
+                sexual, multiplicidade de parceiros, higiene inadequada, padrão alimentar, tabagismo, uso de contraceptivos orais e
+                baixa escolaridade. Estudos revelam que as mulheres brasileiras pretas, pardas e indígenas apresentam maior chance de
+                diagnóstico em estádio avançado de câncer de colo do útero. Segundo Thuler, Aguiar e Bergmann (2014 apud Oliveira et
+                al., 2024), em seu estudo, as mulheres pretas apresentaram 20% mais chance de enfrentar esse desfecho do que as brancas.
+                Situação ainda mais grave foi observada entre mulheres indígenas. Segundo Pereira et al. (2014), das 90 mulheres
+                pesquisadas, 5 tinham lesões pré-malignas, 1 tinha neoplasia intraepitelial cervical de grau III, 1 tinha adenocarcinoma
+                in situ e outras 4 tinham infecção por HPV.
+            </p>
+            <div class="flex flex-wrap">
+                div.w-full
+            </div>
+        </div>
+
+        <div id="encerramento" class="bg-gray-100 py-10">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    Encerramento da Unidade
+                </h2>
+                <p>
+                    Encerramos a Unidade sobre a assistência à saúde das mulheres. Tentamos criar ações aplicáveis à sua
+                    rotina de trabalho.
+                    É de conhecimento amplo que o sistema prisional feminino precisa ser repensado para garantir o
+                    cuidado integral à saúde
+                    das mulheres privadas de liberdade, haja vista que essa população tem demandas e necessidades
+                    peculiares. A remodelação
+                    desse panorama pode ter início no cuidado diário. Cada exame garantido, cada orientação oferecida,
+                    cada parto respeitado
+                    é uma vitória silenciosa pela equidade. Você, estudante-trabalhador, é agente dessa transformação.
+                </p>
+            </div>
+        </div>
+
+        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências importantes
+            </h2>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde.
+                Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis.
+                <b>Protocolo clínico e diretrizes terapêuticas para atenção integral às pessoas com infecções
+                    sexualmente transmissíveis (IST).</b>
+                Brasília: Ministério da Saúde, 2022a.
+                Disponível em:
+                <a class="link"
+                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Justiça. Departamento Penitenciário Nacional.
+                <b>Diretrizes para a convivência mãe-filho/a no sistema prisional.</b>
+                Brasília, 2016.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde.
+                Departamento de Ações Programáticas Estratégicas.
+                <b>Pré-natal e Puerpério</b>: atenção qualificada e humanizada - manual técnico.
+                Brasília: Ministério da Saúde, 2006.
+            </p>
+            <p>
+                INSTITUTO NACIONAL DE CÂNCER (Brasil). Coordenação de Prevenção e Vigilância.
+                Divisão de Detecção Precoce e Apoio à Organização de Rede.
+                <b>Diretrizes para a detecção precoce do câncer de mama no Brasil.</b>
+                Rio de Janeiro: INCA, 2015.
+            </p>
+        </div>
+
+        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências
+            </h2>
+            <p>
+                ABBOTT.
+                <b>HPV</b> - Você no Controle: exames preventivos são a melhor arma contra o câncer de colo de útero.
+                2024.
+                Disponível em:
+                <a class="link"
+                    href="https://www.abbottbrasil.com.br/corpnewsroom/diagnostic-testing/hpv-voce-no-controle.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.abbottbrasil.com.br/corpnewsroom/diagnostic-testing/hpv-voce-no-controle.html
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+            <p>
+                AGÊNCIA BRASÍLIA.
+                <b>Cura que brota do chão</b>: Farmácia Viva do DF produz medicamento natural para dor de garganta.
+                2025.
+                Disponível em:
+                <a class="link"
+                    href="https://saude.df.gov.br/web/guest/w/cura-que-brota-do-ch%C3%A3o-farm%C3%A1cia-viva-do-df-produz-medicamento-natural-para-dor-de-garganta"
+                    target="_blank" rel="noopener noreferrer">
+                    https://saude.df.gov.br/web/guest/w/cura-que-brota-do-ch%C3%A3o-farm%C3%A1cia-viva-do-df-produz-medicamento-natural-para-dor-de-garganta
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Ministério da Saúde oferta tecnologia inovadora 100% nacional para detectar câncer do colo do útero no
+                SUS.
+                <a class="link font-bold" href="https://www.gov.br/pt-br" target="_blank"
+                    rel="noopener noreferrer">gov.br</a>, 15 ago. 2025a.
+                Disponível em:
+                <a class="link"
+                    href="https://www.gov.br/saude/pt-br/assuntos/noticias/2025/agosto/ministerio-da-saude-oferta-tecnologia-inovadora-100-nacional-para-detectar-cancer-do-colo-do-utero-no-sus"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/saude/pt-br/assuntos/noticias/2025/agosto/ministerio-da-saude-oferta-tecnologia-inovadora-100-nacional-para-detectar-cancer-do-colo-do-utero-no-sus
+                </a>.
+                Acesso em: 3 out. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública.
+                Departamento Penitenciário Nacional.
+                <b>Relatório de Informações Penais.</b>
+                17º Ciclo SISDEPEN, 2º Semestre de 2024. RELIPEN.
+                Brasília: SENAPPEN, 2025b.
+                Disponível em:
+                <a class="link"
+                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-2o-semestre-de-2024.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-2o-semestre-de-2024.pdf
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde (CONITEC).
+                Prevenção de câncer de colo de útero: Ministério da Saúde incorpora teste inovador para detecção do HPV
+                em mulheres.
+                <a class="link font-bold" href="https://www.gov.br/pt-br" target="_blank"
+                    rel="noopener noreferrer">gov.br</a>, 11 mar. 2024a.
+                Disponível em:
+                <a class="link"
+                    href="https://www.gov.br/conitec/pt-br/assuntos/noticias/2024/marco/prevencao-de-cancer-de-colo-de-utero-ministerio-da-saude-incorpora-teste-inovador-para-deteccao-do-hpv-em-mulheres/"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/conitec/pt-br/assuntos/noticias/2024/marco/prevencao-de-cancer-de-colo-de-utero-ministerio-da-saude-incorpora-teste-inovador-para-deteccao-do-hpv-em-mulheres/
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Portaria Conjunta SAES/SECTICS nº 17, de 25 de novembro de 2024.
+                Aprova o Protocolo Clínico e Diretrizes Terapêuticas do Câncer de Mama.
+                <b>Diário Oficial da União</b>, Brasília, DF, 5 dez. 2024b.
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/Saes/2024/poc0017_05_12_2024.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/Saes/2024/poc0017_05_12_2024.html
+                </a>.
+                Acesso em: 3 jul. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Portaria GM/MS nº 5.350, de 12 de setembro de 2024.
+                Altera a Portaria de Consolidação GM/MS nº 3, de 28 de setembro de 2017, para dispor sobre a Rede Alyne.
+                <b>Diário Oficial da União</b>, Brasília, DF, 13 set. 2024c.
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt5350_13_09_2024.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt5350_13_09_2024.html
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Vigilância em Saúde e Ambiente.
+                Departamento de HIV/Aids, Tuberculose, Hepatites Virais e Infecções Sexualmente Transmissíveis.
+                <b>Nota técnica nº 14/2023</b>.
+                Dispõe sobre atualização da recomendação do intervalo entre doses de Benzilpenicilina benzatina
+                no tratamento de sífilis em gestantes.
+                2023.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Vigilância em Saúde.
+                Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis.
+                <b>Protocolo clínico e diretrizes terapêuticas para atenção integral às pessoas com infecções
+                    sexualmente transmissíveis (IST).</b>
+                Brasília: Ministério da Saúde, 2022a.
+                Disponível em:
+                <a class="link"
+                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde.
+                Secretaria de Vigilância em Saúde.
+                <b>Protocolo Clínico e Diretrizes Terapêuticas para prevenção da transmissão vertical de HIV,
+                    sífilis e hepatites virais.</b>
+                Brasília: Ministério da Saúde, 2022b.
+                Disponível em:
+                <a class="link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_hiv_sifilis_hepatites.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_hiv_sifilis_hepatites.pdf
+                </a>.
+                Acesso em: 28 set. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                <b>Ofício Circular nº 11/2020/CGIST/.DCCI/SVS/MS.</b>
+                Atualização das recomendações de terapia antirretroviral (TARV) em gestantes vivendo com HIV.
+                Brasília, 27 mar. 2020a.
+                Disponível em:
+                <a class="link"
+                    href="https://mncp.org.br/wp-content/uploads/2020/03/Atualiza%C3%A7%C3%A3o-das-recomenda%C3%A7%C3%B5es-de-terapia-antirretroviral-TARV-em-gestantes-vivendo-com-HIV-1.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://mncp.org.br/wp-content/uploads/2020/03/Atualiza%C3%A7%C3%A3o-das-recomenda%C3%A7%C3%B5es-de-terapia-antirretroviral-TARV-em-gestantes-vivendo-com-HIV-1.pdf
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Atenção Primaria à Saúde.
+                Departamento de Promoção da Saúde.
+                <b>Guia alimentar para crianças brasileiras menores de 2 anos.</b>
+                Brasília: Ministério da Saúde, 2020b.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                Portaria nº 2.234, de 23 de julho de 2018.
+                Institui a “Agenda Mais Acesso, Cuidado, Informação e Respeito à Saúde das Mulheres” e prevê o repasse
+                no exercício financeiro de 2018, de recursos de custeio para Fundos Municipais de Saúde, mediante
+                cumprimento de requisitos estabelecidos em edital de chamada pública.
+                <b>Diário Oficial da União</b>, Brasília, DF, 14 set. 2018.
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2018/prt2234_14_09_2018.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2018/prt2234_14_09_2018.html
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL.
+                Lei nº 13.434, de 12 de abril de 2017.
+                Acrescenta parágrafo único ao art. 292 do Decreto-Lei nº 3.689, de 3 de outubro de 1941
+                (Código de Processo Penal), para vedar o uso de algemas em mulheres grávidas durante o parto e em
+                mulheres durante a fase de puerpério imediato.
+                <b>Diário Oficial da União</b>, Brasília, DF, 13 abr. 2017.
+                Disponível em:
+                <a class="link" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13434.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13434.htm
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Justiça.
+                Departamento Penitenciário Nacional.
+                <b>Diretrizes para a convivência mãe-filho/a no sistema prisional.</b>
+                Brasília, 2016.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                <b>Política nacional de atenção integral à saúde das pessoas privadas de liberdade no sistema
+                    prisional.</b>
+                Brasília: Ministério da Saúde, 2014a.
+                Disponível em:
+                <a class="link" href="https://www.saude.mg.gov.br/wp-content/uploads/2025/01/Cartilha-PNAISP.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.saude.mg.gov.br/wp-content/uploads/2025/01/Cartilha-PNAISP.pdf
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Justiça e Segurança Pública.
+                Portaria Interministerial nº 210, de 16 de janeiro de 2014.
+                Institui a Política Nacional de Atenção às Mulheres em Situação de Privação de Liberdade e
+                Egressas do Sistema Prisional, e dá outras providências.
+                <b>Diário Oficial da União</b>, Brasília, DF, 17 jan. 2014b.
+                Disponível em:
+                <a class="link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html" target="_blank"
+                    rel="noopener noreferrer">
+                    https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Atenção à Saúde.
+                Departamento de Atenção Básica.
+                <b>Saúde sexual e saúde reprodutiva.</b>
+                Brasília: Ministério da Saúde, 2013.
+                (Cadernos de Atenção Básica, nº 26).
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/publicacoes/saude_sexual_saude_reprodutiva.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/saude_sexual_saude_reprodutiva.pdf
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Atenção à Saúde.
+                Departamento de Atenção Básica.
+                <b>Atenção ao pré-natal de baixo risco.</b>
+                Brasília: Ministério da Saúde, 2012a.
+                (Série A. Normas e Manuais Técnicos. Cadernos de Atenção Básica, nº 32).
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Atenção à Saúde.
+                Departamento de Atenção Básica.
+                <b>Saúde da criança:</b> crescimento e desenvolvimento.
+                Brasília: Ministério da Saúde, 2012b.
+                (Cadernos de Atenção Básica, nº 33).
+                Disponível em:
+                <a class="link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/saude_crianca_crescimento_desenvolvimento.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/saude_crianca_crescimento_desenvolvimento.pdf
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Atenção à Saúde.
+                Departamento de Ações Programáticas Estratégicas.
+                <b>Política Nacional de Atenção Integral à Saúde da Mulher:</b> Princípios e Diretrizes.
+                Brasília: Editora do Ministério da Saúde, 2011.
+                Disponível em:
+                <a class="link"
+                    href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_mulher_principios_diretrizes.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_mulher_principios_diretrizes.pdf
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Conselho Nacional de Política Criminal e Penitenciária.
+                Resolução nº 3, de 15 de julho de 2009.
+                Dispõe sobre as orientações relativas à estada, permanência e posterior encaminhamento das(os)
+                filhas(os) das mulheres encarceradas.
+                <b>Diário Oficial da União</b>, Brasília, DF, 16 jul. 2009.
+                Disponível em:
+                <a class="link"
+                    href="https://diariofiscal.com.br/ZpNbw3dk20XgIKXVGacL5NS8haIoH5PqbJKZaawfaDwCm/legislacaofederal/resolucao/2009/cnpcp.0003.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://diariofiscal.com.br/ZpNbw3dk20XgIKXVGacL5NS8haIoH5PqbJKZaawfaDwCm/legislacaofederal/resolucao/2009/cnpcp.0003.html
+                </a>.
+                Acesso em: 4 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                Secretaria de Atenção à Saúde.
+                Departamento de Ações Programáticas Estratégicas.
+                <b>Pré-natal e Puerpério</b>: atenção qualificada e humanizada - manual técnico.
+                Brasília: Ministério da Saúde, 2006.
+            </p>
+
+            <p>
+                BRASIL.
+                Lei nº 11.108, de 7 de abril de 2005.
+                Altera a Lei nº 8.080, de 19 de setembro de 1990, para garantir às parturientes o direito à presença
+                de acompanhante durante o trabalho de parto, parto e pós-parto imediato, no âmbito do SUS.
+                <b>Diário Oficial da União</b>, Brasília, DF, 8 abr. 2005.
+                Disponível em:
+                <a class="link" href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11108.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11108.htm
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Instituto Nacional do Câncer.
+                Câncer do Colo do Útero: Condutas do INCA.
+                <b>Revista Brasileira de Cancerologia</b>, v. 46, n. 4, p. 351-354, 2000.
+                Disponível em:
+                <a class="link" href="https://rbc.inca.gov.br/index.php/revista/article/view/2415" target="_blank"
+                    rel="noopener noreferrer">
+                    https://rbc.inca.gov.br/index.php/revista/article/view/2415
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                BRASIL.
+                Lei nº 9.263, de 12 de janeiro de 1996.
+                Regula o §7º do art. 226 da Constituição Federal, que trata do planejamento familiar,
+                estabelece penalidades e dá outras providências.
+                <b>Diário Oficial da União</b>, Brasília, DF, 15 jan. 1996.
+                Disponível em:
+                <a class="link" href="https://www.planalto.gov.br/ccivil_03/Leis/L9263.htm" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/Leis/L9263.htm
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL.
+                Lei nº 7.210, de 11 de julho de 1984.
+                Lei de Execução Penal.
+                <b>Diário Oficial da União</b>, Brasília, DF, 13 jul. 1984.
+                Disponível em:
+                <a class="link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
+                    rel="noopener noreferrer">
+                    http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                CHAVES, L. H.; ARAÚJO, I. C. A.
+                Gestação e maternidade em cárcere: cuidados de saúde a partir do olhar das mulheres presas em
+                uma unidade materno-infantil.
+                <b>Physis: Revista de Saúde Coletiva</b>, v. 30, n. 1, e300112, 2020.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/physis/a/7z5kcxDVhFxksgJcGRRxQqv/" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/physis/a/7z5kcxDVhFxksgJcGRRxQqv/
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                CONSELHO NACIONAL DE JUSTIÇA.
+                <b>Regras de Bangkok.</b>
+                Brasília: Conselho Nacional de Justiça, 2016.
+                Disponível em:
+                <a class="link"
+                    href="https://www.cnj.jus.br/wp-content/uploads/2019/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.cnj.jus.br/wp-content/uploads/2019/09/cd8bc11ffdcbc397c32eecdc40afbb74.pdf
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+            <p>
+                ESCOBAR, N.; PLUGGE, E.
+                Prevalence of human papillomavirus infection, cervical intraepithelial neoplasia and cervical
+                cancer in imprisoned women worldwide: a systematic review and meta-analysis.
+                <b>Journal of Epidemiology & Community Health</b>, v. 74, n. 1, p. 95-102, 2020.
+                Disponível em:
+                <a class="link" href="https://jech.bmj.com/content/74/1/95.abstract" target="_blank"
+                    rel="noopener noreferrer">
+                    https://jech.bmj.com/content/74/1/95.abstract
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                FUNDAÇÃO OSWALDO CRUZ. Instituto Nacional de Saúde da Mulher, da Criança e do Adolescente Fernandes
+                Figueira.
+                Portal de Boas Práticas em Saúde da Mulher, da Criança e do Adolescente.
+                <b>Sífilis:</b> diagnóstico e tratamento na gestação.
+                Rio de Janeiro, 2023.
+                Disponível em:
+                <a class="link"
+                    href="https://portaldeboaspraticas.iff.fiocruz.br/atencao-mulher/sifilis-teste-rapido-e-tratamento-na-gestacao/"
+                    target="_blank" rel="noopener noreferrer">
+                    https://portaldeboaspraticas.iff.fiocruz.br/atencao-mulher/sifilis-teste-rapido-e-tratamento-na-gestacao/
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                FUNDAÇÃO PARAIBANA DE GESTÃO EM SAÚDE.
+                <b>Projeto Recomeço:</b> reeducandos do sistema prisional da Paraíba realizaram cirurgias no Edson
+                Ramalho
+                através do Planejamento Familiar.
+                João Pessoa: Fundação Paraibana de Gestão em Saúde, 2024.
+                Disponível em:
+                <a class="link"
+                    href="https://pbsaude.pb.gov.br/noticias/projeto-recomeco-reeducandos-do-sistema-prisional-da-paraiba-realizaram-cirurgias-no-edson-ramalho-atraves-do-planejamento-familiar"
+                    target="_blank" rel="noopener noreferrer">
+                    https://pbsaude.pb.gov.br/noticias/projeto-recomeco-reeducandos-do-sistema-prisional-da-paraiba-realizaram-cirurgias-no-edson-ramalho-atraves-do-planejamento-familiar
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                INSTITUTO NACIONAL DE CÂNCER (Brasil).
+                <b>Câncer do colo do útero.</b>
+                Rio de Janeiro, 2022a.
+                Disponível em:
+                <a class="link" href="https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/colo-do-utero" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/colo-do-utero
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                INSTITUTO NACIONAL DE CÂNCER (Brasil).
+                <b>Câncer de mama.</b>
+                Rio de Janeiro, 2022b.
+                Disponível em:
+                <a class="link" href="https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama
+                </a>.
+                Acesso em: 26 set. 2025.
+            </p>
+
+            <p>
+                INSTITUTO NACIONAL DE CÂNCER (Brasil). Coordenação de Prevenção e Vigilância.
+                Divisão de Detecção Precoce e Apoio à Organização de Rede.
+                <b>Diretrizes brasileiras para o rastreamento do câncer do colo do útero.</b>
+                2. ed.
+                Rio de Janeiro: INCA, 2016.
+            </p>
+
+            <p>
+                INSTITUTO NACIONAL DE CÂNCER (Brasil). Coordenação de Prevenção e Vigilância.
+                Divisão de Detecção Precoce e Apoio à Organização de Rede.
+                <b>Diretrizes para a detecção precoce do câncer de mama no Brasil.</b>
+                Rio de Janeiro: INCA, 2015.
+            </p>
+
+            <p>
+                LEAL, M. C. et al.
+                Nascer na prisão: gestação e parto atrás das grades no Brasil.
+                <b>Ciência & Saúde Coletiva</b>, v. 21, n. 7, p. 2061-2070, 2016.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/csc/a/PpqmzBJWf5KMTfzT37nt5Bk/" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/csc/a/PpqmzBJWf5KMTfzT37nt5Bk/
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                LEITE, H.
+                <b>Cultivo na Fazenda da Papuda viabiliza produção de mais de 50 mil fitoterápicos.
+                    2025.</b>
+                Disponível em:
+                <a class="link"
+                    href="https://www.saude.df.gov.br/web/guest/w/cultivo-na-fazenda-da-papuda-viabiliza-produ%C3%A7%C3%A3o-de-mais-de-50-mil-fitoter%C3%A1picos"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.saude.df.gov.br/web/guest/w/cultivo-na-fazenda-da-papuda-viabiliza-produção-de-mais-de-50-mil-fitoterápicos
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                MILITÃO, L. P.; KRUNO, R. B.
+                Vivendo a gestação dentro de um sistema prisional.
+                <b>Saúde (Santa Maria)</b>, v. 40, n. 1, p. 75-84, 2014.
+                Disponível em:
+                <a class="link" href="https://periodicos.ufsm.br/revistasaude/article/view/9180" target="_blank"
+                    rel="noopener noreferrer">
+                    https://periodicos.ufsm.br/revistasaude/article/view/9180
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                OLIVEIRA, N. P. D. et al.
+                Desigualdades sociais no diagnóstico do câncer do colo do útero no Brasil: um estudo de base hospitalar.
+                <b>Ciência & Saúde Coletiva</b>, v. 29, n. 6, e03872023, 2024.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/csc/a/6NVc97K57dr9LDzWWhXxBPq/" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/csc/a/6NVc97K57dr9LDzWWhXxBPq/
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                PEREIRA, E. R. et al.
+                Saúde sexual, reprodutiva e aspectos socioculturais de mulheres indígenas.
+                <b>Revista Brasileira em Promoção da Saúde</b>, v. 27, n. 4, p. 445-454, 2014.
+                Disponível em:
+                <a class="link" href="https://ojs.unifor.br/RBPS/article/view/2829" target="_blank"
+                    rel="noopener noreferrer">
+                    https://ojs.unifor.br/RBPS/article/view/2829
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                RAMOS, J. M. C.; CARVALHO, G. B. V.
+                Maternidade no cárcere: desafios do sistema carcerário brasileiro.
+                <b>Revista da Faculdade de Direito da UFRGS</b>, n. 39, p. 240-260, 2018.
+                Disponível em:
+                <a class="link" href="https://seer.ufrgs.br/revfacdir/article/view/70125" target="_blank"
+                    rel="noopener noreferrer">
+                    https://seer.ufrgs.br/revfacdir/article/view/70125
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                SANTOS, V. S.
+                Sistema Reprodutor.
+                <b>Biologia Net</b>, c2024.
+                Disponível em:
+                <a class="link" href="https://www.biologianet.com/anatomia-fisiologia-animal/sistema-reprodutor.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.biologianet.com/anatomia-fisiologia-animal/sistema-reprodutor.htm
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                SÃO PAULO (Estado).
+                <b>Mães em Cárcere.</b>
+                São Paulo: Defensoria Pública do Estado de São Paulo, 2017.
+                Disponível em:
+                <a class="link"
+                    href="https://www.cnj.jus.br/wp-content/uploads/2019/09/Projeto-M%C3%A3es-em-C%C3%A1rcere-Cartilha-Ana-Carolina-Schwan.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.cnj.jus.br/wp-content/uploads/2019/09/Projeto-Mães-em-Cárcere-Cartilha-Ana-Carolina-Schwan.pdf
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                SILVA, J. P. L.; CARREIRO, H. K. C.
+                <b>Panorama nacional de alimentação e acesso à água no sistema prisional.</b>
+                Brasília: Ministério da Justiça e Segurança Pública; Secretaria Nacional de Políticas Penais, 2024.
+            </p>
+
+            <p>
+                SILVEIRA, G.
+                <b>Distrito Federal inaugura horto agroflorestal no Ministério da Saúde.</b>
+                2025.
+                Disponível em:
+                <a class="link"
+                    href="https://www.saude.df.gov.br/web/guest/w/distrito-federal-inaugura-horto-agroflorestal-no-ministerio-da-saude"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.saude.df.gov.br/web/guest/w/distrito-federal-inaugura-horto-agroflorestal-no-ministerio-da-saude
+                </a>.
+                Acesso em: 19 ago. 2025.
+            </p>
+
+            <p>
+                SOCIEDADE BRASILEIRA DE ONCOLOGIA CLÍNICA.
+                <b>Tratamentos e efeitos colaterais do câncer de mama.</b>
+                2014.
+                Disponível em:
+                <a class="link"
+                    href="https://www.sboc.org.br/noticias/item/420-tratamentos-e-efeitos-colaterais-do-cancer-de-mama"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.sboc.org.br/noticias/item/420-tratamentos-e-efeitos-colaterais-do-cancer-de-mama
+                </a>.
+                Acesso em: 2 out. 2025.
+            </p>
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+                <h1 class="text-3xl md:text-5xl font-bold">
+                    Minicurrículo do Autor
+                </h1>
+                <div class="flex flex-wrap my-5">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/autor.jpg"
+                            alt="Renata Terumi Shiguematsu Yassuda" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Renata Terumi Shiguematsu Yassuda</small>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 px-0 md:px-5">
+                        <p>
+                            Enfermeira graduada pela Universidade Estadual de Mato Grosso do Sul (UEMS) em 1998, com uma
+                            sólida carreira construída
+                            no serviço público e na gestão em saúde. Possuo dupla especialização: em Administração
+                            Hospitalar pelo Centro
+                            Universitário Anhanguera (2009) e em Atenção Básica em Saúde da Família pela Universidade
+                            Federal de Mato Grosso do Sul
+                            (UFMS, 2012).
+                            <br><br>
+                            Servidora Pública Estadual desde 2009, consolidei minha trajetória na Agência Penitenciária
+                            do Estado de Mato Grosso do
+                            Sul (AGEPEN/MS), onde atuei por 15 anos no Módulo de Saúde do Complexo Penitenciário.
+                            Atualmente, desde 2024, exerço a
+                            função estratégica de Coordenadora da Assistência Farmacêutica Especializada na unidade
+                            CAFÉ.
+                            <br><br>
+                            Além da atuação assistencial e administrativa, possuo experiência acadêmica junto à Fundação
+                            Oswaldo Cruz (FIOCRUZ),
+                            onde atuei como bolsista e tutora apoiadora entre 2013 e 2015, contribuindo para a formação
+                            de profissionais no Curso de
+                            Especialização em Gestão de Saúde do Sistema Prisional.
+                            <br><br>
+                            <b>Currículo Lattes:</b> <a href="http://lattes.cnpq.br/1326954249967100" class="link"
+                                target="_blank" rel="noopener noreferrer">http://lattes.cnpq.br/1326954249967100</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
+        <div class="max-w-[1000px] mx-auto px-5">
+            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
+                    alt="Logo" />
+            </a>
+            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
+                disseminação e a utilização desta obra, em parte ou em sua
+                totalidade, nos Termos de uso do ARES. Deve ser citada a
+                fonte e é vedada sua utilização comercial. © 2025.
+                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
+                Sul.
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/tippy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+        personalizado.init();
+        document.addEventListener("click", function (e) {
+            const overlay = e.target.closest(".modal-overlay");
+
+            if (!overlay) return;
+
+            const content = overlay.querySelector(".modal-content");
+
+            if (!content.contains(e.target)) {
+                estrutura.closeModal(overlay.id)
+            }
+        });
+    </script>
+</body>
+
+</html>
