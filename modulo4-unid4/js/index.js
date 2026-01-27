@@ -356,10 +356,7 @@ var personalizado = {
             estilo = "bg-red-100 text-red-800";
         }
 
-        mensagem = "<b>Resposta ideal:</b> Solicitar atendimento imediato da eAPP. <br><br> <b>Por quê?</b><br><br> Crises psíquicas, especialmente as que envolvem sintomas como alucinações auditivas (“ouve vozes”) e ameaças de autoagressão, podem indicar um quadro de psicose ou outra condição psiquiátrica grave que exige intervenção urgente e especializada. Ignorar esses sinais ou tentar um manejo inadequado pode agravar o quadro e representar risco à vida do indivíduo."
-
         feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
-        feedback.innerHTML = mensagem;
         feedback.classList.remove("hidden");
     },
 
@@ -383,10 +380,7 @@ var personalizado = {
             estilo = "bg-red-100 text-red-800";
         }
 
-        mensagem = "<b>Resposta ideal:</b> Garantir atendimento de eAPP e, caso a equipe julgue necessário, compartilhar o caso ao CAPS AD. <br><br> <b>Por quê?</b><br><br> A atenção deve ser articulada e respeitar o direito à saúde mental, mesmo durante a privação de liberdade. O manejo de indivíduos com transtornos por uso de substâncias que apresentam sinais de abstinência e histórico de uso intenso de álcool e crack exige uma abordagem integrada e humanizada, especialmente em ambientes prisionais. A APS Prisional desempenha dois papeis fundamentais nesse contexto: o cuidado e a coordenação da assistência à saúde mental no sistema prisional."
-
         feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
-        feedback.innerHTML = mensagem;
         feedback.classList.remove("hidden");
     },
 
@@ -410,10 +404,7 @@ var personalizado = {
             estilo = "bg-red-100 text-red-800";
         }
 
-        mensagem = "<b>Resposta ideal:</b> Orientar a continuidade dos cuidados após a saída e encaminhá-lo para a rede de saúde do território. <br><br> <b>Por quê?</b><br><br> O planejamento da alta e o acompanhamento posterior à soltura são etapas cruciais e legalmente respaldadas para a reintegração social e a continuidade do cuidado de saúde de pessoas egressas do sistema prisional. A interrupção abrupta do acompanhamento da saúde da pessoa egressa do sistema prisional, especialmente em casos de histórico de transtornos mentais ou uso de substâncias, pode ter consequências graves, como recaída no uso de substâncias, reincidência criminal e até elevação da mortalidade pós-aprisionamento."
-
         feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
-        feedback.innerHTML = mensagem;
         feedback.classList.remove("hidden");
     },
 

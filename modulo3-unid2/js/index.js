@@ -282,7 +282,7 @@ var personalizado = {
         });
 
         tippy("#relato_3", {
-            content: '<p class="text-2xl"><b>Continuidade no cuidado</b></p><p>Diante da ausência de informações formais, a enfermeira da eAPP entrou em contato por telefone com o serviço especializado de nefrologia, no qual o paciente foi atendimento, para esclarecer quais condutas deveriam ser seguidas para a continuidade do cuidado no estabelecimento penal. A enfermeira do serviço de nefrologia, após consulta ao prontuário do paciente, informou a enfermeira da eAPP que, naquele momento, estavam indicadas apenas medidas não farmacológicas, como aumento da ingestão hídrica, redução do consumo de sódio e adequação alimentar geral. Tais orientações foram devidamente repassadas ao paciente pela eAPP.</p>',
+            content: '<p class="text-2xl"><b>Continuidade no cuidado</b></p><p>Diante da ausência de informações formais, a enfermeira da eAPP entrou em contato por telefone com o serviço especializado de nefrologia, no qual o paciente foi atendido, para esclarecer quais condutas deveriam ser seguidas para a continuidade do cuidado no estabelecimento penal. A enfermeira do serviço de nefrologia, após consulta ao prontuário do paciente, informou a enfermeira da eAPP que, naquele momento, estavam indicadas apenas medidas não farmacológicas, como aumento da ingestão hídrica, redução do consumo de sódio e adequação alimentar geral. Tais orientações foram devidamente repassadas ao paciente pela eAPP.</p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
