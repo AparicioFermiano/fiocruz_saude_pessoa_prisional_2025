@@ -154,8 +154,8 @@ var personalizado = {
     },
 
     initMapTooltips: function () {
-        tippy("#popup_genero", {
-            content: '<p class="text-2xl">Homens cis: Pessoas que se identificam com gênero designado ao nascer masculino. Mulheres trans: Pessoas que se identificam com o gênero feminino mas ao nasceram foram designados como homens.</p>',
+        tippy("#tooltip_1", {
+            content: '<p class="text-2xl"><b>Útero</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -166,7 +166,7 @@ var personalizado = {
         });
 
         tippy("#tooltip_2", {
-            content: '<p class="text-2xl"><b>Alta demanda por próteses</b><br><br>A necessidade de próteses dentárias, já significativa na população em geral (15,46%, chegando a mais de 20% no Norte e Nordeste), pode ser ainda maior entre as pessoas presas devido à perda dentária não tratada ao longo da vida e à dificuldade de acesso à reabilitação oral no sistema prisional.</p>',
+            content: '<p class="text-2xl"><b>Tuba uterina</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -177,7 +177,7 @@ var personalizado = {
         });
 
         tippy("#tooltip_3", {
-            content: '<p class="text-2xl"><b>Maior autopercepção em grupos vulneráveis</b><br><br>É provável que a autopercepção da saúde bucal na população privada de liberdade seja ainda pior devido às condições de vida e ao acesso restrito a cuidados.</p>',
+            content: '<p class="text-2xl"><b>Ovário</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -188,7 +188,29 @@ var personalizado = {
         });
 
         tippy("#tooltip_4", {
-            content: '<p class="text-2xl"><b>Impacto significativo nas atividades diárias</b><br><br>Se mais da metade da população adulta relata repercussões negativas da saúde bucal na rotina, é provável que isso seja ainda mais prevalente na população privada de liberdade, uma vez que a falta de cuidados agrava dificuldades de alimentação, comunicação e bem-estar. A vergonha de sorrir ou falar pode causar efeitos psicossociais ainda mais profundos na privação de liberdade.</p>',
+            content: '<p class="text-2xl"><b>Ovário</b></p>',
+            placement: "right",
+            allowHTML: true,
+            animation: "scale",
+            trigger: "click",
+            touch: true,
+            interactive: true,
+            delay: [100, 0],
+        });
+
+        tippy("#tooltip_5", {
+            content: '<p class="text-2xl"><b>Colo do útero</b></p>',
+            placement: "right",
+            allowHTML: true,
+            animation: "scale",
+            trigger: "click",
+            touch: true,
+            interactive: true,
+            delay: [100, 0],
+        });
+
+        tippy("#tooltip_6", {
+            content: '<p class="text-2xl"><b>Vagina</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
