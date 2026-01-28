@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Curso sobre SUS e Participação Social" name="keywords" />
+    <meta content="Aprenda sobre o Sistema Único de Saúde e Participação Social" name="description" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/tippy.min.css" />
+
+    <title>
+        Política Nacional de Atenção Integral à Saúde das Pessoas Privadas
+        de Liberdade no Sistema Prisional (PNAISP)
+    </title>
+</head>
+
+<body>
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="max-w-[1000px] mx-auto px-2 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-gray-800 max-w-[150px] overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full p-4 object-contain" alt="Logo" />
+            </a>
+
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5" onclick="estrutura.toggleSidebar()">
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+                <span class="w-6 h-0.5 bg-gray-800"></span>
+            </button>
+
+            <nav id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
+                <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
+                <a href="#5.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 05</a>
+                <div class="relative group">
+                    <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
+                        class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
+                        Referências
+                        <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu"
+                        class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
+                        <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências
+                            Importantes</a>
+                        <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
+                            onclick="animacao.closeDropdown()">Referências</a>
+                    </div>
+                </div>
+                <a href="#autor" class="p-4 text-gray-800 hover:text-[var(--primary)]">Autor</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modalInstrucao" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] md:max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Instruções para navegação
+                </h2>
+            </div>
+
+            <div class="modal-body md flex flex-col gap-5">
+                <p>
+                    Você pode ajustar a visualização do material de acordo
+                    com o nível de zoom do seu navegador, pressione:
+                </p>
+                <div class="text-center">
+                    <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                    <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalInstrucao')" class="btn bg-[var(--primary)] text-black">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCreditos" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
+                <img src="./images/regua-logos-prisional-800px.png"
+                    alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
+            </div>
+            <div class="modal-body md flex flex-col gap-5 text-center">
+                <p>
+                    <b>MINISTÉRIO DA SAÚDE</b>
+                    <br>
+                    Alexandre Rocha Santos Padilha - Ministro da
+                    Saúde
+                </p>
+                <p>
+                    <b>FUNDAÇÃO OSWALDO CRUZ - FIOCRUZ </b>
+                    <br>
+                    Mário Santos Moreira - Presidente
+                </p>
+                <p>
+                    <b>FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL -
+                        FIOCRUZ MS
+                    </b>
+                    Jislaine de Fátima Guilhermino - Coordenadora
+                </p>
+                <p>
+                    <b>COORDENAÇÃO DE EDUCAÇÃO DA FIOCRUZ MS </b>
+                    <br>
+                    Débora Dupas Gonçalves do Nascimento - Vice
+                    Coordenadora de Educação
+                </p>
+                <p>
+                    <b>SECRETARIA DE ATENÇÃO PRIMÁRIA À SAÚDE (SAPS)
+                    </b><br>
+                    Ana Luiza Ferreira Rodrigues Caldas -
+                    Secretária
+                </p>
+                <p>
+                    <b>DEPARTAMENTO DE ESTRATÉGIAS E POLÍTICAS DE
+                        SAÚDE COMUNITÁRIA
+                    </b><br>
+                    José Eudes Barroso Vieira - Direto
+                </p>
+                <p>
+                    <b>COORDENAÇÃO- GERAL DO ACESSO E EQUIDADE (CGAEQ)
+                    </b><br>
+                    Lilian Silva Gonçalves - Coordenadora
+                </p>
+                <p>
+                    <b>
+                        COORDENAÇÃO DA ATENÇÃO ÀS PESSOAS EM CONFLITO COM A LEI
+                    </b><br>
+                    Ethel Proença Braga - Coordenadora
+                </p>
+                <p>
+                    <b>
+                        FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                    </b>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo Grande - MS CEP 79081-746 Telefone: (67) 3346-7220
+                    E-mail:
+                    <a href="mailto:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a> Site: <a
+                        href="www.matogrossodosul.fiocruz.br" target="_blank"
+                        rel="noopener noreferrer">www.matogrossodosul.fiocruz.br</a>
+                </p>
+                <small>
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
+                    parte ou em sua
+                    totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
+                    © 2025. Ministério
+                    da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
+                </small>
+                <p>
+                    CAMPO GRANDE, MS - 2026
+                </p>
+                <p>
+                    <b>
+                        COORDENADORA GERAL
+                    </b><br>
+                    Sandra Maria do Valle Leone de Oliveira
+                </p>
+                <p>
+                    <b>
+                        COORDENADOR ACADÊMICO
+                    </b><br>
+                    Everton Ferreira Lemos
+                </p>
+                <p>
+                    <b>
+                        COORDENADORAS PEDAGÓGICAS
+                    </b><br>
+                    Ewângela Aparecida Pereira
+                    <br>
+                    Silvia Helena Mendonça de Moraes
+                </p>
+                <p>
+                    <b>
+                        APOIO DA COORDENAÇÃO
+                    </b><br>
+                    Antonio Luiz Dal Bello Gasparoto
+                </p>
+                <p>
+                    <b>
+                        AVALIAÇÃO EXTERNA
+                    </b><br>
+                    Águida Luana Veriato Schultz
+                    <br>
+                    Anna Karolline dos Anjos de Morais
+                    <br>
+                    Evellyn Waleska Silva dos Santos
+                    <br>
+                    Jorge Esteves Teixeira Junior
+                </p>
+                <p>
+                    <b>
+                        REVISÃO E NORMATIZAÇÃO
+                    </b><br>
+                    Davi Bagnatori Tavares
+                </p>
+                <p>
+                    <b>
+                        COORDENADOR DE PRODUÇÃO E DESIGNER INSTRUCIONAL
+                    </b><br>
+                    Marcos Paulo dos Santos de Souza
+                </p>
+                <p>
+                    <b>
+                        DESENVOLVEDOR AVA-MOODLE
+                    </b><br>
+                    Vinícius Vicente Soares
+                </p>
+                <p>
+                    <b>
+                        WEBDESIGNER E DESENVOLVEDOR
+                    </b><br>
+                    Aparício Fermiano dos Santos Junior
+                </p>
+                <p>
+                    <b>
+                        PROJETO GRÁFICO E DIAGRAMAÇÃO
+                    </b><br>
+                    André Julien de Sousa Morato
+                </p>
+                <p>
+                    <b>
+                        COORDENADORA TEMÁTICA
+                    </b><br>
+                    Mariana Trinidad Ribeiro da Costa Garcia Croda
+                </p>
+                <p>
+                    <b>
+                        AUTORES
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        Unidade 1
+                    </b><br>
+                    Renata Terumi Shiguematsu Yassuda
+                </p>
+                <p>
+                    <b>
+                        Unidade 2
+                    </b><br>
+                    Renata Terumi Shiguematsu Yassuda
+                </p>
+                <p>
+                    <b>
+                        Unidade 3
+                    </b><br>
+                    José Victor Bortolotto Bampi
+                </p>
+                <p>
+                    <b>
+                        Unidade 4
+                    </b><br>
+                    Renata Terumi Shiguematsu Yassuda
+                </p>
+                <p>
+                    <b>
+                        Unidade 5
+                    </b><br>
+                    Lucas Moura de Oliveira <br>
+                    Giovana Soares Buzinaro
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalCreditos')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalContatar" class="modal-overlay hidden">
+        <div class="modal-content md max-h-[400px] bg-white p-5 rounded-2xl flex flex-col gap-5">
+            <div class="modal-header">
+                <h2 class="text-xl font-bold mb-3 text-center">
+                    Informações de contato
+                </h2>
+            </div>
+            <div class="modal-body md flex flex-col gap-2">
+                <h3 class="font-bold">
+                    FUNDAÇÃO OSWALDO CRUZ MATO GROSSO DO SUL - FIOCRUZ MS
+                </h3>
+                <p>
+                    Rua Gabriel Abrão, 92 - Jardim das Nações, Campo
+                    Grande-MS - CEP 79081-746
+                </p>
+                <p>
+                    <b>Telefone:</b>
+                    (67) 3346-7220
+                </p>
+                <p>
+                    <b>E-mail:</b>
+                    <a class="link" href="mail:educacao.ms@fiocruz.br">educacao.ms@fiocruz.br</a>
+                </p>
+                <p>
+                    <b>Site:</b>
+                    <a class="link" href="www.matogrossodosul.fiocruz.br">www.matogrossodosul.fiocruz.br</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="estrutura.closeModal('modalContatar')" class="btn bg-[var(--primary)] text-black">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex flex-col justify-between">
+        <div id="scrollTopBtn" class="hidden fixed bottom-10 right-10 z-99">
+            <div class="flex flex-col gap-3">
+                <button id="btnContatar" onclick="estrutura.openModal('modalContatar')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-address-book"></i>
+                </button>
+
+                <button id="btnInstrucoes" onclick="estrutura.openModal('modalInstrucao')"
+                    title="Instruções para usar o curso."
+                    class="bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <i class="fa-solid fa-exclamation"></i>
+                </button>
+
+                <a href="#" id="btnTopo"
+                    class="bottom-10 right-10 bg-[var(--primary)] shadow-lg w-10 h-10 rounded-lg justify-center items-center align-middle flex">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div class="w-full bg-[var(--primary)] py-5">
+                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
+                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
+                    <span class="px-3 py-2 block mt-3">
+                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
+                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
+                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
+                        PRISIONAL
+                    </span>
+                    <h1 class="text-xl md:text-2xl font-black mt-3">
+                        Módulo V - O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não
+                        Transmissíveis no Âmbito da PNAISP
+                    </h1>
+                    <p class="px-3 py-2 block">
+                        Unidade 5 - Cuidado e Tratamento em Saúde Bucal
+                    </p>
+                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+                        <button onclick="estrutura.openModal('modalInstrucao')"
+                            class="px-4 py-2 btn border-2 border-black text-black">
+                            INSTRUÇÕES
+                        </button>
+                        <button onclick="estrutura.openModal('modalCreditos')"
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
+                            CRÉDITOS
+                        </button>
+                        <div class="w-full">
+                            <a href="#apresentacao"
+                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="apresentacao" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-5xl font-bold">
+                        Apresentação da Unidade
+                    </h1>
+                    <h3>Olá, estudante-trabalhador! Seja bem-vindo!</h3>
+                </div>
+                <p>
+                    Nesta Unidade, vamos ampliar nosso olhar sobre a saúde bucal no sistema prisional, reconhecendo como
+                    os principais
+                    agravos em saúde bucal se manifestam nas doenças transmissíveis e não transmissíveis que afetam essa
+                    população e
+                    refletindo sobre estratégias de cuidado possíveis na realidade do ambiente prisional. Vamos discutir
+                    as manifestações
+                    orais de doenças transmissíveis e não transmissíveis, como diabetes, hipertensão, HIV, hepatites e
+                    transtornos mentais,
+                    além de compreender suas formas de tratamento e acompanhamento.
+                </p>
+                <p>
+                    Também vamos abordar o funcionamento da Rede de Atenção à Saúde Bucal (RASB), destacando a
+                    importância dos fluxos de
+                    encaminhamento, do Cuidado Compartilhado e da Educação Permanente em Saúde. Mais do que tratar
+                    lesões ou sintomas, esta
+                    Unidade propõe enxergar a saúde bucal como parte da saúde integral, que deve ser acolhida e
+                    discutida em uma perspectiva
+                    multiprofissional.
+                </p>
+                <p>
+                    Esperamos que, ao final do percurso, você esteja mais preparado para atuar de maneira integrada,
+                    responsável e
+                    humanizada, contribuindo para um cuidado mais efetivo à pessoa privada de liberdade (PPL). Vamos
+                    juntos?
+                </p>
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    Objetivos de Aprendizagem da Unidade
+                </h2>
+                <div class="flex flex-wrap items-stretch justify-center">
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">01</span>
+                            <p class="text-center">
+                                Conhecer os principais agravos e doenças bucais e possíveis ações de cuidado passíveis
+                                de implementação no sistema
+                                prisional;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">02</span>
+                            <p class="text-center">
+                                Identificar as manifestações orais das principais doenças transmissíveis e não
+                                transmissíveis, suas formas de tratamento
+                                e acompanhamento terapêutico;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-0 py-3 md:px-3 flex flex-col justify-between">
+                        <div
+                            class="h-full rounded-md bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 p-3 border-b-4 border-[var(--primary)]">
+                            <span
+                                class="my-3 rounded-md bg-[var(--primary)] w-10 h-10 m-auto text-center font-bold items-center flex justify-center">03</span>
+                            <p class="text-center">
+                                Compreender os fluxos de encaminhamento buscando a ampliação do acesso aos serviços de
+                                forma coordenada na Rede de
+                                Atenção à Saúde Bucal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-0 md:px-3">
+                    <p class="bg-gray-600 font-bold text-xl md:text-2xl p-5 rounded-md text-white">
+                        Carga Horária de Estudo: 5 horas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="5.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                5.1 Principais agravos em saúde bucal e estratégias de cuidado no sistema prisional
+            </h2>
+            <p>
+                Como discutido no Módulo IV, os agravos em saúde bucal são altamente prevalentes no ambiente prisional,
+                muitas vezes
+                associados a hábitos de vida e condições sanitárias precárias. O papel da equipe de Atenção Primária
+                Prisional (eAPP)
+                vai além da assistência curativa. Exige práticas integrativas e transversais que garantam acesso à saúde
+                e acolhimento à
+                população privada de liberdade. Mais do que diagnosticar doenças, é fundamental, compreendendo o cuidado
+                em sua
+                integralidade, analisar os fatores que contribuem para o adoecimento e reconhecer a complexidade das
+                necessidades dessa
+                população.
+            </p>
+            <p>
+                Entretanto, na prática, ainda enfrentamos desafios significativos. Levantamentos mostram alta incidência
+                de cárie,
+                necessidade crescente de próteses e relatos frequentes de dor nas PPL (Silva et al., 2022), evidenciando
+                a predominância
+                de atendimentos emergenciais e curativos, com pouca ênfase na prevenção e acompanhamento contínuo.
+            </p>
+            <p>
+                Para transformar essa realidade, é essencial adotar uma abordagem de promoção da saúde no ambiente
+                prisional, no qual o
+                consultório odontológico seja espaço de cuidado integral. Isso exige o comprometimento das eAPP e das
+                equipes de
+                segurança com planos de ação que integrem prevenção, demanda espontânea e atenção programada,
+                alinhando-se às diretrizes
+                da literatura e às reais necessidades da população privada de liberdade.
+            </p>
+            <p>
+                Agora que já discutimos como uma equipe de Saúde Bucal (eSB) inserida no sistema prisional deve atuar
+                para oferecer
+                cuidado em sua integralidade, precisamos direcionar nosso pensamento para a forma como iremos conduzir
+                um paciente que
+                tenha algum agravo em saúde bucal nesse ambiente diverso e com fluxos próprios. Vamos lá?
+            </p>
+        </div>
+
+        <div id="encerramento" class="bg-gray-100 py-10">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    Encerramento da Unidade
+                </h2>
+                <p>
+                    Chegamos ao fim desta Unidade. Foi enriquecedor compartilhar esse caminho com você. Ao longo do
+                    percurso, vimos como é
+                    essencial compreender barreiras e facilitadores ligados à atenção à saúde bucal no sistema prisional
+                    para garantir um
+                    cuidado adequado e prevenir complicações que afetam diretamente a qualidade de vida das PPL.
+                </p>
+                <p>
+                    Como profissionais de saúde, sejamos ou não cirurgiões-dentistas, refletir sobre isso nos ajuda a
+                    enxergar além dos
+                    muros e entender a importância de um atendimento contínuo, humano e resolutivo. Sabemos que os
+                    desafios são muitos,
+                    desde a limitação no acesso aos serviços até as dificuldades estruturais e operacionais do próprio
+                    sistema prisional.
+                    Por isso, pensar em estratégias que envolvam a prevenção, a identificação precoce e o tratamento
+                    adequado de doenças e
+                    agravos em saúde bucal e a articulação entre os diferentes níveis de atenção é indispensável, e,
+                    enquanto responsáveis
+                    pela promoção da saúde no sistema prisional, precisamos demonstrar essa importância aos tomadores de
+                    decisão. Isso só é
+                    possível com um trabalho em rede, em que profissionais de saúde e segurança atuem de forma integrada
+                    e coordenada.
+                </p>
+                <p>
+                    Também discutimos como o fortalecimento da APS, o uso de tecnologias e o entendimento claro dos
+                    fluxos de encaminhamento
+                    na RASB podem melhorar significativamente o cuidado ofertado. Essas ações, quando bem articuladas,
+                    reduzem desigualdades
+                    e ajudam a consolidar o direito à saúde bucal como parte do direito à saúde integral, mesmo em um
+                    contexto tão complexo
+                    quanto o prisional. A saúde bucal é parte indissociável da saúde integral.
+                </p>
+                <p>
+                    Seu compromisso diário pode transformar vidas invisibilizadas e reafirmar o direito de todos ao
+                    cuidado digno e humanizado. Esperamos que este conteúdo tenha não só contribuído para o seu
+                    aprendizado técnico, como também provocado uma reflexão mais profunda sobre o papel de cada
+                    profissional na construção de um cuidado mais justo e humano. Que esse conhecimento te acompanhe e
+                    inspire futuras práticas que promovam dignidade e equidade. Foi um prazer trilhar esse caminho com
+                    você!
+                </p>
+            </div>
+        </div>
+
+        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências importantes
+            </h2>
+            <p>
+                BRASIL. Ministério da Saúde.
+                Portaria GM/MS nº 6.213, de 19 de dezembro de 2024.
+                Altera a Portaria de Consolidação GM/MS nº 3, de 28 de setembro de 2017, para instituir a Rede de
+                Atenção à Saúde
+                Bucal - RASB na Política Nacional de Saúde Bucal - PNSB, no âmbito do Sistema Único de Saúde - SUS.
+                <b>Diário Oficial da União</b>, Brasília, DF, 19 dez. 2024.
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt6213_20_12_2024.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt6213_20_12_2024.html
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL.
+                Lei nº 14.572, de 8 de maio de 2023.
+                Institui a Política Nacional de Saúde Bucal no âmbito do Sistema Único de Saúde (SUS) e altera a Lei nº
+                8.080, de 19
+                de setembro de 1990, para incluir a saúde bucal no campo de atuação do SUS.
+                <b>Diário Oficial da União</b>, Brasília, DF, 9 maio 2023.
+                Disponível em:
+                <a class="link" href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14572.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14572.htm
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                SERRA, A. E. G.; LIMA, R. C. R. O.
+                Promoção da saúde para pessoas no regime semiaberto do sistema penitenciário: relato de experiência.
+                <b>Saúde em Debate</b>, v. 43, n. 123, p. 1270-1281, 2019.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/sdeb/a/kFW8VvLpwfnXFKsnCMrVCFz/?lang=pt" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/sdeb/a/kFW8VvLpwfnXFKsnCMrVCFz/?lang=pt
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                SILVA, C. B. et al.
+                Condições bucais de privados de liberdade em um município do sudoeste goiano.
+                <b>Brazilian Journal of Development</b>, v. 8, n. 3, p. 17965-17978, 2022.
+                Disponível em:
+                <a class="link" href="https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/45110"
+                    target="_blank" rel="noopener noreferrer">
+                    https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/45110
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+        </div>
+
+        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                Referências
+            </h2>
+            <p>
+                ALMEIDA, J. R. S. et al.
+                A Política Nacional de Educação Permanente em Saúde e sua relação com a odontologia.
+                <b>Cadernos de Saúde Coletiva</b>, v. 30, n. 4, p. 507-516, 2022.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/cadsc/a/bJLyFCNYtDb5vJTM75MxVcJ/?lang=pt" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/cadsc/a/bJLyFCNYtDb5vJTM75MxVcJ/?lang=pt
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                Portaria GM/MS nº 6.213, de 19 de dezembro de 2024.
+                Altera a Portaria de Consolidação GM/MS nº 3, de 28 de setembro de 2017, para instituir a Rede de
+                Atenção à Saúde
+                Bucal - RASB na Política Nacional de Saúde Bucal - PNSB, no âmbito do Sistema Único de Saúde - SUS.
+                <b>Diário Oficial da União</b>, Brasília, DF, 19 dez. 2024.
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt6213_20_12_2024.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt6213_20_12_2024.html
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL.
+                Lei nº 14.572, de 8 de maio de 2023.
+                Institui a Política Nacional de Saúde Bucal no âmbito do Sistema Único de Saúde (SUS) e altera a Lei nº
+                8.080, de 19
+                de setembro de 1990, para incluir a saúde bucal no campo de atuação do SUS.
+                <b>Diário Oficial da União</b>, Brasília, DF, 9 maio 2023.
+                Disponível em:
+                <a class="link" href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14572.htm"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14572.htm
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Secretaria de Atenção à Saúde.
+                <b>Política Nacional de Promoção da Saúde (PNPS).</b>
+                Brasília: Ministério da Saúde, 2018.
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública.
+                Portaria Interministerial nº 1, de 2 de janeiro de 2014.
+                Institui a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema
+                Prisional
+                (PNAISP) no âmbito do Sistema Único de Saúde (SUS).
+                <b>Diário Oficial da União</b>, Brasília, DF, 3 jan. 2014.
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                BRASIL. Ministério da Saúde.
+                Portaria GM/MS nº 1.559, de 1 de agosto de 2008.
+                Institui a Política Nacional de Regulação do Sistema Único de Saúde - SUS.
+                <b>Diário Oficial da União</b>, Brasília, DF, 4 ago. 2008.
+                Disponível em:
+                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2008/prt1559_01_08_2008.html"
+                    target="_blank" rel="noopener noreferrer">
+                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2008/prt1559_01_08_2008.html
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                CARVALHO, F. F. et al.
+                Conhecimento da população privada de liberdade sobre infecções sexualmente transmissíveis.
+                <b>Revista Gaúcha de Enfermagem</b>, v. 41, e20190268, 2020.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/rgenf/a/sdJn8Vng4tRBmqJWrYxm3CL/?lang=pt" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/rgenf/a/sdJn8Vng4tRBmqJWrYxm3CL/?lang=pt
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                COSTA, S. M.; VASCONCELOS, M.; ABREU, M. H. N. G.
+                <b>Ciência & Saúde Coletiva</b>, v. 18, n. 7, p. 1971-1980, 2013.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/csc/a/KcfwMf3GV9CWFN9ddWQHPYC/?format=html&amp;lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/csc/a/KcfwMf3GV9CWFN9ddWQHPYC/?format=html&amp;lang=pt
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                INSTITUTO NACIONAL DE CÂNCER (Brasil).
+                <b>Estimativa 2023</b>: incidência de câncer no Brasil.
+                Rio de Janeiro: INCA, 2022.
+                Disponível em:
+                <a class="link"
+                    href="https://www.inca.gov.br/publicacoes/livros/estimativa-2023-incidencia-de-cancer-no-brasil"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.inca.gov.br/publicacoes/livros/estimativa-2023-incidencia-de-cancer-no-brasil
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                KUMAR, P. et al.
+                Oral manifestations in hypertensive patients: a clinical study.
+                <b>Journal of Oral and Maxillofacial Pathology</b>, v. 16, n. 2, p. 215-221, 2012.
+                Disponível em:
+                <a class="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424937/" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424937/
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                LIMA, N. S. et al.
+                Public health, racism and dentistry: Analysis of the treatment of the black prison population in the
+                Unified Health
+                System.
+                <b>Research, Society and Development</b>, v. 10, n. 11, e433101119924, 2021.
+                Disponível em:
+                <a class="link" href="https://rsdjournal.org/index.php/rsd/article/view/19924" target="_blank"
+                    rel="noopener noreferrer">
+                    https://rsdjournal.org/index.php/rsd/article/view/19924
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                MANJI, F.; FEJERSKOV, O.
+                Dental Caries in Developing Countries in Relation to the Appropriate Use of Fluoride.
+                <b>Journal of Dental Research</b>, v. 69, n. 2, supl., p. 733-741, 1990.
+            </p>
+
+            <p>
+                MARTÍNEZ-DÍAZ-CANEL, A. I.; MARTÍN-FERNÁNDEZ, E.; GARCÍA-GONZÁLEZ, M.
+                Oral care in the Spanish prison setting.
+                <b>Revista Espanola de Sanidad Penitenciaria</b>, v. 26, n. 3, p. 113-120, 2024.
+                Disponível em:
+                <a class="link" href="https://www.sanipe.es/OJS/index.php/RESP/article/view/682/1340" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.sanipe.es/OJS/index.php/RESP/article/view/682/1340
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+            <p>
+                MATHEW, P. et al.
+                Cancer in an incarcerated population.
+                <b>Cancer</b>, v. 104, n. 10, p. 2197-2204, 2005.
+                Disponível em:
+                <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/16206295/" target="_blank"
+                    rel="noopener noreferrer">
+                    https://pubmed.ncbi.nlm.nih.gov/16206295/
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                MATO GROSSO DO SUL.
+                <b>Diagnóstico da rede de atenção à saúde bucal e recomendações para a linha de cuidado do câncer de
+                    boca.</b>
+                Campo Grande: Ed. dos Autores, 2024a.
+                Disponível em:
+                <a class="link"
+                    href="https://docs.bvsalud.org/biblioref/2024/12/1580806/diagnostico-da-rede-de-atencao-a-saude-bucal-e-recomendacoes-p_OxHDs75.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://docs.bvsalud.org/biblioref/2024/12/1580806/diagnostico-da-rede-de-atencao-a-saude-bucal-e-recomendacoes-p_OxHDs75.pdf
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                MATO GROSSO DO SUL.
+                <b>Guia prático:</b> diagnóstico de câncer bucal - passo-a-passo para cirurgiões dentistas.
+                Campo Grande: Ed. dos Autores, 2024b.
+                Disponível em:
+                <a class="link"
+                    href="https://docs.bvsalud.org/biblioref/2024/12/1580663/guia-pratico-diagnostico-de-cancer-bucal-passo-a-passo-para-ci_0JL6NfI.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    https://docs.bvsalud.org/biblioref/2024/12/1580663/guia-pratico-diagnostico-de-cancer-bucal-passo-a-passo-para-ci_0JL6NfI.pdf
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                MELO, E. A. et al.
+                A regulação do acesso à atenção especializada e a Atenção Primária à Saúde nas políticas nacionais do
+                SUS.
+                <b>Physis: Revista de Saúde Coletiva</b>, v. 31, n. 1, e310109, 2021.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/physis/a/86BXPhTn3CrBcZfDjBs33md/?lang=pt" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/physis/a/86BXPhTn3CrBcZfDjBs33md/?lang=pt
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                MENDES, E. V.
+                As redes de atenção à saúde.
+                <b>Ciência & Saúde Coletiva</b>, v. 15, n. 5, p. 2297-2305, 2010.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/csc/a/VRzN6vF5MRYdKGMBYgksFwc/?lang=pt" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/csc/a/VRzN6vF5MRYdKGMBYgksFwc/?lang=pt
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                NEVILLE, B.
+                <b>Patologia Oral e Maxilofacial.</b>
+                Rio de Janeiro: GEN Guanabara Koogan, 2016.
+            </p>
+
+            <p>
+                REDDY, V. et al.
+                A survey on oral health status and treatment needs of life-imprisoned inmates in central jails of
+                Karnataka, India.
+                <b>International Dental Journal</b>, v. 62, n. 1, p. 27-32, 2012.
+                Disponível em:
+                <a class="link" href="https://www.sciencedirect.com/science/article/pii/S0020653920332020?via%3Dihub"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.sciencedirect.com/science/article/pii/S0020653920332020?via%3Dihub
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                RODRIGUES, D. S.; SOUZA, P. T. R.
+                Lesões bucais associadas a hepatites: algumas delas seriam encontradas nas hepatites autoimunes?
+                <b>Revista Gestão e Saúde</b>, v. 23, n. 1, p. 78-97, 2021.
+                Disponível em:
+                <a class="link"
+                    href="https://www.researchgate.net/publication/352820819_LESOES_BUCAIS_ASSOCIADAS_A_HEPATITES_ALGUMAS_DELAS_SERIAM_ENCONTRADAS_NAS_HEPATITES_AUTOIMUNES"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.researchgate.net/publication/352820819_LESOES_BUCAIS_ASSOCIADAS_A_HEPATITES_ALGUMAS_DELAS_SERIAM_ENCONTRADAS_NAS_HEPATITES_AUTOIMUNES
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                SANTOS, L. C. O.; BATISTA, O. M.; CANGUSSU, M. C. T.
+                Caracterização do diagnóstico tardio do câncer de boca no estado de Alagoas.
+                <b>Brazilian Journal of Otorhinolaryngology</b>, v. 76, n. 4, p. 416-422, 2010.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/bjorl/a/CdBpdKTbRWWgYrTjb7dyCNH/?lang=pt" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/bjorl/a/CdBpdKTbRWWgYrTjb7dyCNH/?lang=pt
+                </a>.
+                Acesso em: 25 set. 2025.
+            </p>
+
+            <p>
+                SERRA, A. E. G.; LIMA, R. C. R. O.
+                Promoção da saúde para pessoas no regime semiaberto do sistema penitenciário: relato de experiência.
+                <b>Saúde em Debate</b>, v. 43, n. 123, p. 1270-1281, 2019.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/sdeb/a/kFW8VvLpwfnXFKsnCMrVCFz/?lang=pt" target="_blank"
+                    rel="noopener noreferrer">
+                    https://www.scielo.br/j/sdeb/a/kFW8VvLpwfnXFKsnCMrVCFz/?lang=pt
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                SILVA, C. B. et al.
+                Condições bucais de privados de liberdade em um município do sudoeste goiano.
+                <b>Brazilian Journal of Development</b>, v. 8, n. 3, p. 17965-17978, 2022.
+                Disponível em:
+                <a class="link" href="https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/45110"
+                    target="_blank" rel="noopener noreferrer">
+                    https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/45110
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                SOUSA, J. L. et al.
+                Posição socioeconômica e autoavaliação da saúde bucal no Brasil: resultados da Pesquisa Nacional de
+                Saúde.
+                <b>Cadernos de Saúde Pública</b>, v. 35, n. 6, e00099518, 2019.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/csp/a/J3GLgTCzghjCnwXydDcDRTv/abstract/?lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/csp/a/J3GLgTCzghjCnwXydDcDRTv/abstract/?lang=pt
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                STEFFENS, J. P.; MARCANTONIO, R. A. C.
+                Classificação das Doenças e Condições Periodontais e Peri-implantares 2018: guia prático e pontos-chave.
+                <b>Revista de Odontologia da UNESP</b>, v. 47, n. 4, p. 189-197, 2018.
+                Disponível em:
+                <a class="link" href="https://www.scielo.br/j/rounesp/a/F9F6gnVnNm6hFt6MBrJ6dHC/?format=pdf&lang=pt"
+                    target="_blank" rel="noopener noreferrer">
+                    https://www.scielo.br/j/rounesp/a/F9F6gnVnNm6hFt6MBrJ6dHC/?format=pdf&lang=pt
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                TAVERAS, I. D. L. et al.
+                Manifestações orofaciais em pessoas com diabetes mellitus: revisão integrativa.
+                <b>Revista Observatorio de la Economía Latinoamericana</b>, v. 23, n. 2, e8948, 2025.
+                Disponível em:
+                <a class="link" href="https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/8948"
+                    target="_blank" rel="noopener noreferrer">
+                    https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/8948
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                THETAKALA, R. K. et al.
+                Bruxism and Oral Health-Related Quality of Life Among Male Inmates in a Penal Institution, Mysore: A
+                Cross-Sectional
+                Study.
+                <b>Indian Journal of Dental Research</b>, v. 29, n. 3, p. 275-279, 2018.
+                Disponível em:
+                <a class="link"
+                    href="https://journals.lww.com/ijdr/fulltext/2018/29030/bruxism_and_oral_health_related_quality_of_life.5.aspx"
+                    target="_blank" rel="noopener noreferrer">
+                    https://journals.lww.com/ijdr/fulltext/2018/29030/bruxism_and_oral_health_related_quality_of_life.5.aspx
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+            <p>
+                ULINSKI, S. L. V. et al.
+                Profile of oral cancer cases treated in a high-complexity oncology center.
+                <b>Research, Society and Development</b>, v. 10, n. 11, e558101119929, 2021.
+                Disponível em:
+                <a class="link" href="https://rsdjournal.org/index.php/rsd/article/view/19929" target="_blank"
+                    rel="noopener noreferrer">
+                    https://rsdjournal.org/index.php/rsd/article/view/19929
+                </a>.
+                Acesso em: 20 ago. 2025.
+            </p>
+
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+                <h1 class="text-3xl md:text-5xl font-bold">
+                    Minicurrículo da Autora
+                </h1>
+                <div class="flex flex-wrap my-5">
+                    <div class="w-full md:w-1/3">
+                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/renata.jpg"
+                            alt="Giovana Soares Buzinaro" />
+                        <div class="py-3">
+                            <small class="font-bold py-2">Giovana Soares Buzinaro</small>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 px-0 md:px-5">
+                        <p>
+                            Cirurgiã-dentista pela Faculdade de Odontologia da Universidade Federal de Mato Grosso do
+                            Sul (FAODO/UFMS). Foi membro
+                            da Liga Nacional Acadêmica de Odontopediatria associada à ABOPed no ano de 2018.
+                            Especialista em saúde da família pela
+                            RMSF - SESAU/FioCruz (2022). Mestre em Saúde da Família (UFMS). Especialista em Periodontia
+                            e Implantodontia. Docente do
+                            Curso de Odontologia da Uniderp. Servidora pública estatutária estadual. Coordenadora de
+                            Saúde Bucal em Secretaria de
+                            Estado de Saúde de Mato Grosso do Sul desde 2023.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-10 bg-[var(--primary)] text-center">
+        <div class="max-w-[1000px] mx-auto px-5">
+            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
+                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
+                    alt="Logo" />
+            </a>
+            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
+                disseminação e a utilização desta obra, em parte ou em sua
+                totalidade, nos Termos de uso do ARES. Deve ser citada a
+                fonte e é vedada sua utilização comercial. © 2025.
+                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
+                Sul.
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/tippy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+        personalizado.init();
+        document.addEventListener("click", function (e) {
+            const overlay = e.target.closest(".modal-overlay");
+
+            if (!overlay) return;
+
+            const content = overlay.querySelector(".modal-content");
+
+            if (!content.contains(e.target)) {
+                estrutura.closeModal(overlay.id)
+            }
+        });
+    </script>
+</body>
+
+</html>
