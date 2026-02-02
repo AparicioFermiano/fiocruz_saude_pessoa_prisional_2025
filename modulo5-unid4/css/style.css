@@ -369,6 +369,7 @@ kbd {
     overflow: hidden;
     max-height: 0;
     opacity: 0;
+    overflow-y: auto;
 }
 
 .accordion-content.open {

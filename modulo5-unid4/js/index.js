@@ -155,7 +155,7 @@ var personalizado = {
 
     initMapTooltips: function () {
         tippy("#tooltip_1", {
-            content: '<p class="text-2xl"><b>Útero</b></p>',
+            content: '<p class="text-2xl"><b>Consultório de rua</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -166,7 +166,7 @@ var personalizado = {
         });
 
         tippy("#tooltip_2", {
-            content: '<p class="text-2xl"><b>Tuba uterina</b></p>',
+            content: '<p class="text-2xl"><b>Comunidade Terapêutica</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -177,7 +177,7 @@ var personalizado = {
         });
 
         tippy("#tooltip_3", {
-            content: '<p class="text-2xl"><b>Ovário</b></p>',
+            content: '<p class="text-2xl"><b>Unidade Básica de Saúde</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -188,7 +188,7 @@ var personalizado = {
         });
 
         tippy("#tooltip_4", {
-            content: '<p class="text-2xl"><b>Ovário</b></p>',
+            content: '<p class="text-2xl"><b>Núcleo de Apoio à Saúde da Família (NASF)</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -199,7 +199,7 @@ var personalizado = {
         });
 
         tippy("#tooltip_5", {
-            content: '<p class="text-2xl"><b>Colo do útero</b></p>',
+            content: '<p class="text-2xl"><b>Enfermarias especializadas em álcool e drogas</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -210,7 +210,18 @@ var personalizado = {
         });
 
         tippy("#tooltip_6", {
-            content: '<p class="text-2xl"><b>Vagina</b></p>',
+            content: '<p class="text-2xl"><b>Unidade de Acolhimento Terapêutico Transitório (UATT II)</b></p>',
+            placement: "right",
+            allowHTML: true,
+            animation: "scale",
+            trigger: "click",
+            touch: true,
+            interactive: true,
+            delay: [100, 0],
+        });
+
+        tippy("#tooltip_7", {
+            content: '<p class="text-2xl"><b>Centro de Atenção Psicossocial</b></p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
