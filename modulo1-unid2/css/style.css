@@ -336,6 +336,26 @@ kbd {
     gap: 1rem;
 }
 
+.tippy-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.tippy-box {
+    border-radius: 20px !important;
+    background-color: white !important;
+    color: black !important;
+    padding: 1rem .5rem;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 10px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 5px solid var(--primary);
+}
+
+.tippy-arrow {
+    color: white !important;
+}
+
 .modal-body {
     overflow-y: auto;
     flex-grow: 1;
