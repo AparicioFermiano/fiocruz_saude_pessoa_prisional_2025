@@ -128,7 +128,7 @@ var personalizado = {
         });
 
         tippy("#tooltip_3", {
-            content: '<p class="text-2xl"><b>Maior autopercepção em grupos vulneráveis</b><br><br>É provável que a autopercepção da saúde bucal na população privada de liberdade seja ainda pior devido às condições de vida e ao acesso restrito a cuidados.</p>',
+            content: '<p class="text-2xl"><b>Pior autopercepção em grupos vulneráveis:</b><br><br>É provável que a autopercepção da saúde bucal na população privada de liberdade seja ainda pior devido às condições de vida e ao acesso restrito a cuidados.</p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",

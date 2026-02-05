@@ -203,7 +203,7 @@ var personalizado = {
         });
 
         tippy("#tooltip_2", {
-            content: '<p class="text-2xl">Fortalecimento da desinstitucionalização das PPL, fechamentos dos institutos psiquiátricos</p>',
+            content: '<p class="text-2xl">Fortalecimento da desinstitucionalização das PPL, fechamento dos institutos psiquiátricos</p>',
             placement: "right",
             allowHTML: true,
             animation: "scale",
@@ -245,7 +245,7 @@ var personalizado = {
             delay: [100, 0],
         });
         tippy("#papel_2", {
-            content: '<p class="text-2xl">Articulação entre todas as instâncias da rede, para um cuidado geral</p>',
+            content: '<p class="text-2xl">Articulação entre todas as instâncias da rede, para um cuidado integral</p>',
             placement: "left",
             allowHTML: true,
             animation: "scale",
@@ -275,7 +275,7 @@ var personalizado = {
             delay: [100, 0],
         });
         tippy("#ponto_1", {
-            content: '<p class="text-2xl"><b>Centro de Atenção Psicossocial (Caps)</b><br><br>São centros especializados no cuidado de pessoas em sofrimento mental mais intenso ou persistente. Oferecem acompanhamento terapêutico, oficinas, grupos e atendimento multiprofissional.</p>',
+            content: '<p class="text-2xl"><b>Centro de Atenção Psicossocial (CAPS)</b><br><br>São centros especializados no cuidado de pessoas em sofrimento mental mais intenso ou persistente. Oferecem acompanhamento terapêutico, oficinas, grupos e atendimento multiprofissional.</p>',
             placement: "left",
             allowHTML: true,
             animation: "scale",
@@ -295,7 +295,7 @@ var personalizado = {
             delay: [100, 0],
         });
         tippy("#ponto_3", {
-            content: '<p class="text-2xl"><b>Leitos de Atenção Integral</b><br><br>Presentes em hospitais gerais e nos CAPS III, são indicados para casos que exigem cuidado intensivo, mas em ambiente acolhedor e conectado à rede de cuidados.</p>',
+            content: '<p class="text-2xl"><b>Leitos de Atenção Integral em Saúde Mental</b><br><br>Presentes em hospitais gerais e nos CAPS III, são indicados para casos que exigem cuidado intensivo, mas em ambiente acolhedor e conectado à rede de cuidados.</p>',
             placement: "left",
             allowHTML: true,
             animation: "scale",
