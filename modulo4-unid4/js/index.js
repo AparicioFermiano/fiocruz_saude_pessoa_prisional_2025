@@ -334,6 +334,26 @@ var personalizado = {
             interactive: true,
             delay: [100, 0],
         });
+        tippy("#ponto_7", {
+            content: '<p class="text-2xl"><b>Estratégias de reabilitação psicossocial</b><br><br>Ações integradas na RAPS que promovem autonomia, inclusão social e garantia de direitos de pessoas em sofrimento psíquico.</p>',
+            placement: "left",
+            allowHTML: true,
+            animation: "scale",
+            trigger: "click",
+            touch: true,
+            interactive: true,
+            delay: [100, 0],
+        });
+        tippy("#ponto_8", {
+            content: '<p class="text-2xl"><b>Residências terapêuticas</b><br><br>São moradias no território destinadas a pessoas egressas de longa internação psiquiátrica, que promovem desinstitucionalização, convivência comunitária, autonomia e reabilitação psicossocial.</p>',
+            placement: "left",
+            allowHTML: true,
+            animation: "scale",
+            trigger: "click",
+            touch: true,
+            interactive: true,
+            delay: [100, 0],
+        });
     },
 
     exercicioCenario1: function (e) {
