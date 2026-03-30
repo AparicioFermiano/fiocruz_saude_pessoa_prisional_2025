@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -323,37 +323,86 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo II - Direito, Diversidade e Equidade no Sistema Prisional
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 1 - Violência e Saúde
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 2
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Direito, Diversidade e Equidade no Sistema Prisional
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 1 &nbsp;·&nbsp; Violência e Saúde
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -448,11 +497,12 @@
 
         <div id="1.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.1 Violência, sistema prisional e direitos humanos
             </h2>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 A violência é um fenômeno complexo e multifacetado. Você já parou para pensar sobre quantas formas
                 diferentes a
                 violência pode assumir?
@@ -467,7 +517,7 @@
                 privação de direitos.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.1.1 A violência na história do Brasil
             </h2>
             <p>
@@ -531,11 +581,11 @@
                                         <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
                                             src="./images/imagem1.png" alt="Mulher andando a noite pela rua" />
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">No medo de andar sozinho à noite;</p>
                                         <span
                                             class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
@@ -554,11 +604,11 @@
                                         <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
                                             src="./images/imagem2.png" alt="Homem cansado no transporte público" />
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">
                                             No assédio sofrido no transporte público;
                                         </p>
@@ -579,11 +629,11 @@
                                         <img class="w-full h-auto rounded-lg overflow-hidden object-cover"
                                             src="./images/imagem3.png" alt="Mulher preta no transporte público" />
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">
                                             Na falta de acesso às mesmas oportunidades por causa da cor da pele ou
                                             classe social.
@@ -605,7 +655,7 @@
                 saúde mental e as relações interpessoais. Em muitos casos, pode levar à insegurança na própria família.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.1.2 O sistema prisional e os direitos humanos
             </h2>
             <p>
@@ -664,8 +714,7 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="link" href="https://www.cnj.jus.br/wp-content/uploads/2024/04/resumo-adpf-7.pdf"
-                                target="_blank">Clique aqui</a>
+                            <a class="link" href="./media/resumo-adpf-7.pdf" target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -690,7 +739,7 @@
             </p>
             <div id="quadro-1" class="flex flex-col gap-5 mt-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    <i class="fa-solid fa-image text-black mr-2"></i>
                     Quadro 1 - Classificando as diferentes formas de violência: institucional e interpessoal
                 </h2>
                 <table class="w-full rounded-2xl overflow-hidden">
@@ -769,11 +818,12 @@
                             Janeiro e registrou no livro
                             <i>Deserdados Sociais</i> (Minayo; Constantino, 2015). Vale a leitura!
                         </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link" href="https://www.youtube.com/watch?v=MPKYGWtYrec" target="_blank">Clique
-                                aqui</a>
-                        </p>
+                        <video class="link" width="600" controls>
+                            <source
+                                src="./media/Maria-Cecilia-Minayo-violencia-no-Brasil_Media_MPKYGWtYrec_002_720p.mp4"
+                                type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
                     </div>
                     <div class="modal-footer">
                         <button onclick="estrutura.closeModal('modalSaibaMais2')"
@@ -822,10 +872,25 @@
                 Mundial da Saúde
                 (OMS) adere ao conceito, confirmando sua relação com as principais iniquidades em saúde (Fiocruz, 2020).
             </p>
+            <div id="modalFoto1" class="modal-overlay hidden" onclick="estrutura.closeOnOverlay(event, this)">
+                <div class="modal-content">
+                    <div class="modal-body w-full">
+                        <img class="w-full h-full object-contain rounded-xl" src="./images/imagem4.png" loading="lazy"
+                            alt="Gráfico população" />
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalFoto1')" class="btn bg-[var(--primary)] text-black">
+                            FECHAR
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/2 md:pr-5 py-2">
-                    <img class="w-full h-auto rounded-lg overflow-hidden object-cover" src="./images/imagem4.png"
-                        alt="Gráfico sobre as condições socioeconômicas, culturais e ambientais gerais" />
+                    <img class="zoomable rounded-xl w-full h-auto overflow-hidden object-cover"
+                        src="./images/imagem4.png" loading="lazy"
+                        alt="Gráfico sobre as condições socioeconômicas, culturais e ambientais gerais"
+                        onclick="estrutura.openModal('modalFoto1')" />
                     <small>Fonte: Dahlgren e Whitehead (1991 <i>apud</i> Buss; Pellegrini, 2007).</small>
                     <hr>
                 </div>
@@ -901,8 +966,12 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="link" href="https://www.youtube.com/watch?v=bVmc-gngyVI" target="_blank">Clique
-                                aqui</a>
+                            <video class="link" width="600" controls>
+                                <source
+                                    src="./media/Alberto-Pellegrini-Filho-ENSP-FIOCRUZ-De_Media_bVmc-gngyVI_001_720p.mp4"
+                                    type="video/mp4">
+                                Seu navegador não suporta vídeo.
+                            </video>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -937,8 +1006,9 @@
                 garantam sua
                 participação plena na sociedade (reintegração).
             </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Para transformar essa realidade, é fundamental que as políticas públicas promovam a qualificação das
                 equipes que atuam
                 diretamente com essa população, na ampliação do acesso à saúde e à educação e na revisão da estrutura do
@@ -1160,16 +1230,16 @@
                 insegurança.
             </p>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full bg-[var(--primary)]">
             <div class="flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Como a fome, a pobreza e o desemprego contribuem para o aumento da violência? E mais - como garantir
                     que a prevenção
                     passe também pelo acesso à educação, à moradia e à saúde pública de qualidade?
-                </h2>
+                </h3>
             </div>
         </div>
         <div class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
@@ -1183,7 +1253,7 @@
                 pode ser decisiva para reduzir os índices de reincidência criminal.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.2 Políticas públicas para enfrentamento da violência
             </h2>
             <p>
@@ -1199,7 +1269,7 @@
                 sobre o papel do Estado e da sociedade nesse processo.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.2.1 Estratégias de prevenção da violência
             </h2>
             <p>
@@ -1209,9 +1279,9 @@
                 públicas de prevenção
                 da violência devem contemplar.
             </p>
-            <div id="quadro-1" class="flex flex-col gap-5 mt-5">
+            <div id="quadro-1b" class="flex flex-col gap-5 mt-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    <i class="fa-solid fa-image text-black mr-2"></i>
                     Quadro 2 - Programas e iniciativas voltados à redução e prevenção da violência
                 </h2>
                 <p class="text-center pb-3">
@@ -1316,7 +1386,7 @@
                 <small>Fonte: elaboração do autor (2025).</small>
             </div>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 1.2.2 Políticas de combate à violência
             </h2>
             <p>
@@ -1344,7 +1414,7 @@
             </p>
             <div id="quadro-3" class="flex flex-col gap-5 mt-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    <i class="fa-solid fa-image text-black mr-2"></i>
                     Quadro 3 - Programas e medidas de enfrentamento da violência e proteção das vítimas
                 </h2>
                 <div>
@@ -1438,8 +1508,8 @@
                                     <p>
                                         <b>Confira ações relacionadas:</b><br>
                                         <b>Relatório: </b><br>
-                                        <a href="https://www.cnj.jus.br/wp-content/uploads/conteudo/arquivo/2019/08/7b7cb6d9ac9042c8d3e40700b80bf207.pdf"
-                                            target="_blank" rel="noopener noreferrer" class="link">O
+                                        <a href="./media/parque.pdf" target="_blank" rel="noopener noreferrer"
+                                            class="link">O
                                             Poder Judiciário no Enfrentamento à Violência Doméstica e Familiar contra as
                                             Mulheres</a><br>
                                         Iniciativa conjunta do Conselho Nacional de Justiça (CNJ) e do Instituto de
@@ -1459,7 +1529,7 @@
                 <small>Fonte: elaboração do autor (2025).</small>
             </div>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 1.2.3 Reabilitação, ressocialização e reintegração social
             </h2>
             <p>
@@ -1471,7 +1541,7 @@
             </p>
             <div id="quadro-4" class="flex flex-col gap-5 mt-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                    <i class="fa-solid fa-image text-black mr-2"></i>
                     Quadro 4 - Programas e iniciativas para reintegração social de egressos do sistema prisional
                 </h2>
                 <div>
@@ -1550,7 +1620,7 @@
                 <small>Fonte: elaboração do autor (2025).</small>
             </div>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-image text-[var(--modulo1-primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 1.2.4 Participação da sociedade civil
             </h2>
             <p>
@@ -1588,7 +1658,7 @@
                 públicas mais justas, inclusivas e efetivas, especialmente nos contextos de maior vulnerabilidade.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-arrow-right text-black"></i>
                 1.2.5 Ações interinstitucionais
             </h2>
             <p>
@@ -1604,7 +1674,7 @@
         <div id="encerramento" class="w-full bg-gray-100 py-10">
             <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                     Encerramento da Unidade
                 </h2>
                 <p>
@@ -1677,59 +1747,63 @@
                     caminhar para
                     uma sociedade mais segura e equitativa.
                 </p>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
             </div>
         </div>
 
-        <div id="referencias_importantes" class="bg-gray-100 py-10">
+        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 px-5 py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                Referências principais
+            </h2>
+            <p>
+                CALICCHIO, M. G. M. S. <b>Além das Celas</b>: experiência de mulheres com familiar em cumprimento de
+                pena em
+                regime fechado,
+                Mato Grosso. Tese (Doutorado em Saúde Coletiva) - Programa de Pós-Graduação em Saúde Coletiva,
+                Universidade Federal de
+                Mato Grosso, Cuiabá, 2019.
+            </p>
+            <p>
+                CARDOSO, M. C. V. As assistências previstas na Lei de Execução Penal: uma tentativa de inclusão
+                social
+                do apenado. <b>SER
+                    Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
+                <a class="underline link" href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746"
+                    target="_blank"
+                    rel="noopener noreferrer">https://periodicos.unb.br/index.php/SER_Social/article/view/12746(opens
+                    in
+                    a new tab)</a>. Acesso em: 1 set. 2025.
+            </p>
+            <p>
+                CONECTAS DIREITOS HUMANOS. Regras de Mandela: os problemas do sistema carcerário brasileiro. São
+                Paulo:
+                Conectas, 18
+                jul. 2024. Disponível em:
+                <a class="underline link"
+                    href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
+                    target="_blank"
+                    rel="noopener noreferrer">https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/</a>.
+                Acesso em: 22 ago. 2025.
+            </p>
+            <p>
+                MACHADO, N. O.; GUIMARÃES, I. S. A realidade do sistema prisional brasileiro e o princípio da
+                dignidade
+                da pessoa
+                humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível
+                em:
+                <a class="underline link"
+                    href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf</a>.
+                Acesso em: 5 ago. 2025.
+            </p>
+        </div>
+
+        <div id="referencias" class="w-full bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 px-5">
-                <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
-                    Referências importantes
-                </h2>
-                <p>
-                    CALICCHIO, M. G. M. S. <b>Além das Celas</b>: experiência de mulheres com familiar em cumprimento de
-                    pena em
-                    regime fechado,
-                    Mato Grosso. Tese (Doutorado em Saúde Coletiva) - Programa de Pós-Graduação em Saúde Coletiva,
-                    Universidade Federal de
-                    Mato Grosso, Cuiabá, 2019.
-                </p>
-                <p>
-                    CARDOSO, M. C. V. As assistências previstas na Lei de Execução Penal: uma tentativa de inclusão
-                    social
-                    do apenado. <b>SER
-                        Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
-                    <a class="underline link" href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746"
-                        target="_blank"
-                        rel="noopener noreferrer">https://periodicos.unb.br/index.php/SER_Social/article/view/12746(opens
-                        in
-                        a new tab)</a>. Acesso em: 1 set. 2025.
-                </p>
-                <p>
-                    CONECTAS DIREITOS HUMANOS. Regras de Mandela: os problemas do sistema carcerário brasileiro. São
-                    Paulo:
-                    Conectas, 18
-                    jul. 2024. Disponível em:
-                    <a class="underline link"
-                        href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
-                        target="_blank"
-                        rel="noopener noreferrer">https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/</a>.
-                    Acesso em: 22 ago. 2025.
-                </p>
-                <p>
-                    MACHADO, N. O.; GUIMARÃES, I. S. A realidade do sistema prisional brasileiro e o princípio da
-                    dignidade
-                    da pessoa
-                    humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível
-                    em:
-                    <a class="underline link"
-                        href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer">https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf</a>.
-                    Acesso em: 5 ago. 2025.
-                </p>
-            </div>
-            <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
                     <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
                     Referências
@@ -1850,38 +1924,6 @@
                     . Acesso em: 5 ago. 2025.
                 </p>
                 <p>
-                    CALICCHIO, M. G. M. S. <b>Além das Celas</b>: experiência de mulheres com familiar em cumprimento de
-                    pena em
-                    regime fechado,
-                    Mato Grosso. Tese (Doutorado em Saúde Coletiva) - Programa de Pós-Graduação em Saúde Coletiva,
-                    Universidade Federal de
-                    Mato Grosso, Cuiabá, 2019.
-                </p>
-                <p>
-                    CARDOSO, M. C. V. As assistências previstas na Lei de Execução Penal: uma tentativa de inclusão
-                    social
-                    do apenado. <b>SER
-                        Social</b>, v. 11, n. 24, p. 106-128, 2009. Disponível em:
-                    <a class="underline link" href="https://periodicos.unb.br/index.php/SER_Social/article/view/12746"
-                        target="_blank" rel="noopener noreferrer">
-                        https://periodicos.unb.br/index.php/SER_Social/article/view/12746
-                    </a>
-                    . Acesso em: 1 set. 2025.
-                </p>
-                <p>
-                    CONECTAS DIREITOS HUMANOS. <b>Regras de Mandela</b>: os problemas do sistema carcerário brasileiro.
-                    São
-                    Paulo:
-                    Conectas, 18
-                    jul. 2024. Disponível em:
-                    <a class="underline link"
-                        href="https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/"
-                        target="_blank" rel="noopener noreferrer">
-                        https://conectas.org/noticias/regras-de-mandela-os-problemas-do-sistema-carcerario-brasileiro/
-                    </a>
-                    . Acesso em: 22 ago. 2025.
-                </p>
-                <p>
                     FERNANDES, F. <b>A integração do negro na sociedade de classes</b>. São Paulo: Ática, 1978. 2 v.
                 </p>
                 <p>
@@ -1966,19 +2008,6 @@
                         https://pesquisa.bvsalud.org/portal/resource/pt/biblio-1377954
                     </a>
                     Acesso em: 1 set. 2025.
-                </p>
-                <p>
-                    MACHADO, N. O.; GUIMARÃES, I. S. A realidade do sistema prisional brasileiro e o princípio da
-                    dignidade
-                    da pessoa
-                    humana. <b>Revista Eletrônica de Iniciação Científica</b>, v. 5, n. 1, p. 566-581, 2014. Disponível
-                    em:
-                    <a class="underline link"
-                        href="https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf"
-                        target="_blank" rel="noopener noreferrer">
-                        https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/1008/Arquivo%2030.pdf
-                    </a>
-                    Acesso em: 5 ago. 2025.
                 </p>
                 <p>
                     MINAYO, M. . S.; CONSTANTINO, P. (org.). <b>Deserdados Sociais</b>: condições de vida e saúde dos
@@ -2095,23 +2124,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

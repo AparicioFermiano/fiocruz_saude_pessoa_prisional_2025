@@ -242,10 +242,10 @@ var personalizado = {
                     const valorItem = itemSolto.getAttribute("data-match");
                     if (valorItem === idCorreto) {
                         acertos++;
-                        itemSolto.classList.remove("bg-red-500");
+                        itemSolto.classList.remove("bg-white", "bg-red-500");
                         itemSolto.classList.add("bg-green-500");
                     } else {
-                        itemSolto.classList.remove("bg-green-500");
+                        itemSolto.classList.remove("bg-white", "bg-green-500");
                         itemSolto.classList.add("bg-red-500");
                     }
                 }

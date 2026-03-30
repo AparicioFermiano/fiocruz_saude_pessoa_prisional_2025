@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs sed -i 's/<script type=\"\"module\"\" src=\"\"\\\\.\\\\/js\\\\/tailwindcss\\\\.min\\\\.js\"\"><\\\\/script>/<script src=\"\"\\\\.\\\\/js\\\\/tailwindcss\\\\.min\\\\.js\"\"><\\\\/script>/g')",
+      "Bash(git -C \"c:/Users/AparicioJunior/workspace/projeto_fiocruz_2025\" status --short)",
+      "Bash(python3 -c \":*)",
+      "Bash(python3 update_banners_footers.py)",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(sed -i 's/© 2025 \\\\&nbsp;·\\\\&nbsp; Ministério da Saúde/© 2026 \\\\&nbsp;·\\\\&nbsp; Ministério da Saúde/g' \"$f\")",
+      "Bash(sed -i 's/FIOCRUZ MS \\\\&nbsp;·\\\\&nbsp; Campo Grande, MS \\\\&nbsp;·\\\\&nbsp; 2025/FIOCRUZ MS \\\\&nbsp;·\\\\&nbsp; Campo Grande, MS \\\\&nbsp;·\\\\&nbsp; 2026/g' \"$f\")",
+      "Bash(done)",
+      "Bash(find . -name *mockup* -o -name *mock*)",
+      "Bash(for dir:*)",
+      "Bash(do if:*)",
+      "Bash(then echo:*)",
+      "Bash(awk 'NR>=50')",
+      "Bash(awk 'NR>=20')",
+      "Bash(find \"c:\\\\Users\\\\AparicioJunior\\\\workspace\\\\projeto_fiocruz_2025/modulo\"* -name \"index.html\" -type f)",
+      "Bash(while read:*)",
+      "Bash(do wc:*)",
+      "Bash(grep -n 'Arraste o mouse para inserir as respostas' /c/Users/AparicioJunior/workspace/projeto_fiocruz_2025/modulo*/index.html)",
+      "Bash(grep -n target=\"\"_blank\"\" /c/Users/AparicioJunior/workspace/projeto_fiocruz_2025/modulo*/index.html)",
+      "Bash(/tmp/final_report.txt:*)",
+      "Bash(find c:/Users/AparicioJunior/workspace/projeto_fiocruz_2025/modulo4-unid4 -name *.js)",
+      "Bash(python3:*)"
+    ]
+  }
+}

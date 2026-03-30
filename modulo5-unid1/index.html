@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -270,7 +270,6 @@
                     <b>
                         Unidade 5
                     </b><br>
-                    Lucas Moura de Oliveira <br>
                     Giovana Soares Buzinaro
 
                 </p>
@@ -343,39 +342,82 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo V - O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não
-                        Transmissíveis no Âmbito da PNAISP
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 1 - Cuidado e Tratamento de Agravos, Doenças Agudas, Crônicas e Infecciosas em Ambiente
-                        Prisional
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 5
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não Transmissíveis no Âmbito da PNAISP
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 1 &nbsp;·&nbsp; Cuidado e Tratamento de Agravos, Doenças Agudas, Crônicas e Infecciosas em Ambiente Prisional
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -506,7 +548,7 @@
 
         <div id="1.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.1 Rotina de trabalho no sistema prisional
             </h2>
             <p>
@@ -558,7 +600,7 @@
 
         </div>
 
-        <div id="timeline" class="bg-gray-100 py-10">
+        <div id="timeline" class="bg-[var(--primary)] py-10">
             <div class="timeline max-w-[1000px] px-5 mx-auto flex flex-col gap-10 md:gap-20">
                 <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                     <h2 class="font-bold mb-5 text-2xl">
@@ -669,9 +711,8 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.saude.df.gov.br/documents/37101/0/Nota_Tecnica_109200100_1+%281%29.pdf/3c83d813-bc6c-6246-2fa1-828ed44733e3?t=1680113035243"
-                                target="_blank">https://www.saude.df.gov.br/documents/37101/0/Nota_Tecnica_109200100_1+%281%29.pdf/3c83d813-bc6c-6246-2fa1-828ed44733e3?t=1680113035243</a>
+                            <a class="link" href="./media/Nota_Tecnica_109200100_1 (1).pdf" target="_blank">Clique
+                                aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -715,7 +756,7 @@
             </p>
             <div id="quadro-1" class="flex flex-col gap-5 mt-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                    <i class="fa-solid fa-image text-black mr-2"></i>
                     Quadro 1 - Situações em que o atendimento é interrompido e possíveis maneiras de aproveitamento do
                     tempo
                 </h2>
@@ -820,124 +861,137 @@
                 cuidado e garantir a
                 continuidade dos tratamentos (Ferreira <i>et al</i>., 2025).
             </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.2 Epidemiologia dos agravos das pessoas privadas de liberdade
-            </h2>
-            <p>
-                O <i>Relatório de Informações Penais</i> (RELIPEN) (Brasil, 2024a) informa que, em junho de 2024, a
-                população privada de
-                liberdade em celas físicas no Brasil era de 663.387 indivíduos, dos quais 4,3% (28.770 pessoas) eram
-                mulheres. A maioria
-                tinha entre 18 e 45 anos (85%) e se autodeclarava como preta ou parda (64%). Também observa-se que havia
-                9.424 (1,4%)
-                pessoas com deficiência, predominantemente física e intelectual. Quase metade das PPL (49,5%) tinha
-                nível educacional
-                inferior ao ensino fundamental completo, enquanto apenas 0,8% delas apresentava curso superior completo.
-                Com relação às
-                atividades realizadas, 23,8% estavam realizando atividades laborais e 17,8% estavam em atividades
-                educacionais. Veja o
-                infográfico abaixo:
-            </p>
-            <div class="w-full md:w-1/2 md:pr-5 py-2 mx-auto">
-                <img class="w-full h-auto block mx-auto" src="./images/relipen.jpg"
-                    alt="Epidemiologia dos agravos das pessoas privadas de liberdade" />
-                <small>Fonte: Relatório de Informações Penais (RELIPEN) (Brasil, 2024a).</small>
-                <hr>
-            </div>
         </div>
 
-        <div class="w-full bg-gray-100">
-            <div class="flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+        <div id="1.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.2 Epidemiologia dos agravos das pessoas privadas de liberdade
+                </h2>
+                <p>
+                    O <i>Relatório de Informações Penais</i> (RELIPEN) (Brasil, 2024a) informa que, em junho de 2024, a
+                    população privada de
+                    liberdade em celas físicas no Brasil era de 663.387 indivíduos, dos quais 4,3% (28.770 pessoas) eram
+                    mulheres. A maioria
+                    tinha entre 18 e 45 anos (85%) e se autodeclarava como preta ou parda (64%). Também observa-se que
+                    havia
+                    9.424 (1,4%)
+                    pessoas com deficiência, predominantemente física e intelectual. Quase metade das PPL (49,5%) tinha
+                    nível educacional
+                    inferior ao ensino fundamental completo, enquanto apenas 0,8% delas apresentava curso superior
+                    completo.
+                    Com relação às
+                    atividades realizadas, 23,8% estavam realizando atividades laborais e 17,8% estavam em atividades
+                    educacionais. Veja o
+                    infográfico abaixo:
+                </p>
+                <div class="w-full md:w-1/2 md:pr-5 py-2 mx-auto">
+                    <img class="w-full h-auto block mx-auto" src="./images/relipen.jpg"
+                        alt="Epidemiologia dos agravos das pessoas privadas de liberdade" />
+                    <small>Fonte: Relatório de Informações Penais (RELIPEN) (Brasil, 2024a).</small>
+                    <hr>
+                </div>
+
+                <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                    <span
+                        class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                     Podemos então traçar um perfil demográfico da PPL brasileira média: <b>homem jovem, preto ou pardo,
                         com baixo nível educacional e com poucas oportunidades para continuação de sua educação ou
                         capacitação profissional intramuros.
                     </b>
-                </h2>
+                </h3>
+                <p>
+                    Essas questões apresentadas têm relação não só com os agravos intramuros que as PPL podem sofrer,
+                    mas
+                    também com
+                    problemas enfrentados por elas após a saída do estabelecimento penal. Em um estudo, Liu <i>et
+                        al</i>.,
+                    2021, ao
+                    avaliarem
+                    óbitos entre PPL e pessoas com histórico de aprisionamento, identificaram não apenas que o risco de
+                    óbito por qualquer
+                    causa é 30% maior nos estabelecimentos penais em comparação com a população em geral, mas também que
+                    esse risco se
+                    mantém mais elevado por até 8 anos após a soltura, chegando a ser até 3 vezes maior nos primeiros 2
+                    anos. Em sua
+                    maioria, os óbitos no regime fechado masculino tiveram como causas agressões, doenças infecciosas e
+                    suicídio,
+                    representando 33,6%, 11,9% e 8,2% das mortes, respectivamente. O estudo também identificou que o
+                    número
+                    de óbitos nos
+                    estabelecimentos penais identificados pelo Sistema de Informações sobre Mortalidade (SIM) era 2,2
+                    vezes
+                    maior do que o
+                    relatado pelo Departamento Penitenciário Nacional (DEPEN) e o Sistema Integrado de Gestão
+                    Operacional
+                    (SIGO), refletindo
+                    uma fragilidade nos sistemas de notificação atuais. No Saiba mais, discutimos esses dados mais
+                    detalhadamente,
+                    demonstrando essa fragilidade na notificação dos agravos.
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais2')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais2" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                Prisões brasileiras aumentam risco de adoecer e de morrer por causas violentas
+                            </p>
+                            <p>
+                                <b>Autor:</b>
+                                Ricardo Zorzetto (2024).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                entrevista com o pesquisador Julio Croda, que trata das diferentes causas de mortalidade
+                                no
+                                sistema prisional.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/"
+                                    target="_blank">https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais2')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Apesar da alta incidência de óbitos por doenças infecciosas e violência, as causas não infecciosas,
+                    como
+                    doenças
+                    cardiovasculares e neoplasias, também são relevantes para a mortalidade em estabelecimentos penais.
+                    Limitações com
+                    relação ao acesso à saúde antes, durante e depois do aprisionamento provocam complicações de doenças
+                    crônicas,
+                    diagnósticos tardios ou tratamentos incompletos. Agora, o que você acha de discutirmos todas essas
+                    questões com mais
+                    profundidade?
+                </p>
             </div>
         </div>
 
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <p>
-                Essas questões apresentadas têm relação não só com os agravos intramuros que as PPL podem sofrer, mas
-                também com
-                problemas enfrentados por elas após a saída do estabelecimento penal. Em um estudo, Liu <i>et al</i>.,
-                2021, ao
-                avaliarem
-                óbitos entre PPL e pessoas com histórico de aprisionamento, identificaram não apenas que o risco de
-                óbito por qualquer
-                causa é 30% maior nos estabelecimentos penais em comparação com a população em geral, mas também que
-                esse risco se
-                mantém mais elevado por até 8 anos após a soltura, chegando a ser até 3 vezes maior nos primeiros 2
-                anos. Em sua
-                maioria, os óbitos no regime fechado masculino tiveram como causas agressões, doenças infecciosas e
-                suicídio,
-                representando 33,6%, 11,9% e 8,2% das mortes, respectivamente. O estudo também identificou que o número
-                de óbitos nos
-                estabelecimentos penais identificados pelo Sistema de Informações sobre Mortalidade (SIM) era 2,2 vezes
-                maior do que o
-                relatado pelo Departamento Penitenciário Nacional (DEPEN) e o Sistema Integrado de Gestão Operacional
-                (SIGO), refletindo
-                uma fragilidade nos sistemas de notificação atuais. No Saiba mais, discutimos esses dados mais
-                detalhadamente,
-                demonstrando essa fragilidade na notificação dos agravos.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            Prisões brasileiras aumentam risco de adoecer e de morrer por causas violentas
-                        </p>
-                        <p>
-                            <b>Autor:</b>
-                            Ricardo Zorzetto (2024).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            entrevista com o pesquisador Julio Croda, que trata das diferentes causas de mortalidade no
-                            sistema prisional.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/"
-                                target="_blank">https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais2')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <p>
-                Apesar da alta incidência de óbitos por doenças infecciosas e violência, as causas não infecciosas, como
-                doenças
-                cardiovasculares e neoplasias, também são relevantes para a mortalidade em estabelecimentos penais.
-                Limitações com
-                relação ao acesso à saúde antes, durante e depois do aprisionamento provocam complicações de doenças
-                crônicas,
-                diagnósticos tardios ou tratamentos incompletos. Agora, o que você acha de discutirmos todas essas
-                questões com mais
-                profundidade?
-            </p>
+        <div id="1.3" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3 Epidemiologia das doenças infecciosas nos estabelecimentos penais
             </h2>
             <p>
@@ -948,7 +1002,7 @@
                 desafios no manejo das patologias que você mais frequentemente encontrará no seu dia a dia de trabalho.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3.1 HIV/Aids, hepatites virais B e C e infecções sexualmente transmissíveis
             </h3>
             <p>
@@ -995,11 +1049,11 @@
                             de 9:45 minutos, que aborda
                             a dura realidade das pessoas vivendo com HIV (PVHA) no Carandiru.
                         </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link" href="https://www.youtube.com/watch?v=yHbjaCGmqjQ&t=241s"
-                                target="_blank">https://www.youtube.com/watch?v=yHbjaCGmqjQ&t=241s</a>
-                        </p>
+                        <video class="link" width="600" controls>
+                            <source src="./media/Aids-no-Carandiru-Coluna-33_Media_yHbjaCGmqjQ_001_720p.mp4"
+                                type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
                     </div>
                     <div class="modal-footer">
                         <button onclick="estrutura.closeModal('modalSaibaMais3')"
@@ -1026,7 +1080,7 @@
             </p>
             <div id="quadro-2" class="flex flex-col gap-5 mt-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                    <i class="fa-solid fa-image text-black mr-2"></i>
                     Quadro 2 - Mudanças ocorridas ao longo do tempo no cenário epidemiológico das ISTs no sistema
                     prisional
                 </h2>
@@ -1101,7 +1155,7 @@
                         </div>
                     </div>
                 </div>
-                <small>Fonte: elaboração do autor com base em Brasil (2019a, 2023, 2024b) e Burattini <i>et al</i>.
+                <small>Fonte: elaboração do autor (2025) com base em Brasil (2019a, 2023, 2024b) e Burattini <i>et al</i>.
                     (2005).</small>
             </div>
             <div class="flex flex-wrap">
@@ -1134,7 +1188,7 @@
             </div>
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/3 p-2 order-2 md:order-1 my-auto">
-                    <img class="w-full h-auto rounded-lg overflow-hidden object-cover max-w-[300px] mx-auto block"
+                    <img class="w-full h-auto rounded-lg overflow-hidden object-cover max-w-[300ias mx-auto block"
                         src="./images/barra-3.png" alt="Prevalências acima de" />
                 </div>
                 <div class="w-full md:w-2/3 p-2 my-auto order-1 md:order-2">
@@ -1188,7 +1242,7 @@
                 87,1% dos genótipos de HPV encontrados são de alto risco (Zonta <i>et al</i>., 2024).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3.2 Tuberculose
             </h3>
             <p>
@@ -1288,7 +1342,7 @@
                 laboratórios da sua região devem ser pactuadas para que essas PPL tenham acesso rápido ao diagnóstico.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3.3 Infecções cutâneas
             </h3>
             <p>
@@ -1404,47 +1458,66 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="1.4" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.4 Violência
+                </h2>
+                <p>
+                    Sobre o tema da violência e atendimento a PPL vítimas de trauma, vamos retomar o que foi discutido
+                    no
+                    início desta
+                    Unidade. Liu <i>et al</i>. (2021) mostraram que a maioria dos óbitos registrados nas instituições
+                    penais
+                    em Mato Grosso do Sul
+                    entre 2005 e 2018 foi decorrente de violência. É extremamente improvável que você,
+                    estudante-trabalhador, tenha uma
+                    semana de trabalho sem que precise avaliar PPL que estejam sofrendo as consequências dessa
+                    violência.
+                </p>
+                <p>
+                    As formas de violência e suas repercussões aparecem no atendimento diário sob as mais variadas
+                    formas.
+                    Brigas, acertos
+                    de contas, atritos com policiais, agressões sofridas ou aplicadas em familiares visitantes,
+                    privações e
+                    castigos
+                    (oficializados ou não) (Sabino; Lemos; Guedes, 2024) são situações corriqueiras nas instituiçõen
+                    penais.
+                    Entre os
+                    fatores de risco relacionados a ser vítima dessas situações de violência, estão histórico de ter
+                    sofrido
+                    violência
+                    física antes da privação de liberdade, ida para solitária, abuso de substâncias psicoativas e não
+                    realizar trabalho na
+                    instituição (Gama-Araujo <i>et al.</i>, 2020).
+                </p>
+                <p>
+                    A avaliação inicial dessas PPL pode ser difícil. Frequentemente, não conseguem fazer um relato claro
+                    sobre como o trauma
+                    aconteceu devido ao medo de retaliação, o que dificulta uma previsão de complicações,
+                    principalmente, em
+                    momentos em que
+                    não há um quadro clínico evidente. Mesmo recebendo atendimento inicial rápido e sendo transferidas
+                    para
+                    a UBS, essas PPL
+                    têm dificuldade no seguimento. Por exemplo, uma fratura de membro inferior com fixador externo fica
+                    mais
+                    suscetível a
+                    infecções devido às condições de lotação e sanitárias, aumentando o risco de possíveis complicações
+                    e o
+                    tempo para
+                    curar.
+                </p>
+            </div>
+        </div>
+
+        <div id="1.5" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.4 Violência
-            </h2>
-            <p>
-                Sobre o tema da violência e atendimento a PPL vítimas de trauma, vamos retomar o que foi discutido no
-                início desta
-                Unidade. Liu <i>et al</i>. (2021) mostraram que a maioria dos óbitos registrados nas instituições penais
-                em Mato Grosso do Sul
-                entre 2005 e 2018 foi decorrente de violência. É extremamente improvável que você,
-                estudante-trabalhador, tenha uma
-                semana de trabalho sem que precise avaliar PPL que estejam sofrendo as consequências dessa violência.
-            </p>
-            <p>
-                As formas de violência e suas repercussões aparecem no atendimento diário sob as mais variadas formas.
-                Brigas, acertos
-                de contas, atritos com policiais, agressões sofridas ou aplicadas em familiares visitantes, privações e
-                castigos
-                (oficializados ou não) (Sabino; Lemos; Guedes, 2024) são situações corriqueiras nas instituiçõen penais.
-                Entre os
-                fatores de risco relacionados a ser vítima dessas situações de violência, estão histórico de ter sofrido
-                violência
-                física antes da privação de liberdade, ida para solitária, abuso de substâncias psicoativas e não
-                realizar trabalho na
-                instituição (Gama-Araujo <i>et al.</i>, 2020).
-            </p>
-            <p>
-                A avaliação inicial dessas PPL pode ser difícil. Frequentemente, não conseguem fazer um relato claro
-                sobre como o trauma
-                aconteceu devido ao medo de retaliação, o que dificulta uma previsão de complicações, principalmente, em
-                momentos em que
-                não há um quadro clínico evidente. Mesmo recebendo atendimento inicial rápido e sendo transferidas para
-                a UBS, essas PPL
-                têm dificuldade no seguimento. Por exemplo, uma fratura de membro inferior com fixador externo fica mais
-                suscetível a
-                infecções devido às condições de lotação e sanitárias, aumentando o risco de possíveis complicações e o
-                tempo para
-                curar.
-            </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.5 Doenças crônicas não transmissíveis
             </h2>
             <p>
@@ -1510,385 +1583,414 @@
                 com a rotina das
                 UBS. É importante aproveitar, no ambiente prisional, as suas experiências prévias de trabalho em
                 unidades extramuros,
-                porque toda capacitação é bem-vinda nesse manejo.
-            </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.6 Manejo adaptado dos agravos
-            </h2>
-            <p>
-                Não buscamos aqui oferecer um curso específico sobre o manejo dos agravos descritos, mas uma
-                contextualização da
-                aplicação dos manuais institucionais brasileiros para os agravos. Para as doenças transmissíveis,
-                recomendamos seguir os
-                protocolos clínicos e diretrizes terapêuticas (PCDT) do Ministério da Saúde e manuais específicos para
-                demais
-                patologias. Você pode acessar esses materiais no Quadro 3.
-            </p>
-            <div id="quadro-2" class="flex flex-col gap-5 mt-5">
-                <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
-                    Quadro 3 - Materiais de referência produzidos pelo Ministério da Saúde para manejo dos agravos mais
-                    frequentes no
-                    sistema prisional
-                </h2>
-                <div>
-                    <p class="text-center pb-3">
-                        <small>Clique para interagir</small>
-                    </p>
-                    <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                        <div class="border-b border-[var(--primary)]">
-                            <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">HIV/Aids, hepatites e outras ISTs</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>Múltiplos PCDTs para cada agravo.</p>
-                                <a href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts" class="link"
-                                    target="_blank" rel="noopener noreferrer">Protocolos clínicos e diretrizes
-                                    terapêuticas (PCDTs)</a>
-                            </div>
-                        </div>
-                        <div class="border-b border-[var(--primary)]">
-                            <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Hepatite C</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>Atualização de 2025 sobre o tratamento.</p>
-                                <a href="https://www.gov.br/aids/pt-br/central-de-conteudo/notas-tecnicas/2025/nota-tecnica-no-5_2025_cghv_dathi_svsa_ms.pdf"
-                                    class="link" target="_blank" rel="noopener noreferrer">Nota Técnica nº
-                                    5/2025-CGHV/.DATHI/SVSA/MS</a>
-                            </div>
-                        </div>
-                        <div class="border-b border-[var(--primary)]">
-                            <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Hanseníase</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>Atualização de 2022 sobre o tratamento.</p>
-                                <a href="https://www.gov.br/conitec/pt-br/midias/protocolos/publicacoes_ms/copy_of_20230131_PCDT_Hanseniase_2022_eletronica_ISBN.pdf"
-                                    class="link" target="_blank" rel="noopener noreferrer">Protocolo clínico e
-                                    diretrizes terapêuticas da Hanseníase</a>
-                            </div>
-                        </div>
-                        <div class="border-b border-[var(--primary)]">
-                            <button id="item14" onclick="animacao.toggleAccordion('item14', 'grupo1')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Tuberculose</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>Tratamento da resistência em notas técnicas.</p>
-                                <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view"
-                                    class="link" target="_blank" rel="noopener noreferrer">Manual de Recomendações para
-                                    o Controle da Tuberculose no Brasil – 2ª ed.</a>
-                            </div>
-                        </div>
-                        <div class="border-b border-[var(--primary)]">
-                            <button id="item15" onclick="animacao.toggleAccordion('item15', 'grupo1')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Tuberculose Multidrogarresistente (MDR)</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>Atualização do tratamento de TB MDR.</p>
-                                <a href="https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2025/nota-informativa-no1-2025-cgtm-dathi-svsa-ms.pdf/view"
-                                    class="link" target="_blank" rel="noopener noreferrer">Nota Informativa nº
-                                    1/2025-CGTM/DATHI/SVSA/MS</a>
-                            </div>
-                        </div>
-                        <div>
-                            <button id="item16" onclick="animacao.toggleAccordion('item16', 'grupo1')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Dermatologia geral</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>Manejo dos agravos dermatológicos mais frequentes.</p>
-                                <a href="https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-divulga-guia-pratico-de-dermatologia-na-atencao-primaria-prisional"
-                                    class="link" target="_blank" rel="noopener noreferrer">Guia Prático de Dermatologia
-                                    na Atenção Primária Prisional</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <small>Fonte: elaboração do autor (2025). Clique nos links dentro dos títulos para acessar os
-                    materiais.</small>
-            </div>
-            <p>
-                Para o melhor manejo das doenças não transmissíveis, recomendamos seguir os protocolos do Ministério da
-                Saúde para cada
-                agravo, de acordo com as padronizações técnicas das Linhas de Cuidado, que podem ser acessadas pelo
-                endereço:
-                <a href="https://linhasdecuidado.saude.gov.br/portal/" target="_blank" class="link"
-                    rel="noopener noreferrer">https://linhasdecuidado.saude.gov.br/portal/</a>.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.6.1 Modificações gerais da rotina - diagnóstico e triagem
-            </h3>
-            <p>
-                Uma dificuldade frequente das instituições penais é identificar e diagnosticar as patologias discutidas
-                até o momento. É
-                importante que as UBSP e suas equipes trabalhem com as listas de condições e agravos crônicos, para que
-                seja possível
-                colocar em prática a longitudinalidade, ou seja, a continuidade do cuidado.
-            </p>
-            <p>
-                Desde 2017, o Ministério da Saúde, em parceria com a Secretaria Nacional de Políticas Penais, tem
-                realizado ações de
-                triagem em massa nas instituições penais. Movimentos como esse também são realizados como iniciativas
-                municipais/estaduais isoladas em estabelecimentos penais críticos.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais5')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais5" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            <i>Brasil</i>
-                        </p>
-                        <p>
-                            <b>Autor:</b>
-                            Thais Libni (2024), Maria Teresa Cruz (2019) e Distrito Federal (2017).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            realizada desde 2017, a Ação de Cidadania é uma estratégia intersetorial que visa ampliar o
-                            acesso à saúde nas
-                            instituições penais, promovendo atendimentos para 100% das PPL. A iniciativa organiza ações
-                            de triagem, testagens
-                            rápidas, vacinação e atendimentos clínicos, com foco na prevenção de agravos prevalentes,
-                            como tuberculose, hepatites
-                            virais e ISTs, além de fortalecer os fluxos internos de saúde e a articulação entre os
-                            setores envolvidos.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/presos-e-egressos/saude/acao-de-cidadania"
-                                target="_blank">https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/presos-e-egressos/saude/acao-de-cidadania</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais5')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <p>
-                Ressaltamos a importância de as eAPP manterem uma rotina estruturada de triagem simplificada para todas
-                as PPL no
-                momento de sua entrada na instituição penal. Embora algumas instituições enfrentem um alto fluxo de
-                transferências e
-                novas admissões semanalmente, é possível organizar a rotina de trabalho com adequações semanais que
-                viabilizem a
-                captação desses casos.
-            </p>
-            <p>
-                Sugerimos as avaliações para a admissão conforme Figura 1.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
-                Figura 1 - Sugestão de características a serem avaliadas na admissão das pessoas privadas de liberdade
-                na Unidade Básica
-                de Saúde Prisional
-            </h3>
-            <div>
-                <img class="w-full max-w-[400px] block mx-auto" src="./images/figura1.png" alt="Sugestão de características a serem avaliadas na admissão das pessoas privadas de liberdade
-                na Unidade Básica de Saúde Prisional">
-                <small>Fonte: elaboração do autor (2025).</small>
-                <hr>
-            </div>
-            <p>
-                É importante definir estratégias para garantir a coleta de exames laboratoriais, como exames de sangue e
-                de escarro.
-                Essa articulação é intersetorial entre as secretarias de saúde e de administração penitenciária. A
-                regulação de vagas
-                via sistema define a agenda dos exames de imagem externos e dos encaminhamentos para outros
-                profissionais da saúde. É
-                possível estabelecer fluxos e normativas para que haja sintonia logística entre saúde e segurança.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais6')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais6" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            <i>Registro de pessoas com tuberculose e acompanhamento do tratamento (Livro Verde da
-                                Tuberculose)</i>
-                        </p>
-                        <p>
-                            <b>Autor:</b>
-                            Brasil (2019b).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            alguns agravos específicos também têm ferramentas físicas de controle de seguimento, como o
-                            <i>livro verde</i> de registro de
-                            pessoas em acompanhamento da tuberculose, podendo ser obtido na versão impressa com a
-                            vigilância epidemiológica
-                            municipal.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/publicacoes/tuberculose/livro_registro_pessoas_tb_23set19_isbn.pdf/view"
-                                target="_blank">https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/publicacoes/tuberculose/livro_registro_pessoas_tb_23set19_isbn.pdf/view</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais6')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.6.2 Modificações gerais da rotina - tratamento
-            </h3>
-            <p>
-                Inicialmente, vamos falar sobre uma visão geral do fornecimento de medicações, tendo em vista que o
-                sucesso terapêutico
-                de qualquer tratamento depende diretamente da capacidade de fornecimento adequado da medicação. Depois,
-                discorreremos
-                sobre a abordagem terapêutica dentro de agravos específicos.
-            </p>
-            <p>
-                Sobre a dispensação de medicações e insumos, especialmente os de uso contínuo, é importante registrar a
-                entrega.
-                Recomenda-se, para isso, a utilização de um livro ata ou prontuário físico, que a PPL deve assinar no
-                momento que
-                receber a medicação. Esse registro é fundamental para acompanhar o cuidado continuado e para oferecer
-                dados confiáveis
-                nas frequentes ocasiões em que relatórios de saúde são solicitados durante processos jurídicos por
-                advogados e
-                departamento jurídico da instituição.
-            </p>
-            <p>
-                Com a falta de espaço específico para pertences em muitas celas, as medicações de uso contínuo ou para
-                tratamento de
-                sintomas entregues em maiores quantidades podem ser identificadas com o nome da PPL e o modo de uso e
-                ser acondicionadas
-                de alguma forma que permita o armazenamento na cela. A medicação pode ser entregue em quantidade mensal,
-                quinzenal,
-                semanal ou diária, considerando as necessidades e riscos de cada pessoa em uso dessas medicações
-                (Cardins; Freitas;
-                Costa, 2022).
-            </p>
-            <p>
-                Às vezes, a quantidade de indivíduos em tratamento no seu serviço pode ser elevada, principalmente em
-                momentos
-                específicos, como depois de ações de testagem em massa, que possibilitam a realização de diversos
-                diagnósticos
-                simultaneamente. Por isso, em algumas instituições penais, é possível, com a anuência da direção,
-                treinar PPL para
-                trabalhar com a eAPP em regime de remição de pena. Semelhantes ao Agente Comunitário de Saúde (ACS),
-                esses indivíduos
-                podem ser um elo entre a eAPP e as PPL, sendo qualificados para auxiliar na organização do serviço,
-                contactar as PPL e
-                realizar entrega de medicações.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais7')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais7" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            <i>Privados de liberdade realizam capacitação para se tornarem monitores de saúde dentro de
-                                presídio</i>
-                        </p>
-                        <p>
-                            <b>Autor:</b>
-                            Rio de Janeiro (Estado) (2024).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            no Rio de Janeiro, demonstra-se uma experiência exitosa de treinamento de PPL em temas de
-                            saúde prisional.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link" href="https://www.rj.gov.br/admpenitenciaria/node/667"
-                                target="_blank">https://www.rj.gov.br/admpenitenciaria/node/667</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais7')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
+                porque toda capacitação é bem-vinda nesse manejo.</p>
         </div>
 
-        <div class="w-full bg-gray-100">
-            <div class="flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+        <div id="1.6" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.6 Manejo adaptado dos agravos
+                </h2>
+                <p>
+                    Não buscamos aqui oferecer um curso específico sobre o manejo dos agravos descritos, mas uma
+                    contextualização da
+                    aplicação dos manuais institucionais brasileiros para os agravos. Para as doenças transmissíveis,
+                    recomendamos seguir os
+                    protocolos clínicos e diretrizes terapêuticas (PCDT) do Ministério da Saúde e manuais específicos
+                    para
+                    demais
+                    patologias. Você pode acessar esses materiais no Quadro 3.
+                </p>
+                <div id="quadro-2b" class="flex flex-col gap-5 mt-5">
+                    <h2 class="text-2xl md:text-3xl font-bold">
+                        <i class="fa-solid fa-image text-black mr-2"></i>
+                        Quadro 3 - Materiais de referência produzidos pelo Ministério da Saúde para manejo dos agravos
+                        mais
+                        frequentes no
+                        sistema prisional
+                    </h2>
+                    <div>
+                        <p class="text-center pb-3">
+                            <small>Clique para interagir</small>
+                        </p>
+                        <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">HIV/Aids, hepatites e outras ISTs</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>Múltiplos PCDTs para cada agravo.</p>
+                                    <a href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts" class="link"
+                                        target="_blank" rel="noopener noreferrer">Protocolos clínicos e diretrizes
+                                        terapêuticas (PCDTs)</a>
+                                </div>
+                            </div>
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Hepatite C</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>Atualização de 2025 sobre o tratamento.</p>
+                                    <a href="./media/nota-tecnica-no-5_2025_cghv_dathi_svsa_ms.pdf" class="link"
+                                        target="_blank" rel="noopener noreferrer">Nota Técnica nº
+                                        5/2025-CGHV/.DATHI/SVSA/MS</a>
+                                </div>
+                            </div>
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Hanseníase</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>Atualização de 2022 sobre o tratamento.</p>
+                                    <a href="./media/copy_of_20230131_PCDT_Hanseniase_2022_eletronica_ISBN.pdf"
+                                        class="link" target="_blank" rel="noopener noreferrer">Protocolo clínico e
+                                        diretrizes terapêuticas da Hanseníase</a>
+                                </div>
+                            </div>
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item14" onclick="animacao.toggleAccordion('item14', 'grupo1')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Tuberculose</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>Tratamento da resistência em notas técnicas.</p>
+                                    <a href="./media/Manual de Recomendacoes e Controle da Ttuberculose no Brasil 2ª ed.pdf"
+                                        class="link" target="_blank" rel="noopener noreferrer">Manual de Recomendações
+                                        para
+                                        o Controle da Tuberculose no Brasil – 2ª ed.</a>
+                                </div>
+                            </div>
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item15" onclick="animacao.toggleAccordion('item15', 'grupo1')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Tuberculose Multidrogarresistente (MDR)</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>Atualização do tratamento de TB MDR.</p>
+                                    <a href="./media/Nota Informativa nº1 2025 - CGTM-Dathi-SVSA-MS.pdf" class="link"
+                                        target="_blank" rel="noopener noreferrer">Nota Informativa nº
+                                        1/2025-CGTM/DATHI/SVSA/MS</a>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="item16" onclick="animacao.toggleAccordion('item16', 'grupo1')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Dermatologia geral</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>Manejo dos agravos dermatológicos mais frequentes.</p>
+                                    <a href="https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-divulga-guia-pratico-de-dermatologia-na-atencao-primaria-prisional"
+                                        class="link" target="_blank" rel="noopener noreferrer">Guia Prático de
+                                        Dermatologia
+                                        na Atenção Primária Prisional</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <small>Fonte: elaboração do autor (2025). Clique nos links dentro dos títulos para acessar os
+                        materiais.</small>
+                </div>
+                <p>
+                    Para o melhor manejo das doenças não transmissíveis, recomendamos seguir os protocolos do Ministério
+                    da
+                    Saúde para cada
+                    agravo, de acordo com as padronizações técnicas das Linhas de Cuidado, que podem ser acessadas pelo
+                    endereço:
+                    <a href="https://linhasdecuidado.saude.gov.br/portal/" target="_blank" class="link"
+                        rel="noopener noreferrer">https://linhasdecuidado.saude.gov.br/portal/</a>.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.6.1 Modificações gerais da rotina - diagnóstico e triagem
+                </h3>
+                <p>
+                    Uma dificuldade frequente das instituições penais é identificar e diagnosticar as patologias
+                    discutidas
+                    até o momento. É
+                    importante que as UBSP e suas equipes trabalhem com as listas de condições e agravos crônicos, para
+                    que
+                    seja possível
+                    colocar em prática a longitudinalidade, ou seja, a continuidade do cuidado.
+                </p>
+                <p>
+                    Desde 2017, o Ministério da Saúde, em parceria com a Secretaria Nacional de Políticas Penais, tem
+                    realizado ações de
+                    triagem em massa nas instituições penais. Movimentos como esse também são realizados como
+                    iniciativas
+                    municipais/estaduais isoladas em estabelecimentos penais críticos.
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais5')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais5" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                <i>Brasil</i>
+                            </p>
+                            <p>
+                                <b>Autor:</b>
+                                Thais Libni (2024), Maria Teresa Cruz (2019) e Distrito Federal (2017).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                realizada desde 2017, a Ação de Cidadania é uma estratégia intersetorial que visa
+                                ampliar o
+                                acesso à saúde nas
+                                instituições penais, promovendo atendimentos para 100% das PPL. A iniciativa organiza
+                                ações
+                                de triagem, testagens
+                                rápidas, vacinação e atendimentos clínicos, com foco na prevenção de agravos
+                                prevalentes,
+                                como tuberculose, hepatites
+                                virais e ISTs, além de fortalecer os fluxos internos de saúde e a articulação entre os
+                                setores envolvidos.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/presos-e-egressos/saude/acao-de-cidadania"
+                                    target="_blank">https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/presos-e-egressos/saude/acao-de-cidadania</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais5')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Ressaltamos a importância de as eAPP manterem uma rotina estruturada de triagem simplificada para
+                    todas
+                    as PPL no
+                    momento de sua entrada na instituição penal. Embora algumas instituições enfrentem um alto fluxo de
+                    transferências e
+                    novas admissões semanalmente, é possível organizar a rotina de trabalho com adequações semanais que
+                    viabilizem a
+                    captação desses casos.
+                </p>
+                <p>
+                    Sugerimos as avaliações para a admissão conforme Figura 1.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-image text-black mr-2"></i>
+                    Figura 1 - Sugestão de características a serem avaliadas na admissão das pessoas privadas de
+                    liberdade
+                    na Unidade Básica
+                    de Saúde Prisional
+                </h3>
+                <div>
+                    <img class="w-full max-w-[400px] block mx-auto" src="./images/figura1.png" alt="Sugestão de características a serem avaliadas na admissão das pessoas privadas de liberdade
+                                                na Unidade Básica de Saúde Prisional">
+                    <small>Fonte: elaboração do autor (2025).</small>
+                    <hr>
+                </div>
+                <p>
+                    É importante definir estratégias para garantir a coleta de exames laboratoriais, como exames de
+                    sangue e
+                    de escarro.
+                    Essa articulação é intersetorial entre as secretarias de saúde e de administração penitenciária. A
+                    regulação de vagas
+                    via sistema define a agenda dos exames de imagem externos e dos encaminhamentos para outros
+                    profissionais da saúde. É
+                    possível estabelecer fluxos e normativas para que haja sintonia logística entre saúde e segurança.
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais6')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais6" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                <i>Registro de pessoas com tuberculose e acompanhamento do tratamento (Livro Verde da
+                                    Tuberculose)</i>
+                            </p>
+                            <p>
+                                <b>Autor:</b>
+                                Brasil (2019b).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                alguns agravos específicos também têm ferramentas físicas de controle de seguimento,
+                                como o
+                                <i>livro verde</i> de registro de
+                                pessoas em acompanhamento da tuberculose, podendo ser obtido na versão impressa com a
+                                vigilância epidemiológica
+                                municipal.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link" href="./media/livro_registro_pessoas_tb_23set19_isbn.pdf"
+                                    target="_blank">Clique
+                                    aqui</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais6')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.6.2 Modificações gerais da rotina - tratamento
+                </h3>
+                <p>
+                    Inicialmente, vamos falar sobre uma visão geral do fornecimento de medicações, tendo em vista que o
+                    sucesso terapêutico
+                    de qualquer tratamento depende diretamente da capacidade de fornecimento adequado da medicação.
+                    Depois,
+                    discorreremos
+                    sobre a abordagem terapêutica dentro de agravos específicos.
+                </p>
+                <p>
+                    Sobre a dispensação de medicações e insumos, especialmente os de uso contínuo, é importante
+                    registrar a
+                    entrega.
+                    Recomenda-se, para isso, a utilização de um livro ata ou prontuário físico, que a PPL deve assinar
+                    no
+                    momento que
+                    receber a medicação. Esse registro é fundamental para acompanhar o cuidado continuado e para
+                    oferecer
+                    dados confiáveis
+                    nas frequentes ocasiões em que relatórios de saúde são solicitados durante processos jurídicos por
+                    advogados e
+                    departamento jurídico da instituição.
+                </p>
+                <p>
+                    Com a falta de espaço específico para pertences em muitas celas, as medicações de uso contínuo ou
+                    para
+                    tratamento de
+                    sintomas entregues em maiores quantidades podem ser identificadas com o nome da PPL e o modo de uso
+                    e
+                    ser acondicionadas
+                    de alguma forma que permita o armazenamento na cela. A medicação pode ser entregue em quantidade
+                    mensal,
+                    quinzenal,
+                    semanal ou diária, considerando as necessidades e riscos de cada pessoa em uso dessas medicações
+                    (Cardins; Freitas;
+                    Costa, 2022).
+                </p>
+                <p>
+                    Às vezes, a quantidade de indivíduos em tratamento no seu serviço pode ser elevada, principalmente
+                    em
+                    momentos
+                    específicos, como depois de ações de testagem em massa, que possibilitam a realização de diversos
+                    diagnósticos
+                    simultaneamente. Por isso, em algumas instituições penais, é possível, com a anuência da direção,
+                    treinar PPL para
+                    trabalhar com a eAPP em regime de remição de pena. Semelhantes ao Agente Comunitário de Saúde (ACS),
+                    esses indivíduos
+                    podem ser um elo entre a eAPP e as PPL, sendo qualificados para auxiliar na organização do serviço,
+                    contactar as PPL e
+                    realizar entrega de medicações.
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais7')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais7" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                <i>Privados de liberdade realizam capacitação para se tornarem monitores de saúde dentro
+                                    de
+                                    presídio</i>
+                            </p>
+                            <p>
+                                <b>Autor:</b>
+                                Rio de Janeiro (Estadoo (2024).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                no Rio de Janeiro, demonstra-se uma experiência exitosa de treinamento de PPL em temas
+                                de
+                                saúde prisional.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link" href="https://www.rj.gov.br/admpenitenciaria/node/667"
+                                    target="_blank">https://www.rj.gov.br/admpenitenciaria/node/667</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais7')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                    <span
+                        class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                     Nesse contexto de tratamento, novamente trazemos a reflexão para você, estudante-trabalhador:
                     <b><i>dentro do sistema
                             prisional, o seu serviço é a principal opção de cuidado</i></b> (Nascimento; Bandeira, 2018;
@@ -1899,431 +2001,484 @@
                     assistência
                     farmacêutica e conhecer as pessoas com condições crônicas e em uso de medicações e insumos
                     regulares.
-                </h2>
-            </div>
-        </div>
-
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.6.3 Dificuldades encontradas no manejo de agravos específicos
-            </h3>
-            <p>
-                Mesmo fora das instituições penais, o tratamento das mais diversas patologias encontradas na APS é
-                complexo. Intramuros,
-                o manejo terapêutico de alguns agravos pode ser ainda mais desafiador. Agora, estudante-trabalhador,
-                vamos discutir
-                quais problemas podem ser encontrados durante o seu manejo de doenças no contexto da saúde prisional.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.6.3.1 HIV/Aids, hepatites virais B e C e infecções sexualmente transmissíveis
-            </h3>
-            <p>
-                Encontramos dificuldades em algumas etapas do processo de atendimento das ISTs no sistema prisional. O
-                diagnóstico pode
-                ser facilitado com a realização dos testes rápidos de triagem. Na avaliação inicial, é possível
-                identificar a maioria
-                desses casos assim que entram no sistema. Entretanto, relações sexuais nas instituições penais,
-                compartilhamento de
-                materiais contaminados, como cortadores de unha, dificuldade de acesso à Profilaxia Pré-Exposição (PrEP)
-                e à Profilaxia
-                Pós-Exposição (PEP) e dificuldade no aconselhamento aos indivíduos podem perpetuar cadeias de
-                transmissão. Idealmente, o
-                início do tratamento dessas doenças deve ser realizado o mais precocemente possível devido ao risco de
-                transmissão ou
-                complicações, conforme orientado nos PCDTs apresentados previamente (Brasil, 2024g).
-            </p>
-            <p>
-                Talvez a situação mais crítica relacionada ao diagnóstico de HIV seja quando o paciente apresenta
-                sintomas neurológicos
-                ou respiratórios. Esses indivíduos devem passar por investigação de tuberculose e de outras infecções
-                oportunistas antes
-                do início da TARV, considerando que há risco de síndrome da reconstituição imunológica. Essa síndrome se
-                apresenta como
-                uma piora da infecção oportunista não diagnosticada com o início da TARV, podendo levar a quadros
-                graves, como
-                meningites e sepse. Caso não haja a possibilidade de realizar exames de apoio diagnóstico rapidamente, é
-                aconselhável
-                que essas PPL, mesmo sem sinais de instabilidade clínica, sejam transferidas para unidades de pronto
-                atendimento ou
-                hospitais, conforme os fluxos de rede locais.
-            </p>
-            <p>
-                O sigilo diagnóstico deve ser rigorosamente assegurado a essas PPL. Não é necessário que o efetivo da
-                instituição penal
-                que esteja fazendo o atendimento direto à PPL conheça seu estado sorológico, muito menos que ela seja
-                classificada ou
-                isolada pelo diagnóstico. Também é ideal ofertar preservativos não só para os indivíduos diagnosticados
-                com infecções,
-                mas para todas as PPL que demandem preservativos. Algumas instituições penais também oferecem, na
-                admissão, kits de
-                higiene com cortadores de unha para uso pessoal.
-            </p>
-            <p>
-                Com relação ao cuidado necessário no início e durante a manutenção do tratamento, encontramos
-                frequentemente falhas
-                críticas em algumas instituições penais (Bet <i>et al</i>., 2018). Uma dessas falhas é o abandono do
-                tratamento. Embora o PCDT
-                de tratamento do HIV vigente do Ministério da Saúde não defina um intervalo de tempo sem a medicação
-                para ser
-                considerado o abandono, mesmo pequenas interrupções do tratamento em dias ou semanas podem levar à falha
-                virológica, à
-                resistência viral aos antiretrovirais (ARV) e ao aparecimento de infecções oportunistas. Nos casos de
-                hepatite C que
-                estejam recebendo os tratamentos com antivirais de ação direta por 12 semanas, não há tempo aceitável de
-                interrupção de
-                tratamento definido. Interrupções curtas de mais de quatro dias já podem comprometer a resposta
-                virológica sustentada,
-                havendo a necessidade de reiniciar o esquema terapêutico do início nos casos de falha virológica
-                (Brasil, 2019a). Mesmo
-                no curto esquema de tratamento da sífilis de três semanas (doses semanais), devemos reiniciar o esquema
-                se o intervalo
-                entre as doses sequenciais (entre a primeira e segunda ou segunda e terceira) ultrapassar 14 dias,
-                devido ao risco de
-                falha terapêutica. Um acompanhamento regular, com vigilância da dispensação e adesão aos tratamentos
-                continuados, é
-                importante, principalmente em condições como tuberculose e hanseníase.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.6.3.2 Tuberculose
-            </h3>
-            <p>
-                Como dito anteriormente, o controle da TB no sistema prisional é um dos maiores desafios que os
-                trabalhadores de saúde
-                enfrentam em seu trabalho diário, uma vez que ele exige uma atenção diferenciada.
-            </p>
-            <p>
-                O diagnóstico é o primeiro passo do cuidado e geralmente ocorre quando a PPL procura espontaneamente por
-                atendimento
-                devido a queixas respiratórias, sintomas que devem ser sempre valorizados, independentemente da duração,
-                devido à alta
-                incidência de TB, conforme recomenda o <i>Manual de Recomendações para o Controle da Tuberculose no
-                    Brasil</i>
-                (Brasil, 2019c).
-                Já se demonstrou que o tempo médio entre o surgimento dos sintomas e o início do tratamento da TB em
-                alguns
-                estabelecimentos penais brasileiros é de três meses (Ribeiro <i>et al.</i>, 2023). Em virtude disso, é
-                recomendado que toda PPL
-                com sintoma respiratório seja examinada em consulta, na qual o médico avaliará a necessidade de exames
-                radiográficos e
-                de escarro.
-            </p>
-            <p>
-                Uma vez que os sintomas respiratórios são comuns e podem se manifestar por diversas causas, como
-                infecções virais e
-                tosse/dispneia crônica relacionadas ao uso de drogas e tabagismo, é fundamental que os trabalhadores de
-                saúde mantenham
-                baixo limiar de suspeição da doença (Serra <i>et al.</i>, 2022). Outros fatores podem dificultar a
-                autopercepção dos sintomas.
-                Por exemplo, a tosse pode ser atribuída ao tabagismo e a perda de peso, à qualidade da alimentação.
-            </p>
-            <p>
-                Devido a essa dificuldade de realizar uma triagem adequada com base em sintomas, o <i>Manual de
-                    Recomendações para o
-                    Controle da Tuberculose no Brasil</i> (Brasil, 2019c) orienta que sejam realizadas ações de triagem
-                e busca
-                ativa de TB nos
-                estabelecimentos penais, uma ou duas vezes no ano, incluindo a realização de pelo menos uma radiografia
-                de tórax em PPL
-                assintomáticas.
-            </p>
-            <p>
-                Em algumas ações, como a Ação de Cidadania, citada anteriormente, exames de escarro são ofertados apenas
-                para os
-                sintomáticos. Em Mato Grosso do Sul, por exemplo, nos estabelecimentos penais estaduais, são realizadas
-                ações de
-                testagem em massa que ofertam exame de escarro (Cultura + Teste Rápido Molecular) e radiografia de tórax
-                com aparelho
-                portátil para todas as PPL anualmente, independentemente da presença de sintomas. Testar apenas
-                indivíduos sintomáticos
-                pode deixar cerca de 35% dos casos de TB ativa sem diagnóstico (Santos <i>et al</i>., 2021).
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais8')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais8" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            Maior controle da tuberculose dentro e fora das prisões faz de MS referência nacional
-                            (experiência exitosa de controle
-                            da tuberculose)
-                        </p>
-                        <p>
-                            <b>Autor:</b>
-                            Tatyane Santinoni (2025).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            leia sobre os projetos de controle de tuberculose no sistema prisional de Mato Grosso do
-                            Sul.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.ms.gov.br/noticias/maior-controle-da-tuberculose-dentro-e-fora-das-prisoes-faz-de-ms-referencia-nacional"
-                                target="_blank">https://www.ms.gov.br/noticias/maior-controle-da-tuberculose-dentro-e-fora-das-prisoes-faz-de-ms-referencia-nacional</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais8')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
+                    </b>
+                </h3>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.6.3 Dificuldades encontradas no manejo de agravos específicos
+                </h3>
+                <p>
+                    Mesmo fora das instituições penais, o tratamento das mais diversas patologias encontradas na APS é
+                    complexo. Intramuros,
+                    o manejo terapêutico de alguns agravos pode ser ainda mais desafiador. Agora, estudante-trabalhador,
+                    vamos discutir
+                    quais problemas podem ser encontrados durante o seu manejo de doenças no contexto da saúde
+                    prisional.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.6.3.1 HIV/Aids, hepatites virais B e C e infecções sexualmente transmissíveis
+                </h3>
+                <p>
+                    Encontramos dificuldades em algumas etapas do processo de atendimento das ISTs no sistema prisional.
+                    O
+                    diagnóstico pode
+                    ser facilitado com a realização dos testes rápidos de triagem. Na avaliação inicial, é possível
+                    identificar a maioria
+                    desses casos assim que entram no sistema. Entretanto, relações sexuais nas instituições penais,
+                    compartilhamento de
+                    materiais contaminados, como cortadores de unha, dificuldade de acesso à Profilaxia Pré-Exposição
+                    (PrEP)
+                    e à Profilaxia
+                    Pós-Exposição (PEP) e dificuldade no aconselhamento aos indivíduos podem perpetuar cadeias de
+                    transmissão. Idealmente, o
+                    início do tratamento dessas doenças deve ser realizado o mais precocemente possível devido ao risco
+                    de
+                    transmissão ou
+                    complicações, conforme orientado nos PCDTs apresentados previamente (Brasil, 2024g).
+                </p>
+                <p>
+                    Talvez a situação mais crítica relacionada ao diagnóstico de HIV seja quando o paciente apresenta
+                    sintomas neurológicos
+                    ou respiratórios. Esses indivíduos devem passar por investigação de tuberculose e de outras
+                    infecções
+                    oportunistas antes
+                    do início da TARV, considerando que há risco de síndrome da reconstituição imunológica. Essa
+                    síndrome se
+                    apresenta como
+                    uma piora da infecção oportunista não diagnosticada com o início da TARV, podendo levar a quadros
+                    graves, como
+                    meningites e sepse. Caso não haja a possibilidade de realizar exames de apoio diagnóstico
+                    rapidamente, é
+                    aconselhável
+                    que essas PPL, mesmo sem sinais de instabilidade clínica, sejam transferidas para unidades de pronto
+                    atendimento ou
+                    hospitais, conforme os fluxos de rede locais.
+                </p>
+                <p>
+                    O sigilo diagnóstico deve ser rigorosamente assegurado a essas PPL. Não é necessário que o efetivo
+                    da
+                    instituição penal
+                    que esteja fazendo o atendimento direto à PPL conheça seu estado sorológico, muito menos que ela
+                    seja
+                    classificada ou
+                    isolada pelo diagnóstico. Também é ideal ofertar preservativos não só para os indivíduos
+                    diagnosticados
+                    com infecções,
+                    mas para todas as PPL que demandem preservativos. Algumas instituições penais também oferecem, na
+                    admissão, kits de
+                    higiene com cortadores de unha para uso pessoal.
+                </p>
+                <p>
+                    Com relação ao cuidado necessário no início e durante a manutenção do tratamento, encontramos
+                    frequentemente falhas
+                    críticas em algumas instituições penais (Bet <i>et al</i>., 2018). Uma dessas falhas é o abandono do
+                    tratamento. Embora o PCDT
+                    de tratamento do HIV vigente do Ministério da Saúde não defina um intervalo de tempo sem a medicação
+                    para ser
+                    considerado o abandono, mesmo pequenas interrupções do tratamento em dias ou semanas podem levar à
+                    falha
+                    virológica, à
+                    resistência viral aos antiretrovirais (ARV) e ao aparecimento de infecções oportunistas. Nos casos
+                    de
+                    hepatite C que
+                    estejam recebendo os tratamentos com antivirais de ação direta por 12 semanas, não há tempo
+                    aceitável de
+                    interrupção de
+                    tratamento definido. Interrupções curtas de mais de quatro dias já podem comprometer a resposta
+                    virológica sustentada,
+                    havendo a necessidade de reiniciar o esquema terapêutico do início nos casos de falha virológica
+                    (Brasil, 2019a). Mesmo
+                    no curto esquema de tratamento da sífilis de três semanas (doses semanais), devemos reiniciar o
+                    esquema
+                    se o intervalo
+                    entre as doses sequenciais (entre a primeira e segunda ou segunda e terceira) ultrapassar 14 dias,
+                    devido ao risco de
+                    falha terapêutica. Um acompanhamento regular, com vigilância da dispensação e adesão aos tratamentos
+                    continuados, é
+                    importante, principalmente em condições como tuberculose e hanseníase.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.6.3.2 Tuberculose
+                </h3>
+                <p>
+                    Como dito anteriormente, o controle da TB no sistema prisional é um dos maiores desafios que os
+                    trabalhadores de saúde
+                    enfrentam em seu trabalho diário, uma vez que ele exige uma atenção diferenciada.
+                </p>
+                <p>
+                    O diagnóstico é o primeiro passo do cuidado e geralmente ocorre quando a PPL procura espontaneamente
+                    por
+                    atendimento
+                    devido a queixas respiratórias, sintomas que devem ser sempre valorizados, independentemente da
+                    duração,
+                    devido à alta
+                    incidência de TB, conforme recomenda o <i>Manual de Recomendações para o Controle da Tuberculose no
+                        Brasil</i>
+                    (Brasil, 2019c).
+                    Já se demonstrou que o tempo médio entre o surgimento dos sintomas e o início do tratamento da TB em
+                    alguns
+                    estabelecimentos penais brasileiros é de três meses (Ribeiro <i>et al.</i>, 2023). Em virtude disso,
+                    é
+                    recomendado que toda PPL
+                    com sintoma respiratório seja examinada em consulta, na qual o médico avaliará a necessidade de
+                    exames
+                    radiográficos e
+                    de escarro.
+                </p>
+                <p>
+                    Uma vez que os sintomas respiratórios são comuns e podem se manifestar por diversas causas, como
+                    infecções virais e
+                    tosse/dispneia crônica relacionadas ao uso de drogas e tabagismo, é fundamental que os trabalhadores
+                    de
+                    saúde mantenham
+                    baixo limiar de suspeição da doença (Serra <i>et al.</i>, 2022). Outros fatores podem dificultar a
+                    autopercepção dos sintomas.
+                    Por exemplo, a tosse pode ser atribuída ao tabagismo e a perda de peso, à qualidade da alimentação.
+                </p>
+                <p>
+                    Devido a essa dificuldade de realizar uma triagem adequada com base em sintomas, o <i>Manual de
+                        Recomendações para o
+                        Controle da Tuberculose no Brasil</i> (Brasil, 2019c) orienta que sejam realizadas ações de
+                    triagem
+                    e busca
+                    ativa de TB nos
+                    estabelecimentos penais, uma ou duas vezes no ano, incluindo a realização de pelo menos uma
+                    radiografia
+                    de tórax em PPL
+                    assintomáticas.
+                </p>
+                <p>
+                    Em algumas ações, como a Ação de Cidadania, citada anteriormente, exames de escarro são ofertados
+                    apenas
+                    para os
+                    sintomáticos. Em Mato Grosso do Sul, por exemplo, nos estabelecimentos penais estaduais, são
+                    realizadas
+                    ações de
+                    testagem em massa que ofertam exame de escarro (Cultura + Teste Rápido Molecular) e radiografia de
+                    tórax
+                    com aparelho
+                    portátil para todas as PPL anualmente, independentemente da presença de sintomas. Testar apenas
+                    indivíduos sintomáticos
+                    pode deixar cerca de 35% dos casos de TB ativa sem diagnóstico (Santos <i>et al</i>., 2021).
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais8')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais8" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                Maior controle da tuberculose dentro e fora das prisões faz de MS referência nacional
+                                (experiência exitosa de controle
+                                da tuberculose)
+                            </p>
+                            <p>
+                                <b>Autor:</b>
+                                Tatyane Santinoni (2025).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                leia sobre os projetos de controle de tuberculose no sistema prisional de Mato Grosso do
+                                Sul.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://www.ms.gov.br/noticias/maior-controle-da-tuberculose-dentro-e-fora-das-prisoes-faz-de-ms-referencia-nacional"
+                                    target="_blank">https://www.ms.gov.br/noticias/maior-controle-da-tuberculose-dentro-e-fora-das-prisoes-faz-de-ms-referencia-nacional</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais8')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <p>
-                Depois do diagnóstico, devemos iniciar prontamente o tratamento adequado. Frequentemente, não há celas
-                de isolamento
-                disponíveis nas instituições penais (quando disponíveis, a quantidade é insuficiente) para esse fim,
-                portanto são
-                utilizadas celas reservadas para regime disciplinar. Logo, o entendimento das PPL é de que o diagnóstico
-                é seguido de um
-                “castigo”, o que as desestimula a buscar o diagnóstico. Da mesma forma, também não há motivo para
-                suspender visitas à
-                PPL.
-            </p>
-            <p>
-                Nos ambientes prisionais, de acordo com o <i></i>Manual de Recomendações para o Controle da Tuberculose
-                no
-                Brasil do Ministério
-                da Saúde (Brasil, 2019c)</i>, não se deve realizar rotineiramente o isolamento das PPL em tratamento
-                porque:
-            </p>
-            <ul class="list-disc pl-5 flex flex-col gap-3">
-                <li>Após o início da medicação, rapidamente elas deixam de transmitir a doença;</li>
-                <li>A fase de maior infectividade é anterior ao diagnóstico;</li>
-                <li>O isolamento contribui com a estigmatização da doença e desestimula as PPL a buscarem
-                    atendimento/diagnóstico.</li>
-            </ul>
-            <p>
-                Durante o tratamento, podem ocorrer efeitos colaterais, principalmente prurido cutâneo e desconforto
-                gastrointestinal.
-                Em muitas localidades, existe a crença entre as PPL de que ingerir leite puro pela manhã com as
-                medicações ameniza os
-                efeitos colaterais. Como não há evidências que indiquem interação entre o leite e as medicações (Brasil,
-                2019c) (ao
-                contrário de medicações como antiácidos e omeprazol, que diminuem a eficácia do antibiótico) e essa
-                crença aumenta a
-                adesão ao tratamento, não há impedimentos para que as PPL recebam a suplementação alimentar.
-            </p>
-            <p>
-                O Tratamento Diretamente Observado (TDO) é uma estratégia eficaz para obter bons desfechos com o
-                tratamento. Pode ser
-                difícil para as eAPP manter a exequibilidade quando houver um número elevado de casos. Caso não seja
-                possível ofertar o
-                TDO a todos, a recomendação é ofertá-lo prioritariamente para as PPL com histórico de abandono do
-                tratamento ou de
-                patologias psiquiátricas associadas que dificultam o seguimento do tratamento.
-            </p>
-            <p>
-                De forma semelhante ao que é feito no tratamento do HIV, deve-se realizar um acompanhamento mensal do
-                tratamento da TB,
-                tanto com atendimento médico quanto com a coleta de escarros para controle de cura.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.6.3.3 Infecções cutâneas
-            </h3>
-            <p>
-                A abordagem das PPL com hanseníase muito se assemelha à das PPL com ISTs e TB pulmonar no que se refere
-                ao tratamento e
-                vigilância das medicações. Portanto, o ponto principal a ser tratado aqui é o diagnóstico da hanseníase,
-                cuja
-                identificação é frequentemente dificultada pela semelhança dos sintomas que ela pode provocar com os de
-                outras doenças
-                cutâneas comuns no ambiente prisional.
-            </p>
-            <p>
-                No seu dia a dia de trabalho, você vai se deparar frequentemente com patologias cutâneas de difícil
-                resolução, como
-                lesões típicas de dermatofitoses, furunculoses de repetição, escabiose, entre outras, que são tratadas
-                com menos esforço
-                no ambiente fora dos muros do que dentro dos muros, em que o manejo é mais prolongado e enfrenta outras
-                dificuldades. Às
-                vezes, a causa da falha terapêutica é ambiental. Por exemplo, a PPL pode ter dificuldade de higienizar
-                roupas, pode
-                haver recontaminação na mesma cela, entre outros problemas.
-            </p>
-            <p>
-                Em instituições penais em que as PPL não usam uniforme, peças de vestuário são utilizadas como moeda de
-                troca. Há PPL
-                que têm apenas um conjunto de roupa ou dormem em colchões e roupas de cama sujas por não conseguirem
-                fazer a
-                higienização adequada dessas peças. A aquisição de novas roupas e de materiais de higiene pode ser a
-                solução para evitar
-                infecções recorrentes.
-            </p>
-            <p>
-                Não foi encontrada, nas evidências científicas, recomendação para realizar tratamento amplo com
-                ivermectina para
-                escabiose em pessoas assintomáticas em estabelecimentos penais. Em períodos de surtos, as possíveis
-                abordagens devem ser
-                discutidas com a vigilância sanitária local.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.6.3.4 Doenças crônicas não transmissíveis
-            </h3>
-            <p>
-                Retomando o discutido anteriormente, não podemos esquecer do cuidado continuado das PPL com patologias
-                crônicas. É
-                frequente identificar, em algumas instituições penais, que as PPL conhecem o diagnóstico das doenças
-                crônicas, mas não
-                buscam o seguimento clínico nem o tratamento adequado.
-            </p>
-            <p>
-                No acolhimento inicial, feito assim que as PPL entram na instituição penal, é possível coletar
-                informações sobre essas
-                patologias e organizar as prioridades das demandas das PPL quanto à necessidade de seguimento clínico e
-                dispensação de
-                medicações. Identificar essas PPL em grupos de problemas de saúde chave (hipertensão, diabetes,
-                deficiências físicas,
-                uso de sonda vesical ou ostomia etc.) facilita a distribuição de insumos e medicações posteriormente.
-            </p>
-            <p>
-                A formação profissional voltada para as necessidades das PPL é um ponto que se deve destacar. No caso
-                dos médicos, a
-                Medicina de Família e Comunidade tem uma contribuição na resolutividade dos serviços de APS Prisional.
-                No âmbito da
-                saúde prisional, dada a complexidade do território, é importante que os profissionais da eAPP tenham
-                formação em APS,
-                conheçam seus atributos, conheçam os protocolos vigentes no SUS e as especificidades e vulnerabilidades
-                que fazem parte
-                da vida das PPL. Todas as patologias citadas têm, em sua maioria, tratamentos padronizados nacionalmente
-                com esquemas
-                terapêuticos simplificados. Medicações de primeira linha para HIV, hepatites, TB e hanseníase são
-                administradas apenas
-                uma vez ao dia. Por outro lado, no cuidado das doenças crônicas, os tratamentos são múltiplos,
-                geralmente dependendo da
-                disponibilidade das medicações da farmácia básica.
-            </p>
-            <p>
-                Recomenda-se, portanto, que sempre se busque, no tratamento das doenças crônicas, o uso do esquema mais
-                simplificado
-                possível, de preferência o que contenha menor número de comprimidos, para que a PPL não tenha que
-                armazenar muita
-                medicação e que tenha a posologia mais simplificada. Para evitar faltas, é recomendado que a prescrição
-                seja adequada à
-                Relação Nacional de Medicamentos Essenciais (RENAME) e à distribuição municipal das medicações.
-            </p>
-            <p>
-                Devemos dedicar atenção especial aos hipoglicemiantes e insulinas. Tendo em vista que a maioria dos
-                estabelecimentos
-                penais não tem plantão noturno, o fechamento dos alas ocorre cedo, portanto o recebimento da alimentação
-                noturna ocorre
-                no fim de tarde e não há geladeiras nas celas. Assim, o horário da insulina “noturna” acaba se tornando
-                o final de
-                tarde, caso não haja a disponibilidade do uso de canetas com medicação não sensível ao calor. Em doses
-                maiores e em PPL
-                que não estão se alimentando, essa dose do fim do dia pode levar a hipoglicemias significativas até a
-                próxima
-                alimentação da manhã.
-            </p>
-        </div>
-
-        <div id="encerramento" class="bg-gray-100 py-10">
-            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
-                <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
-                    Encerramento da Unidade
-                </h2>
                 <p>
-                    O cuidado à saúde adaptado para o trabalho com as demandas do sistema prisional é variado, mas
-                    plenamente realizável com
-                    o conhecimento das práticas atuais e adaptação das rotinas e terapêuticas considerando as
-                    especificidades dos cenários.
-                    Contar com a parceria das equipes de segurança, unidades de referenciamento e secretarias de saúde
-                    municipais e
-                    estaduais é fundamental.
+                    Depois do diagnóstico, devemos iniciar prontamente o tratamento adequado. Frequentemente, não há
+                    celas
+                    de isolamento
+                    disponíveis nas instituições penais (quando disponíveis, a quantidade é insuficiente) para esse fim,
+                    portanto são
+                    utilizadas celas reservadas para regime disciplinar. Logo, o entendimento das PPL é de que o
+                    diagnóstico
+                    é seguido de um
+                    “castigo”, o que as desestimula a buscar o diagnóstico. Da mesma forma, também não há motivo para
+                    suspender visitas à
+                    PPL.
                 </p>
                 <p>
-                    Entendemos quanto o estudante-trabalhador pode se sentir desafiado nos contextos apresentados. O
-                    trabalho no sistema
-                    prisional irá trazer desafios que muitos ainda não enfrentaram, contudo esperamos que o aprendizado
-                    adquirido durante os
-                    nossos estudos seja de grande ajuda para todos. Acima de tudo, a execução do seu trabalho é uma
-                    ponte para a justiça
-                    social. Cada consulta realizada e agravo tratado é um ato de cidadania. Você, estudante-trabalhador,
-                    é peça-chave nessa
-                    transformação.
+                    Nos ambientes prisionais, de acordo com o <i></i>Manual de Recomendações para o Controle da
+                    Tuberculose
+                    no
+                    Brasil do Ministério
+                    da Saúde (Brasil, 2019c)</i>, não se deve realizar rotineiramente o isolamento das PPL em tratamento
+                    porque:
+                </p>
+                <ul class="list-disc pl-5 flex flex-col gap-3">
+                    <li>Após o início da medicação, rapidamente elas deixam de transmitir a doença;</li>
+                    <li>A fase de maior infectividade é anterior ao diagnóstico;</li>
+                    <li>O isolamento contribui com a estigmatização da doença e desestimula as PPL a buscarem
+                        atendimento/diagnóstico.</li>
+                </ul>
+                <p>
+                    Durante o tratamento, podem ocorrer efeitos colaterais, principalmente prurido cutâneo e desconforto
+                    gastrointestinal.
+                    Em muitas localidades, existe a crença entre as PPL de que ingerir leite puro pela manhã com as
+                    medicações ameniza os
+                    efeitos colaterais. Como não há evidências que indiquem interação entre o leite e as medicações
+                    (Brasil,
+                    2019c) (ao
+                    contrário de medicações como antiácidos e omeprazol, que diminuem a eficácia do antibiótico) e essa
+                    crença aumenta a
+                    adesão ao tratamento, não há impedimentos para que as PPL recebam a suplementação alimentar.
+                </p>
+                <p>
+                    O Tratamento Diretamente Observado (TDO) é uma estratégia eficaz para obter bons desfechos com o
+                    tratamento. Pode ser
+                    difícil para as eAPP manter a exequibilidade quando houver um número elevado de casos. Caso não seja
+                    possível ofertar o
+                    TDO a todos, a recomendação é ofertá-lo prioritariamente para as PPL com histórico de abandono do
+                    tratamento ou de
+                    patologias psiquiátricas associadas que dificultam o seguimento do tratamento.
+                </p>
+                <p>
+                    De forma semelhante ao que é feito no tratamento do HIV, deve-se realizar um acompanhamento mensal
+                    do
+                    tratamento da TB,
+                    tanto com atendimento médico quanto com a coleta de escarros para controle de cura.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.6.3.3 Infecções cutâneas
+                </h3>
+                <p>
+                    A abordagem das PPL com hanseníase muito se assemelha à das PPL com ISTs e TB pulmonar no que se
+                    refere
+                    ao tratamento e
+                    vigilância das medicações. Portanto, o ponto principal a ser tratado aqui é o diagnóstico da
+                    hanseníase,
+                    cuja
+                    identificação é frequentemente dificultada pela semelhança dos sintomas que ela pode provocar com os
+                    de
+                    outras doenças
+                    cutâneas comuns no ambiente prisional.
+                </p>
+                <p>
+                    No seu dia a dia de trabalho, você vai se deparar frequentemente com patologias cutâneas de difícil
+                    resolução, como
+                    lesões típicas de dermatofitoses, furunculoses de repetição, escabiose, entre outras, que são
+                    tratadas
+                    com menos esforço
+                    no ambiente fora dos muros do que dentro dos muros, em que o manejo é mais prolongado e enfrenta
+                    outras
+                    dificuldades. Às
+                    vezes, a causa da falha terapêutica é ambiental. Por exemplo, a PPL pode ter dificuldade de
+                    higienizar
+                    roupas, pode
+                    haver recontaminação na mesma cela, entre outros problemas.
+                </p>
+                <p>
+                    Em instituições penais em que as PPL não usam uniforme, peças de vestuário são utilizadas como moeda
+                    de
+                    troca. Há PPL
+                    que têm apenas um conjunto de roupa ou dormem em colchões e roupas de cama sujas por não conseguirem
+                    fazer a
+                    higienização adequada dessas peças. A aquisição de novas roupas e de materiais de higiene pode ser a
+                    solução para evitar
+                    infecções recorrentes.
+                </p>
+                <p>
+                    Não foi encontrada, nas evidências científicas, recomendação para realizar tratamento amplo com
+                    ivermectina para
+                    escabiose em pessoas assintomáticas em estabelecimentos penais. Em períodos de surtos, as possíveis
+                    abordagens devem ser
+                    discutidas com a vigilância sanitária local.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.6.3.4 Doenças crônicas não transmissíveis
+                </h3>
+                <p>
+                    Retomando o discutido anteriormente, não podemos esquecer do cuidado continuado das PPL com
+                    patologias
+                    crônicas. É
+                    frequente identificar, em algumas instituições penais, que as PPL conhecem o diagnóstico das doenças
+                    crônicas, mas não
+                    buscam o seguimento clínico nem o tratamento adequado.
+                </p>
+                <p>
+                    No acolhimento inicial, feito assim que as PPL entram na instituição penal, é possível coletar
+                    informações sobre essas
+                    patologias e organizar as prioridades das demandas das PPL quanto à necessidade de seguimento
+                    clínico e
+                    dispensação de
+                    medicações. Identificar essas PPL em grupos de problemas de saúde chave (hipertensão, diabetes,
+                    deficiências físicas,
+                    uso de sonda vesical ou ostomia etc.) facilita a distribuição de insumos e medicações
+                    posteriormente.
+                </p>
+                <p>
+                    A formação profissional voltada para as necessidades das PPL é um ponto que se deve destacar. No
+                    caso
+                    dos médicos, a
+                    Medicina de Família e Comunidade tem uma contribuição na resolutividade dos serviços de APS
+                    Prisional.
+                    No âmbito da
+                    saúde prisional, dada a complexidade do território, é importante que os profissionais da eAPP tenham
+                    formação em APS,
+                    conheçam seus atributos, conheçam os protocolos vigentes no SUS e as especificidades e
+                    vulnerabilidades
+                    que fazem parte
+                    da vida das PPL. Todas as patologias citadas têm, em sua maioria, tratamentos padronizados
+                    nacionalmente
+                    com esquemas
+                    terapêuticos simplificados. Medicações de primeira linha para HIV, hepatites, TB e hanseníase são
+                    administradas apenas
+                    uma vez ao dia. Por outro lado, no cuidado das doenças crônicas, os tratamentos são múltiplos,
+                    geralmente dependendo da
+                    disponibilidade das medicações da farmácia básica.
+                </p>
+                <p>
+                    Recomenda-se, portanto, que sempre se busque, no tratamento das doenças crônicas, o uso do esquema
+                    mais
+                    simplificado
+                    possível, de preferência o que contenha menor número de comprimidos, para que a PPL não tenha que
+                    armazenar muita
+                    medicação e que tenha a posologia mais simplificada. Para evitar faltas, é recomendado que a
+                    prescrição
+                    seja adequada à
+                    Relação Nacional de Medicamentos Essenciais (RENAME) e à distribuição municipal das medicações.
+                </p>
+                <p>
+                    Devemos dedicar atenção especial aos hipoglicemiantes e insulinas. Tendo em vista que a maioria dos
+                    estabelecimentos
+                    penais não tem plantão noturno, o fechamento dos alas ocorre cedo, portanto o recebimento da
+                    alimentação
+                    noturna ocorre
+                    no fim de tarde e não há geladeiras nas celas. Assim, o horário da insulina “noturna” acaba se
+                    tornando
+                    o final de
+                    tarde, caso não haja a disponibilidade do uso de canetas com medicação não sensível ao calor. Em
+                    doses
+                    maiores e em PPL
+                    que não estão se alimentando, essa dose do fim do dia pode levar a hipoglicemias significativas até
+                    a
+                    próxima
+                    alimentação da manhã.
                 </p>
             </div>
         </div>
 
-        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+        <div id="encerramento" class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
+                Encerramento da Unidade
             </h2>
             <p>
-                BRASIL. Secretaria Nacional de Políticas Penais.
-                <b>Relatório de Informações Penais.</b>
-                16º ciclo SISDEPEN, 1º semestre de 2024. RELIPEN.
-                Brasília: SENAPPEN, 2024a.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
-                </a>.
-                Acesso em: 13 ago. 2025.
+                O cuidado à saúde adaptado para o trabalho com as demandas do sistema prisional é variado, mas
+                plenamente realizável com
+                o conhecimento das práticas atuais e adaptação das rotinas e terapêuticas considerando as
+                especificidades dos cenários.
+                Contar com a parceria das equipes de segurança, unidades de referenciamento e secretarias de saúde
+                municipais e
+                estaduais é fundamental.
             </p>
             <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública.
-                <b>Atenção Primária Prisional.</b>
-                Guia Prático: Dermatologia.
-                Brasília: Ministério da Saúde, 2024e.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/senappen/pt-br/assuntos/noticias/atencao_primaria_prisional_guia_dermatologia.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/assuntos/noticias/atencao_primaria_prisional_guia_dermatologia.pdf
-                </a>.
-                Acesso em: 13 ago. 2025.
+                Entendemos quanto o estudante-trabalhador pode se sentir desafiado nos contextos apresentados. O
+                trabalho no sistema
+                prisional irá trazer desafios que muitos ainda não enfrentaram, contudo esperamos que o aprendizado
+                adquirido durante os
+                nossos estudos seja de grande ajuda para todos. Acima de tudo, a execução do seu trabalho é uma
+                ponte para a justiça
+                social. Cada consulta realizada e agravo tratado é um ato de cidadania. Você, estudante-trabalhador,
+                é peça-chave nessa
+                transformação.
             </p>
-            <p>
-                LIU, Y. E. <i>et al</i>.
-                All-cause and cause-specific mortality during and following incarceration in Brazil:
-                A retrospective cohort study.
-                <b>PLoS Medicine</b>, v. 18, n. 9, e1003789, 2021.
-                Disponível em:
-                <a class="link" href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789"
-                    target="_blank" rel="noopener noreferrer">
-                    https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789
-                </a>.
-                Acesso em: 13 ago. 2025.
-            </p>
-            <p>
-                SABINO, C. B.; LEMOS, C. B.; GUEDES, R. D.
-                MNPCT.
-                Relatório de inspeções: unidades de privação de liberdade de São Paulo.
-                Brasília: <b>MNPCT</b>, 2024.
-                Disponível em:
-                <a class="link"
-                    href="https://mnpctbrasil.wordpress.com/wp-content/uploads/2024/10/relatorio-sp_2024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://mnpctbrasil.wordpress.com/wp-content/uploads/2024/10/relatorio-sp_2024.pdf
-                </a>.
-                Acesso em: 13 ago. 2025.
-            </p>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
         </div>
+
+        <div id="referencias_importantes" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências principais
+                </h2>
+                <p>
+                    BRASIL. Secretaria Nacional de Políticas Penais.
+                    <b>Relatório de Informações Penais.</b>
+                    16º ciclo SISDEPEN, 1º semestre de 2024. RELIPEN.
+                    Brasília: SENAPPEN, 2024a.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
+                    </a>.
+                    Acesso em: 13 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública.
+                    <b>Atenção Primária Prisional.</b>
+                    Guia Prático: Dermatologia.
+                    Brasília: Ministério da Saúde, 2024e.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.gov.br/senappen/pt-br/assuntos/noticias/atencao_primaria_prisional_guia_dermatologia.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/assuntos/noticias/atencao_primaria_prisional_guia_dermatologia.pdf
+                    </a>.
+                    Acesso em: 13 ago. 2025.
+                </p>
+                <p>
+                    LIU, Y. E. <i>et al</i>.
+                    All-cause and cause-specific mortality during and following incarceration in Brazil:
+                    A retrospective cohort study.
+                    <b>PLoS Medicine</b>, v. 18, n. 9, e1003789, 2021.
+                    Disponível em:
+                    <a class="link"
+                        href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789"
+                        target="_blank" rel="noopener noreferrer">
+                        https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789
+                    </a>.
+                    Acesso em: 13 ago. 2025.
+                </p>
+                <p>
+                    SABINO, C. B.; LEMOS, C. B.; GUEDES, R. D.
+                    MNPCT.
+                    Relatório de inspeções: unidades de privação de liberdade de São Paulo.
+                    Brasília: <b>MNPCT</b>, 2024.
+                    Disponível em:
+                    <a class="link"
+                        href="https://mnpctbrasil.wordpress.com/wp-content/uploads/2024/10/relatorio-sp_2024.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://mnpctbrasil.wordpress.com/wp-content/uploads/2024/10/relatorio-sp_2024.pdf
+                    </a>.
+                    Acesso em: 13 ago. 2025.
+                </p>
+            </div>
+        </div>
+
 
         <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                <i class="fa-solid fa-file text-black"></i>
                 Referências
             </h2>
             <p>
@@ -2378,20 +2533,6 @@
             </p>
 
             <p>
-                BRASIL. Secretaria Nacional de Políticas Penais.
-                <b>Relatório de Informações Penais.</b>
-                16º ciclo SISDEPEN, 1º semestre de 2024. RELIPEN.
-                Brasília: SENAPPEN, 2024a.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
-                </a>.
-                Acesso em: 13 ago. 2025.
-            </p>
-
-            <p>
                 BRASIL. Ministério da Saúde.
                 <b>Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV em Adultos.</b>
                 Brasília: Ministério da Saúde, 2024b.
@@ -2413,20 +2554,6 @@
                     href="https://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/aids/pt-br/central-de-conteudo/boletins-epidemiologicos/2024/boletim_sifilis_2024_e.pdf
-                </a>.
-                Acesso em: 13 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública.
-                <b>Atenção Primária Prisional.</b>
-                Guia Prático: Dermatologia.
-                Brasília: Ministério da Saúde, 2024e.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/senappen/pt-br/assuntos/noticias/atencao_primaria_prisional_guia_dermatologia.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/assuntos/noticias/atencao_primaria_prisional_guia_dermatologia.pdf
                 </a>.
                 Acesso em: 13 ago. 2025.
             </p>
@@ -2719,19 +2846,6 @@
             </p>
 
             <p>
-                LIU, Y. E. et al.
-                All-cause and cause-specific mortality during and following incarceration in Brazil:
-                A retrospective cohort study.
-                <b>PLoS Medicine</b>, v. 18, n. 9, e1003789, 2021.
-                Disponível em:
-                <a class="link" href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789"
-                    target="_blank" rel="noopener noreferrer">
-                    https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789
-                </a>.
-                Acesso em: 13 ago. 2025.
-            </p>
-
-            <p>
                 MINAYO, M. C. S.; RIBEIRO, A. P.
                 Health conditions of prisoners in the state of Rio de Janeiro, Brazil.
                 <b>Ciência & Saúde Coletiva</b>, v. 21, n. 7, p. 2031-2040, 2016.
@@ -2835,20 +2949,6 @@
                 <a class="link" href="https://www.rj.gov.br/admpenitenciaria/node/667" target="_blank"
                     rel="noopener noreferrer">
                     https://www.rj.gov.br/admpenitenciaria/node/667
-                </a>.
-                Acesso em: 13 ago. 2025.
-            </p>
-
-            <p>
-                SABINO, C. B.; LEMOS, C. B.; GUEDES, R. D.
-                <b>MNPCT.</b>
-                Relatório de inspeções: unidades de privação de liberdade de São Paulo.
-                Brasília: MNPCT, 2024.
-                Disponível em:
-                <a class="link"
-                    href="https://mnpctbrasil.wordpress.com/wp-content/uploads/2024/10/relatorio-sp_2024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://mnpctbrasil.wordpress.com/wp-content/uploads/2024/10/relatorio-sp_2024.pdf
                 </a>.
                 Acesso em: 13 ago. 2025.
             </p>
@@ -3042,23 +3142,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

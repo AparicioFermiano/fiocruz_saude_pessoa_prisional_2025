@@ -34,7 +34,7 @@
             <nav id="menu"
                 class="hidden md:flex flex-col md:flex-row absolute md:static bg-white md:bg-transparent left-0 top-20 md:top-auto w-full md:w-auto shadow-md md:shadow-none transition-all">
                 <a href="#apresentacao" class="p-4 text-gray-800 hover:text-[var(--primary)]">Apresentação</a>
-                <a href="#2.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 01</a>
+                <a href="#1.1" class="p-4 text-gray-800 hover:text-[var(--primary)]">Unidade 01</a>
                 <div class="relative group">
                     <button id="dropdown-toggle" onclick="animacao.toggleDropdown()"
                         class="flex items-center justify-between w-full md:w-auto p-4 text-gray-800 hover:text-[var(--primary)]">
@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -349,37 +349,86 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo IV - Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 1 - Promoção da Saúde
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 4
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 1 &nbsp;·&nbsp; Promoção da Saúde
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -518,7 +567,7 @@
 
         <div id="1.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.1 A promoção da saúde e a prevenção de agravos e doenças
             </h2>
             <p>
@@ -650,13 +699,12 @@
                         <b>Promoção da cultura da paz e dos direitos humanos</b>
                     </h3>
                     <small>
-                        Conheça a oficina de fotografia em uma penitenciária feminina em Porto Alegre (RS) que
-                        reverberou em discussões sobre
-                        direitos humanos.
+                        Conheça o projeto que levou oficina de fotografia para presídios do Distrito Federal,
+                        fomentando a capacitação e sensibilização sobre direitos humanos no sistema prisional.
                     </small>
                 </div>
                 <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
-                    <a href="https://www.unodc.org/lpo-brazil/pt/frontpage/2013/10/02-oficinas-de-fotografia-em-presidios-abrem-dialogo-sobre-direitos-humanos-genero-saude-e-violencia-no-sistema-prisional.html"
+                    <a href="https://brasil.un.org/pt-br/55283-ag%C3%AAncia-da-onu-realiza-oficinas-de-fotografia-em-pres%C3%ADdios-do-distrito-federal"
                         target="_blank"
                         class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
                         aqui!</a>
@@ -689,22 +737,22 @@
             </p>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Olhando para as experiências compartilhadas, você consegue visualizar alguma que poderia ser
                     desenvolvida na instituição
                     penal em que você trabalha ou conhece?
-                </h2>
+                </h3>
             </div>
         </div>
 
         <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.1.1 Promoção e prevenção: quais são as diferenças?
             </h3>
             <p>
@@ -736,11 +784,11 @@
                                             Prevenção primária
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 overflow-hidden rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                                        class="absolute inset-0 overflow-hidden rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center backface-hidden rotate-y-180">
                                         <p class="text-sm overflow-y-auto p-6">
                                             Busca remover fatores de risco para determinado problema de saúde antes de o
                                             indivíduo desenvolvê-lo. Exemplos:
@@ -764,11 +812,11 @@
                                             Prevenção secundária
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             Busca diminuir, por meio de ações de rastreamento e diagnóstico precoce, a
                                             prevalência de problemas de saúde em
@@ -794,11 +842,11 @@
                                             Prevenção terciária
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             Tem o objetivo de minimizar prejuízos e sequelas decorrentes de problemas de
                                             saúde que já se desenvolveram no indivíduo.
@@ -823,11 +871,11 @@
                                             Prevenção quaternária
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             Busca identificar indivíduos em risco de intervenções excessivas (seja de
                                             diagnóstico, seja de tratamento) para
@@ -853,233 +901,266 @@
                 ser
                 executadas e sejam efetivas.
             </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.2 O direito à saúde no sistema prisional e as oportunidades para promover saúde
-            </h2>
-            <p>
-                O direito à saúde da população privada de liberdade é garantido pela Constituição Federal (Brasil, 1988)
-                e orientada
-                pela PNAISP. No entanto, a realidade do sistema prisional brasileiro é caracterizada por fatores que
-                dificultam o acesso
-                das PPL a esse direito. Apesar dos avanços conquistados no âmbito da saúde prisional, ainda existem
-                desafios importantes
-                no que se refere à melhoria de indicadores de saúde e à redução da concentração de agravos e doenças no
-                ambiente
-                prisional. Podemos indicar dois grupos de fatores que transformam as instituições prisionais em
-                “amplificadores
-                institucionais” da disseminação de doenças (Andrews; Liu; Croda, 2023):
-            </p>
-            <div class="flex flex-col gap-5 my-5">
-                <div class="flex">
-                    <span
-                        class="w-10 h-10 rounded-full bg-[var(--primary)] shrink-0 flex justify-center items-center my-auto font-bold text-2xl">1</span>
-                    <p class="px-2 md:px-3">
-                        <b>Estruturantes:</b> superlotação, ausência de sistemas de ventilação e saneamento básico
-                        adequados, alta concentração de
-                        umidade, entre outros;
-                    </p>
-                </div>
-                <div class="flex">
-                    <span
-                        class="w-10 h-10 rounded-full bg-[var(--primary)] shrink-0 flex justify-center items-center my-auto font-bold text-2xl">2</span>
-                    <p class="px-2 md:px-3">
-                        <b>Assistenciais:</b> dificuldade de acesso à saúde integral - considerando aqui não só a eAPP,
-                        mas também a rede especializada
-                        e hospitalar - e a medicamentos em tempo oportuno, entre outros.
-                    </p>
-                </div>
-            </div>
-            <p>
-                As consequências desses fatores ficam evidentes quando comparamos a expectativa de vida da população
-                privada de
-                liberdade à da população em geral: enquanto a população em geral apresentou expectativa de vida de 76,4
-                anos em 2023, a
-                população privada de liberdade apresentou tempo médio de vida de 36 anos e 6 meses (Conselho Nacional de
-                Justiça, 2023;
-                Brasil, 2024).
-            </p>
-            <p>
-                Ainda, há evidências de que homens privados de liberdade apresentam maior risco de morte por causas
-                relacionadas à
-                saúde, violência e suicídio, em comparação com a população em geral (Liu et al., 2021).
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título: </b>Prisões brasileiras aumentam risco de adoecer e de morrer por causas
-                            violentas
-                        </p>
-                        <p>
-                            <b>Autor: </b>Ricardo Zorzetto (2024).
-                        <p>
-                            <b>Descrição: </b>
-                            leia o artigo e ouça a entrevista com o Professor Julio Croda. Na entrevista, ele discute as
-                            condições de vida na
-                            instituição penal e suas consequências na saúde da população privada de liberdade.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/"
-                                target="_blank">https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <p>
-                A elevada concentração de doenças no ambiente prisional não apenas afeta as PPL, mas também expõe a
-                riscos aqueles que
-                convivem nesse espaço, como profissionais e visitantes. Atuar na promoção da saúde e na prevenção de
-                agravos e doenças
-                é, portanto, uma tarefa conjunta em benefício da comunidade prisional como um todo.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.2.1 As estratégias previstas para a promoção da saúde no sistema prisional
-            </h3>
-            <p>
-                A fim de superar o modelo assistencial reducionista, focado na doença, como estratégia para controlar
-                agravos em saúde,
-                o Plano Nacional de Saúde no Sistema Penitenciário (PNSSP) apontou caminhos para a consolidação da
-                assistência à saúde
-                integral da PPL em 2003 (Brasil, 2003).
-            </p>
-            <p>
-                Naquele cenário, o PNSSP elencou temas prioritários para o planejamento de ações em saúde pelas eAPP e
-                estabeleceu metas
-                e resultados esperados para cada tema. As prioridades descritas pelo plano envolviam ações de prevenção
-                de agravos e
-                doenças mais prevalentes, garantia de espaços físicos adequados, acesso à alimentação adequada e
-                atividades físicas,
-                organização da assistência em saúde prisional, entre outras (Brasil, 2003).
-            </p>
-            <p>
-                As ações sugeridas pelo PNSSP constituíram uma referência importante para o planejamento e gerenciamento
-                da saúde
-                prisional, e, com a instituição da PNAISP, alguns elementos foram incorporados para aproximar o cuidado
-                em saúde
-                prisional à Rede de Atenção à Saúde (RAS) como um todo (Quadro 1) (Brasil, 2014).
-            </p>
-            <div id="quadro-1" class="flex flex-col gap-5 mt-5">
-                <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
-                    Quadro 1 - Temas prioritários e ações previstas pela PNAISP
-                </h2>
-                <div class="flex flex-wrap gap-5">
-                    <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-100">
-                        <h3 class="text-xl md:text-2xl font-bold mb-3">
-                            Doenças transmissíveis e não transmissíveis
-                        </h3>
-                        <p>
-                            Promover ações de prevenção de doenças transmissíveis e não transmissíveis; desenvolver
-                            ações visando à adoção de
-                            hábitos saudáveis de vida (exemplos: controle do tabagismo e alcoolismo, diminuição do
-                            estresse e promoção de atividade
-                            física).
-                        </p>
-                    </div>
-                    <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-200">
-                        <h3 class="text-xl md:text-2xl font-bold mb-3">
-                            Saúde da mulher
-                        </h3>
-                        <p>
-                            Realizar ações de prevenção do câncer de mama e de colo do útero e garantir o acompanhamento
-                            do pré-natal com a
-                            integração de equipes do território vinculadas à Rede de Saúde Materno-Infantil.
-                        </p>
-                    </div>
-                    <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-300">
-                        <h3 class="text-xl md:text-2xl font-bold mb-3">
-                            Saúde bucal
-                        </h3>
-                        <p>
-                            Promover ações de orientação sobre higiene e autoexame da boca (exemplo: palestras sobre
-                            escovação e avaliação bucal).
-                        </p>
-                    </div>
-                    <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-400">
-                        <h3 class="text-xl md:text-2xl font-bold mb-3">
-                            Saúde mental
-                        </h3>
-                        <p>
-                            Atuar na prevenção de agravos e doenças decorrentes do confinamento, na redução do uso de
-                            álcool e drogas e na
-                            reabilitação de usuários, assim como garantir o acesso da PPL aos programas de saúde mental.
-                        </p>
-                    </div>
-                    <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-500">
-                        <h3 class="text-xl md:text-2xl font-bold mb-3">
-                            Programa de imunizações
-                        </h3>
-                        <p>
-                            Garantir a oferta de imunizantes (como a vacinação para hepatites e outras do calendário de
-                            adultos) a toda PPL,
-                            funcionários e voluntários que prestam serviços no sistema prisional.
-                        </p>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <small>Fonte: elaboração dos autores com base em Brasil (2013b).</small>
-                </div>
-            </div>
+
         </div>
 
         <div class="bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.2 O direito à saúde no sistema prisional e as oportunidades para promover saúde
+                </h2>
+                <p>
+                    O direito à saúde da população privada de liberdade é garantido pela Constituição Federal (Brasil,
+                    1988)
+                    e orientada
+                    pela PNAISP. No entanto, a realidade do sistema prisional brasileiro é caracterizada por fatores que
+                    dificultam o acesso
+                    das PPL a esse direito. Apesar dos avanços conquistados no âmbito da saúde prisional, ainda existem
+                    desafios importantes
+                    no que se refere à melhoria de indicadores de saúde e à redução da concentração de agravos e doenças
+                    no
+                    ambiente
+                    prisional. Podemos indicar dois grupos de fatores que transformam as instituições prisionais em
+                    “amplificadores
+                    institucionais” da disseminação de doenças (Andrews; Liu; Croda, 2023):
+                </p>
+                <div class="flex flex-col gap-5 my-5">
+                    <div class="flex">
+                        <span
+                            class="w-10 h-10 rounded-full bg-[var(--primary)] shrink-0 flex justify-center items-center my-auto font-bold text-2xl">1</span>
+                        <p class="px-2 md:px-3">
+                            <b>Estruturantes:</b> superlotação, ausência de sistemas de ventilação e saneamento básico
+                            adequados, alta concentração de
+                            umidade, entre outros;
+                        </p>
+                    </div>
+                    <div class="flex">
+                        <span
+                            class="w-10 h-10 rounded-full bg-[var(--primary)] shrink-0 flex justify-center items-center my-auto font-bold text-2xl">2</span>
+                        <p class="px-2 md:px-3">
+                            <b>Assistenciais:</b> dificuldade de acesso à saúde integral - considerando aqui não só a
+                            eAPP,
+                            mas também a rede especializada
+                            e hospitalar - e a medicamentos em tempo oportuno, entre outros.
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    As consequências desses fatores ficam evidentes quando comparamos a expectativa de vida da população
+                    privada de
+                    liberdade à da população em geral: enquanto a população em geral apresentou expectativa de vida de
+                    76,4
+                    anos em 2023, a
+                    população privada de liberdade apresentou tempo médio de vida de 36 anos e 6 meses (Conselho
+                    Nacional de
+                    Justiça, 2023;
+                    Brasil, 2024).
+                </p>
+                <p>
+                    Ainda, há evidências de que homens privados de liberdade apresentam maior risco de morte por causas
+                    relacionadas à
+                    saúde, violência e suicídio, em comparação com a população em geral (Liu et al., 2021).
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais1')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais1" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título: </b>Prisões brasileiras aumentam risco de adoecer e de morrer por causas
+                                violentas
+                            </p>
+                            <p>
+                                <b>Autor: </b>Ricardo Zorzetto (2024).
+                            <p>
+                                <b>Descrição: </b>
+                                leia o artigo e ouça a entrevista com o Professor Julio Croda. Na entrevista, ele
+                                discute as
+                                condições de vida na
+                                instituição penal e suas consequências na saúde da população privada de liberdade.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/"
+                                    target="_blank">https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    A elevada concentração de doenças no ambiente prisional não apenas afeta as PPL, mas também expõe a
+                    riscos aqueles que
+                    convivem nesse espaço, como profissionais e visitantes. Atuar na promoção da saúde e na prevenção de
+                    agravos e doenças
+                    é, portanto, uma tarefa conjunta em benefício da comunidade prisional como um todo.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.2.1 As estratégias previstas para a promoção da saúde no sistema prisional
+                </h3>
+                <p>
+                    A fim de superar o modelo assistencial reducionista, focado na doença, como estratégia para
+                    controlar
+                    agravos em saúde,
+                    o Plano Nacional de Saúde no Sistema Penitenciário (PNSSP) apontou caminhos para a consolidação da
+                    assistência à saúde
+                    integral da PPL em 2003 (Brasil, 2003).
+                </p>
+                <p>
+                    Naquele cenário, o PNSSP elencou temas prioritários para o planejamento de ações em saúde pelas eAPP
+                    e
+                    estabeleceu metas
+                    e resultados esperados para cada tema. As prioridades descritas pelo plano envolviam ações de
+                    prevenção
+                    de agravos e
+                    doenças mais prevalentes, garantia de espaços físicos adequados, acesso à alimentação adequada e
+                    atividades físicas,
+                    organização da assistência em saúde prisional, entre outras (Brasil, 2003).
+                </p>
+                <p>
+                    As ações sugeridas pelo PNSSP constituíram uma referência importante para o planejamento e
+                    gerenciamento
+                    da saúde
+                    prisional, e, com a instituição da PNAISP, alguns elementos foram incorporados para aproximar o
+                    cuidado
+                    em saúde
+                    prisional à Rede de Atenção à Saúde (RAS) como um todo (Quadro 1) (Brasil, 2014).
+                </p>
+                <div id="quadro-1" class="flex flex-col gap-5 mt-5">
+                    <h2 class="text-2xl md:text-3xl font-bold">
+                        <i class="fa-solid fa-image text-black mr-2"></i>
+                        Quadro 1 - Temas prioritários e ações previstas pela PNAISP
+                    </h2>
+                    <div class="flex flex-wrap gap-5">
+                        <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-100">
+                            <h3 class="text-xl md:text-2xl font-bold mb-3">
+                                Doenças transmissíveis e não transmissíveis
+                            </h3>
+                            <p>
+                                Promover ações de prevenção de doenças transmissíveis e não transmissíveis; desenvolver
+                                ações visando à adoção de
+                                hábitos saudáveis de vida (exemplos: controle do tabagismo e alcoolismo, diminuição do
+                                estresse e promoção de atividade
+                                física).
+                            </p>
+                        </div>
+                        <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-200">
+                            <h3 class="text-xl md:text-2xl font-bold mb-3">
+                                Saúde da mulher
+                            </h3>
+                            <p>
+                                Realizar ações de prevenção do câncer de mama e de colo do útero e garantir o
+                                acompanhamento
+                                do pré-natal com a
+                                integração de equipes do território vinculadas à Rede de Saúde Materno-Infantil.
+                            </p>
+                        </div>
+                        <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-300">
+                            <h3 class="text-xl md:text-2xl font-bold mb-3">
+                                Saúde bucal
+                            </h3>
+                            <p>
+                                Promover ações de orientação sobre higiene e autoexame da boca (exemplo: palestras sobre
+                                escovação e avaliação bucal).
+                            </p>
+                        </div>
+                        <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-400">
+                            <h3 class="text-xl md:text-2xl font-bold mb-3">
+                                Saúde mental
+                            </h3>
+                            <p>
+                                Atuar na prevenção de agravos e doenças decorrentes do confinamento, na redução do uso
+                                de
+                                álcool e drogas e na
+                                reabilitação de usuários, assim como garantir o acesso da PPL aos programas de saúde
+                                mental.
+                            </p>
+                        </div>
+                        <div class="rounded-2xl max-w-[500px] p-5 mx-auto text-center bg-blue-500">
+                            <h3 class="text-xl md:text-2xl font-bold mb-3">
+                                Programa de imunizações
+                            </h3>
+                            <p>
+                                Garantir a oferta de imunizantes (como a vacinação para hepatites e outras do calendário
+                                de
+                                adultos) a toda PPL,
+                                funcionários e voluntários que prestam serviços no sistema prisional.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <small>Fonte: elaboração dos autores (2025) com base em Brasil (2013b).</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[var(--primary)] py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Olhando para as ações previstas pela PNAISP, você consegue identificar alguma que acontece na sua
                     instituição?
-                </h2>
+                </h3>
+            </div>
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+                <p>
+                    Ao considerar cada eAPP como um ponto de atenção da RAS, a PNAISP objetivou qualificar a atenção em
+                    saúde prisional por
+                    meio da integração das eAPP ao território em que se inserem. Com isso, buscou incentivar que as
+                    ações de
+                    todos os
+                    programas do Ministério da Saúde se estendessem para o sistema prisional.
+                </p>
+                <p>
+                    Portanto, assim como se dá o planejamento da atenção primária nos municípios e estados, as práticas
+                    em
+                    saúde no sistema
+                    prisional devem ter como base as características epidemiológicas, sociais e estruturais desse
+                    ambiente,
+                    permitindo uma
+                    abordagem mais sensível e eficaz conforme o contexto do território em que está inserido.
+                </p>
+
             </div>
         </div>
 
         <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <p>
-                Ao considerar cada eAPP como um ponto de atenção da RAS, a PNAISP objetivou qualificar a atenção em
-                saúde prisional por
-                meio da integração das eAPP ao território em que se inserem. Com isso, buscou incentivar que as ações de
-                todos os
-                programas do Ministério da Saúde se estendessem para o sistema prisional.
-            </p>
-            <p>
-                Portanto, assim como se dá o planejamento da atenção primária nos municípios e estados, as práticas em
-                saúde no sistema
-                prisional devem ter como base as características epidemiológicas, sociais e estruturais desse ambiente,
-                permitindo uma
-                abordagem mais sensível e eficaz conforme o contexto do território em que está inserido.
-            </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3 A humanização na promoção da saúde e de ambientes mais saudáveis
             </h2>
             <p>
-                No mesmo contexto de criação do PNSSP, em 2003, foi lançada a Política Nacional de Humanização (PNH) com
+                No mesmo contexto de criação do PNSSP, em 2003, foi lançada a Política Nacional de Humanização (PNH)
+                com
                 o objetivo de
                 promover mudanças no processo de cuidado em saúde (Brasil, 2010). Na PNAISP, a PNH aparece de forma
                 transversal no
-                objetivo: “qualificar e humanizar a atenção à saúde no sistema prisional por meio de ações conjuntas das
+                objetivo: “qualificar e humanizar a atenção à saúde no sistema prisional por meio de ações conjuntas
+                das
                 áreas da saúde
                 e da justiça” (Brasil, 2014, Art. 6º, inc. III).
             </p>
@@ -1111,15 +1192,16 @@
                             <b>Autor: </b>Brasil (2013c).
                         <p>
                             <b>Descrição: </b>
-                            para se aprofundar na PNH, conheça essa cartilha, que apresenta os princípios, diretrizes e
+                            para se aprofundar na PNH, conheça essa cartilha, que apresenta os princípios,
+                            diretrizes e
                             dispositivos dessa política,
                             os quais orientam práticas mais humanizadas nos serviços de saúde.
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="link"
-                                href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_humanizacao_pnh_folheto.pdf"
-                                target="_blank">https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_humanizacao_pnh_folheto.pdf</a>
+                            <a class="link" href="./media/politica_nacional_humanizacao_pnh_folheto.pdf"
+                                target="_blank">Clique
+                                aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -1131,33 +1213,35 @@
                 </div>
             </div>
             <p>
-                A implementação dessa política no sistema prisional pode ser desenvolvida com base no planejamento, na
+                A implementação dessa política no sistema prisional pode ser desenvolvida com base no planejamento,
+                na
                 execução e no monitoramento de ações, utilizando como método de trabalho a produção de saúde pela
                 tríade: gestores, trabalhadores e usuários. A seguir, vamos aprofundar as dimensões do
                 <i>acolhimento</i> e da
                 <i>ambiência</i> para promoção da humanização no contexto prisional.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3.1 Acolhimento como diretriz da humanização
             </h3>
             <p>
-                A qualificação dos processos de <i>acolhimento</i> no sistema prisional pode ser uma ferramenta potente
+                A qualificação dos processos de <i>acolhimento</i> no sistema prisional pode ser uma ferramenta
+                potente
                 para a
                 produção de
                 humanização, podendo ser realizada por meio de ações para a população privada de liberdade e para
                 servidores,
                 considerando os diferentes momentos da vivência no ambiente prisional (Quadro 2).
             </p>
-            <div id="quadro-2" class="flex flex-col gap-5 mt-5">
+        </div>
+
+        <div id="timeline" class="bg-[var(--primary)] py-10">
+            <div id="quadro-2" class="flex flex-col gap-5 mt-5 max-w-[1000px] mx-auto p-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                    <i class="fa-solid fa-image text-black mr-2"></i>
                     Quadro 2 - Ações para produção de acolhimento nos diferentes momentos no sistema prisional
                 </h2>
             </div>
-        </div>
-
-        <div id="timeline" class="bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5">
                 <div class="timeline mx-auto flex flex-col gap-10 md:gap-20">
                     <div
@@ -1240,7 +1324,7 @@
                             </li>
                         </ul>
                         <small>
-                            Fonte: elaboração dos autores com base em Verdi, Matias e Garcia Júnior (2014).
+                            Fonte: elaboração dos autores (2025) com base em Verdi, Matias e Garcia Júnior (2014).
                         </small>
                     </div>
                 </div>
@@ -1253,11 +1337,30 @@
                 necessidades de cada público, demandando adaptação do organograma e fluxos de trabalho intersetoriais.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3.2 Ambiência como diretriz da humanização
             </h3>
         </div>
 
+<<<<<<< HEAD
+        <div class="bg-[var(--primary)] py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-4xl font-bold">
+                    Reflexão
+                </h2>
+                <ul class="text-xl md:text-3xl leading-14 font-light mt-5 list-disc pl-5">
+                    <li>
+                        Imagine um ambiente de cuidado em saúde que você gostaria de frequentar. Como são as paredes?
+                        Qual é o cheiro desse
+                        espaço? Você se sente confortável, acolhido e protegido nele?
+                    </li>
+                    <li>
+                        Agora, olhe para a unidade de saúde das instituições penais que você conhece. São próximas ao
+                        que você imaginou? Como
+                        você, enquanto trabalhador, se sente nesse espaço?
+                    </li>
+                </ul>
+=======
         <div class="bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-wrap gap-7 items-start">
                 <div class="w-full md:flex-1 flex flex-col gap-7">
@@ -1293,6 +1396,7 @@
                         </a>
                     </div>
                 </div>
+>>>>>>> be0721ae38236b10ab0a167cf01d79a26ff9424b
             </div>
         </div>
 
@@ -1387,8 +1491,7 @@
                     </small>
                 </div>
                 <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
-                    <a href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/curadoria-de-experiencias/coletanea-de-boas-praticas-em-saude-e-qualidade-de-vida.pdf"
-                        target="_blank"
+                    <a href="./media/coletanea-de-boas-praticas-em-saude-e-qualidade-de-vida.pdf" target="_blank"
                         class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
                         aqui!</a>
                 </div>
@@ -1433,119 +1536,173 @@
                 a comunidade
                 prisional e como cada um pode contribuir com a promoção da saúde no sistema prisional.
             </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.4 Os atores da comunidade prisional na promoção da saúde
-            </h2>
-            <p>
-                A comunidade prisional é representada por um conjunto de atores que trabalham, atuam e vivem no espaço
-                prisional. Tais
-                atores são fundamentais na luta pelos direitos da população privada de liberdade e dos trabalhadores do
-                sistema
-                prisional (Castro; Sánchez; Larouzé, 2014; Ely et al., 2023; Possuelo et al., 2024).
-            </p>
-            <p>
-                Compõem a comunidade prisional, entre outros atores:
-            </p>
-            <div id="mapa" class="relative">
-                <img class="w-full h-full rounded-xl" src="./images/profissionais.png" loading="lazy"
-                    alt="policiais penais, pessoas privadas de liberdade, profissionais da saúde, educação e justiça, além de familiares, comunidade e organizações da sociedade civil."
-                    title="policiais penais, pessoas privadas de liberdade, profissionais da saúde, educação e justiça, além de familiares, comunidade e organizações da sociedade civil." />
-                <button id="tooltip_1" class="botao-flutuante text-black!" style="top: 35%; left: 9%">
-                    +
-                </button>
-                <button id="tooltip_2" class="botao-flutuante text-black!" style="top: 45%; left: 23%">
-                    +
-                </button>
-                <button id="tooltip_3" class="botao-flutuante text-black!" style="top: 33%; left: 29%">
-                    +
-                </button>
-                <button id="tooltip_4" class="botao-flutuante text-black!" style="top: 43%; left: 35%">
-                    +
-                </button>
-                <button id="tooltip_5" class="botao-flutuante text-black!" style="top: 33%; left: 49%">
-                    +
-                </button>
-                <button id="tooltip_6" class="botao-flutuante text-black!" style="top: 48%; right: 28%">
-                    +
-                </button>
-                <button id="tooltip_7" class="botao-flutuante text-black!" style="top: 25%; right: 24%">
-                    +
-                </button>
-                <button id="tooltip_8" class="botao-flutuante text-black!" style="bottom: 24%; right: 23%">
-                    +
-                </button>
+        </div>
+
+        <div class="py-10" style="background-color: var(--primary)">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-7 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-book-open mr-2"></i>
+                    Convite à leitura e a um vídeo da autora Ana Paula Melo Dias
+                </h2>
+                <p>
+                    A Cartilha <i>Cuidados paliativos e luto em saúde prisional: guia sensível para
+                    trabalhadoras e trabalhadores</i> é um convite ao cuidado que acolhe, escuta e reconhece a
+                    dignidade humana em todos os momentos da vida no sistema prisional.
+                </p>
+                <p>
+                    Este material foi pensado como um componente de acolhimento para apoiar profissionais da saúde,
+                    da segurança e da gestão nos diferentes momentos vividos no cárcere — o adoecimento, a finitude,
+                    as perdas e o luto, muitas vezes silenciados e invisibilizados. Mais do que protocolos, a cartilha
+                    oferece reflexões, conceitos e caminhos sensíveis para fortalecer práticas de cuidado compassivas,
+                    éticas e humanizadas, tanto para quem é cuidado quanto para quem cuida.
+                </p>
+                <p>
+                    Convidamos você a ler com calma, como quem abre um espaço de escuta. Que esta cartilha possa ser
+                    apoio, guia e abrigo nos encontros mais delicados do cotidiano da saúde prisional.
+                </p>
+                <div class="flex flex-col items-center gap-5">
+                    <img src="./images/cuidados-paliativos-mockup.png"
+                        alt="Capa da Cartilha Cuidados Paliativos e Luto em Saúde Prisional"
+                        class="w-[50%] block mx-auto" />
+                    <a href="./media/cuidados_paliativos.pdf" target="_blank"
+                        class="btn bg-black text-white px-6 py-3 text-lg">
+                        <i class="fa-solid fa-file-pdf mr-2"></i>
+                        Acessar a Cartilha
+                    </a>
+                </div>
+                <video class="w-full max-w-[600px] mx-auto border-2 border-black rounded-xl" controls>
+                    <source src="./media/podcast_cuidados_paliativos.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                </video>
             </div>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.4.1 Agentes promotores de saúde no sistema prisional
-            </h3>
-            <p>
-                Agentes promotores de saúde são pessoas que estão em privação de liberdade e que desempenham um papel
-                semelhante ao dos
-                Agentes Comunitários de Saúde (ACS): realizam atividades de promoção da saúde e prevenção de agravos e
-                doenças, auxiliam
-                no acompanhamento das pessoas em tratamento, especialmente os de longa duração, identificam demandas de
-                saúde das PPL,
-                entre outras atividades (Brasil, 2003; Padilha, 2023).
-            </p>
-            <p>
-                A institucionalização desses atores foi considerada pelo PNSSP uma estratégia para qualificar o acesso
-                em saúde da
-                população privada de liberdade, e, mesmo não tendo sido retomada pela PNAISP, os agentes promotores de
-                saúde estão
-                presentes em diversos estabelecimentos prisionais, e práticas exitosas vêm surgindo a partir desse
-                trabalho (Padilha,
-                2023).
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais4" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título: </b>Projeto <i>“Agentes Promotores de Saúde no Sistema Penitenciário”</i>
-                        </p>
-                        <p>
-                            <b>Autor: </b>Mato Grosso (2014).
-                        <p>
-                            <b>Descrição: </b>
-                            conheça a experiência do Centro de Ressocialização de Cuiabá na implantação de um projeto de
-                            agentes promotores de saúde
-                            conduzido pela Secretaria de Estado de Justiça e Direitos Humanos do Mato Grosso.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.sesp.mt.gov.br/documents/4713378/11999663/Projeto+Promotores+de+Sa%C3%BAde+CRC.pdf"
-                                target="_blank">https://www.sesp.mt.gov.br/documents/4713378/11999663/Projeto+Promotores+de+Sa%C3%BAde+CRC.pdf</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais4')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
+        </div>
+
+        <div class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.4 Os atores da comunidade prisional na promoção da saúde
+                </h2>
+                <p>
+                    A comunidade prisional é representada por um conjunto de atores que trabalham, atuam e vivem no
+                    espaço
+                    prisional. Tais
+                    atores são fundamentais na luta pelos direitos da população privada de liberdade e dos trabalhadores
+                    do
+                    sistema
+                    prisional (Castro; Sánchez; Larouzé, 2014; Ely et al., 2023; Possuelo et al., 2024).
+                </p>
+                <p>
+                    Compõem a comunidade prisional, entre outros atores:
+                </p>
+                <p class="text-center pb-3"><small>Clique nos ícones + para interagir</small></p>
+                <div id="mapa" class="relative">
+                    <img class="w-full h-full rounded-xl" src="./images/profissionais.png" loading="lazy"
+                        alt="policiais penais, pessoas privadas de liberdade, profissionais da saúde, educação e justiça, além de familiares, comunidade e organizações da sociedade civil."
+                        title="policiais penais, pessoas privadas de liberdade, profissionais da saúde, educação e justiça, além de familiares, comunidade e organizações da sociedade civil." />
+                    <button id="tooltip_1" class="botao-flutuante text-black!" style="top: 35%; left: 9%">
+                        +
+                    </button>
+                    <button id="tooltip_2" class="botao-flutuante text-black!" style="top: 45%; left: 23%">
+                        +
+                    </button>
+                    <button id="tooltip_3" class="botao-flutuante text-black!" style="top: 33%; left: 29%">
+                        +
+                    </button>
+                    <button id="tooltip_4" class="botao-flutuante text-black!" style="top: 43%; left: 35%">
+                        +
+                    </button>
+                    <button id="tooltip_5" class="botao-flutuante text-black!" style="top: 33%; left: 49%">
+                        +
+                    </button>
+                    <button id="tooltip_6" class="botao-flutuante text-black!" style="top: 48%; right: 28%">
+                        +
+                    </button>
+                    <button id="tooltip_7" class="botao-flutuante text-black!" style="top: 25%; right: 24%">
+                        +
+                    </button>
+                    <button id="tooltip_8" class="botao-flutuante text-black!" style="bottom: 24%; right: 23%">
+                        +
+                    </button>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.4.1 Agentes promotores de saúde no sistema prisional
+                </h3>
+                <p>
+                    Agentes promotores de saúde são pessoas que estão em privação de liberdade e que desempenham um
+                    papel
+                    semelhante ao dos
+                    Agentes Comunitários de Saúde (ACS): realizam atividades de promoção da saúde e prevenção de agravos
+                    e
+                    doenças, auxiliam
+                    no acompanhamento das pessoas em tratamento, especialmente os de longa duração, identificam demandas
+                    de
+                    saúde das PPL,
+                    entre outras atividades (Brasil, 2003; Padilha, 2023).
+                </p>
+                <p>
+                    A institucionalização desses atores foi considerada pelo PNSSP uma estratégia para qualificar o
+                    acesso
+                    em saúde da
+                    população privada de liberdade, e, mesmo não tendo sido retomada pela PNAISP, os agentes promotores
+                    de
+                    saúde estão
+                    presentes em diversos estabelecimentos prisionais, e práticas exitosas vêm surgindo a partir desse
+                    trabalho (Padilha,
+                    2023).
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais4')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais4" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título: </b>Projeto <i>“Agentes Promotores de Saúde no Sistema Penitenciário”</i>
+                            </p>
+                            <p>
+                                <b>Autor: </b>Mato Grosso (2014).
+                            <p>
+                                <b>Descrição: </b>
+                                conheça a experiência do Centro de Ressocialização de Cuiabá na implantação de um
+                                projeto de
+                                agentes promotores de saúde
+                                conduzido pela Secretaria de Estado de Justiça e Direitos Humanos do Mato Grosso.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link" href="./media/Projeto Promotores de Saúde CRC.pdf"
+                                    target="_blank">Clique
+                                    aqui</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais4')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <ul class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light list-disc pl-5">
+                <ul class="text-xl md:text-3xl leading-14 font-light mt-5 list-disc pl-5">
                     <li>
                         Na instituição penal em que você atua, há PPL que executam tarefas semelhantes às de agentes
                         promotores de saúde?
@@ -1559,7 +1716,7 @@
 
         <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.5 Saúde, segurança e vigilância em saúde: estratégias para promover saúde e prevenir agravos e doenças
                 de forma integrada
             </h2>
@@ -1684,15 +1841,16 @@
                 </div>
             </div>
             <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
-                <span class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 E agora, você acha que é possível promover saúde no sistema prisional?
             </h3>
         </div>
 
-        <div class="bg-gray-100 py-10">
-            <div id="encerramento" class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+        <div id="encerramento" class="bg-gray-100 py-10">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
                     Encerramento da Unidade
                 </h2>
                 <p>
@@ -1726,13 +1884,16 @@
                         justa, humana e
                         igualitária.</small>
                 </p>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
             </div>
         </div>
 
         <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-file text-black"></i>
+                Referências principais
             </h2>
             <p>
                 BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Análise em Saúde e
@@ -1782,438 +1943,461 @@
             </p>
         </div>
 
-        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências
-            </h2>
-            <p>
-                ANDREWS, J. R.; LIU, Y. E.; CRODA, J. Enduring Injustice: Infectious Disease Outbreaks in Carceral
-                Settings. <b>The Journal
-                    of Infectious Diseases</b>, v. 229, n. 2, p. 307-309, 2023. Disponível em:
-                <a class="underline link" href="https://academic.oup.com/jid/article/229/2/307/7231239" target="_blank"
-                    rel="noopener noreferrer">
-                    https://academic.oup.com/jid/article/229/2/307/7231239
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Instituto Brasileiro de Geografia e Estatística. Em 2023, expectativa de vida chega aos 76,4
-                anos e supera
-                patamar pré-pandemia. <b>Agência IBGE notícias</b>, 29 nov. 2024. Disponível em:
-                <a class="underline link"
-                    href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41984-em-2023-expectativa-de-vida-chega-aos-76-4-anos-e-supera-patamar-pre-pandemia"
-                    target="_blank" rel="noopener noreferrer">
-                    https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41984-em-2023-expectativa-de-vida-chega-aos-76-4-anos-e-supera-patamar-pre-pandemia
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Justiça e Segurança Pública. Ministério da Saúde. Secretaria Nacional de Políticas
-                Penais.
-                Fundação Oswaldo Cruz. <b>Pesquisa Cenários da saúde física e mental dos servidores do sistema
-                    penitenciário brasileiro.</b>
-                Brasília, 2023. Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/pesquisa-cenario-da-saude-fisica-e-mental-dos-servidores.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/pesquisa-cenario-da-saude-fisica-e-mental-dos-servidores.pdf
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Análise em Saúde e
-                Doenças não
-                Transmissíveis. <b>Promoção da Saúde</b>: aproximações ao tema. Caderno 1. Brasília, 2021. Disponível
-                em:
-                <a class="underline link"
-                    href="http://bvsms.saude.gov.br/bvs/publicacoes/promocao_saude_aproximacoes_tema.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    http://bvsms.saude.gov.br/bvs/publicacoes/promocao_saude_aproximacoes_tema.pdf
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Secretaria de Atenção à Saúde.
-                <b>Política
-                    Nacional de
-                    Promoção da Saúde (PNPS)</b>: Anexo I da Portaria de Consolidação nº 2, de 28 de setembro de 2017,
-                que
-                consolida as normas
-                sobre as políticas nacionais de saúde do SUS. Brasília, 2018. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. <b>A Experiência da Diretriz de Ambiência da Política Nacional de
-                    Humanização</b>
-                - PNH. Brasília,
-                2017. Disponível em:
-                <a class="underline link" href="http://redehumanizasus.net/lancamento-da-cartilha-humanizasus"
-                    target="_blank" rel="noopener noreferrer">
-                    http://redehumanizasus.net/lancamento-da-cartilha-humanizasus
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº 1,
-                de 2 de janeiro
-                de 2014. Institui a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
-                Sistema Prisional
-                (PNAISP) no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 3 jan.
-                2014.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica.
-                <b>Rastreamento</b>. Brasília,
-                2013a. (Cadernos de Atenção Primária: v. 2, n. 29). Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/rastreamento_caderno_atencao_primaria_n29.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/rastreamento_caderno_atencao_primaria_n29.pdf
-                </a>
-                . Acesso em: 2 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça. <b>Política Nacional de Atenção Integral à Saúde das
-                    Pessoas Privadas
-                    de Liberdade no Sistema Prisional</b>. Brasília, 2013b. (Fôlder). Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/folder/politica_nacional_saude_sistema_prisional.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/folder/politica_nacional_saude_sistema_prisional.pdf
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. <b>Política Nacional de Humanização</b>:
-                PNH.
-                Brasília, 2013c.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_humanizacao_pnh_folheto.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_humanizacao_pnh_folheto.pdf
-                </a>
-                . Acesso em: 3 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. <b>Política Nacional de Humanização</b>: o
-                que é,
-                como implementar
-                (uma síntese das diretrizes e dispositivos da PNH em perguntas e respostas). Brasília, 2010. Disponível
-                em
-                <a class="underline link"
-                    href="https://www.redehumanizasus.net/sites/default/files/diretrizes_e_dispositivos_da_pnh1.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.redehumanizasus.net/sites/default/files/diretrizes_e_dispositivos_da_pnh1.pdf
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria Interministerial nº 1.777, de 9 de setembro de 2003. Aprova o
-                Plano Nacional de
-                Saúde no Sistema Penitenciário. <b>Diário Oficial da União</b>, Brasília, DF, 11 set. 2003. Disponível
-                em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Constituição (1988). Constituição da República Federativa do Brasil de 1988. <b>Diário Oficial
-                    da
-                    União</b>, Brasília,
-                DF, 5 out. 1988. Disponível em:
-                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
-                    target="_blank" rel="noopener noreferrer">
-                    http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
-                </a>
-                . Acesso em: 29 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. <b>VIII Conferência Nacional de Saúde</b>: relatório final. Brasília, 1986.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/8_conferencia_nacional_saude_relatorio_final.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/8_conferencia_nacional_saude_relatorio_final.pdf
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                CASTRO, V. D.; SÁNCHEZ, A.; LAROUZÉ, B. Para uma abordagem comunitária da saúde penitenciária.
-                <b>Cadernos
-                    Saúde Coletiva</b>,
-                v. 22, n. 2, p. 111-112, 2014. Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/cadsc/a/N3pzNmNb3xMb6T7QFKR4cDN/?lang=pt#"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/cadsc/a/N3pzNmNb3xMb6T7QFKR4cDN/?lang=pt#
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                CONSELHO NACIONAL DE JUSTIÇA. <b>Letalidade prisional</b>: uma questão de justiça e de saúde pública.
-                Brasília,
-                2023. (Justiça
-                Pesquisa, 5). Disponível em:
-                <a class="underline link"
-                    href="https://bibliotecadigital.cnj.jus.br/bitstream/123456789/637/1/sumario_executivo_letalidade_prisional_12_05_23_v2.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bibliotecadigital.cnj.jus.br/bitstream/123456789/637/1/sumario_executivo_letalidade_prisional_12_05_23_v2.pdf
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                CONSELHO NACIONAL DE JUSTIÇA. <b>Os Conselhos da Comunidade no Brasil</b>. Brasília, 2021. (Série
-                Fazendo
-                Justiça. Coleção
-                Política Prisional). Disponível em:
-                <a class="underline link"
-                    href="https://www.cnj.jus.br/wp-content/uploads/2022/03/relatorio-conselhos-comunidade.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.cnj.jus.br/wp-content/uploads/2022/03/relatorio-conselhos-comunidade.pdf
-                </a>
-                . Acesso em: 3 jul. 2025.
-            </p>
-            <p>
-                ELY, K. Z. et al. A Educação Permanente em Saúde e os atores do sistema prisional no cenário pandêmico.
-                <b>Trabalho,
-                    Educação e Saúde</b>, v. 21, e01224207, 2023. Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                FERREIRA, M. C.; PASCHOAL, T. As principais fontes de mal-estar no trabalho no Depen/MJSP. <b>Revista
-                    Brasileira de
-                    Execução Penal</b>, v. 4, n. 1, p. 151-162, 2023. Disponível em:
-                <a class="underline link" href="https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/661"
-                    target="_blank" rel="noopener noreferrer">
-                    https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/661
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                LEAVELL, H.; CLARK, E. G. <b>Medicina preventiva</b>. São Paulo: McGrawHill do Brasil, 1976.
-            </p>
-            <p>
-                LIU, Y. E. et al. All-cause and cause-specific mortality during and following incarceration in Brazil: A
-                retrospective
-                cohort study. <b>PLoS Medicine</b>, v. 18, n. 9, e1003789, 2021. Disponível em:
-                <a class="underline link"
-                    href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789"
-                    target="_blank" rel="noopener noreferrer">
-                    https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                MATO GROSSO DO SUL. <b>Projeto “Agentes Promotores de Saúde no Sistema Penitenciário”</b>. Cuiabá:
-                Centro de
-                Ressocialização de
-                Cuiabá - CRC, 2014. Disponível em:
-                <a class="underline link"
-                    href="https://www.sesp.mt.gov.br/documents/4713378/11999663/Projeto+Promotores+de+Sa%C3%BAde+CRC.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.sesp.mt.gov.br/documents/4713378/11999663/Projeto+Promotores+de+Sa%C3%BAde+CRC.pdf
-                </a>
-                . Acesso em: 29 ago. 2025.
-            </p>
-            <p>
-                PADILHA, W. S. <b>Entre grades e cuidados</b>: os agentes promotores de saúde no sistema prisional e o
-                desafio
-                da Covid-19.
-                2023. Tese (Doutorado em Saúde Pública) - Escola Nacional de Saúde Pública Sergio Arouca, Fundação
-                Oswaldo Cruz, Rio de
-                Janeiro, 2023. Disponível em:
-                <a class="underline link" href="https://www.arca.fiocruz.br/handle/icict/61800" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.arca.fiocruz.br/handle/icict/61800
-                </a>
-                . Acesso em: 28 jul. 2024.
-            </p>
-            <p>
-                PASCHOAL, T.; FERREIRA, M. C. As principais fontes de bem-estar no trabalho do Depen/MJSP. <b>Revista
-                    Brasileira de
-                    Execução Penal</b>, v. 4, n. 1, p. 141-149, 2023. Disponível em:
-                <a class="underline link" href="https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/659"
-                    target="_blank" rel="noopener noreferrer">
-                    https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/659
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                POSSUELO, L. G. et al. (org.). <b>Tuberculose e hepatite C no sistema prisional</b>: contribuições e
-                orientações à sociedade
-                civil. (Quebrando Barreiras). Santa Cruz do Sul: Ed. do Autor, 2024. Disponível em:
-                <a class="underline link" href="http://repositorio.unisc.br:8080/jspui/handle/11624/3773"
-                    target="_blank" rel="noopener noreferrer">
-                    http://repositorio.unisc.br:8080/jspui/handle/11624/3773
-                </a>
-                . Acesso em: 28 jul. 2024.
-            </p>
-            <p>
-                SCLIAR, M. História do conceito de saúde. <b>Physis Revista de Saúde Coletiva</b>, v. 17, n. 1, p.
-                29-41, 2007.
-                Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/physis/a/WNtwLvWQRFbscbzCywV9wGq/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/physis/a/WNtwLvWQRFbscbzCywV9wGq/
-                </a>
-                . Acesso em: 28 jul. 2024.
-            </p>
-            <p>
-                VERDI, M.; MATIAS, M. C. S.; GARCIA JÚNIOR, C. A. S. <b>Atenção à saúde das pessoas privadas de
-                    liberdade</b>.
-                Acolhimento e
-                Humanização nas Práticas de Gestão e Atenção à Saúde de Pessoas Privadas de Liberdade. Florianópolis,
-                2014. Disponível
-                em:
-                <a class="underline link"
-                    href="https://ares.unasus.gov.br/acervo/html/ARES/7430/1/Acolhimento%20e%20Humanizacao%20nas%20Praticas%20de%20Gestao%20e%20Atencao%20a%20Saude%20de%20Pessoas%20Privadas%20de%20Liberdade.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://ares.unasus.gov.br/acervo/html/ARES/7430/1/Acolhimento%20e%20Humanizacao%20nas%20Praticas%20de%20Gestao%20e%20Atencao%20a%20Saude%20de%20Pessoas%20Privadas%20de%20Liberdade.pdf
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                ZORZETTO, R. Prisões brasileiras aumentam risco de adoecer e de morrer por causas violentas. <b>Pesquisa
-                    Fapesp</b>, 5 ago.
-                2024. Disponível em:
-                <a class="underline link"
-                    href="https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
+        <div id="referencias" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências
+                </h2>
+                <p>
+                    ANDREWS, J. R.; LIU, Y. E.; CRODA, J. Enduring Injustice: Infectious Disease Outbreaks in Carceral
+                    Settings. <b>The Journal
+                        of Infectious Diseases</b>, v. 229, n. 2, p. 307-309, 2023. Disponível em:
+                    <a class="underline link" href="https://academic.oup.com/jid/article/229/2/307/7231239"
+                        target="_blank" rel="noopener noreferrer">
+                        https://academic.oup.com/jid/article/229/2/307/7231239
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Instituto Brasileiro de Geografia e Estatística. Em 2023, expectativa de vida chega aos 76,4
+                    anos e supera
+                    patamar pré-pandemia. <b>Agência IBGE notícias</b>, 29 nov. 2024. Disponível em:
+                    <a class="underline link"
+                        href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41984-em-2023-expectativa-de-vida-chega-aos-76-4-anos-e-supera-patamar-pre-pandemia"
+                        target="_blank" rel="noopener noreferrer">
+                        https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41984-em-2023-expectativa-de-vida-chega-aos-76-4-anos-e-supera-patamar-pre-pandemia
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Justiça e Segurança Pública. Ministério da Saúde. Secretaria Nacional de
+                    Políticas
+                    Penais.
+                    Fundação Oswaldo Cruz. <b>Pesquisa Cenários da saúde física e mental dos servidores do sistema
+                        penitenciário brasileiro.</b>
+                    Brasília, 2023. Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/pesquisa-cenario-da-saude-fisica-e-mental-dos-servidores.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/pesquisa-cenario-da-saude-fisica-e-mental-dos-servidores.pdf
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Secretaria de Atenção à Saúde.
+                    <b>Política
+                        Nacional de
+                        Promoção da Saúde (PNPS)</b>: Anexo I da Portaria de Consolidação nº 2, de 28 de setembro de
+                    2017,
+                    que
+                    consolida as normas
+                    sobre as políticas nacionais de saúde do SUS. Brasília, 2018. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. <b>A Experiência da Diretriz de Ambiência da Política Nacional de
+                        Humanização</b>
+                    - PNH. Brasília,
+                    2017. Disponível em:
+                    <a class="underline link" href="http://redehumanizasus.net/lancamento-da-cartilha-humanizasus"
+                        target="_blank" rel="noopener noreferrer">
+                        http://redehumanizasus.net/lancamento-da-cartilha-humanizasus
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº
+                    1,
+                    de 2 de janeiro
+                    de 2014. Institui a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade
+                    no
+                    Sistema Prisional
+                    (PNAISP) no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 3
+                    jan.
+                    2014.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Ministério da Justiça. <b>Política Nacional de Atenção Integral à Saúde
+                        das
+                        Pessoas Privadas
+                        de Liberdade no Sistema Prisional</b>. Brasília, 2013b. (Fôlder). Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/folder/politica_nacional_saude_sistema_prisional.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/folder/politica_nacional_saude_sistema_prisional.pdf
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. <b>Política Nacional de Humanização</b>:
+                    PNH.
+                    Brasília, 2013c.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_humanizacao_pnh_folheto.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_humanizacao_pnh_folheto.pdf
+                    </a>
+                    . Acesso em: 3 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria Interministerial nº 1.777, de 9 de setembro de 2003. Aprova o
+                    Plano Nacional de
+                    Saúde no Sistema Penitenciário. <b>Diário Oficial da União</b>, Brasília, DF, 11 set. 2003.
+                    Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Constituição (1988). Constituição da República Federativa do Brasil de 1988. <b>Diário
+                        Oficial
+                        da
+                        União</b>, Brasília,
+                    DF, 5 out. 1988. Disponível em:
+                    <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+                        target="_blank" rel="noopener noreferrer">
+                        http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+                    </a>
+                    . Acesso em: 29 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. <b>VIII Conferência Nacional de Saúde</b>: relatório final. Brasília,
+                    1986.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/8_conferencia_nacional_saude_relatorio_final.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/8_conferencia_nacional_saude_relatorio_final.pdf
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    CASTRO, V. D.; SÁNCHEZ, A.; LAROUZÉ, B. Para uma abordagem comunitária da saúde penitenciária.
+                    <b>Cadernos
+                        Saúde Coletiva</b>,
+                    v. 22, n. 2, p. 111-112, 2014. Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/cadsc/a/N3pzNmNb3xMb6T7QFKR4cDN/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/cadsc/a/N3pzNmNb3xMb6T7QFKR4cDN/?lang=pt
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    CONSELHO NACIONAL DE JUSTIÇA. <b>Letalidade prisional</b>: uma questão de justiça e de saúde
+                    pública.
+                    Brasília,
+                    2023. (Justiça
+                    Pesquisa, 5). Disponível em:
+                    <a class="underline link"
+                        href="https://bibliotecadigital.cnj.jus.br/bitstream/123456789/637/1/sumario_executivo_letalidade_prisional_12_05_23_v2.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bibliotecadigital.cnj.jus.br/bitstream/123456789/637/1/sumario_executivo_letalidade_prisional_12_05_23_v2.pdf
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    CONSELHO NACIONAL DE JUSTIÇA. <b>Os Conselhos da Comunidade no Brasil</b>. Brasília, 2021. (Série
+                    Fazendo
+                    Justiça. Coleção
+                    Política Prisional). Disponível em:
+                    <a class="underline link"
+                        href="https://www.cnj.jus.br/wp-content/uploads/2022/03/relatorio-conselhos-comunidade.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.cnj.jus.br/wp-content/uploads/2022/03/relatorio-conselhos-comunidade.pdf
+                    </a>
+                    . Acesso em: 3 jul. 2025.
+                </p>
+                <p>
+                    ELY, K. Z. et al. A Educação Permanente em Saúde e os atores do sistema prisional no cenário
+                    pandêmico.
+                    <b>Trabalho,
+                        Educação e Saúde</b>, v. 21, e01224207, 2023. Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    FERREIRA, M. C.; PASCHOAL, T. As principais fontes de mal-estar no trabalho no Depen/MJSP.
+                    <b>Revista
+                        Brasileira de
+                        Execução Penal</b>, v. 4, n. 1, p. 151-162, 2023. Disponível em:
+                    <a class="underline link" href="https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/661"
+                        target="_blank" rel="noopener noreferrer">
+                        https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/661
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    LEAVELL, H.; CLARK, E. G. <b>Medicina preventiva</b>. São Paulo: McGrawHill do Brasil, 1976.
+                </p>
+                <p>
+                    LIU, Y. E. et al. All-cause and cause-specific mortality during and following incarceration in
+                    Brazil: A
+                    retrospective
+                    cohort study. <b>PLoS Medicine</b>, v. 18, n. 9, e1003789, 2021. Disponível em:
+                    <a class="underline link"
+                        href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789"
+                        target="_blank" rel="noopener noreferrer">
+                        https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003789
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    MATO GROSSO DO SUL. <b>Projeto “Agentes Promotores de Saúde no Sistema Penitenciário”</b>. Cuiabá:
+                    Centro de
+                    Ressocialização de
+                    Cuiabá - CRC, 2014. Disponível em:
+                    <a class="underline link"
+                        href="https://www.sesp.mt.gov.br/documents/4713378/11999663/Projeto+Promotores+de+Sa%C3%BAde+CRC.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.sesp.mt.gov.br/documents/4713378/11999663/Projeto+Promotores+de+Sa%C3%BAde+CRC.pdf
+                    </a>
+                    . Acesso em: 29 ago. 2025.
+                </p>
+                <p>
+                    PADILHA, W. S. <b>Entre grades e cuidados</b>: os agentes promotores de saúde no sistema prisional e
+                    o
+                    desafio
+                    da Covid-19.
+                    2023. Tese (Doutorado em Saúde Pública) - Escola Nacional de Saúde Pública Sergio Arouca, Fundação
+                    Oswaldo Cruz, Rio de
+                    Janeiro, 2023. Disponível em:
+                    <a class="underline link" href="https://www.arca.fiocruz.br/handle/icict/61800" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.arca.fiocruz.br/handle/icict/61800
+                    </a>
+                    . Acesso em: 28 jul. 2024.
+                </p>
+                <p>
+                    PASCHOAL, T.; FERREIRA, M. C. As principais fontes de bem-estar no trabalho do Depen/MJSP.
+                    <b>Revista
+                        Brasileira de
+                        Execução Penal</b>, v. 4, n. 1, p. 141-149, 2023. Disponível em:
+                    <a class="underline link" href="https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/659"
+                        target="_blank" rel="noopener noreferrer">
+                        https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/659
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    SCLIAR, M. História do conceito de saúde. <b>Physis Revista de Saúde Coletiva</b>, v. 17, n. 1, p.
+                    29-41, 2007.
+                    Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/physis/a/WNtwLvWQRFbscbzCywV9wGq/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/physis/a/WNtwLvWQRFbscbzCywV9wGq/
+                    </a>
+                    . Acesso em: 28 jul. 2024.
+                </p>
+                <p>
+                    VERDI, M.; MATIAS, M. C. S.; GARCIA JÚNIOR, C. A. S. <b>Atenção à saúde das pessoas privadas de
+                        liberdade</b>.
+                    Acolhimento e
+                    Humanização nas Práticas de Gestão e Atenção à Saúde de Pessoas Privadas de Liberdade.
+                    Florianópolis,
+                    2014. Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://ares.unasus.gov.br/acervo/html/ARES/7430/1/Acolhimento%20e%20Humanizacao%20nas%20Praticas%20de%20Gestao%20e%20Atencao%20a%20Saude%20de%20Pessoas%20Privadas%20de%20Liberdade.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://ares.unasus.gov.br/acervo/html/ARES/7430/1/Acolhimento%20e%20Humanizacao%20nas%20Praticas%20de%20Gestao%20e%20Atencao%20a%20Saude%20de%20Pessoas%20Privadas%20de%20Liberdade.pdf
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+                <p>
+                    ZORZETTO, R. Prisões brasileiras aumentam risco de adoecer e de morrer por causas violentas.
+                    <b>Pesquisa
+                        Fapesp</b>, 5 ago.
+                    2024. Disponível em:
+                    <a class="underline link"
+                        href="https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://revistapesquisa.fapesp.br/prisoes-brasileiras-aumentam-risco-de-adoecer-e-de-morrer-por-causas-violentas/
+                    </a>
+                    . Acesso em: 28 jul. 2025.
+                </p>
+            </div>
         </div>
 
-        <div class="bg-gray-100 py-10">
-            <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
-                <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo do Autor
-                </h1>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-1/3">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/milena.jpg"
-                            alt="Milena Mantelli Dall' Soto" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Milena Mantelli Dall' Soto</small>
-                            <hr />
-                        </div>
-                    </div>
-                    <div class="w-full md:w-2/3 px-0 md:px-5">
-                        <p>
-                            Milena Mantelli Dall' Soto (<a class="link" href="http://lattes.cnpq.br/1096438834177966"
-                                target="_blank" rel="noopener noreferrer">http://lattes.cnpq.br/1096438834177966</a>).
-                            Biomédica, especialista em
-                            Saúde Coletiva, atuou na Saúde Prisional da Secretaria Estadual de Saúde do Rio Grande do
-                            Sul
-                            enquanto residente, atua
-                            como pesquisadora extensionista na Universidade de Santa Cruz do Sul (UNISC) em projetos de
-                            educação em saúde e
-                            desenvolvimento de novas tecnologias para o sistema prisional e compõe o Núcleo de Pesquisa
-                            e
-                            Extensão com Foco no
-                            Sistema Prisional (NUPESISP).
-                        </p>
+        <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold">
+                Minicurrículo dos Autores
+            </h1>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/milena.jpg"
+                        alt="Milena Mantelli Dall' Soto" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Milena Mantelli Dall' Soto</small>
+                        <hr />
                     </div>
                 </div>
-                <hr>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
-                        <p>
-                            Thales Ávila Pedroso (<a class="link" href="http://lattes.cnpq.br/3770093516575134"
-                                target="_blank" rel="noopener noreferrer">http://lattes.cnpq.br/3770093516575134</a>).
-                            Fisioterapeuta, especialista em
-                            Gestão em Saúde, mestrando em Saúde Coletiva, atuou na Secretaria Estadual de Saúde do
-                            Estado do
-                            Rio Grande do Sul
-                            (SES/RS) como chefe de seção de qualificação na Política Estadual de Promoção de Equidade em
-                            Saúde. Participou da
-                            construção da Nota Técnica e da Cartilha sobre o Pré-Natal, Parto e Puerpério para Mulheres
-                            Privadas de Liberdade e
-                            Parceiros, produzidas pela SES/RS.
-                        </p>
-                    </div>
-                    <div class="w-full md:w-1/3 order-1 md:order-2">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/thales.jpg"
-                            alt="Thales Ávila Pedroso" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Thales Ávila Pedroso</small>
-                            <hr />
-                        </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Biomédica, especialista em
+                        Saúde Coletiva, atuou na Saúde Prisional da Secretaria Estadual de Saúde do Rio Grande do
+                        Sul
+                        enquanto residente, atua
+                        como pesquisadora extensionista na Universidade de Santa Cruz do Sul (UNISC) em projetos de
+                        educação em saúde e
+                        desenvolvimento de novas tecnologias para o sistema prisional e compõe o Núcleo de Pesquisa
+                        e
+                        Extensão com Foco no
+                        Sistema Prisional (NUPESISP).
+                    </p><br>
+                    <b>Lattes:</b> <a class="link" href="http://lattes.cnpq.br/1096438834177966" target="_blank"
+                        rel="noopener noreferrer">http://lattes.cnpq.br/1096438834177966</a>
+                </div>
+            </div>
+            <hr>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
+                    <p>
+                        Fisioterapeuta, especialista em
+                        Gestão em Saúde, mestrando em Saúde Coletiva, atuou na Secretaria Estadual de Saúde do
+                        Estado do
+                        Rio Grande do Sul
+                        (SES/RS) como chefe de seção de qualificação na Política Estadual de Promoção de Equidade em
+                        Saúde. Participou da
+                        construção da Nota Técnica e da Cartilha sobre o Pré-Natal, Parto e Puerpério para Mulheres
+                        Privadas de Liberdade e
+                        Parceiros, produzidas pela SES/RS.
+                    </p>
+                    <b>Lattes:</b> <a class="link" href="http://lattes.cnpq.br/3770093516575134" target="_blank"
+                        rel="noopener noreferrer">http://lattes.cnpq.br/3770093516575134</a>
+                </div>
+                <div class="w-full md:w-1/3 order-1 md:order-2">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/thales.jpg"
+                        alt="Thales Ávila Pedroso" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Thales Ávila Pedroso</small>
+                        <hr />
                     </div>
                 </div>
-                <hr>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-1/3">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/lia.jpg"
-                            alt="Lia Gonçalves Possuelo" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Lia Gonçalves Possuelo</small>
-                            <hr />
-                        </div>
+            </div>
+            <hr>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/lia.jpg"
+                        alt="Lia Gonçalves Possuelo" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Lia Gonçalves Possuelo</small>
+                        <hr />
                     </div>
-                    <div class="w-full md:w-2/3 px-0 md:px-5">
-                        <p>
-                            Lia Gonçalves Possuelo (<a class="link" href="http://lattes.cnpq.br/9903194013924888"
-                                target="_blank" rel="noopener noreferrer">http://lattes.cnpq.br/9903194013924888</a>).
-                            Bióloga, doutora em Ciências
-                            Biológicas, atua como professora titular e docente do corpo permanente do Programa de
-                            Pós-Graduação em Promoção da Saúde
-                            na Universidade de Santa Cruz do Sul (UNISC); coordenadora do Núcleo de Pesquisa e Extensão
-                            com
-                            Foco no Sistema
-                            Prisional (NUPESISP) e da área de Tuberculose no Sistema Prisional da Rede Brasileira de
-                            Pesquisa em Tuberculose
-                            (REDE-TB); é membro do Comitê Estadual de Enfrentamento da Tuberculose/RS (CEETB/RS), do
-                            Comitê
-                            Técnico de
-                            Assessoramento da FAPERGS (2025-2027), do Conselho da Comunidade de Santa Cruz do Sul e do
-                            Conselho Municipal de Saúde
-                            de Santa Cruz do Sul.
-                        </p>
-                    </div>
+                </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Bióloga, doutora em Ciências
+                        Biológicas, atua como professora titular e docente do corpo permanente do Programa de
+                        Pós-Graduação em Promoção da Saúde
+                        na Universidade de Santa Cruz do Sul (UNISC); coordenadora do Núcleo de Pesquisa e Extensão
+                        com
+                        Foco no Sistema
+                        Prisional (NUPESISP) e da área de Tuberculose no Sistema Prisional da Rede Brasileira de
+                        Pesquisa em Tuberculose
+                        (REDE-TB); é membro do Comitê Estadual de Enfrentamento da Tuberculose/RS (CEETB/RS), do
+                        Comitê
+                        Técnico de
+                        Assessoramento da FAPERGS (2025-2027), do Conselho da Comunidade de Santa Cruz do Sul e do
+                        Conselho Municipal de Saúde
+                        de Santa Cruz do Sul.
+                    </p>
+                    <b>Lattes:</b> <a class="link" href="http://lattes.cnpq.br/9903194013924888" target="_blank"
+                        rel="noopener noreferrer">http://lattes.cnpq.br/9903194013924888</a>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

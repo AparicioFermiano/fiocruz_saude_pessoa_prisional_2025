@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -321,37 +321,86 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo III - Saúde Prisional e a Rede de Atenção à Saúde
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 1 - A Saúde Prisional como Parte Integrante da Rede de Atenção à Saúde no SUS
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 3
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Saúde Prisional e a Rede de Atenção à Saúde
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 1 &nbsp;·&nbsp; A Saúde Prisional como Parte Integrante da Rede de Atenção à Saúde no SUS
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -482,7 +531,7 @@
 
         <div id="1.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.1 Panorama de saúde na população em geral e na população privada de liberdade
             </h2>
             <p>
@@ -547,12 +596,12 @@
             </p>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Estudante-trabalhador, você já parou para pensar em como é receber cuidados de saúde em uma
                     instituição penal?
                     <br>
@@ -562,168 +611,204 @@
                     <br>
                     Considerando isso, você consegue refletir sobre as desigualdades no acesso ao cuidado em saúde nos
                     diferentes contextos?
-                </h2>
+                </h3>
             </div>
         </div>
 
-        <div id="1.2" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                1.2 Políticas Públicas de Saúde e garantia de acesso aos serviços de saúde
-            </h2>
-            <p>
-                Diante da realidade das PPL, é essencial garantir seu direito à saúde, previsto em instrumentos legais
-                desde a Lei de
-                Execução Penal (LEP), de 1984, que foi regulamentada para assegurar atendimento médico, farmacêutico e
-                odontológico às
-                pessoas em situação de encarceramento (Brasil, 1984).
-            </p>
-            <p>
-                Posteriormente, a Constituição Federal de 1988 reforçou a necessidade de respeito à integridade física e
-                moral dessa
-                população (Brasil, 1988) e, em 2003, foi lançado o Plano Nacional de Saúde no Sistema Penitenciário
-                (PNSSP), que tentou
-                organizar o acesso da população privada de liberdade aos serviços de saúde no âmbito do Sistema Único de
-                Saúde (SUS)
-                (Brasil, 2005). Em 2014, esse plano foi avaliado e redesenhado, transformando-se em uma política pública
-                que, até hoje,
-                é constituída pela Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
-                Sistema Prisional
-                (PNAISP) (Brasil, 2014a).
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título: </b><i>Portaria Interministerial nº 1, de 2 de janeiro de 2014</i>
-                        </p>
-                        <p>
-                            <b>Autor: </b>Brasil (2014a).
-                        <p>
-                            <b>Descrição: </b>
-                            a PNAISP é uma política do Ministério da Saúde criada pela Portaria Interministerial nº 1
-                            que visa garantir o acesso à
-                            saúde para as PPL, reconhecendo como pontos de atenção à saúde no SUS a APS Prisional, que
-                            devem ser cadastrados no
-                            Cadastro Nacional de Estabelecimentos de Saúde (CNES).
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
-                                target="_blank">Clique aqui</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
+        <div id="1.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    1.2 Políticas Públicas de Saúde e garantia de acesso aos serviços de saúde
+                </h2>
+                <p>
+                    Diante da realidade das PPL, é essencial garantir seu direito à saúde, previsto em instrumentos
+                    legais
+                    desde a Lei de
+                    Execução Penal (LEP), de 1984, que foi regulamentada para assegurar atendimento médico, farmacêutico
+                    e
+                    odontológico às
+                    pessoas em situação de encarceramento (Brasil, 1984).
+                </p>
+                <p>
+                    Posteriormente, a Constituição Federal de 1988 reforçou a necessidade de respeito à integridade
+                    física e
+                    moral dessa
+                    população (Brasil, 1988) e, em 2003, foi lançado o Plano Nacional de Saúde no Sistema Penitenciário
+                    (PNSSP), que tentou
+                    organizar o acesso da população privada de liberdade aos serviços de saúde no âmbito do Sistema
+                    Único de
+                    Saúde (SUS)
+                    (Brasil, 2005). Em 2014, esse plano foi avaliado e redesenhado, transformando-se em uma política
+                    pública
+                    que, até hoje,
+                    é constituída pela Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade
+                    no
+                    Sistema Prisional
+                    (PNAISP) (Brasil, 2014a).
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais1')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais1" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título: </b><i>Portaria Interministerial nº 1, de 2 de janeiro de 2014</i>
+                            </p>
+                            <p>
+                                <b>Autor: </b>Brasil (2014a).
+                            <p>
+                                <b>Descrição: </b>
+                                a PNAISP é uma política do Ministério da Saúde criada pela Portaria Interministerial nº
+                                1
+                                que visa garantir o acesso à
+                                saúde para as PPL, reconhecendo como pontos de atenção à saúde no SUS a APS Prisional,
+                                que
+                                devem ser cadastrados no
+                                Cadastro Nacional de Estabelecimentos de Saúde (CNES).
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
+                                    target="_blank">Clique aqui</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <p>
+                    Assim, vê-se que a PNAISP foi construída ao longo do tempo e esteve ancorada e alinhada a outros
+                    marcos
+                    da atenção à
+                    saúde no Brasil, como podemos ver na Figura 1.
+                </p>
             </div>
-            <p>
-                Assim, vê-se que a PNAISP foi construída ao longo do tempo e esteve ancorada e alinhada a outros marcos
-                da atenção à
-                saúde no Brasil, como podemos ver na Figura 1.
-            </p>
         </div>
-        <div id="timeline" class="bg-gray-100 py-10">
+
+        <div id="timeline" class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5">
                 <h2 class="text-2xl md:text-3xl font-bold py-5">
-                    <i class="fa-solid fa-arrow-right mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                     Figura 1 - Linha do tempo da saúde no sistema prisional
                 </h2>
                 <img src="./images/linha-do-tempo-modulo-2.png" class="w-full max-w-[900px] mx-auto block"
                     alt="Linha do tempo da saúde no sistema prisional">
-
+                <p><small>Fonte: elaboração dos autores (2025).</small></p>
             </div>
         </div>
+        <div class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+                <p>
+                    Tal política está alinhada ao princípio de universalidade do SUS, o qual visa garantir o direito de
+                    todos os cidadãos à
+                    saúde, incluindo os que estão em situação de privação de liberdade. Dessa forma, o ordenamento
+                    jurídico
+                    brasileiro
+                    estabelece que as pessoas presas têm direito a um padrão de cuidados de saúde equivalente ao
+                    disponível
+                    à comunidade em
+                    geral. Isso significa que devem ter acesso aos mesmos serviços médicos oferecidos à população,
+                    incluindo
+                    prevenção,
+                    diagnóstico e tratamento de doenças, assim como cuidados reabilitativos e paliativos. As PPL devem
+                    ser
+                    atendidas em uma
+                    abordagem integral, que inclua a atenção à saúde mental, uma vez que a população privada de
+                    liberdade
+                    tem taxas
+                    significativamente mais altas de transtornos mentais do que a população em geral.
+                </p>
+                <p>
+                    Para ofertar uma assistência integral às PPL, o sistema de saúde deve estar estruturado em Redes de
+                    Atenção à Saúde
+                    (RAS), a qual deve integrar os diferentes pontos de atenção (entre eles, encontram-se as UBSP). Isso
+                    supera um modelo
+                    fragmentado e reativo, inadequado diante do predomínio de condições crônicas entre as PPL.
+                </p>
+                <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                    <span
+                        class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                    Você conhece a importância da RAS para o atendimento ofertado à população? Vamos compreender!
+                </h3>
+                <p>
+                    As RAS foram concebidas para restabelecer a coerência entre a situação de saúde apresentada e a
+                    atenção
+                    prestada no SUS,
+                    sendo caracterizadas por um sistema de saúde integrado capaz de atender às diferentes necessidades
+                    de
+                    cuidado da
+                    população em geral, incluindo as PPL. Essa integração é essencial porque um único ponto de atenção,
+                    como
+                    as UBSP, não é
+                    suficiente para dar conta da complexidade das demandas de saúde das PPL. Dessa forma, é necessária
+                    uma
+                    articulação entre
+                    os serviços de saúde e até mesmo com outros setores, como Justiça e Educação.
+                </p>
+                <p>
+                    Cabe ressaltar também a Política Nacional de Humanização (PNH) (Brasil, 2004), criada em 2003 para
+                    efetivar os
+                    princípios do SUS no cotidiano das práticas de atenção e gestão e qualificar a saúde pública no
+                    Brasil.
+                    A PNH deve estar
+                    presente e integrada a todas as políticas e programas do SUS, assegurando a valorização dos
+                    usuários,
+                    trabalhadores e
+                    gestores no processo de produção de saúde.
+                </p>
+                <p>
+                    Por fim, a efetividade dessas políticas depende de uma gestão das UBSP alinhada aos princípios do
+                    SUS,
+                    sejam elas
+                    públicas, privadas ou híbridas. Em 2024, dos 1.424 estabelecimento penais no Brasil, 255 contavam
+                    com
+                    equipes
+                    terceirizadas e seis operavam em modelo público-privado, enquanto as demais eram atendidas pelo
+                    serviço
+                    público (Brasil,
+                    2024a).
+                </p>
+            </div>
+        </div>
+
         <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <p>
-                Tal política está alinhada ao princípio de universalidade do SUS, o qual visa garantir o direito de
-                todos os cidadãos à
-                saúde, incluindo os que estão em situação de privação de liberdade. Dessa forma, o ordenamento jurídico
-                brasileiro
-                estabelece que as pessoas presas têm direito a um padrão de cuidados de saúde equivalente ao disponível
-                à comunidade em
-                geral. Isso significa que devem ter acesso aos mesmos serviços médicos oferecidos à população, incluindo
-                prevenção,
-                diagnóstico e tratamento de doenças, assim como cuidados reabilitativos e paliativos. As PPL devem ser
-                atendidas em uma
-                abordagem integral, que inclua a atenção à saúde mental, uma vez que a população privada de liberdade
-                tem taxas
-                significativamente mais altas de transtornos mentais do que a população em geral.
-            </p>
-            <p>
-                Para ofertar uma assistência integral às PPL, o sistema de saúde deve estar estruturado em Redes de
-                Atenção à Saúde
-                (RAS), a qual deve integrar os diferentes pontos de atenção (entre eles, encontram-se as UBSP). Isso
-                supera um modelo
-                fragmentado e reativo, inadequado diante do predomínio de condições crônicas entre as PPL.
-            </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
-                Você conhece a importância da RAS para o atendimento ofertado à população? Vamos compreender!
-            </h3>
-            <p>
-                As RAS foram concebidas para restabelecer a coerência entre a situação de saúde apresentada e a atenção
-                prestada no SUS,
-                sendo caracterizadas por um sistema de saúde integrado capaz de atender às diferentes necessidades de
-                cuidado da
-                população em geral, incluindo as PPL. Essa integração é essencial porque um único ponto de atenção, como
-                as UBSP, não é
-                suficiente para dar conta da complexidade das demandas de saúde das PPL. Dessa forma, é necessária uma
-                articulação entre
-                os serviços de saúde e até mesmo com outros setores, como Justiça e Educação.
-            </p>
-            <p>
-                Cabe ressaltar também a Política Nacional de Humanização (PNH) (Brasil, 2004), criada em 2003 para
-                efetivar os
-                princípios do SUS no cotidiano das práticas de atenção e gestão e qualificar a saúde pública no Brasil.
-                A PNH deve estar
-                presente e integrada a todas as políticas e programas do SUS, assegurando a valorização dos usuários,
-                trabalhadores e
-                gestores no processo de produção de saúde.
-            </p>
-            <p>
-                Por fim, a efetividade dessas políticas depende de uma gestão das UBSP alinhada aos princípios do SUS,
-                sejam elas
-                públicas, privadas ou híbridas. Em 2024, dos 1.424 estabelecimento penais no Brasil, 255 contavam com
-                equipes
-                terceirizadas e seis operavam em modelo público-privado, enquanto as demais eram atendidas pelo serviço
-                público (Brasil,
-                2024a).
-            </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3 Redes de Atenção em Saúde como parte do Sistema Único de Saúde
             </h2>
             <p>
-                Após a caracterização do panorama de saúde das PPL e a análise da importância das políticas públicas de
+                Após a caracterização do panorama de saúde das PPL e a análise da importância das políticas públicas
+                de
                 saúde, é
-                necessário construir o conhecimento acerca da importância da criação de uma RAS que faça parte do SUS e
+                necessário construir o conhecimento acerca da importância da criação de uma RAS que faça parte do
+                SUS e
                 de seus
                 elementos constitutivos para garantia de princípios, diretrizes e assistência adequada às atuais
                 demandas de saúde.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3.1 Breve história da construção das Redes de Atenção em Saúde
             </h3>
             <p>
-                O direito à saúde das PPL é garantido por políticas públicas que determinam a integração dessa população
+                O direito à saúde das PPL é garantido por políticas públicas que determinam a integração dessa
+                população
                 ao SUS por meio
                 das RAS. A concepção de RAS emergiu no Reino Unido na década de 1920 com o Relatório Dawson (Dawson,
                 1964 apud Mendes,
@@ -733,11 +818,14 @@
                 elaborada durante a
                 Conferência Internacional sobre Cuidados Primários de Saúde, realizada no Cazaquistão, reforçou a
                 necessidade de
-                reestruturação dos sistemas de saúde, colocando a APS como eixo central do sistema de saúde (Organização
+                reestruturação dos sistemas de saúde, colocando a APS como eixo central do sistema de saúde
+                (Organização
                 Mundial da
-                Saúde, 1979). Em 1990, países como EUA, Canadá e alguns da Europa buscaram superar a fragmentação dos
+                Saúde, 1979). Em 1990, países como EUA, Canadá e alguns da Europa buscaram superar a fragmentação
+                dos
                 serviços de saúde
-                por meio da oferta contínua de cuidados com diferentes densidades tecnológicas e abordagem de diferentes
+                por meio da oferta contínua de cuidados com diferentes densidades tecnológicas e abordagem de
+                diferentes
                 profissionais.
             </p>
             <p>
@@ -768,7 +856,8 @@
                             <b>Autor: </b>Brasil (2010).
                         <p>
                             <b>Descrição: </b>
-                            Saiba mais sobre a portaria estabelecida pelo Ministério da Saúde que garante a organização
+                            Saiba mais sobre a portaria estabelecida pelo Ministério da Saúde que garante a
+                            organização
                             da RAS.
                         </p>
                         <p>
@@ -787,21 +876,25 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 1.3.2 Elementos constitutivos da Rede de Atenção em Saúde
             </h3>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
-                Caro estudante-trabalhador, você já ouviu dizer que o SUS se organiza por meio das RAS? Vamos entender
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                Caro estudante-trabalhador, você já ouviu dizer que o SUS se organiza por meio das RAS? Vamos
+                entender
                 isso melhor a
                 seguir.
             </h3>
             <p>
-                A RAS é um arranjo organizativo integrado por diferentes serviços de saúde, que têm o objetivo comum de
+                A RAS é um arranjo organizativo integrado por diferentes serviços de saúde, que têm o objetivo comum
+                de
                 oferecer cuidado
                 contínuo e integral à população, articulando diferentes densidades e configurações tecnológicas, com
                 responsabilidades
-                sanitária e econômica sobre determinada população. Isso quer dizer que o sistema de saúde tem adotado
+                sanitária e econômica sobre determinada população. Isso quer dizer que o sistema de saúde tem
+                adotado
                 uma organização
                 mais flexível. A estrutura hierárquica tradicional, anteriormente representada por um triângulo, foi
                 substituída por uma
@@ -812,7 +905,7 @@
                 necessidades.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 Figura 2 - Mudança do sistema de pirâmide hierárquica para as redes de atenção em saúde
             </h3>
             <div>
@@ -820,8 +913,9 @@
                     alt="Pirâmide hierárquica para as redes de atenção em saúde">
                 <small>Fonte: Mendes (2011, p. 84).</small>
             </div>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-ding2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Além do formato, quais são as principais diferenças que você consegue observar entre as imagens da
                 Figura 2?
             </h3>
@@ -830,7 +924,8 @@
                 esquerda da Figura
                 2) é caracterizado pelo distanciamento entre os serviços, ou seja, a base não tem comunicação com o
                 topo. Já o modelo em
-                redes (à direita da Figura 2) integra e conecta os diferentes pontos de atenção, com a APS na posição
+                redes (à direita da Figura 2) integra e conecta os diferentes pontos de atenção, com a APS na
+                posição
                 central,
                 funcionando como a principal porta de entrada da população no sistema de saúde.
             </p>
@@ -839,14 +934,16 @@
                 especializados, são
                 distribuídos de forma descentralizada, enquanto os serviços de alta densidade tecnológica, como
                 hospitais, laboratórios
-                de análises clínicas e equipamentos de diagnóstico por imagem, são concentrados em pontos estratégicos.
+                de análises clínicas e equipamentos de diagnóstico por imagem, são concentrados em pontos
+                estratégicos.
                 Assim, as RAS
-                devem integrar esses diferentes pontos de atenção à saúde por meio de um sistema de governança, apoio e
+                devem integrar esses diferentes pontos de atenção à saúde por meio de um sistema de governança,
+                apoio e
                 logística,
                 conforme mostrado na Figura 3.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 Figura 3 - Estrutura operacional da Rede de Atenção em Saúde
             </h3>
             <div>
@@ -862,7 +959,8 @@
                 <div class="flex">
                     <span
                         class="w-10 h-10 shrink-0 my-auto rounded-full bg-[var(--primary)] flex justify-center items-center font-bold text-2xl">1</span>
-                    <p class="px-2 md:px-3">O centro de comunicação, representado pela APS (Estratégia Saúde da Família
+                    <p class="px-2 md:px-3">O centro de comunicação, representado pela APS (Estratégia Saúde da
+                        Família
                         - ESF, Unidades Básicas de Saúde - UBS e
                         UBSP);</p>
                 </div>
@@ -877,7 +975,8 @@
                     <span
                         class="w-10 h-10 shrink-0 my-auto rounded-full bg-[var(--primary)] flex justify-center items-center font-bold text-2xl">3</span>
                     <p class="px-2 md:px-3">
-                        Os sistemas de apoio que complementam a assistência com diagnóstico, assistência farmacêutica e
+                        Os sistemas de apoio que complementam a assistência com diagnóstico, assistência
+                        farmacêutica e
                         informação em saúde;
                     </p>
                 </div>
@@ -918,15 +1017,17 @@
                                             População
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 overflow-hidden rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                                        class="absolute inset-0 overflow-hidden rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center backface-hidden rotate-y-180">
                                         <p class="text-sm overflow-y-auto p-6">
-                                            A RAS deve ser constituída de forma a assumir responsabilidades sanitária e
+                                            A RAS deve ser constituída de forma a assumir responsabilidades
+                                            sanitária e
                                             econômica sobre uma determinada população.
-                                            Para que isso ocorra, é necessário realizar um processo com algumas etapas:
+                                            Para que isso ocorra, é necessário realizar um processo com algumas
+                                            etapas:
                                             territorialização, cadastramento da
                                             população por riscos sociossanitários, vinculação das famílias à APS e
                                             estratificação e identificação de subpopulações
@@ -950,14 +1051,15 @@
                                             Modelo de Atenção à Saúde
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
-                                            É um sistema lógico que organiza o funcionamento das RAS para que atendam
+                                            É um sistema lógico que organiza o funcionamento das RAS para que
+                                            atendam
                                             concomitantemente condições agudas e crônicas,
                                             articulando os diferentes tipos de intervenção sanitária.
                                         </p>
@@ -971,13 +1073,15 @@
                 </div>
             </div>
             <p>
-                Vamos pensar no caso fictício da M.F.S.S., sexo feminino, 55 anos, presa em uma penitenciária feminina
+                Vamos pensar no caso fictício da M.F.S.S., sexo feminino, 55 anos, presa em uma penitenciária
+                feminina
                 há 1 mês que é
-                encaminhada para acolhimento com equipe de Atenção Primária Prisional (eAPP). <b>Clique nos números de 1
+                encaminhada para acolhimento com equipe de Atenção Primária Prisional (eAPP). <b>Clique nos números
+                    de 1
                     a 4 na imagem para
                     saber mais detalhes sobre o caso.</b>
             </p>
-            <div id="mapa" class="relative">
+            <div id="mapa1" class="relative">
                 <img class="w-full h-full rounded-xl" src="./images/carton-mulher-fumante.jpg" loading="lazy"
                     alt="Mulher fumante em carton" />
                 <button id="tooltip_1" class="botao-flutuante font-bold text-black!" style="top: 44%; right: 21%">
@@ -1002,25 +1106,30 @@
                 prestados no
                 estabelecimento penal (guia de referência). Após a alta da internação hospitalar, M.F.S.S. retorna à
                 penitenciária
-                feminina com uma guia de contrarreferência, que descreve os exames realizados, cuidados prestados e a
+                feminina com uma guia de contrarreferência, que descreve os exames realizados, cuidados prestados e
+                a
                 medicação
-                prescrita pelo hospital, para que a eAPP possa dar continuidade ao cuidado. Essa articulação integra os
+                prescrita pelo hospital, para que a eAPP possa dar continuidade ao cuidado. Essa articulação integra
+                os
                 serviços da RAS,
                 garantindo atenção integral às necessidades de saúde da população.
             </p>
             <p>
                 Além das questões relacionadas à atenção às urgências e emergências, a RAS também permite o
                 direcionamento tanto da
-                população em geral quanto das PPL a outras Redes Temáticas de Atenção à Saúde. Nesse sentido, há redes
+                população em geral quanto das PPL a outras Redes Temáticas de Atenção à Saúde. Nesse sentido, há
+                redes
                 que atendem
-                mulheres e crianças no período da gestação, parto e puerpério, redes de saúde mental e outras de atenção
+                mulheres e crianças no período da gestação, parto e puerpério, redes de saúde mental e outras de
+                atenção
                 psicossocial,
-                de cuidado à pessoa com deficiência e de doenças crônicas, como podemos ver no Quadro 1, em que também é
+                de cuidado à pessoa com deficiência e de doenças crônicas, como podemos ver no Quadro 1, em que
+                também é
                 possível ver as
                 portarias e os principais objetivos que são garantidos em cada rede temática.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 Redes Temáticas de Atenção à Saúde, portarias e principais objetivos
             </h3>
             <div>
@@ -1042,12 +1151,14 @@
                             <div class="py-5">
                                 <a class="link"
                                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt5350_13_09_2024.html"
-                                    target="_blank" rel="noopener noreferrer">Portaria GM/MS nº 5.350, de 12 de setembro
+                                    target="_blank" rel="noopener noreferrer">Portaria GM/MS nº 5.350, de 12 de
+                                    setembro
                                     de
                                     2024</a>
                                 <p class="font-bold">Principais Objetivos:</p>
                                 <p>
-                                    <b>I -</b> Possibilitar o provimento contínuo de ações de atenção à saúde materna e
+                                    <b>I -</b> Possibilitar o provimento contínuo de ações de atenção à saúde
+                                    materna e
                                     infantil
                                     para a população de determinado
                                     território, mediante a articulação dos distintos pontos de atenção à saúde, do
@@ -1058,7 +1169,8 @@
                                     Regional Integrado - PRI
                                 </p>
                                 <p>
-                                    <b>II -</b> Reduzir a morbimortalidade materna e infantil, com ênfase no componente
+                                    <b>II -</b> Reduzir a morbimortalidade materna e infantil, com ênfase no
+                                    componente
                                     neonatal,
                                     sobretudo da população negra e
                                     indígena.
@@ -1086,16 +1198,20 @@
                                 <p>
                                     <b>I -</b> Estimular e fomentar o desenvolvimento de ações de saúde e educação
                                     permanente voltadas à vigilância e prevenção das
-                                    violências e acidentes, das lesões e mortes no trânsito e das doenças crônicas não
+                                    violências e acidentes, das lesões e mortes no trânsito e das doenças crônicas
+                                    não
                                     transmissíveis, além de ações
-                                    intersetoriais, de participação e mobilização da sociedade para promoção da saúde,
+                                    intersetoriais, de participação e mobilização da sociedade para promoção da
+                                    saúde,
                                     prevenção de condições crônicas e
                                     agudas e vigilância à saúde.
                                 </p>
                                 <p>
-                                    <b>II -</b> Ampliar o acesso, o fortalecimento do vínculo, a responsabilização e o
+                                    <b>II -</b> Ampliar o acesso, o fortalecimento do vínculo, a responsabilização e
+                                    o
                                     primeiro cuidado às urgências e emergências em
-                                    ambiente adequado, até o encaminhamento a outros pontos de atenção, com acolhimento
+                                    ambiente adequado, até o encaminhamento a outros pontos de atenção, com
+                                    acolhimento
                                     e
                                     avaliação de riscos e
                                     vulnerabilidades.
@@ -1104,7 +1220,8 @@
                                     <b>III -</b> Chegar precocemente à vítima por meio do SAMU após ocorrida uma
                                     condição
                                     aguda à saúde que possa levar a sofrimento,
-                                    sequelas ou morte, sendo necessário garantir atendimento e/ou transporte adequado
+                                    sequelas ou morte, sendo necessário garantir atendimento e/ou transporte
+                                    adequado
                                     para
                                     um serviço de saúde devidamente
                                     hierarquizado.
@@ -1126,19 +1243,22 @@
                             <div class="py-5">
                                 <a class="link"
                                     href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3088_23_12_2011_rep.html"
-                                    target="_blank" rel="noopener noreferrer">Portaria nº 3.088, de 23 de dezembro de
+                                    target="_blank" rel="noopener noreferrer">Portaria nº 3.088, de 23 de dezembro
+                                    de
                                     2011</a>
                                 <p class="font-bold">Principais Objetivos:</p>
                                 <p>
                                     <b>I -</b> Ampliar o acesso da população à atenção psicossocial;
                                 </p>
                                 <p>
-                                    <b>II -</b> Promover o acesso das pessoas com transtornos mentais e com necessidades
+                                    <b>II -</b> Promover o acesso das pessoas com transtornos mentais e com
+                                    necessidades
                                     decorrentes do uso de crack, álcool e outras
                                     drogas e suas famílias aos pontos de atenção;
                                 </p>
                                 <p>
-                                    <b>III -</b> Garantir a articulação e integração dos pontos de atenção das redes de
+                                    <b>III -</b> Garantir a articulação e integração dos pontos de atenção das redes
+                                    de
                                     saúde no território, qualificando o cuidado por
                                     meio do acolhimento, do acompanhamento contínuo e da atenção às urgências.
                                 </p>
@@ -1163,7 +1283,8 @@
                                     2012</a>
                                 <p class="font-bold">Principais Objetivos:</p>
                                 <p>
-                                    <b>I -</b> Ampliar o acesso e qualificar o atendimento às pessoas com deficiência
+                                    <b>I -</b> Ampliar o acesso e qualificar o atendimento às pessoas com
+                                    deficiência
                                     temporária ou permanente; progressiva, regressiva
                                     ou estável; intermitente ou contínua no SUS;
                                 </p>
@@ -1173,7 +1294,8 @@
                                     suas famílias aos pontos de atenção;
                                 </p>
                                 <p>
-                                    <b>III -</b> Garantir a articulação e a integração dos pontos de atenção das redes
+                                    <b>III -</b> Garantir a articulação e a integração dos pontos de atenção das
+                                    redes
                                     de
                                     saúde no território, qualificando o cuidado por
                                     meio do acolhimento e classificação de risco.
@@ -1200,7 +1322,8 @@
                                     2014</a>
                                 <p class="font-bold">Principais Objetivos:</p>
                                 <p>
-                                    <b>I -</b> Realizar a atenção integral à saúde das pessoas com doenças crônicas, em
+                                    <b>I -</b> Realizar a atenção integral à saúde das pessoas com doenças crônicas,
+                                    em
                                     todos os pontos de atenção, através da
                                     realização de ações e serviços de promoção e proteção da saúde, prevenção de
                                     condições
@@ -1211,7 +1334,8 @@
                                     <b>II -</b> Fomentar a mudança no modelo de atenção à saúde, por meio da
                                     qualificação da
                                     atenção integral às pessoas com doenças
-                                    crônicas e da ampliação das estratégias para promoção da saúde da população e para
+                                    crônicas e da ampliação das estratégias para promoção da saúde da população e
+                                    para
                                     prevenção do desenvolvimento das
                                     doenças crônicas e suas complicações.
                                 </p>
@@ -1219,19 +1343,25 @@
                         </div>
                     </div>
                 </div>
-                <small>Fonte: elaboração dos autores com base em Brasil (2011a, 2011b, 2012a, 2014b, 2024b).</small>
+                <small>Fonte: elaboração dos autores (2025) com base em Brasil (2011a, 2011b, 2012a, 2014b, 2024b).</small>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                1.4 As Unidades Básicas de Saúde Prisional enquanto ponto de atenção da Rede de Atenção à Saúde
-            </h2>
         </div>
-        <div class="bg-gray-100 py-10">
+
+        <div id="1.4" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    1.4 As Unidades Básicas de Saúde Prisional enquanto ponto de atenção da Rede de Atenção à Saúde
+                </h2>
+            </div>
+        </div>
+
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Você, estudante-trabalhador, já pensou em como uma pessoa privada de liberdade consegue percorrer os
                     caminhos da Rede de
                     Atenção à Saúde? <br>
@@ -1240,9 +1370,10 @@
                     caminho. <br>
                     Que tal aprofundarmos nosso olhar sobre as UBSP para entender como elas se articulam com a Atenção
                     Primária à Saúde?
-                </h2>
+                </h3>
             </div>
         </div>
+
         <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <p>
                 Agora que já entendemos o que significa RAS e conhecemos seus elementos constitutivos, podemos
@@ -1281,8 +1412,9 @@
                 de vida e necessidades de saúde e devendo cumprir três funções essenciais: resolubilidade, comunicação e
                 responsabilização.
             </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Você já ouviu falar dessas funções? Então vamos descobrir juntos o que cada uma delas significa?
             </h3>
             <p>
@@ -1317,7 +1449,7 @@
                 atenção à saúde do SUS (Figura 4).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 Figura 4 - A UBSP como centro do cuidado e ordenadora da atenção em saúde na RAS
             </h3>
             <div>
@@ -1376,121 +1508,141 @@
                 seus acompanhantes
                 durante os encaminhamentos necessários.
             </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                1.5 Potencialidades das Unidades Básicas de Saúde Prisional para garantir o acesso ao sistema de saúde
-            </h2>
-            <p>
-                O acesso é um elemento essencial para garantir a qualidade da atenção à saúde, sendo definido como o
-                ajuste entre os
-                recursos de saúde e as necessidades da população no processo de busca e obtenção de atendimento (Mendes,
-                2011). Também é
-                considerado como requisito fundamental para que a APS se consolide como porta de entrada do sistema de
-                saúde, o que
-                exige a eliminação de barreiras financeiras, geográficas, organizacionais e culturais. Dessa forma, as
-                barreiras de
-                acesso podem ser analisadas por meio de quatro dimensões principais:
-            </p>
-            <div>
-                <p class="text-center pb-3">
-                    <small>Clique para interagir</small>
+        </div>
+
+        <div id="1.5" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    1.5 Potencialidades das Unidades Básicas de Saúde Prisional para garantir o acesso ao sistema de
+                    saúde
+                </h2>
+                <p>
+                    O acesso é um elemento essencial para garantir a qualidade da atenção à saúde, sendo definido como o
+                    ajuste entre os
+                    recursos de saúde e as necessidades da população no processo de busca e obtenção de atendimento
+                    (Mendes,
+                    2011). Também é
+                    considerado como requisito fundamental para que a APS se consolide como porta de entrada do sistema
+                    de
+                    saúde, o que
+                    exige a eliminação de barreiras financeiras, geográficas, organizacionais e culturais. Dessa forma,
+                    as
+                    barreiras de
+                    acesso podem ser analisadas por meio de quatro dimensões principais:
                 </p>
-                <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Dimensão geográfica</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                Refere-se a aspectos físicos impeditivos ao acesso (rios, grandes avenidas, entre
-                                outros); distância entre a população e
-                                os recursos.
-                            </p>
+                <div>
+                    <p class="text-center pb-3">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Dimensão geográfica</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    Refere-se a aspectos físicos impeditivos ao acesso (rios, grandes avenidas, entre
+                                    outros); distância entre a população e
+                                    os recursos.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item22" onclick="animacao.toggleAccordion('item22', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Dimensão organizacional</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>Refere-se a obstáculos originados no modo de organização do serviço:</p>
-                            <p>
-                                <b>a)</b> na entrada: demora na obtenção da consulta, tipo de marcação, horário, entre
-                                outros;
-                            </p>
-                            <p>
-                                <b>b)</b> pós-entrada: demora na espera pelo atendimento médico; ausência de mecanismos
-                                de referência e contrarreferência.
-                            </p>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item22" onclick="animacao.toggleAccordion('item22', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Dimensão organizacional</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>Refere-se a obstáculos originados no modo de organização do serviço:</p>
+                                <p>
+                                    <b>a)</b> na entrada: demora na obtenção da consulta, tipo de marcação, horário,
+                                    entre
+                                    outros;
+                                </p>
+                                <p>
+                                    <b>b)</b> pós-entrada: demora na espera pelo atendimento médico; ausência de
+                                    mecanismos
+                                    de referência e contrarreferência.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item23" onclick="animacao.toggleAccordion('item23', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Dimensão sociocultural</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>Refere-se a: perspectivas da população: percepção do indivíduo sobre a gravidade de sua
-                                doença, medo do diagnóstico e
-                                das intervenções, crenças e hábitos, vergonha; perspectivas do sistema de saúde:
-                                formação dos profissionais, falta de
-                                preparo das equipes diante da diversidade de pacientes com distintas características
-                                socioculturais e incipiência dos
-                                processos de participação.</p>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item23" onclick="animacao.toggleAccordion('item23', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Dimensão sociocultural</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>Refere-se a: perspectivas da população: percepção do indivíduo sobre a gravidade de
+                                    sua
+                                    doença, medo do diagnóstico e
+                                    das intervenções, crenças e hábitos, vergonha; perspectivas do sistema de saúde:
+                                    formação dos profissionais, falta de
+                                    preparo das equipes diante da diversidade de pacientes com distintas características
+                                    socioculturais e incipiência dos
+                                    processos de participação.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <button id="item24" onclick="animacao.toggleAccordion('item24', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Dimensão econômica</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content px-5 flex flex-col gap-3">
-                            <p>Refere-se ao consumo de tempo, energia e recursos financeiros para busca e obtenção da
-                                assistência, prejuízos por perda
-                                de dias de trabalho e custo do tratamento.</p>
+                        <div>
+                            <button id="item24" onclick="animacao.toggleAccordion('item24', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Dimensão econômica</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content px-5 flex flex-col gap-3">
+                                <p>Refere-se ao consumo de tempo, energia e recursos financeiros para busca e obtenção
+                                    da
+                                    assistência, prejuízos por perda
+                                    de dias de trabalho e custo do tratamento.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <p>
+                    Diante dessas dimensões, vamos compreender juntos as potencialidades das UBSP. Sua proximidade com
+                    as
+                    PPL (dimensão
+                    geográfica) facilita o acesso à RAS, desde que estabeleçam arranjos organizacionais adequados para
+                    tal
+                    (dimensão
+                    organizacional), os quais devem envolver estratégias para facilitar a entrada no sistema de saúde,
+                    bem
+                    como viabilizar a
+                    continuidade do cuidado em outros pontos da RAS. Na dimensão sociocultural, é essencial que os
+                    profissionais de saúde
+                    das UBSP criem vínculo com as PPL, de modo a compreender e superar barreiras culturais e estigmas
+                    que
+                    possam dificultar
+                    a busca e a oferta da assistência. Por fim, na dimensão econômica, destaca-se a vantagem de as UBSP
+                    possibilitarem o
+                    acesso a muitos tratamentos que não geram custos para as PPL, ampliando o acesso aos serviços de
+                    saúde.</p>
             </div>
-            <p>
-                Diante dessas dimensões, vamos compreender juntos as potencialidades das UBSP. Sua proximidade com as
-                PPL (dimensão
-                geográfica) facilita o acesso à RAS, desde que estabeleçam arranjos organizacionais adequados para tal
-                (dimensão
-                organizacional), os quais devem envolver estratégias para facilitar a entrada no sistema de saúde, bem
-                como viabilizar a
-                continuidade do cuidado em outros pontos da RAS. Na dimensão sociocultural, é essencial que os
-                profissionais de saúde
-                das UBSP criem vínculo com as PPL, de modo a compreender e superar barreiras culturais e estigmas que
-                possam dificultar
-                a busca e a oferta da assistência. Por fim, na dimensão econômica, destaca-se a vantagem de as UBSP
-                possibilitarem o
-                acesso a muitos tratamentos que não geram custos para as PPL, ampliando o acesso aos serviços de saúde.
-            </p>
+        </div>
+
+        <div id="1.6" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                <i class="fa-solid fa-file text-black"></i>
                 1.6 Rastreamento e diagnóstico de saúde às pessoas privadas de liberdade
             </h2>
             <p>
@@ -1639,146 +1791,181 @@
                     </div>
                 </div>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                1.7 Os sistemas de referência e contrarreferência nas Redes de Atenção à Saúde
-            </h2>
-            <p>
-                São inúmeros os desafios para consolidar a UBSP como centro do cuidado e de comunicação da RAS, uma vez
-                que observamos
-                um descompasso entre as políticas que visam garantir o direito à integralidade do cuidado às PPL e sua
-                efetiva
-                implementação. Sendo assim, torna-se essencial que os profissionais inseridos no sistema prisional
-                estejam capacitados
-                para desempenhar as funções da APS, entre elas a de coordenar e ordenar os fluxos e contrafluxos das PPL
-                e das
-                informações na RAS.
-            </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
-                Na sua realidade, como vem ocorrendo a referência e a contrarreferência no atendimento às PPL? Vamos
-                entender a seguir
-                como elas funcionam para podermos refletir sobre a realidade em que estamos.
-            </h3>
-            <p>
-                Em um primeiro momento, as eAPP devem conhecer o território no qual a população está inserida e quais os
-                pontos de
-                atenção disponíveis e de referência para o cuidado às PPL, bem como os sistemas de apoio (diagnóstico e
-                terapêutico, de
-                assistência farmacêutica e de informação em saúde) e os sistemas logísticos (acesso regulado à
-                assistência), componentes
-                da RAS. Depois disso, é necessário compreender dois conceitos-chave, referência e contrarreferência, que
-                são mecanismos
-                fundamentais de comunicação da APS para integração e articulação com os demais pontos de atenção e a
-                continuidade do
-                cuidado às PPL. Para isso, vejamos o caso fictício a seguir:
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                Figura 5 - Exemplo de fluxo de referência e contrarreferência da pessoa privada de liberdade pelo
-                sistema de saúde
-            </h3>
-            <p><b>
-                    Clique nos números de 1 a 3 para saber mais detalhes sobre o caso:
-                </b></p>
-            <div id="mapa" class="relative">
-                <img class="w-full h-full rounded-xl" src="./images/guia-quadrinho.jpg" loading="lazy"
-                    alt="Guia quadrinho">
-                <button id="quadrinho_1" class="botao-flutuante font-bold text-black!" style="bottom: 40%; left: 12%">
-                    1
-                </button>
-                <button id="quadrinho_2" class="botao-flutuante font-bold text-black!" style="bottom: 40%; left: 37%">
-                    2
-                </button>
-                <button id="quadrinho_3" class="botao-flutuante font-bold text-black!" style="bottom: 40%; right: 36%">
-                    3
-                </button>
-                <small>Fonte: elaboração dos autores (2025).</small>
+        </div>
+
+        <div id="1.7" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    1.7 Os sistemas de referência e contrarreferência nas Redes de Atenção à Saúde
+                </h2>
+                <p>
+                    São inúmeros os desafios para consolidar a UBSP como centro do cuidado e de comunicação da RAS, uma
+                    vez
+                    que observamos
+                    um descompasso entre as políticas que visam garantir o direito à integralidade do cuidado às PPL e
+                    sua
+                    efetiva
+                    implementação. Sendo assim, torna-se essencial que os profissionais inseridos no sistema prisional
+                    estejam capacitados
+                    para desempenhar as funções da APS, entre elas a de coordenar e ordenar os fluxos e contrafluxos das
+                    PPL
+                    e das
+                    informações na RAS.
+                </p>
+                <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                    <span
+                        class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                    Na sua realidade, como vem ocorrendo a referência e a contrarreferência no atendimento às PPL? Vamos
+                    entender a seguir
+                    como elas funcionam para podermos refletir sobre a realidade em que estamos.
+                </h3>
+                <p>
+                    Em um primeiro momento, as eAPP devem conhecer o território no qual a população está inserida e
+                    quais os
+                    pontos de
+                    atenção disponíveis e de referência para o cuidado às PPL, bem como os sistemas de apoio
+                    (diagnóstico e
+                    terapêutico, de
+                    assistência farmacêutica e de informação em saúde) e os sistemas logísticos (acesso regulado à
+                    assistência), componentes
+                    da RAS. Depois disso, é necessário compreender dois conceitos-chave, referência e contrarreferência,
+                    que
+                    são mecanismos
+                    fundamentais de comunicação da APS para integração e articulação com os demais pontos de atenção e a
+                    continuidade do
+                    cuidado às PPL. Para isso, vejamos o caso fictício a seguir:
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    Figura 5 - Exemplo de fluxo de referência e contrarreferência da pessoa privada de liberdade pelo
+                    sistema de saúde
+                </h3>
+                <p><b>
+                        Clique nos números de 1 a 3 para saber mais detalhes sobre o caso:
+                    </b></p>
+                <div id="mapa2" class="relative">
+                    <img class="w-full h-full rounded-xl" src="./images/guia-quadrinho.jpg" loading="lazy"
+                        alt="Guia quadrinho">
+                    <button id="quadrinho_1" class="botao-flutuante font-bold text-black!"
+                        style="bottom: 40%; left: 12%">
+                        1
+                    </button>
+                    <button id="quadrinho_2" class="botao-flutuante font-bold text-black!"
+                        style="bottom: 40%; left: 37%">
+                        2
+                    </button>
+                    <button id="quadrinho_3" class="botao-flutuante font-bold text-black!"
+                        style="bottom: 40%; right: 36%">
+                        3
+                    </button>
+                    <small>Fonte: elaboração dos autores (2025).</small>
+                </div>
+                <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                    <span
+                        class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                    Quais foram as principais ações desenvolvidas pelos profissionais de saúde prisional e a RAS? Vamos
+                    entender.
+                </h3>
+                <p>
+                    O caso fictício ilustra o caminho que uma pessoa privada de liberdade percorre no sistema de saúde
+                    ao
+                    ser diagnosticada
+                    com alguma condição de saúde. No caso fictício, ao identificar uma condição aguda de saúde (como o
+                    AVC),
+                    o enfermeiro
+                    prestou o primeiro atendimento de urgência até estabilizar o quadro clínico apresentado, uma das
+                    funções
+                    da APS, e
+                    encaminhou o enfermo para um serviço de atenção secundária (UPA). Este, por sua vez, por meio de uma
+                    central de
+                    regulação, fez o encaminhamento para o hospital, que, por fim, após estabilizar o quadro, encaminha
+                    o
+                    paciente com a
+                    contrarreferência de volta à APS Prisional para continuidade do cuidado.
+                </p>
+                <p>
+                    A contrarreferência é essencial para garantir a continuidade do cuidado à pessoa que teve um AVC,
+                    uma
+                    vez que o
+                    acompanhamento não termina no hospital. Esse cuidado deve continuar na APS, inclusive nas UBSP.
+                    Nessas
+                    unidades,
+                    realiza-se o acompanhamento do AVC crônico, conforme orientações do Ministério da Saúde. Isso inclui
+                    revisar o uso de
+                    medicamentos, avaliar a necessidade de reabilitação, planejar consultas, prevenir novos eventos e
+                    oferecer cuidados
+                    paliativos. Caso necessário, outros pontos de atenção da rede podem ser acionados para participar do
+                    cuidado com a APS.
+                </p>
+                <p>
+                    Dessa forma, a referência e a contrarreferência no SUS são ferramentas que buscam garantir o
+                    adequado
+                    trânsito do
+                    usuário na RAS e favorecem a comunicação e o fluxo de informação entre os pontos de atenção. Assim,
+                    a
+                    regulação
+                    assistencial na RAS, por meio da estratégia de referência e contrarreferência, é um ponto essencial
+                    para
+                    articulação dos
+                    diferentes pontos de atenção à saúde e tem o objetivo de garantir o cuidado certo, no tempo certo,
+                    com
+                    custo certo e com
+                    a qualidade certa.
+                </p>
+                <p>
+                    Na RAS, a regulação assistencial é responsabilidade do centro de comunicação, que tem a função de
+                    ordenar os fluxos e
+                    contrafluxos da assistência nos serviços de saúde, nos sistemas de apoio diagnóstico e terapêutico,
+                    nos
+                    sistemas de
+                    assistência farmacêutica e nos sistemas logísticos. Considerando a natureza da condição de saúde
+                    (crônica ou aguda), há
+                    dois centros de comunicação distintos: a APS, nas Redes de Atenção às Condições Crônicas não
+                    Agudizadas,
+                    e o Complexo
+                    Regulador, nas Rede de Atenção às Urgências e Emergências, conforme Figura 6.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    Figura 6 - Centros de regulação para atendimento às condições crônicas não agudizadas e às urgências
+                    e
+                    emergências
+                </h3>
+                <div>
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/mod3_unid1_grafico-02-01.png"
+                        alt="Estrutura de institruicao ordenado" />
+                    <p class="text-center my-3">APS: Atenção Primária à Saúde e CR: Complexo Regulador</p>
+                    <small>Fonte: Mendes (2011, p. 214).</small>
+                    <hr>
+                </div>
+                <p>
+                    Na Figura 6, percebemos que, embora a APS Prisional, na Rede de Atenção às Urgências e Emergências,
+                    não
+                    desempenhe a
+                    função de centro comunicador, ela desempenha um importante papel enquanto ponto de atenção no
+                    atendimento dos eventos
+                    agudos de saúde, realizando a classificação de risco do paciente, a prestação dos primeiros
+                    atendimentos
+                    e, por meio de
+                    guias de referência e contato com o Complexo Regulador, o encaminhamento do paciente.
+                </p>
+                <p>
+                    Já nas Redes de Atenção às Condições Crônicas não Agudizadas, a APS Prisional se posiciona no centro
+                    da
+                    RAS, devendo
+                    resolver 90% dos problemas que lhe aparecem, como visto anteriormente, bem como regular os fluxos e
+                    contrafluxos das
+                    pessoas na RAS, acompanhando longitudinalmente toda a trajetória delas pelos pontos de atenção e
+                    serviços de apoio
+                    diagnóstico.
+                </p>
             </div>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
-                Quais foram as principais ações desenvolvidas pelos profissionais de saúde prisional e a RAS? Vamos
-                entender.
-            </h3>
-            <p>
-                O caso fictício ilustra o caminho que uma pessoa privada de liberdade percorre no sistema de saúde ao
-                ser diagnosticada
-                com alguma condição de saúde. No caso fictício, ao identificar uma condição aguda de saúde (como o AVC),
-                o enfermeiro
-                prestou o primeiro atendimento de urgência até estabilizar o quadro clínico apresentado, uma das funções
-                da APS, e
-                encaminhou o enfermo para um serviço de atenção secundária (UPA). Este, por sua vez, por meio de uma
-                central de
-                regulação, fez o encaminhamento para o hospital, que, por fim, após estabilizar o quadro, encaminha o
-                paciente com a
-                contrarreferência de volta à APS Prisional para continuidade do cuidado.
-            </p>
-            <p>
-                A contrarreferência é essencial para garantir a continuidade do cuidado à pessoa que teve um AVC, uma
-                vez que o
-                acompanhamento não termina no hospital. Esse cuidado deve continuar na APS, inclusive nas UBSP. Nessas
-                unidades,
-                realiza-se o acompanhamento do AVC crônico, conforme orientações do Ministério da Saúde. Isso inclui
-                revisar o uso de
-                medicamentos, avaliar a necessidade de reabilitação, planejar consultas, prevenir novos eventos e
-                oferecer cuidados
-                paliativos. Caso necessário, outros pontos de atenção da rede podem ser acionados para participar do
-                cuidado com a APS.
-            </p>
-            <p>
-                Dessa forma, a referência e a contrarreferência no SUS são ferramentas que buscam garantir o adequado
-                trânsito do
-                usuário na RAS e favorecem a comunicação e o fluxo de informação entre os pontos de atenção. Assim, a
-                regulação
-                assistencial na RAS, por meio da estratégia de referência e contrarreferência, é um ponto essencial para
-                articulação dos
-                diferentes pontos de atenção à saúde e tem o objetivo de garantir o cuidado certo, no tempo certo, com
-                custo certo e com
-                a qualidade certa.
-            </p>
-            <p>
-                Na RAS, a regulação assistencial é responsabilidade do centro de comunicação, que tem a função de
-                ordenar os fluxos e
-                contrafluxos da assistência nos serviços de saúde, nos sistemas de apoio diagnóstico e terapêutico, nos
-                sistemas de
-                assistência farmacêutica e nos sistemas logísticos. Considerando a natureza da condição de saúde
-                (crônica ou aguda), há
-                dois centros de comunicação distintos: a APS, nas Redes de Atenção às Condições Crônicas não Agudizadas,
-                e o Complexo
-                Regulador, nas Rede de Atenção às Urgências e Emergências, conforme Figura 6.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                Figura 6 - Centros de regulação para atendimento às condições crônicas não agudizadas e às urgências e
-                emergências
-            </h3>
-            <div>
-                <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/mod3_unid1_grafico-02-01.png"
-                    alt="Estrutura de institruicao ordenado" />
-                <p class="text-center my-3">APS: Atenção Primária à Saúde e CR: Complexo Regulador</p>
-                <small>Fonte: Mendes (2011, p. 214).</small>
-                <hr>
-            </div>
-            <p>
-                Na Figura 6, percebemos que, embora a APS Prisional, na Rede de Atenção às Urgências e Emergências, não
-                desempenhe a
-                função de centro comunicador, ela desempenha um importante papel enquanto ponto de atenção no
-                atendimento dos eventos
-                agudos de saúde, realizando a classificação de risco do paciente, a prestação dos primeiros atendimentos
-                e, por meio de
-                guias de referência e contato com o Complexo Regulador, o encaminhamento do paciente.
-            </p>
-            <p>
-                Já nas Redes de Atenção às Condições Crônicas não Agudizadas, a APS Prisional se posiciona no centro da
-                RAS, devendo
-                resolver 90% dos problemas que lhe aparecem, como visto anteriormente, bem como regular os fluxos e
-                contrafluxos das
-                pessoas na RAS, acompanhando longitudinalmente toda a trajetória delas pelos pontos de atenção e
-                serviços de apoio
-                diagnóstico.
-            </p>
+        </div>
+
+        <div id="1.8" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                <i class="fa-solid fa-file text-black"></i>
                 1.8 Os sistemas de informação nas Redes de Atenção em Saúde
             </h2>
             <p>
@@ -1793,8 +1980,9 @@
                 transformar dados em indicadores que apoiam a formulação de políticas nas áreas de vigilância e
                 assistência.
             </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Você sabia que a organização dos Sistemas de Informação em Saúde no Brasil teve início na década de
                 1970?
             </h3>
@@ -1908,7 +2096,7 @@
                     <div class="border-b border-[var(--primary)]">
                         <button id="item35" onclick="animacao.toggleAccordion('item35', 'grupo3')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span id="tooltip_rede_alyne" class="font-bold text-xl px-5">SI-PNI</span>
+                            <span id="tooltip_si_pni" class="font-bold text-xl px-5">SI-PNI</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1927,7 +2115,7 @@
                     <div>
                         <button id="item36" onclick="animacao.toggleAccordion('item36', 'grupo3')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span id="tooltip_rede_alyne" class="font-bold text-xl px-5">SIS PRÉ-NATAL</span>
+                            <span id="tooltip_sis_pre_natal" class="font-bold text-xl px-5">SIS PRÉ-NATAL</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1947,7 +2135,7 @@
                     <div>
                         <button id="item37" onclick="animacao.toggleAccordion('item37', 'grupo3')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span id="tooltip_rede_alyne" class="font-bold text-xl px-5">SISCAN</span>
+                            <span id="tooltip_siscan" class="font-bold text-xl px-5">SISCAN</span>
                             <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -2136,9 +2324,9 @@
                         <p>
                             <b>Para mais informações sobre o programa e as enfermidades previstas para eliminação,
                                 acesse:</b>
-                            <a class="link"
-                                href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/bases-de-dados/arquivos/formulario-sobre-informacoes-prisionais.pdf"
-                                target="_blank">https://www.gov.br/senappen/pt-br/servicos/sisdepen/bases-de-dados/arquivos/formulario-sobre-informacoes-prisionais.pdf</a>
+                            <a class="link" href="./media/formulario-sobre-informacoes-prisionais.pdf"
+                                target="_blank">Clique
+                                aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -2164,38 +2352,47 @@
             </p>
         </div>
 
-        <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
-                Encerramento da Unidade
-            </h2>
-            <p>
-                Caro estudante-trabalhador, durante o estudo, compreendemos que a UBSP desempenha um papel essencial
-                como ponto de
-                atenção na RAS no contexto do SUS. Enquanto serviço de APS, deve promover a integração da rede
-                utilizando instrumentos
-                de referência e contrarreferência e sistemas de informação para garantir a continuidade do cuidado,
-                promovendo a
-                equidade e o acesso universal das PPL aos serviços de saúde. O fortalecimento desse novo modo de agir em
-                saúde exige um
-                protagonismo das eAPP e a capacitação dos profissionais para cumprir as funções que são inerentes à APS
-                e para a
-                humanização do cuidado. Além disso, é necessário superar desafios estruturais e operacionais do próprio
-                sistema
-                prisional, que exigem articulação com outros pontos de atenção e com a justiça e a segurança pública.
-                Assim, a
-                consolidação da atenção à saúde prisional dentro do SUS representa não apenas um avanço no direito à
-                saúde da população
-                privada de liberdade, mas também um passo fundamental na direção da promoção da saúde pública e da
-                redução das
-                desigualdades sociais e das iniquidades de saúde.
-            </p>
+        <div id="encerramento" class="bg-gray-100 py-10">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
+                    Encerramento da Unidade
+                </h2>
+                <p>
+                    Caro estudante-trabalhador, durante o estudo, compreendemos que a UBSP desempenha um papel essencial
+                    como ponto de
+                    atenção na RAS no contexto do SUS. Enquanto serviço de APS, deve promover a integração da rede
+                    utilizando instrumentos
+                    de referência e contrarreferência e sistemas de informação para garantir a continuidade do cuidado,
+                    promovendo a
+                    equidade e o acesso universal das PPL aos serviços de saúde. O fortalecimento desse novo modo de
+                    agir em
+                    saúde exige um
+                    protagonismo das eAPP e a capacitação dos profissionais para cumprir as funções que são inerentes à
+                    APS
+                    e para a
+                    humanização do cuidado. Além disso, é necessário superar desafios estruturais e operacionais do
+                    próprio
+                    sistema
+                    prisional, que exigem articulação com outros pontos de atenção e com a justiça e a segurança
+                    pública.
+                    Assim, a
+                    consolidação da atenção à saúde prisional dentro do SUS representa não apenas um avanço no direito à
+                    saúde da população
+                    privada de liberdade, mas também um passo fundamental na direção da promoção da saúde pública e da
+                    redução das
+                    desigualdades sociais e das iniquidades de saúde.
+                </p>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
+            </div>
         </div>
 
         <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-file text-black"></i>
+                Referências principais
             </h2>
             <p>
                 BRASIL. Ministério da Saúde. Portaria nº 2.436, de 21 de setembro de 2017. Aprova a Política Nacional de
@@ -2244,329 +2441,300 @@
             </p>
         </div>
 
-        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências
-            </h2>
-            <p>
-                BRASIL. Secretaria Nacional de Políticas Penais. <b>Relatório de Informações Penais</b>. 16º ciclo
-                SISDEPEN, 1º
-                semestre de
-                2024. RELIPEN. Brasília: SENAPPEN, 2024a. Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
-                </a>
-                . Acesso em: 11 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria GM/MS nº 5.350, de 12 de setembro de 2024. Altera a Portaria de
-                Consolidação GM/MS
-                nº 3, de 28 de setembro de 2017, para dispor sobre a Rede Alyne. <b>Diário Oficial da União</b>,
-                Brasília, DF,
-                13 set. 2024b.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt5350_13_09_2024.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt5350_13_09_2024.html
-                </a>
-                . Acesso em: 24 jul. 2024.
-            </p>
-            <p>
-                BRASIL. Decreto nº 11.908, de 6 de fevereiro de 2024. Institui o Programa Brasil Saudável - Unir para
-                Cuidar, e altera o
-                Decreto nº 11.494, de 17 de abril de 2023, para dispor sobre o Comitê Interministerial para a Eliminação
-                da Tuberculose
-                e de Outras Doenças Determinadas Socialmente - CIEDDS. <b>Diário Oficial da União</b>, Brasília, DF, 7
-                fev.
-                2024c. Disponível
-                em:
-                <a class="underline link"
-                    href="http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11908.htm" target="_blank"
-                    rel="noopener noreferrer">
-                    http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11908.htm
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria GM/MS nº 3.148, de 6 de fevereiro de 2024. Altera o Anexo 1 do
-                Anexo V à Portaria
-                de Consolidação GM/MS nº 4, de 2017, para incluir a infecção pelo vírus Linfotrópico de Células T
-                Humanas - HTLV, da
-                Infecção pelo HTLV em gestante, parturiente ou puérpera e da criança exposta ao risco de transmissão
-                vertical do HTLV na
-                lista nacional de notificação compulsória de doenças, agravos e eventos de Saúde Pública, nos serviços
-                de saúde públicos
-                e privados em todo o território nacional. <b>Diário Oficial da União</b>, Brasília, DF, 15 fev. 2024d.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3148_15_02_2024.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3148_15_02_2024.html
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Conselho Nacional do Ministério Público. <b>Política nacional de atenção integral à saúde das
-                    pessoas privadas de
-                    liberdade</b>: o papel do Ministério Público na implementação da PNAISP. Brasília: CNMP, 2023.
-                Disponível
-                em:
-                <a class="underline link"
-                    href="https://www.cnmp.mp.br/portal/images/Publicacoes/documentos/2023/pnaisp.pdf" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.cnmp.mp.br/portal/images/Publicacoes/documentos/2023/pnaisp.pdf
-                </a>
-                . Acesso em: 28 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria nº 2.436, de 21 de setembro de 2017. Aprova a Política Nacional de
-                Atenção Básica,
-                estabelecendo a revisão de diretrizes para a organização da Atenção Básica, no âmbito do Sistema Único
-                de Saúde (SUS).
-                <b>Diário Oficial da União</b>, Brasília, DF, 22 set. 2017. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html
-                </a>
-                . Acesso em: 28 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça. <b>Nota Técnica</b>. Esclarecimento sobre a
-                obrigatoriedade
-                da alimentação
-                do Sistema de Informação em Saúde para a Atenção Básica (SISAB) pelas equipes de Atenção Básica
-                prisional (EABp).
-                Brasília, 13 nov. 2015. Disponível em:
-                <a class="underline link"
-                    href="https://sisaps.saude.gov.br/sistemas/esusaps/assets/files/Nota_tecnica_e_SUS_Prisional-8066771ace7cbd24d18a9faf03001ed3.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://sisaps.saude.gov.br/sistemas/esusaps/assets/files/Nota_tecnica_e_SUS_Prisional-8066771ace7cbd24d18a9faf03001ed3.pdf
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº 1,
-                de 2 de janeiro
-                de 2014. Institui a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
-                Sistema Prisional
-                (PNAISP) no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 3 jan.
-                2014a.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria nº 483, de 1º de abril de 2014. Redefine a Rede de Atenção à Saúde
-                das Pessoas com
-                Doenças Crônicas no âmbito do Sistema Único de Saúde (SUS) e estabelece diretrizes para a organização
-                das suas linhas de
-                cuidado. <b>Diário Oficial da União</b>, Brasília, DF, 2 abr. 2014b. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt0483_01_04_2014.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt0483_01_04_2014.html
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria nº 1.412, de 10 de julho de 2013. Institui o Sistema de Informação
-                em Saúde para a
-                Atenção Básica (SISAB). <b>Diário Oficial da União</b>, Brasília, DF, 11 jul. 2013. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt1412_10_07_2013.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt1412_10_07_2013.html
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria nº 793, de 24 de abril de 2012. Institui a Rede de Cuidados à
-                Pessoa com
-                Deficiência no âmbito do Sistema Único de Saúde. <b>Diário Oficial da União</b>, Brasília, DF, 25 abr.
-                2012a.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2012/prt0793_24_04_2012.htm" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2012/prt0793_24_04_2012.htm
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Lei nº 12.714, de 14 de setembro de 2012. Dispõe sobre o sistema de acompanhamento da execução
-                das penas, da
-                prisão cautelar e da medida de segurança. <b>Diário Oficial da União</b>, Brasília, DF, 17 set. 2012b.
-                Disponível em:
-                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12714.htm"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12714.htm
-                </a>
-                . Acesso em: 28 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria nº 1.600, de 7 de julho de 2011. Reformula a Política Nacional de
-                Atenção às
-                Urgências e institui a Rede de Atenção às Urgências no Sistema Único de Saúde (SUS). <b>Diário Oficial
-                    da
-                    União</b>, Brasília,
-                DF, 8 jul. 2011a. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt1600_07_07_2011.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt1600_07_07_2011.html
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria nº 3.088, de 23 de dezembro de 2011. Institui a Rede de Atenção
-                Psicossocial para
-                pessoas com sofrimento ou transtorno mental e com necessidades decorrentes do uso de crack, álcool e
-                outras drogas, no
-                âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 26 dez. 2011b.
-                Disponível
-                em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3088_23_12_2011_rep.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3088_23_12_2011_rep.html
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria nº 4.279, de 30 de dezembro de 2010. Estabelece diretrizes para a
-                organização da
-                Rede de Atenção à Saúde no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>,
-                Brasília,
-                DF, 31 dez. 2010.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/prt4279_30_12_2010.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/prt4279_30_12_2010.html
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Ações Programáticas
-                Estratégicas. <b>Plano
-                    Nacional de Saúde no Sistema Penitenciário</b>. 2. ed. Brasília: Editora do Ministério da Saúde,
-                2005.
-                (Série B. Textos
-                Básicos de Saúde). Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf
-                </a>
-                . Acesso em: 28 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria-Executiva. Núcleo Técnico da Política Nacional de Humanização.
-                <b>HumanizaSUS</b>:
-                Política Nacional de Humanização: a humanização como eixo norteador das práticas de atenção e gestão em
-                todas as
-                instâncias do SUS. Brasília: Ministério da Saúde, 2004. (Série B. Textos Básicos de Saúde). Disponível
-                em:
-                <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/humanizasus_2004.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/humanizasus_2004.pdf
-                </a>
-                . Acesso em: 28 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Constituição (1988). Constituição da República Federativa do Brasil de 1988. <b>Diário Oficial
-                    da
-                    União</b>, Brasília,
-                DF, 5 out. 1988. Disponível em:
-                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
-                    target="_blank" rel="noopener noreferrer">
-                    http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de Execução Penal. <b>Diário Oficial da União</b>,
-                Brasília,
-                DF, 13 jul.
-                1984. Disponível em:
-                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
-                    rel="noopener noreferrer">
-                    http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                CONSELHO NACIONAL DE JUSTIÇA. <b>Letalidade prisional</b>: uma questão de justiça e de saúde pública. 5.
-                ed.
-                Brasília: CNJ,
-                2023.
-            </p>
-            <p>
-                GIOVANELLA, L. Atenção básica ou atenção primária à saúde? <b>Cadernos de Saúde Pública</b>, v. 34, n.
-                8,
-                e00029818, 2018.
-                Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/csp/a/rxLJRM8CWzfDPqz438z8JNr/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/csp/a/rxLJRM8CWzfDPqz438z8JNr/?lang=pt
-                </a>
-                . Acesso em: 5 set. 2025.
-            </p>
-            <p>
-                MENDES, E. V. <b>A construção social da atenção primária à saúde</b>. Brasília: Conselho Nacional de
-                Secretários de Saúde -
-                CONASS, 2015. Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/csp/a/rxLJRM8CWzfDPqz438z8JNr/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/csp/a/rxLJRM8CWzfDPqz438z8JNr/?lang=pt
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                MENDES, E. V. <b>O cuidado das condições crônicas na Atenção Primária à Saúde</b>: o imperativo da
-                consolidação
-                da Estratégia
-                da Saúde da Família. Brasília: Organização Pan-Americana da Saúde, 2012. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/cuidado_condicoes_atencao_primaria_saude.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/cuidado_condicoes_atencao_primaria_saude.pdf
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                MENDES, E. V. <b>As redes de atenção à saúde</b>. Brasília: Organização Pan-Americana da Saúde, 2011.
-                Disponível em:
-                <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/redes_de_atencao_saude.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/redes_de_atencao_saude.pdf
-                </a>
-                . Acesso em: 24 jul. 2025.
-            </p>
-            <p>
-                ORGANIZAÇÃO MUNDIAL DA SAÚDE. Fundo das Nações Unidas para a Infância. Declaração de Alma-Ata sobre
-                Cuidados Primários
-                de Saúde: relatório da Conferência Internacional sobre Cuidados Primários de Saúde, Alma-Ata, URSS, 6-12
-                set. 1978.
-                Brasília: UNICEF, 1979.
-            </p>
-            <p>
-                TEIXEIRA JUNIOR, J. E. <b>Unidades Básicas de Saúde Prisionais</b>: estratégias e práticas no SUS para o
-                cuidado de pessoas
-                privadas de liberdade no Complexo Penitenciário da Papuda - DF. 2024. 242 f. Tese (Doutorado em Saúde
-                Coletiva) -
-                Instituto de Medicina Social Hesio Cordeiro, Universidade do Estado do Rio de Janeiro, Rio de Janeiro,
-                2024.
-            </p>
+        <div id="referencias" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências
+                </h2>
+                <p>
+                    BRASIL. Secretaria Nacional de Políticas Penais. <b>Relatório de Informações Penais</b>. 16º ciclo
+                    SISDEPEN, 1º
+                    semestre de
+                    2024. RELIPEN. Brasília: SENAPPEN, 2024a. Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relipen/relipen-1o-semestre-de-2024.pdf
+                    </a>
+                    . Acesso em: 11 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria GM/MS nº 5.350, de 12 de setembro de 2024. Altera a Portaria
+                    de
+                    Consolidação GM/MS
+                    nº 3, de 28 de setembro de 2017, para dispor sobre a Rede Alyne. <b>Diário Oficial da União</b>,
+                    Brasília, DF,
+                    13 set. 2024b.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt5350_13_09_2024.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt5350_13_09_2024.html
+                    </a>
+                    . Acesso em: 24 jul. 2024.
+                </p>
+                <p>
+                    BRASIL. Decreto nº 11.908, de 6 de fevereiro de 2024. Institui o Programa Brasil Saudável - Unir
+                    para
+                    Cuidar, e altera o
+                    Decreto nº 11.494, de 17 de abril de 2023, para dispor sobre o Comitê Interministerial para a
+                    Eliminação
+                    da Tuberculose
+                    e de Outras Doenças Determinadas Socialmente - CIEDDS. <b>Diário Oficial da União</b>, Brasília, DF,
+                    7
+                    fev.
+                    2024c. Disponível
+                    em:
+                    <a class="underline link"
+                        href="http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11908.htm"
+                        target="_blank" rel="noopener noreferrer">
+                        http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11908.htm
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria GM/MS nº 3.148, de 6 de fevereiro de 2024. Altera o Anexo 1 do
+                    Anexo V à Portaria
+                    de Consolidação GM/MS nº 4, de 2017, para incluir a infecção pelo vírus Linfotrópico de Células T
+                    Humanas - HTLV, da
+                    Infecção pelo HTLV em gestante, parturiente ou puérpera e da criança exposta ao risco de transmissão
+                    vertical do HTLV na
+                    lista nacional de notificação compulsória de doenças, agravos e eventos de Saúde Pública, nos
+                    serviços
+                    de saúde públicos
+                    e privados em todo o território nacional. <b>Diário Oficial da União</b>, Brasília, DF, 15 fev.
+                    2024d.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3148_15_02_2024.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3148_15_02_2024.html
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Conselho Nacional do Ministério Público. <b>Política nacional de atenção integral à saúde
+                        das
+                        pessoas privadas de
+                        liberdade</b>: o papel do Ministério Público na implementação da PNAISP. Brasília: CNMP, 2023.
+                    Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://www.cnmp.mp.br/portal/images/Publicacoes/documentos/2023/pnaisp.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.cnmp.mp.br/portal/images/Publicacoes/documentos/2023/pnaisp.pdf
+                    </a>
+                    . Acesso em: 28 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Ministério da Justiça. <b>Nota Técnica</b>. Esclarecimento sobre a
+                    obrigatoriedade
+                    da alimentação
+                    do Sistema de Informação em Saúde para a Atenção Básica (SISAB) pelas equipes de Atenção Básica
+                    prisional (EABp).
+                    Brasília, 13 nov. 2015. Disponível em:
+                    <a class="underline link"
+                        href="https://sisaps.saude.gov.br/sistemas/esusaps/assets/files/Nota_tecnica_e_SUS_Prisional-8066771ace7cbd24d18a9faf03001ed3.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://sisaps.saude.gov.br/sistemas/esusaps/assets/files/Nota_tecnica_e_SUS_Prisional-8066771ace7cbd24d18a9faf03001ed3.pdf
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria nº 483, de 1º de abril de 2014. Redefine a Rede de Atenção à
+                    Saúde
+                    das Pessoas com
+                    Doenças Crônicas no âmbito do Sistema Único de Saúde (SUS) e estabelece diretrizes para a
+                    organização
+                    das suas linhas de
+                    cuidado. <b>Diário Oficial da União</b>, Brasília, DF, 2 abr. 2014b. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt0483_01_04_2014.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt0483_01_04_2014.html
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria nº 1.412, de 10 de julho de 2013. Institui o Sistema de
+                    Informação
+                    em Saúde para a
+                    Atenção Básica (SISAB). <b>Diário Oficial da União</b>, Brasília, DF, 11 jul. 2013. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt1412_10_07_2013.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt1412_10_07_2013.html
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria nº 793, de 24 de abril de 2012. Institui a Rede de Cuidados à
+                    Pessoa com
+                    Deficiência no âmbito do Sistema Único de Saúde. <b>Diário Oficial da União</b>, Brasília, DF, 25
+                    abr.
+                    2012a.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2012/prt0793_24_04_2012.htm" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2012/prt0793_24_04_2012.htm
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Lei nº 12.714, de 14 de setembro de 2012. Dispõe sobre o sistema de acompanhamento da
+                    execução
+                    das penas, da
+                    prisão cautelar e da medida de segurança. <b>Diário Oficial da União</b>, Brasília, DF, 17 set.
+                    2012b.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12714.htm" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12714.htm
+                    </a>
+                    . Acesso em: 28 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria nº 1.600, de 7 de julho de 2011. Reformula a Política Nacional
+                    de
+                    Atenção às
+                    Urgências e institui a Rede de Atenção às Urgências no Sistema Único de Saúde (SUS). <b>Diário
+                        Oficial
+                        da
+                        União</b>, Brasília,
+                    DF, 8 jul. 2011a. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt1600_07_07_2011.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt1600_07_07_2011.html
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria nº 3.088, de 23 de dezembro de 2011. Institui a Rede de
+                    Atenção
+                    Psicossocial para
+                    pessoas com sofrimento ou transtorno mental e com necessidades decorrentes do uso de crack, álcool e
+                    outras drogas, no
+                    âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 26 dez. 2011b.
+                    Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3088_23_12_2011_rep.html"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3088_23_12_2011_rep.html
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria nº 4.279, de 30 de dezembro de 2010. Estabelece diretrizes
+                    para a
+                    organização da
+                    Rede de Atenção à Saúde no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>,
+                    Brasília,
+                    DF, 31 dez. 2010.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/prt4279_30_12_2010.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/prt4279_30_12_2010.html
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Ações Programáticas
+                    Estratégicas. <b>Plano
+                        Nacional de Saúde no Sistema Penitenciário</b>. 2. ed. Brasília: Editora do Ministério da Saúde,
+                    2005.
+                    (Série B. Textos
+                    Básicos de Saúde). Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf
+                    </a>
+                    . Acesso em: 28 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria-Executiva. Núcleo Técnico da Política Nacional de
+                    Humanização.
+                    <b>HumanizaSUS</b>:
+                    Política Nacional de Humanização: a humanização como eixo norteador das práticas de atenção e gestão
+                    em
+                    todas as
+                    instâncias do SUS. Brasília: Ministério da Saúde, 2004. (Série B. Textos Básicos de Saúde).
+                    Disponível
+                    em:
+                    <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/humanizasus_2004.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/humanizasus_2004.pdf
+                    </a>
+                    . Acesso em: 28 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Constituição (1988). Constituição da República Federativa do Brasil de 1988. <b>Diário
+                        Oficial
+                        da
+                        União</b>, Brasília,
+                    DF, 5 out. 1988. Disponível em:
+                    <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+                        target="_blank" rel="noopener noreferrer">
+                        http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de Execução Penal. <b>Diário Oficial da União</b>,
+                    Brasília,
+                    DF, 13 jul.
+                    1984. Disponível em:
+                    <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
+                        rel="noopener noreferrer">
+                        http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
+                    </a>
+                    . Acesso em: 24 jul. 2025.
+                </p>
+                <p>
+                    CONSELHO NACIONAL DE JUSTIÇA. <b>Letalidade prisional</b>: uma questão de justiça e de saúde
+                    pública. 5.
+                    ed.
+                    Brasília: CNJ,
+                    2023.
+                </p>
+                <p>
+                    GIOVANELLA, L. Atenção básica ou atenção primária à saúde? <b>Cadernos de Saúde Pública</b>, v. 34,
+                    n.
+                    8,
+                    e00029818, 2018.
+                    Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/csp/a/rxLJRM8CWzfDPqz438z8JNr/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/csp/a/rxLJRM8CWzfDPqz438z8JNr/?lang=pt
+                    </a>
+                    . Acesso em: 5 set. 2025.
+                </p>
+                <p>
+                    ORGANIZAÇÃO MUNDIAL DA SAÚDE. Fundo das Nações Unidas para a Infância. Declaração de Alma-Ata sobre
+                    Cuidados Primários
+                    de Saúde: relatório da Conferência Internacional sobre Cuidados Primários de Saúde, Alma-Ata, URSS,
+                    6-12
+                    set. 1978.
+                    Brasília: UNICEF, 1979.
+                </p>
+                <p>
+                    TEIXEIRA JUNIOR, J. E. <b>Unidades Básicas de Saúde Prisionais</b>: estratégias e práticas no SUS
+                    para o
+                    cuidado de pessoas
+                    privadas de liberdade no Complexo Penitenciário da Papuda - DF. 2024. 242 f. Tese (Doutorado em
+                    Saúde
+                    Coletiva) -
+                    Instituto de Medicina Social Hesio Cordeiro, Universidade do Estado do Rio de Janeiro, Rio de
+                    Janeiro,
+                    2024.
+                </p>
+            </div>
         </div>
 
         <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
@@ -2584,7 +2752,7 @@
                 </div>
                 <div class="w-full md:w-2/3 px-0 md:px-5">
                     <p>
-                        Pedro Augusto Bossonario é graduado em Bacharelado e Licenciatura em Enfermagem pela Escola de
+                        Graduado em Bacharelado e Licenciatura em Enfermagem pela Escola de
                         Enfermagem de Ribeirão
                         Preto da Universidade de São Paulo (EERP-USP) em 2016. Mestre (2016 - 2019) e doutor (2020
                         -2024) em ciência pelo
@@ -2608,7 +2776,7 @@
             <div class="flex flex-wrap my-5">
                 <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
                     <p>
-                        Nanci Michele Saita Santos é Doutora em Enfermagem em Saúde Pública pela Escola de Enfermagem de
+                        Doutora em Enfermagem em Saúde Pública pela Escola de Enfermagem de
                         Ribeirão Preto - EERP
                         -USP (2020). Mestre em Saúde Coletiva pela Universidade Estadual de Campinas (Unicamp).
                         Especialista em Enfermagem
@@ -2678,7 +2846,7 @@
             <div class="flex flex-wrap my-5">
                 <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
                     <p>
-                        Erika Aparecida Catoia é Doutora em Enfermagem em Saúde Pública pela Universidade de São Paulo
+                        Doutora em Enfermagem em Saúde Pública pela Universidade de São Paulo
                         de Ribeirão Preto
                         (2015 - 2018). Mestre em Enfermagem em Saúde Pública pela mesma instituição (2014). Possui
                         graduação em Bacharelado e
@@ -2752,23 +2920,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -319,38 +319,85 @@
         </div>
 
         <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo I - Política Nacional de Atenção Integral à Saúde das
-                        Pessoas Privadas de Liberdade no Sistema Prisional
-                        (PNAISP)
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 1 - Estrutura e Sistema Prisional
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 1
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional (PNAISP)
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 1 &nbsp;·&nbsp; Estrutura e Sistema Prisional
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -516,7 +563,7 @@
             </p>
         </div>
 
-        <div id="timeline" class="bg-gray-100 py-10">
+        <div id="timeline" class="bg-[var(--primary)] py-10">
             <div class="timeline max-w-[1000px] px-5 mx-auto flex flex-col gap-10 md:gap-20">
                 <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                     <h2 class="link font-bold mb-5 text-2xl">
@@ -688,13 +735,13 @@
                 Figura 1.
             </p>
             <h3 class="text-xl md:text-2xl font-bold">
-                <i class="fa-solid fa-image text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-image text-black"></i>
                 Figura 1 - Países com maior número de pessoas em cumprimento de
                 pena
             </h3>
             <div>
                 <div id="mapa" class="relative">
-                    <small class="text-center">Clique para interagir</small>
+                    <small class="text-center">Clique nos ícones + para interagir</small>
                     <img class="w-full h-full rounded-xl" src="./images/mapa-mundi.jpg" loading="lazy"
                         alt="Mapa-múndi monocromático (branco/cinza) que mostra os continentes em alto-relevo com efeito de sombra"
                         title="Mapa-múndi monocromático (branco/cinza) que mostra os continentes em alto-relevo com efeito de sombra" />
@@ -744,12 +791,12 @@
                                             Islândia
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <h3 class="text-lg font-semibold mb-2">
                                             Islândia
                                         </h3>
@@ -775,12 +822,12 @@
                                             Suécia
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <h3 class="text-lg font-semibold mb-2">
                                             Suécia
                                         </h3>
@@ -805,12 +852,12 @@
                                             Finlândia
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <h3 class="text-lg font-semibold mb-2">
                                             Finlândia
                                         </h3>
@@ -835,12 +882,12 @@
                                             Dinamarca
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <h3 class="text-lg font-semibold mb-2">
                                             Dinamarca
                                         </h3>
@@ -865,12 +912,12 @@
                                             Noruega
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <h3 class="text-lg font-semibold mb-2">
                                             Noruega
                                         </h3>
@@ -962,12 +1009,12 @@
                                                 Fechado
                                             </h3>
                                             <span
-                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                                 para ver</span>
                                         </article>
 
                                         <aside
-                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                             <p class="text-sm">
                                                 A pessoa fica em
                                                 estabelecimentos de
@@ -993,12 +1040,12 @@
                                                 Semiaberto
                                             </h3>
                                             <span
-                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                                 para ver</span>
                                         </article>
 
                                         <aside
-                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                             <p class="text-sm">
                                                 A pessoa pode sair para
                                                 trabalhar durante o dia, mas
@@ -1025,12 +1072,12 @@
                                                 Aberto
                                             </h3>
                                             <span
-                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                                 para ver</span>
                                         </article>
 
                                         <aside
-                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                             <p class="text-sm">
                                                 A pessoa vive em liberdade,
                                                 mas precisa se apresentar
@@ -1177,7 +1224,7 @@
                 ilustra esse crescimento desde 2016.
             </p>
             <h3 class="text-xl md:text-2xl font-bold">
-                <i class="fa-regular fa-image text-[var(--modulo1-primary)]"></i>
+                <i class="fa-regular fa-image text-black"></i>
                 Figura 2 - Crescimento da população privada de liberdade no
                 Brasil, 2016/2-2024/2
             </h3>
@@ -1256,7 +1303,7 @@
                 privadas de liberdade por grau de instrução.
             </p>
             <h3 class="text-xl md:text-2xl font-bold">
-                <i class="fa-solid fa-image text-[var(--modulo1-primary)]"></i>
+                <i class="fa-solid fa-image text-black"></i>
                 Figura 3 - Quantidade de pessoas privadas de liberdade no
                 Brasil por grau de instrução, 2024/2
             </h3>
@@ -1466,9 +1513,9 @@
                 </div>
                 <div class="quiz-container p-3 md:rounded-xl shadow-xl bg-white">
                     <h3 class="text-lg md:text-xl font-bold p-2">
-                        Vamos lá? Relacione corretamente o tipo de
-                        estabelecimento penal com sua função principal.
+                        Vamos lá? Relacione corretamente o tipo de estabelecimento penal com sua função principal. Para fazer essa tarefa, arraste o tipo de estabelecimento penal com sua função correspondente.
                     </h3>
+                    <p class="text-center pb-3"><small>Arraste o mouse para inserir as respostas.</small></p>
                     <div id="drag-drop-area" class="mt-3 flex flex-wrap justify-between">
                         <div class="w-full md:w-1/3 termos-coluna p-2">
                             <div id="termos-lista" class="flex flex-wrap md:flex-col gap-3">
@@ -1629,8 +1676,7 @@
                     </p>
                     <p>
                         <b>Veja o manual de intervenções:</b>
-                        <a class="hover:underline text-black"
-                            href="./media/manual_intervencoes_ambientais_controle_tuberculose_prisoes.pdf"
+                        <a class="link" href="./media/manual_intervencoes_ambientais_controle_tuberculose_prisoes.pdf"
                             target="_blank">Clique aqui</a>
                     </p>
                 </div>
@@ -1675,7 +1721,7 @@
                                     d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="accordion-content pb-3">
+                        <div class="accordion-content">
                             <p class="p-5">
                                 O CNPCP é um órgão vinculado à SENAPPEN do
                                 Ministério da Justiça e Segurança Pública e
@@ -1697,7 +1743,7 @@
                                     d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="accordion-content pb-3">
+                        <div class="accordion-content">
                             <p class="p-5">
                                 O Juízo da Execução é o juiz responsável
                                 pela execução da pena, conforme determinado
@@ -1718,7 +1764,7 @@
                                     d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="accordion-content pb-3">
+                        <div class="accordion-content">
                             <p class="p-5">
                                 Ao Ministério Público cabe a defesa da ordem
                                 jurídica, dos interesses individuais e
@@ -1984,73 +2030,81 @@
                 </p>
                 <p>
                     Essa iniciativa pode ser acessada pelo endereço:
-                    <a class="hover:underline text-black"
+                    <a class="link"
                         href="https://www.prisoeslivresdetbcesp.com.br/projetoagentespromotoresdesaudecuidandoeressocializandovidas "
                         target="">https://www.prisoeslivresdetbcesp.com.br/projetoagentespromotoresdesaudecuidandoeressocializandovidas</a>
                 </p>
             </div>
         </div>
 
-        <div id="encerramento" class="w-full bg-gray-100 py-10">
-            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5">
+        <div id="encerramento" class="w-full px-5 py-10 max-w-[1000px] mx-auto flex flex-col gap-5">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
+                Encerramento da Unidade
+            </h2>
+            <p>
+                Finalizamos esta Unidade. Ao longo do conteúdo apresentado, você viu que entender o sistema
+                prisional vai além de
+                conhecer as normas e estruturas. A reflexão sobre a história do aprisionamento, os modelos
+                internacionais e as
+                especificidades do sistema brasileiro é fundamental para compreender como o sistema prisional
+                evoluiu com o passar do
+                tempo.
+            </p>
+            <p>
+                Ao explorar questões como segurança, saúde e desafios enfrentados, reforçamos que o cuidado e o
+                respeito à dignidade são
+                essenciais e devem ser mantidos mesmo no sistema prisional.
+            </p>
+            <p>
+                Esperamos que este conteúdo te inspire a enxergar não apenas funções técnicas, mas oportunidades
+                reais de fazer a
+                diferença na vida de pessoas que, muitas vezes, foram invisibilizadas.
+            </p>
+            <p class="font-bold text-center mt-4">
+                Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar
+                os seus estudos.
+            </p>
+        </div>
+
+        <div id="referencias_importantes" class="w-full bg-gray-100">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--modulo1-primary)] mr-2"></i>
-                    Encerramento da Unidade
+                    <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
+                    Referências principais
                 </h2>
                 <p>
-                    Finalizamos esta Unidade. Ao longo do conteúdo apresentado, você viu que entender o sistema
-                    prisional vai além de
-                    conhecer as normas e estruturas. A reflexão sobre a história do aprisionamento, os modelos
-                    internacionais e as
-                    especificidades do sistema brasileiro é fundamental para compreender como o sistema prisional
-                    evoluiu com o passar do
-                    tempo.
+                    BRASIL. Secretaria Nacional de Políticas Penais. SISDEPEN.
+                    <b>Levantamento de Informações Penitenciárias</b>. 2025a.
+                    Disponível em:
+                    <a class="underline link" href="https://www.gov.br/depen/pt-br/servicos/sisdepen"
+                        target="_blank">https://www.gov.br/depen/pt-br/servicos/sisdepen</a>. Acesso em: 6 abr. 2025.
                 </p>
                 <p>
-                    Ao explorar questões como segurança, saúde e desafios enfrentados, reforçamos que o cuidado e o
-                    respeito à dignidade são
-                    essenciais e devem ser mantidos mesmo no sistema prisional.
+                    BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de
+                    Execução Penal. <b>Diário Oficial da União</b>, Brasília, DF, 13
+                    jul. 1984. Disponível em:
+                    <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
+                        target="_blank">http://www.planalto.gov.br/ccivil_03/leis/l7210.htm</a>. Acesso em: 15 jul.
+                    2025.
                 </p>
                 <p>
-                    Esperamos que este conteúdo te inspire a enxergar não apenas funções técnicas, mas oportunidades
-                    reais de fazer a
-                    diferença na vida de pessoas que, muitas vezes, foram invisibilizadas.
+                    BRASIL. Decreto-Lei nº 2.848, de 7 de dezembro de 1940.
+                    Código Penal. <b>Diário Oficial da União</b>, Rio de Janeiro, RJ,
+                    31 dez. 1940. Disponível em:
+                    <a class="underline link"
+                        href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"
+                        target="_blank">https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm</a>.
+                    cesso
+                    em: 15 jul. 2025.
+                </p>
+                <p>
+                    MURARO, M. <b>Sistema penitenciário e execução penal</b>. Curitiba:
+                    InterSaberes, 2017.
                 </p>
             </div>
         </div>
 
-        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--modulo1-primary)]"></i>
-                Referências Importantes
-            </h2>
-            <p>
-                BRASIL. Secretaria Nacional de Políticas Penais. SISDEPEN.
-                <b>Levantamento de Informações Penitenciárias</b>. 2025a.
-                Disponível em:
-                <a class="underline link" href="https://www.gov.br/depen/pt-br/servicos/sisdepen"
-                    target="_blank">https://www.gov.br/depen/pt-br/servicos/sisdepen</a>. Acesso em: 6 abr. 2025.
-            </p>
-            <p>
-                BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de
-                Execução Penal. <b>Diário Oficial da União</b>, Brasília, DF, 13
-                jul. 1984. Disponível em:
-                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
-                    target="_blank">http://www.planalto.gov.br/ccivil_03/leis/l7210.htm</a>. Acesso em: 15 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Decreto-Lei nº 2.848, de 7 de dezembro de 1940.
-                Código Penal. <b>Diário Oficial da União</b>, Rio de Janeiro, RJ,
-                31 dez. 1940. Disponível em:
-                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"
-                    target="_blank">https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm</a>. cesso
-                em: 15 jul. 2025.
-            </p>
-            <p>
-                MURARO, M. <b>Sistema penitenciário e execução penal</b>. Curitiba:
-                InterSaberes, 2017.
-            </p>
-        </div>
 
         <div id="referencias" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
@@ -2064,13 +2118,6 @@
                     href="https://www.jusbrasil.com.br/artigos/as-penitenciarias-de-seguranca-maxima/1652257134"
                     target="_blank">https://www.jusbrasil.com.br/artigos/as-penitenciarias-de-seguranca-maxima/1652257134</a>.
                 Acesso em: 15 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Secretaria Nacional de Políticas Penais. SISDEPEN.
-                <b>Levantamento de Informações Penitenciárias</b>. 2025a.
-                Disponível em:
-                <a class="underline link" href="https://www.gov.br/depen/pt-br/servicos/sisdepen"
-                    target="_blank">https://www.gov.br/depen/pt-br/servicos/sisdepen</a>. Acesso em: 6 abr. 2025.
             </p>
             <p>
                 BRASIL. Secretaria Nacional de Políticas Penais. SENAPPEN divulga nota técnica referente aos dados de
@@ -2123,24 +2170,6 @@
                 Acesso em: 17 jul. 2025.
             </p>
             <p>
-                BRASIL. Lei nº 7.210, de 11 de julho de 1984. Lei de Execução Penal. <b>Diário Oficial da União</b>,
-                Brasília,
-                DF, 13 jul.
-                1984. Disponível em:
-                <a class="underline link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
-                    target="_blank">http://www.planalto.gov.br/ccivil_03/leis/l7210.htm</a>
-                Acesso em: 15 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Decreto-Lei nº 2.848, de 7 de dezembro de 1940. Código Penal. <b>Diário Oficial da União</b>,
-                Rio de
-                Janeiro, RJ, 31
-                dez. 1940. Disponível em:
-                <a class="underline link" href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"
-                    target="_blank">https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm</a>
-                Acesso em: 15 jul. 2025.
-            </p>
-            <p>
                 CAMPOS, M. S. O novo nem sempre vem: Lei de Drogas e encarceramento no Brasil. <b>Atlas da
                     Violência</b>, 18
                 dez. 2018.
@@ -2174,9 +2203,6 @@
                 FERNANDES, D. F.; MATOS, L. V. Apesar da pena: execução penal e redução de danos. <b>Panóptica</b>, n.
                 31, p.
                 158-183, 2016.
-            </p>
-            <p>
-                MURARO, M. <b>Sistema penitenciário e execução penal</b>. Curitiba: InterSaberes, 2017.
             </p>
             <p>
                 NATIONAL RESEARCH COUNCIL. <b>The Growth of Incarceration in the United States</b>: Exploring Causes and
@@ -2253,7 +2279,7 @@
                             Santa Marcelina, em São Paulo, como gerente na
                             Gerência de qualidade da Atenção Primária à
                             Saúde e na Gerência de Atenção à Saúde de
-                            Populações em Situação Vulnerável e Programas
+                            Populaç ões em Situação Vulnerável e Programas
                             Especiais da Secretaria de Estado de Saúde do
                             Distrito Federal. Atuou como consultora no
                             Ministério da Saúde na Coordenação-Geral de
@@ -2272,22 +2298,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização
-                desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial. ©
-                2025. Ministério
-                da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
-            </small>
+    <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

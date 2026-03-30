@@ -28,3 +28,16 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Vídeos (arquivos grandes — não subir para o GitHub)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Backups
+*_backup/
+
+# Scripts de otimização locais
+_otimizar.py

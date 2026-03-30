@@ -49,7 +49,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -89,7 +89,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -163,7 +163,7 @@
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a
                     fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -252,7 +252,7 @@
                     <b>
                         Unidade 1
                     </b><br>
-                    Renata Terumi Shiguematsu Yassuda
+                    José Victor Bortolotto Bampi
                 </p>
                 <p>
                     <b>
@@ -276,7 +276,6 @@
                     <b>
                         Unidade 5
                     </b><br>
-                    Lucas Moura de Oliveira <br>
                     Giovana Soares Buzinaro
 
                 </p>
@@ -349,39 +348,82 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo V - O Itinerário de Cuidado à Saúde, Agravos
-                        e Doenças Transmissíveis e Não
-                        Transmissíveis no Âmbito da PNAISP
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 5 - Cuidado e Tratamento em Saúde Bucal
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 5
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não Transmissíveis no Âmbito da PNAISP
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 5 &nbsp;·&nbsp; Cuidado e Tratamento em Saúde Bucal
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -485,12 +527,12 @@
 
         <div id="5.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.1 Principais agravos em saúde bucal e estratégias de
                 cuidado no sistema prisional
             </h2>
             <p>
-                Como discutido no Módulo IV, os agravos em saúde bucal são
+                Como discutido no Módulo 4, os agravos em saúde bucal são
                 altamente prevalentes no ambiente prisional,
                 muitas vezes
                 associados a hábitos de vida e condições sanitárias
@@ -717,6 +759,40 @@
                             </p>
                         </div>
                     </div>
+                    <div id="modalVideo1" class="modal-overlay hidden" onclick="estrutura.closeOnOverlay(event, this)">
+                        <div class="modal-content">
+                            <div class="modal-body w-full">
+                                <video class="link" width="600" controls>
+                                    <source
+                                        src="./media/Web-Aula-Fiocruz-Lesoes-Potencialmente-M_Media_A9SozhHJEV8_002_720p.mp4"
+                                        type="video/mp4">
+                                    Seu navegador não suporta vídeo.
+                                </video>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="estrutura.closeModal('modalVideo1')"
+                                    class="btn bg-[var(--primary)] text-black">
+                                    FECHAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modalVideo2" class="modal-overlay hidden" onclick="estrutura.closeOnOverlay(event, this)">
+                        <div class="modal-content">
+                            <div class="modal-body w-full">
+                                <video class="link" width="600" controls>
+                                    <source src="./media/2.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeo.
+                                </video>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="estrutura.closeModal('modalVideo2')"
+                                    class="btn bg-[var(--primary)] text-black">
+                                    FECHAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div>
                         <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
                             class="accordion-header w-full flex justify-between items-center py-3 text-left">
@@ -826,8 +902,7 @@
                                                 minutos
                                                 <br>
                                                 Acesse: <a class="link"
-                                                    href="https://www.youtube.com/watch?v=A9SozhHJEV8"
-                                                    target="_blank">https://www.youtube.com/watch?v=A9SozhHJEV8</a>
+                                                    href="javascript:estrutura.openModal('modalVideo1')">Clique aqui</a>
                                             </li>
                                             <li>
                                                 <i>Lesões
@@ -844,8 +919,7 @@
                                                 minutos.
                                                 <br>
                                                 Acesse: <a class="link"
-                                                    href="https://www.youtube.com/watch?v=MoOvYQZtfmc"
-                                                    target="_blank">https://www.youtube.com/watch?v=MoOvYQZtfmc</a>
+                                                    href="javascript:estrutura.openModal('modalVideo2')">Clique aqui</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1125,7 +1199,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.1.4 Ações de cuidado relacionadas aos
                 agravos em saúde bucal no sistema prisional
             </h3>
@@ -1165,10 +1239,10 @@
 
         <div class="bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <p>
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Você acha difícil implementar ações de
                     melhoria na saúde do estabelecimento
                     penal em que trabalha?
@@ -1187,7 +1261,7 @@
                     condições de saúde dessa
                     população, levando em consideração as
                     especificidades do ambiente prisional.
-                </p>
+                </h3>
             </div>
         </div>
 
@@ -1351,90 +1425,267 @@
                     </div>
                 </div>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                5.2 Principais manifestações orais em
-                doenças sistêmicas e estratégias de cuidado
-            </h2>
-            <p>
-                Ao avaliarmos um paciente, é essencial que
-                possamos identificar as necessidades em
-                saúde que ele
-                apresenta. Afinal, faz
-                parte no nosso plano de tratamento a
-                realização de uma anamnese aprofundada,
-                capaz de detectar doenças
-                que se manifestem
-                primeiro em mucosa oral, não é mesmo?
-                Voltando nosso olhar para a realidade da
-                PPL, existem lesões a que
-                precisamos nos
-                atentar no momento do exame clínico,
-                principalmente pela maior incidência de
-                casos nesse contexto.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                5.2.1 Doenças transmissíveis
-            </h3>
-            <p>
-                As doenças transmissíveis constituem um
-                importante desafio para a saúde pública,
-                especialmente em
-                contextos de maior
-                vulnerabilidade social, como o sistema
-                prisional. A população privada de liberdade
-                apresenta fatores de
-                risco
-                específicos que favorecem a disseminação de
-                infecções, entre eles a superlotação, o
-                acesso restrito a
-                serviços de saúde
-                e a escassez de informação qualificada.
-                Segundo Carvalho <i>et al</i>. (2020), a população
-                privada de liberdade
-                apresenta
-                dificuldades de identificação, prevenção,
-                tratamento e formas de transmissão de
-                algumas infecções, além
-                de não
-                reconhecer, de maneira adequada, as
-                estratégias de prevenção.
-            </p>
-            <p>
-                Nesse contexto, torna-se fundamental a
-                abordagem das lesões orais relacionadas a
-                doenças transmissíveis,
-                uma vez que a
-                cavidade bucal pode ser local de
-                manifestação clínica e importante indicador
-                do estado geral de saúde. O
-                Quadro 1
-                apresenta as principais doenças
-                transmissíveis, suas formas de apresentação
-                em cavidade oral e
-                orientações sobre o
-                manejo adequado, reforçando a necessidade de
-                atuação interdisciplinar entre a odontologia
-                e demais áreas
-                da saúde.
-            </p>
-            <div id="quadro-1" class="flex flex-col gap-5 mt-5">
+        </div>
+
+        <div id="5.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
-                    Quadro 1 - Principais doenças
-                    transmissíveis e suas manifestações
-                    orais
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    5.2 Principais manifestações orais em
+                    doenças sistêmicas e estratégias de cuidado
                 </h2>
+                <p>
+                    Ao avaliarmos um paciente, é essencial que
+                    possamos identificar as necessidades em
+                    saúde que ele
+                    apresenta. Afinal, faz
+                    parte no nosso plano de tratamento a
+                    realização de uma anamnese aprofundada,
+                    capaz de detectar doenças
+                    que se manifestem
+                    primeiro em mucosa oral, não é mesmo?
+                    Voltando nosso olhar para a realidade da
+                    PPL, existem lesões a que
+                    precisamos nos
+                    atentar no momento do exame clínico,
+                    principalmente pela maior incidência de
+                    casos nesse contexto.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    5.2.1 Doenças transmissíveis
+                </h3>
+                <p>
+                    As doenças transmissíveis constituem um
+                    importante desafio para a saúde pública,
+                    especialmente em
+                    contextos de maior
+                    vulnerabilidade social, como o sistema
+                    prisional. A população privada de liberdade
+                    apresenta fatores de
+                    risco
+                    específicos que favorecem a disseminação de
+                    infecções, entre eles a superlotação, o
+                    acesso restrito a
+                    serviços de saúde
+                    e a escassez de informação qualificada.
+                    Segundo Carvalho <i>et al</i>. (2020), a população
+                    privada de liberdade
+                    apresenta
+                    dificuldades de identificação, prevenção,
+                    tratamento e formas de transmissão de
+                    algumas infecções, além
+                    de não
+                    reconhecer, de maneira adequada, as
+                    estratégias de prevenção.
+                </p>
+                <p>
+                    Nesse contexto, torna-se fundamental a
+                    abordagem das lesões orais relacionadas a
+                    doenças transmissíveis,
+                    uma vez que a
+                    cavidade bucal pode ser local de
+                    manifestação clínica e importante indicador
+                    do estado geral de saúde. O
+                    Quadro 1
+                    apresenta as principais doenças
+                    transmissíveis, suas formas de apresentação
+                    em cavidade oral e
+                    orientações sobre o
+                    manejo adequado, reforçando a necessidade de
+                    atuação interdisciplinar entre a odontologia
+                    e demais áreas
+                    da saúde.
+                </p>
+                <div id="quadro-1" class="flex flex-col gap-5 mt-5">
+                    <h2 class="text-2xl md:text-3xl font-bold">
+                        <i class="fa-solid fa-image text-black mr-2"></i>
+                        Quadro 1 - Principais doenças
+                        transmissíveis e suas manifestações
+                        orais
+                    </h2>
+                    <div>
+                        <p class="text-center pb-3">
+                            <small>Clique para interagir</small>
+                        </p>
+                        <div id="grupo3" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item31" onclick="animacao.toggleAccordion('item31', 'grupo3')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">HIV/AIDS</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>
+                                        <b>Forma de
+                                            Apresentação:</b><br>
+                                        Candidíase oral,
+                                        leucoplasia pilosa,
+                                        úlceras herpéticas,
+                                        sarcoma de Kaposi.
+                                    </p>
+                                    <p>
+                                        <b>Como manejar:</b><br>
+                                        Relacionar as lesões ao
+                                        número de células CD4+ e
+                                        à carga viral (CV), de
+                                        forma
+                                        interdisciplinar com
+                                        equipe e
+                                        infectologista.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item32" onclick="animacao.toggleAccordion('item32', 'grupo3')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Sífilis</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>
+                                        <b>Forma de
+                                            Apresentação:</b><br>
+                                        Úlceras indolores com
+                                        bordas irregulares e
+                                        esbranquiçadas (cancro
+                                        duro), placas
+                                        mucosas, lesões
+                                        granulomatosas (goma),
+                                        glossite intersticial.
+                                    </p>
+                                    <p>
+                                        <b>Como manejar:</b><br>
+                                        Identificar sífilis
+                                        primária, secundária ou
+                                        terciária pelas
+                                        características da
+                                        lesão, associado a
+                                        exames sorológicos
+                                        (teste rápido e/ou VDRL)
+                                        para diagnóstico e forma
+                                        interdisciplinar com
+                                        equipe e
+                                        infectologista.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item33" onclick="animacao.toggleAccordion('item33', 'grupo3')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Tuberculose</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>
+                                        <b>Forma de
+                                            Apresentação:</b><br>
+                                        Úlceras crônicas, dolorosas, geralmente na língua. Na análise histológica,
+                                        percebe-se inflamações crônicas granulomatosas.
+                                    </p>
+                                    <p>
+                                        <b>Como manejar:</b><br>
+                                        Orienta-se a biópsia incisional para exame anatomopatológico de forma
+                                        concomitante
+                                        com o exame de baciloscopia.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="border-b border-[var(--primary)]">
+                                <button id="item34" onclick="animacao.toggleAccordion('item34', 'grupo3')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Hepatite B e C</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>
+                                        <b>Forma de
+                                            Apresentação:</b><br>
+                                        Petéquias, gengivite, líquen plano e síndrome de Sjögren (alteração salivar).
+                                    </p>
+                                    <p>
+                                        <b>Como manejar:</b><br>
+                                        Relacionar as lesões com sintomatologia prévia, uma vez que as lesões
+                                        extra-hepáticas tendem a aparecer após
+                                        comprometimento do fígado. Compartilhamento com equipe para possível tratamento
+                                        com
+                                        antiviral.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="item35" onclick="animacao.toggleAccordion('item35', 'grupo3')"
+                                    class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                    <span class="font-bold text-xl px-5">Herpes Simples</span>
+                                    <svg class="w-5 h-5 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                    <p>
+                                        <b>Forma de
+                                            Apresentação:</b><br>
+                                        Vesículas dolorosas, úlceras labiais e intraorais.
+                                    </p>
+                                    <p>
+                                        <b>Como manejar:</b><br>
+                                        Manejo odontológico para aplicação tópica de aciclovir. Em casos mais graves ou
+                                        recorrentes de herpes labial, o
+                                        cirurgião-dentista pode prescrever comprimidos de aciclovir para uso oral.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <small>
+                            Fonte: Neville (2016).
+                        </small>
+                    </div>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    5.2.2 Doenças crônicas não transmissíveis
+                </h3>
+                <p>
+                    No contexto do sistema prisional, as doenças crônicas não transmissíveis (DCNTs) se impõem como um
+                    desafio complexo à
+                    promoção da saúde bucal. Será que estamos, de fato, atentos às repercussões dessas doenças na
+                    cavidade
+                    oral? Muitas
+                    dessas condições, embora amplamente conhecidas, ainda são subdiagnosticadas ou mesmo negligenciadas
+                    nesse ambiente, em
+                    que o acesso à saúde é frequentemente limitado e as prioridades clínicas nem sempre incluem a
+                    avaliação
+                    bucal. Buscando
+                    compreender melhor esse cenário, iremos analisar alguns agravos comuns à população privada de
+                    liberdade:
+                </p>
                 <div>
                     <p class="text-center pb-3">
                         <small>Clique para interagir</small>
                     </p>
-                    <div id="grupo3" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                    <div id="grupo4" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
                         <div class="border-b border-[var(--primary)]">
-                            <button id="item31" onclick="animacao.toggleAccordion('item31', 'grupo3')"
+                            <button id="item41" onclick="animacao.toggleAccordion('item41', 'grupo4')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">HIV/AIDS</span>
+                                <span class="font-bold text-xl px-5">Diabetes mellitus (DM):</span>
                                 <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1443,116 +1694,20 @@
                             </button>
                             <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
                                 <p>
-                                    <b>Forma de
-                                        Apresentação:</b><br>
-                                    Candidíase oral,
-                                    leucoplasia pilosa,
-                                    úlceras herpéticas,
-                                    sarcoma de Kaposi.
-                                </p>
-                                <p>
-                                    <b>Como manejar:</b><br>
-                                    Relacionar as lesões ao
-                                    número de células CD4+ e
-                                    à carga viral (CV), de
-                                    forma
-                                    interdisciplinar com
-                                    equipe e
-                                    infectologista.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="border-b border-[var(--primary)]">
-                            <button id="item32" onclick="animacao.toggleAccordion('item32', 'grupo3')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Sífilis</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>
-                                    <b>Forma de
-                                        Apresentação:</b><br>
-                                    Úlceras indolores com
-                                    bordas irregulares e
-                                    esbranquiçadas (cancro
-                                    duro), placas
-                                    mucosas, lesões
-                                    granulomatosas (goma),
-                                    glossite intersticial.
-                                </p>
-                                <p>
-                                    <b>Como manejar:</b><br>
-                                    Identificar sífilis
-                                    primária, secundária ou
-                                    terciária pelas
-                                    características da
-                                    lesão, associado a
-                                    exames sorológicos
-                                    (teste rápido e/ou VDRL)
-                                    para diagnóstico e forma
-                                    interdisciplinar com
-                                    equipe e
-                                    infectologista.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="border-b border-[var(--primary)]">
-                            <button id="item33" onclick="animacao.toggleAccordion('item33', 'grupo3')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Tuberculose</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>
-                                    <b>Forma de
-                                        Apresentação:</b><br>
-                                    Úlceras crônicas, dolorosas, geralmente na língua. Na análise histológica,
-                                    percebe-se inflamações crônicas granulomatosas.
-                                </p>
-                                <p>
-                                    <b>Como manejar:</b><br>
-                                    Orienta-se a biópsia incisional para exame anatomopatológico de forma concomitante
-                                    com o exame de baciloscopia.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="border-b border-[var(--primary)]">
-                            <button id="item34" onclick="animacao.toggleAccordion('item34', 'grupo3')"
-                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Hepatite B e C</span>
-                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                                <p>
-                                    <b>Forma de
-                                        Apresentação:</b><br>
-                                    Petéquias, gengivite, líquen plano e síndrome de Sjögren (alteração salivar).
-                                </p>
-                                <p>
-                                    <b>Como manejar:</b><br>
-                                    Relacionar as lesões com sintomatologia prévia, uma vez que as lesões
-                                    extra-hepáticas tendem a aparecer após
-                                    comprometimento do fígado. Compartilhamento com equipe para possível tratamento com
-                                    antiviral.
+                                    A DM é uma doença associada a manifestações como xerostomia, infecções fúngicas
+                                    recorrentes, doença periodontal severa e comprometimento na cicatrização (Taveras et
+                                    al., 2025). É importante que, ao avaliarmos o paciente, nos questionemos se essas
+                                    alterações podem ser reconhecidas como sinais de um descontrole glicêmico. Será que
+                                    os
+                                    profissionais de saúde bucal que atuam em instituições penais estão capacitados para
+                                    identificar esses indícios precocemente e agir de forma integrada com a eAPP?
                                 </p>
                             </div>
                         </div>
                         <div>
-                            <button id="item35" onclick="animacao.toggleAccordion('item35', 'grupo3')"
+                            <button id="item42" onclick="animacao.toggleAccordion('item42', 'grupo4')"
                                 class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                                <span class="font-bold text-xl px-5">Herpes Simples</span>
+                                <span class="font-bold text-xl px-5">Hipertensão arterial sistêmica (HAS):</span>
                                 <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1561,148 +1716,92 @@
                             </button>
                             <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
                                 <p>
-                                    <b>Forma de
-                                        Apresentação:</b><br>
-                                    Vesículas dolorosas, úlceras labiais e intraorais.
-                                </p>
-                                <p>
-                                    <b>Como manejar:</b><br>
-                                    Manejo odontológico para aplicação tópica de aciclovir. Em casos mais graves ou
-                                    recorrentes de herpes labial, o
-                                    cirurgião-dentista pode prescrever comprimidos de aciclovir para uso oral.
+                                    A HAS não costuma provocar sintomas orais diretamente, mas seu tratamento pode
+                                    ocasionar
+                                    um quadro comum de hiperplasia gengival medicamentosa devido ao uso contínuo de
+                                    medicamentos como os bloqueadores dos canais de cálcio, por isso é tão importante
+                                    que o
+                                    cirurgião-dentista esteja atento ao histórico médico do paciente, podendo intervir
+                                    quando identificar essa condição (Kumar <i>et al</i>., 2012).
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <small>
-                        Fonte: Neville (2016).
-                    </small>
                 </div>
-            </div>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                5.2.2 Doenças crônicas não transmissíveis
-            </h3>
-            <p>
-                No contexto do sistema prisional, as doenças crônicas não transmissíveis (DCNTs) se impõem como um
-                desafio complexo à
-                promoção da saúde bucal. Será que estamos, de fato, atentos às repercussões dessas doenças na cavidade
-                oral? Muitas
-                dessas condições, embora amplamente conhecidas, ainda são subdiagnosticadas ou mesmo negligenciadas
-                nesse ambiente, em
-                que o acesso à saúde é frequentemente limitado e as prioridades clínicas nem sempre incluem a avaliação
-                bucal. Buscando
-                compreender melhor esse cenário, iremos analisar alguns agravos comuns à população privada de liberdade:
-            </p>
-            <div>
-                <p class="text-center pb-3">
-                    <small>Clique para interagir</small>
+                <p>
+                    O uso contínuo de psicotrópicos, comum entre PPL devido ao sofrimento psíquico agravado pelo
+                    isolamento,
+                    também pode causar alterações bucais, como bruxismo, xerostomia, cáries extensas e lesões
+                    autoinduzidas,
+                    exigindo suporte adequado para manutenção da saúde bucal. Além disso, o uso abusivo de álcool,
+                    tabaco e
+                    drogas ilícitas, frequente no ambiente prisional, eleva o risco de ocorrência de doenças
+                    periodontais e
+                    lesões orais potencialmente malignas, como leucoplasias e eritroplasias, além de aumentar o número
+                    de
+                    casos de hepatites não virais (Rodrigues; Souza, 2021), reforçando a necessidade de ações
+                    preventivas e
+                    de cuidado integral.
                 </p>
-                <div id="grupo4" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item41" onclick="animacao.toggleAccordion('item41', 'grupo4')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Diabetes mellitus (DM):</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                A DM é uma doença associada a manifestações como xerostomia, infecções fúngicas
-                                recorrentes, doença periodontal severa e comprometimento na cicatrização (Taveras et
-                                al., 2025). É importante que, ao avaliarmos o paciente, nos questionemos se essas
-                                alterações podem ser reconhecidas como sinais de um descontrole glicêmico. Será que os
-                                profissionais de saúde bucal que atuam em instituições penais estão capacitados para
-                                identificar esses indícios precocemente e agir de forma integrada com a eAPP?
-                            </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais6')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba
+                            mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais6" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
                         </div>
-                    </div>
-                    <div>
-                        <button id="item42" onclick="animacao.toggleAccordion('item42', 'grupo4')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Hipertensão arterial sistêmica (HAS):</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                        <div class="modal-body md flex flex-col gap-4">
                             <p>
-                                A HAS não costuma provocar sintomas orais diretamente, mas seu tratamento pode ocasionar
-                                um quadro comum de hiperplasia gengival medicamentosa devido ao uso contínuo de
-                                medicamentos como os bloqueadores dos canais de cálcio, por isso é tão importante que o
-                                cirurgião-dentista esteja atento ao histórico médico do paciente, podendo intervir
-                                quando identificar essa condição (Kumar <i>et al</i>., 2012).
+                                <b>Título: </b><i>Doenças infecciosas com Manifestação Oral-Live UEPB</i>
                             </p>
+                            <p>
+                                <b>Autora: </b>Rede Nordestina de Diagnóstico Oral RENDO (2018).
+                            </p>
+                            <p>
+                                <b>Palestrante:</b> Prof. Dr. Paulo Bonan
+                            </p>
+                            <p>
+                                <b>Descrição: </b> para aprofundar seus conhecimentos, recomendamos que assista a essa
+                                webaula, que aborda as principais doenças infecciosas que podem se manifestar na
+                                cavidade
+                                oral, detalhando como identificar sinais e sintomas típicos dessas condições. O conteúdo
+                                explora desde infecções virais, bacterianas e fúngicas até doenças sistêmicas que podem
+                                ter
+                                repercussões orais. A aula também discute estratégias de diagnóstico precoce,
+                                tratamentos
+                                eficazes e a importância da atenção integral para pacientes com essas manifestações,
+                                proporcionando uma abordagem abrangente e prática para profissionais de saúde bucal.
+                            </p>
+                            <p>
+                                <b>Duração: </b>2:06:11 horas.
+                            </p>
+                            <video class="link" width="600" controls>
+                                <source src="./media/Media_y1F0_O8eIBA_001_480p.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeo.
+                            </video>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais6')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <p>
-                O uso contínuo de psicotrópicos, comum entre PPL devido ao sofrimento psíquico agravado pelo isolamento,
-                também pode causar alterações bucais, como bruxismo, xerostomia, cáries extensas e lesões autoinduzidas,
-                exigindo suporte adequado para manutenção da saúde bucal. Além disso, o uso abusivo de álcool, tabaco e
-                drogas ilícitas, frequente no ambiente prisional, eleva o risco de ocorrência de doenças periodontais e
-                lesões orais potencialmente malignas, como leucoplasias e eritroplasias, além de aumentar o número de
-                casos de hepatites não virais (Rodrigues; Souza, 2021), reforçando a necessidade de ações preventivas e
-                de cuidado integral.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais6')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba
-                        mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais6" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título: </b><i>Doenças infecciosas com Manifestação Oral-Live UEPB</i>
-                        </p>
-                        <p>
-                            <b>Autora: </b>Rede Nordestina de Diagnóstico Oral RENDO (2018).
-                        </p>
-                        <p>
-                            <b>Palestrante:</b> Prof. Dr. Paulo Bonan
-                        </p>
-                        <p>
-                            <b>Descrição: </b> para aprofundar seus conhecimentos, recomendamos que assista a essa
-                            webaula, que aborda as principais doenças infecciosas que podem se manifestar na cavidade
-                            oral, detalhando como identificar sinais e sintomas típicos dessas condições. O conteúdo
-                            explora desde infecções virais, bacterianas e fúngicas até doenças sistêmicas que podem ter
-                            repercussões orais. A aula também discute estratégias de diagnóstico precoce, tratamentos
-                            eficazes e a importância da atenção integral para pacientes com essas manifestações,
-                            proporcionando uma abordagem abrangente e prática para profissionais de saúde bucal.
-                        </p>
-                        <p>
-                            <b>Duração: </b>2:06:11 horas.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link" href="https://www.youtube.com/watch?v=y1F0_O8eIBA"
-                                target="_blank">https://www.youtube.com/watch?v=y1F0_O8eIBA</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais6')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
+        </div>
+
+        <div id="5.3" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.3 Fluxos de encaminhamento e ampliação do acesso na Rede de Atenção à Saúde Bucal
             </h2>
             <p>
@@ -1721,7 +1820,7 @@
                 2024). Na Figura 1, apresentamos os fluxos envolvidos na consolidação da RASB.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 1 - Fluxograma da Rede de Atenção à Saúde Bucal
             </h3>
             <div>
@@ -1752,7 +1851,7 @@
                 detalhar essas estratégias, pois são elas que farão a diferença no dia a dia.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.3.1 Cuidado Compartilhado
             </h3>
             <p>
@@ -1778,7 +1877,7 @@
                 em sintonia com os demais serviços e assegurar um cuidado coordenado, contínuo e sem falhas.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 2 - Estrutura de um protocolo de acesso eficaz
             </h3>
             <div>
@@ -1842,7 +1941,7 @@
                 Fonte: Brasil (2008).
             </small>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.3.2 Educação Permanente em Saúde
             </h3>
             <p>
@@ -1882,14 +1981,17 @@
                 fortalece o trabalho em
                 equipe e assegura que o direito à saúde seja garantido de maneira organizada e respeitosa.
             </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
-                Figura 3 - Organização da Educação Permanente em saúde bucal
-            </h3>
-            <small>Fonte: Almeida <i>et al</i>. (2022).</small>
         </div>
 
-        <div id="timeline" class="bg-gray-100 py-10">
+        <div id="timeline" class="bg-[var(--primary)] py-10">
+            <div class="max-w-[1000px] mx-auto p-5 md:p-10">
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-image text-black mr-2"></i>
+                    Figura 3 - Organização da Educação Permanente em saúde bucal
+                </h3>
+                <small>Fonte: Almeida <i>et al</i>. (2022).</small>
+            </div>
+
             <div class="timeline max-w-[1000px] px-5 mx-auto flex flex-col gap-10 md:gap-20">
                 <div class="timeline-item shadow-xl p-5 md:p-10 border-l-4 border-[var(--primary)] rounded-md bg-white">
                     <h2 class="font-bold mb-5 text-2xl">
@@ -1965,14 +2067,13 @@
                 </div>
 
             </div>
-
         </div>
 
-        <div id="exercicio_fixacao" class="bg-gray-100 py-10">
+        <div id="exercicio_fixacao" class="bg-white py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
-                    gt8 - Caso Clínico
+                    <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
+                    Caso Clínico
                 </h2>
                 <p>
                     Antônio, homem, 58 anos, branco, diabético, pessoa privada de liberdade (PPL) é encaminhado à equipe
@@ -1995,7 +2096,7 @@
                     mastigação, a estética,
                     o estado nutricional e o bem-estar psicossocial do paciente.
                 </p>
-                <div class="bg-white w-full max-w-3xl mx-auto p-8 rounded-lg shadow-md">
+                <div class="bg-gray-100 w-full max-w-3xl mx-auto p-8 rounded-lg shadow-md">
                     <h2 class="text-xl font-semibold mb-4">
                         Pergunta: Qual conduta a equipe deve adotar para o manejo inicial do caso de Antônio?
                     </h2>
@@ -2048,7 +2149,7 @@
         <div id="encerramento" class="bg-gray-100 py-10">
             <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
                     Encerramento da Unidade
                 </h2>
                 <p>
@@ -2160,112 +2261,32 @@
             </div>
         </div>
 
-        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
-            </h2>
-            <p>
-                BRASIL. Ministério da Saúde.
-                Portaria GM/MS nº 6.213, de 19
-                de dezembro de 2024.
-                Altera a Portaria de
-                Consolidação GM/MS nº 3, de 28
-                de setembro de 2017, para
-                instituir a Rede de
-                Atenção à Saúde
-                Bucal - RASB na Política
-                Nacional de Saúde Bucal - PNSB,
-                no âmbito do Sistema Único de
-                Saúde - SUS.
-                <b>Diário Oficial da União</b>,
-                Brasília, DF, 19 dez. 2024.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt6213_20_12_2024.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt6213_20_12_2024.html
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL.
-                Lei nº 14.572, de 8 de maio de
-                2023.
-                Institui a Política Nacional de
-                Saúde Bucal no âmbito do Sistema
-                Único de Saúde (SUS) e altera a
-                Lei
-                nº
-                8.080, de 19
-                de setembro de 1990, para
-                incluir a saúde bucal no campo
-                de atuação do SUS.
-                <b>Diário Oficial da União</b>,
-                Brasília, DF, 9 maio 2023.
-                Disponível em:
-                <a class="link" href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14572.htm"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14572.htm
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                SERRA, A. E. G.; LIMA, R. C. R.
-                O.
-                Promoção da saúde para pessoas
-                no regime semiaberto do sistema
-                penitenciário: relato de
-                experiência.
-                <b>Saúde em Debate</b>, v. 43,
-                n. 123, p. 1270-1281, 2019.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/sdeb/a/kFW8VvLpwfnXFKsnCMrVCFz/?lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/sdeb/a/kFW8VvLpwfnXFKsnCMrVCFz/?lang=pt
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                SILVA, C. B. et al.
-                Condições bucais de privados de
-                liberdade em um município do
-                sudoeste goiano.
-                <b>Brazilian Journal of
-                    Development</b>, v. 8, n. 3,
-                p. 17965-17978, 2022.
-                Disponível em:
-                <a class="link" href="https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/45110"
-                    target="_blank" rel="noopener noreferrer">
-                    https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/45110
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
+        <div class="py-10" style="background-color: var(--primary)">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-headphones mr-2"></i>
+                    Podcast
+                </h2>
+                <p class="font-bold">Após estudar esse módulo, você pode revisar o conteúdo escutando o nosso podcast. É um bate-papo informal com os principais pontos do conteúdo estudado.</p>
+                <audio controls class="w-full">
+                    <source src="./media/podcast-mod6.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+                <a href="./media/transcricao-podcast-mod5.pdf" target="_blank" class="btn bg-black text-white flex! gap-2 w-fit mx-auto">
+                    <i class="fa-solid fa-file-lines text-xl"></i>
+                    <span class="font-bold my-auto">Ver transcrição</span>
+                </a>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
+            </div>
         </div>
 
-        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências
+                <i class="fa-solid fa-file text-black"></i>
+                Referências principais
             </h2>
-            <p>
-                ALMEIDA, J. R. S. et al.
-                A Política Nacional de Educação
-                Permanente em Saúde e sua
-                relação com a odontologia.
-                <b>Cadernos de Saúde
-                    Coletiva</b>, v. 30, n. 4,
-                p. 507-516, 2022.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/cadsc/a/bJLyFCNYtDb5vJTM75MxVcJ/?lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/cadsc/a/bJLyFCNYtDb5vJTM75MxVcJ/?lang=pt
-                </a>.
-                Acesso em: 25 set. 2025.
-            </p>
-
             <p>
                 BRASIL. Ministério da Saúde.
                 Portaria GM/MS nº 6.213, de 19
@@ -2313,310 +2334,6 @@
             </p>
 
             <p>
-                BRASIL. Ministério da Saúde.
-                Secretaria de Vigilância em
-                Saúde. Secretaria de Atenção à
-                Saúde.
-                <b>Política Nacional de Promoção
-                    da Saúde (PNPS).</b>
-                Brasília: Ministério da Saúde,
-                2018.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf
-                </a>.
-                Acesso em: 25 set. 2025.
-            </p>
-
-            <p>
-                BRASIL. Ministério da Saúde.
-                Ministério da Justiça e
-                Segurança Pública.
-                Portaria Interministerial nº 1,
-                de 2 de janeiro de 2014.
-                Institui a Política Nacional de
-                Atenção Integral à Saúde das
-                Pessoas Privadas de Liberdade no
-                Sistema
-                Prisional
-                (PNAISP) no âmbito do Sistema
-                Único de Saúde (SUS).
-                <b>Diário Oficial da União</b>,
-                Brasília, DF, 3 jan. 2014.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL. Ministério da Saúde.
-                Portaria GM/MS nº 1.559, de 1 de
-                agosto de 2008.
-                Institui a Política Nacional de
-                Regulação do Sistema Único de
-                Saúde - SUS.
-                <b>Diário Oficial da União</b>,
-                Brasília, DF, 4 ago. 2008.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2008/prt1559_01_08_2008.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2008/prt1559_01_08_2008.html
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                CARVALHO, F. F. et al.
-                Conhecimento da população
-                privada de liberdade sobre
-                infecções sexualmente
-                transmissíveis.
-                <b>Revista Gaúcha de
-                    Enfermagem</b>, v. 41,
-                e20190268, 2020.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/rgenf/a/sdJn8Vng4tRBmqJWrYxm3CL/?lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/rgenf/a/sdJn8Vng4tRBmqJWrYxm3CL/?lang=pt
-                </a>.
-                Acesso em: 25 set. 2025.
-            </p>
-
-            <p>
-                COSTA, S. M.; VASCONCELOS, M.;
-                ABREU, M. H. N. G.
-                <b>Ciência & Saúde Coletiva</b>,
-                v. 18, n. 7, p. 1971-1980, 2013.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/csc/a/KcfwMf3GV9CWFN9ddWQHPYC/?format=html&amp;lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/csc/a/KcfwMf3GV9CWFN9ddWQHPYC/?format=html&amp;lang=pt
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                INSTITUTO NACIONAL DE CÂNCER
-                (Brasil).
-                <b>Estimativa 2023</b>:
-                incidência de câncer no Brasil.
-                Rio de Janeiro: INCA, 2022.
-                Disponível em:
-                <a class="link"
-                    href="https://www.inca.gov.br/publicacoes/livros/estimativa-2023-incidencia-de-cancer-no-brasil"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.inca.gov.br/publicacoes/livros/estimativa-2023-incidencia-de-cancer-no-brasil
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                KUMAR, P. et al.
-                Oral manifestations in
-                hypertensive patients: a
-                clinical study.
-                <b>Journal of Oral and
-                    Maxillofacial Pathology</b>,
-                v. 16, n. 2, p. 215-221, 2012.
-                Disponível em:
-                <a class="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424937/" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424937/
-                </a>.
-                Acesso em: 25 set. 2025.
-            </p>
-
-            <p>
-                LIMA, N. S. et al.
-                Public health, racism and
-                dentistry: Analysis of the
-                treatment of the black prison
-                population in the
-                Unified Health
-                System.
-                <b>Research, Society and
-                    Development</b>, v. 10, n.
-                11, e433101119924, 2021.
-                Disponível em:
-                <a class="link" href="https://rsdjournal.org/index.php/rsd/article/view/19924" target="_blank"
-                    rel="noopener noreferrer">
-                    https://rsdjournal.org/index.php/rsd/article/view/19924
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                MANJI, F.; FEJERSKOV, O.
-                Dental Caries in Developing
-                Countries in Relation to the
-                Appropriate Use of Fluoride.
-                <b>Journal of Dental
-                    Research</b>, v. 69, n. 2,
-                supl., p. 733-741, 1990.
-            </p>
-
-            <p>
-                MARTÍNEZ-DÍAZ-CANEL, A. I.;
-                MARTÍN-FERNÁNDEZ, E.;
-                GARCÍA-GONZÁLEZ, M.
-                Oral care in the Spanish prison
-                setting.
-                <b>Revista Espanola de Sanidad
-                    Penitenciaria</b>, v. 26, n.
-                3, p. 113-120, 2024.
-                Disponível em:
-                <a class="link" href="https://www.sanipe.es/OJS/index.php/RESP/article/view/682/1340" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.sanipe.es/OJS/index.php/RESP/article/view/682/1340
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-            <p>
-                MATHEW, P. et al.
-                Cancer in an incarcerated
-                population.
-                <b>Cancer</b>, v. 104, n. 10, p.
-                2197-2204, 2005.
-                Disponível em:
-                <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/16206295/" target="_blank"
-                    rel="noopener noreferrer">
-                    https://pubmed.ncbi.nlm.nih.gov/16206295/
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                MATO GROSSO DO SUL.
-                <b>Diagnóstico da rede de
-                    atenção à saúde bucal e
-                    recomendações para a linha
-                    de cuidado do câncer de
-                    boca.</b>
-                Campo Grande: Ed. dos Autores,
-                2024a.
-                Disponível em:
-                <a class="link"
-                    href="https://docs.bvsalud.org/biblioref/2024/12/1580806/diagnostico-da-rede-de-atencao-a-saude-bucal-e-recomendacoes-p_OxHDs75.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://docs.bvsalud.org/biblioref/2024/12/1580806/diagnostico-da-rede-de-atencao-a-saude-bucal-e-recomendacoes-p_OxHDs75.pdf
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                MATO GROSSO DO SUL.
-                <b>Guia prático:</b> diagnóstico
-                de câncer bucal - passo-a-passo
-                para cirurgiões dentistas.
-                Campo Grande: Ed. dos Autores,
-                2024b.
-                Disponível em:
-                <a class="link"
-                    href="https://docs.bvsalud.org/biblioref/2024/12/1580663/guia-pratico-diagnostico-de-cancer-bucal-passo-a-passo-para-ci_0JL6NfI.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://docs.bvsalud.org/biblioref/2024/12/1580663/guia-pratico-diagnostico-de-cancer-bucal-passo-a-passo-para-ci_0JL6NfI.pdf
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                MELO, E. A. et al.
-                A regulação do acesso à atenção
-                especializada e a Atenção
-                Primária à Saúde nas políticas
-                nacionais
-                do
-                SUS.
-                <b>Physis: Revista de Saúde
-                    Coletiva</b>, v. 31, n. 1,
-                e310109, 2021.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/physis/a/86BXPhTn3CrBcZfDjBs33md/?lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/physis/a/86BXPhTn3CrBcZfDjBs33md/?lang=pt
-                </a>.
-                Acesso em: 25 set. 2025.
-            </p>
-
-            <p>
-                MENDES, E. V.
-                As redes de atenção à saúde.
-                <b>Ciência & Saúde Coletiva</b>,
-                v. 15, n. 5, p. 2297-2305, 2010.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/csc/a/VRzN6vF5MRYdKGMBYgksFwc/?lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/csc/a/VRzN6vF5MRYdKGMBYgksFwc/?lang=pt
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                NEVILLE, B.
-                <b>Patologia Oral e
-                    Maxilofacial.</b>
-                Rio de Janeiro: GEN Guanabara
-                Koogan, 2016.
-            </p>
-
-            <p>
-                REDDY, V. et al.
-                A survey on oral health status
-                and treatment needs of
-                life-imprisoned inmates in
-                central jails of
-                Karnataka, India.
-                <b>International Dental
-                    Journal</b>, v. 62, n. 1, p.
-                27-32, 2012.
-                Disponível em:
-                <a class="link" href="https://www.sciencedirect.com/science/article/pii/S0020653920332020?via%3Dihub"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.sciencedirect.com/science/article/pii/S0020653920332020?via%3Dihub
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                RODRIGUES, D. S.; SOUZA, P. T.
-                R.
-                Lesões bucais associadas a
-                hepatites: algumas delas seriam
-                encontradas nas hepatites
-                autoimunes?
-                <b>Revista Gestão e Saúde</b>,
-                v. 23, n. 1, p. 78-97, 2021.
-                Disponível em:
-                <a class="link"
-                    href="https://www.researchgate.net/publication/352820819_LESOES_BUCAIS_ASSOCIADAS_A_HEPATITES_ALGUMAS_DELAS_SERIAM_ENCONTRADAS_NAS_HEPATITES_AUTOIMUNES"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.researchgate.net/publication/352820819_LESOES_BUCAIS_ASSOCIADAS_A_HEPATITES_ALGUMAS_DELAS_SERIAM_ENCONTRADAS_NAS_HEPATITES_AUTOIMUNES
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                SANTOS, L. C. O.; BATISTA, O.
-                M.; CANGUSSU, M. C. T.
-                Caracterização do diagnóstico
-                tardio do câncer de boca no
-                estado de Alagoas.
-                <b>Brazilian Journal of
-                    Otorhinolaryngology</b>, v.
-                76, n. 4, p. 416-422, 2010.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/bjorl/a/CdBpdKTbRWWgYrTjb7dyCNH/?lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/bjorl/a/CdBpdKTbRWWgYrTjb7dyCNH/?lang=pt
-                </a>.
-                Acesso em: 25 set. 2025.
-            </p>
-
-            <p>
                 SERRA, A. E. G.; LIMA, R. C. R.
                 O.
                 Promoção da saúde para pessoas
@@ -2645,184 +2362,560 @@
                 <a class="link" href="https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/45110"
                     target="_blank" rel="noopener noreferrer">
                     https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/45110
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                SOUSA, J. L. et al.
-                Posição socioeconômica e
-                autoavaliação da saúde bucal no
-                Brasil: resultados da Pesquisa
-                Nacional de
-                Saúde.
-                <b>Cadernos de Saúde
-                    Pública</b>, v. 35, n. 6,
-                e00099518, 2019.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/csp/a/J3GLgTCzghjCnwXydDcDRTv/abstract/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/csp/a/J3GLgTCzghjCnwXydDcDRTv/abstract/?lang=pt
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                STEFFENS, J. P.; MARCANTONIO, R.
-                A. C.
-                Classificação das Doenças e
-                Condições Periodontais e
-                Peri-implantares 2018: guia
-                prático e
-                pontos-chave.
-                <b>Revista de Odontologia da
-                    UNESP</b>, v. 47, n. 4, p.
-                189-197, 2018.
-                Disponível em:
-                <a class="link" href="https://www.scielo.br/j/rounesp/a/F9F6gnVnNm6hFt6MBrJ6dHC/?format=pdf&lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/rounesp/a/F9F6gnVnNm6hFt6MBrJ6dHC/?format=pdf&lang=pt
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                TAVERAS, I. D. L. et al.
-                Manifestações orofaciais em
-                pessoas com diabetes mellitus:
-                revisão integrativa.
-                <b>Revista Observatorio de la
-                    Economía
-                    Latinoamericana</b>, v. 23,
-                n. 2, e8948, 2025.
-                Disponível em:
-                <a class="link" href="https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/8948"
-                    target="_blank" rel="noopener noreferrer">
-                    https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/8948
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                THETAKALA, R. K. et al.
-                Bruxism and Oral Health-Related
-                Quality of Life Among Male
-                Inmates in a Penal Institution,
-                Mysore: A
-                Cross-Sectional
-                Study.
-                <b>Indian Journal of Dental
-                    Research</b>, v. 29, n. 3,
-                p. 275-279, 2018.
-                Disponível em:
-                <a class="link"
-                    href="https://journals.lww.com/ijdr/fulltext/2018/29030/bruxism_and_oral_health_related_quality_of_life.5.aspx"
-                    target="_blank" rel="noopener noreferrer">
-                    https://journals.lww.com/ijdr/fulltext/2018/29030/bruxism_and_oral_health_related_quality_of_life.5.aspx
-                </a>.
-                Acesso em: 20 ago. 2025.
-            </p>
-
-            <p>
-                ULINSKI, S. L. V. et al.
-                Profile of oral cancer cases
-                treated in a high-complexity
-                oncology center.
-                <b>Research, Society and
-                    Development</b>, v. 10, n.
-                11, e558101119929, 2021.
-                Disponível em:
-                <a class="link" href="https://rsdjournal.org/index.php/rsd/article/view/19929" target="_blank"
-                    rel="noopener noreferrer">
-                    https://rsdjournal.org/index.php/rsd/article/view/19929
                 </a>.
                 Acesso em: 20 ago. 2025.
             </p>
         </div>
 
         <div class="bg-gray-100 py-10">
-            <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
-                <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo da Autora
-                </h1>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-1/3">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/giovana.jpg"
-                            alt="Giovana Soares Buzinaro" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Giovana
-                                Soares
-                                Buzinaro</small>
-                            <hr />
-                        </div>
+            <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências
+                </h2>
+                <p>
+                    ALMEIDA, J. R. S. et al.
+                    A Política Nacional de Educação
+                    Permanente em Saúde e sua
+                    relação com a odontologia.
+                    <b>Cadernos de Saúde
+                        Coletiva</b>, v. 30, n. 4,
+                    p. 507-516, 2022.
+                    Disponível em:
+                    <a class="link" href="https://www.scielo.br/j/cadsc/a/bJLyFCNYtDb5vJTM75MxVcJ/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/cadsc/a/bJLyFCNYtDb5vJTM75MxVcJ/?lang=pt
+                    </a>.
+                    Acesso em: 25 set. 2025.
+                </p>
+
+                <p>
+                    BRASIL. Ministério da Saúde.
+                    Secretaria de Vigilância em
+                    Saúde. Secretaria de Atenção à
+                    Saúde.
+                    <b>Política Nacional de Promoção
+                        da Saúde (PNPS).</b>
+                    Brasília: Ministério da Saúde,
+                    2018.
+                    Disponível em:
+                    <a class="link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_promocao_saude.pdf
+                    </a>.
+                    Acesso em: 25 set. 2025.
+                </p>
+
+                <p>
+                    BRASIL. Ministério da Saúde.
+                    Ministério da Justiça e
+                    Segurança Pública.
+                    Portaria Interministerial nº 1,
+                    de 2 de janeiro de 2014.
+                    Institui a Política Nacional de
+                    Atenção Integral à Saúde das
+                    Pessoas Privadas de Liberdade no
+                    Sistema
+                    Prisional
+                    (PNAISP) no âmbito do Sistema
+                    Único de Saúde (SUS).
+                    <b>Diário Oficial da União</b>,
+                    Brasília, DF, 3 jan. 2014.
+                    Disponível em:
+                    <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    BRASIL. Ministério da Saúde.
+                    Portaria GM/MS nº 1.559, de 1 de
+                    agosto de 2008.
+                    Institui a Política Nacional de
+                    Regulação do Sistema Único de
+                    Saúde - SUS.
+                    <b>Diário Oficial da União</b>,
+                    Brasília, DF, 4 ago. 2008.
+                    Disponível em:
+                    <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2008/prt1559_01_08_2008.html"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2008/prt1559_01_08_2008.html
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    CARVALHO, F. F. et al.
+                    Conhecimento da população
+                    privada de liberdade sobre
+                    infecções sexualmente
+                    transmissíveis.
+                    <b>Revista Gaúcha de
+                        Enfermagem</b>, v. 41,
+                    e20190268, 2020.
+                    Disponível em:
+                    <a class="link" href="https://www.scielo.br/j/rgenf/a/sdJn8Vng4tRBmqJWrYxm3CL/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/rgenf/a/sdJn8Vng4tRBmqJWrYxm3CL/?lang=pt
+                    </a>.
+                    Acesso em: 25 set. 2025.
+                </p>
+
+                <p>
+                    COSTA, S. M.; VASCONCELOS, M.;
+                    ABREU, M. H. N. G.
+                    <b>Ciência & Saúde Coletiva</b>,
+                    v. 18, n. 7, p. 1971-1980, 2013.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.scielo.br/j/csc/a/KcfwMf3GV9CWFN9ddWQHPYC/?format=html&amp;lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/csc/a/KcfwMf3GV9CWFN9ddWQHPYC/?format=html&amp;lang=pt
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    INSTITUTO NACIONAL DE CÂNCER
+                    (Brasil).
+                    <b>Estimativa 2023</b>:
+                    incidência de câncer no Brasil.
+                    Rio de Janeiro: INCA, 2022.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.inca.gov.br/publicacoes/livros/estimativa-2023-incidencia-de-cancer-no-brasil"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.inca.gov.br/publicacoes/livros/estimativa-2023-incidencia-de-cancer-no-brasil
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    KUMAR, P. et al.
+                    Oral manifestations in
+                    hypertensive patients: a
+                    clinical study.
+                    <b>Journal of Oral and
+                        Maxillofacial Pathology</b>,
+                    v. 16, n. 2, p. 215-221, 2012.
+                    Disponível em:
+                    <a class="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424937/" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424937/
+                    </a>.
+                    Acesso em: 25 set. 2025.
+                </p>
+
+                <p>
+                    LIMA, N. S. et al.
+                    Public health, racism and
+                    dentistry: Analysis of the
+                    treatment of the black prison
+                    population in the
+                    Unified Health
+                    System.
+                    <b>Research, Society and
+                        Development</b>, v. 10, n.
+                    11, e433101119924, 2021.
+                    Disponível em:
+                    <a class="link" href="https://rsdjournal.org/index.php/rsd/article/view/19924" target="_blank"
+                        rel="noopener noreferrer">
+                        https://rsdjournal.org/index.php/rsd/article/view/19924
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    MANJI, F.; FEJERSKOV, O.
+                    Dental Caries in Developing
+                    Countries in Relation to the
+                    Appropriate Use of Fluoride.
+                    <b>Journal of Dental
+                        Research</b>, v. 69, n. 2,
+                    supl., p. 733-741, 1990.
+                </p>
+
+                <p>
+                    MARTÍNEZ-DÍAZ-CANEL, A. I.;
+                    MARTÍN-FERNÁNDEZ, E.;
+                    GARCÍA-GONZÁLEZ, M.
+                    Oral care in the Spanish prison
+                    setting.
+                    <b>Revista Espanola de Sanidad
+                        Penitenciaria</b>, v. 26, n.
+                    3, p. 113-120, 2024.
+                    Disponível em:
+                    <a class="link" href="https://www.sanipe.es/OJS/index.php/RESP/article/view/682/1340"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.sanipe.es/OJS/index.php/RESP/article/view/682/1340
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+                <p>
+                    MATHEW, P. et al.
+                    Cancer in an incarcerated
+                    population.
+                    <b>Cancer</b>, v. 104, n. 10, p.
+                    2197-2204, 2005.
+                    Disponível em:
+                    <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/16206295/" target="_blank"
+                        rel="noopener noreferrer">
+                        https://pubmed.ncbi.nlm.nih.gov/16206295/
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    MATO GROSSO DO SUL.
+                    <b>Diagnóstico da rede de
+                        atenção à saúde bucal e
+                        recomendações para a linha
+                        de cuidado do câncer de
+                        boca.</b>
+                    Campo Grande: Ed. dos Autores,
+                    2024a.
+                    Disponível em:
+                    <a class="link"
+                        href="https://docs.bvsalud.org/biblioref/2024/12/1580806/diagnostico-da-rede-de-atencao-a-saude-bucal-e-recomendacoes-p_OxHDs75.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://docs.bvsalud.org/biblioref/2024/12/1580806/diagnostico-da-rede-de-atencao-a-saude-bucal-e-recomendacoes-p_OxHDs75.pdf
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    MATO GROSSO DO SUL.
+                    <b>Guia prático:</b> diagnóstico
+                    de câncer bucal - passo-a-passo
+                    para cirurgiões dentistas.
+                    Campo Grande: Ed. dos Autores,
+                    2024b.
+                    Disponível em:
+                    <a class="link"
+                        href="https://docs.bvsalud.org/biblioref/2024/12/1580663/guia-pratico-diagnostico-de-cancer-bucal-passo-a-passo-para-ci_0JL6NfI.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://docs.bvsalud.org/biblioref/2024/12/1580663/guia-pratico-diagnostico-de-cancer-bucal-passo-a-passo-para-ci_0JL6NfI.pdf
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    MELO, E. A. et al.
+                    A regulação do acesso à atenção
+                    especializada e a Atenção
+                    Primária à Saúde nas políticas
+                    nacionais
+                    do
+                    SUS.
+                    <b>Physis: Revista de Saúde
+                        Coletiva</b>, v. 31, n. 1,
+                    e310109, 2021.
+                    Disponível em:
+                    <a class="link" href="https://www.scielo.br/j/physis/a/86BXPhTn3CrBcZfDjBs33md/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/physis/a/86BXPhTn3CrBcZfDjBs33md/?lang=pt
+                    </a>.
+                    Acesso em: 25 set. 2025.
+                </p>
+
+                <p>
+                    MENDES, E. V.
+                    As redes de atenção à saúde.
+                    <b>Ciência & Saúde Coletiva</b>,
+                    v. 15, n. 5, p. 2297-2305, 2010.
+                    Disponível em:
+                    <a class="link" href="https://www.scielo.br/j/csc/a/VRzN6vF5MRYdKGMBYgksFwc/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/csc/a/VRzN6vF5MRYdKGMBYgksFwc/?lang=pt
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    NEVILLE, B.
+                    <b>Patologia Oral e
+                        Maxilofacial.</b>
+                    Rio de Janeiro: GEN Guanabara
+                    Koogan, 2016.
+                </p>
+
+                <p>
+                    REDDY, V. et al.
+                    A survey on oral health status
+                    and treatment needs of
+                    life-imprisoned inmates in
+                    central jails of
+                    Karnataka, India.
+                    <b>International Dental
+                        Journal</b>, v. 62, n. 1, p.
+                    27-32, 2012.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.sciencedirect.com/science/article/pii/S0020653920332020?via%3Dihub"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.sciencedirect.com/science/article/pii/S0020653920332020?via%3Dihub
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    RODRIGUES, D. S.; SOUZA, P. T.
+                    R.
+                    Lesões bucais associadas a
+                    hepatites: algumas delas seriam
+                    encontradas nas hepatites
+                    autoimunes?
+                    <b>Revista Gestão e Saúde</b>,
+                    v. 23, n. 1, p. 78-97, 2021.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.researchgate.net/publication/352820819_LESOES_BUCAIS_ASSOCIADAS_A_HEPATITES_ALGUMAS_DELAS_SERIAM_ENCONTRADAS_NAS_HEPATITES_AUTOIMUNES"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.researchgate.net/publication/352820819_LESOES_BUCAIS_ASSOCIADAS_A_HEPATITES_ALGUMAS_DELAS_SERIAM_ENCONTRADAS_NAS_HEPATITES_AUTOIMUNES
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    SANTOS, L. C. O.; BATISTA, O.
+                    M.; CANGUSSU, M. C. T.
+                    Caracterização do diagnóstico
+                    tardio do câncer de boca no
+                    estado de Alagoas.
+                    <b>Brazilian Journal of
+                        Otorhinolaryngology</b>, v.
+                    76, n. 4, p. 416-422, 2010.
+                    Disponível em:
+                    <a class="link" href="https://www.scielo.br/j/bjorl/a/CdBpdKTbRWWgYrTjb7dyCNH/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/bjorl/a/CdBpdKTbRWWgYrTjb7dyCNH/?lang=pt
+                    </a>.
+                    Acesso em: 25 set. 2025.
+                </p>
+
+                <p>
+                    SOUSA, J. L. et al.
+                    Posição socioeconômica e
+                    autoavaliação da saúde bucal no
+                    Brasil: resultados da Pesquisa
+                    Nacional de
+                    Saúde.
+                    <b>Cadernos de Saúde
+                        Pública</b>, v. 35, n. 6,
+                    e00099518, 2019.
+                    Disponível em:
+                    <a class="link" href="https://www.scielo.br/j/csp/a/J3GLgTCzghjCnwXydDcDRTv/abstract/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/csp/a/J3GLgTCzghjCnwXydDcDRTv/abstract/?lang=pt
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    STEFFENS, J. P.; MARCANTONIO, R.
+                    A. C.
+                    Classificação das Doenças e
+                    Condições Periodontais e
+                    Peri-implantares 2018: guia
+                    prático e
+                    pontos-chave.
+                    <b>Revista de Odontologia da
+                        UNESP</b>, v. 47, n. 4, p.
+                    189-197, 2018.
+                    Disponível em:
+                    <a class="link" href="https://www.scielo.br/j/rounesp/a/F9F6gnVnNm6hFt6MBrJ6dHC/?format=pdf&lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/rounesp/a/F9F6gnVnNm6hFt6MBrJ6dHC/?format=pdf&lang=pt
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    TAVERAS, I. D. L. et al.
+                    Manifestações orofaciais em
+                    pessoas com diabetes mellitus:
+                    revisão integrativa.
+                    <b>Revista Observatorio de la
+                        Economía
+                        Latinoamericana</b>, v. 23,
+                    n. 2, e8948, 2025.
+                    Disponível em:
+                    <a class="link"
+                        href="https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/8948"
+                        target="_blank" rel="noopener noreferrer">
+                        https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/8948
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    THETAKALA, R. K. et al.
+                    Bruxism and Oral Health-Related
+                    Quality of Life Among Male
+                    Inmates in a Penal Institution,
+                    Mysore: A
+                    Cross-Sectional
+                    Study.
+                    <b>Indian Journal of Dental
+                        Research</b>, v. 29, n. 3,
+                    p. 275-279, 2018.
+                    Disponível em:
+                    <a class="link"
+                        href="https://journals.lww.com/ijdr/fulltext/2018/29030/bruxism_and_oral_health_related_quality_of_life.5.aspx"
+                        target="_blank" rel="noopener noreferrer">
+                        https://journals.lww.com/ijdr/fulltext/2018/29030/bruxism_and_oral_health_related_quality_of_life.5.aspx
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+
+                <p>
+                    ULINSKI, S. L. V. et al.
+                    Profile of oral cancer cases
+                    treated in a high-complexity
+                    oncology center.
+                    <b>Research, Society and
+                        Development</b>, v. 10, n.
+                    11, e558101119929, 2021.
+                    Disponível em:
+                    <a class="link" href="https://rsdjournal.org/index.php/rsd/article/view/19929" target="_blank"
+                        rel="noopener noreferrer">
+                        https://rsdjournal.org/index.php/rsd/article/view/19929
+                    </a>.
+                    Acesso em: 20 ago. 2025.
+                </p>
+            </div>
+        </div>
+
+        <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold">
+                Minicurrículo da Autora
+            </h1>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/giovana.jpg"
+                        alt="Giovana Soares Buzinaro" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Giovana
+                            Soares
+                            Buzinaro</small>
+                        <hr />
                     </div>
-                    <div class="w-full md:w-2/3 px-0 md:px-5">
-                        <p>
-                            Cirurgiã-dentista
-                            pela Faculdade de
-                            Odontologia da
-                            Universidade Federal
-                            de Mato Grosso
-                            do
-                            Sul (FAODO/UFMS).
-                            Foi membro
-                            da Liga Nacional
-                            Acadêmica de
-                            Odontopediatria
-                            associada à ABOPed
-                            no ano de 2018.
-                            Especialista em
-                            saúde da família
-                            pela
-                            RMSF - SESAU/FioCruz
-                            (2022). Mestre em
-                            Saúde da Família
-                            (UFMS). Especialista
-                            em
-                            Periodontia
-                            e Implantodontia.
-                            Docente do
-                            Curso de Odontologia
-                            da Uniderp.
-                            Servidora pública
-                            estatutária
-                            estadual.
-                            Coordenadora de
-                            Saúde Bucal em
-                            Secretaria de
-                            Estado de Saúde de
-                            Mato Grosso do Sul
-                            desde 2023.
-                        </p>
-                    </div>
+                </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Cirurgiã-dentista
+                        pela Faculdade de
+                        Odontologia da
+                        Universidade Federal
+                        de Mato Grosso
+                        do
+                        Sul (FAODO/UFMS).
+                        Foi membro
+                        da Liga Nacional
+                        Acadêmica de
+                        Odontopediatria
+                        associada à ABOPed
+                        no ano de 2018.
+                        Especialista em
+                        saúde da família
+                        pela
+                        RMSF - SESAU/FioCruz
+                        (2022). Mestre em
+                        Saúde da Família
+                        (UFMS). Especialista
+                        em
+                        Periodontia
+                        e Implantodontia.
+                        Docente do
+                        Curso de Odontologia
+                        da Uniderp.
+                        Servidora pública
+                        estatutária
+                        estadual.
+                        Coordenadora de
+                        Saúde Bucal em
+                        Secretaria de
+                        Estado de Saúde de
+                        Mato Grosso do Sul
+                        desde 2023.
+                    </p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos
-                reservados. É permitida a
-                reprodução, a
-                disseminação e a utilização
-                desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do
-                ARES. Deve ser citada a
-                fonte e é vedada sua utilização
-                comercial. © 2025.
-                Ministério da Saúde. Fundação
-                Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

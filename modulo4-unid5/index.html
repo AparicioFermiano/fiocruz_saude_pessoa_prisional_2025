@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -349,37 +349,86 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo IV - Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 5 - Saúde Bucal
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 4
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 5 &nbsp;·&nbsp; Saúde Bucal
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -463,21 +512,15 @@
 
         <div id="5.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.1 A inserção da saúde bucal na assistência à saúde no sistema prisional
             </h2>
-        </div>
-
-        <div class="bg-gray-100 py-10">
-            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h3 class="text-3xl md:text-5xl leading-20">
-                    Você já refletiu sobre como as políticas públicas de saúde no Brasil se articulam entre
-                    si?
-                </h3>
-            </div>
-        </div>
-
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                Você já refletiu sobre como as políticas públicas de saúde no Brasil se articulam entre
+                si?
+            </h3>
             <p>
                 A Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                 (PNAISP) é um
@@ -569,234 +612,257 @@
                     </div>
                 </div>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                5.2 Dados referentes a doenças e agravos em saúde bucal e a seus efeitos na saúde da população privada
-                de liberdade
-            </h2>
-            <p>
-                Quando falamos em agravos em saúde bucal, podemos citar diversos fatores que provocam seu surgimento.
-                Tais agravos
-                geralmente levam o paciente a apresentar alguma condição que necessita de uma intervenção odontológica.
-                Existe uma
-                grande demanda por esses serviços no SUS.
-            </p>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div id="5.2" class="bg-gray-100 py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h3 class="text-3xl md:text-5xl leading-20">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    5.2 Dados referentes a doenças e agravos em saúde bucal e a seus efeitos na saúde da população
+                    privada
+                    de liberdade
+                </h2>
+                <p>
+                    Quando falamos em agravos em saúde bucal, podemos citar diversos fatores que provocam seu
+                    surgimento.
+                    Tais agravos
+                    geralmente levam o paciente a apresentar alguma condição que necessita de uma intervenção
+                    odontológica.
+                    Existe uma
+                    grande demanda por esses serviços no SUS.
+                </p>
+                <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                    <span
+                        class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                     <b>Já parou para pensar por que essa demanda é tão elevada e por que é ainda maior entre
                         a
                         população privada de liberdade</b>?
                 </h3>
-            </div>
-        </div>
-
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <p>
-                Estudos associam vulnerabilidade social a maiores índices e gravidade de doenças bucais. Muitas pessoas
-                chegam ao sistema prisional sem nunca terem recebido atendimento odontológico (Kolling; Silva; Sá, 2013;
-                Siqueira et al., 2019).
-            </p>
-            <p>
-                A superlotação das instituições penais representa um dos principais entraves para a atenção em saúde das
-                PPL. Esse
-                cenário gera um descompasso entre o número de PPL e a oferta de serviços, dificultando o acesso a
-                atendimentos
-                regulares. Além disso, fatores como má alimentação, sedentarismo, uso de drogas, tabagismo e a falta de
-                higiene
-                contribuem para agravar o quadro de vulnerabilidade em saúde nesse contexto (Siqueira et al., 2019).
-            </p>
-            <p>
-                O consumo de álcool e drogas, bastante presente no ambiente prisional, provoca sérias repercussões na
-                saúde bucal, como
-                cárie, xerostomia, candidíase, doença periodontal e até lesões cancerígenas (Al Bush, 2019; Rossow,
-                2021). Nesse
-                sentido, uma comparação da realidade do sistema prisional com os achados da pesquisa <i>SB Brasil
-                    2023</i>
-                (Brasil, 2025) é
-                pertinente, pois ela traz dados nacionais relevantes sobre a saúde bucal: a autopercepção da população
-                adulta (35-44
-                anos) sobre a sua saúde bucal, a necessidade de tratamento odontológico, a necessidade de próteses e os
-                impactos nas
-                atividades diárias. A aproximação entre os dados nacionais e a realidade do sistema prisional permite
-                refletir sobre as
-                desigualdades no acesso e a maior vulnerabilidade dessa população.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5 text-center">
-                Dados da SB Brasil 2023 sobre a saúde bucal da população em geral:
-            </h3>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2 px-5">
-                    <img src="./images/autopercepcao.png" alt="Autopercepção" class="block mx-auto">
-                </div>
-                <div class="w-full md:w-1/2 px-5">
-                    <p>
-                        Entre 33% e 46% avaliam sua saúde bucal como “boa”. PE, BA, AL, MS e DF apresentam os maiores
-                        índices de percepção “ruim” e “muito ruim”.
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2 px-5">
-                    <img src="./images/necessidade_tratamento.png" alt="Necessidade de tratamento"
-                        class="block mx-auto">
-                </div>
-                <div class="w-full md:w-1/2 px-5">
-                    <p>
-                        72% afirmam que precisam de atendimento, variando de 57% (SC) a 88% (RN). As principais razões
-                        são prevenção, restaurações e extrações.
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2 px-5">
-                    <img src="./images/necessidade_protese.png" alt="Necessidade de prótese" class="block mx-auto">
-                </div>
-                <div class="w-full md:w-1/2 px-5">
-                    <p>
-                        15% percebem a necessidade de prótese, com destaque para o Norte (26%) e Nordeste (22%).
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2 px-5">
-                    <img src="./images/impacto_atividades.png" alt="Impacto nas atividades diárias"
-                        class="block mx-auto">
-                </div>
-                <div class="w-full md:w-1/2 px-5">
-                    <p>
-                        Mais da metade (51%) relata impactos na rotina, como maior dificuldade para comer, dormir,
-                        sorrir e conviver (Brasil,
-                        2025).
-                    </p>
-                </div>
-            </div>
-            <p>
-                <b>Agora vamos relacionar esses dados aos da saúde bucal no sistema prisional:</b>
-            </p>
-            <p>
-                Os dados da <i>SB Brasil 2023</i> (Brasil, 2025) referentes à população adulta em geral possibilitam uma
-                inferência sobre a
-                situação da saúde bucal no sistema prisional, considerando as vulnerabilidades dessa população:
-            </p>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2 px-2">
-                    <div id="mapa" class="relative">
-                        <small>(clique nos ícones de + para acessar o conteúdo)</small>
-                        <img class="w-full h-full rounded-xl" src="./images/dor-dente.jpeg"
-                            alt="Refoma psiquiátrica e as raps ttrouxeram avançoes essenciais" loading="lazy" />
-                        <button id="tooltip_1" class="botao-flutuante bg-blue-500! font-bold"
-                            style="top: 42%; left: 40%">
-                            +
-                        </button>
-                        <button id="tooltip_2" class="botao-flutuante bg-blue-500! font-bold"
-                            style="top: 50%; left: 42%">
-                            +
-                        </button>
-                        <button id="tooltip_3" class="botao-flutuante bg-blue-500! font-bold"
-                            style="bottom: 50%; right: 18%">
-                            +
-                        </button>
-                        <button id="tooltip_4" class="botao-flutuante bg-blue-500! font-bold"
-                            style="bottom: 34%; right: 5%">
-                            +
-                        </button>
-                        <small>Fonte: elaboração dos autores (2025).</small>
+                <p>
+                    Estudos associam vulnerabilidade social a maiores índices e gravidade de doenças bucais. Muitas
+                    pessoas
+                    chegam ao sistema prisional sem nunca terem recebido atendimento odontológico (Kolling; Silva; Sá,
+                    2013;
+                    Siqueira et al., 2019).
+                </p>
+                <p>
+                    A superlotação das instituições penais representa um dos principais entraves para a atenção em saúde
+                    das
+                    PPL. Esse
+                    cenário gera um descompasso entre o número de PPL e a oferta de serviços, dificultando o acesso a
+                    atendimentos
+                    regulares. Além disso, fatores como má alimentação, sedentarismo, uso de drogas, tabagismo e a falta
+                    de
+                    higiene
+                    contribuem para agravar o quadro de vulnerabilidade em saúde nesse contexto (Siqueira et al., 2019).
+                </p>
+                <p>
+                    O consumo de álcool e drogas, bastante presente no ambiente prisional, provoca sérias repercussões
+                    na
+                    saúde bucal, como
+                    cárie, xerostomia, candidíase, doença periodontal e até lesões cancerígenas (Al Bush, 2019; Rossow,
+                    2021). Nesse
+                    sentido, uma comparação da realidade do sistema prisional com os achados da pesquisa <i>SB Brasil
+                        2023</i>
+                    (Brasil, 2025) é
+                    pertinente, pois ela traz dados nacionais relevantes sobre a saúde bucal: a autopercepção da
+                    população
+                    adulta (35-44
+                    anos) sobre a sua saúde bucal, a necessidade de tratamento odontológico, a necessidade de próteses e
+                    os
+                    impactos nas
+                    atividades diárias. A aproximação entre os dados nacionais e a realidade do sistema prisional
+                    permite
+                    refletir sobre as
+                    desigualdades no acesso e a maior vulnerabilidade dessa população.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5 text-center">
+                    Dados da SB Brasil 2023 sobre a saúde bucal da população em geral:
+                </h3>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-5">
+                        <img src="./images/autopercepcao.png" alt="Autopercepção" class="block mx-auto">
+                    </div>
+                    <div class="w-full md:w-1/2 px-5">
+                        <p>
+                            Entre 33% e 46% avaliam sua saúde bucal como “boa”. PE, BA, AL, MS e DF apresentam os
+                            maiores
+                            índices de percepção “ruim” e “muito ruim”.
+                        </p>
                     </div>
                 </div>
-                <div class="w-full md:w-1/2 px-2 my-auto">
-                    <p>
-                        O índice CPO-D (dentes permanentes cariados, perdidos e obturados) é um dos principais
-                        indicadores da
-                        saúde bucal.
-                        Segundo a Organização Mundial da Saúde (OMS) (Petersen, 2003), seus valores refletem o grau de
-                        severidade dos agravos:
-                        muito baixo (0,0-1,1), baixo (1,2-2,6), moderado (2,7-4,4), alto (4,5-6,5) e muito alto (6,6 ou
-                        mais). A
-                        <i>SB Brasil 2023</i>
-                        (Brasil, 2025) aponta uma média nacional de 10,70 (muito alto) de dentes com experiência de
-                        cárie: cerca
-                        de 5
-                        restaurados, 3 perdidos e o restante ainda com lesão ativa. No AM, 56,20% dos dentes avaliados
-                        foram
-                        considerados
-                        perdidos. A taxa de cárie não tratada atinge 52,74% dos adultos, com o RN apresentando o maior
-                        índice
-                        (74,05%). Agravos
-                        decorrentes da cárie, como lesões pulpares e ulcerações, afetam 18,52%, sendo mais comuns no
-                        Nordeste
-                        (23,59%). As
-                        necessidades mais frequentes são de restaurações e extrações.
-                    </p>
-                    <p>
-                        Estudo de Rocha et al. (2024) sobre mulheres privadas de liberdade revela uma situação crítica.
-                        Na
-                        Penitenciária
-                        Feminina de Patos-PB, o índice CPO-D foi de 15,3, considerado muito elevado, com 23,83% dos
-                        dentes
-                        cariados, 58,43%
-                        perdidos e apenas 17,74% obturados. </p>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-5">
+                        <img src="./images/necessidade_tratamento.png" alt="Necessidade de tratamento"
+                            class="block mx-auto">
+                    </div>
+                    <div class="w-full md:w-1/2 px-5">
+                        <p>
+                            72% afirmam que precisam de atendimento, variando de 57% (SC) a 88% (RN). As principais
+                            razões
+                            são prevenção, restaurações e extrações.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-5">
+                        <img src="./images/necessidade_protese.png" alt="Necessidade de prótese" class="block mx-auto">
+                    </div>
+                    <div class="w-full md:w-1/2 px-5">
+                        <p>
+                            15% percebem a necessidade de prótese, com destaque para o Norte (26%) e Nordeste (22%).
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-5">
+                        <img src="./images/impacto_atividades.png" alt="Impacto nas atividades diárias"
+                            class="block mx-auto">
+                    </div>
+                    <div class="w-full md:w-1/2 px-5">
+                        <p>
+                            Mais da metade (51%) relata impactos na rotina, como maior dificuldade para comer, dormir,
+                            sorrir e conviver (Brasil,
+                            2025).
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    <b>Agora vamos relacionar esses dados aos da saúde bucal no sistema prisional:</b>
+                </p>
+                <p>
+                    Os dados da <i>SB Brasil 2023</i> (Brasil, 2025) referentes à população adulta em geral possibilitam
+                    uma
+                    inferência sobre a
+                    situação da saúde bucal no sistema prisional, considerando as vulnerabilidades dessa população:
+                </p>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-2">
+                        <div id="mapa" class="relative">
+                            <small>Clique nos ícones + para interagir</small>
+                            <img class="w-full h-full rounded-xl" src="./images/dor-dente.jpeg"
+                                alt="Refoma psiquiátrica e as raps ttrouxeram avançoes essenciais" loading="lazy" />
+                            <button id="tooltip_1" class="botao-flutuante bg-blue-500! font-bold"
+                                style="top: 42%; left: 40%">
+                                +
+                            </button>
+                            <button id="tooltip_2" class="botao-flutuante bg-blue-500! font-bold"
+                                style="top: 50%; left: 42%">
+                                +
+                            </button>
+                            <button id="tooltip_3" class="botao-flutuante bg-blue-500! font-bold"
+                                style="bottom: 50%; right: 18%">
+                                +
+                            </button>
+                            <button id="tooltip_4" class="botao-flutuante bg-blue-500! font-bold"
+                                style="bottom: 34%; right: 5%">
+                                +
+                            </button>
+                            <small>Fonte: elaboração dos autores (2025).</small>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-2 my-auto">
+                        <p>
+                            O índice CPO-D (dentes permanentes cariados, perdidos e obturados) é um dos principais
+                            indicadores da
+                            saúde bucal.
+                            Segundo a Organização Mundial da Saúde (OMS) (Petersen, 2003), seus valores refletem o grau
+                            de
+                            severidade dos agravos:
+                            muito baixo (0,0-1,1), baixo (1,2-2,6), moderado (2,7-4,4), alto (4,5-6,5) e muito alto (6,6
+                            ou
+                            mais). A
+                            <i>SB Brasil 2023</i>
+                            (Brasil, 2025) aponta uma média nacional de 10,70 (muito alto) de dentes com experiência de
+                            cárie: cerca
+                            de 5
+                            restaurados, 3 perdidos e o restante ainda com lesão ativa. No AM, 56,20% dos dentes
+                            avaliados
+                            foram
+                            considerados
+                            perdidos. A taxa de cárie não tratada atinge 52,74% dos adultos, com o RN apresentando o
+                            maior
+                            índice
+                            (74,05%). Agravos
+                            decorrentes da cárie, como lesões pulpares e ulcerações, afetam 18,52%, sendo mais comuns no
+                            Nordeste
+                            (23,59%). As
+                            necessidades mais frequentes são de restaurações e extrações.
+                        </p>
+                        <p>
+                            Estudo de Rocha et al. (2024) sobre mulheres privadas de liberdade revela uma situação
+                            crítica.
+                            Na
+                            Penitenciária
+                            Feminina de Patos-PB, o índice CPO-D foi de 15,3, considerado muito elevado, com 23,83% dos
+                            dentes
+                            cariados, 58,43%
+                            perdidos e apenas 17,74% obturados. </p>
 
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <p>
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Você já parou para pensar em uma interna que não consegue se alimentar direito por causa de uma
                     dor
                     de
                     dentes ou até
                     mesmo pela falta deles? Isso não afetaria somente a saúde, mas também a integração social.
+                </h3>
+            </div>
+        </div>
+
+        <div id="5.2.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+                <p>
+                    Quando voltamos os olhos para outros países, podemos observar, em estudos realizados com a população
+                    privada de
+                    liberdade, uma grande variação no índice de CPO-D. Foram encontrados valores elevados na Austrália
+                    (20,4), África do Sul
+                    (15,45) e Inglaterra (14,35), conforme apontado por Osborn, Butler e Barnard (2003), Naidoo,
+                    Yengopal e
+                    Cohen (2005) e
+                    Lunn et al. (2003).
+                </p>
+                <p>
+                    Na avaliação periodontal (gengivas e tecidos de sustentação dos dentes), o cálculo dentário é a
+                    condição
+                    mais comum, afetando 54,13% dos adultos, seguido do sangramento gengival (41,53%). Apenas um terço
+                    dos
+                    pacientes avaliados tem todas as regiões saudáveis, segundo o Índice Periodontal Comunitário (IPC),
+                    e o
+                    cálculo é a pior condição em 33,85%.
+                </p>
+                <p>
+                    Você conseguiu observar o cenário preocupante que essa população enfrenta? A <i>SB Brasil 2023</i>
+                    (Brasil,
+                    2025) nos traz um
+                    quadro preocupante da saúde bucal dos adultos brasileiros, com alta experiência de cárie, muita
+                    cárie
+                    não tratada e
+                    consequências clínicas significativas. A realidade da população em geral não é boa, tendo em vista
+                    que o
+                    CPO-D é 10,70
+                    (muito alto). No entanto, na população privada de liberdade, esse índice é ainda maior devido a
+                    diversos
+                    fatores:
+                    superlotação, que gera um descompasso entre o número de PPL e a oferta de serviços, má alimentação,
+                    sedentarismo, uso de
+                    drogas, tabagismo e falta de higiene (Siqueira et al., 2019).
                 </p>
             </div>
         </div>
 
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <p>
-                Quando voltamos os olhos para outros países, podemos observar, em estudos realizados com a população
-                privada de
-                liberdade, uma grande variação no índice de CPO-D. Foram encontrados valores elevados na Austrália
-                (20,4), África do Sul
-                (15,45) e Inglaterra (14,35), conforme apontado por Osborn, Butler e Barnard (2003), Naidoo,
-                Yengopal e
-                Cohen (2005) e
-                Lunn et al. (2003).
-            </p>
-            <p>
-                Na avaliação periodontal (gengivas e tecidos de sustentação dos dentes), o cálculo dentário é a
-                condição
-                mais comum, afetando 54,13% dos adultos, seguido do sangramento gengival (41,53%). Apenas um terço
-                dos
-                pacientes avaliados tem todas as regiões saudáveis, segundo o Índice Periodontal Comunitário (IPC),
-                e o
-                cálculo é a pior condição em 33,85%.
-            </p>
-            <p>
-                Você conseguiu observar o cenário preocupante que essa população enfrenta? A <i>SB Brasil 2023</i>
-                (Brasil,
-                2025) nos traz um
-                quadro preocupante da saúde bucal dos adultos brasileiros, com alta experiência de cárie, muita
-                cárie
-                não tratada e
-                consequências clínicas significativas. A realidade da população em geral não é boa, tendo em vista
-                que o
-                CPO-D é 10,70
-                (muito alto). No entanto, na população privada de liberdade, esse índice é ainda maior devido a
-                diversos
-                fatores:
-                superlotação, que gera um descompasso entre o número de PPL e a oferta de serviços, má alimentação,
-                sedentarismo, uso de
-                drogas, tabagismo e falta de higiene (Siqueira et al., 2019).
-            </p>
+        <div id="5.3" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.3 Ações de promoção, prevenção e recuperação em saúde bucal inseridas no ambiente prisional
             </h2>
             <p>
@@ -837,7 +903,7 @@
                 mutiladores?
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.3.1 Porta de entrada odontológica
             </h3>
             <p>
@@ -863,31 +929,29 @@
             </p>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <p>
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Como a sua instituição penal organiza a porta de entrada odontológica? Para auxiliar na sua
                     reflexão, leia o
                     Procedimento Operacional Padrão realizado pela Secretaria Nacional de Políticas Penais
                     (SENAPPEN)
                     (Brasil, 2015), que
                     traz um exemplo de ficha operacional padrão para a execução da porta de entrada odontológica.
-                </p>
-                <p>
+                    <br>
                     Acesse: <a class="link"
                         href="https://www.gov.br/senappen/pt-br/pt-br/assuntos/SPF/assistencias-ao-preso/arquivos/procedimento-operacional-odontologia.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer">https://www.gov.br/senappen/pt-br/pt-br/assuntos/SPF/assistencias-ao-preso/arquivos/procedimento-operacional-odontologia.pdf</a>
-                </p>
+                        target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                </h3>
             </div>
         </div>
 
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+        <div id="5.3.2" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 1 - Funcionamento ideal da Saúde Bucal no Sistema Prisional
             </h3>
             <div>
@@ -898,7 +962,7 @@
                 <hr>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 5.3.2 Educação em saúde bucal: promoção da saúde no contexto prisional
             </h3>
             <p>
@@ -1094,211 +1158,236 @@
                     </div>
                 </div>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                5.4 O fortalecimento da saúde bucal por meio da Rede de Atenção à Saúde Bucal
-            </h2>
-            <p>
-                Agora que você conhece todo o panorama dos agravos em saúde bucal mais importantes na população
-                privada
-                de liberdade, é necessário conhecer também outros pontos de atenção à saúde bucal que podem
-                fortalecer o
-                atendimento odontológico na sua instituição penal.
-            </p>
-            <p>
-                Em dezembro de 2024, a Portaria GM/MS nº 6.213 instituiu a RASB no SUS, com o objetivo de integrar
-                ações
-                e serviços de
-                saúde bucal em todos os níveis de atenção, formando uma rede articulada para atender às necessidades
-                dos
-                pacientes
-                (Brasil, 2024).
-            </p>
-            <p>
-                A RASB (Figura 2) organiza os serviços com base nas realidades locais e nos perfis epidemiológicos,
-                garantindo fluxos assistenciais eficientes e centrados na pessoa, além de promover a integração
-                entre
-                atenção primária e especializada, com uso de protocolos, teleodontologia, governança, educação em
-                saúde,
-                autocuidado, monitoramento contínuo, intersetorialidade e práticas seguras baseadas em evidências.
-            </p>
-            <p>
-                A estrutura organizacional da RASB se organiza desta forma:
-            </p>
-            <ul class="list-disc pl-5 flex flex-col gap-5">
-                <li>
-                    Atenção Primária a Saúde (onde estão inseridas as eAPP);
-                </li>
-                <li>
-                    Atenção Especializada Ambulatorial;
-                </li>
-                <li>
-                    Atenção Especializada Ambulatorial Hospitalar, Atenção Hospitalar e Urgência e Emergência
-                    (Brasil,
-                    2024).
-                </li>
-            </ul>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
-                Figura 2 - Fluxograma da Rede de
-                Atenção à Saúde Bucal (RASB), Brasil (WORD
-                PÁG 12 )
-            </h3>
-            <div>
-                <img class="w-full h-auto rounded-xl" src="./images/rasb.png"
-                    alt="Fluxograma da Rede de Atenção à Saúde Bucal (RASB), Brasil" loading="lazy" />
-                <small>Fonte: Brasil (2018).</small>
-                <hr>
-            </div>
-            <p>
-                Nem todas as demandas em saúde bucal podem ser resolvidas ou diagnosticadas nas instituições penais,
-                portanto outros pontos de atenção podem ser necessários para a prestação da assistência odontológica
-                adequada.
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                5.4.1 Saúde bucal na média e alta complexidade
-            </h3>
-            <p>
-                Em relação à atenção especializada, podemos contar com os CEO, cuja função é oferecer atendimento
-                especializado nos seguintes segmentos obrigatórios:
-            </p>
-            <ul class="list-disc pl-5 flex flex-col gap-5">
-                <li>
-                    Endodontia (tratamento de canal);
-                </li>
-                <li>
-                    Periodontia (tratamento especializado para os tecidos de suporte dos dentes);
-                </li>
-                <li>
-                    Estomatologia (diagnóstico de lesões bucais);
-                </li>
-                <li>
-                    Cirurgia (tratamento cirúrgico especializado);
-                </li>
-                <li>
-                    Atendimento a portadores de necessidades especiais (se houver adesão).
-                </li>
-            </ul>
-            <p>
-                Além disso, o CEO ou as eAPP oferecem o serviço de prótese dentária, se houver a pactuação do
-                município
-                com um LRPD. Esse serviço é essencial para fins de reabilitação, uma vez que o sistema prisional tem
-                altos índices de extrações dentárias, como já mencionado no decorrer da Unidade, e essa estratégia é
-                fundamental para uma mudança positiva na oferta de serviços reabilitadores nas instituições penais,
-                uma
-                vez que a falta de dentes afeta diretamente princípios tão importantes para a autoestima e
-                ressocialização das PPL.
-            </p>
-            <p>
-                Já quando pensamos em urgências odontológicas que estão acima da capacidade de atendimento de uma
-                eAPP,
-                como em casos de grandes infecções dentárias, inchaço importante na face e dificuldades de
-                deglutição, é
-                preciso acionar os serviços de urgência, seja de uma Unidade de Pronto Atendimento (UPA), seja de
-                uma
-                unidade hospitalar, a depender da gravidade do quadro clínico, uma vez que todos esses sinais podem
-                levar o paciente à morte. É importante que toda a equipe (não só a de saúde) possa estar sensível à
-                presença desses sinais e otimize os encaminhamentos, para que não haja a piora do quadro clínico e o
-                paciente possa ser estabilizado.
-            </p>
-            <p>
-                Além disso, a assistência odontológica em ambiente hospitalar abrange os traumas da face, tratamento
-                oncológico de cabeça e pescoço e demais procedimentos de alta complexidade que necessitam de um
-                ambiente
-                equipado e de profissionais especializados para oferecer esse tipo de assistência.
-            </p>
+
         </div>
 
-        <div id="encerramento" class="bg-gray-100 py-10">
-            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+        <div id="5.4" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
-                    Encerramento da Unidade
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    5.4 O fortalecimento da saúde bucal por meio da Rede de Atenção à Saúde Bucal
                 </h2>
                 <p>
-                    Concluímos esta Unidade explorando a inserção da saúde bucal na atenção à saúde no sistema
-                    prisional. Abordamos a PNSB
-                    (Brasil Sorridente), sua relação com a PNAISP e os desafios específicos dessa população.
+                    Agora que você conhece todo o panorama dos agravos em saúde bucal mais importantes na população
+                    privada
+                    de liberdade, é necessário conhecer também outros pontos de atenção à saúde bucal que podem
+                    fortalecer o
+                    atendimento odontológico na sua instituição penal.
                 </p>
                 <p>
-                    Destacamos dados preocupantes sobre a autopercepção da saúde bucal, a grande demanda por
-                    tratamento
-                    e próteses e os
-                    efeitos nas atividades diárias, condições de saúde que são agravadas no ambiente prisional.
+                    Em dezembro de 2024, a Portaria GM/MS nº 6.213 instituiu a RASB no SUS, com o objetivo de integrar
+                    ações
+                    e serviços de
+                    saúde bucal em todos os níveis de atenção, formando uma rede articulada para atender às necessidades
+                    dos
+                    pacientes
+                    (Brasil, 2024).
                 </p>
                 <p>
-                    Discutimos a importância da porta de entrada odontológica, da educação em saúde e do
-                    fortalecimento
-                    da RASB como
-                    estratégias de promoção, prevenção e recuperação da saúde.
+                    A RASB (Figura 2) organiza os serviços com base nas realidades locais e nos perfis epidemiológicos,
+                    garantindo fluxos assistenciais eficientes e centrados na pessoa, além de promover a integração
+                    entre
+                    atenção primária e especializada, com uso de protocolos, teleodontologia, governança, educação em
+                    saúde,
+                    autocuidado, monitoramento contínuo, intersetorialidade e práticas seguras baseadas em evidências.
                 </p>
                 <p>
-                    A saúde bucal é um direito humano e sua garantia nos estabelecimentos penais é dever do Estado.
-                    Com
-                    o conteúdo desta
-                    Unidade, você está mais preparado para atuar na promoção da saúde bucal e contribuir para a
-                    qualidade de vida e
-                    reintegração social das PPL.
+                    A estrutura organizacional da RASB se organiza desta forma:
+                </p>
+                <ul class="list-disc pl-5 flex flex-col gap-5">
+                    <li>
+                        Atenção Primária a Saúde (onde estão inseridas as eAPP);
+                    </li>
+                    <li>
+                        Atenção Especializada Ambulatorial;
+                    </li>
+                    <li>
+                        Atenção Especializada Ambulatorial Hospitalar, Atenção Hospitalar e Urgência e Emergência
+                        (Brasil,
+                        2024).
+                    </li>
+                </ul>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-image text-black mr-2"></i>
+                    Figura 2 - Fluxograma da Rede de
+                    Atenção à Saúde Bucal (RASB), Brasil (WORD
+                    PÁG 12 )
+                </h3>
+                <div>
+                    <img class="w-full h-auto rounded-xl" src="./images/rasb.png"
+                        alt="Fluxograma da Rede de Atenção à Saúde Bucal (RASB), Brasil" loading="lazy" />
+                    <small>Fonte: Brasil (2018).</small>
+                    <hr>
+                </div>
+                <p>
+                    Nem todas as demandas em saúde bucal podem ser resolvidas ou diagnosticadas nas instituições penais,
+                    portanto outros pontos de atenção podem ser necessários para a prestação da assistência odontológica
+                    adequada.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    5.4.1 Saúde bucal na média e alta complexidade
+                </h3>
+                <p>
+                    Em relação à atenção especializada, podemos contar com os CEO, cuja função é oferecer atendimento
+                    especializado nos seguintes segmentos obrigatórios:
+                </p>
+                <ul class="list-disc pl-5 flex flex-col gap-5">
+                    <li>
+                        Endodontia (tratamento de canal);
+                    </li>
+                    <li>
+                        Periodontia (tratamento especializado para os tecidos de suporte dos dentes);
+                    </li>
+                    <li>
+                        Estomatologia (diagnóstico de lesões bucais);
+                    </li>
+                    <li>
+                        Cirurgia (tratamento cirúrgico especializado);
+                    </li>
+                    <li>
+                        Atendimento a portadores de necessidades especiais (se houver adesão).
+                    </li>
+                </ul>
+                <p>
+                    Além disso, o CEO ou as eAPP oferecem o serviço de prótese dentária, se houver a pactuação do
+                    município
+                    com um LRPD. Esse serviço é essencial para fins de reabilitação, uma vez que o sistema prisional tem
+                    altos índices de extrações dentárias, como já mencionado no decorrer da Unidade, e essa estratégia é
+                    fundamental para uma mudança positiva na oferta de serviços reabilitadores nas instituições penais,
+                    uma
+                    vez que a falta de dentes afeta diretamente princípios tão importantes para a autoestima e
+                    ressocialização das PPL.
                 </p>
                 <p>
-                    Promover saúde bucal vai além de restaurar sorrisos; é restaurar vidas.
+                    Já quando pensamos em urgências odontológicas que estão acima da capacidade de atendimento de uma
+                    eAPP,
+                    como em casos de grandes infecções dentárias, inchaço importante na face e dificuldades de
+                    deglutição, é
+                    preciso acionar os serviços de urgência, seja de uma Unidade de Pronto Atendimento (UPA), seja de
+                    uma
+                    unidade hospitalar, a depender da gravidade do quadro clínico, uma vez que todos esses sinais podem
+                    levar o paciente à morte. É importante que toda a equipe (não só a de saúde) possa estar sensível à
+                    presença desses sinais e otimize os encaminhamentos, para que não haja a piora do quadro clínico e o
+                    paciente possa ser estabilizado.
                 </p>
                 <p>
-                    <b>Seja agente dessa transformação!</b>
-                </p>
+                    Além disso, a assistência odontológica em ambiente hospitalar abrange os traumas da face, tratamento
+                    oncológico de cabeça e pescoço e demais procedimentos de alta complexidade que necessitam de um
+                    ambiente
+                    equipado e de profissionais especializados para oferecer esse tipo de assistência.</p>
             </div>
-
         </div>
 
-        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+        <div id="encerramento" class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
+                Encerramento da Unidade
             </h2>
             <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção Primária à Saúde.
-                Departamento de Estratégias e Políticas de Saúde Comunitária.
-                <b>SB Brasil 2023</b>: Pesquisa Nacional de Saúde Bucal: relatório final.
-                Brasília: Ministério da Saúde, 2025.
-                Disponível em:
-                <a class="link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/sb_brasil_2023_relatorio_final_1edrev.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/sb_brasil_2023_relatorio_final_1edrev.pdf
-                </a>.
-                Acesso em: 4 ago. 2025.
+                Concluímos esta Unidade explorando a inserção da saúde bucal na atenção à saúde no sistema
+                prisional. Abordamos a PNSB
+                (Brasil Sorridente), sua relação com a PNAISP e os desafios específicos dessa população.
             </p>
             <p>
-                BRASIL. Portaria GM/MS nº 2.298, de 9 de setembro de 2021.
-                Dispõe sobre as normas para a operacionalização da Política Nacional de Atenção Integral à Saúde das
-                Pessoas
-                Privadas de Liberdade no Sistema Prisional (PNAISP), no âmbito do Sistema Único de Saúde (SUS).
-                <b>Diário Oficial da União</b>, Brasília, DF, 10 set. 2021.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html
-                </a>.
-                Acesso em: 4 ago. 2025.
+                Destacamos dados preocupantes sobre a autopercepção da saúde bucal, a grande demanda por
+                tratamento
+                e próteses e os
+                efeitos nas atividades diárias, condições de saúde que são agravadas no ambiente prisional.
             </p>
+            <p>
+                Discutimos a importância da porta de entrada odontológica, da educação em saúde e do
+                fortalecimento
+                da RASB como
+                estratégias de promoção, prevenção e recuperação da saúde.
+            </p>
+            <p>
+                A saúde bucal é um direito humano e sua garantia nos estabelecimentos penais é dever do Estado.
+                Com
+                o conteúdo desta
+                Unidade, você está mais preparado para atuar na promoção da saúde bucal e contribuir para a
+                qualidade de vida e
+                reintegração social das PPL.
+            </p>
+            <p>
+                Promover saúde bucal vai além de restaurar sorrisos; é restaurar vidas.
+            </p>
+            <p>
+                <b>Seja agente dessa transformação!</b>
+            </p>
+        </div>
 
-            <p>
-                BRASIL. Lei nº 7.210, de 11 de julho de 1984.
-                Lei de Execução Penal.
-                <b>Diário Oficial da União</b>, Brasília, DF, 13 jul. 1984.
-                Disponível em:
-                <a class="link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
-                    rel="noopener noreferrer">
-                    http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
-                </a>.
-                Acesso em: 4 ago. 2025.
-            </p>
+        <div class="py-10" style="background-color: var(--primary)">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-headphones mr-2"></i>
+                    Podcast
+                </h2>
+                <p class="font-bold">Após estudar esse módulo, você pode revisar o conteúdo escutando o nosso podcast. É um bate-papo informal com os principais pontos do conteúdo estudado.</p>
+                <audio controls class="w-full">
+                    <source src="./media/podcast-mod4.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+                <a href="./media/transcricao-podcast-mod4.pdf" target="_blank" class="btn bg-black text-white flex! gap-2 w-fit mx-auto">
+                    <i class="fa-solid fa-file-lines text-xl"></i>
+                    <span class="font-bold my-auto">Ver transcrição</span>
+                </a>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
+            </div>
+        </div>
+
+        <div id="referencias_importantes" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências principais
+                </h2>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção Primária à Saúde.
+                    Departamento de Estratégias e Políticas de Saúde Comunitária.
+                    <b>SB Brasil 2023</b>: Pesquisa Nacional de Saúde Bucal: relatório final.
+                    Brasília: Ministério da Saúde, 2025.
+                    Disponível em:
+                    <a class="link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/sb_brasil_2023_relatorio_final_1edrev.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/sb_brasil_2023_relatorio_final_1edrev.pdf
+                    </a>.
+                    Acesso em: 4 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Portaria GM/MS nº 2.298, de 9 de setembro de 2021.
+                    Dispõe sobre as normas para a operacionalização da Política Nacional de Atenção Integral à Saúde das
+                    Pessoas
+                    Privadas de Liberdade no Sistema Prisional (PNAISP), no âmbito do Sistema Único de Saúde (SUS).
+                    <b>Diário Oficial da União</b>, Brasília, DF, 10 set. 2021.
+                    Disponível em:
+                    <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html
+                    </a>.
+                    Acesso em: 4 ago. 2025.
+                </p>
+
+                <p>
+                    BRASIL. Lei nº 7.210, de 11 de julho de 1984.
+                    Lei de Execução Penal.
+                    <b>Diário Oficial da União</b>, Brasília, DF, 13 jul. 1984.
+                    Disponível em:
+                    <a class="link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
+                        rel="noopener noreferrer">
+                        http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
+                    </a>.
+                    Acesso em: 4 ago. 2025.
+                </p>
+            </div>
         </div>
 
         <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                <i class="fa-solid fa-file text-black"></i>
                 Referências
             </h2>
             <p>
@@ -1308,20 +1397,6 @@
                 <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/31849396/" target="_blank"
                     rel="noopener noreferrer">
                     https://pubmed.ncbi.nlm.nih.gov/31849396/
-                </a>.
-                Acesso em: 4 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção Primária à Saúde.
-                Departamento de Estratégias e Políticas de Saúde Comunitária.
-                <b>SB Brasil 2023</b>: Pesquisa Nacional de Saúde Bucal: relatório final.
-                Brasília: Ministério da Saúde, 2025.
-                Disponível em:
-                <a class="link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/sb_brasil_2023_relatorio_final_1edrev.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/sb_brasil_2023_relatorio_final_1edrev.pdf
                 </a>.
                 Acesso em: 4 ago. 2025.
             </p>
@@ -1338,20 +1413,6 @@
                     href="https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-6.213-de-19-de-dezembro-de-2024-603307951"
                     target="_blank" rel="noopener noreferrer">
                     https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-6.213-de-19-de-dezembro-de-2024-603307951
-                </a>.
-                Acesso em: 4 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL. Portaria GM/MS nº 2.298, de 9 de setembro de 2021.
-                Dispõe sobre as normas para a operacionalização da Política Nacional de Atenção Integral à Saúde das
-                Pessoas Privadas de Liberdade no Sistema Prisional (PNAISP), no âmbito do Sistema Único de Saúde
-                (SUS).
-                <b>Diário Oficial da União</b>, Brasília, DF, 10 set. 2021.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html
                 </a>.
                 Acesso em: 4 ago. 2025.
             </p>
@@ -1392,18 +1453,6 @@
                 <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html"
                     target="_blank" rel="noopener noreferrer">
                     https://bvsms.saude.gov.br/bvs/saudelegis/gm/2003/pri1777_09_09_2003.html
-                </a>.
-                Acesso em: 4 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL. Lei nº 7.210, de 11 de julho de 1984.
-                Lei de Execução Penal.
-                <b>Diário Oficial da União</b>, Brasília, DF, 13 jul. 1984.
-                Disponível em:
-                <a class="link" href="http://www.planalto.gov.br/ccivil_03/leis/l7210.htm" target="_blank"
-                    rel="noopener noreferrer">
-                    http://www.planalto.gov.br/ccivil_03/leis/l7210.htm
                 </a>.
                 Acesso em: 4 ago. 2025.
             </p>
@@ -1589,23 +1638,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

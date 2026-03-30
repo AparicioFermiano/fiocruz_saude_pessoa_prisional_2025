@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -349,37 +349,86 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo IV - Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 4 - Saúde Mental
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 4
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 4 &nbsp;·&nbsp; Saúde Mental
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -499,7 +548,7 @@
 
         <div id="4.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 4.1 Promoção da saúde mental no Sistema Único de Saúde
             </h2>
             <p>
@@ -530,11 +579,11 @@
                 reconfiguração desse processo (Figura 1).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 1 - Avanços da Reforma Psiquiátrica e da Rede de Atenção Psicossocial
             </h3>
-            <div id="mapa" class="relative">
-                <small>(clique nos ícones de + para acessar o conteúdo)</small>
+            <div id="mapa1" class="relative">
+                <small>Clique nos ícones + para interagir</small>
                 <img class="w-full h-full rounded-xl" src="./images/reforma.png"
                     alt="Refoma psiquiátrica e as raps ttrouxeram avançoes essenciais" loading="lazy" />
                 <button id="tooltip_1" class="botao-flutuante bg-blue-500! font-bold" style="top: 37%; left: 48%">
@@ -563,7 +612,7 @@
                 2023; Oliveira et al., 2024).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 4.1.1 Entendendo a Rede de Atenção Psicossocial
             </h3>
             <p>
@@ -620,7 +669,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 4.1.2 Quem cuida da saúde mental no sistema prisional? Conheça as equipes que fazem a diferença no
                 Sistema Único de
                 Saúde
@@ -667,8 +716,8 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="link" href="https://atos.cnj.jus.br/files/original2015232023022863fe60db44835.pdf"
-                                target="_blank">https://atos.cnj.jus.br/files/original2015232023022863fe60db44835.pdf</a>
+                            <a class="link" href="./media/original2015232023022863fe60db44835.pdf"
+                                target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -681,7 +730,7 @@
             </div>
 
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 4.1.3 Papel da equipe de Atenção Primária Prisional na promoção da saúde mental
             </h3>
             <p>
@@ -698,12 +747,12 @@
                 mental das PPL.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 2 - Papel da equipe de Atenção Primária Prisional na promoção da saúde mental
             </h3>
-            <small>(clique nos ícones de + para acessar o conteúdo)</small>
-            <div id="mapa" class="relative">
-                <img class="w-full h-full rounded-xl" src="./images/papel.png"
+            <small>Clique nos ícones de + para acessar o conteúdo</small>
+            <div id="mapa2" class="relative">
+                <img class="w-full h-full rounded-xl" src="./images/papel-eapp.png"
                     alt="paple da eAPP na saúde mental das ppl" loading="lazy" />
                 <button id="papel_1" class="botao-flutuante bg-blue-500! font-bold" style="top: 36%; left: 48%">
                     +
@@ -858,7 +907,7 @@
                                 deve ser feito?
                             </h2>
                             <hr class="mb-6">
-                            <form id="quizForm" class="space-y-4">
+                            <form id="quizForm1" class="space-y-4">
                                 <label class="flex items-start gap-3 cursor-pointer">
                                     <input type="radio" name="resposta" value="A" class="mt-1">
                                     <span>
@@ -902,7 +951,6 @@
                                 vida do indivíduo.
                                 <div class="block max-w-[90%] mx-auto rounded-2xl border-3 border-yellow-500 p-5 mt-5">
                                     <h3 class="text-2xl font-bold text-center">
-                                        <i class="fa-solid fa-triangle-exclamation text-yellow-500"></i>
                                         Atenção!
                                     </h3>
                                     <p class="mt-3">
@@ -953,7 +1001,7 @@
                                 melhor representa os direitos que foram violados:
                             </h2>
                             <hr class="mb-6">
-                            <form id="quizForm" class="space-y-4">
+                            <form id="quizForm2" class="space-y-4">
                                 <label class="flex items-start gap-3 cursor-pointer">
                                     <input type="radio" name="resposta2" value="A" class="mt-1">
                                     <span>
@@ -1129,7 +1177,7 @@
                                 melhor representa os direitos que foram violados:
                             </h2>
                             <hr class="mb-6">
-                            <form id="quizForm" class="space-y-4">
+                            <form id="quizForm3" class="space-y-4">
                                 <label class="flex items-start gap-3 cursor-pointer">
                                     <input type="radio" name="resposta3" value="A" class="mt-1">
                                     <span>
@@ -1212,7 +1260,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 4.1.4 Serviços da Rede de Atenção Psicossocial
             </h3>
             <p>
@@ -1221,12 +1269,12 @@
                 sistema de apoio contínuo e articulado.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 3 - Pontos da Rede de Atenção Psicossocial
             </h3>
 
-            <div id="mapa" class="relative">
-                <small>(clique nos ícones de + para acessar o conteúdo)</small>
+            <div id="mapa3" class="relative">
+                <small>Clique nos ícones + para interagir</small>
                 <img class="w-full h-full rounded-xl" src="./images/pontos-da-rede.png"
                     alt="Pontos da Rede de Atenção Psicossocial" loading="lazy" />
                 <button id="ponto_1" class="botao-flutuante bg-blue-500! font-bold" style="top: 28%; left: 44%">
@@ -1256,7 +1304,7 @@
                 <small>Fonte: adaptado de Conselho Nacional de Justiça (2023)</small>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 4.1.5 Diretrizes e normativas da Política Nacional de Saúde Mental
             </h3>
             <p>
@@ -1289,11 +1337,11 @@
                                             Voluntária
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-blzk rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 overflow-hidden rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                                        class="absolute inset-0 overflow-hidden rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center backface-hidden rotate-y-180">
                                         <p class="text-sm overflow-y-auto p-6">
                                             O paciente aceita a internação e assina um termo de consentimento.
                                         </p>
@@ -1315,11 +1363,11 @@
                                             Involuntária
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-blzk rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             Solicitada por um terceiro e autorizada por um médico, devendo ser
                                             comunicada ao Ministério Público em até 72 horas.
@@ -1342,11 +1390,11 @@
                                             Compulsória
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-blzk rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
                                             Determinada pela Justiça.
                                         </p>
@@ -1406,78 +1454,86 @@
                     </div>
                 </div>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                4.2 Direitos das pessoas com transtornos mentais: garantias, proteção e um novo olhar para o cuidado
-                em
-                saúde mental
-            </h2>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                O que diz a legislação sobre saúde mental e o que ainda poderia ser feito?
-            </h3>
-            <small>Clique nas setas para interagir.</small>
-            <div class="carousel-container relative w-full" data-carousel-id="1">
-                <div class="overflow-hidden rounded-2xl shadow-xl">
-                    <div class="carousel-track flex transition-transform duration-500 ease-out">
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/2.png" alt="Quadrinho - cena 1."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/3.png" alt="Quadrinho - cena 2."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/4.png" alt="Quadrinho - cena 3."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/5.png" alt="Quadrinho - cena 4."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/6.png" alt="Quadrinho - cena 5."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/7.png" alt="Quadrinho - cena 6."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/8.png" alt="Quadrinho - cena 7."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/9.png" alt="Quadrinho - cena 8."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/10.png" alt="Quadrinho - cena 9."
-                                loading="lazy" />
-                        </div>
-                        <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
-                            <img class="w-full h-auto rounded-xl" src="./images/11.png" alt="Quadrinho - cena 10."
-                                loading="lazy" />
+        </div>
+
+        <div id="4.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    4.2 Direitos das pessoas com transtornos mentais: garantias, proteção e um novo olhar para o cuidado
+                    em
+                    saúde mental
+                </h2>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    O que diz a legislação sobre saúde mental e o que ainda poderia ser feito?
+                </h3>
+                <small>Clique nas setas para interagir.</small>
+                <div class="carousel-container relative w-full" data-carousel-id="1">
+                    <div class="overflow-hidden rounded-2xl shadow-xl">
+                        <div class="carousel-track flex transition-transform duration-500 ease-out">
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/2.png" alt="Quadrinho - cena 1."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/3.png" alt="Quadrinho - cena 2."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/4.png" alt="Quadrinho - cena 3."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/5.png" alt="Quadrinho - cena 4."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/6.png" alt="Quadrinho - cena 5."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/7.png" alt="Quadrinho - cena 6."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/8.png" alt="Quadrinho - cena 7."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/9.png" alt="Quadrinho - cena 8."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/10.png" alt="Quadrinho - cena 9."
+                                    loading="lazy" />
+                            </div>
+                            <div class="min-w-full h-120 md:h-150 p-8 bg-white overflow-y-auto">
+                                <img class="w-full h-auto rounded-xl" src="./images/11.png" alt="Quadrinho - cena 10."
+                                    loading="lazy" />
+                            </div>
                         </div>
                     </div>
+                    <button onclick="animacao.prevSlide(1)"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1 shadow-lg transition-all hover:scale-110">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button onclick="animacao.nextSlide(1)"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1 shadow-lg transition-all hover:scale-110">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
-                <button onclick="animacao.prevSlide(1)"
-                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1 shadow-lg transition-all hover:scale-110">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                </button>
-                <button onclick="animacao.nextSlide(1)"
-                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1 shadow-lg transition-all hover:scale-110">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                        </path>
-                    </svg>
-                </button>
             </div>
+        </div>
+
+        <div id="4.3" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 4.3 Condições de vida durante o aprisionamento e seus efeitos na saúde mental
             </h2>
             <p>
@@ -1513,156 +1569,173 @@
             </p>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <b>Você já pensou nos efeitos do aprisionamento na mente?</b>
-                <p>
-                    A pessoa presa não perde só a liberdade. Ela perde o convívio com quem ama, o apoio da comunidade e
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
+                    <b>Você já pensou nos efeitos do aprisionamento na mente?</b><br>
+                    A pessoa presa não perde só a liberdade. Ela perde o convívio com quem ama, o apoio da
+                    comunidade e
                     ainda enfrenta
                     ambientes superlotados, inseguros e muitas vezes violentos. Isso tudo favorece o surgimento ou
                     agravamento de
-                    transtornos como depressão, ansiedade e TEPT, principalmente quando não há estratégias adequadas de
+                    transtornos como depressão, ansiedade e TEPT, principalmente quando não há estratégias adequadas
+                    de
                     enfrentamento
                     (Gómez-Figueroa; Camino-Proaño, 2022; Cunha et al., 2025).
-                </p>
-                <b>Quando a pena termina, os desafios continuam...</b>
-                <p>
-                    Sair da instituição penal não significa estar livre do sofrimento. O estigma social, a exclusão do
-                    mercado de trabalho e o difícil acesso à educação dificultam o recomeço. Mesmo quando há programas
-                    de reabilitação, muitas vezes não são suficientes para garantir uma nova chance real (Brasil, 2014;
+                    <br>
+                    <b>Quando a pena termina, os desafios continuam...</b><br>
+                    Sair da instituição penal não significa estar livre do sofrimento. O estigma social, a exclusão
+                    do
+                    mercado de trabalho e o difícil acesso à educação dificultam o recomeço. Mesmo quando há
+                    programas
+                    de reabilitação, muitas vezes não são suficientes para garantir uma nova chance real (Brasil,
+                    2014;
                     Favril; van Ginneken, 2023).
+                </h3>
+            </div>
+        </div>
+
+        <div id="4.4" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    4.4 Estratégias para redução de danos
+                </h2>
+                <p>
+                    O cuidado com pessoas que sofrem de transtornos mentais ou que fazem uso abusivo de álcool e outras
+                    drogas deve
+                    acontecer em uma rede de atenção à saúde. Aqui vale destacar: o cuidado deve acontecer,
+                    prioritariamente, de forma
+                    multiprofissional e em rede. A internação só deve acontecer em casos realmente necessários e
+                    preferencialmente após a
+                    estabilização da crise inicial. A diversidade da realidade prisional brasileira justifica considerar
+                    a
+                    RAPS como recurso
+                    importante no fluxo de atendimento, mas não como primeira resposta a uma crise aguda dentro da cela
+                    (Brasil, 2024).
+                </p>
+                <p>
+                    A ideia é clara: evitar, sempre que possível, a privação de liberdade, já que ela pode agravar o
+                    sofrimento mental e ainda enfraquecer os laços familiares e sociais, tão importantes no processo de
+                    recuperação e reintegração social (Brasil, 2024; Gómez-Figueroa; Camino-Proaño, 2022).
+                </p>
+                <p>
+                    Você sabia que sentir que tem algum controle sobre a própria vida faz uma grande diferença na saúde
+                    mental? Pois é, no
+                    ambiente prisional isso também é verdade. Quando a pessoa presa percebe que tem alguma autonomia,
+                    seu
+                    bem-estar pode
+                    melhorar. Vamos ver juntos algumas estratégias que podem ajudar a fortalecer esse senso de autonomia
+                    nas
+                    instituições
+                    penais (Favril; van Ginneken, 2023)?
+                </p>
+                <div>
+                    <p class="text-center pb-3">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div id="grupo4" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item41" onclick="animacao.toggleAccordion('item41', 'grupo4')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Participar das decisões do dia a dia</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    Dar voz às PPL em decisões que afetam sua rotina, como escolher os horários de
+                                    atividades, tarefas ou momentos de lazer, pode fazer com que se sintam mais
+                                    respeitadas
+                                    e no controle da própria vida;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item42" onclick="animacao.toggleAccordion('item42', 'grupo4')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Oferecer programas personalizados</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    Criar programas educativos e de reabilitação que levem em consideração os interesses
+                                    e
+                                    as necessidades individuais de
+                                    cada pessoa presa também é uma ótima forma de promover autonomia, uma vez que mostra
+                                    que
+                                    elas têm um papel ativo na
+                                    construção do próprio futuro;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item43" onclick="animacao.toggleAccordion('item43', 'grupo4')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Dar acesso a recursos</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    Oferecer livros, cursos, oficinas ou treinamentos profissionais ajuda as pessoas a
+                                    desenvolver habilidades e a seguir
+                                    seus interesses, portanto ter acesso a esse tipo de material pode fazer com que se
+                                    sintam mais capazes de direcionar
+                                    seus caminhos;
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="item44" onclick="animacao.toggleAccordion('item44', 'grupo4')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Disponibilizar canais de escuta e
+                                    <i>feedback</i></span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    Ter formas de escutar as PPL, como pesquisas de opinião, rodas de conversa ou até
+                                    caixas
+                                    de sugestões, faz com que elas
+                                    percebam que suas ideias e preocupações têm valor, o que fortalece o sentimento de
+                                    pertencimento e participação (Favril;
+                                    van Ginneken, 2023).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Essas ações simples, mas significativas, ajudam a criar um ambiente mais saudável nas instituições
+                    penais. Estudos mostram que baixos níveis de autonomia estão ligados a mais sofrimento psicológico.
+                    Por
+                    isso, quanto mais fortalecermos essas estratégias, mais chances teremos de contribuir para a saúde
+                    mental e para o processo de reintegração social das pessoas em privação de liberdade.
                 </p>
             </div>
         </div>
 
-        <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
+        <div id="4.5" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                4.4 Estratégias para redução de danos
-            </h2>
-            <p>
-                O cuidado com pessoas que sofrem de transtornos mentais ou que fazem uso abusivo de álcool e outras
-                drogas deve
-                acontecer em uma rede de atenção à saúde. Aqui vale destacar: o cuidado deve acontecer,
-                prioritariamente, de forma
-                multiprofissional e em rede. A internação só deve acontecer em casos realmente necessários e
-                preferencialmente após a
-                estabilização da crise inicial. A diversidade da realidade prisional brasileira justifica considerar a
-                RAPS como recurso
-                importante no fluxo de atendimento, mas não como primeira resposta a uma crise aguda dentro da cela
-                (Brasil, 2024).
-            </p>
-            <p>
-                A ideia é clara: evitar, sempre que possível, a privação de liberdade, já que ela pode agravar o
-                sofrimento mental e ainda enfraquecer os laços familiares e sociais, tão importantes no processo de
-                recuperação e reintegração social (Brasil, 2024; Gómez-Figueroa; Camino-Proaño, 2022).
-            </p>
-            <p>
-                Você sabia que sentir que tem algum controle sobre a própria vida faz uma grande diferença na saúde
-                mental? Pois é, no
-                ambiente prisional isso também é verdade. Quando a pessoa presa percebe que tem alguma autonomia, seu
-                bem-estar pode
-                melhorar. Vamos ver juntos algumas estratégias que podem ajudar a fortalecer esse senso de autonomia nas
-                instituições
-                penais (Favril; van Ginneken, 2023)?
-            </p>
-            <div>
-                <p class="text-center pb-3">
-                    <small>Clique para interagir</small>
-                </p>
-                <div id="grupo4" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item41" onclick="animacao.toggleAccordion('item41', 'grupo4')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Participar das decisões do dia a dia</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                Dar voz às PPL em decisões que afetam sua rotina, como escolher os horários de
-                                atividades, tarefas ou momentos de lazer, pode fazer com que se sintam mais respeitadas
-                                e no controle da própria vida;
-                            </p>
-                        </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item42" onclick="animacao.toggleAccordion('item42', 'grupo4')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Oferecer programas personalizados</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                Criar programas educativos e de reabilitação que levem em consideração os interesses e
-                                as necessidades individuais de
-                                cada pessoa presa também é uma ótima forma de promover autonomia, uma vez que mostra que
-                                elas têm um papel ativo na
-                                construção do próprio futuro;
-                            </p>
-                        </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item43" onclick="animacao.toggleAccordion('item43', 'grupo4')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Dar acesso a recursos</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                Oferecer livros, cursos, oficinas ou treinamentos profissionais ajuda as pessoas a
-                                desenvolver habilidades e a seguir
-                                seus interesses, portanto ter acesso a esse tipo de material pode fazer com que se
-                                sintam mais capazes de direcionar
-                                seus caminhos;
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <button id="item44" onclick="animacao.toggleAccordion('item44', 'grupo4')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Disponibilizar canais de escuta e
-                                <i>feedback</i></span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                Ter formas de escutar as PPL, como pesquisas de opinião, rodas de conversa ou até caixas
-                                de sugestões, faz com que elas
-                                percebam que suas ideias e preocupações têm valor, o que fortalece o sentimento de
-                                pertencimento e participação (Favril;
-                                van Ginneken, 2023).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p>
-                Essas ações simples, mas significativas, ajudam a criar um ambiente mais saudável nas instituições
-                penais. Estudos mostram que baixos níveis de autonomia estão ligados a mais sofrimento psicológico. Por
-                isso, quanto mais fortalecermos essas estratégias, mais chances teremos de contribuir para a saúde
-                mental e para o processo de reintegração social das pessoas em privação de liberdade.
-            </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 4.5 Planejamento intersetorial de ações de promoção da saúde
             </h2>
             <div>
@@ -1678,9 +1751,11 @@
                 </div>
                 <div class="w-full md:w-1/2 p-3">
                     <p>
-                        No município de Santa Esperança, localizado no interior do Brasil, uma eAPP da instituição penal
+                        No município de Santa Esperança, localizado no interior do Brasil, uma eAPP da instituição
+                        penal
                         identificou um aumento
-                        nos casos de sofrimento psíquico, conflitos internos, queixas de isolamento e uso problemático
+                        nos casos de sofrimento psíquico, conflitos internos, queixas de isolamento e uso
+                        problemático
                         de substâncias entre as
                         PPL.
                     </p>
@@ -1689,11 +1764,14 @@
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/2 p-3">
                     <p>
-                        Diante disso, a eAPP propôs a construção de um Plano Intersetorial de Promoção da Saúde Mental
+                        Diante disso, a eAPP propôs a construção de um Plano Intersetorial de Promoção da Saúde
+                        Mental
                         envolvendo diversos
-                        atores do sistema prisional. A proposta foi levada à Coordenação Técnica do Sistema Prisional,
+                        atores do sistema prisional. A proposta foi levada à Coordenação Técnica do Sistema
+                        Prisional,
                         que passou a articular
-                        outros parceiros estratégicos, como a equipe de segurança, os Núcleos Estaduais de Educação de
+                        outros parceiros estratégicos, como a equipe de segurança, os Núcleos Estaduais de Educação
+                        de
                         Jovens e Adultos (NEEJA),
                         o Judiciário local e representantes da sociedade civil.
                     </p>
@@ -1709,18 +1787,22 @@
             </p>
             <ul class="list-disc pl-5 flex flex-col gap-3">
                 <li>
-                    Construção participativa de um Plano de Ação, com metas claras e indicadores de avaliação (exemplos:
+                    Construção participativa de um Plano de Ação, com metas claras e indicadores de avaliação
+                    (exemplos:
                     número de oficinas realizadas, redução de crises agudas, adesão a grupos terapêuticos etc.);
                 </li>
                 <li>
                     <b>Definição de papéis de cada setor:</b> eAPP e Coordenação Técnica do Sistema Prisional são
                     responsáveis pela mobilização interna; equipe de segurança pelo suporte das ações e garantia da
-                    ordem durante as atividades, cuidado compartilhado e formação; Judiciário pelo suporte legal; NEEJA
-                    ficou responsável por fazer a ponte técnica; e a sociedade civil por dar apoio nas ações culturais e
+                    ordem durante as atividades, cuidado compartilhado e formação; Judiciário pelo suporte legal;
+                    NEEJA
+                    ficou responsável por fazer a ponte técnica; e a sociedade civil por dar apoio nas ações
+                    culturais e
                     de formação profissional;
                 </li>
                 <li>
-                    <b>Criação de Grupos Temáticos com foco em:</b> saúde mental e autocuidado; alimentação e nutrição;
+                    <b>Criação de Grupos Temáticos com foco em:</b> saúde mental e autocuidado; alimentação e
+                    nutrição;
                     prevenção de violências; e resolução de conflitos;
                 </li>
                 <li>
@@ -1758,13 +1840,14 @@
                                             Como a RAPS poderia ser acionada em sua realidade local?
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-blzk rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 overflow-hidden rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center backface-hidden rotate-y-180">
+                                        class="absolute inset-0 overflow-hidden rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center backface-hidden rotate-y-180">
                                         <p class="text-sm overflow-y-auto p-6">
-                                            <b>Dicas: </b>pense em CAPS, consultórios na rua, unidades básicas e centros
+                                            <b>Dicas: </b>pense em CAPS, consultórios na rua, unidades básicas e
+                                            centros
                                             de convivência.
                                         </p>
                                         <span
@@ -1782,17 +1865,19 @@
                                     <article
                                         class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
                                         <h3 class="text-lg font-bold mb-2">
-                                            Quais setores do seu município deveriam estar envolvidos para garantir um
+                                            Quais setores do seu município deveriam estar envolvidos para garantir
+                                            um
                                             cuidado integral às PPL?
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-[var(--primary)] text-blzk rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-sm">
-                                            <b>Exemplos: </b>Secretaria de Saúde, Assistência Social, Educação, Justiça,
+                                            <b>Exemplos: </b>Secretaria de Saúde, Assistência Social, Educação,
+                                            Justiça,
                                             Direitos Humanos, ONGs locais, entre outras.
                                         </p>
                                         <span
@@ -1809,7 +1894,7 @@
         <div id="encerramento" class="bg-gray-100 py-10">
             <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
                     Encerramento da Unidade
                 </h2>
                 <p>
@@ -1828,13 +1913,16 @@
                 <p>
                     Você pode muito! Com informação ainda mais!
                 </p>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
             </div>
         </div>
 
         <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-file text-black"></i>
+                Referências principais
             </h2>
             <p>
                 BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública.
@@ -1886,258 +1974,259 @@
             </p>
         </div>
 
-        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências
-            </h2>
-            <p>
-                BRASIL. Conselho Nacional de Política Criminal e Penitenciária.
-                <b>Plano Nacional de Política Criminal e Penitenciária</b>: quadriênio 2024-2027.
-                Brasília: Ministério da Justiça e Segurança Pública, 2024.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/senappen/pt-br/composicao/cnpcp/plano_nacional/plano-nacional-de-politica-criminal-e-penitenciaria-2024-2027.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/composicao/cnpcp/plano_nacional/plano-nacional-de-politica-criminal-e-penitenciaria-2024-2027.pdf
-                </a>.
-                Acesso em: 1 ago. 2025.
-            </p>
+        <div id="referencias" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências
+                </h2>
+                <p>
+                    BRASIL. Conselho Nacional de Política Criminal e Penitenciária.
+                    <b>Plano Nacional de Política Criminal e Penitenciária</b>: quadriênio 2024-2027.
+                    Brasília: Ministério da Justiça e Segurança Pública, 2024.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.gov.br/senappen/pt-br/composicao/cnpcp/plano_nacional/plano-nacional-de-politica-criminal-e-penitenciaria-2024-2027.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/composicao/cnpcp/plano_nacional/plano-nacional-de-politica-criminal-e-penitenciaria-2024-2027.pdf
+                    </a>.
+                    Acesso em: 1 ago. 2025.
+                </p>
 
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Departamento de Ações
-                Programáticas.
-                <b>Instrutivo Técnico da Rede de Atenção Psicossocial - Raps - no Sistema Único de Saúde - SUS.</b>
-                Brasília: Ministério da Saúde, 2022.
-            </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Departamento de Ações
+                    Programáticas.
+                    <b>Instrutivo Técnico da Rede de Atenção Psicossocial - Raps - no Sistema Único de Saúde - SUS.</b>
+                    Brasília: Ministério da Saúde, 2022.
+                </p>
 
-            <p>
-                BRASIL. <b>Ministério da Saúde.
-                    Mapa interativo facilita pesquisa por serviços de saúde mental</b>. 2020.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/pt-br/noticias/saude-e-vigilancia-sanitaria/2020/12/mapa-interativo-facilita-pesquisa-de-servicos-de-saude-mental"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/pt-br/noticias/saude-e-vigilancia-sanitaria/2020/12/mapa-interativo-facilita-pesquisa-de-servicos-de-saude-mental
-                </a>.
-                Acesso em: 11 set. 2025.
-            </p>
+                <p>
+                    BRASIL. <b>Ministério da Saúde.
+                        Mapa interativo facilita pesquisa por serviços de saúde mental</b>. 2020.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.gov.br/pt-br/noticias/saude-e-vigilancia-sanitaria/2020/12/mapa-interativo-facilita-pesquisa-de-servicos-de-saude-mental"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/pt-br/noticias/saude-e-vigilancia-sanitaria/2020/12/mapa-interativo-facilita-pesquisa-de-servicos-de-saude-mental
+                    </a>.
+                    Acesso em: 11 set. 2025.
+                </p>
 
-            <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública.
-                Portaria Interministerial nº 1, de 2 de janeiro de 2014.
-                Institui a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
-                Sistema
-                Prisional
-                (PNAISP) no âmbito do Sistema Único de Saúde (SUS).
-                <b>Diário Oficial da União</b>, Brasília, DF, 3 jan. 2014.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
-                </a>.
-                Acesso em: 17 jul. 2025.
-            </p>
+                <p>
+                    BRASIL. Lei nº 10.216, de 6 de abril de 2001.
+                    Dispõe sobre a proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o
+                    modelo
+                    assistencial em saúde mental.
+                    <b>Diário Oficial da União</b>, Brasília, DF, 9 abr. 2001.
+                    Disponível em:
+                    <a class="link" href="https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10216.htm"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10216.htm
+                    </a>.
+                    Acesso em: 1 ago. 2025.
+                </p>
 
-            <p>
-                BRASIL. Lei nº 10.216, de 6 de abril de 2001.
-                Dispõe sobre a proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o
-                modelo
-                assistencial em saúde mental.
-                <b>Diário Oficial da União</b>, Brasília, DF, 9 abr. 2001.
-                Disponível em:
-                <a class="link" href="https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10216.htm" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10216.htm
-                </a>.
-                Acesso em: 1 ago. 2025.
-            </p>
+                <p>
+                    CARVALHO, M. D. M. et al.
+                    Perspectivas da humanização da saúde mental no Sistema Único de Saúde (SUS) brasileiro.
+                    <b>Revista Eletrônica Acervo Científico</b>, v. 47, e15953, 2024.
+                </p>
 
-            <p>
-                CARVALHO, M. D. M. et al.
-                Perspectivas da humanização da saúde mental no Sistema Único de Saúde (SUS) brasileiro.
-                <b>Revista Eletrônica Acervo Científico</b>, v. 47, e15953, 2024.
-            </p>
+                <p>
+                    CUNHA, M. B. S. et al.
+                    <b>O impacto do sistema prisional na experiência de privação de liberdade.</b>
+                    São Paulo: Editora Arché, 2025.
+                </p>
 
-            <p>
-                CONSELHO NACIONAL DE JUSTIÇA.
-                Resolução nº 487, de 15 de fevereiro de 2023.
-                Institui a Política Antimanicomial do Poder Judiciário e estabelece procedimentos e diretrizes para
-                implementar
-                a Convenção Internacional dos Direitos das Pessoas com Deficiência e a Lei n. 10.216/2001, no âmbito
-                do
-                processo
-                penal e da execução das medidas de segurança.
-                <b>Diário da Justiça Eletrônico: CNJ</b>, Brasília, DF, 16 fev. 2023.
-                Disponível em:
-                <a class="link" href="https://atos.cnj.jus.br/files/original2015232023022863fe60db44835.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://atos.cnj.jus.br/files/original2015232023022863fe60db44835.pdf
-                </a>.
-                Acesso em: 1 ago. 2025.
-            </p>
+                <p>
+                    FAVRIL, L.; VAN GINNEKEN, E. F. J. C.
+                    Individual and environmental contributors to psychological distress during imprisonment.
+                    <b>European Journal of Criminology</b>, v. 21, n. 3, 2023.
+                    Disponível em:
+                    <a class="link" href="https://journals.sagepub.com/doi/10.1177/14773708231201726" target="_blank"
+                        rel="noopener noreferrer">
+                        https://journals.sagepub.com/doi/10.1177/14773708231201726
+                    </a>.
+                    Acesso em: 1 ago. 2025.
+                </p>
 
-            <p>
-                CUNHA, M. B. S. et al.
-                <b>O impacto do sistema prisional na experiência de privação de liberdade.</b>
-                São Paulo: Editora Arché, 2025.
-            </p>
+                <p>
+                    FERLA, A. A. et al. (org.).
+                    <b>Saúde mental coletiva</b>: transoceanizando políticas e práticas locais-globais.
+                    Porto Alegre: Editora Rede Unida, 2023.
+                </p>
 
-            <p>
-                FAVRIL, L.; VAN GINNEKEN, E. F. J. C.
-                Individual and environmental contributors to psychological distress during imprisonment.
-                <b>European Journal of Criminology</b>, v. 21, n. 3, 2023.
-                Disponível em:
-                <a class="link" href="https://journals.sagepub.com/doi/10.1177/14773708231201726" target="_blank"
-                    rel="noopener noreferrer">
-                    https://journals.sagepub.com/doi/10.1177/14773708231201726
-                </a>.
-                Acesso em: 1 ago. 2025.
-            </p>
+                <p>
+                    GÓMEZ-FIGUEROA, H.; CAMINO-PROAÑO, A.
+                    Trastornos mentales y del comportamiento en el contexto carcelario y penitenciario.
+                    <b>Revista Española de Sanidad Penitenciaria</b>, v. 24, n. 2, p. 70-80, 2022.
+                    Disponível em:
+                    <a class="link" href="https://scielo.isciii.es/pdf/sanipe/v24n2/2013-6463-sanipe-24-02-66-es.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://scielo.isciii.es/pdf/sanipe/v24n2/2013-6463-sanipe-24-02-66-es.pdf
+                    </a>.
+                    Acesso em: 1 ago. 2025.
+                </p>
 
-            <p>
-                FERLA, A. A. et al. (org.).
-                <b>Saúde mental coletiva</b>: transoceanizando políticas e práticas locais-globais.
-                Porto Alegre: Editora Rede Unida, 2023.
-            </p>
+                <p>
+                    NABARRETE, L. M. S.; BASTOS, P. R. H. O.
+                    A construção e contextualização das políticas públicas em saúde mental no Brasil.
+                    <b>Revista Contemporânea</b>, v. 3, n. 8, p. 10182-10202, 2023.
+                    Disponível em:
+                    <a class="link" href="https://ojs.revistacontemporanea.com/ojs/index.php/home/article/view/1118/869"
+                        target="_blank" rel="noopener noreferrer">
+                        https://ojs.revistacontemporanea.com/ojs/index.php/home/article/view/1118/869
+                    </a>.
+                    Acesso em: 1 ago. 2025.
+                </p>
 
-            <p>
-                GÓMEZ-FIGUEROA, H.; CAMINO-PROAÑO, A.
-                Trastornos mentales y del comportamiento en el contexto carcelario y penitenciario.
-                <b>Revista Española de Sanidad Penitenciaria</b>, v. 24, n. 2, p. 70-80, 2022.
-                Disponível em:
-                <a class="link" href="https://scielo.isciii.es/pdf/sanipe/v24n2/2013-6463-sanipe-24-02-66-es.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://scielo.isciii.es/pdf/sanipe/v24n2/2013-6463-sanipe-24-02-66-es.pdf
-                </a>.
-                Acesso em: 1 ago. 2025.
-            </p>
+                <p>
+                    OLIVEIRA, L. S. et al.
+                    Avanços e limitações das políticas públicas de saúde mental: perspectiva para o futuro.
+                    <b>Revista Aracê</b>, v. 6, n. 4, p. 17349-17361, 2024.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.researchgate.net/publication/387304269_AVANCOS_E_LIMITACOES_DAS_POLITICAS_PUBLICAS_DE_SAUDE_MENTAL_PERSPECTIVA_PARA_O_FUTURO"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.researchgate.net/publication/387304269_AVANCOS_E_LIMITACOES_DAS_POLITICAS_PUBLICAS_DE_SAUDE_MENTAL_PERSPECTIVA_PARA_O_FUTURO
+                    </a>.
+                    Acesso em: 1 ago. 2025.
+                </p>
 
-            <p>
-                NABARRETE, L. M. S.; BASTOS, P. R. H. O.
-                A construção e contextualização das políticas públicas em saúde mental no Brasil.
-                <b>Revista Contemporânea</b>, v. 3, n. 8, p. 10182-10202, 2023.
-                Disponível em:
-                <a class="link" href="https://ojs.revistacontemporanea.com/ojs/index.php/home/article/view/1118/869"
-                    target="_blank" rel="noopener noreferrer">
-                    https://ojs.revistacontemporanea.com/ojs/index.php/home/article/view/1118/869
-                </a>.
-                Acesso em: 1 ago. 2025.
-            </p>
-
-            <p>
-                OLIVEIRA, L. S. et al.
-                Avanços e limitações das políticas públicas de saúde mental: perspectiva para o futuro.
-                <b>Revista Aracê</b>, v. 6, n. 4, p. 17349-17361, 2024.
-                Disponível em:
-                <a class="link"
-                    href="https://www.researchgate.net/publication/387304269_AVANCOS_E_LIMITACOES_DAS_POLITICAS_PUBLICAS_DE_SAUDE_MENTAL_PERSPECTIVA_PARA_O_FUTURO"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.researchgate.net/publication/387304269_AVANCOS_E_LIMITACOES_DAS_POLITICAS_PUBLICAS_DE_SAUDE_MENTAL_PERSPECTIVA_PARA_O_FUTURO
-                </a>.
-                Acesso em: 1 ago. 2025.
-            </p>
-
-            <p>
-                ORGANIZAÇÃO MUNDIAL DA SAÚDE.
-                <b>MI-mhGAP</b>. Manual de Intervenções para transtornos mentais, neurológicos e por uso de álcool e
-                outras
-                drogas na
-                rede de atenção básica à saúde. Versão 2.0.
-                Brasília: Organização Pan-Americana da Saúde, 2018.
-                Disponível em:
-                <a class="link"
-                    href="https://iris.paho.org/bitstream/handle/10665.2/49096/9789275719572-por.pdf?sequence=1&isAllowed=y"
-                    target="_blank" rel="noopener noreferrer">
-                    https://iris.paho.org/bitstream/handle/10665.2/49096/9789275719572-por.pdf
-                </a>.
-                Acesso em: 1 ago. 2025.
-            </p>
-
-            <p>
-                WORLD HEALTH ORGANIZATION.
-                <b>Prisons and Health.</b>
-                Copenhagen: WHO Regional Office for Europe, 2014.
-            </p>
-
+                <p>
+                    WORLD HEALTH ORGANIZATION.
+                    <b>Prisons and Health.</b>
+                    Copenhagen: WHO Regional Office for Europe, 2014.
+                </p>
+            </div>
         </div>
 
-        <div class="bg-gray-100 py-10">
-            <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
-                <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo das Autoras
-                </h1>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-1/3">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/daiane.png"
-                            alt="Daiane Raquel Kist" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Daiane Raquel Kist</small>
-                            <hr />
-                        </div>
-                    </div>
-                    <div class="w-full md:w-2/3 px-0 md:px-5">
-                        <p>
-                            Enfermeira. Doutoranda do Programa de Pós-graduação em Promoção da Saúde e Professora da
-                            Enfermagem CEPRU/UNISC. Mestre
-                            em Promoção da Saúde e Especialista em Enfermagem do Trabalho. Pesquisadora do Núcleo de
-                            Pesquisa e Extensão com Foco no
-                            Sistema Prisional (NUPESISP/UNISC).
-                        </p>
+        <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold">
+                Minicurrículo das Autoras
+            </h1>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/daiane.png"
+                        alt="Daiane Raquel Kist" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Daiane Raquel Kist</small>
+                        <hr />
                     </div>
                 </div>
-                <hr>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
-                        <p>
-                            Biomédica pela Universidade Federal de Ciências da Saúde de Porto Alegre, especialista
-                            em
-                            Saúde Coletiva pela
-                            Universidade Federal do Rio Grande do Sul, atuou na Saúde Prisional da Secretaria
-                            Estadual
-                            de Saúde do Rio Grande do Sul
-                            enquanto residente e atua como pesquisadora extensionista na Universidade de Santa Cruz
-                            do
-                            Sul (UNISC) em projetos de
-                            educação em saúde e desenvolvimento de novas tecnologias para o sistema prisional.
-                            Compõe o
-                            Núcleo de Pesquisa e
-                            Extensão com Foco no Sistema Prisional (NUPESISP).
-                            <br><br>
-                            Lattes: <a class="link" href="http://lattes.cnpq.br/1096438834177966" target="_blank"
-                                rel="noopener noreferrer">http://lattes.cnpq.br/1096438834177966</a>
-                        </p>
-                    </div>
-                    <div class="w-full md:w-1/3 order-1 md:order-2">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/milena.jpg"
-                            alt="Milena Mantelli Dall' Soto" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Milena Mantelli Dall' Soto</small>
-                            <hr />
-                        </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Enfermeira. Doutoranda do Programa de Pós-graduação em Promoção da Saúde e Professora da
+                        Enfermagem CEPRU/UNISC. Mestre
+                        em Promoção da Saúde e Especialista em Enfermagem do Trabalho. Pesquisadora do Núcleo de
+                        Pesquisa e Extensão com Foco no
+                        Sistema Prisional (NUPESISP/UNISC).
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
+                    <p>
+                        Biomédica pela Universidade Federal de Ciências da Saúde de Porto Alegre, especialista
+                        em
+                        Saúde Coletiva pela
+                        Universidade Federal do Rio Grande do Sul, atuou na Saúde Prisional da Secretaria
+                        Estadual
+                        de Saúde do Rio Grande do Sul
+                        enquanto residente e atua como pesquisadora extensionista na Universidade de Santa Cruz
+                        do
+                        Sul (UNISC) em projetos de
+                        educação em saúde e desenvolvimento de novas tecnologias para o sistema prisional.
+                        Compõe o
+                        Núcleo de Pesquisa e
+                        Extensão com Foco no Sistema Prisional (NUPESISP).
+                        <br><br>
+                        Lattes: <a class="link" href="http://lattes.cnpq.br/1096438834177966" target="_blank"
+                            rel="noopener noreferrer">http://lattes.cnpq.br/1096438834177966</a>
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 order-1 md:order-2">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/milena.jpg"
+                        alt="Milena Mantelli Dall' Soto" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Milena Mantelli Dall' Soto</small>
+                        <hr />
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

@@ -159,6 +159,16 @@ var personalizado = {
         const acertou =
             corretas.every(v => marcadas.includes(v)) &&
             marcadas.every(v => corretas.includes(v));
+
+        feedback.parentElement.querySelectorAll("label").forEach(label => {
+            const input = label.querySelector("input");
+            if (corretas.includes(input.value)) {
+                label.classList.add("bg-green-100", "rounded-md", "px-2");
+            } else if (input.checked) {
+                label.classList.add("bg-red-100", "rounded-md", "px-2");
+            }
+        });
+
         let mensagem = `
             <p><strong>(V)</strong> - A Lei de Execução Penal (LEP), em seu artigo 41,
             assegura ao preso o direito à visita do cônjuge, parentes e amigos,
@@ -190,6 +200,15 @@ var personalizado = {
             feedback.classList.remove("hidden");
             return;
         }
+        const correta = "C";
+        feedback.parentElement.querySelectorAll("label").forEach(label => {
+            const input = label.querySelector("input");
+            if (input.value === correta) {
+                label.classList.add("bg-green-100", "rounded-md", "px-2");
+            } else if (input.checked) {
+                label.classList.add("bg-red-100", "rounded-md", "px-2");
+            }
+        });
         let mensagem = "";
         let estilo = "";
         switch (resposta.value) {
@@ -230,6 +249,15 @@ var personalizado = {
             feedback.classList.remove("hidden");
             return;
         }
+        const correta = "D";
+        feedback.parentElement.querySelectorAll("label").forEach(label => {
+            const input = label.querySelector("input");
+            if (input.value === correta) {
+                label.classList.add("bg-green-100", "rounded-md", "px-2");
+            } else if (input.checked) {
+                label.classList.add("bg-red-100", "rounded-md", "px-2");
+            }
+        });
         let mensagem = "";
         let estilo = "";
         switch (resposta.value) {
@@ -270,6 +298,15 @@ var personalizado = {
             feedback.classList.remove("hidden");
             return;
         }
+        const correta = "B";
+        feedback.parentElement.querySelectorAll("label").forEach(label => {
+            const input = label.querySelector("input");
+            if (input.value === correta) {
+                label.classList.add("bg-green-100", "rounded-md", "px-2");
+            } else if (input.checked) {
+                label.classList.add("bg-red-100", "rounded-md", "px-2");
+            }
+        });
         let mensagem = "";
         let estilo = "";
         switch (resposta.value) {
@@ -310,6 +347,15 @@ var personalizado = {
             feedback.classList.remove("hidden");
             return;
         }
+        const correta = "B";
+        feedback.parentElement.querySelectorAll("label").forEach(label => {
+            const input = label.querySelector("input");
+            if (input.value === correta) {
+                label.classList.add("bg-green-100", "rounded-md", "px-2");
+            } else if (input.checked) {
+                label.classList.add("bg-red-100", "rounded-md", "px-2");
+            }
+        });
         let mensagem = "";
         let estilo = "";
         switch (resposta.value) {
@@ -350,6 +396,15 @@ var personalizado = {
             feedback.classList.remove("hidden");
             return;
         }
+        const correta = "A";
+        feedback.parentElement.querySelectorAll("label").forEach(label => {
+            const input = label.querySelector("input");
+            if (input.value === correta) {
+                label.classList.add("bg-green-100", "rounded-md", "px-2");
+            } else if (input.checked) {
+                label.classList.add("bg-red-100", "rounded-md", "px-2");
+            }
+        });
         let mensagem = "";
         let estilo = "";
         switch (resposta.value) {
@@ -390,6 +445,15 @@ var personalizado = {
             feedback.classList.remove("hidden");
             return;
         }
+        const correta = "C";
+        feedback.parentElement.querySelectorAll("label").forEach(label => {
+            const input = label.querySelector("input");
+            if (input.value === correta) {
+                label.classList.add("bg-green-100", "rounded-md", "px-2");
+            } else if (input.checked) {
+                label.classList.add("bg-red-100", "rounded-md", "px-2");
+            }
+        });
         let mensagem = "";
         let estilo = "";
         switch (resposta.value) {

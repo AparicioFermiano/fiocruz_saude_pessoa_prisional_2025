@@ -109,7 +109,14 @@ var estrutura = {
 
     openModal: function (id) {
         const modal = document.getElementById(id);
+        const modais = document.getElementsByClassName('modal-overlay');
+
+        Array.from(modais).forEach(m => {
+            m.classList.add("hidden");
+        });
+    
         modal.classList.remove("hidden");
+    
         document.body.classList.add("overflow-hidden");
     },
 

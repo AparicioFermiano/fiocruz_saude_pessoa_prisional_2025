@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -321,39 +321,86 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo III - Saúde Prisional e a Rede de Atenção à Saúde
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 2 - O Processo de Trabalho das Equipes da Estratégia Saúde da Família e das Equipes de
-                        Atenção à Saúde das Unidades
-                        Prisionais e a Articulação com a RAS
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 3
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Saúde Prisional e a Rede de Atenção à Saúde
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 2 &nbsp;·&nbsp; O Processo de Trabalho das Equipes da Estratégia Saúde da Família e das Equipes de Atenção à Saúde das Unidades Prisionais e a Articulação com a RAS
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -438,7 +485,7 @@
 
         <div id="2.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1 Estrutura e organização das equipes de Saúde da Família
             </h2>
             <p>
@@ -457,8 +504,9 @@
                 prioritária para o
                 sistema de saúde e como uma estratégia para a reorganização da APS.
             </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Mas do que se trata a ESF e como ela pode nortear, no âmbito prisional, o processo de trabalho das eAPP?
             </h3>
             <p>
@@ -466,7 +514,7 @@
                 construção do SUS.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 Figura 1 - Linha do tempo da Estratégia Saúde da Família, antigo Programa Saúde da Família
             </h3>
             <div>
@@ -494,8 +542,9 @@
                 biológica, psicológica e
                 social —, valorizando seu contexto de vida e suas experiências.
             </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Você sabe quais profissionais de saúde compõem as equipes de Saúde da Família (eSF)?
             </h3>
             <p>
@@ -504,9 +553,6 @@
                 adicionais que podem e devem ser incluídos na equipe para garantia do acesso.
             </p>
             <div id="mapa" class="relative">
-                <p class="text-center pb-3">
-                    <small>Clique no ícone <strong>+</strong> para interagir</small>
-                </p>
                 <img class="w-full h-full rounded-xl" src="./images/profissionais.jpg" loading="lazy"
                     alt="Profissionais atuantes nas equipes de saúde da família" />
                 <button id="tooltip_1" class="botao-flutuante font-bold" style="top: 40%; left: 8%">
@@ -552,11 +598,12 @@
                 instituições penais.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.1 As equipes de Atenção Primária Prisional, enquanto equipes de Atenção Primária à Saúde
             </h2>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Você sabia que, desde 2017, a PNAB reconhece o direito à saúde da população privada de liberdade?
             </h3>
             <p>
@@ -566,8 +613,9 @@
                 específicas,
                 muitas vezes determinadas pelas condições inerentes ao sistema prisional brasileiro (Brasil, 2017).
             </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Você sabia também que as equipes de saúde do sistema prisional são denominadas equipes de Atenção
                 Primária Prisional
                 (eAPP)?
@@ -806,129 +854,148 @@
                 Dessa forma, as PPL podem atuar nos programas de educação e promoção da saúde realizados na APS
                 Prisional.
             </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.2 O papel das equipes de Atenção Primária Prisional no cuidado às pessoas privadas de liberdade nas
-                Redes de Atenção à
-                Saúde
-            </h2>
-            <p>
-                Como já vimos anteriormente, as eAPP devem garantir o acesso ao cuidado no SUS, cumprindo seus
-                princípios doutrinários e
-                organizativos, ou seja, seus valores fundamentais que determinam sua função e sua forma de organização,
-                dentre os quais
-                destacamos a universalidade, integralidade, a intersetorialidade, a descentralização, a hierarquização e
-                a humanização
-                (Brasil, 2014).
-            </p>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
-                Você já ouviu falar desses princípios e diretrizes do SUS? Vamos aprender juntos.
-            </h3>
-            <div>
-                <p class="text-center pb-3">
-                    <small>Clique para interagir</small>
+
+        </div>
+
+        <div id="2.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.2 O papel das equipes de Atenção Primária Prisional no cuidado às pessoas privadas de liberdade
+                    nas
+                    Redes de Atenção à
+                    Saúde
+                </h2>
+                <p>
+                    Como já vimos anteriormente, as eAPP devem garantir o acesso ao cuidado no SUS, cumprindo seus
+                    princípios doutrinários e
+                    organizativos, ou seja, seus valores fundamentais que determinam sua função e sua forma de
+                    organização,
+                    dentre os quais
+                    destacamos a universalidade, integralidade, a intersetorialidade, a descentralização, a
+                    hierarquização e
+                    a humanização
+                    (Brasil, 2014).
                 </p>
-                <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Integralidade</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                As eAPP devem estar orientadas e capacitadas para prestar um cuidado integral à saúde
-                                para todas as PPL. Dessa forma,
-                                devem ofertar ações de promoção da saúde, prevenção de doenças e de recuperação, assim
-                                como o encaminhamento dos casos
-                                de maior complexidade para a atenção especializada na RAS.
-                            </p>
+                <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                    <span
+                        class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                    Você já ouviu falar desses princípios e diretrizes do SUS? Vamos aprender juntos.
+                </h3>
+                <div>
+                    <p class="text-center pb-3">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div id="grupo2" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item21" onclick="animacao.toggleAccordion('item21', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Integralidade</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    As eAPP devem estar orientadas e capacitadas para prestar um cuidado integral à
+                                    saúde
+                                    para todas as PPL. Dessa forma,
+                                    devem ofertar ações de promoção da saúde, prevenção de doenças e de recuperação,
+                                    assim
+                                    como o encaminhamento dos casos
+                                    de maior complexidade para a atenção especializada na RAS.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item22" onclick="animacao.toggleAccordion('item22', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Universalidade</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                As eAPP devem estar orientadas e capacitadas para prestar um cuidado integral à saúde
-                                para todas as PPL. Dessa forma,
-                                devem ofertar ações de promoção da saúde, prevenção de doenças e de recuperação, assim
-                                como o encaminhamento dos casos
-                                de maior complexidade para a atenção especializada na RAS.
-                            </p>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item22" onclick="animacao.toggleAccordion('item22', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Universalidade</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    As eAPP devem estar orientadas e capacitadas para prestar um cuidado integral à
+                                    saúde
+                                    para todas as PPL. Dessa forma,
+                                    devem ofertar ações de promoção da saúde, prevenção de doenças e de recuperação,
+                                    assim
+                                    como o encaminhamento dos casos
+                                    de maior complexidade para a atenção especializada na RAS.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item23" onclick="animacao.toggleAccordion('item23', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Intersetorialidade</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                É o direito ao acesso aos serviços de saúde garantido a toda a população. É importante
-                                que as eAPP reconheçam que a PPL
-                                tem o mesmo direito aos serviços de saúde que são garantidos à população em geral;
-                            </p>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item23" onclick="animacao.toggleAccordion('item23', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Intersetorialidade</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    É o direito ao acesso aos serviços de saúde garantido a toda a população. É
+                                    importante
+                                    que as eAPP reconheçam que a PPL
+                                    tem o mesmo direito aos serviços de saúde que são garantidos à população em geral;
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item24" onclick="animacao.toggleAccordion('item24', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Descentralização</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                A gestão dos serviços da APS, assim como a definição e a organização dos fluxos para
-                                acesso aos serviços de média e alta
-                                complexidade são responsabilidades do gestor municipal em que o estabelecimento penal
-                                está instalado. Sendo assim, é
-                                essencial que a eAPP conheça e esteja alinhada com os fluxos estabelecidos no município
-                                para, assim, quando necessário,
-                                garantir o acesso da PPL aos demais serviços de saúde da RAS.
-                            </p>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item24" onclick="animacao.toggleAccordion('item24', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Descentralização</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    A gestão dos serviços da APS, assim como a definição e a organização dos fluxos para
+                                    acesso aos serviços de média e alta
+                                    complexidade são responsabilidades do gestor municipal em que o estabelecimento
+                                    penal
+                                    está instalado. Sendo assim, é
+                                    essencial que a eAPP conheça e esteja alinhada com os fluxos estabelecidos no
+                                    município
+                                    para, assim, quando necessário,
+                                    garantir o acesso da PPL aos demais serviços de saúde da RAS.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <button id="item24" onclick="animacao.toggleAccordion('item24', 'grupo2')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Humanização</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                As práticas em saúde da eAPP devem nortear-se pelo princípio da humanização, por isso
-                                devem ser respeitosas, ou seja, os
-                                profissionais das equipes e os gestores devem ter atitudes e comportamentos que
-                                demostrem respeito a todas as
-                                diferenças, sem discriminação de qualquer espécie e sem imposição de valores e crenças
-                                pessoais.
-                            </p>
+                        <div>
+                            <button id="item25" onclick="animacao.toggleAccordion('item25', 'grupo2')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Humanização</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    As práticas em saúde da eAPP devem nortear-se pelo princípio da humanização, por
+                                    isso
+                                    devem ser respeitosas, ou seja, os
+                                    profissionais das equipes e os gestores devem ter atitudes e comportamentos que
+                                    demostrem respeito a todas as
+                                    diferenças, sem discriminação de qualquer espécie e sem imposição de valores e
+                                    crenças
+                                    pessoais.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -936,49 +1003,32 @@
         </div>
 
         <div class="bg-gray-100 py-10">
-            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-wrap gap-7 items-start">
-                <div class="w-full md:flex-1 flex flex-col gap-7">
-                    <h2 class="text-3xl md:text-5xl font-bold">
-                        Reflexão
-                    </h2>
-                    <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
-                        Imagine que uma mulher privada de liberdade tenha começado a apresentar febre, dor de cabeça, dor no
-                        corpo, sangramento
-                        gengival e dor abdominal intensa há dois dias. A eAPP inicialmente a acolheu e, após suspeita de
-                        dengue, solicitou
-                        exames de sangue e NS1 (teste para dengue), cujos resultados foram baixo número de plaquetas e
-                        positivo para dengue. Foi
-                        realizada hidratação no sistema prisional, mas, como ela apresentava sinais de alarme e mal estado
-                        geral, foi
-                        encaminhada para uma Unidade de Pronto Atendimento (UPA). Chegando lá, precisou ficar internada até
-                        a estabilização do
-                        quadro geral e a hidratação estar adequada. Após o encaminhamento do caso, a eAPP realizou uma
-                        atividade de educação em
-                        saúde na instituição penal para identificar criadouros do mosquito da dengue.
-                    </h2>
-                </div>
-                <div class="w-full md:flex-1 flex items-center justify-center py-4">
-                    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4 w-full max-w-[380px]">
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-book-open text-3xl text-[var(--primary)]"></i>
-                            <h3 class="font-bold text-xl">Leitura complementar</h3>
-                        </div>
-                        <p class="font-semibold text-gray-800">Política Nacional de Atenção Integral à Saúde das Pessoas
-                            Privadas de Liberdade no Sistema Prisional</p>
-                        <p class="text-sm text-gray-500">BRASIL. Ministério da Saúde. Ministério da Justiça, 2014.</p>
-                        <a href="https://www.saude.mg.gov.br/wp-content/uploads/2025/01/Cartilha-PNAISP.pdf"
-                            target="_blank" rel="noopener noreferrer"
-                            class="btn bg-[var(--primary)] text-center mt-2">
-                            <i class="fa-solid fa-external-link-alt mr-2"></i>Acessar Cartilha PNAISP
-                        </a>
-                    </div>
-                </div>
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-3xl md:text-5xl font-bold">
+                    Reflexão
+                </h2>
+                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                    Imagine que uma mulher privada de liberdade tenha começado a apresentar febre, dor de cabeça, dor no
+                    corpo, sangramento
+                    gengival e dor abdominal intensa há dois dias. A eAPP inicialmente a acolheu e, após suspeita de
+                    dengue, solicitou
+                    exames de sangue e NS1 (teste para dengue), cujos resultados foram baixo número de plaquetas e
+                    positivo para dengue. Foi
+                    realizada hidratação no sistema prisional, mas, como ela apresentava sinais de alarme e mal estado
+                    geral, foi
+                    encaminhada para uma Unidade de Pronto Atendimento (UPA). Chegando lá, precisou ficar internada até
+                    a estabilização do
+                    quadro geral e a hidratação estar adequada. Após o encaminhamento do caso, a eAPP realizou uma
+                    atividade de educação em
+                    saúde na instituição penal para identificar criadouros do mosquito da dengue.
+                </h2>
             </div>
         </div>
 
         <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Nesse caso, quais princípios e diretrizes podem ser identificados? O que poderia ter sido feito para que
                 outro ou outros
                 princípios fossem também contemplados?
@@ -993,7 +1043,7 @@
                 ações de educação em saúde e de identificação dos criadouros.
             </p>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.2.1 O papel das equipes de Atenção Primária Prisional na coordenação do cuidado às pessoas privadas de
                 liberdade
             </h2>
@@ -1047,7 +1097,7 @@
                 RAS, conforme ilustrado na Figura 3.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 Figura 3 - Representação da APS como centro coordenadora das RAS
             </h3>
             <div>
@@ -1056,8 +1106,9 @@
                 <small>Fonte: Almeida (2019)</small>
                 <hr>
             </div>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Vejamos um relato de caso fictício!
             </h3>
             <p>
@@ -1069,7 +1120,7 @@
                 exames
                 laboratoriais.
             </p>
-            <div id="mapa" class="relative">
+            <div id="mapa2" class="relative">
                 <img class="w-full h-full rounded-xl" src="./images/homem-triste.jpg" loading="lazy"
                     alt="Homem triste no refeitorio usando uniforme" />
                 <button id="relato_1" class="botao-flutuante font-bold text-black!" style="top: 40%; left: 10%">
@@ -1082,8 +1133,9 @@
                     3
                 </button>
             </div>
-            <h3
-                class="text-2xl md:text-3xl border-b-2 py-5 border-[var(--primary)] font-light text-center leading-10 md:leading-12">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
                 Dessa forma, você entende que a eAPP realizou seu papel de coordenar o cuidado?
             </h3>
             <h2 class="text-2xl md:text-3xl font-bold">
@@ -1413,10 +1465,10 @@
                 Figura 5 - Classificação de risco e vulnerabilidades na demanda espontânea na Atenção Primária à Saúde
             </h3>
             <div class="flex flex-col gap-1">
-                <div class="rounded-xl bg-blue-200 text-center text-blue-900">
+                <div class="rounded-xl bg-blue-700 text-center text-white">
                     <p><b>Situação não aguda</b></p>
                 </div>
-                <div class="rounded-xl bg-blue-100 text-blue-900 p-5">
+                <div class="rounded-xl bg-blue-600 text-white p-5">
                     <p class=""><b>Condutas possíveis:</b></p>
                     <ul class="list-disc pl-5">
                         <li>Orientação específica e/ou sobre as ofertas da unidade.</li>
@@ -1429,13 +1481,13 @@
                         clínico da queixa.
                     </p>
                 </div>
-                <div class="rounded-xl bg-blue-300 text-center text-blue-900">
+                <div class="rounded-xl bg-blue-900 text-center text-white">
                     <p><b>Situação aguda ou crônica agudizada</b></p>
                 </div>
-                <div class="rounded-xl bg-blue-200 text-blue-900 px-5">
+                <div class="rounded-xl bg-blue-500 text-white px-5">
                     <p><b>Condutas possíveis:</b></p>
                 </div>
-                <div class="rounded-xl bg-red-100 text-red-900 p-5">
+                <div class="rounded-xl bg-red-500 text-white p-5">
                     <ul class="list-disc pl-5">
                         <li><b>Atendimento imediato (alto risco de vida):</b> necessita de intervenção da equipe no
                             mesmo momento, obrigatoriamente com a
@@ -1444,7 +1496,7 @@
                             consciência, dor severa.</li>
                     </ul>
                 </div>
-                <div class="rounded-xl bg-yellow-100 text-yellow-900 p-5">
+                <div class="rounded-xl bg-yellow-700 text-white p-5">
                     <ul class="list-disc pl-5">
                         <li><b>Atendimento prioritário (risco moderado):</b> necessita de intervenção breve da equipe,
                             podendo ser ofertada inicialmente medidas de conforto pela enfermagem até a
@@ -1457,7 +1509,7 @@
                             suspeita de violência.</li>
                     </ul>
                 </div>
-                <div class="rounded-xl bg-green-100 text-green-900 p-5">
+                <div class="rounded-xl bg-green-700 text-white p-5">
                     <ul class="list-disc pl-5">
                         <li><b>Atendimento no dia (risco baixo ou ausência de risco com vulnerabilidade importante):</b>
                             situação que precisa ser manejada no mesmo dia pela equipe levando em conta a estratificação
@@ -1524,7 +1576,7 @@
                 </div>
             </div>
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.4 O itinerário do cuidado e o encaminhamento das pessoas privadas de liberdade
             </h2>
             <p>
@@ -1642,7 +1694,7 @@
                 Saúde.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 Figura 6 - Diagrama de queixas de dor torácica
             </h3>
             <div>
@@ -1735,10 +1787,10 @@
             </p>
         </div>
 
-        <div class="bg-gray-100 py-10">
-            <div id="encerramento" class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+        <div id="encerramento" class="bg-gray-100 py-10">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
                     Encerramento da Unidade
                 </h2>
                 <p>
@@ -1771,14 +1823,34 @@
                     seja parte efetiva
                     e indissociável do SUS.
                 </p>
+            </div>
+        </div>
 
+        <div class="py-10" style="background-color: var(--primary)">
+            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-headphones mr-2"></i>
+                    Podcast
+                </h2>
+                <p class="font-bold">Após estudar esse módulo, você pode revisar o conteúdo escutando o nosso podcast. É um bate-papo informal com os principais pontos do conteúdo estudado.</p>
+                <audio controls class="w-full">
+                    <source src="./media/podcast-mod3.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+                <a href="./media/transcricao-podcast-mod3.pdf" target="_blank" class="btn bg-black text-white flex! gap-2 w-fit mx-auto">
+                    <i class="fa-solid fa-file-lines text-xl"></i>
+                    <span class="font-bold my-auto">Ver transcrição</span>
+                </a>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
             </div>
         </div>
 
         <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-file text-black"></i>
+                Referências principais
             </h2>
             <p>
                 BRASIL. Ministério da Saúde. <b>Políticas de Saúde, Política Nacional de Atenção Básica e Política
@@ -1825,155 +1897,121 @@
             </p>
         </div>
 
-        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências
-            </h2>
-            <p>
-                ALMEIDA, D. Saúde em rede - Você conhece o SUS? Parte 2. <b>Deviante</b>, 11 jun. 2019. Disponível em:
-                <a class="underline link"
-                    href="https://www.deviante.com.br/noticias/saude-em-rede-voce-conhece-o-sus-parte-2/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.deviante.com.br/noticias/saude-em-rede-voce-conhece-o-sus-parte-2/
-                </a>
-                . Acesso em: 25 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. <b>Políticas de Saúde, Política Nacional de Atenção Básica e Política
-                    Nacional
-                    de Vigilância
-                    em Saúde no Brasil</b>. Brasília: Ministério da Saúde, 2023. (Programa Saúde com Agente; E-book 6).
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_saude_atencao_basica_vigilancia.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/politica_saude_atencao_basica_vigilancia.pdf
-                </a>
-                . Acesso em: 25 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Dor Torácica: diagrama de navegação: Unidade de Atenção Primária. <a
-                    class="underline link" href="gov.br" target="_blank" rel="noopener noreferrer">gov.br</a>, 18 jan.
-                2022. Disponível em:
-                <a class="underline link"
-                    href="https://linhasdecuidado.saude.gov.br/portal/dor-toracica/unidade-de-atencao-primaria/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://linhasdecuidado.saude.gov.br/portal/dor-toracica/unidade-de-atencao-primaria/
-                </a>
-                . Acesso em: 29 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria GM/MS nº 2.298, de 9 de Setembro de 2021. Dispõe sobre as normas
-                para a
-                operacionalização da Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no
-                Sistema
-                Prisional (PNAISP), no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília,
-                DF, 10
-                set. 2021a.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2021/prt2298_10_09_2021.html
-                </a>
-                . Acesso em: 28 jul. 2025.
-            </p>
-            <p>
-                Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Doenças de Condições
-                Crônicas e
-                Infecções Sexualmente Transmissíveis. <b>Linha de cuidado da tuberculose</b>: orientações para gestores
-                e
-                profissionais de
-                saúde. Brasília: Ministério da Saúde, 2021b. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/linha_cuidado_tuberculose_orientacoes_gestores_profissionais_saude.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/linha_cuidado_tuberculose_orientacoes_gestores_profissionais_saude.pdf
-                </a>
-                . Acesso em: 25 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. <b>Linha de cuidado do Acidente Vascular Cerebral (AVC) no adulto</b>.
-                Brasília:
-                Ministério da
-                Saúde, 2020.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças
-                Transmissíveis.
-                <b>Manual de Recomendações para o Controle da Tuberculose no Brasil</b>. Brasília: Ministério da Saúde,
-                2019.
-                Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view
-                </a>
-                . Acesso em: 29 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Portaria nº 2.436, de 21 de setembro de 2017. Aprova a Política Nacional de
-                Atenção Básica,
-                estabelecendo a revisão de diretrizes para a organização da Atenção Básica, no âmbito do Sistema Único
-                de Saúde (SUS).
-                <b>Diário Oficial da União</b>, Brasília, DF, 22 set. 2017. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html
-                </a>
-                . Acesso em: 25 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça. <b>Política Nacional de Atenção Integral à Saúde das
-                    Pessoas Privadas
-                    de Liberdade no Sistema Prisional</b>. Brasília: Ministério da Saúde, 2014. Disponível em:
-                <a class="underline link"
-                    href="https://www.saude.mg.gov.br/wp-content/uploads/2025/01/Cartilha-PNAISP.pdf" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.saude.mg.gov.br/wp-content/uploads/2025/01/Cartilha-PNAISP.pdf
-                </a>
-                . Acesso em: 25 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. <b>Acolhimento a demanda espontânea</b>: queixas mais comuns na Atenção
-                Básica.
-                Brasília:
-                Ministério da Saúde, 2013. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/acolhimento_demanda_espontanea_queixas_comuns_cab28v2.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/acolhimento_demanda_espontanea_queixas_comuns_cab28v2.pdf
-                </a>
-                . Acesso em: 25 jul. 2025.
-            </p>
-            <p>
-                FIOCRUZ. Instituto Carlos Chagas. <b>Escala de risco e vulnerabilidade para a Atenção Primária de
-                    Saúde</b> -
-                uma nova proposta
-                a partir da ficha de cadastro individual. 2020. Disponível em:
-                <a class="underline link"
-                    href="https://www.icc.fiocruz.br/extensaodivulgacaocientifica/escala-de-risco-e-vulnerabilidade-para-a-atencao-primaria-de-saude-uma-nova-proposta-a-partir-da-ficha-de-cadastro-individual/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.icc.fiocruz.br/extensaodivulgacaocientifica/escala-de-risco-e-vulnerabilidade-para-a-atencao-primaria-de-saude-uma-nova-proposta-a-partir-da-ficha-de-cadastro-individual/
-                </a>
-                . Acesso em: 25 jul. 2025.
-            </p>
-            <p>
-                KRINGOS, D. S. et al. The breadth of primary care: a systematic literature review of its core
-                dimensions. <b>BMC Health
-                    Services Research</b>, v. 10, 65, 2010. Disponível em:
-                <a class="underline link"
-                    href="https://bmchealthservres.biomedcentral.com/articles/10.1186/1472-6963-10-65" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bmchealthservres.biomedcentral.com/articles/10.1186/1472-6963-10-65
-                </a>
-                . Acesso em: 25 jul. 2025.
-            </p>
-            <p>
-                MENDES, E. V. As redes de atenção à saúde. Brasília: Organização Pan-Americana da Saúde, 2011.
-            </p>
+        <div id="referencias" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências
+                </h2>
+                <p>
+                    ALMEIDA, D. Saúde em rede - Você conhece o SUS? Parte 2. <b>Deviante</b>, 11 jun. 2019. Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://www.deviante.com.br/noticias/saude-em-rede-voce-conhece-o-sus-parte-2/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.deviante.com.br/noticias/saude-em-rede-voce-conhece-o-sus-parte-2/
+                    </a>
+                    . Acesso em: 25 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Dor Torácica: diagrama de navegação: Unidade de Atenção Primária. <a
+                        class="underline link" href="gov.br" target="_blank" rel="noopener noreferrer">gov.br</a>, 18
+                    jan.
+                    2022. Disponível em:
+                    <a class="underline link"
+                        href="https://linhasdecuidado.saude.gov.br/portal/dor-toracica/unidade-de-atencao-primaria/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://linhasdecuidado.saude.gov.br/portal/dor-toracica/unidade-de-atencao-primaria/
+                    </a>
+                    . Acesso em: 29 ago. 2025.
+                </p>
+                <p>
+                    Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Doenças de Condições
+                    Crônicas e
+                    Infecções Sexualmente Transmissíveis. <b>Linha de cuidado da tuberculose</b>: orientações para
+                    gestores
+                    e
+                    profissionais de
+                    saúde. Brasília: Ministério da Saúde, 2021b. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/linha_cuidado_tuberculose_orientacoes_gestores_profissionais_saude.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/linha_cuidado_tuberculose_orientacoes_gestores_profissionais_saude.pdf
+                    </a>
+                    . Acesso em: 25 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. <b>Linha de cuidado do Acidente Vascular Cerebral (AVC) no adulto</b>.
+                    Brasília:
+                    Ministério da
+                    Saúde, 2020.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das
+                    Doenças
+                    Transmissíveis.
+                    <b>Manual de Recomendações para o Controle da Tuberculose no Brasil</b>. Brasília: Ministério da
+                    Saúde,
+                    2019.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view
+                    </a>
+                    . Acesso em: 29 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Portaria nº 2.436, de 21 de setembro de 2017. Aprova a Política
+                    Nacional de
+                    Atenção Básica,
+                    estabelecendo a revisão de diretrizes para a organização da Atenção Básica, no âmbito do Sistema
+                    Único
+                    de Saúde (SUS).
+                    <b>Diário Oficial da União</b>, Brasília, DF, 22 set. 2017. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html" target="_blank"
+                        rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html
+                    </a>
+                    . Acesso em: 25 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. <b>Acolhimento a demanda espontânea</b>: queixas mais comuns na Atenção
+                    Básica.
+                    Brasília:
+                    Ministério da Saúde, 2013. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/acolhimento_demanda_espontanea_queixas_comuns_cab28v2.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/acolhimento_demanda_espontanea_queixas_comuns_cab28v2.pdf
+                    </a>
+                    . Acesso em: 25 jul. 2025.
+                </p>
+                <p>
+                    FIOCRUZ. Instituto Carlos Chagas. <b>Escala de risco e vulnerabilidade para a Atenção Primária de
+                        Saúde</b> -
+                    uma nova proposta
+                    a partir da ficha de cadastro individual. 2020. Disponível em:
+                    <a class="underline link"
+                        href="https://www.icc.fiocruz.br/extensaodivulgacaocientifica/escala-de-risco-e-vulnerabilidade-para-a-atencao-primaria-de-saude-uma-nova-proposta-a-partir-da-ficha-de-cadastro-individual/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.icc.fiocruz.br/extensaodivulgacaocientifica/escala-de-risco-e-vulnerabilidade-para-a-atencao-primaria-de-saude-uma-nova-proposta-a-partir-da-ficha-de-cadastro-individual/
+                    </a>
+                    . Acesso em: 25 jul. 2025.
+                </p>
+                <p>
+                    KRINGOS, D. S. et al. The breadth of primary care: a systematic literature review of its core
+                    dimensions. <b>BMC Health
+                        Services Research</b>, v. 10, 65, 2010. Disponível em:
+                    <a class="underline link"
+                        href="https://bmchealthservres.biomedcentral.com/articles/10.1186/1472-6963-10-65"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bmchealthservres.biomedcentral.com/articles/10.1186/1472-6963-10-65
+                    </a>
+                    . Acesso em: 25 jul. 2025.
+                </p>
+            </div>
         </div>
 
         <div class="bg-gray-100 py-10">
@@ -1992,7 +2030,7 @@
                     </div>
                     <div class="w-full md:w-2/3 px-0 md:px-5">
                         <p>
-                            Pedro Augusto Bossonario é graduado em Bacharelado e Licenciatura em Enfermagem pela Escola
+                            Graduado em Bacharelado e Licenciatura em Enfermagem pela Escola
                             de
                             Enfermagem de Ribeirão
                             Preto da Universidade de São Paulo (EERP-USP) em 2016. Mestre (2016 - 2019) e doutor (2020
@@ -2021,7 +2059,7 @@
                 <div class="flex flex-wrap my-5">
                     <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
                         <p>
-                            Nanci Michele Saita Santos é Doutora em Enfermagem em Saúde Pública pela Escola de
+                            Doutora em Enfermagem em Saúde Pública pela Escola de
                             Enfermagem de
                             Ribeirão Preto - EERP
                             -USP (2020). Mestre em Saúde Coletiva pela Universidade Estadual de Campinas (Unicamp).
@@ -2187,23 +2225,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -246,7 +246,7 @@
                     <b>
                         Unidade 1
                     </b><br>
-                    Renata Terumi Shiguematsu Yassuda
+                    José Victor Bortolotto Bampi
                 </p>
                 <p>
                     <b>
@@ -270,7 +270,6 @@
                     <b>
                         Unidade 5
                     </b><br>
-                    Lucas Moura de Oliveira <br>
                     Giovana Soares Buzinaro
 
                 </p>
@@ -343,38 +342,82 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo V - O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não
-                        Transmissíveis no Âmbito da PNAISP
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 3 - Cuidado em Saúde na Diversidade de Gênero
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 5
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não Transmissíveis no Âmbito da PNAISP
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 3 &nbsp;·&nbsp; Cuidado em Saúde na Diversidade de Gênero
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -477,7 +520,7 @@
 
         <div id="3.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.1 Demografia da população LGBTIA+
             </h2>
             <p>
@@ -588,265 +631,305 @@
                     </div>
                 </div>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                3.2 Terminologia e conceitos fundamentais
-            </h2>
-            <p>
-                O uso correto das palavras e terminologias é de grande importância no atendimento de pessoas LGBTIA+.
-                Não usar os
-                pronomes de tratamento que a pessoa deseja, ser preconceituoso e não demonstrar respeito são as
-                principais formas de
-                quebrar o vínculo terapêutico e a confiança na APS, afastando essas pessoas do tratamento.
-            </p>
-            <p>
-                Não há uma referência universal para as definições e termos que serão discutidos nesta Unidade. Contudo,
-                observa-se uma
-                concordância de terminologia na maioria dos materiais. Foram utilizados de base textos operacionais para
-                trabalhadores
-                da saúde produzidos por órgãos da gestão em saúde de diferentes níveis, principalmente o <i>Protocolo
-                    para o cuidado
-                    integral à saúde de pessoas trans, travestis ou com vivências de variabilidade de gênero no
-                    município de São Paulo</i> (São
-                Paulo, 2023) e o documento federal <i>LGBT nas prisões do Brasil: diagnóstico dos procedimentos
-                    institucionais e
-                    experiências de encarceramento</i> (Brasil, 2020), que foram os orientadores das definições
-                apresentadas.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            <i>Saúde LGBTQIA+: Práticas de Cuidado Transdisciplinar</i>
-                        </p>
-                        <p>
-                            <b>Autor:</b>
-                            Saulo Vito Ciasca, Andrea Hercowitz e Ademir Lopes Junior (2020).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            o livro traz uma excelente apresentação do tema contextualizado na realidade brasileira.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link" href="https://www.sbmfc.org.br/noticias/livro-sobre-cuidados-lgbtia/"
-                                target="_blank">https://www.sbmfc.org.br/noticias/livro-sobre-cuidados-lgbtia/</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais3')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <p>
-                <b>Atenção!</b>
-            </p>
-            <p>
-                Estudante-trabalhador, vamos juntos analisar as definições dos termos mais utilizados.
-            </p>
-            <div>
-                <p class="text-center pb-3">
-                    <small>Clique para interagir</small>
-                </p>
-                <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Sexo designado ao nascer ou sexo biológico</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                O <b>sexo designado ao nascer</b> ou <b>sexo biológico</b> é definido pela apresentação
-                                da genitália externa ao nascer. No entanto,
-                                pode ser um desafio fazer essa classificação porque, mesmo em pessoas com o padrão
-                                cromossômico convencional (XX e XY),
-                                pode haver variações de genitália em relação ao padrão. Também há pessoas com variações
-                                genéticas (XXY, XYY, XXX, entre
-                                outras) e que, por isso, apresentam genitálias ambíguas. Independentemente da
-                                apresentação física, essas características
-                                não definem o entendimento pessoal do indivíduo sobre sua identidade de gênero nem
-                                expressão de gênero, bem como sua
-                                sexualidade.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Gênero e identidade de gênero</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                <b>Gênero</b> é uma construção social, cultural e histórica dos papéis que os indivíduos
-                                desempenham na sociedade em virtude do
-                                sexo designado ao nascer (sexo biológico). Isso se traduz no conceito social do que é
-                                masculino e feminino em diferentes
-                                sociedades. Atitudes consideradas masculinas, por exemplo, no Brasil, podem não ser
-                                consideradas assim em diferentes
-                                sociedades. Ao nascer, todas as pessoas têm um sexo biológico (sexo designado ao
-                                nascer), geralmente determinado com
-                                base nas características sexuais externas. O gênero é socialmente atribuído a essas
-                                pessoas também com base nessas
-                                características sexuais externas, o que as classifica como homens e mulheres. Contudo, a
-                                percepção individual dos papéis
-                                de gênero ou da própria identidade independe das características físicas ou do sexo
-                                designado ao nascer e essa
-                                autopercepção do gênero influencia diversas decisões e comportamentos, como a escolha de
-                                roupas e como os indivíduos
-                                desejam ser tratados.
-                            </p>
-                            <p>
-                                A pessoa que se identifica com o gênero que recebeu ao nascer é chamada de <b>cisgênero
-                                    (cis)</b>. Por exemplo: alguém que ao
-                                nascer apresente genitália masculina (pênis) não ambígua terá seu sexo designado ao
-                                nascer como <i>masculino</i>, receberá o
-                                gênero designado ao nascer <i>homem</i> e será tratado como tal (terá roupas azuis,
-                                brincará com brinquedos “de menino”, entre
-                                outros identificadores). Se, com o passar do tempo, essa pessoa, em seu entendimento
-                                individual, mantiver a
-                                identificação com esse gênero designado, ela será um homem cisgênero. O termo
-                                <b>transgênero (trans)</b> é um termo
-                                guarda-chuva que designa as pessoas que não se identificam com o gênero designado ao
-                                nascer, englobando travestis,
-                                pessoas que não se identificam com nenhum dos dois gêneros (não binárias), entre outras.
-                                Assim, por exemplo, alguém
-                                identificado ao nascer como homem que se identifica posteriormente como mulher é
-                                considerado uma <i>mulher trans</i> e alguém
-                                identificado ao nascer como mulher que se identifica posteriormente como homem é
-                                considerado um <i>homem trans</i>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Expressão de gênero e afirmação de gênero</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                O conceito de <b>expressão de gênero</b> está relacionado à forma como a pessoa expressa
-                                o
-                                gênero com o qual ela se identifica,
-                                por meio de roupas, comportamentos, linguagem e representação. Já os termos <i>afirmação
-                                    de
-                                    gênero</i> ou <i>processo
-                                    transexualizador</i> são utilizados para representar os processos sociais (por
-                                exemplo,
-                                alteração de nome) e biomédicos
-                                (cirurgias e hormonização) utilizados por pessoas trans no processo de
-                                autoidentificação. Entretanto, nem todas as
-                                pessoas trans sentem a necessidade de realizar procedimentos cirúrgicos ou a
-                                hormonização para construir sua identidade.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="border-b border-[var(--primary)]">
-                        <button id="item14" onclick="animacao.toggleAccordion('item14', 'grupo1')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Orientação sexual</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                É a maneira como a pessoa é identificada segundo a sua atração sexual, física ou
-                                romântica. O indivíduo <b>homossexual</b> é
-                                aquele que sente atração por pessoas do mesmo gênero que o seu. Pessoas do gênero
-                                masculino que sentem atração por
-                                pessoas do mesmo gênero são consideradas gays e pessoas do gênero feminino que sentem
-                                atração por pessoas do mesmo
-                                gênero são consideradas <i>lésbicas</i>. <b>Bissexuais</b> e <b>pansexuais</b>, termos
-                                às vezes utilizados como sinônimos, referem-se a
-                                pessoas que sentem atração por mais de um gênero. É importante pontuar que essa atração
-                                independe da identidade de
-                                gênero. Por exemplo, mulheres trans podem sentir atração por outras mulheres sem
-                                invalidar sua identidade.
-                            </p>
-                            <p>
-                                Contudo, pessoas podem manter relações sexuais com pessoas do mesmo gênero sem se
-                                considerarem gays ou lésbicas. A
-                                literatura utiliza os termos abrangentes de Homens que fazem Sexo com Homens (HSH) e
-                                Mulheres que fazem Sexo com
-                                Mulheres (MSM) para denominar esses indivíduos.
-                            </p>
-                            <p>
-                                No ambiente prisional, também encontramos com frequência uma diferenciação relacionada
-                                às práticas. Em estabelecimentos
-                                penais masculinos, encontramos homens em relações com outros homens que não se
-                                consideram gays por não praticarem sexo
-                                receptivo (ou passivo). Da mesma forma, mulheres em estabelecimentos penais femininos
-                                podem estar em relacionamentos com
-                                outras mulheres e não se considerar lésbicas porque suas relações fora da cadeia são
-                                apenas com homens (Varella, 2017).
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <button id="item15" onclick="animacao.toggleAccordion('item15', 'grupo1')"
-                            class="accordion-header w-full flex justify-between items-center py-3 text-left">
-                            <span class="font-bold text-xl px-5">Travesti</span>
-                            <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
-                            <p>
-                                A construção da identidade <b>travesti</b> é reconhecidamente brasileira, disseminada em
-                                nossa cultura desde o final da década
-                                de 1930. Travesti é uma pessoa que se associa com o gênero mulher, mas tem gênero
-                                masculino de nascimento (Brasil,
-                                2020), portanto o correto é se referir a essa pessoa no feminino (ela, dela, <i>a</i>
-                                travesti).
-                            </p>
-                            <p>
-                                Embora o senso comum já tenha utilizado como critério de diferenciação entre travestis e
-                                mulheres trans o desejo de
-                                realizar procedimentos de afirmação de gênero, isso é um equívoco. Pessoas que se
-                                identificam como travestis podem ter
-                                esse desejo.
-                            </p>
-                        </div>
-                    </div>
+        </div>
 
+        <div id="3.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    3.2 Terminologia e conceitos fundamentais
+                </h2>
+                <p>
+                    O uso correto das palavras e terminologias é de grande importância no atendimento de pessoas
+                    LGBTIA+.
+                    Não usar os
+                    pronomes de tratamento que a pessoa deseja, ser preconceituoso e não demonstrar respeito são as
+                    principais formas de
+                    quebrar o vínculo terapêutico e a confiança na APS, afastando essas pessoas do tratamento.
+                </p>
+                <p>
+                    Não há uma referência universal para as definições e termos que serão discutidos nesta Unidade.
+                    Contudo,
+                    observa-se uma
+                    concordância de terminologia na maioria dos materiais. Foram utilizados de base textos operacionais
+                    para
+                    trabalhadores
+                    da saúde produzidos por órgãos da gestão em saúde de diferentes níveis, principalmente o
+                    <i>Protocolo
+                        para o cuidado
+                        integral à saúde de pessoas trans, travestis ou com vivências de variabilidade de gênero no
+                        município de São Paulo</i> (São
+                    Paulo, 2023) e o documento federal <i>LGBT nas prisões do Brasil: diagnóstico dos procedimentos
+                        institucionais e
+                        experiências de encarceramento</i> (Brasil, 2020), que foram os orientadores das definições
+                    apresentadas.
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais3')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais3" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                <i>Saúde LGBTQIA+: Práticas de Cuidado Transdisciplinar</i>
+                            </p>
+                            <p>
+                                <b>Autor:</b>
+                                Saulo Vito Ciasca, Andrea Hercowitz e Ademir Lopes Junior (2020).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                o livro traz uma excelente apresentação do tema contextualizado na realidade brasileira.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link" href="https://www.sbmfc.org.br/noticias/livro-sobre-cuidados-lgbtia/"
+                                    target="_blank">https://www.sbmfc.org.br/noticias/livro-sobre-cuidados-lgbtia/</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais3')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <b>Atenção!</b>
+                </p>
+                <p>
+                    Estudante-trabalhador, vamos juntos analisar as definições dos termos mais utilizados.
+                </p>
+                <div>
+                    <p class="text-center pb-3">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Sexo designado ao nascer ou sexo biológico</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    O <b>sexo designado ao nascer</b> ou <b>sexo biológico</b> é definido pela
+                                    apresentação
+                                    da genitália externa ao nascer. No entanto,
+                                    pode ser um desafio fazer essa classificação porque, mesmo em pessoas com o padrão
+                                    cromossômico convencional (XX e XY),
+                                    pode haver variações de genitália em relação ao padrão. Também há pessoas com
+                                    variações
+                                    genéticas (XXY, XYY, XXX, entre
+                                    outras) e que, por isso, apresentam genitálias ambíguas. Independentemente da
+                                    apresentação física, essas características
+                                    não definem o entendimento pessoal do indivíduo sobre sua identidade de gênero nem
+                                    expressão de gênero, bem como sua
+                                    sexualidade.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Gênero e identidade de gênero</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <div class="overflow-y-auto">
+                                    <p>
+                                        <b>Gênero</b> é uma construção social, cultural e histórica dos papéis que os
+                                        indivíduos
+                                        desempenham na sociedade em virtude do
+                                        sexo designado ao nascer (sexo biológico). Isso se traduz no conceito social do
+                                        que
+                                        é
+                                        masculino e feminino em diferentes
+                                        sociedades. Atitudes consideradas masculinas, por exemplo, no Brasil, podem não
+                                        ser
+                                        consideradas assim em diferentes
+                                        sociedades. Ao nascer, todas as pessoas têm um sexo biológico (sexo designado ao
+                                        nascer), geralmente determinado com
+                                        base nas características sexuais externas. O gênero é socialmente atribuído a
+                                        essas
+                                        pessoas também com base nessas
+                                        características sexuais externas, o que as classifica como homens e mulheres.
+                                        Contudo, a
+                                        percepção individual dos papéis
+                                        de gênero ou da própria identidade independe das características físicas ou do
+                                        sexo
+                                        designado ao nascer e essa
+                                        autopercepção do gênero influencia diversas decisões e comportamentos, como a
+                                        escolha de
+                                        roupas e como os indivíduos
+                                        desejam ser tratados.
+                                    </p>
+                                    <p>
+                                        A pessoa que se identifica com o gênero que recebeu ao nascer é chamada de
+                                        <b>cisgênero
+                                            (cis)</b>. Por exemplo: alguém que ao
+                                        nascer apresente genitália masculina (pênis) não ambígua terá seu sexo designado
+                                        ao
+                                        nascer como <i>masculino</i>, receberá o
+                                        gênero designado ao nascer <i>homem</i> e será tratado como tal (terá roupas
+                                        azuis,
+                                        brincará com brinquedos “de menino”, entre
+                                        outros identificadores). Se, com o passar do tempo, essa pessoa, em seu
+                                        entendimento
+                                        individual, mantiver a
+                                        identificação com esse gênero designado, ela será um homem cisgênero. O termo
+                                        <b>transgênero (trans)</b> é um termo
+                                        guarda-chuva que designa as pessoas que não se identificam com o gênero
+                                        designado ao
+                                        nascer, englobando travestis,
+                                        pessoas que não se identificam com nenhum dos dois gêneros (não binárias), entre
+                                        outras.
+                                        Assim, por exemplo, alguém
+                                        identificado ao nascer como homem que se identifica posteriormente como mulher é
+                                        considerado uma <i>mulher trans</i> e alguém
+                                        identificado ao nascer como mulher que se identifica posteriormente como homem é
+                                        considerado um <i>homem trans</i>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item13" onclick="animacao.toggleAccordion('item13', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Expressão de gênero e afirmação de gênero</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    O conceito de <b>expressão de gênero</b> está relacionado à forma como a pessoa
+                                    expressa
+                                    o
+                                    gênero com o qual ela se identifica,
+                                    por meio de roupas, comportamentos, linguagem e representação. Já os termos
+                                    <i>afirmação
+                                        de
+                                        gênero</i> ou <i>processo
+                                        transexualizador</i> são utilizados para representar os processos sociais (por
+                                    exemplo,
+                                    alteração de nome) e biomédicos
+                                    (cirurgias e hormonização) utilizados por pessoas trans no processo de
+                                    autoidentificação. Entretanto, nem todas as
+                                    pessoas trans sentem a necessidade de realizar procedimentos cirúrgicos ou a
+                                    hormonização para construir sua identidade.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item14" onclick="animacao.toggleAccordion('item14', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Orientação sexual</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    É a maneira como a pessoa é identificada segundo a sua atração sexual, física ou
+                                    romântica. O indivíduo <b>homossexual</b> é
+                                    aquele que sente atração por pessoas do mesmo gênero que o seu. Pessoas do gênero
+                                    masculino que sentem atração por
+                                    pessoas do mesmo gênero são consideradas gays e pessoas do gênero feminino que
+                                    sentem
+                                    atração por pessoas do mesmo
+                                    gênero são consideradas <i>lésbicas</i>. <b>Bissexuais</b> e <b>pansexuais</b>,
+                                    termos
+                                    às vezes utilizados como sinônimos, referem-se a
+                                    pessoas que sentem atração por mais de um gênero. É importante pontuar que essa
+                                    atração
+                                    independe da identidade de
+                                    gênero. Por exemplo, mulheres trans podem sentir atração por outras mulheres sem
+                                    invalidar sua identidade.
+                                </p>
+                                <p>
+                                    Contudo, pessoas podem manter relações sexuais com pessoas do mesmo gênero sem se
+                                    considerarem gays ou lésbicas. A
+                                    literatura utiliza os termos abrangentes de Homens que fazem Sexo com Homens (HSH) e
+                                    Mulheres que fazem Sexo com
+                                    Mulheres (MSM) para denominar esses indivíduos.
+                                </p>
+                                <p>
+                                    No ambiente prisional, também encontramos com frequência uma diferenciação
+                                    relacionada
+                                    às práticas. Em estabelecimentos
+                                    penais masculinos, encontramos homens em relações com outros homens que não se
+                                    consideram gays por não praticarem sexo
+                                    receptivo (ou passivo). Da mesma forma, mulheres em estabelecimentos penais
+                                    femininos
+                                    podem estar em relacionamentos com
+                                    outras mulheres e não se considerar lésbicas porque suas relações fora da cadeia são
+                                    apenas com homens (Varella, 2017).
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="item15" onclick="animacao.toggleAccordion('item15', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Travesti</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    A construção da identidade <b>travesti</b> é reconhecidamente brasileira,
+                                    disseminada em
+                                    nossa cultura desde o final da década
+                                    de 1930. Travesti é uma pessoa que se associa com o gênero mulher, mas tem gênero
+                                    masculino de nascimento (Brasil,
+                                    2020), portanto o correto é se referir a essa pessoa no feminino (ela, dela,
+                                    <i>a</i>
+                                    travesti).
+                                </p>
+                                <p>
+                                    Embora o senso comum já tenha utilizado como critério de diferenciação entre
+                                    travestis e
+                                    mulheres trans o desejo de
+                                    realizar procedimentos de afirmação de gênero, isso é um equívoco. Pessoas que se
+                                    identificam como travestis podem ter
+                                    esse desejo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div id="3.3" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.3 Legislação sobre acolhimento LGBTIA+
             </h2>
             <p>
@@ -891,46 +974,61 @@
                 documentos produzidos e usados na instituição penal, bem como a ser chamado pelo nome referido (Brasil,
                 2024).
             </p>
+        </div>
+
+        <div id="3.4" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    3.4 Demografia da população LGBTIA+ privada de liberdade
+                </h2>
+                <p>
+                    No levantamento federal de 2020, das 508 instituições penais respondentes (das 1.499 existentes),
+                    106
+                    delas, <i>todas
+                        masculinas</i>, dispunham de alas designadas para custódia de pessoas LGBTIA+, com 2.048 vagas
+                    ocupadas por
+                    2.302 PPL
+                    (Brasil, 2020). No entanto, o estudo tem duas limitações principais: não há como ter certeza de que
+                    todas as pessoas
+                    LGBTIA+ privadas de liberdade nessas instituições foram consultadas e não há como ter certeza de que
+                    todas as pessoas
+                    LGBTIA+ se autodeclararam assim, já que fazer isso pode representar um risco de se tornar alvo de
+                    violência,
+                    principalmente nas instituições penais masculinas. Logo, esse dado não pode ser tomado como censo
+                    adequado dessa
+                    população.
+                </p>
+                <p>
+                    Também é comum encontrar nessas alas específicas homens cis que se autodeclararam heterossexuais,
+                    mas
+                    que acessaram esse
+                    espaço após se tornarem parceiros de uma mulher trans ou de um homem gay. Ao terminarem o
+                    relacionamento, muitas vezes
+                    esses homens não conseguem retornar ao convívio por não serem mais aceitos pelo restante da
+                    população
+                    privada de
+                    liberdade (Brasil, 2020).
+                </p>
+                <p>
+                    Uma das hipóteses levantadas durante as entrevistas nas instituições penais participantes do estudo
+                    é
+                    que ser LGBTIA+ em instituições femininas possivelmente não representa um risco individual elevado,
+                    em
+                    comparação com instituições masculinas. Essa percepção se confirma também pela ausência de demanda
+                    pela
+                    criação de espaços de convivência específicos para essas pessoas, conforme fica evidente nas
+                    entrevistas
+                    em instituições femininas. Reflexo disso é que, apesar de a população privada de liberdade masculina
+                    ser
+                    quase 15 vezes maior que a feminina, a população absoluta de pessoas que se declaram LGBTIA+ em
+                    instituições femininas supera a que se declara LGBTIA+ em instituições masculinas.</p>
+            </div>
+        </div>
+
+        <div id="3.5" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                3.4 Demografia da população LGBTIA+ privada de liberdade
-            </h2>
-            <p>
-                No levantamento federal de 2020, das 508 instituições penais respondentes (das 1.499 existentes), 106
-                delas, <i>todas
-                    masculinas</i>, dispunham de alas designadas para custódia de pessoas LGBTIA+, com 2.048 vagas
-                ocupadas por
-                2.302 PPL
-                (Brasil, 2020). No entanto, o estudo tem duas limitações principais: não há como ter certeza de que
-                todas as pessoas
-                LGBTIA+ privadas de liberdade nessas instituições foram consultadas e não há como ter certeza de que
-                todas as pessoas
-                LGBTIA+ se autodeclararam assim, já que fazer isso pode representar um risco de se tornar alvo de
-                violência,
-                principalmente nas instituições penais masculinas. Logo, esse dado não pode ser tomado como censo
-                adequado dessa
-                população.
-            </p>
-            <p>
-                Também é comum encontrar nessas alas específicas homens cis que se autodeclararam heterossexuais, mas
-                que acessaram esse
-                espaço após se tornarem parceiros de uma mulher trans ou de um homem gay. Ao terminarem o
-                relacionamento, muitas vezes
-                esses homens não conseguem retornar ao convívio por não serem mais aceitos pelo restante da população
-                privada de
-                liberdade (Brasil, 2020).
-            </p>
-            <p>
-                Uma das hipóteses levantadas durante as entrevistas nas instituições penais participantes do estudo é
-                que ser LGBTIA+ em instituições femininas possivelmente não representa um risco individual elevado, em
-                comparação com instituições masculinas. Essa percepção se confirma também pela ausência de demanda pela
-                criação de espaços de convivência específicos para essas pessoas, conforme fica evidente nas entrevistas
-                em instituições femininas. Reflexo disso é que, apesar de a população privada de liberdade masculina ser
-                quase 15 vezes maior que a feminina, a população absoluta de pessoas que se declaram LGBTIA+ em
-                instituições femininas supera a que se declara LGBTIA+ em instituições masculinas.
-            </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.5 Acolhimento de pessoas LGBTIA+ na Atenção Primária à Saúde Prisional
             </h2>
             <p>
@@ -1006,466 +1104,504 @@
             </div>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     <b>O modo como nos comunicamos dentro e fora dos atendimentos é de extrema relevância para o
                         atendimento das PPL.</b> Já pensou
                     que uma comunicação inadequada pode levar a um afastamento dos indivíduos da atenção à saúde,
-                    diminuindo a
+                    diminuindcia
                     confiabilidade no serviço e nos profissionais?
-                </h2>
+                </h3>
             </div>
         </div>
 
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                3.6 Peculiaridades do atendimento à população LGBTIA+ na Atenção Primária à Saúde Prisional
-            </h2>
-            <p>
-                Quando se trata de saúde LGBTIA+, os temas frequentemente se restringem às práticas sexuais e geralmente
-                são
-                acompanhados de algum preconceito. Por isso, é comum que essas pessoas se recusem a procurar a APS.
-                Muitas vezes, já
-                enfrentaram esse tipo de preconceito cometido por profissionais de saúde, além de outros problemas, como
-                negligência a
-                doenças não relacionadas ao âmbito sexual e situações desconfortáveis. Esse afastamento da população
-                LGBTIA+ da APS
-                aumenta o risco de complicações decorrentes de doenças crônicas não transmissíveis.
-            </p>
-            <p>
-                Existem também algumas particularidades no atendimento desses indivíduos, desafios que não são
-                identificados no atendimento da população não LGBTIA+. Por exemplo, o acesso a ambulatórios
-                especializados de hormonização para população trans ou atendimento na APS ainda não é amplamente
-                disponível no Brasil, levando ao uso indiscriminado de medicações sob orientação não profissional. O uso
-                excessivo e inadequado de hormonioterapia sem supervisão é reconhecidamente perigoso devido ao aumento
-                do risco cardiovascular e de eventos como acidente vascular cerebral (AVC).
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais5')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais5" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            Experiências exitosas de atendimento à população trans
-                        </p>
-                        <p>
-                            <b>Autores:</b>
-                            Saulo Marcos Carmo dos Reis (2025), Guilherme Lamperti Thomazi, Simone Avila e Luciana
-                            Barcellos Teixeira (2022) e João
-                            Rogers <i>et al.</i> (2016).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            o atendimento à população trans é possível na APS. Veja exemplos de serviços em Ouro Preto,
-                            Porto Alegre e
-                            Florianópolis, respectivamente, nos endereços a seguir.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                        </p>
-                        <ul class="list-disc pl-5 flex flex-col gap-3">
-                            <li>
-                                <a class="link" href="https://www.monografias.ufop.br/handle/35400000/7598"
-                                    target="_blank">https://www.monografias.ufop.br/handle/35400000/7598</a>
-                            </li>
-                            <li>
-                                <a class="link" href="https://www.scielo.br/j/sess/a/XdK5Z6RhzbvHQnPz7tjkhXN/?lang=pt"
-                                    target="_blank">https://www.scielo.br/j/sess/a/XdK5Z6RhzbvHQnPz7tjkhXN/?lang=pt</a>
-                            </li>
-                            <li>
-                                <a class="link"
-                                    href="https://incubadora.periodicos.ufsc.br/index.php/saudeetransformacao/article/view/4276"
-                                    target="_blank">https://incubadora.periodicos.ufsc.br/index.php/saudeetransformacao/article/view/4276</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais5')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <p>
-                A dificuldade de acessar procedimentos estéticos também estimula a busca por procedimentos alternativos,
-                como aplicação
-                de silicone industrial injetado de forma “caseira” em região de mamas ou glúteos. Esse silicone, que é
-                líquido e
-                inapropriado para uso medicinal, causa reações de corpo estranho e se movimenta para regiões inferiores
-                do corpo. Com
-                frequência, PPL que fazem essa aplicação buscam atendimento relatando dores nas regiões da aplicação ou
-                até infecções
-                cutâneas locais. Como o material é líquido, a retirada cirúrgica é muito dificultada. Portanto, a
-                conduta geral é o
-                manejo das complicações e inflamações crônicas com uso de anti-inflamatórios não esteroidais e
-                compressas mornas, por
-                exemplo (São Paulo, 2023).
-            </p>
-            <div class="border-2 border-red-600 bg-red-100 rounded-2xl p-5 text-center">
-                <p>
-                    <b>Atenção!</b>
-                </p>
-                <p>
-                    <b>Nunca realize aplicação intramuscular em regiões que tenham silicone industrial!</b> Prefira
-                    sempre fazer aplicações no
-                    músculo deltoide. Mesmo quando aplicado apenas em glúteo, o silicone pode se depositar no vasto
-                    lateral.
-                </p>
-            </div>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                3.6.1 Procedimentos de afirmação de gênero
-            </h3>
-            <p>
-                O desejo de realizar hormonioterapia não é compartilhado por todas as pessoas trans e travestis, e mesmo
-                pessoas que
-                estão em hormonização ativa não necessariamente desejam realizar procedimentos cirúrgicos. Contudo, essa
-                é uma demanda
-                relevante.
-            </p>
-            <p>
-                O Ministério da Saúde operacionalizou formalmente, em 2013, o acesso ao processo transexualizador de
-                forma regular pela
-                APS, não apenas em ambulatórios de referência, por meio da Portaria nº 2.803 (Brasil, 2013). Já a
-                Resolução Conjunta
-                CNPCP/CNLGBTQIA+ nº 2, de 2024, legisla sobre a garantia do acesso à terapia hormonal no sistema
-                prisional (Brasil,
-                2024).
-            </p>
-            <p>
-                Contudo, o tema ainda permanece em constante debate. Em 2025, o Conselho Federal de Medicina (CFM)
-                publicou a Resolução
-                CFM nº 2.427/2025, que revisou critérios para atendimento de pessoas com incongruência e/ou disforia de
-                gênero. Ela
-                determina que a hormonioterapia cruzada no adulto só pode ser prescrita por médico endocrinologista,
-                ginecologista ou
-                urologista. Entidades que atuam na APS, como a SBMFC, se manifestaram defendendo que realizar a terapia
-                hormonal nas
-                Unidades Básicas de Saúde (UBS), com o seguimento por médico da família e comunidade, é plenamente
-                possível. No entanto,
-                no mesmo ano de sua publicação, essa normativa foi suspensa, mantendo em vigor as prerrogativas
-                garantidas nas
-                normativas citadas de 2013 e 2024.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais6')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais6" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            <i>Nota da SBMFC sobre a resolução do CFM nº 2.427, de 08 de abril de 2025</i>
-                        </p>
-                        <p>
-                            <b>Autor:</b>
-                            Sociedade Brasileira de Medicina da Família e Comunidade (2025).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            leia mais para entender o debate sobre o cuidado à saúde das pessoas trans na APS.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                        </p>
-                        <a class="link"
-                            href="https://www.sbmfc.org.br/noticias/nota-da-sbmfc-sobre-a-resolucao-do-cfm-no-2-427-de-08-de-abril-de-2025/"
-                            target="_blank">https://www.sbmfc.org.br/noticias/nota-da-sbmfc-sobre-a-resolucao-do-cfm-no-2-427-de-08-de-abril-de-2025/</a>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais6')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <p>
-                São frequentes as queixas da população LGBTIA+ da falta de acesso à terapia hormonal no sistema
-                prisional (Brasil,
-                2020). Ainda menos acessíveis são os procedimentos cirúrgicos na atenção hospitalar. As Unidades Básicas
-                de Saúde
-                Prisional (UBSP) podem pedir habilitação, por meio do Sistema de Apoio à Implementação de Políticas de
-                Saúde (SAIPS),
-                para oferecer mais rapidamente atendimento ambulatorial à pessoa que busca a hormonioterapia. Sugere-se
-                que os
-                profissionais das unidades de APS Prisional discutam a possibilidade de oferecer um cuidado integral às
-                pessoas LGBTIA+.
-                É importante ampliar o acesso à saúde das pessoas trans que buscam a terapia hormonal para que elas
-                possam fazer o
-                seguimento com terapia hormonal nas instituições penais.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais7')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais7" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título:</b>
-                            <i>16 anos depois, processo transexualizador no SUS segue restrito e sob ataque</i>
-                        </p>
-                        <p>
-                            <b>Autor:</b>
-                            Jess Carvalho (2025).
-                        </p>
-                        <p>
-                            <b>Descrição:</b>
-                            leia para descobrir os desafios enfrentados para acessar os procedimentos.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                        </p>
-                        <a class="link"
-                            href="https://www.brasildefato.com.br/2025/01/29/16-anos-depois-processo-transexualizador-no-sus-segue-restrito-e-sob-ataque/"
-                            target="_blank">https://www.brasildefato.com.br/2025/01/29/16-anos-depois-processo-transexualizador-no-sus-segue-restrito-e-sob-ataque/</a>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais7')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <p>
-                Ainda não há um protocolo específico do Ministério da Saúde que defina as medicações e as dosagens mais
-                indicadas para a terapia hormonal. Alguns estados e instituições têm protocolos específicos que incluem
-                medicações que não estão disponíveis na farmácia da rede pública. Nesta Unidade, optou-se por utilizar
-                como referência o protocolo do município de São Paulo (2023) e as orientações da SBMFC (2020).
-            </p>
-            <p>
-                Em geral, busca-se utilizar a menor dose de hormônios necessária para atingir as mudanças corporais
-                desejadas. É
-                importante sempre lembrar às PPL que a maioria das alterações corporais desejadas pode demorar meses
-                para atingir um
-                resultado satisfatório, sem a necessidade de aumento de dose por ausência de resposta clínica rápida.
-                Todo o processo de
-                mudança pode levar até dois anos para se completar, contando a partir do início das medicações (cinco
-                para crescimento
-                de mamas e alteração de gordura corporal).
-            </p>
-            <div class="border-2 border-red-600 bg-red-100 rounded-2xl p-5 text-center">
-                <p>
-                    <b>Atenção!</b>
-                </p>
-                <p>
-                    As contraindicações absolutas à terapia são: doença cardiovascular isquêmica instável,
-                    gestação/amamentação atual,
-                    neoplasias sensíveis aos hormônios em atividade, transtornos psiquiátricos não estabilizados e
-                    hipersensibilidade/reações anteriores aos componentes da medicação.
-                </p>
-            </div>
-            <p>
-                No contexto de hormonização de travestis, mulheres trans e demais pessoas transfemininas, o Sistema
-                Único de Saúde (SUS)
-                oferece a esses grupos uma terapia dupla com uso de estrógenos e bloqueio da testosterona
-                (antiandrogênicos). As
-                medicações geralmente disponíveis são: os estrógenos valerato de estradiol, estradiol hemihidratado
-                tópico,
-                17ꞵ-estradiol tópico ou oral e enantato de estradiol injetável (disponível com a algestona acetofenida
-                como
-                contraceptivo); os antiandrógenos espironolactona, ciproterona, acetato de medroxiprogesterona e a
-                algestona acetofenida
-                associada com estradiol injetável.
-            </p>
-            <p>
-                A combinação mais utilizada, seja pela posologia simples, seja pela facilidade de acesso por ser
-                utilizada também como
-                anticoncepcional, é o enantato de estradiol + algestona acetofenida 10 mg + 150 mg/ml injetável,
-                aplicado uma vez por
-                semana ou a cada duas semanas.
-            </p>
-            <p>
-                Os efeitos da terapia hormonal devem ser monitorizados. Em todas as consultas, é necessário aferir a
-                pressão arterial,
-                verificar o peso e avaliar alterações da distribuição de gordura corporal, a pilificação e demais
-                alterações
-                específicas. Recomenda-se avaliar as funções hepática e renal antes de prescrever a medicação e
-                trimestralmente durante
-                o primeiro ano de seguimento. Exames hormonais não precisam ser solicitados rotineiramente, tendo em
-                vista que a
-                resposta clínica é mais relevante.
-            </p>
-            <p>
-                Com relação à hormonização para homens trans e pessoas transmasculinas, não há necessidade de bloqueio
-                direto da produção de estrógeno, sendo suficiente a terapia com derivados da testosterona. Doses
-                suprafisiológicas não devem ser prescritas, uma vez que, nessas condições, ocorre conversão periférica
-                da testosterona em estrógeno pela aromatase.
-            </p>
-            <p>
-                A testosterona é uma substância anabolizante, por isso, de acordo com a Portaria nº 344/1998 do
-                Ministério da Saúde, a
-                sua prescrição é especial (Brasil, 1998). A receita deve ser em duas vias, com o endereço da pessoa
-                usuária, com o
-                código CID-10 F64.0, CPF do profissional médico prescritor e com não mais que cinco ampolas de
-                prescrição.
-            </p>
-            <p>
-                Com exceção da formulação em gel, todas as demais são injetáveis e devem ser aplicadas a cada 14/21 dias
-                (no caso do
-                cipionato de testosterona e decanoato + fempropionato + propionato + isocaproato de testosterona) ou de
-                depósito a cada
-                90 dias (undecanoato e undecilato de testosterona). A formulação mais utilizada nos manuais de
-                referência e mais
-                disponível em alguns locais é o cipionato de testosterona.
-            </p>
-            <p>
-                Assim como no uso de estrógenos e antiandrógenos, a avaliação de modificação de características físicas
-                deve ser
-                monitorada em todas as consultas. Recomenda-se avaliar as funções hepática e renal antes de prescrever a
-                medicação e
-                trimestralmente durante o primeiro ano de seguimento. A dosagem de testosterona sérica nessas ocasiões
-                também não é
-                indicada, já que os efeitos clínicos são mais relevantes. É importante lembrar que se devem evitar doses
-                superiores às
-                indicadas devido ao efeito de conversão periférica pela aromatase.
-            </p>
-        </div>
-
-
-
-        <div id="encerramento" class="bg-gray-100 py-10">
-            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+        <div id="3.6" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
-                    Encerramento da Unidade
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    3.6 Peculiaridades do atendimento à população LGBTIA+ na Atenção Primária à Saúde Prisional
                 </h2>
                 <p>
-                    O cuidado à saúde nas demandas específicas da população LGBTIA+ é variado, mas torna-se de simples
-                    compreensão quando
-                    integrado à rotina da APS Prisional. Os trabalhadores da saúde prisional, mesmo em instituições
-                    penais que não têm alas
-                    dedicadas a essa população, se beneficiam dessa mudança de perspectiva, que passa a permear os
-                    atendimentos.
+                    Quando se trata de saúde LGBTIA+, os temas frequentemente se restringem às práticas sexuais e
+                    geralmente
+                    são
+                    acompanhados de algum preconceito. Por isso, é comum que essas pessoas se recusem a procurar a APS.
+                    Muitas vezes, já
+                    enfrentaram esse tipo de preconceito cometido por profissionais de saúde, além de outros problemas,
+                    como
+                    negligência a
+                    doenças não relacionadas ao âmbito sexual e situações desconfortáveis. Esse afastamento da população
+                    LGBTIA+ da APS
+                    aumenta o risco de complicações decorrentes de doenças crônicas não transmissíveis.
                 </p>
                 <p>
-                    Caso seja de seu interesse, o documento citado anteriormente <i>LGBT nas prisões do Brasil:
-                        diagnóstico
-                        dos procedimentos
-                        institucionais e experiências de encarceramento</i> (Brasil, 2020) fornece relatos das próprias
-                    PPL em
-                    diferentes regiões
-                    sobre o cotidiano nas instituições penais, desafios enfrentados na assistência à saúde e convívio
-                    geral. Com relação aos
-                    guias de atendimento e referências, por falta de uma diretriz unificada nacional, optou-se por
-                    utilizar primariamente o
-                    manual da saúde pública da cidade de São Paulo (São Paulo, 2023). É importante contactar as
-                    secretarias de estado de
-                    saúde para averiguar a existência de protocolos regionais que devem ser seguidos.
+                    Existem também algumas particularidades no atendimento desses indivíduos, desafios que não são
+                    identificados no atendimento da população não LGBTIA+. Por exemplo, o acesso a ambulatórios
+                    especializados de hormonização para população trans ou atendimento na APS ainda não é amplamente
+                    disponível no Brasil, levando ao uso indiscriminado de medicações sob orientação não profissional. O
+                    uso
+                    excessivo e inadequado de hormonioterapia sem supervisão é reconhecidamente perigoso devido ao
+                    aumento
+                    do risco cardiovascular e de eventos como acidente vascular cerebral (AVC).
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais5')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais5" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                Experiências exitosas de atendimento à população trans
+                            </p>
+                            <p>
+                                <b>Autores:</b>
+                                Saulo Marcos Carmo dos Reis (2025), Guilherme Lamperti Thomazi, Simone Avila e Luciana
+                                Barcellos Teixeira (2022) e João
+                                Rogers <i>et al.</i> (2016).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                o atendimento à população trans é possível na APS. Veja exemplos de serviços em Ouro
+                                Preto,
+                                Porto Alegre e
+                                Florianópolis, respectivamente, nos endereços a seguir.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                            </p>
+                            <ul class="list-disc pl-5 flex flex-col gap-3">
+                                <li>
+                                    <a class="link" href="https://www.monografias.ufop.br/handle/35400000/7598"
+                                        target="_blank">https://www.monografias.ufop.br/handle/35400000/7598</a>
+                                </li>
+                                <li>
+                                    <a class="link"
+                                        href="https://www.scielo.br/j/sess/a/XdK5Z6RhzbvHQnPz7tjkhXN/?lang=pt"
+                                        target="_blank">https://www.scielo.br/j/sess/a/XdK5Z6RhzbvHQnPz7tjkhXN/?lang=pt</a>
+                                </li>
+                                <li>
+                                    <a class="link"
+                                        href="https://incubadora.periodicos.ufsc.br/index.php/saudeetransformacao/article/view/4276"
+                                        target="_blank">https://incubadora.periodicos.ufsc.br/index.php/saudeetransformacao/article/view/4276</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais5')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    A dificuldade de acessar procedimentos estéticos também estimula a busca por procedimentos
+                    alternativos,
+                    como aplicação
+                    de silicone industrial injetado de forma “caseira” em região de mamas ou glúteos. Esse silicone, que
+                    é
+                    líquido e
+                    inapropriado para uso medicinal, causa reações de corpo estranho e se movimenta para regiões
+                    inferiores
+                    do corpo. Com
+                    frequência, PPL que fazem essa aplicação buscam atendimento relatando dores nas regiões da aplicação
+                    ou
+                    até infecções
+                    cutâneas locais. Como o material é líquido, a retirada cirúrgica é muito dificultada. Portanto, a
+                    conduta geral é o
+                    manejo das complicações e inflamações crônicas com uso de anti-inflamatórios não esteroidais e
+                    compressas mornas, por
+                    exemplo (São Paulo, 2023).
+                </p>
+                <div class="border-2 border-red-600 bg-red-100 rounded-2xl p-5 text-center">
+                    <p>
+                        <b>Atenção!</b>
+                    </p>
+                    <p>
+                        <b>Nunca realize aplicação intramuscular em regiões que tenham silicone industrial!</b> Prefira
+                        sempre fazer aplicações no
+                        músculo deltoide. Mesmo quando aplicado apenas em glúteo, o silicone pode se depositar no vasto
+                        lateral.
+                    </p>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    3.6.1 Procedimentos de afirmação de gênero
+                </h3>
+                <p>
+                    O desejo de realizar hormonioterapia não é compartilhado por todas as pessoas trans e travestis, e
+                    mesmo
+                    pessoas que
+                    estão em hormonização ativa não necessariamente desejam realizar procedimentos cirúrgicos. Contudo,
+                    essa
+                    é uma demanda
+                    relevante.
                 </p>
                 <p>
-                    Por fim, esperamos que, com o fim desta Unidade, seus conhecimentos sobre saúde LGBTIA+ tenham se
-                    ampliado ainda mais!
-                    Cuidar com respeito e equidade transforma realidades. Cada gesto acolhedor é um passo em direção a
-                    uma sociedade mais
-                    justa, dentro e fora dos muros das instituições penais. Você é agente dessa transformação.
+                    O Ministério da Saúde operacionalizou formalmente, em 2013, o acesso ao processo transexualizador de
+                    forma regular pela
+                    APS, não apenas em ambulatórios de referência, por meio da Portaria nº 2.803 (Brasil, 2013). Já a
+                    Resolução Conjunta
+                    CNPCP/CNLGBTQIA+ nº 2, de 2024, legisla sobre a garantia do acesso à terapia hormonal no sistema
+                    prisional (Brasil,
+                    2024).
+                </p>
+                <p>
+                    Contudo, o tema ainda permanece em constante debate. Em 2025, o Conselho Federal de Medicina (CFM)
+                    publicou a Resolução
+                    CFM nº 2.427/2025, que revisou critérios para atendimento de pessoas com incongruência e/ou disforia
+                    de
+                    gênero. Ela
+                    determina que a hormonioterapia cruzada no adulto só pode ser prescrita por médico endocrinologista,
+                    ginecologista ou
+                    urologista. Entidades que atuam na APS, como a SBMFC, se manifestaram defendendo que realizar a
+                    terapia
+                    hormonal nas
+                    Unidades Básicas de Saúde (UBS), com o seguimento por médico da família e comunidade, é plenamente
+                    possível. No entanto,
+                    no mesmo ano de sua publicação, essa normativa foi suspensa, mantendo em vigor as prerrogativas
+                    garantidas nas
+                    normativas citadas de 2013 e 2024.
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais6')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais6" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                <i>Nota da SBMFC sobre a resolução do CFM nº 2.427, de 08 de abril de 2025</i>
+                            </p>
+                            <p>
+                                <b>Autor:</b>
+                                Sociedade Brasileira de Medicina da Família e Comunidade (2025).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                leia mais para entender o debate sobre o cuidado à saúde das pessoas trans na APS.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                            </p>
+                            <a class="link"
+                                href="https://www.sbmfc.org.br/noticias/nota-da-sbmfc-sobre-a-resolucao-do-cfm-no-2-427-de-08-de-abril-de-2025/"
+                                target="_blank">https://www.sbmfc.org.br/noticias/nota-da-sbmfc-sobre-a-resolucao-do-cfm-no-2-427-de-08-de-abril-de-2025/</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais6')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    São frequentes as queixas da população LGBTIA+ da falta de acesso à terapia hormonal no sistema
+                    prisional (Brasil,
+                    2020). Ainda menos acessíveis são os procedimentos cirúrgicos na atenção hospitalar. As Unidades
+                    Básicas
+                    de Saúde
+                    Prisional (UBSP) podem pedir habilitação, por meio do Sistema de Apoio à Implementação de Políticas
+                    de
+                    Saúde (SAIPS),
+                    para oferecer mais rapidamente atendimento ambulatorial à pessoa que busca a hormonioterapia.
+                    Sugere-se
+                    que os
+                    profissionais das unidades de APS Prisional discutam a possibilidade de oferecer um cuidado integral
+                    às
+                    pessoas LGBTIA+.
+                    É importante ampliar o acesso à saúde das pessoas trans que buscam a terapia hormonal para que elas
+                    possam fazer o
+                    seguimento com terapia hormonal nas instituições penais.
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais7')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais7" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título:</b>
+                                <i>16 anos depois, processo transexualizador no SUS segue restrito e sob ataque</i>
+                            </p>
+                            <p>
+                                <b>Autor:</b>
+                                Jess Carvalho (2025).
+                            </p>
+                            <p>
+                                <b>Descrição:</b>
+                                leia para descobrir os desafios enfrentados para acessar os procedimentos.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                            </p>
+                            <a class="link"
+                                href="https://www.brasildefato.com.br/2025/01/29/16-anos-depois-processo-transexualizador-no-sus-segue-restrito-e-sob-ataque/"
+                                target="_blank">https://www.brasildefato.com.br/2025/01/29/16-anos-depois-processo-transexualizador-no-sus-segue-restrito-e-sob-ataque/</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais7')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Ainda não há um protocolo específico do Ministério da Saúde que defina as medicações e as dosagens
+                    mais
+                    indicadas para a terapia hormonal. Alguns estados e instituições têm protocolos específicos que
+                    incluem
+                    medicações que não estão disponíveis na farmácia da rede pública. Nesta Unidade, optou-se por
+                    utilizar
+                    como referência o protocolo do município de São Paulo (2023) e as orientações da SBMFC (2020).
+                </p>
+                <p>
+                    Em geral, busca-se utilizar a menor dose de hormônios necessária para atingir as mudanças corporais
+                    desejadas. É
+                    importante sempre lembrar às PPL que a maioria das alterações corporais desejadas pode demorar meses
+                    para atingir um
+                    resultado satisfatório, sem a necessidade de aumento de dose por ausência de resposta clínica
+                    rápida.
+                    Todo o processo de
+                    mudança pode levar até dois anos para se completar, contando a partir do início das medicações
+                    (cinco
+                    para crescimento
+                    de mamas e alteração de gordura corporal).
+                </p>
+                <div class="border-2 border-red-600 bg-red-100 rounded-2xl p-5 text-center">
+                    <p>
+                        <b>Atenção!</b>
+                    </p>
+                    <p>
+                        As contraindicações absolutas à terapia são: doença cardiovascular isquêmica instável,
+                        gestação/amamentação atual,
+                        neoplasias sensíveis aos hormônios em atividade, transtornos psiquiátricos não estabilizados e
+                        hipersensibilidade/reações anteriores aos componentes da medicação.
+                    </p>
+                </div>
+                <p>
+                    No contexto de hormonização de travestis, mulheres trans e demais pessoas transfemininas, o Sistema
+                    Único de Saúde (SUS)
+                    oferece a esses grupos uma terapia dupla com uso de estrógenos e bloqueio da testosterona
+                    (antiandrogênicos). As
+                    medicações geralmente disponíveis são: os estrógenos valerato de estradiol, estradiol hemihidratado
+                    tópico,
+                    17ꞵ-estradiol tópico ou oral e enantato de estradiol injetável (disponível com a algestona
+                    acetofenida
+                    como
+                    contraceptivo); os antiandrógenos espironolactona, ciproterona, acetato de medroxiprogesterona e a
+                    algestona acetofenida
+                    associada com estradiol injetável.
+                </p>
+                <p>
+                    A combinação mais utilizada, seja pela posologia simples, seja pela facilidade de acesso por ser
+                    utilizada também como
+                    anticoncepcional, é o enantato de estradiol + algestona acetofenida 10 mg + 150 mg/ml injetável,
+                    aplicado uma vez por
+                    semana ou a cada duas semanas.
+                </p>
+                <p>
+                    Os efeitos da terapia hormonal devem ser monitorizados. Em todas as consultas, é necessário aferir a
+                    pressão arterial,
+                    verificar o peso e avaliar alterações da distribuição de gordura corporal, a pilificação e demais
+                    alterações
+                    específicas. Recomenda-se avaliar as funções hepática e renal antes de prescrever a medicação e
+                    trimestralmente durante
+                    o primeiro ano de seguimento. Exames hormonais não precisam ser solicitados rotineiramente, tendo em
+                    vista que a
+                    resposta clínica é mais relevante.
+                </p>
+                <p>
+                    Com relação à hormonização para homens trans e pessoas transmasculinas, não há necessidade de
+                    bloqueio
+                    direto da produção de estrógeno, sendo suficiente a terapia com derivados da testosterona. Doses
+                    suprafisiológicas não devem ser prescritas, uma vez que, nessas condições, ocorre conversão
+                    periférica
+                    da testosterona em estrógeno pela aromatase.
+                </p>
+                <p>
+                    A testosterona é uma substância anabolizante, por isso, de acordo com a Portaria nº 344/1998 do
+                    Ministério da Saúde, a
+                    sua prescrição é especial (Brasil, 1998). A receita deve ser em duas vias, com o endereço da pessoa
+                    usuária, com o
+                    código CID-10 F64.0, CPF do profissional médico prescritor e com não mais que cinco ampolas de
+                    prescrição.
+                </p>
+                <p>
+                    Com exceção da formulação em gel, todas as demais são injetáveis e devem ser aplicadas a cada 14/21
+                    dias
+                    (no caso do
+                    cipionato de testosterona e decanoato + fempropionato + propionato + isocaproato de testosterona) ou
+                    de
+                    depósito a cada
+                    90 dias (undecanoato e undecilato de testosterona). A formulação mais utilizada nos manuais de
+                    referência e mais
+                    disponível em alguns locais é o cipionato de testosterona.
+                </p>
+                <p>
+                    Assim como no uso de estrógenos e antiandrógenos, a avaliação de modificação de características
+                    físicas
+                    deve ser
+                    monitorada em todas as consultas. Recomenda-se avaliar as funções hepática e renal antes de
+                    prescrever a
+                    medicação e
+                    trimestralmente durante o primeiro ano de seguimento. A dosagem de testosterona sérica nessas
+                    ocasiões
+                    também não é
+                    indicada, já que os efeitos clínicos são mais relevantes. É importante lembrar que se devem evitar
+                    doses
+                    superiores às
+                    indicadas devido ao efeito de conversão periférica pela aromatase.
                 </p>
             </div>
         </div>
 
-        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+        <div id="encerramento" class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
+                Encerramento da Unidade
             </h2>
             <p>
-                BRASIL. Ministério da Justiça e Segurança Pública.
-                Resolução Conjunta CNPCP/CNLGBTQIA+ nº 2, de 26 de março de 2024.
-                Estabelece parâmetros para o acolhimento de pessoas LGBTQIA+ em privação de liberdade no Brasil.
-                <b>Diário Oficial da União</b>,
-                Brasília,
-                DF, 10 abr. 2024.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1
-                </a>.
-                Acesso em: 16 ago. 2025.
+                O cuidado à saúde nas demandas específicas da população LGBTIA+ é variado, mas torna-se de simples
+                compreensão quando
+                integrado à rotina da APS Prisional. Os trabalhadores da saúde prisional, mesmo em instituições
+                penais que não têm alas
+                dedicadas a essa população, se beneficiam dessa mudança de perspectiva, que passa a permear os
+                atendimentos.
             </p>
             <p>
-                BRASIL. Ministério da Mulher, da Família e dos Direitos Humanos.
-                <b>LGBT nas prisões do Brasil</b>: Diagnóstico dos procedimentos institucionais e experiências de
-                encarceramento.
-                Brasília: Ministério da Mulher, da Família e dos Direitos Humanos, 2020.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf
-                </a>.
-                Acesso em: 16 ago. 2025.
+                Caso seja de seu interesse, o documento citado anteriormente <i>LGBT nas prisões do Brasil:
+                    diagnóstico
+                    dos procedimentos
+                    institucionais e experiências de encarceramento</i> (Brasil, 2020) fornece relatos das próprias
+                PPL em
+                diferentes regiões
+                sobre o cotidiano nas instituições penais, desafios enfrentados na assistência à saúde e convívio
+                geral. Com relação aos
+                guias de atendimento e referências, por falta de uma diretriz unificada nacional, optou-se por
+                utilizar primariamente o
+                manual da saúde pública da cidade de São Paulo (São Paulo, 2023). É importante contactar as
+                secretarias de estado de
+                saúde para averiguar a existência de protocolos regionais que devem ser seguidos.
             </p>
+            <p>
+                Por fim, esperamos que, com o fim desta Unidade, seus conhecimentos sobre saúde LGBTIA+ tenham se
+                ampliado ainda mais!
+                Cuidar com respeito e equidade transforma realidades. Cada gesto acolhedor é um passo em direção a
+                uma sociedade mais
+                justa, dentro e fora dos muros das instituições penais. Você é agente dessa transformação.
+            </p>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
+        </div>
 
-            <p>
-                BRASIL. Ministério da Saúde.
-                Portaria nº 2.803, de 19 de novembro de 2013.
-                Redefine e amplia o Processo Transexualizador no Sistema Único de Saúde (SUS).
-                <b>Diário Oficial da União</b>,
-                Brasília,
-                DF, 21 nov. 2013.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt2803_19_11_2013.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt2803_19_11_2013.html
-                </a>.
-                Acesso em: 16 ago. 2025.
-            </p>
+        <div id="referencias_importantes" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências principais
+                </h2>
+                <p>
+                    BRASIL. Ministério da Justiça e Segurança Pública.
+                    Resolução Conjunta CNPCP/CNLGBTQIA+ nº 2, de 26 de março de 2024.
+                    Estabelece parâmetros para o acolhimento de pessoas LGBTQIA+ em privação de liberdade no Brasil.
+                    <b>Diário Oficial da União</b>,
+                    Brasília,
+                    DF, 10 abr. 2024.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1
+                    </a>.
+                    Acesso em: 16 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Mulher, da Família e dos Direitos Humanos.
+                    <b>LGBT nas prisões do Brasil</b>: Diagnóstico dos procedimentos institucionais e experiências de
+                    encarceramento.
+                    Brasília: Ministério da Mulher, da Família e dos Direitos Humanos, 2020.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf
+                    </a>.
+                    Acesso em: 16 ago. 2025.
+                </p>
 
-            <p>
-                SÃO PAULO (Município). Secretaria Municipal de Saúde de São Paulo.
-                <b>Protocolo para o cuidado integral à saúde de pessoas trans, travestis ou com vivências de
-                    variabilidade
-                    de gênero no
-                    município de São Paulo</b>.
-                2. ed.
-                São Paulo: Secretaria Municipal de Saúde de São Paulo, 2023.
-                Disponível em:
-                <a class="link"
-                    href="https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/Protocolo-Trans_revis%203%C2%AA%20ed%202024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/Protocolo-Trans_revis%203%C2%AA%20ed%202024.pdf
-                </a>.
-                Acesso em: 16 ago. 2025.
-            </p>
+                <p>
+                    BRASIL. Ministério da Saúde.
+                    Portaria nº 2.803, de 19 de novembro de 2013.
+                    Redefine e amplia o Processo Transexualizador no Sistema Único de Saúde (SUS).
+                    <b>Diário Oficial da União</b>,
+                    Brasília,
+                    DF, 21 nov. 2013.
+                    Disponível em:
+                    <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt2803_19_11_2013.html"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt2803_19_11_2013.html
+                    </a>.
+                    Acesso em: 16 ago. 2025.
+                </p>
+
+                <p>
+                    SÃO PAULO (Município). Secretaria Municipal de Saúde de São Paulo.
+                    <b>Protocolo para o cuidado integral à saúde de pessoas trans, travestis ou com vivências de
+                        variabilidade
+                        de gênero no
+                        município de São Paulo</b>.
+                    2. ed.
+                    São Paulo: Secretaria Municipal de Saúde de São Paulo, 2023.
+                    Disponível em:
+                    <a class="link"
+                        href="https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/Protocolo-Trans_revis%203%C2%AA%20ed%202024.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/Protocolo-Trans_revis%203%C2%AA%20ed%202024.pdf
+                    </a>.
+                    Acesso em: 16 ago. 2025.
+                </p>
+            </div>
         </div>
 
         <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                <i class="fa-solid fa-file text-black"></i>
                 Referências
             </h2>
             <p>
@@ -1493,22 +1629,6 @@
             </p>
 
             <p>
-                BRASIL. Ministério da Justiça e Segurança Pública.
-                Resolução Conjunta CNPCP/CNLGBTQIA+ nº 2, de 26 de março de 2024.
-                Estabelece parâmetros para o acolhimento de pessoas LGBTQIA+ em privação de liberdade no Brasil.
-                <b>Diário Oficial da União</b>,
-                Brasília,
-                DF, 10 abr. 2024.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/participamaisbrasil/resolucao-conjunta-cnpcp-cnlgbtqia-n-2-de-26-marco-de-2024-estabelece-parametros-para-o-acolhimento-de-pessoas-lgbtqia-em-privacao-de-liberdade-no-brasil1
-                </a>.
-                Acesso em: 16 ago. 2025.
-            </p>
-
-            <p>
                 BRASIL. Ministério da Saúde.
                 <b>Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções
                     Sexualmente
@@ -1519,35 +1639,6 @@
                     href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf/view"
                     target="_blank" rel="noopener noreferrer">
                     https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf/view
-                </a>.
-                Acesso em: 16 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL. Ministério da Mulher, da Família e dos Direitos Humanos.
-                <b>LGBT nas prisões do Brasil</b>: Diagnóstico dos procedimentos institucionais e experiências de
-                encarceramento.
-                Brasília: Ministério da Mulher, da Família e dos Direitos Humanos, 2020.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/mdh/pt-br/assuntos/noticias/2020-2/fevereiro/TratamentopenaldepessoasLGBT.pdf
-                </a>.
-                Acesso em: 16 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL. Ministério da Saúde.
-                Portaria nº 2.803, de 19 de novembro de 2013.
-                Redefine e amplia o Processo Transexualizador no Sistema Único de Saúde (SUS).
-                <b>Diário Oficial da União</b>,
-                Brasília,
-                DF, 21 nov. 2013.
-                Disponível em:
-                <a class="link" href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt2803_19_11_2013.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt2803_19_11_2013.html
                 </a>.
                 Acesso em: 16 ago. 2025.
             </p>
@@ -1627,23 +1718,6 @@
                     href="https://incubadora.periodicos.ufsc.br/index.php/saudeetransformacao/article/view/4276"
                     target="_blank" rel="noopener noreferrer">
                     https://incubadora.periodicos.ufsc.br/index.php/saudeetransformacao/article/view/4276
-                </a>.
-                Acesso em: 16 ago. 2025.
-            </p>
-
-            <p>
-                SÃO PAULO (Município). Secretaria Municipal de Saúde de São Paulo.
-                <b>Protocolo para o cuidado integral à saúde de pessoas trans, travestis ou com vivências de
-                    variabilidade
-                    de gênero no
-                    município de São Paulo.</b>
-                2. ed.
-                São Paulo: Secretaria Municipal de Saúde de São Paulo, 2023.
-                Disponível em:
-                <a class="link"
-                    href="https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/Protocolo-Trans_revis%203%C2%AA%20ed%202024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/Protocolo-Trans_revis%203%C2%AA%20ed%202024.pdf
                 </a>.
                 Acesso em: 16 ago. 2025.
             </p>
@@ -1740,23 +1814,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

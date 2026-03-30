@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -246,7 +246,7 @@
                     <b>
                         Unidade 1
                     </b><br>
-                    Renata Terumi Shiguematsu Yassuda
+                    José Victor Bortolotto Bampi
                 </p>
                 <p>
                     <b>
@@ -270,7 +270,6 @@
                     <b>
                         Unidade 5
                     </b><br>
-                    Lucas Moura de Oliveira <br>
                     Giovana Soares Buzinaro
 
                 </p>
@@ -343,38 +342,82 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo V - O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não
-                        Transmissíveis no Âmbito da PNAISP
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 2 - Cuidado na Saúde da Mulher
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 5
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            O Itinerário de Cuidado à Saúde, Agravos e Doenças Transmissíveis e Não Transmissíveis no Âmbito da PNAISP
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 2 &nbsp;·&nbsp; Cuidado na Saúde da Mulher
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -482,7 +525,7 @@
 
         <div id="2.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1 Saúde da mulher privada de liberdade
             </h2>
             <p>
@@ -495,97 +538,114 @@
             <p>
                 Vamos lá?
             </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.2 Vulvovaginites e vaginoses
-            </h2>
-            <p>
-                A vulvovaginite e a vaginose são as causas mais comuns de corrimento vaginal patológico. São afecções do
-                epitélio
-                estratificado da vulva e/ou vagina causadas por fungos, principalmente Candida albicans, bactérias
-                anaeróbicas, em
-                especial Gardnerella vaginalis, e o protozoário Trichomonas vaginalis (Brasil, 2022a). Essas afecções
-                podem causar
-                também estes sintomas: prurido vulvovaginal, alterações na cor e odor do corrimento e presença de
-                irritação local
-                (Brasil, 2022a).
-            </p>
-            <p>
-                Por serem casos de difícil diagnóstico e manejo, é comum que as mulheres privadas de liberdade procurem
-                a APS Prisional
-                (Atenção Primária à Saúde no Sistema Prisional) já em uso de medicamentos, muitas vezes automedicadas, o
-                que dificulta o
-                diagnóstico e a terapêutica adequada. Dessa forma, quando procuram o serviço de saúde, é importante que
-                sejam orientadas
-                sobre as diferenças entre as infecções do trato reprodutor e o corrimento fisiológico (Brasil, 2022a).
-            </p>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.2.1 Diagnóstico das vulvovaginites e vaginoses
-            </h3>
-            <p>
-                O diagnóstico das vulvovaginites e vaginoses é realizado por meio da anamnese, que é uma investigação
-                minuciosa da
-                história clínica da mulher. A anamnese avalia qual foi a data da última menstruação, como estão as
-                práticas de higiene
-                vaginal, quais medicamentos tópicos ou sistêmicos estão sendo usados, se foram utilizados potenciais
-                agentes irritantes
-                locais, comportamentos e práticas sexuais. Além disso, é importante realizar o exame ginecológico, no
-                qual se observam
-                as características do corrimento e se há ulcerações, edema e/ou eritema (Brasil, 2022a). Esse
-                procedimento é viável na
-                prática diária das Unidades Básicas de Saúde Prisional (UBSP) que têm eAPP e estrutura física adequada.
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais1" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título: </b>Protocolo clínico e diretrizes terapêuticas para atenção integral às pessoas
-                            com infecções sexualmente transmissíveis
-                            (IST)
-                        </p>
-                        <p>
-                            <b>Autor: </b>Brasil (2022a).
-                        <p>
-                            <b>Descrição: </b>para você compreender melhor as infecções que causam corrimento vaginal,
-                            consulte o protocolo clínico.
-                        </p>
-                        <p>
-                            <b>acesse:</b>
-                            <a class="link"
-                                href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf"
-                                target="_blank">
-                                https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais1')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
+        </div>
+
+        <div id="2.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.2 Vulvovaginites e vaginoses
+                </h2>
+                <p>
+                    A vulvovaginite e a vaginose são as causas mais comuns de corrimento vaginal patológico. São
+                    afecções do
+                    epitélio
+                    estratificado da vulva e/ou vagina causadas por fungos, principalmente Candida albicans, bactérias
+                    anaeróbicas, em
+                    especial Gardnerella vaginalis, e o protozoário Trichomonas vaginalis (Brasil, 2022a). Essas
+                    afecções
+                    podem causar
+                    também estes sintomas: prurido vulvovaginal, alterações na cor e odor do corrimento e presença de
+                    irritação local
+                    (Brasil, 2022a).
+                </p>
+                <p>
+                    Por serem casos de difícil diagnóstico e manejo, é comum que as mulheres privadas de liberdade
+                    procurem
+                    a APS Prisional
+                    (Atenção Primária à Saúde no Sistema Prisional) já em uso de medicamentos, muitas vezes
+                    automedicadas, o
+                    que dificulta o
+                    diagnóstico e a terapêutica adequada. Dessa forma, quando procuram o serviço de saúde, é importante
+                    que
+                    sejam orientadas
+                    sobre as diferenças entre as infecções do trato reprodutor e o corrimento fisiológico (Brasil,
+                    2022a).
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.2.1 Diagnóstico das vulvovaginites e vaginoses
+                </h3>
+                <p>
+                    O diagnóstico das vulvovaginites e vaginoses é realizado por meio da anamnese, que é uma
+                    investigação
+                    minuciosa da
+                    história clínica da mulher. A anamnese avalia qual foi a data da última menstruação, como estão as
+                    práticas de higiene
+                    vaginal, quais medicamentos tópicos ou sistêmicos estão sendo usados, se foram utilizados potenciais
+                    agentes irritantes
+                    locais, comportamentos e práticas sexuais. Além disso, é importante realizar o exame ginecológico,
+                    no
+                    qual se observam
+                    as características do corrimento e se há ulcerações, edema e/ou eritema (Brasil, 2022a). Esse
+                    procedimento é viável na
+                    prática diária das Unidades Básicas de Saúde Prisional (UBSP) que têm eAPP e estrutura física
+                    adequada.
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais1')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais1" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título: </b>Protocolo clínico e diretrizes terapêuticas para atenção integral às
+                                pessoas
+                                com infecções sexualmente transmissíveis
+                                (IST)
+                            </p>
+                            <p>
+                                <b>Autor: </b>Brasil (2022a).
+                            <p>
+                                <b>Descrição: </b>para você compreender melhor as infecções que causam corrimento
+                                vaginal,
+                                consulte o protocolo clínico.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link" href="./media/pcdt-ist-2022_isbn-1.pdf" target="_blank">Clique aqui</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais1')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <p>
+                    Leu o protocolo? Notou a complexidade do manejo dos casos de vulvovaginites e vaginoses? Portanto, é
+                    necessário que, ao
+                    fazer uma queixa, a pessoa privada de liberdade (PPL) receba cuidados da eAPP quanto antes,
+                    evitando,
+                    assim, o
+                    agravamento do seu quadro de saúde e a necessidade de assistência extramuros.</p>
             </div>
-            <p>
-                Leu o protocolo? Notou a complexidade do manejo dos casos de vulvovaginites e vaginoses? Portanto, é
-                necessário que, ao
-                fazer uma queixa, a pessoa privada de liberdade (PPL) receba cuidados da eAPP quanto antes, evitando,
-                assim, o
-                agravamento do seu quadro de saúde e a necessidade de assistência extramuros.
-            </p>
+        </div>
+
+        <div id="2.3" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.3 Câncer de colo do útero
             </h2>
             <p>
@@ -598,11 +658,11 @@
                 corrimento e dor.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 1 - Sistema Reprodutor Feminino
             </h3>
             <div id="mapa" class="relative">
-                <small>(clique nos ícones de + para acessar o conteúdo)</small>
+                <small>Clique nos ícones + para interagir</small>
                 <img class="w-full h-full rounded-xl" src="./images/figura1-mod5-un2.jpg"
                     alt="Refoma psiquiátrica e as raps ttrouxeram avançoes essenciais" loading="lazy" />
                 <button id="tooltip_1" class="botao-flutuante bg-blue-500! font-bold" style="top: 10%; left: 42%">
@@ -632,7 +692,7 @@
                 Câncer, 2022a).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.3.1 Fatores de risco para câncer de colo do útero
             </h3>
             <p>
@@ -679,7 +739,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.3.2 Como prevenir o câncer de colo do útero
             </h3>
             <p>
@@ -697,7 +757,7 @@
                 apresentados a seguir.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.3.2.1 Exame preventivo (papanicolau)
             </h3>
             <p>
@@ -724,7 +784,7 @@
                 <small>Fonte: Instituto Nacional de Câncer (2016).</small>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.3.2.2 Teste molecular
             </h3>
             <p>
@@ -741,7 +801,7 @@
                 2025a). A Figura 2 demonstra um comparativo entre o exame papanicolau e o teste de DNA para HPV.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 2 - Comparativo entre o exame papanicolau e o teste de DNA para HPV
             </h3>
             <div>
@@ -752,23 +812,23 @@
             </div>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Há uma estrutura adequada para coleta do exame preventivo/teste molecular para HPV na sua
                     instituição penal? Se não
                     houver, sensibilize a gestão local! Agora você tem argumentos técnicos para solicitar melhorias
                     estruturais.
-                </h2>
+                </h3>
             </div>
         </div>
 
-        <div id="2.3" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+        <div id="2.3.3" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.3.3 Tratamento do câncer de colo do útero
             </h3>
             <p>
@@ -780,6 +840,9 @@
                 combinação dessas
                 estratégias terapêuticas (Brasil, 2000).
             </p>
+<<<<<<< HEAD
+        </div>
+=======
             <h2 class="text-2xl md:text-3xl font-bold">
                 <i class="fa-solid fa-arrow-right mr-2"></i>
                 2.4 Câncer de mama
@@ -955,221 +1018,428 @@
                 </div>
                 <small>Fonte: elaboração da autora (2025) com base em Brasil (2014a).
                 </small>
+>>>>>>> be0721ae38236b10ab0a167cf01d79a26ff9424b
 
-            </div>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais2')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais2" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
+        <div id="2.4" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.4 Câncer de mama
+                </h2>
+                <p>
+                    Segundo o INCA (2022b), o câncer de mama é causado pela multiplicação desordenada de células
+                    anormais,
+                    que formam um
+                    tumor com potencial de invadir outros órgãos (Figura 3).
+                </p>
+                <p>
+                    Os fatores de risco são idade, fatores endócrinos/história reprodutiva, fatores
+                    comportamentais/ambientais e fatores
+                    genéticos/hereditários (Adami <i>et al</i>., 2008 <i>apud</i> Instituto Nacional de Câncer, 2022b).
+                </p>
+                <div>
+                    <img src="./images/figura3-mod5-un2.jpg" class="w-full h-auto block mx-auto max-w-[500px]"
+                        alt="Comparativo entre o exame papanicolau e o teste de DNA para HPV  ">
+                    <small>Fonte: Sociedade Brasileira de Oncologia Clínica (2014).</small>
+                    <hr>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.4.1 Como prevenir o câncer de mama
+                </h3>
+                <p>
+                    Existem algumas formas de prevenir o câncer de mama, mas a principal delas é reduzindo a exposição
+                    aos
+                    fatores de risco
+                    modificáveis: evitar o consumo de bebidas alcoólicas e o tabagismo, manter uma alimentação saudável,
+                    praticar atividade
+                    física e manter o peso corporal adequado (Instituto Nacional de Câncer, 2022b).
+                </p>
+                <p>
+                    A Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade no Sistema
+                    Prisional
+                    (PNAISP) (Brasil,
+                    2014a) garante que cada instituição penal conte com uma eAPP, que oferta ações de promoção da saúde
+                    e
+                    prevenção de
+                    agravos. Caso não haja ambiência no local, a Unidade Básica de Saúde (UBS) do território poderá se
+                    responsabilizar por
+                    essas ações.
+                </p>
+                <p>
+                    Você deve estar pensando em como proporcionar essas ações para as mulheres privadas de liberdade,
+                    correto? Acesse o QR
+                    Code e veja algumas sugestões que elaboramos para você.
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    Quadro 2 - Ações de prevenção do câncer de mama nas instituições penais
+                </h3>
+                <div>
+                    <p class="text-center pb-3">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div id="grupo1" class="accordion w-full bg-white rounded-xl shadow-md p-4 mb-6">
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item11" onclick="animacao.toggleAccordion('item11', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Alimentação Saudável/Dieta Balanceada</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    A Política Nacional de Segurança Alimentar e Nutricional (PNSAN) deve garantir a
+                                    promoção da alimentação adequada e
+                                    saudável por meio da oferta de alimentos variados e seguros, contribuindo para a
+                                    manutenção da saúde (Silva; Carreiro,
+                                    2024). Algumas instituições penais contam com o apoio de uma nutricionista para
+                                    garantir
+                                    este direito.
+                                </p>
+                                <p>
+                                    <b>Como fazer?</b>
+                                </p>
+                                <ul class="list-disc pl-5">
+                                    <li>
+                                        Há a possibilidade de incentivar o cultivo de alimentos nos próprios
+                                        estabelecimentos penais, gerando, inclusive, vagas
+                                        de trabalho às mulheres privadas de liberdade (Silva; Carreiro, 2024).
+                                    </li>
+                                </ul>
+                                <p>
+                                    <b>Local</b>
+                                </p>
+                                <ul class="list-disc pl-5">
+                                    <li>
+                                        Algumas instituições penais têm cozinhas próprias, outras são por oferta
+                                        terceirizada. Quando o estabelecimento penal não tem cozinha, o alimento é
+                                        preparado
+                                        nas empresas terceirizadas ou provêm de outro estabelecimento penal (Silva;
+                                        Carreiro, 2024).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border-b border-[var(--primary)]">
+                            <button id="item12" onclick="animacao.toggleAccordion('item12', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Atividade Física</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    Segundo a PNAISP, fisioterapeutas ou terapeutas ocupacionais podem integrar as
+                                    equipes
+                                    de saúde prisional e atuar no
+                                    acompanhamento das atividades físicas das mulheres privadas de liberdade (Brasil,
+                                    2014a).
+                                </p>
+                                <p>
+                                    <b>Como fazer?</b>
+                                </p>
+                                <ul class="list-disc pl-5">
+                                    <li>
+                                        Utilizar o tempo permitido para o banho de sol em conformidade com as rotinas de
+                                        cada instituição penal.
+                                    </li>
+                                </ul>
+                                <p>
+                                    <b>Local</b>
+                                </p>
+                                <ul class="list-disc pl-5">
+                                    <li>
+                                        Quadra de esportes, área comum e qualquer espaço arejado disponível no
+                                        estabelecimento penal que respeite as normas de segurança estabelecidas pelo
+                                        sistema
+                                        prisional.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="item1a" onclick="animacao.toggleAccordion('item1a', 'grupo1')"
+                                class="accordion-header w-full flex justify-between items-center py-3 text-left">
+                                <span class="font-bold text-xl px-5">Prevenção de Doenças</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content pb-3 px-5 flex flex-col gap-3">
+                                <p>
+                                    Um dos grandes desafios dos profissionais que compõem a eAPP é criar oportunidades
+                                    para
+                                    desenvolver ações de prevenção
+                                    de doenças.
+                                </p>
+                                <p>
+                                    <b>Como fazer?</b>
+                                </p>
+                                <ul class="list-disc pl-5">
+                                    <li>
+                                        Realizar rodas de conversa e explanações às mulheres privadas de liberdade que
+                                        estudam, fazem curso e trabalham, assim
+                                        como entregar preservativos masculinos e/ou femininos àquelas que recebem visita
+                                        íntima e distribuir panfletos com
+                                        ilustrações explicativas.
+                                    </li>
+                                </ul>
+                                <p>
+                                    <b>Local</b>
+                                </p>
+                                <ul class="list-disc pl-5">
+                                    <li>
+                                        Sala de aula, biblioteca, quadra de esportes, ou ainda, se permitido pela
+                                        segurança
+                                        local, na própria cela através das grades de proteção e/ou na área comum.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título: </b><i>Cultivo na fazenda da Papuda viabiliza produção de mais de 50 mil
-                                fitoterápicos</i>
-                        </p>
-                        <p>
-                            <b>Autor: </b>Humberto Leite (2025).
-                        </p>
-                        <p>
-                            <b>Descrição: </b>conheça o resultado do cultivo de fitoterápicos feito por reeducandos
-                            na Fazenda Modelo da Fundação de Amparo ao Trabalhador Preso (Funap), localizada no
-                            complexo penitenciário da Papuda. As plantas são cultivadas, colhidas e processadas na
-                            Farmácia Viva da Secretaria de Saúde, onde se tornam medicamentos para distribuição em
-                            UBS.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.saude.df.gov.br/web/guest/w/cultivo-na-fazenda-da-papuda-viabiliza-produ%C3%A7%C3%A3o-de-mais-de-50-mil-fitoter%C3%A1picos"
-                                target="_blank">
-                                https://www.saude.df.gov.br/web/guest/w/cultivo-na-fazenda-da-papuda-viabiliza-produ%C3%A7%C3%A3o-de-mais-de-50-mil-fitoter%C3%A1picos</a>
-                        </p>
-                        <b>
-                            Outras experiências de cultivo de alimentos:
-                        </b>
-                        <p>
-                            <b>Título: </b><i>Distrito Federal inaugura Horto Agroflorestal no Ministério da Saúde</i>
-                        </p>
-                        <p>
-                            <b>Autor: </b>Gabriel Silveira (2025).
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.saude.df.gov.br/web/guest/w/distrito-federal-inaugura-horto-agroflorestal-no-ministerio-da-saude"
-                                target="_blank">
-                                https://www.saude.df.gov.br/web/guest/w/distrito-federal-inaugura-horto-agroflorestal-no-ministerio-da-saude</a>
-                        </p>
-                        <p>
-                            <b>Título: </b><i>Cura que brota do chão: Farmácia Viva do DF produz medicamento natural
-                                para dor de garganta</i>
-                        </p>
-                        <p>
-                            <b>Autor: </b>Agência Brasília (2025).
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://saude.df.gov.br/web/guest/w/cura-que-brota-do-ch%C3%A3o-farm%C3%A1cia-viva-do-df-produz-medicamento-natural-para-dor-de-garganta"
-                                target="_blank">
-                                https://saude.df.gov.br/web/guest/w/cura-que-brota-do-ch%C3%A3o-farm%C3%A1cia-viva-do-df-produz-medicamento-natural-para-dor-de-garganta</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais2')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
+                    <small>Fonte: elaboração da autora (2025) com base em Brasil (2014a).
+                    </small>
+
+                </div>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais2')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais2" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título: </b><i>Cultivo na fazenda da Papuda viabiliza produção de mais de 50 mil
+                                    fitoterápicos</i>
+                            </p>
+                            <p>
+                                <b>Autor: </b>Humberto Leite (2025).
+                            </p>
+                            <p>
+                                <b>Descrição: </b>conheça o resultado do cultivo de fitoterápicos feito por reeducandos
+                                na Fazenda Modelo da Fundação de Amparo ao Trabalhador Preso (Funap), localizada no
+                                complexo penitenciário da Papuda. As plantas são cultivadas, colhidas e processadas na
+                                Farmácia Viva da Secretaria de Saúde, onde se tornam medicamentos para distribuição em
+                                UBS.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://www.saude.df.gov.br/web/guest/w/cultivo-na-fazenda-da-papuda-viabiliza-produ%C3%A7%C3%A3o-de-mais-de-50-mil-fitoter%C3%A1picos"
+                                    target="_blank">
+                                    https://www.saude.df.gov.br/web/guest/w/cultivo-na-fazenda-da-papuda-viabiliza-produ%C3%A7%C3%A3o-de-mais-de-50-mil-fitoter%C3%A1picos</a>
+                            </p>
+                            <b>
+                                Outras experiências de cultivo de alimentos:
+                            </b>
+                            <p>
+                                <b>Título: </b><i>Distrito Federal inaugura Horto Agroflorestal no Ministério da
+                                    Saúde</i>
+                            </p>
+                            <p>
+                                <b>Autor: </b>Gabriel Silveira (2025).
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://www.saude.df.gov.br/web/guest/w/distrito-federal-inaugura-horto-agroflorestal-no-ministerio-da-saude"
+                                    target="_blank">
+                                    https://www.saude.df.gov.br/web/guest/w/distrito-federal-inaugura-horto-agroflorestal-no-ministerio-da-saude</a>
+                            </p>
+                            <p>
+                                <b>Título: </b><i>Cura que brota do chão: Farmácia Viva do DF produz medicamento natural
+                                    para dor de garganta</i>
+                            </p>
+                            <p>
+                                <b>Autor: </b>Agência Brasília (2025).
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://saude.df.gov.br/web/guest/w/cura-que-brota-do-ch%C3%A3o-farm%C3%A1cia-viva-do-df-produz-medicamento-natural-para-dor-de-garganta"
+                                    target="_blank">
+                                    https://saude.df.gov.br/web/guest/w/cura-que-brota-do-ch%C3%A3o-farm%C3%A1cia-viva-do-df-produz-medicamento-natural-para-dor-de-garganta</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais2')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.4.2 Diagnóstico precoce do câncer de mama
-            </h3>
-            <p>
-                O diagnóstico precoce deve ser baseado no tripé: população alerta para sinais e sintomas suspeitos de
-                câncer;
-                profissionais de saúde igualmente alertas para sinais e sintomas suspeitos de câncer e capacitados para
-                avaliar casos
-                suspeitos; e serviços de saúde preparados para garantir a confirmação diagnóstica oportuna. A observação
-                e a
-                autopalpação ocasional das mamas, sem recomendação de técnica específica, podem contribuir para que as
-                mulheres avaliem
-                melhor o que é normal para elas e percebam possíveis mudanças (Instituto Nacional de Câncer, 2015).
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais3')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais3" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>Título: </b><i>Linhas de Cuidado: Rastreamento/diagnóstico</i>
-                        </p>
-                        <p>
-                            <b>Autor: </b>Brasil.
-                        </p>
-                        <p>
-                            <b>Descrição: </b>conheça as Linhas de Cuidado desenvolvidas para ampliar o acesso da
-                            população aos serviços de Atenção Primária à Saúde (APS). Voltadas especialmente para
-                            profissionais de saúde, essas linhas orientam práticas qualificadas no cuidado integral aos
-                            usuários do SUS.
-                        </p>
-                        <p>
-                            Dentre os temas disponíveis, destaca-se a Linha de Cuidado para o Câncer de Mama, que reúne
-                            diretrizes e estratégias
-                            para a detecção precoce, diagnóstico, tratamento e acompanhamento das mulheres.
-                        </p>
-                        <p>
-                            <b>Acesse:</b>
-                            <a class="link"
-                                href="https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/unidade-de-atencao-primaria/rastreamento-diagnostico/#pills-rastreamento-diagnostico"
-                                target="_blank">
-                                https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/unidade-de-atencao-primaria/rastreamento-diagnostico/#pills-rastreamento-diagnostico</a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais3')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.4.2 Diagnóstico precoce do câncer de mama
+                </h3>
+                <p>
+                    O diagnóstico precoce deve ser baseado no tripé: população alerta para sinais e sintomas suspeitos
+                    de
+                    câncer;
+                    profissionais de saúde igualmente alertas para sinais e sintomas suspeitos de câncer e capacitados
+                    para
+                    avaliar casos
+                    suspeitos; e serviços de saúde preparados para garantir a confirmação diagnóstica oportuna. A
+                    observação
+                    e a
+                    autopalpação ocasional das mamas, sem recomendação de técnica específica, podem contribuir para que
+                    as
+                    mulheres avaliem
+                    melhor o que é normal para elas e percebam possíveis mudanças (Instituto Nacional de Câncer, 2015).
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais3')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais3" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>Título: </b><i>Linhas de Cuidado: Rastreamento/diagnóstico</i>
+                            </p>
+                            <p>
+                                <b>Autor: </b>Brasil.
+                            </p>
+                            <p>
+                                <b>Descrição: </b>conheça as Linhas de Cuidado desenvolvidas para ampliar o acesso da
+                                população aos serviços de Atenção Primária à Saúde (APS). Voltadas especialmente para
+                                profissionais de saúde, essas linhas orientam práticas qualificadas no cuidado integral
+                                aos
+                                usuários do SUS.
+                            </p>
+                            <p>
+                                Dentre os temas disponíveis, destaca-se a Linha de Cuidado para o Câncer de Mama, que
+                                reúne
+                                diretrizes e estratégias
+                                para a detecção precoce, diagnóstico, tratamento e acompanhamento das mulheres.
+                            </p>
+                            <p>
+                                <b>Acesse:</b>
+                                <a class="link"
+                                    href="https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/unidade-de-atencao-primaria/rastreamento-diagnostico/#pills-rastreamento-diagnostico"
+                                    target="_blank">
+                                    https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/unidade-de-atencao-primaria/rastreamento-diagnostico/#pills-rastreamento-diagnostico</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais3')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.4.2.1 Mamografia
-            </h3>
-            <p>
-                No Brasil, desde 2015, a recomendação é de que a mamografia seja ofertada para mulheres entre 50 e 69
-                anos a cada dois
-                anos, com o objetivo de diagnosticar o câncer no início para que o tratamento seja menos agressivo
-                (Instituto Nacional
-                de Câncer, 2015).
-            </p>
-            <b>Prevenção do câncer de mama no sistema prisional</b>
-            <ul class="list-disc pl-5 flex flex-col gap-3">
-                <li>Incentivar alimentação saudável (hortas nos estabelecimentos penais);</li>
-                <li>
-                    Organizar atividades físicas durante o banho de sol;
-                </li>
-                <li>
-                    Promover educação em saúde: rodas de conversa e distribuição de folhetos;
-                </li>
-                <li>
-                    Garantir mamografia bianual para mulheres de 50 a 69 anos.
-                </li>
-            </ul>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.4.3 Tratamento do câncer de mama
-            </h3>
-            <p>
-                O tratamento do câncer de mama pode ser local (cirurgia com reconstrução mamária imediata e
-                radioterapia) ou sistêmico
-                (quimioterapia, hormonioterapia e terapia-alvo). Quando diagnosticado em fases iniciais, o câncer de
-                mama geralmente tem
-                maiores chances de cura. Quando há evidências de metástase, o tratamento tem como objetivos principais
-                prolongar a
-                sobrevida e melhorar a qualidade de vida da paciente (Brasil, 2024b).
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Atenção</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais4" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Atenção!
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            A APS tem papel de coordenadora do cuidado e ordenadora da rede. Assim também acontece no
-                            sistema prisional. Ademais, a
-                            APS também é o primeiro contato das pessoas com o sistema de saúde. Assim sendo, para
-                            detecção precoce e confirmação
-                            diagnóstica do câncer feminino, é necessário que todos os pontos das Redes de Atenção à
-                            Saúde (RAS) sigam os fundamentos
-                            de acesso, eficiência assistencial e sanitária e níveis de atenção (Instituto Nacional de
-                            Câncer, 2016).
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais4')"
-                            class="btn bg-[var(--primary)] text-black">
-                            Fechar
-                        </button>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.4.2.1 Mamografia
+                </h3>
+                <p>
+                    No Brasil, desde 2015, a recomendação é de que a mamografia seja ofertada para mulheres entre 50 e
+                    69
+                    anos a cada dois
+                    anos, com o objetivo de diagnosticar o câncer no início para que o tratamento seja menos agressivo
+                    (Instituto Nacional
+                    de Câncer, 2015).
+                </p>
+                <b>Prevenção do câncer de mama no sistema prisional</b>
+                <ul class="list-disc pl-5 flex flex-col gap-3">
+                    <li>Incentivar alimentação saudável (hortas nos estabelecimentos penais);</li>
+                    <li>
+                        Organizar atividades físicas durante o banho de sol;
+                    </li>
+                    <li>
+                        Promover educação em saúde: rodas de conversa e distribuição de folhetos;
+                    </li>
+                    <li>
+                        Garantir mamografia bianual para mulheres de 50 a 69 anos.
+                    </li>
+                </ul>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.4.3 Tratamento do câncer de mama
+                </h3>
+                <p>
+                    O tratamento do câncer de mama pode ser local (cirurgia com reconstrução mamária imediata e
+                    radioterapia) ou sistêmico
+                    (quimioterapia, hormonioterapia e terapia-alvo). Quando diagnosticado em fases iniciais, o câncer de
+                    mama geralmente tem
+                    maiores chances de cura. Quando há evidências de metástase, o tratamento tem como objetivos
+                    principais
+                    prolongar a
+                    sobrevida e melhorar a qualidade de vida da paciente (Brasil, 2024b).
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais4')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Atenção</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais4" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Atenção!
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                A APS tem papel de coordenadora do cuidado e ordenadora da rede. Assim também acontece
+                                no
+                                sistema prisional. Ademais, a
+                                APS também é o primeiro contato das pessoas com o sistema de saúde. Assim sendo, para
+                                detecção precoce e confirmação
+                                diagnóstica do câncer feminino, é necessário que todos os pontos das Redes de Atenção à
+                                Saúde (RAS) sigam os fundamentos
+                                de acesso, eficiência assistencial e sanitária e níveis de atenção (Instituto Nacional
+                                de
+                                Câncer, 2016).
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais4')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <p>
+                    Com essa importante colocação sobre as RAS, encerramos a abordagem sobre doenças femininas. A
+                    seguir,
+                    trataremos da
+                    saúde da mulher durante a gravidez, abrangendo aspectos da saúde materno-infantil.</p>
             </div>
-            <p>
-                Com essa importante colocação sobre as RAS, encerramos a abordagem sobre doenças femininas. A seguir,
-                trataremos da
-                saúde da mulher durante a gravidez, abrangendo aspectos da saúde materno-infantil.
-            </p>
+        </div>
+
+        <div id="2.5" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.5 Gestantes no sistema prisional
             </h2>
             <p>
@@ -1190,7 +1460,7 @@
                 menores (Brasil, 2016).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.5.1 Atenção pré-natal e puerperal
             </h3>
             <p>
@@ -1290,10 +1560,8 @@
                             pré-natais, consulte as páginas de 25 a 34 do manual técnico do Ministério da Saúde.
                         </p>
                         <p>
-                            <b>Acesse: </b> <a
-                                href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_pre_natal_puerperio_3ed.pdf"
-                                class="link" target="_blank"
-                                rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/manual_pre_natal_puerperio_3ed.pdf</a>
+                            <b>Acesse: </b> <a href="./media/manual_pre_natal_puerperio_3ed.pdf" class="link"
+                                target="_blank" rel="noopener noreferrer">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -1305,7 +1573,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.5.1.1 Algumas doenças que precisam ser investigadas no período gestacional
             </h3>
             <p>
@@ -1320,7 +1588,7 @@
                 pela eAPP sem a necessidade de uma estrutura laboratorial complexa.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.5.1.1.1 HIV/Aids na gestação
             </h3>
             <p>
@@ -1376,15 +1644,15 @@
             </p>
             <div>
                 <button onclick="estrutura.openModal('modalSaibaMais7')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-exclamation-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Atenção</span>
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais7" class="modal-overlay hidden">
                 <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
-                            Atenção!
+                            Saiba mais
                         </h2>
                     </div>
                     <div class="modal-body md flex flex-col gap-4">
@@ -1401,9 +1669,8 @@
                         </p>
                         <p>
                             <b>Acesse:</b> <a
-                                href="https://mncp.org.br/wp-content/uploads/2020/03/Atualiza%C3%A7%C3%A3o-das-recomenda%C3%A7%C3%B5es-de-terapia-antirretroviral-TARV-em-gestantes-vivendo-com-HIV-1.pdf"
-                                class="link" target="_blank"
-                                rel="noopener noreferrer">https://mncp.org.br/wp-content/uploads/2020/03/Atualiza%C3%A7%C3%A3o-das-recomenda%C3%A7%C3%B5es-de-terapia-antirretroviral-TARV-em-gestantes-vivendo-com-HIV-1.pdf</a>
+                                href="./media/Atualização-das-recomendações-de-terapia-antirretroviral-TARV-em-gestantes-vivendo-com-HIV-1.pdf"
+                                class="link" target="_blank" rel="noopener noreferrer">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -1415,7 +1682,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.5.1.1.2 Sífilis gestacional
             </h3>
             <p>
@@ -1502,7 +1769,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.5.2 Rede Alyne
             </h3>
             <p>
@@ -1524,7 +1791,7 @@
                 </li>
             </ul>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.5.3 Momento do parto
             </h3>
             <p>
@@ -1540,15 +1807,15 @@
             </p>
             <div>
                 <button onclick="estrutura.openModal('modalSaibaMais9')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-exclamation-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Atenção</span>
+                    <i class="fa-solid fa-question-circle text-2xl"></i>
+                    <span class="font-bold my-auto">Saiba mais</span>
                 </button>
             </div>
             <div id="modalSaibaMais9" class="modal-overlay hidden">
                 <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
-                            Atenção!
+                            Saiba mais
                         </h2>
                     </div>
                     <div class="modal-body md flex flex-col gap-4">
@@ -1568,10 +1835,8 @@
                             anos ou com alguma deficiência física ou intelectual.
                         </p>
                         <p>
-                            <b> Acesse:</b> <a
-                                href="https://www.cnj.jus.br/wp-content/uploads/2019/09/Projeto-M%C3%A3es-em-C%C3%A1rcere-Cartilha-Ana-Carolina-Schwan.pdf"
-                                class="link" target="_blank"
-                                rel="noopener noreferrer">https://www.cnj.jus.br/wp-content/uploads/2019/09/Projeto-M%C3%A3es-em-C%C3%A1rcere-Cartilha-Ana-Carolina-Schwan.pdf</a>
+                            <b> Acesse:</b> <a href="./media/Projeto-Mães-em-Cárcere-Cartilha-Ana-Carolina-Schwan.pdf"
+                                class="link" target="_blank" rel="noopener noreferrer">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -1671,19 +1936,13 @@
                             <b>Acesse:</b>
                         </p>
                         <p>
-                            <b> Parte 1:</b> <a href="https://www.youtube.com/watch?v=92NwDWAfscI" class="link"
-                                target="_blank"
-                                rel="noopener noreferrer">https://www.youtube.com/watch?v=92NwDWAfscI</a>
+                            <b> Parte 1:</b> <a href="javascript:estrutura.openModal('modalVideo1')" class="link">Clique aqui</a>
                         </p>
                         <p>
-                            <b> Parte 2:</b> <a href="https://www.youtube.com/watch?v=NRhlOlxx7iU" class="link"
-                                target="_blank"
-                                rel="noopener noreferrer">https://www.youtube.com/watch?v=NRhlOlxx7iU</a>
+                            <b> Parte 2:</b> <a href="javascript:estrutura.openModal('modalVideo2')" class="link">Clique aqui</a>
                         </p>
                         <p>
-                            <b> Parte 3:</b> <a href="https://www.youtube.com/watch?v=gV9ULQRey0k" class="link"
-                                target="_blank"
-                                rel="noopener noreferrer">https://www.youtube.com/watch?v=gV9ULQRey0k</a>
+                            <b> Parte 3:</b> <a href="javascript:estrutura.openModal('modalVideo3')" class="link">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -1694,154 +1953,216 @@
                     </div>
                 </div>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.6 Puerpério
-            </h2>
-            <p>
-                Puerpério é o período de até 42 dias que decorre do parto, durante o qual ocorrem modificações internas
-                e externas,
-                incluindo transformações psíquicas (Brasil, 2006). Nesse momento, a eAPP deve desenvolver ações efetivas
-                e eficazes para
-                atender às necessidades de saúde dessas mulheres, qualificando o cuidado por meio de:
-            </p>
-            <ul class="list-disc pl-5 flex flex-col gap-3">
-                <li>
-                    Avaliação do estado de saúde da mulher e do recém-nascido;
-                </li>
-                <li>
-                    Orientação e apoio à puérpera na amamentação;
-                </li>
-                <li>
-                    Orientação sobre os cuidados básicos com o recém-nascido;
-                </li>
-                <li>
-                    Orientação quanto ao planejamento familiar;
-                </li>
-                <li>
-                    Identificação de situações de risco ou intercorrências (Brasil, 2006).
-                </li>
-            </ul>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais11')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais11" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>
-                                Título:
-                            </b> <i>Atenção ao pré-natal de baixo risco</i>
-                        </p>
-                        <p>
-                            <b>Autor:</b> Brasil (2012a).
-                        </p>
-                        <p>
-                            <b>Descrição: </b>para saber mais sobre as ações que devem ser desenvolvidas na consulta
-                            puerperal, consulte as páginas de 255 a 279 do
-                            documento.
-                        </p>
-                        <p>
-                            <b>Acesse:</b> <a
-                                href="https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_32_prenatal.pdf"
-                                class="link" target="_blank"
-                                rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_32_prenatal.pdf</a>
-                        </p>
+            <div id="modalVideo1" class="modal-overlay hidden" onclick="estrutura.closeOnOverlay(event, this)">
+                <div class="modal-content">
+                    <div class="modal-body w-full">
+                        <video class="link" width="600" controls>
+                            <source src="./media/1.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais11')"
+                        <button onclick="estrutura.closeModal('modalVideo1')"
                             class="btn bg-[var(--primary)] text-black">
-                            Fechar
+                            FECHAR
                         </button>
                     </div>
                 </div>
             </div>
-            <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.6.1 Aleitamento materno
-            </h3>
-            <p>
-                O aleitamento materno deve ser estimulado, a não ser que haja contraindicações, tendo em vista sua
-                importância para o
-                desenvolvimento infantil e para o desenvolvimento do vínculo afetivo entre mãe e filho (Conselho
-                Nacional de Justiça,
-                2016). “Outrossim destaca-se a importância do aleitamento materno para a prevenção de infecções e
-                proteção contra o
-                desenvolvimento de doenças imunológicas e crônicas” (Jacob, 2010 <i>apud</i> Ramos; Carvalho, 2018, p.
-                251).
-            </p>
-            <p>
-                É recomendável o aleitamento materno exclusivo até os seis meses de idade. Depois desse tempo, os
-                alimentos devem ser
-                introduzidos progressivamente (Brasil, 2020b). Nesse sentido, a PNAMPE tem como uma de suas diretrizes
-                “a atenção
-                específica à maternidade e à criança intramuros, observando o respeito ao período mínimo de amamentação
-                e de convivência
-                da mulher com seu filho” (Brasil, 2014b). Nesse mesmo sentido, o Conselho Nacional de Política Criminal
-                e Penitenciária
-                (CNPCP) (Brasil, 2009) salienta que a “amamentação [...] deve ser tratada de forma privilegiada, eis que
-                dela depende a
-                saúde do corpo e da ‘psique’ da criança”. Corroborando a garantia da permanência da criança no sistema
-                prisional, a Lei
-                de Execução Penal (LEP) define que o estabelecimento penal feminino deve ter seção para gestante e
-                parturiente e creche
-                para abrigar crianças maiores de seis meses e menores de sete anos (Brasil, 1984). Dessa forma, às
-                crianças que
-                permanecem abrigadas com suas mães deve-se assegurar o acompanhamento de seu crescimento e
-                desenvolvimento de acordo com
-                as diretrizes fixadas pelo Ministério da Saúde (Brasil, 2012b).
-            </p>
-            <div>
-                <button onclick="estrutura.openModal('modalSaibaMais12')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
-                </button>
-            </div>
-            <div id="modalSaibaMais12" class="modal-overlay hidden">
-                <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
-                    <div class="modal-header">
-                        <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
-                        </h2>
-                    </div>
-                    <div class="modal-body md flex flex-col gap-4">
-                        <p>
-                            <b>
-                                Título:
-                            </b> <i>Saúde da criança: crescimento e desenvolvimento</i>
-                        </p>
-                        <p>
-                            <b>Autor:</b> Brasil (2012b).
-                        </p>
-                        <p>
-                            <b>Descrição: </b>para saber mais sobre a organização do acompanhamento do crescimento e
-                            desenvolvimento da criança, consulte o documento.
-                        </p>
-                        <p>
-                            <b>Acesse:</b> <a
-                                href="https://bvsms.saude.gov.br/bvs/publicacoes/saude_crianca_crescimento_desenvolvimento.pdf"
-                                class="link" target="_blank"
-                                rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/saude_crianca_crescimento_desenvolvimento.pdf</a>
-                        </p>
+            <div id="modalVideo2" class="modal-overlay hidden" onclick="estrutura.closeOnOverlay(event, this)">
+                <div class="modal-content">
+                    <div class="modal-body w-full">
+                        <video class="link" width="600" controls>
+                            <source src="./media/2.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="estrutura.closeModal('modalSaibaMais12')"
+                        <button onclick="estrutura.closeModal('modalVideo2')"
                             class="btn bg-[var(--primary)] text-black">
-                            Fechar
+                            FECHAR
                         </button>
                     </div>
                 </div>
             </div>
+            <div id="modalVideo3" class="modal-overlay hidden" onclick="estrutura.closeOnOverlay(event, this)">
+                <div class="modal-content">
+                    <div class="modal-body w-full">
+                        <video class="link" width="600" controls>
+                            <source src="./media/3.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="estrutura.closeModal('modalVideo3')"
+                            class="btn bg-[var(--primary)] text-black">
+                            FECHAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="2.6" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.6 Puerpério
+                </h2>
+                <p>
+                    Puerpério é o período de até 42 dias que decorre do parto, durante o qual ocorrem modificações
+                    internas
+                    e externas,
+                    incluindo transformações psíquicas (Brasil, 2006). Nesse momento, a eAPP deve desenvolver ações
+                    efetivas
+                    e eficazes para
+                    atender às necessidades de saúde dessas mulheres, qualificando o cuidado por meio de:
+                </p>
+                <ul class="list-disc pl-5 flex flex-col gap-3">
+                    <li>
+                        Avaliação do estado de saúde da mulher e do recém-nascido;
+                    </li>
+                    <li>
+                        Orientação e apoio à puérpera na amamentação;
+                    </li>
+                    <li>
+                        Orientação sobre os cuidados básicos com o recém-nascido;
+                    </li>
+                    <li>
+                        Orientação quanto ao planejamento familiar;
+                    </li>
+                    <li>
+                        Identificação de situações de risco ou intercorrências (Brasil, 2006).
+                    </li>
+                </ul>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais11')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais11" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>
+                                    Título:
+                                </b> <i>Atenção ao pré-natal de baixo risco</i>
+                            </p>
+                            <p>
+                                <b>Autor:</b> Brasil (2012a).
+                            </p>
+                            <p>
+                                <b>Descrição: </b>para saber mais sobre as ações que devem ser desenvolvidas na consulta
+                                puerperal, consulte as páginas de 255 a 279 do
+                                documento.
+                            </p>
+                            <p>
+                                <b>Acesse:</b> <a href="./media/cadernos_atencao_basica_32_prenatal.pdf" class="link"
+                                    target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais11')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold py-5">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.6.1 Aleitamento materno
+                </h3>
+                <p>
+                    O aleitamento materno deve ser estimulado, a não ser que haja contraindicações, tendo em vista sua
+                    importância para o
+                    desenvolvimento infantil e para o desenvolvimento do vínculo afetivo entre mãe e filho (Conselho
+                    Nacional de Justiça,
+                    2016). “Outrossim destaca-se a importância do aleitamento materno para a prevenção de infecções e
+                    proteção contra o
+                    desenvolvimento de doenças imunológicas e crônicas” (Jacob, 2010 <i>apud</i> Ramos; Carvalho, 2018,
+                    p.
+                    251).
+                </p>
+                <p>
+                    É recomendável o aleitamento materno exclusivo até os seis meses de idade. Depois desse tempo, os
+                    alimentos devem ser
+                    introduzidos progressivamente (Brasil, 2020b). Nesse sentido, a PNAMPE tem como uma de suas
+                    diretrizes
+                    “a atenção
+                    específica à maternidade e à criança intramuros, observando o respeito ao período mínimo de
+                    amamentação
+                    e de convivência
+                    da mulher com seu filho” (Brasil, 2014b). Nesse mesmo sentido, o Conselho Nacional de Política
+                    Criminal
+                    e Penitenciária
+                    (CNPCP) (Brasil, 2009) salienta que a “amamentação [...] deve ser tratada de forma privilegiada, eis
+                    que
+                    dela depende a
+                    saúde do corpo e da ‘psique’ da criança”. Corroborando a garantia da permanência da criança no
+                    sistema
+                    prisional, a Lei
+                    de Execução Penal (LEP) define que o estabelecimento penal feminino deve ter seção para gestante e
+                    parturiente e creche
+                    para abrigar crianças maiores de seis meses e menores de sete anos (Brasil, 1984). Dessa forma, às
+                    crianças que
+                    permanecem abrigadas com suas mães deve-se assegurar o acompanhamento de seu crescimento e
+                    desenvolvimento de acordo com
+                    as diretrizes fixadas pelo Ministério da Saúde (Brasil, 2012b).
+                </p>
+                <div>
+                    <button onclick="estrutura.openModal('modalSaibaMais12')"
+                        class="btn bg-black text-white flex! gap-2">
+                        <i class="fa-solid fa-question-circle text-2xl"></i>
+                        <span class="font-bold my-auto">Saiba mais</span>
+                    </button>
+                </div>
+                <div id="modalSaibaMais12" class="modal-overlay hidden">
+                    <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
+                        <div class="modal-header">
+                            <h2 class="font-bold text-3xl text-center">
+                                Saiba mais
+                            </h2>
+                        </div>
+                        <div class="modal-body md flex flex-col gap-4">
+                            <p>
+                                <b>
+                                    Título:
+                                </b> <i>Saúde da criança: crescimento e desenvolvimento</i>
+                            </p>
+                            <p>
+                                <b>Autor:</b> Brasil (2012b).
+                            </p>
+                            <p>
+                                <b>Descrição: </b>para saber mais sobre a organização do acompanhamento do crescimento e
+                                desenvolvimento da criança, consulte o documento.
+                            </p>
+                            <p>
+                                <b>Acesse:</b> <a href="./media/saude_crianca_crescimento_desenvolvimento.pdf"
+                                    class="link" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalSaibaMais12')"
+                                class="btn bg-[var(--primary)] text-black">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="2.7" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.7 Planejamento reprodutivo
             </h2>
             <p>
@@ -1858,21 +2179,15 @@
                 isoladamente, essas ações devem ser realizadas tanto em estabelecimentos penais masculinos como
                 femininos.
             </p>
-        </div>
-
-        <div class="bg-gray-100 py-10">
-            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
-                    <b></b>Nas instituições penais, em que a frequência às consultas é reduzida devido a organização do
-                    sistema, toda visita ao
-                    serviço de saúde é uma oportunidade para a prática de ações educativas, aconselhamento e
-                    acompanhamento clínico e para
-                    apresentar os anticoncepcionais disponíveis.
-                </h2>
-            </div>
-        </div>
-
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                Nas instituições penais, em que a frequência às consultas é reduzida devido a organização do
+                sistema, toda visita ao
+                serviço de saúde é uma oportunidade para a prática de ações educativas, aconselhamento e
+                acompanhamento clínico e para
+                apresentar os anticoncepcionais disponíveis.
+            </h3>
             <p>
                 Vamos falar um pouco sobre anticoncepcionais?
             </p>
@@ -1884,7 +2199,7 @@
                 vida (Brasil, 2013), e possibilitar-lhes acesso ao anticoncepcional escolhido.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.7.1 Anticoncepção no sistema prisional
             </h3>
             <p>
@@ -1907,12 +2222,12 @@
                             <div class="relative w-full h-80">
                                 <div id="cardFechado" class="card-inner preserve-3d relative w-full h-full">
                                     <article
-                                        class="absolute inset-0 rounded-xl border-2 border-[var(--primary)] shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
                                         <h3 class="text-lg font-bold mb-2">
                                             Anticoncepcionais Temporários
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 border border-[var(--primary)] py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
                                     <aside
@@ -1933,12 +2248,12 @@
                             <div class="relative w-full h-80">
                                 <div id="CardSemiAberto" class="card-inner preserve-3d relative w-full h-full ">
                                     <article
-                                        class="absolute inset-0 rounded-xl border-2 border-[var(--primary)] shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
+                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center p-6 backface-hidden">
                                         <h3 class="text-lg font-bold mb-2">
                                             Anticoncepcionais Definitivos
                                         </h3>
                                         <span
-                                            class="mt-4 inline-block px-3 border border-[var(--primary)] py-1 text-xs bg-white text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                            class="mt-4 inline-block px-3  py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
                                             para ver</span>
                                     </article>
 
@@ -1992,7 +2307,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="modalSaibaMais14" class="modal-overlay hidden">
                 <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
@@ -2014,10 +2328,8 @@
                             páginas de 131 a 245 do documento.
                         </p>
                         <p>
-                            <b>Acesse:</b> <a
-                                href="https://bvsms.saude.gov.br/bvs/publicacoes/saude_sexual_saude_reprodutiva.pdf"
-                                class="link" target="_blank"
-                                rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/saude_sexual_saude_reprodutiva.pdf</a>
+                            <b>Acesse:</b> <a href="./media/saude_sexual_saude_reprodutiva.pdf" class="link"
+                                target="_blank" rel="noopener noreferrer">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -2048,123 +2360,149 @@
                 das atividades
                 com vistas ao bem-estar dessa população.
             </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                2.8 Experiências exitosas
-            </h2>
-            <div class="flex flex-wrap max-w-[800px] mx-auto">
-                <div class="w-full md:w-1/2">
-                    <h3 class="text-xl">
-                        <b>Projeto Recomeço</b>
-                    </h3>
-                    <small>
-                        <b>Título:</b> <i>Projeto Recomeço: reeducandos do sistema prisional da Paraíba realizaram
-                            cirurgias
-                            no
-                            Edson Ramalho através do
-                            Planejamento Familiar</i>
-                        <br>
-                        <b>Autor:</b> Fundação Paraibana de Gestão em Saúde (2024).
-                        <br>
-                        <b>Descrição: </b>essa matéria aborda a garantia do direito ao planejamento familiar por
-                        meio de ações que possibilitem aos interessados
-                        regular a fecundidade.
-                    </small>
-                </div>
-                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
-                    <a href="https://pbsaude.pb.gov.br/noticias/projeto-recomeco-reeducandos-do-sistema-prisional-da-paraiba-realizaram-cirurgias-no-edson-ramalho-atraves-do-planejamento-familiar"
-                        target="_blank"
-                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
-                        aqui!</a>
-                </div>
-            </div>
+        </div>
 
-            <div class="flex flex-wrap max-w-[800px] mx-auto">
-                <div class="w-full md:w-1/2">
-                    <h3 class="text-xl">
-                        <b>Penitenciária de Cariacica</b>
-                    </h3>
-                    <small>
-                        <b>Título:</b> <i>Penitenciária de Cariacica proporciona uma convivência humanizada entre as
-                            reeducandas
-                            e seus filhos</i>
-                        <br>
-                        <b>Autor:</b> TVE Espírito Santo (2023).
-                        <br>
-                        <b>Descrição: </b>assista ao vídeo para conhecer as ações de humanização e acolhimento às
-                        puérperas e aos recém-nascidos da Penitenciária
-                        Feminina de Cariacica (ES).
-                    </small>
+        <div id="2.8" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    2.8 Experiências exitosas
+                </h2>
+                <div class="flex flex-wrap max-w-[800px] mx-auto">
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-xl">
+                            <b>Projeto Recomeço</b>
+                        </h3>
+                        <small>
+                            <b>Título:</b> <i>Projeto Recomeço: reeducandos do sistema prisional da Paraíba realizaram
+                                cirurgias
+                                no
+                                Edson Ramalho através do
+                                Planejamento Familiar</i>
+                            <br>
+                            <b>Autor:</b> Fundação Paraibana de Gestão em Saúde (2024).
+                            <br>
+                            <b>Descrição: </b>essa matéria aborda a garantia do direito ao planejamento familiar por
+                            meio de ações que possibilitem aos interessados
+                            regular a fecundidade.
+                        </small>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                        <a href="https://pbsaude.pb.gov.br/noticias/projeto-recomeco-reeducandos-do-sistema-prisional-da-paraiba-realizaram-cirurgias-no-edson-ramalho-atraves-do-planejamento-familiar"
+                            target="_blank"
+                            class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
+                            aqui!</a>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
-                    <a href="https://www.youtube.com/watch?v=0LD9YKBVHM0" target="_blank"
-                        class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold bloxk mx-auto">Acesse
-                        aqui!</a>
+                <div class="flex flex-wrap max-w-[800px] mx-auto">
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-xl">
+                            <b>Penitenciária de Cariacica</b>
+                        </h3>
+                        <small>
+                            <b>Título:</b> <i>Penitenciária de Cariacica proporciona uma convivência humanizada entre as
+                                reeducandas
+                                e seus filhos</i>
+                            <br>
+                            <b>Autor:</b> TVE Espírito Santo (2023).
+                            <br>
+                            <b>Descrição: </b>assista ao vídeo para conhecer as ações de humanização e acolhimento às
+                            puérperas e aos recém-nascidos da Penitenciária
+                            Feminina de Cariacica (ES).
+                        </small>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center flex-col align-middle">
+                        <a href="javascript:estrutura.openModal('modalVideoPenitenciaria')"
+                            class="rounded-full bg-[var(--primary)] px-5 py-2 font-bold block mx-auto">Acesse
+                            aqui!</a>
+                    </div>
+                </div>
+                <div id="modalVideoPenitenciaria" class="modal-overlay hidden"
+                    onclick="estrutura.closeOnOverlay(event, this)">
+                    <div class="modal-content">
+                        <div class="modal-body w-full">
+                            <video class="link" width="600" controls>
+                                <source
+                                    src="./media/Penitenciaria-de-Cariacica-proporciona-u_Media_0LD9YKBVHM0_002_720p.mp4"
+                                    type="video/mp4">
+                                Seu navegador não suporta vídeo.
+                            </video>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="estrutura.closeModal('modalVideoPenitenciaria')"
+                                class="btn bg-[var(--primary)] text-black">
+                                FECHAR
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="encerramento" class="bg-gray-100 py-10">
-            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+        <div id="encerramento" class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
+                Encerramento da Unidade
+            </h2>
+            <p>
+                Encerramos a Unidade sobre a assistência à saúde das mulheres. Tentamos criar ações aplicáveis à sua
+                rotina de trabalho.
+                É de conhecimento amplo que o sistema prisional feminino precisa ser repensado para garantir o
+                cuidado integral à saúde
+                das mulheres privadas de liberdade, haja vista que essa população tem demandas e necessidades
+                peculiares. A remodelação
+                desse panorama pode ter início no cuidado diário. Cada exame garantido, cada orientação oferecida,
+                cada parto respeitado
+                é uma vitória silenciosa pela equidade. Você, estudante-trabalhador, é agente dessa transformação.
+            </p>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
+        </div>
+
+        <div id="referencias_importantes" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 px-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
-                    Encerramento da Unidade
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências principais
                 </h2>
                 <p>
-                    Encerramos a Unidade sobre a assistência à saúde das mulheres. Tentamos criar ações aplicáveis à sua
-                    rotina de trabalho.
-                    É de conhecimento amplo que o sistema prisional feminino precisa ser repensado para garantir o
-                    cuidado integral à saúde
-                    das mulheres privadas de liberdade, haja vista que essa população tem demandas e necessidades
-                    peculiares. A remodelação
-                    desse panorama pode ter início no cuidado diário. Cada exame garantido, cada orientação oferecida,
-                    cada parto respeitado
-                    é uma vitória silenciosa pela equidade. Você, estudante-trabalhador, é agente dessa transformação.
+                    BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde.
+                    Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis.
+                    <b>Protocolo clínico e diretrizes terapêuticas para atenção integral às pessoas com infecções
+                        sexualmente transmissíveis (IST).</b>
+                    Brasília: Ministério da Saúde, 2022a.
+                    Disponível em:
+                    <a class="link"
+                        href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf
+                    </a>.
+                    Acesso em: 25 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Justiça. Departamento Penitenciário Nacional.
+                    <b>Diretrizes para a convivência mãe-filho/a no sistema prisional.</b>
+                    Brasília, 2016.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde.
+                    Departamento de Ações Programáticas Estratégicas.
+                    <b>Pré-natal e Puerpério</b>: atenção qualificada e humanizada - manual técnico.
+                    Brasília: Ministério da Saúde, 2006.
+                </p>
+                <p>
+                    INSTITUTO NACIONAL DE CÂNCER (Brasil). Coordenação de Prevenção e Vigilância.
+                    Divisão de Detecção Precoce e Apoio à Organização de Rede.
+                    <b>Diretrizes para a detecção precoce do câncer de mama no Brasil.</b>
+                    Rio de Janeiro: INCA, 2015.
                 </p>
             </div>
         </div>
 
-        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
-            </h2>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde.
-                Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis.
-                <b>Protocolo clínico e diretrizes terapêuticas para atenção integral às pessoas com infecções
-                    sexualmente transmissíveis (IST).</b>
-                Brasília: Ministério da Saúde, 2022a.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf
-                </a>.
-                Acesso em: 25 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Justiça. Departamento Penitenciário Nacional.
-                <b>Diretrizes para a convivência mãe-filho/a no sistema prisional.</b>
-                Brasília, 2016.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde.
-                Departamento de Ações Programáticas Estratégicas.
-                <b>Pré-natal e Puerpério</b>: atenção qualificada e humanizada - manual técnico.
-                Brasília: Ministério da Saúde, 2006.
-            </p>
-            <p>
-                INSTITUTO NACIONAL DE CÂNCER (Brasil). Coordenação de Prevenção e Vigilância.
-                Divisão de Detecção Precoce e Apoio à Organização de Rede.
-                <b>Diretrizes para a detecção precoce do câncer de mama no Brasil.</b>
-                Rio de Janeiro: INCA, 2015.
-            </p>
-        </div>
-
         <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                <i class="fa-solid fa-file text-black"></i>
                 Referências
             </h2>
             <p>
@@ -2264,21 +2602,6 @@
             </p>
             <p>
                 BRASIL. Ministério da Saúde.
-                Secretaria de Vigilância em Saúde.
-                Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis.
-                <b>Protocolo clínico e diretrizes terapêuticas para atenção integral às pessoas com infecções
-                    sexualmente transmissíveis (IST).</b>
-                Brasília: Ministério da Saúde, 2022a.
-                Disponível em:
-                <a class="link"
-                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf
-                </a>.
-                Acesso em: 25 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde.
                 Secretaria de Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde.
                 Secretaria de Vigilância em Saúde.
                 <b>Protocolo Clínico e Diretrizes Terapêuticas para prevenção da transmissão vertical de HIV,
@@ -2341,13 +2664,6 @@
                     https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13434.htm
                 </a>.
                 Acesso em: 19 ago. 2025.
-            </p>
-
-            <p>
-                BRASIL. Ministério da Justiça.
-                Departamento Penitenciário Nacional.
-                <b>Diretrizes para a convivência mãe-filho/a no sistema prisional.</b>
-                Brasília, 2016.
             </p>
 
             <p>
@@ -2445,14 +2761,6 @@
                     https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/07/2009&jornal=1&pagina=34&totalArquivos=76
                 </a>.
                 Acesso em: 4 fev. 2026.
-            </p>
-
-            <p>
-                BRASIL. Ministério da Saúde.
-                Secretaria de Atenção à Saúde.
-                Departamento de Ações Programáticas Estratégicas.
-                <b>Pré-natal e Puerpério</b>: atenção qualificada e humanizada - manual técnico.
-                Brasília: Ministério da Saúde, 2006.
             </p>
 
             <p>
@@ -2609,13 +2917,6 @@
             </p>
 
             <p>
-                INSTITUTO NACIONAL DE CÂNCER (Brasil). Coordenação de Prevenção e Vigilância.
-                Divisão de Detecção Precoce e Apoio à Organização de Rede.
-                <b>Diretrizes para a detecção precoce do câncer de mama no Brasil.</b>
-                Rio de Janeiro: INCA, 2015.
-            </p>
-
-            <p>
                 LEAL, M. C. et al.
                 Nascer na prisão: gestação e parto atrás das grades no Brasil.
                 <b>Ciência & Saúde Coletiva</b>, v. 21, n. 7, p. 2061-2070, 2016.
@@ -2749,7 +3050,7 @@
         <div class="bg-gray-100 py-10">
             <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
                 <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo do Autor
+                    Minicurrículo da Autora
                 </h1>
                 <div class="flex flex-wrap my-5">
                     <div class="w-full md:w-1/3">
@@ -2792,23 +3093,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

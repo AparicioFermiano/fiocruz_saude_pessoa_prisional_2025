@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -349,37 +349,86 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo IV - Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 3 - Saúde da Mulher
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 4
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 3 &nbsp;·&nbsp; Saúde da Mulher
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -473,7 +522,7 @@
 
         <div id="3.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.1 Direitos sociais e saúde da mulher no sistema prisional
             </h2>
             <p>
@@ -487,24 +536,18 @@
                 direcionadas à
                 saúde da mulher.
             </p>
-        </div>
-
-        <div class="bg-gray-100 py-10">
-            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
-                    Você sabe quem são as <b>mulheres privadas de liberdade no Brasil?</b>
-                </h2>
-            </div>
-        </div>
-
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                Você sabe quem são as <b>mulheres privadas de liberdade no Brasil?</b>
+            </h3>
             <p>
                 Considerando as celas físicas, sem os quantitativos do Sistema Penitenciário Federal, 28.770 mulheres
                 foram privadas de
                 liberdade no Brasil no 1º semestre de 2024, conforme a Figura 1.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 1 - Caracterização das mulheres privadas de liberdade no Brasil no 1º semestre de 2024
             </h3>
             <div>
@@ -526,17 +569,11 @@
                 garantia dos
                 direitos sociais e de saúde das mulheres no sistema prisional.
             </p>
-        </div>
-
-        <div class="bg-gray-100 py-10">
-            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
-                    Você conhece os <b>direitos</b> das mulheres <b>privadas de liberdade?</b>
-                </h2>
-            </div>
-        </div>
-
-        <div class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
+            <h3 class="relative text-2xl md:text-3xl py-3 font-light text-center leading-10 md:leading-12">
+                <span
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] md:w-[25%] border-t-3 border-[var(--primary)]"></span>
+                Você conhece os <b>direitos</b> das mulheres <b>privadas de liberdade?</b>
+            </h3>
             <p>
                 Os direitos sociais e de saúde das mulheres privadas de liberdade são garantidos por normativas
                 nacionais e
@@ -576,15 +613,15 @@
             </div>
             <div>
                 <button onclick="estrutura.openModal('modalSaibaMais1')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
+                    <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                    <span class="font-bold my-auto">Atenção</span>
                 </button>
             </div>
             <div id="modalSaibaMais1" class="modal-overlay hidden">
                 <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
+                            Atenção
                         </h2>
                     </div>
                     <div class="modal-body md flex flex-col gap-4">
@@ -670,8 +707,8 @@
                         <p>
                             <b>Acesse:</b>
                             <a class="link"
-                                href="https://ssps.rs.gov.br/upload/arquivos/202412/18120550-plano-estadual-de-atencao-as-mulheres-privadas-de-liberdade-e-egressas-2024-2027.pdf"
-                                target="_blank">https://ssps.rs.gov.br/upload/arquivos/202412/18120550-plano-estadual-de-atencao-as-mulheres-privadas-de-liberdade-e-egressas-2024-2027.pdf</a>
+                                href="./media/18120550-plano-estadual-de-atencao-as-mulheres-privadas-de-liberdade-e-egressas-2024-2027.pdf"
+                                target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -691,223 +728,242 @@
                     target="_blank">Pereira (2016)</a>
                 sobre o Distrito Federal.
             </p>
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                3.2 Saúde sexual e reprodutiva da mulher no sistema prisional
-            </h2>
-            <div>
-                <img src="./images/saude-reprodutiva.png" alt="Saúde reprodutiva"
-                    class="w-full max-w-[600px] mx-auto block">
-                <small>
-                    Fonte: elaboração das autoras
-                </small>
-                <hr>
-            </div>
-            <p>
-                De acordo com Brasil (2025a),
-            </p>
-            <h3 class="text-xl md:text-2xl py-5 font-light text-right leading-10 italic">
-                a <b>saúde sexual</b> diz respeito à possibilidade de mulheres e homens, ao longo de suas vidas,
-                vivenciarem e expressarem sua
-                sexualidade de maneira saudável, evitando riscos como infecções sexualmente transmissíveis, gestações
-                não planejadas,
-                coerção, violência e discriminação. A saúde sexual valoriza a vida, as relações pessoais e a expressão
-                genuína de quem
-                somos. Ela é enriquecedora, inclui o prazer e incentiva a autoconfiança e a comunicação nas relações
-                (Brasil, 2025a).
-            </h3>
-            <p>
-                Apesar de as normativas legais garantirem direitos, a saúde sexual e reprodutiva das mulheres no sistema
-                prisional é um
-                tema crítico, que envolve múltiplas questões intersetoriais, incluindo direitos humanos, saúde pública e
-                políticas
-                voltadas ao sistema prisional. De acordo com Schultz et al. (2020) e Prado (2024), estas são algumas
-                dificuldades que as
-                mulheres encontram no sistema prisional e que representam desafios aos profissionais desses locais:
-            </p>
-            <div>
-                <p class="text-center">
-                    <small>Clique para interagir</small>
+
+
+        </div>
+
+        <div id="3.2" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black mr-2"></i>
+                    3.2 Saúde sexual e reprodutiva da mulher no sistema prisional
+                </h2>
+                <div>
+                    <img src="./images/saude-reprodutiva.png" alt="Saúde reprodutiva"
+                        class="w-full max-w-[600px] mx-auto block">
+                    <small>
+                        Fonte: elaboração das autoras
+                    </small>
+                    <hr>
+                </div>
+                <p>
+                    De acordo com Brasil (2025a),
                 </p>
-                <div class="flex flex-wrap justify-center">
-                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="animacao.toggleCard(this, 'card1')" aria-pressed="false"
-                            class="w-full focus:outline-none">
-                            <div class="relative w-full h-80">
-                                <div id="card1" class="card-inner preserve-3d relative w-full h-full">
-                                    <article
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
-                                        <h3 class="text-lg font-bold mb-2">
-                                            Dificuldade 1
-                                        </h3>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
-                                            para ver</span>
-                                    </article>
-                                    <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
-                                        <p class="text-center">Dificuldade de acesso à Rede de Atenção à Saúde (RAS),
-                                            que inclui cuidados ginecológicos, obstétricos e saúde
-                                            reprodutiva;</p>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
-                                    </aside>
+                <h3 class="text-xl md:text-2xl py-5 font-light text-right leading-10 italic">
+                    a <b>saúde sexual</b> diz respeito à possibilidade de mulheres e homens, ao longo de suas vidas,
+                    vivenciarem e expressarem sua
+                    sexualidade de maneira saudável, evitando riscos como infecções sexualmente transmissíveis,
+                    gestações
+                    não planejadas,
+                    coerção, violência e discriminação. A saúde sexual valoriza a vida, as relações pessoais e a
+                    expressão
+                    genuína de quem
+                    somos. Ela é enriquecedora, inclui o prazer e incentiva a autoconfiança e a comunicação nas relações
+                    (Brasil, 2025a).
+                </h3>
+                <p>
+                    Apesar de as normativas legais garantirem direitos, a saúde sexual e reprodutiva das mulheres no
+                    sistema
+                    prisional é um
+                    tema crítico, que envolve múltiplas questões intersetoriais, incluindo direitos humanos, saúde
+                    pública e
+                    políticas
+                    voltadas ao sistema prisional. De acordo com Schultz et al. (2020) e Prado (2024), estas são algumas
+                    dificuldades que as
+                    mulheres encontram no sistema prisional e que representam desafios aos profissionais desses locais:
+                </p>
+                <div>
+                    <p class="text-center">
+                        <small>Clique para interagir</small>
+                    </p>
+                    <div class="flex flex-wrap justify-center">
+                        <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="animacao.toggleCard(this, 'card1')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="card1" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Dificuldade 1
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-center">Dificuldade de acesso à Rede de Atenção à Saúde
+                                                (RAS),
+                                                que inclui cuidados ginecológicos, obstétricos e saúde
+                                                reprodutiva;</p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="animacao.toggleCard(this, 'card2')" aria-pressed="false"
-                            class="w-full focus:outline-none">
-                            <div class="relative w-full h-80">
-                                <div id="card2" class="card-inner preserve-3d relative w-full h-full">
-                                    <article
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
-                                        <h3 class="text-lg font-bold mb-2">
-                                            Dificuldade 2
-                                        </h3>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
-                                            para ver</span>
-                                    </article>
-                                    <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
-                                        <p class="text-center">Gestação, parto e puerpério em condições precárias;</p>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
-                                    </aside>
+                            </button>
+                        </div>
+                        <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="animacao.toggleCard(this, 'card2')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="card2" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Dificuldade 2
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-center">Gestação, parto e puerpério em condições precárias;
+                                            </p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="animacao.toggleCard(this, 'card3')" aria-pressed="false"
-                            class="w-full focus:outline-none">
-                            <div class="relative w-full h-80">
-                                <div id="card3" class="card-inner preserve-3d relative w-full h-full">
-                                    <article
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
-                                        <h3 class="text-lg font-bold mb-2">
-                                            Dificuldade 3
-                                        </h3>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
-                                            para ver</span>
-                                    </article>
-                                    <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
-                                        <p class="text-center">Dificuldade de encaminhamentos extramuros;</p>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
-                                    </aside>
+                            </button>
+                        </div>
+                        <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="animacao.toggleCard(this, 'card3')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="card3" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Dificuldade 3
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-center">Dificuldade de encaminhamentos extramuros;</p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="animacao.toggleCard(this, 'card4')" aria-pressed="false"
-                            class="w-full focus:outline-none">
-                            <div class="relative w-full h-80">
-                                <div id="card4" class="card-inner preserve-3d relative w-full h-full">
-                                    <article
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
-                                        <h3 class="text-lg font-bold mb-2">
-                                            Dificuldade 4
-                                        </h3>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
-                                            para ver</span>
-                                    </article>
-                                    <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
-                                        <p class="text-center">Questões de saúde mental e uso de drogas;</p>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
-                                    </aside>
+                            </button>
+                        </div>
+                        <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="animacao.toggleCard(this, 'card4')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="card4" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Dificuldade 4
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-center">Questões de saúde mental e uso de drogas;</p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="animacao.toggleCard(this, 'card5')" aria-pressed="false"
-                            class="w-full focus:outline-none">
-                            <div class="relative w-full h-80">
-                                <div id="card5" class="card-inner preserve-3d relative w-full h-full">
-                                    <article
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
-                                        <h3 class="text-lg font-bold mb-2">
-                                            Dificuldade 5
-                                        </h3>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
-                                            para ver</span>
-                                    </article>
-                                    <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
-                                        <p class="text-center">Condições sanitárias inadequadas e falta de absorventes
-                                            que podem levar a infecções ginecológicas e outros problemas de
-                                            saúde;</p>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
-                                    </aside>
+                            </button>
+                        </div>
+                        <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="animacao.toggleCard(this, 'card5')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="card5" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Dificuldade 5
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-center">Condições sanitárias inadequadas e falta de
+                                                absorventes
+                                                que podem levar a infecções ginecológicas e outros problemas de
+                                                saúde;</p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="animacao.toggleCard(this, 'card6')" aria-pressed="false"
-                            class="w-full focus:outline-none">
-                            <div class="relative w-full h-80">
-                                <div id="card6" class="card-inner preserve-3d relative w-full h-full">
-                                    <article
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
-                                        <h3 class="text-lg font-bold mb-2">
-                                            Dificuldade 6
-                                        </h3>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
-                                            para ver</span>
-                                    </article>
-                                    <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
-                                        <p class="text-center">Alta carga de infecções sexualmente transmissíveis (ISTs)
-                                            no sistema prisional, como HIV e sífilis;</p>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
-                                    </aside>
+                            </button>
+                        </div>
+                        <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="animacao.toggleCard(this, 'card6')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="card6" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Dificuldade 6
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-center">Alta carga de infecções sexualmente transmissíveis
+                                                (ISTs)
+                                                no sistema prisional, como HIV e sífilis;</p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
-                        <button onclick="animacao.toggleCard(this, 'card7')" aria-pressed="false"
-                            class="w-full focus:outline-none">
-                            <div class="relative w-full h-80">
-                                <div id="card7" class="card-inner preserve-3d relative w-full h-full">
-                                    <article
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
-                                        <h3 class="text-lg font-bold mb-2">
-                                            Dificuldade 7
-                                        </h3>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
-                                            para ver</span>
-                                    </article>
-                                    <aside
-                                        class="absolute inset-0 rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
-                                        <p class="text-center">Vulnerabilidade e todas as formas de violência, incluindo
-                                            a violência sexual.</p>
-                                        <span
-                                            class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
-                                    </aside>
+                            </button>
+                        </div>
+                        <div class="perspective w-full lg:w-1/3 max-w-sm py-3 px-0 md:px-3">
+                            <button onclick="animacao.toggleCard(this, 'card7')" aria-pressed="false"
+                                class="w-full focus:outline-none">
+                                <div class="relative w-full h-80">
+                                    <div id="card7" class="card-inner preserve-3d relative w-full h-full">
+                                        <article
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-white flex flex-col items-center justify-center backface-hidden">
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Dificuldade 7
+                                            </h3>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-black text-[var(--primary)] rounded-full absolute bottom-4 right-4">Clique
+                                                para ver</span>
+                                        </article>
+                                        <aside
+                                            class="absolute inset-0 rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                            <p class="text-center">Vulnerabilidade e todas as formas de violência,
+                                                incluindo
+                                                a violência sexual.</p>
+                                            <span
+                                                class="mt-4 inline-block px-3 py-1 text-xs bg-white/20 rounded-full absolute bottom-4 right-4">Voltar</span>
+                                        </aside>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="3.3" class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7 py-10">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.3 Como podemos promover a saúde da mulher e prevenir agravos no sistema prisional?
             </h2>
             <p>
@@ -920,7 +976,7 @@
                 parto humanizado e da fiscalização e do cumprimento das normas existentes.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.3.1 Ampliação do atendimento ginecológico e obstétrico
             </h3>
             <p>
@@ -1067,7 +1123,7 @@
                                 </li>
                                 <li>
                                     Realizar o exame papanicolau (preventivo) conforme
-                                    <a href="https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//diretrizes_para_o_rastreamento_do_cancer_do_colo_do_utero_2016_corrigido.pdf"
+                                    <a href="./media/diretrizes_para_o_rastreamento_do_cancer_do_colo_do_utero_2016_corrigido.pdf"
                                         class="link" target="_blank" rel="noopener noreferrer">protocolo do Instituto
                                         Nacional de Câncer (INCA)/Ministério da Saúde</a>
                                     protocolo do Instituto Nacional de Câncer (INCA)/Ministério da Saúde;
@@ -1162,10 +1218,9 @@
                                     e aparelho de barbear;
                                 </li>
                                 <li>
-                                    Disponibilização da <a
-                                        href="https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_profilaxia_prep.pdf"
+                                    Disponibilização da <a href="./media/protocolo_clinico_profilaxia_prep.pdf"
                                         class="link" target="_blank" rel="noopener noreferrer">PrEP</a> e da <a
-                                        href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2021/hiv-aids/prot_clinico_diretrizes_terap_pep_-risco_infeccao_hiv_ist_hv_2021.pdf"
+                                        href="./media/prot_clinico_diretrizes_terap_pep_-risco_infeccao_hiv_ist_hv_2021.pdf"
                                         class="link" target="_blank" rel="noopener noreferrer">Profilaxia Pós-Exposição
                                         (PEP)</a> para HIV conforme
                                     protocolos do Ministério da Saúde;
@@ -1320,7 +1375,7 @@
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 overflow-y-auto rounded-xl shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 overflow-y-auto rounded-xl shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">A gestante deve manter o tratamento durante o pré-natal e
                                             receber o tratamento específico durante o parto; o
                                             recém-nascido também deve receber antirretroviral nos primeiros meses de
@@ -1348,7 +1403,7 @@
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl overflow-y-auto shadow-lg bg-black text-white flex flex-col items-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl overflow-y-auto shadow-lg bg-[var(--primary)] text-black flex flex-col items-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">A gestante que apresentou teste rápido reagente para
                                             sífilis deve iniciar o tratamento com penicilina benzatina
                                             intramuscular imediatamente, mesmo antes de realizar outros exames. É de
@@ -1377,7 +1432,7 @@
                                             para ver</span>
                                     </article>
                                     <aside
-                                        class="absolute inset-0 rounded-xl overflow-y-auto shadow-lg bg-black text-white flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
+                                        class="absolute inset-0 rounded-xl overflow-y-auto shadow-lg bg-[var(--primary)] text-black flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180">
                                         <p class="text-center">
                                             As gestantes com hepatite B e C devem ser avaliadas individualmente quanto
                                             ao uso de medicamentos antivirais, indicação
@@ -1419,8 +1474,8 @@
                         <p>
                             <b>Acesse:</b>
                             <a class="link"
-                                href="https://atencaoprimaria.rs.gov.br/upload/arquivos/202404/15105209-isbn-impressa-saude-da-mulher-privada-de-liberdade-pre-natal-parto-e-puerperio-2.pdf"
-                                target="_blank">https://atencaoprimaria.rs.gov.br/upload/arquivos/202404/15105209-isbn-impressa-saude-da-mulher-privada-de-liberdade-pre-natal-parto-e-puerperio-2.pdf</a>
+                                href="./media/15105209-isbn-impressa-saude-da-mulher-privada-de-liberdade-pre-natal-parto-e-puerperio-2.pdf"
+                                target="_blank">Clique aqui</a>
                         </p>
                         <p>
                             <b>Título: </b>Rede Alyne: conheça a história da jovem negra que deu o nome ao novo programa
@@ -1450,7 +1505,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.3.2 Disponibilização de contraceptivos e absorventes de forma gratuita
             </h3>
             <p>
@@ -1474,10 +1529,10 @@
                 conforme Figura 2 (Rio Grande do Sul, 2024b).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 2 - Métodos contraceptivos disponibilizados pelo SUS
             </h3>
-            <small>(clique nos ícones de + para acessar o conteúdo)</small>
+            <small>Clique nos ícones + para interagir</small>
             <div id="mapa" class="relative">
                 <img class="w-full h-full rounded-xl" src="./images/metodos.png"
                     alt="Métodos contraceptivos disponibilizados pelo SUS" loading="lazy" />
@@ -1513,15 +1568,15 @@
             </p>
             <div>
                 <button onclick="estrutura.openModal('modalSaibaMais4')" class="btn bg-black text-white flex! gap-2">
-                    <i class="fa-solid fa-question-circle text-2xl"></i>
-                    <span class="font-bold my-auto">Saiba mais</span>
+                    <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                    <span class="font-bold my-auto">Atenção</span>
                 </button>
             </div>
             <div id="modalSaibaMais4" class="modal-overlay hidden">
                 <div class="modal-content bg-white md max-h-[500px] p-5 rounded-2xl flex flex-col gap-5">
                     <div class="modal-header">
                         <h2 class="font-bold text-3xl text-center">
-                            Saiba mais
+                            Atenção
                         </h2>
                     </div>
                     <div class="modal-body md flex flex-col gap-4">
@@ -1547,7 +1602,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.3.3 Garantia de acompanhamento pré-natal e parto humanizado, sem uso de algemas
             </h3>
             <p>
@@ -1576,7 +1631,7 @@
                 (Brasil, 2005).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 3.3.4 Fortalecimento da fiscalização e cumprimento das normas existentes
             </h3>
             <p>
@@ -1610,87 +1665,95 @@
             </p>
         </div>
 
-        <div class="bg-gray-100 py-10">
+        <div class="bg-[var(--primary)] py-10">
             <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
+                <h2 class="text-2xl md:text-4xl font-bold">
                     Reflexão
                 </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                <h3 class="text-xl md:text-3xl leading-14 font-light">
                     Você conhece o Conselho da Comunidade da sua Comarca? Participou de alguma reunião do Conselho da
                     Comunidade? Quem são
                     os representantes dos trabalhadores da segurança pública, da justiça e da saúde no Conselho da
                     Comunidade da sua região?
-                </h2>
+                </h3>
             </div>
         </div>
 
-        <div id="encerramento" class="bg-gray-100 py-10">
-            <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+        <div id="encerramento" class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
+            <h2 class="text-2xl md:text-3xl font-bold">
+                <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
+                Encerramento da Unidade
+            </h2>
+            <p>
+                Nesta Unidade, você aprendeu sobre os direitos das mulheres privadas de liberdade, refletiu sobre a
+                saúde sexual e
+                reprodutiva, conheceu ações voltadas para a prevenção de agravos e para a promoção da saúde e
+                descobriu detalhes sobre
+                planejamento familiar, dignidade menstrual e ciclo gravídico-puerperal no sistema prisional.
+            </p>
+                <p class="font-bold text-center mt-4">
+                    Parabéns por concluir essa unidade! Clique no botão "retornar" no canto superior esquerdo para continuar os seus estudos.
+                </p>
+        </div>
+
+        <div id="referencias_importantes" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
-                    Encerramento da Unidade
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências principais
                 </h2>
                 <p>
-                    Nesta Unidade, você aprendeu sobre os direitos das mulheres privadas de liberdade, refletiu sobre a
-                    saúde sexual e
-                    reprodutiva, conheceu ações voltadas para a prevenção de agravos e para a promoção da saúde e
-                    descobriu detalhes sobre
-                    planejamento familiar, dignidade menstrual e ciclo gravídico-puerperal no sistema prisional.
+                    BRASIL. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº 210, de 16 de
+                    janeiro de
+                    2014. Institui
+                    a Política Nacional de Atenção às Mulheres em Situação de Privação de Liberdade e Egressas do
+                    Sistema
+                    Prisional, e dá
+                    outras providências. <b>Diário Oficial da União</b>, Brasília, DF, 17 jan. 2014. Disponível em:
+                    <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
+                        target="_blank" rel="noopener noreferrer">
+                        https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
+                    </a>
+                    . Acesso em: 11 set. 2025.
+                </p>
+                <p>
+                    RIO GRANDE DO SUL. <b>Saúde da mulher privada de liberdade</b>: pré-natal, parto e puerpério. Porto
+                    Alegre:
+                    SES/RS, 2024b.
+                </p>
+                <p>
+                    SCHULTZ, A. L. V. et al. Limites e desafios para o acesso das mulheres privadas de liberdade e
+                    egressas
+                    do sistema
+                    prisional nas Redes de Atenção à Saúde. <b>Physis: Revista de Saúde Coletiva</b>, v. 30, n. 3,
+                    e300325,
+                    2020.
+                    Disponível em:
+                    <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
+                        target="_blank" rel="noopener noreferrer">
+                        https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
+                    </a>
+                    . Acesso em: 31 jul. 2025.
+                </p>
+                <p>
+                    UNITED NATIONS. <b>United Nations Rules for the Treatment of Women Prisoners and Non-custodial
+                        Measures
+                        for
+                        Women
+                        Offenders (the Bangkok Rules)</b>. Genebra, 2010. Disponível em:
+                    <a class="underline link"
+                        href="https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial
+                    </a>.
+                    Acesso em: 31 ago. 2025.
                 </p>
             </div>
         </div>
 
-        <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
-            </h2>
-            <p>
-                BRASIL. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº 210, de 16 de janeiro de
-                2014. Institui
-                a Política Nacional de Atenção às Mulheres em Situação de Privação de Liberdade e Egressas do Sistema
-                Prisional, e dá
-                outras providências. <b>Diário Oficial da União</b>, Brasília, DF, 17 jan. 2014. Disponível em:
-                <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
-                </a>
-                . Acesso em: 11 set. 2025.
-            </p>
-            <p>
-                RIO GRANDE DO SUL. <b>Saúde da mulher privada de liberdade</b>: pré-natal, parto e puerpério. Porto
-                Alegre:
-                SES/RS, 2024b.
-            </p>
-            <p>
-                SCHULTZ, A. L. V. et al. Limites e desafios para o acesso das mulheres privadas de liberdade e egressas
-                do sistema
-                prisional nas Redes de Atenção à Saúde. <b>Physis: Revista de Saúde Coletiva</b>, v. 30, n. 3, e300325,
-                2020.
-                Disponível em:
-                <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
-                </a>
-                . Acesso em: 31 jul. 2025.
-            </p>
-            <p>
-                UNITED NATIONS. <b>United Nations Rules for the Treatment of Women Prisoners and Non-custodial Measures
-                    for
-                    Women
-                    Offenders (the Bangkok Rules)</b>. Genebra, 2010. Disponível em:
-                <a class="underline link"
-                    href="https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial
-                </a>.
-                Acesso em: 31 ago. 2025.
-            </p>
-        </div>
-
         <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
+                <i class="fa-solid fa-file text-black"></i>
                 Referências
             </h2>
             <p>
@@ -1857,20 +1920,6 @@
             </p>
 
             <p>
-                BRASIL. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº 210, de 16 de janeiro de
-                2014.
-                Institui a Política Nacional de Atenção às Mulheres em Situação de Privação de Liberdade e Egressas do
-                Sistema
-                Prisional, e dá outras providências. <b>Diário Oficial da União</b>, Brasília, DF, 17 jan. 2014.
-                Disponível em:
-                <a class="underline link" href="https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://dspace.mj.gov.br/bitstream/1/361/3/PRI_GM_2014_210.html
-                </a>.
-                Acesso em: 11 set. 2025.
-            </p>
-
-            <p>
                 BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Ações Programáticas
                 Estratégicas.
                 <b>Política Nacional de Atenção Integral à Saúde da Mulher</b>: Princípios e Diretrizes. Brasília:
@@ -1966,12 +2015,6 @@
             </p>
 
             <p>
-                RIO GRANDE DO SUL. <b>Saúde da mulher privada de liberdade</b>: pré-natal, parto e puerpério. Porto
-                Alegre:
-                SES/RS, 2024b.
-            </p>
-
-            <p>
                 RIO GRANDE DO SUL. Decreto nº 56.220, de 30 de novembro de 2021. Institui Comitê de Políticas Públicas
                 de Atenção às
                 Mulheres em Privação de Liberdade e Egressas do Sistema Prisional do Estado. <b>Diário Oficial do
@@ -1987,37 +2030,10 @@
             </p>
 
             <p>
-                SCHULTZ, A. L. V. et al. Limites e desafios para o acesso das mulheres privadas de liberdade e egressas
-                do sistema
-                prisional nas Redes de Atenção à Saúde. <b>Physis: Revista de Saúde Coletiva</b>, v. 30, n. 3, e300325,
-                2020.
-                Disponível
-                em:
-                <a class="underline link" href="https://www.scielo.br/j/physis/a/9ZG5kXknWnwXNJFkyTmBV9m/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/physis/a/9ZG5kXknWnwXNJFkyTmBV9m/?lang=pt
-                </a>.
-                Acesso em: 31 jul. 2025.
-            </p>
-
-            <p>
                 UNICEF. Fundo das Nações Unidas para a Infância. <b>Pobreza Menstrual no Brasil</b>: desigualdades e
                 violações
                 de direitos.
                 Fundo de População das Nações Unidas (UNFPA), 2021.
-            </p>
-
-            <p>
-                UNITED NATIONS. <b>United Nations Rules for the Treatment of Women Prisoners and Non-custodial Measures
-                    for
-                    Women
-                    Offenders (the Bangkok Rules)</b>. Genebra, 2010. Disponível em:
-                <a class="underline link"
-                    href="https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.ohchr.org/en/instruments-mechanisms/instruments/united-nations-rules-treatment-women-prisoners-and-non-custodial
-                </a>.
-                Acesso em: 31 ago. 2025.
             </p>
 
             <p>
@@ -2034,7 +2050,7 @@
         <div class="bg-gray-100 py-10">
             <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
                 <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo dos Autores
+                    Minicurrículo das Autoras
                 </h1>
                 <div class="flex flex-wrap my-5">
                     <div class="w-full md:w-1/3">
@@ -2047,12 +2063,12 @@
                     </div>
                     <div class="w-full md:w-2/3 px-0 md:px-5">
                         <p>
-                            Karine Zenatti Ely. Enfermeira, servidora pública na Secretaria Estadual de Saúde do Rio
+                            Enfermeira, servidora pública na Secretaria Estadual de Saúde do Rio
                             Grande do Sul, Doutora em
                             Promoção da Saúde, pesquisadora do Núcleo de Pesquisa e Extensão com Foco no Sistema
                             Prisional (NUPESISP/UNISC).
                             <br><br>
-                            Lattes: <a class="link" href="http://lattes.cnpq.br/9035441979308817" target="_blank"
+                            <b>Lattes:</b> <a class="link" href="http://lattes.cnpq.br/9035441979308817" target="_blank"
                                 rel="noopener noreferrer">http://lattes.cnpq.br/9035441979308817</a>
                         </p>
                     </div>
@@ -2061,7 +2077,7 @@
                 <div class="flex flex-wrap my-5">
                     <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
                         <p>
-                            Lia Possuelo. Bióloga. Doutora em Ciências Biológicas, professora titular da
+                            Bióloga. Doutora em Ciências Biológicas, professora titular da
                             Universidade de
                             Santa Cruz do Sul, docente
                             do corpo permanente do Programa de Pós-Graduação em Promoção da Saúde da UNISC.
@@ -2076,7 +2092,7 @@
                             Sul e do Conselho Municipal
                             de Saúde de Santa Cruz do Sul.
                             <br><br>
-                            Lattes: <a class="link" href="http://lattes.cnpq.br/9903194013924888" target="_blank"
+                            <b>Lattes:</b> <a class="link" href="http://lattes.cnpq.br/9903194013924888" target="_blank"
                                 rel="noopener noreferrer">http://lattes.cnpq.br/9903194013924888</a>
                         </p>
                     </div>
@@ -2101,7 +2117,7 @@
                     </div>
                     <div class="w-full md:w-2/3 px-0 md:px-5">
                         <p>
-                            Samantha Lopes de Moraes Longo. Advogada. Graduada pela Universidade de Santa Cruz do Sul
+                            Advogada. Graduada pela Universidade de Santa Cruz do Sul
                             (UNISC), Servidora pública do
                             Sistema Prisional do Estado do Rio Grande do Sul, Mestranda em Promoção da Saúde (UNISC),
                             Especialista em Segurança
@@ -2119,23 +2135,75 @@
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>

@@ -48,7 +48,7 @@
                         class="hidden absolute md:group-hover:block bg-white shadow-lg rounded-lg md:min-w-[180px] w-full">
                         <a href="#referencias_importantes" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências
-                            Importantes</a>
+                            principais</a>
                         <a href="#referencias" class="block p-4 text-gray-800 hover:bg-gray-100"
                             onclick="animacao.closeDropdown()">Referências</a>
                     </div>
@@ -88,7 +88,7 @@
         <div class="modal-content md max-h-[600px] bg-white p-5 rounded-2xl flex flex-col gap-5">
             <div class="modal-header">
                 <h2 class="text-xl font-bold mb-3 text-center">Créditos</h2>
-                <img src="./images/regua-logos-prisional-800px.png"
+                <img src="./images/regua-logos-prisional-800px.jpeg"
                     alt="Logos dos apoiadores e responsáveis pelo curso." class="w-full block mx-auto">
             </div>
             <div class="modal-body md flex flex-col gap-5 text-center">
@@ -157,7 +157,7 @@
                     Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra, em
                     parte ou em sua
                     totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua utilização comercial.
-                    © 2025. Ministério
+                    © 2026. Ministério
                     da Saúde. Fundação Oswaldo Cruz Mato Grosso do Sul.
                 </small>
                 <p>
@@ -349,37 +349,86 @@
             </div>
         </div>
 
-        <div id="banner">
-            <div class="w-full bg-[var(--primary)] py-5">
-                <div class="max-w-[1000px] mx-auto py-10 px-5 text-center">
-                    <span class="px-3 py-2 rounded-full bg-black text-white">(QUALISaP-PNAISP)</span>
-                    <span class="px-3 py-2 block mt-3">
-                        CURSO DE QUALIFICAÇÃO EM SAÚDE PRISIONAL PARA O
-                        FORTALECIMENTO DA POLÍTICA NACIONAL DE ATENÇÃO À
-                        SAÚDE DAS PESSOAS PRIVADAS DE LIBERDADE NO SISTEMA
-                        PRISIONAL
-                    </span>
-                    <h1 class="text-xl md:text-2xl font-black mt-3">
-                        Módulo IV - Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
-                    </h1>
-                    <p class="px-3 py-2 block">
-                        Unidade 2 - Agravos e Doenças Transmissíveis e Não Transmissíveis
+                <div id="banner">
+            <div class="w-full bg-[var(--primary)] flex flex-col">
+
+                <!-- Conteúdo central da capa -->
+                <div class="max-w-[1000px] mx-auto py-16 px-5 text-center flex flex-col gap-3">
+
+                    <!-- Badge do programa -->
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-black text-white text-xs font-bold tracking-widest uppercase">
+                            QUALISaP · PNAISP
+                        </span>
+                    </div>
+
+                    <!-- Linha divisória decorativa -->
+                    <div class="flex items-center gap-3 max-w-[400px] mx-auto w-full">
+                        <div class="flex-1 h-px bg-black/30"></div>
+                        <i class="fa-solid fa-shield-halved text-black/40 text-xs"></i>
+                        <div class="flex-1 h-px bg-black/30"></div>
+                    </div>
+
+                    <!-- Subtítulo do curso -->
+                    <p style="font-size:0.65rem" class="font-semibold tracking-wider uppercase opacity-65 max-w-[580px] mx-auto leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da Política
+                        Nacional de Atenção à Saúde das Pessoas Privadas de Liberdade no Sistema Prisional
                     </p>
-                    <div class="py-5 flex flex-wrap gap-5 justify-center">
+
+                    <!-- Linha divisória -->
+                    <div class="w-10 h-px bg-black/40 mx-auto"></div>
+
+                    <!-- Título do módulo -->
+                    <h1 class="text-lg md:text-2xl font-black max-w-[700px] mx-auto leading-tight">
+                        Módulo 4
+                        <span class="block text-sm md:text-base font-bold mt-0.5 opacity-85">
+                            Promoção da Saúde e Prevenção de Agravos e Doenças no Sistema Prisional
+                        </span>
+                    </h1>
+
+                    <!-- Título da unidade -->
+                    <p class="text-xs md:text-sm font-semibold opacity-80">
+                        Unidade 2 &nbsp;·&nbsp; Agravos e Doenças Transmissíveis e Não Transmissíveis
+                    </p>
+
+                    <!-- Trilhas -->
+                    <div class="flex gap-2 flex-wrap justify-center">
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores e dos profissionais da saúde
+                        </small>
+                        <small class="px-3 py-1.5 rounded-full bg-black text-white font-medium text-xs">
+                            <i class="fa-solid fa-route mr-1"></i>
+                            Trilha dos trabalhadores da Justiça e da Segurança Pública
+                        </small>
+                    </div>
+
+                    <!-- Botões de ação -->
+                    <div class="pt-2 flex flex-wrap gap-3 justify-center items-center">
                         <button onclick="estrutura.openModal('modalInstrucao')"
-                            class="px-4 py-2 btn border-2 border-black text-black">
-                            INSTRUÇÕES
+                            class="px-4 py-2 btn border-2 border-black text-black font-semibold text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> INSTRUÇÕES
                         </button>
                         <button onclick="estrutura.openModal('modalCreditos')"
-                            class="px-4 py-2 btn border-2 border-black text-white bg-black">
-                            CRÉDITOS
+                            class="px-4 py-2 btn border-2 border-black text-white bg-black font-semibold text-sm">
+                            <i class="fa-solid fa-users mr-1"></i> CRÉDITOS
                         </button>
                         <div class="w-full">
                             <a href="#apresentacao"
-                                class="btn block w-full! md:w-[75%]! bg-black text-white">COMEÇAR</a>
+                                class="btn block w-full! md:w-[60%]! bg-black text-white font-bold text-sm py-2.5">
+                                <i class="fa-solid fa-play mr-2"></i> COMEÇAR
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rodapé da capa -->
+                <div class="bg-black/15 py-2.5 px-5 text-center border-t border-black/10">
+                    <small class="text-xs opacity-70 font-medium tracking-wide">
+                        Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS &nbsp;·&nbsp; Campo Grande, MS &nbsp;·&nbsp; 2026
+                    </small>
+                </div>
+
             </div>
         </div>
 
@@ -496,7 +545,7 @@
 
         <div id="2.1" class="w-full max-w-[1000px] mx-auto px-5 py-10 flex flex-col gap-7">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1 Vigilância em saúde no sistema prisional: desafios e estratégias para a promoção de ambientes
                 seguros e humanizados
             </h2>
@@ -520,7 +569,7 @@
                 refletir sobre esses desafios e caminhos possíveis!
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.1 Saúde nas instituições penais: integrando vigilância e assistência
             </h3>
             <p>
@@ -534,7 +583,7 @@
                 prisional (Figura 1).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 1 - Pilares para um ambiente prisional mais saudável e seguro
             </h3>
             <div>
@@ -543,7 +592,7 @@
                 <hr>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.1.1 Vigilância epidemiológica
             </h3>
             <p>
@@ -656,7 +705,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.1.2 Vigilância sanitária
             </h3>
             <p>
@@ -727,7 +776,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.1.3 Saúde do trabalhador no sistema prisional
             </h3>
             <p>
@@ -819,9 +868,8 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf"
-                                target="_blank">https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf</a>
+                            <a class="link" href="./media/relatorio-final-da-pesquisa_compressed-1.pdf"
+                                target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -833,7 +881,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2 Cuidar para conter: o enfrentamento das doenças transmissíveis nas instituições penais
             </h3>
             <p>
@@ -844,7 +892,7 @@
                 enfrentadas: doenças transmissíveis e doenças não transmissíveis.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.1 Doenças transmissíveis
             </h3>
             <p>
@@ -863,7 +911,7 @@
                 de prevenção!
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.1.1 Tuberculose
             </h3>
             <p>
@@ -1000,16 +1048,11 @@
                     </div>
                 </div>
             </div>
-            <div class="block mx-auto max-w-[800px] rounded-2xl border-3 border-red-500 p-5">
-                <h3 class="text-2xl font-bold flex gap-2">
-                    <div class="text-red-500 border-2 border-red rounded-full w-10 h-10 flex shrink-0 justify-center">
-                        <i class="fa-solid fa-info bloxk my-auto"></i>
-                    </div>
-                    <span class="my-auto">Atenção!</span>
-                </h3>
-                <p class="mt-3">
-                    Atenção!
-
+            <div class="border-2 border-red-600 bg-red-100 rounded-2xl p-5 text-center">
+                <p>
+                    <b>Atenção!</b>
+                </p>
+                <p>
                     NÃO PODEMOS ESQUECER DOS MÉTODOS DIAGNÓSTICOS TRADICIONAIS. A baciloscopia é um método simples e
                     rápido que contribui
                     para a detecção precoce de casos com maior potencial de transmissão. Já a cultura, embora seja mais
@@ -1023,7 +1066,8 @@
                     adequadamente o tratamento dos casos identificados.
                 </p>
             </div>
-            <ul class="list-disc pl-5">
+
+            <ul class="list-disc pl-5 flex flex-col gap-3">
                 <li>
                     <b>Tratamento Diretamente Observado (TDO)</b>, estratégia recomendada pela Organização Mundial da
                     Saúde (OMS) para garantir a adesão ao tratamento, reduzindo a
@@ -1038,7 +1082,7 @@
                 </li>
             </ul>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 2 - Caminhos para prevenção de novos casos de tuberculose
             </h3>
             <div>
@@ -1047,7 +1091,7 @@
                 <hr>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.1.2 Hepatites virais e HIV/Aids
             </h3>
             <p>
@@ -1144,7 +1188,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 3 - Estratégias de prevenção combinada para HIV
             </h3>
             <div>
@@ -1153,7 +1197,7 @@
                 <hr>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.1.3 Hanseníase e infecções sexualmente transmissíveis
             </h3>
             <p>
@@ -1320,7 +1364,7 @@
                 e do cuidado no sistema prisional (Figura 4).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 4 - Abordagem intersetorial e interdisciplinar para promoção do cuidado
             </h3>
             <div>
@@ -1360,8 +1404,8 @@
                         <p>
                             <b>Acesse:</b>
                             <a class="link"
-                                href="https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf"
-                                target="_blank">https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf</a>
+                                href="http://hdl.handle.net/11624/3773"
+                                target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -1373,7 +1417,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.1.4 Doenças diarreicas e infecções dermatológicas
             </h3>
             <p>
@@ -1428,7 +1472,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.2 Doenças não transmissíveis
             </h3>
             <p>
@@ -1452,7 +1496,7 @@
                 ser adotadas para preveni-las e controlá-las de forma eficaz.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.2.1 Dislipidemia
             </h3>
             <p>
@@ -1517,7 +1561,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 5 - Fatores de risco para dislipidemia
             </h3>
             <div>
@@ -1531,7 +1575,7 @@
                 fundamentais para a prevenção e controle da dislipidemia.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.2.2 Hipovitaminose (deficiência de vitaminas)
             </h3>
             <p>
@@ -1608,7 +1652,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 6 - Fatores de risco para hipovitaminoses
             </h3>
             <div>
@@ -1664,7 +1708,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.2.3 Diabetes mellitus
             </h3>
             <p>
@@ -1752,7 +1796,7 @@
                 a insulina, quando necessário (Lucindo <i>et al</i>., 2024).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 7 - Fatores de risco para diabetes <i>mellitus</i>
             </h3>
             <div>
@@ -1761,7 +1805,7 @@
                 <hr>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.2.4 Hipertensão arterial sistêmica
             </h3>
             <p>
@@ -1829,7 +1873,7 @@
                 essenciais para prevenir complicações graves, como acidente vascular cerebral (AVC) e infarto.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.2.5 Excesso de peso e obesidade
             </h3>
             <p>
@@ -1849,7 +1893,7 @@
                 </li>
             </ul>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 8 - Fatores associados ao excesso de peso e obesidade no sistema prisional
             </h3>
             <div>
@@ -1887,9 +1931,8 @@
                         </p>
                         <p>
                             <b>Acesse:</b>
-                            <a class="link"
-                                href="https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf"
-                                target="_blank">https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf</a>
+                            <a class="link" href="./media/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf"
+                                target="_blank">Clique aqui</a>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -1901,7 +1944,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.2.2.6 Síndrome metabólica
             </h3>
             <p>
@@ -1922,7 +1965,7 @@
                 </li>
             </ul>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 9 - Fatores associados ao desenvolvimento da síndrome metabólica
             </h3>
             <div>
@@ -1992,7 +2035,7 @@
                 consequências dessas doenças?
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.3 Vacinação no sistema prisional: proteção e direito à saúde
             </h3>
             <p>
@@ -2007,7 +2050,7 @@
 
 
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 10 - Calendário vacinal do adulto no sistema prisional
             </h3>
             <div>
@@ -2028,7 +2071,7 @@
                 com a saúde pública.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.4 Acesso a redes de atenção especializada e de urgência/emergência
             </h3>
             <p>
@@ -2041,7 +2084,7 @@
                 barreiras que limitam a efetividade desse atendimento (Brasil, 2014).
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.4.1 Articulação entre estabelecimentos penais e o Sistema Único de Saúde
             </h3>
             <p>
@@ -2070,7 +2113,7 @@
                 resolutividade dos casos.
             </p>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <i class="fa-solid fa-arrow-right text-black mr-2"></i>
                 2.1.4.2 Barreiras no acesso à atenção hospitalar e especializada
             </h3>
             <p>
@@ -2153,7 +2196,7 @@
                 </div>
             </div>
             <h3 class="text-xl md:text-2xl font-bold py-5">
-                <i class="fa-solid fa-image text-[var(--primary)] mr-2"></i>
+                <i class="fa-solid fa-image text-black mr-2"></i>
                 Figura 11 - Acesso aos serviços especializados pela pessoa privada de liberdade
             </h3>
             <div>
@@ -2167,7 +2210,7 @@
         <div id="encerramento" class="bg-gray-100 py-10">
             <div class="px-5 max-w-[1000px] mx-auto flex flex-col gap-5 py-10">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <i class="fa-solid fa-arrow-right text-[var(--primary)] mr-2"></i>
+                    <i class="fa-solid fa-arrow-right text-black text-[var(--primary)] mr-2"></i>
                     Encerramento da Unidade
                 </h2>
                 <p>
@@ -2202,13 +2245,16 @@
                     <br><i>(Nelson
                         Mandela)</i>
                 </p>
+                <p class=”font-bold text-center mt-4”>
+                    Parabéns por concluir essa unidade! Clique no botão “retornar” no canto superior esquerdo para continuar os seus estudos.
+                </p>
             </div>
         </div>
 
         <div id="referencias_importantes" class="w-full max-w-[1000px] mx-auto flex flex-col py-10 gap-7 px-5">
             <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências importantes
+                <i class="fa-solid fa-file text-black"></i>
+                Referências principais
             </h2>
             <p>
                 BRASIL. Ministério da Justiça e Segurança Pública. Pessoas privadas de liberdade. <b>ObservaDH -
@@ -2265,659 +2311,638 @@
             </p>
         </div>
 
-        <div id="referencias" class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
-            <h2 class="text-2xl md:text-3xl font-bold">
-                <i class="fa-solid fa-file text-[var(--primary)]"></i>
-                Referências
-            </h2>
-            <p>
-                BRASIL. Ministério da Saúde. <b>Populações em situação de vulnerabilidade</b>. c2025a. Disponível
-                em:
-                <a class="underline link"
-                    href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/situacao-de-vulnerabilidade"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/situacao-de-vulnerabilidade
-                </a>
-                . Acesso em: 25 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. <b>Protocolo Clínico e Diretrizes Terapêuticas para Profilaxia
-                    Pré-Exposição
-                    (PrEP) Oral à
-                    Infecção pelo HIV</b>. Brasília: Ministério da Saúde, 2025b. Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/protocolo-clinico-e-diretrizes-terapeuticas-para-profilaxia-pre-exposicao-prep-oral-a-infeccao-pelo-hiv.pdf/view"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/protocolo-clinico-e-diretrizes-terapeuticas-para-profilaxia-pre-exposicao-prep-oral-a-infeccao-pelo-hiv.pdf/view
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Justiça e Segurança Pública. Pessoas privadas de liberdade. <b>ObservaDH -
-                    Observatório Nacional de
-                    Direitos Humanos</b>, 2024a. Disponível em:
-                <a class="underline link"
-                    href="https://experience.arcgis.com/experience/54febd2948d54d68a1a462581f89d920/page/Pessoas-Privadas-de-Liberdade"
-                    target="_blank" rel="noopener noreferrer">
-                    https://experience.arcgis.com/experience/54febd2948d54d68a1a462581f89d920/page/Pessoas-Privadas-de-Liberdade
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento de
-                Articulação
-                Estratégica de
-                Vigilância em Saúde e Ambiente. <b>Guia de vigilância em saúde</b>. 6. ed. Brasília: Ministério da
-                Saúde,
-                2024b. v. 1.
-                Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Justiça e Segurança Pública. <b>Saúde e qualidade de vida dos trabalhadores do
-                    sistema prisional</b>:
-                revisão integrativa da literatura. Rio de Janeiro: Ministério da Justiça e Segurança Pública, 2024c.
-                Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf
-                </a>
-                . Acesso em: 18 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Justiça e Segurança Pública. <b>Saúde e qualidade de vida dos trabalhadores do
-                    sistema prisional</b>:
-                revisão integrativa da literatura. Brasília, 2024d. Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Ciência, Tecnologia, Inovação e Complexo da Saúde.
-                Secretaria
-                de Vigilância
-                em Saúde e Ambiente. <b>Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV
-                    em
-                    Adultos</b>. Módulo I -
-                Tratamento. Brasília: Ministério da Saúde, 2024e. Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/pcdt_hiv_modulo_1_2024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/pcdt_hiv_modulo_1_2024.pdf
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Imunizações e
-                Doenças
-                Transmissíveis.
-                <b>Vigilância epidemiológica das doenças de transmissão hídrica e alimentar</b>: manual de
-                treinamento.
-                Brasília: Ministério da
-                Saúde, 2021a. Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-transmitidas-por-alimentos-dta/manual_dtha_2021_web.pdf/view"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-transmitidas-por-alimentos-dta/manual_dtha_2021_web.pdf/view
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. <b>Plano de Ações Estratégicas para o Enfrentamento das Doenças
-                    Crônicas e
-                    Agravos Não
-                    Transmissíveis no Brasil 2021-2030</b>. Brasília: Ministério da Saúde, 2021. Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/09-plano-de-dant-2022_2030.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/09-plano-de-dant-2022_2030.pdf
-                </a>
-                . Acesso em: 17 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das
-                Doenças
-                Transmissíveis.
-                <b>Manual de Recomendações para o controle da tuberculose no Brasil</b>. 2. ed. Brasília: Ministério
-                da
-                Saúde,
-                2019a.
-                Disponível em:
-                <a class="underline link"
-                    href="https://d1xe7tfg0uwul9.cloudfront.net/sbpt-portal/wp-content/uploads/2019/06/manual_recomendacoes_tb_2ed_atualizada_8maio19.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://d1xe7tfg0uwul9.cloudfront.net/sbpt-portal/wp-content/uploads/2019/06/manual_recomendacoes_tb_2ed_atualizada_8maio19.pdf
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Justiça e Segurança Pública. Secretaria Nacional de Políticas Penais.
-                <b>Relatório
-                    de
-                    informações
-                    penitenciárias Jul-Dez/2019</b>. Brasília: Ministério da Justiça e Segurança Pública, 2019b.
-                Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relatorios-analiticos/br/brasil-dez-2019.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relatorios-analiticos/br/brasil-dez-2019.pdf
-                </a>
-                . Acesso em: 17 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. <b>Cinco passos para a prevenção combinada ao HIV na Atenção
-                    Básica</b>.
-                Brasília:
-                Ministério da
-                Saúde, 2017a. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/cinco_passos_revencao_combinada_hiv_atencao_basica.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/cinco_passos_revencao_combinada_hiv_atencao_basica.pdf
-                </a>
-                . Acesso em: 18 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância,
-                Prevenção e
-                Controle das
-                Infecções Sexualmente Transmissíveis, do HIV/Aids e das Hepatites Virais. <b>Prevenção combinada do
-                    HIV</b>:
-                bases conceituais
-                para profissionais, trabalhadores(as) e gestores(as) de saúde. Brasília: Ministério da Saúde, 2017b.
-                Disponível em:
-                <a class="underline link"
-                    href="https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2017/prevencao_combinada_-_bases_conceituais_web.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2017/prevencao_combinada_-_bases_conceituais_web.pdf
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das
-                Doenças
-                Transmissíveis.
-                <b>Manual de vigilância, prevenção e controle de zoonoses: normas técnicas e operacionais</b>.
-                Brasília:
-                Ministério da Saúde,
-                2016. Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_vigilancia_prevencao_controle_zoonoses.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/manual_vigilancia_prevencao_controle_zoonoses.pdf
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Ministério da Justiça e Segurança Pública. Portaria Interministerial nº
-                1,
-                de 2 de janeiro
-                de 2014. Institui a Política Nacional de Atenção Integral à Saúde das Pessoas Privadas de Liberdade
-                no
-                Sistema Prisional
-                (PNAISP) no âmbito do Sistema Único de Saúde (SUS). <b>Diário Oficial da União</b>, Brasília, DF, 3
-                jan.
-                2014.
-                Disponível em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html" target="_blank"
-                    rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/pri0001_02_01_2014.html
-                </a>
-                . Acesso em: 18 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. SI-PNI. <b>Calendário de Vacinação do Adulto e do Idoso</b>. Brasília:
-                Ministério
-                da Saúde, c2012.
-                Disponível em:
-                <a class="underline link"
-                    href="https://sipni.datasus.gov.br/si-pni-web/faces/estatico/calendarioVacinacao/adultoIdoso.jsf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://sipni.datasus.gov.br/si-pni-web/faces/estatico/calendarioVacinacao/adultoIdoso.jsf
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Vigilância à Saúde. <b>Diretrizes e recomendações para o
-                    cuidado
-                    integral de
-                    doenças crônicas não-transmissíveis</b>: promoção da saúde, vigilância, prevenção e assistência.
-                Brasília:
-                Ministério da
-                Saúde, 2008. Disponível em:
-                <a class="underline link"
-                    href="http://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_recomendacoes_cuidado_doencas_cronicas.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    http://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_recomendacoes_cuidado_doencas_cronicas.pdf
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica.
-                <b>Carências
-                    de
-                    micronutrientes</b>. Brasília: Ministério da Saúde, 2007. (Cadernos de Atenção Básica; n. 20).
-                Disponível
-                em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_carencias_micronutrientes.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_carencias_micronutrientes.pdf
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Ações Programáticas
-                Estratégicas. <b>Plano
-                    Nacional de Saúde no Sistema Prisional</b>. 2. ed. Brasília: Ministério da Saúde, 2005.
-                Disponível
-                em:
-                <a class="underline link"
-                    href="https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf
-                </a>
-                . Acesso em: 17 set. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Políticas de Saúde. Departamento de Atenção Básica.
-                <b>Guia
-                    para
-                    o Controle da
-                    Hanseníase</b>. Brasília: Ministério da Saúde, 2002. (Série A. Normas e Manuais Técnicos; n.
-                111).
-                Disponível em:
-                <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_de_hanseniase.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/guia_de_hanseniase.pdf
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                BRASIL. Ministério da Saúde. Secretaria de Políticas de Saúde. Departamento de Atenção Básica.
-                <b>Controle
-                    da hanseníase na
-                    atenção básica</b>: guia prático para profissionais da equipe de saúde da família. Brasília:
-                Ministério da
-                Saúde, 2001.
-                (Série A. Normas e Manuais Técnicos; n. 111). Disponível em:
-                <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/hanseniase_atencao.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://bvsms.saude.gov.br/bvs/publicacoes/hanseniase_atencao.pdf
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                CARVALHO, S. G.; SANTOS, A. B. S.; SANTOS, I. M. A pandemia no cárcere: intervenções no
-                superisolamento.
-                <b>Ciência & Saúde
-                    Coletiva</b>, v. 25, n. 9, p. 3493-3502, 2020. Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/csc/a/GCbXVPLqVYQ7Kxz7SsVCjVS/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/csc/a/GCbXVPLqVYQ7Kxz7SsVCjVS/?lang=pt
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                CONSELHO NACIONAL DE JUSTIÇA. <b>Letalidade prisional</b>: uma questão de justiça e de saúde
-                pública. 5.
-                ed.
-                Brasília: CNJ,
-                2023. Disponível em:
-                <a class="underline link"
-                    href="https://www.cnj.jus.br/wp-content/uploads/2023/05/sumario-executivo-letalidade-prisional-12-05-23-v2.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.cnj.jus.br/wp-content/uploads/2023/05/sumario-executivo-letalidade-prisional-12-05-23-v2.pdf
-                </a>
-                . Acesso em: 18 set. 2025.
-            </p>
-            <p>
-                DALL' SOTO, M. M.; POSSUELO, L. G. <b>1º Caderno de Educação em Saúde no contexto prisional</b>:
-                quebrando
-                barreiras no combate
-                à tuberculose e hepatite C. São Carlos: Pedro & João Editores, 2024. Disponível em:
-                <a class="underline link"
-                    href="https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://pedroejoaoeditores.com.br/wp-content/uploads/2024/09/EBOOK_1o-Caderno-de-educacao-em-saude-no-contexto-prisional.pdf
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                DIAS, E. G. et al. Hipertensão Arterial Sistêmica e o Hormônio Cortisol: uma revisão integrativa
-                sobre
-                as associações e
-                os métodos de análises clínicas. <b>Revista de Epidemiologia e Controle de Infecção</b>, v. 9, n. 1,
-                2019.
-                Disponível em:
-                <a class="underline link" href="https://online.unisc.br/seer/index.php/epidemiologia/article/view/12275"
-                    target="_blank" rel="noopener noreferrer">
-                    https://online.unisc.br/seer/index.php/epidemiologia/article/view/12275
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                ELY, K. Z. et al. A Educação Permanente em Saúde e os atores do sistema prisional no cenário
-                pandêmico.
-                <b>Trabalho,
-                    Educação e Saúde</b>, v. 21, e01224207, 2023. Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                EVANS JUNIOR, D. J.; EVANS, D. G. Escherichia coli in Diarrheal Disease. In: BARON, S. (ed.).
-                <b>Medical
-                    Microbiology</b>. 4.
-                ed. Galveston: University of Texas Medical Branch at Galveston, 1996. cap. 25. Disponível em:
-                <a class="underline link" href="https://www.ncbi.nlm.nih.gov/books/NBK7710/" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.ncbi.nlm.nih.gov/books/NBK7710/
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                EVERS, T. J. et al. Well-being interventions for correctional officers in a prison setting: a review
-                and
-                meta-analysis.
-                <b>Criminal Justice and Behavior</b>, v. 47, n. 1, p. 3-21, 2019. Disponível em:
-                <a class="underline link" href="https://journals.sagepub.com/doi/10.1177/0093854819869975"
-                    target="_blank" rel="noopener noreferrer">
-                    https://journals.sagepub.com/doi/10.1177/0093854819869975
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                FUSCO, S. F. B. et al. Ansiedade, qualidade do sono e compulsão alimentar em adultos com sobrepeso
-                ou
-                obesidade. <b>Revista
-                    da Escola de Enfermagem da USP</b>, v. 54, 2020. Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/reeusp/a/VbCfRCz8XWkBF7bTnXhS44G#"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/reeusp/a/VbCfRCz8XWkBF7bTnXhS44G#
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                INGLEZ-DIAS, A. et al. Políticas de redução de danos no Brasil. <b>Ciência & Saúde Coletiva</b>, v.
-                19,
-                n. 1,
-                p. 147-158, 2014.
-                Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/csc/a/6pVn96fF4WHzTkktfZTVWfC/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/csc/a/6pVn96fF4WHzTkktfZTVWfC/?lang=pt
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                KOUOTOU, E. A. et al. Prevalence, Drivers and Clinical Features of Human Scabies at the Mfou
-                Principal
-                Prison, Centre
-                Region of Cameroon. <b>Journal of Clinical & Experimental Dermatology Research</b>, v. 7, n. 3,
-                2016.
-                Disponível em:
-                <a class="underline link"
-                    href="https://www.longdom.org/open-access/prevalence-drivers-and-clinical-features-of-human-scabies-at-the-mfou-principal-prison-centre-region-of-cameroon-14031.html"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.longdom.org/open-access/prevalence-drivers-and-clinical-features-of-human-scabies-at-the-mfou-principal-prison-centre-region-of-cameroon-14031.html
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                LAROUZÉ, B.; SÁNCHEZ, A.; DIUANA, V. Tuberculosis behind bars in developing countries: a hidden
-                shame to
-                public health.
-                <b>Transactions of the Royal Society of Tropical Medicine and Hygiene</b>, v. 102, n. 9, p. 841-842,
-                2008. DOI:
-                10.1016/j.trstmh.2008.04.020.
-            </p>
-            <p>
-                LUCINDO, A. et al. Prática de atividade física no sistema prisional como alternativa didática e de
-                qualidade de vida.
-                <b>Revista de Estudos Interdisciplinares</b>, v. 5, n. 7, p. 233-247, 2024. Disponível em:
-                <a class="underline link"
-                    href="https://revistas.ceeinter.com.br/revistadeestudosinterdisciplinar/article/view/999"
-                    target="_blank" rel="noopener noreferrer">
-                    https://revistas.ceeinter.com.br/revistadeestudosinterdisciplinar/article/view/999
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                MIN, J. et al. Scanned: The global investments in computer-aided detection and ultraportable X-ray
-                for
-                tuberculosis.
-                <b>PLOS Global Public Health</b>, v. 5, n. 3, e0004232, 2025. Disponível em:
-                <a class="underline link"
-                    href="https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0004232"
-                    target="_blank" rel="noopener noreferrer">
-                    https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0004232
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                NOGUEIRA, P. A.; ABRAHÃO, R. M. C. M.; GALESI, V. M. N. Infecção tuberculosa latente em
-                profissionais
-                contatos e não
-                contatos de detentos de duas penitenciárias do Estado de São Paulo, Brasil, 2008. <b>Revista
-                    Brasileira
-                    de
-                    Epidemiologia</b>,
-                v. 14, n. 3, p. 486-494, 2011. Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/rbepid/a/xSthsK5v6jsycZTCT4xvWWx/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/rbepid/a/xSthsK5v6jsycZTCT4xvWWx/
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                ORGANIZACIÓN PANAMERICANA DE LA SALUD. <b>Lineamientos para la respuesta a la tuberculosis, el VIH,
-                    las
-                    ITS
-                    y a las
-                    hepatitis virales en personas privadas de libertad en América Latina y el Caribe</b>.
-                Washington,
-                D.C.:
-                OPAS, 2025.
-                Disponível em:
-                <a class="underline link"
-                    href="https://iris.paho.org/bitstream/handle/10665.2/65423/OPSCDEAFT250001_spa.pdf?sequence=5&isAllowed=y"
-                    target="_blank" rel="noopener noreferrer">
-                    https://iris.paho.org/bitstream/handle/10665.2/65423/OPSCDEAFT250001_spa.pdf?sequence=5&isAllowed=y
-                </a>
-                . Acesso em: 11 set. 2025.
-            </p>
-            <p>
-                PEGORARO, Á. Peva também terá 'marmitas' individualizadas para os presos. <b>Folha do Mate</b>, 9
-                jul.
-                2020.
-                Disponível em:
-                <a class="underline link"
-                    href="https://folhadomate.com/noticias/policia/peva-tambem-tera-marmitas-individualizada-para-os-presos/"
-                    target="_blank" rel="noopener noreferrer">
-                    https://folhadomate.com/noticias/policia/peva-tambem-tera-marmitas-individualizada-para-os-presos/
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                ROSA, F. et al. Prevalência de anti-HCV em uma população privada de liberdade. <b>Revista da
-                    Associação
-                    Médica Brasileira</b>,
-                v. 58, n. 5, p. 557-560, 2012. Disponível em:
-                <a class="underline link"
-                    href="https://www.scielo.br/j/ramb/a/YY5vfkbcv83yqgtgYg6VDWf/?format=html&lang=pt" target="_blank"
-                    rel="noopener noreferrer">
-                    https://www.scielo.br/j/ramb/a/YY5vfkbcv83yqgtgYg6VDWf/?format=html&lang=pt
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                SERRA, R. M. et al. Prevalência de doenças crônicas não transmissíveis no sistema prisional: um
-                desafio
-                para a saúde
-                pública. <b>Ciência & Saúde Coletiva</b>, v. 27, n. 12, p. 4475-4484, 2022. Disponível em:
-                <a class="underline link" href="https://www.scielo.br/j/csc/a/BqFTDBnq8xgNz9rqFttRDcN/?lang=pt"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.scielo.br/j/csc/a/BqFTDBnq8xgNz9rqFttRDcN/?lang=pt
-                </a>
-                . Acesso em: 30 jul. 2025.
-            </p>
-            <p>
-                SILVA, J. P. L.; CARREIRO, H. K. C. <b>Panorama Nacional de Alimentação e Acesso à Água no Sistema
-                    Prisional</b>. Brasília:
-                Ministério da Justiça e Segurança Pública; Secretaria Nacional de Políticas Penais, 2024. Disponível
-                em:
-                <a class="underline link"
-                    href="https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
-            <p>
-                UNITED NATIONS OFFICE ON DRUGS AND CRIME. <b>Global prison population and trends</b>: a focus on
-                rehabilitation. Viena: UNODC,
-                2024. Disponível em:
-                <a class="underline link"
-                    href="https://www.unodc.org/documents/data-and-analysis/briefs/Prison_brief_2024.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                    https://www.unodc.org/documents/data-and-analysis/briefs/Prison_brief_2024.pdf
-                </a>
-                . Acesso em: 31 ago. 2025.
-            </p>
+        <div id="referencias" class="bg-gray-100 py-10">
+            <div class="w-full max-w-[1000px] mx-auto flex flex-col gap-7 py-10 px-5">
+                <h2 class="text-2xl md:text-3xl font-bold">
+                    <i class="fa-solid fa-file text-black"></i>
+                    Referências
+                </h2>
+                <p>
+                    BRASIL. Ministério da Saúde. <b>Populações em situação de vulnerabilidade</b>. c2025a. Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/situacao-de-vulnerabilidade"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/situacao-de-vulnerabilidade
+                    </a>
+                    . Acesso em: 25 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. <b>Protocolo Clínico e Diretrizes Terapêuticas para Profilaxia
+                        Pré-Exposição
+                        (PrEP) Oral à
+                        Infecção pelo HIV</b>. Brasília: Ministério da Saúde, 2025b. Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/protocolo-clinico-e-diretrizes-terapeuticas-para-profilaxia-pre-exposicao-prep-oral-a-infeccao-pelo-hiv.pdf/view"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/protocolo-clinico-e-diretrizes-terapeuticas-para-profilaxia-pre-exposicao-prep-oral-a-infeccao-pelo-hiv.pdf/view
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento de
+                    Articulação
+                    Estratégica de
+                    Vigilância em Saúde e Ambiente. <b>Guia de vigilância em saúde</b>. 6. ed. Brasília: Ministério da
+                    Saúde,
+                    2024b. v. 1.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-1-6a-edicao/view
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Justiça e Segurança Pública. <b>Saúde e qualidade de vida dos trabalhadores do
+                        sistema prisional</b>:
+                    revisão integrativa da literatura. Rio de Janeiro: Ministério da Justiça e Segurança Pública, 2024c.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf
+                    </a>
+                    . Acesso em: 18 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Justiça e Segurança Pública. <b>Saúde e qualidade de vida dos trabalhadores do
+                        sistema prisional</b>:
+                    revisão integrativa da literatura. Brasília, 2024d. Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/acesso-a-informacao/acoes-e-programas/servidores-da-execucao-penal/saude/cenarios-da-saude-fisica-e-mental/relatorio-final-da-pesquisa_compressed-1.pdf
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Ciência, Tecnologia, Inovação e Complexo da Saúde.
+                    Secretaria
+                    de Vigilância
+                    em Saúde e Ambiente. <b>Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV
+                        em
+                        Adultos</b>. Módulo 1 -
+                    Tratamento. Brasília: Ministério da Saúde, 2024e. Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/pcdt_hiv_modulo_1_2024.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/pcdt_hiv_modulo_1_2024.pdf
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Imunizações e
+                    Doenças
+                    Transmissíveis.
+                    <b>Vigilância epidemiológica das doenças de transmissão hídrica e alimentar</b>: manual de
+                    treinamento.
+                    Brasília: Ministério da
+                    Saúde, 2021a. Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-transmitidas-por-alimentos-dta/manual_dtha_2021_web.pdf/view"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-transmitidas-por-alimentos-dta/manual_dtha_2021_web.pdf/view
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. <b>Plano de Ações Estratégicas para o Enfrentamento das Doenças
+                        Crônicas e
+                        Agravos Não
+                        Transmissíveis no Brasil 2021-2030</b>. Brasília: Ministério da Saúde, 2021. Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/09-plano-de-dant-2022_2030.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/doencas-cronicas-nao-transmissiveis-dcnt/09-plano-de-dant-2022_2030.pdf
+                    </a>
+                    . Acesso em: 17 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Justiça e Segurança Pública. Secretaria Nacional de Políticas Penais.
+                    <b>Relatório
+                        de
+                        informações
+                        penitenciárias Jul-Dez/2019</b>. Brasília: Ministério da Justiça e Segurança Pública, 2019b.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relatorios-analiticos/br/brasil-dez-2019.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/servicos/sisdepen/relatorios/relatorios-analiticos/br/brasil-dez-2019.pdf
+                    </a>
+                    . Acesso em: 17 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. <b>Cinco passos para a prevenção combinada ao HIV na Atenção
+                        Básica</b>.
+                    Brasília:
+                    Ministério da
+                    Saúde, 2017a. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/cinco_passos_revencao_combinada_hiv_atencao_basica.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/cinco_passos_revencao_combinada_hiv_atencao_basica.pdf
+                    </a>
+                    . Acesso em: 18 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das
+                    Doenças
+                    Transmissíveis.
+                    <b>Manual de vigilância, prevenção e controle de zoonoses: normas técnicas e operacionais</b>.
+                    Brasília:
+                    Ministério da Saúde,
+                    2016. Disponível em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_vigilancia_prevencao_controle_zoonoses.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/manual_vigilancia_prevencao_controle_zoonoses.pdf
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. SI-PNI. <b>Calendário de Vacinação do Adulto e do Idoso</b>. Brasília:
+                    Ministério
+                    da Saúde, c2012.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://sipni.datasus.gov.br/si-pni-web/faces/estatico/calendarioVacinacao/adultoIdoso.jsf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://sipni.datasus.gov.br/si-pni-web/faces/estatico/calendarioVacinacao/adultoIdoso.jsf
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Vigilância à Saúde. <b>Diretrizes e recomendações para o
+                        cuidado
+                        integral de
+                        doenças crônicas não-transmissíveis</b>: promoção da saúde, vigilância, prevenção e assistência.
+                    Brasília:
+                    Ministério da
+                    Saúde, 2008. Disponível em:
+                    <a class="underline link"
+                        href="http://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_recomendacoes_cuidado_doencas_cronicas.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        http://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_recomendacoes_cuidado_doencas_cronicas.pdf
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica.
+                    <b>Carências
+                        de
+                        micronutrientes</b>. Brasília: Ministério da Saúde, 2007. (Cadernos de Atenção Básica; n. 20).
+                    Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_carencias_micronutrientes.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_carencias_micronutrientes.pdf
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Ações Programáticas
+                    Estratégicas. <b>Plano
+                        Nacional de Saúde no Sistema Prisional</b>. 2. ed. Brasília: Ministério da Saúde, 2005.
+                    Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_sistema_penitenciario_2ed.pdf
+                    </a>
+                    . Acesso em: 17 set. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Políticas de Saúde. Departamento de Atenção Básica.
+                    <b>Guia
+                        para
+                        o Controle da
+                        Hanseníase</b>. Brasília: Ministério da Saúde, 2002. (Série A. Normas e Manuais Técnicos; n.
+                    111).
+                    Disponível em:
+                    <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_de_hanseniase.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/guia_de_hanseniase.pdf
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    BRASIL. Ministério da Saúde. Secretaria de Políticas de Saúde. Departamento de Atenção Básica.
+                    <b>Controle
+                        da hanseníase na
+                        atenção básica</b>: guia prático para profissionais da equipe de saúde da família. Brasília:
+                    Ministério da
+                    Saúde, 2001.
+                    (Série A. Normas e Manuais Técnicos; n. 111). Disponível em:
+                    <a class="underline link" href="https://bvsms.saude.gov.br/bvs/publicacoes/hanseniase_atencao.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://bvsms.saude.gov.br/bvs/publicacoes/hanseniase_atencao.pdf
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    CARVALHO, S. G.; SANTOS, A. B. S.; SANTOS, I. M. A pandemia no cárcere: intervenções no
+                    superisolamento.
+                    <b>Ciência & Saúde
+                        Coletiva</b>, v. 25, n. 9, p. 3493-3502, 2020. Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/csc/a/GCbXVPLqVYQ7Kxz7SsVCjVS/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/csc/a/GCbXVPLqVYQ7Kxz7SsVCjVS/?lang=pt
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    CONSELHO NACIONAL DE JUSTIÇA. <b>Letalidade prisional</b>: uma questão de justiça e de saúde
+                    pública. 5.
+                    ed.
+                    Brasília: CNJ,
+                    2023. Disponível em:
+                    <a class="underline link"
+                        href="https://www.cnj.jus.br/wp-content/uploads/2023/05/sumario-executivo-letalidade-prisional-12-05-23-v2.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.cnj.jus.br/wp-content/uploads/2023/05/sumario-executivo-letalidade-prisional-12-05-23-v2.pdf
+                    </a>
+                    . Acesso em: 18 set. 2025.
+                </p>
+                <p>
+                    DIAS, E. G. et al. Hipertensão Arterial Sistêmica e o Hormônio Cortisol: uma revisão integrativa
+                    sobre
+                    as associações e
+                    os métodos de análises clínicas. <b>Revista de Epidemiologia e Controle de Infecção</b>, v. 9, n. 1,
+                    2019.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://online.unisc.br/seer/index.php/epidemiologia/article/view/12275" target="_blank"
+                        rel="noopener noreferrer">
+                        https://online.unisc.br/seer/index.php/epidemiologia/article/view/12275
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    ELY, K. Z. et al. A Educação Permanente em Saúde e os atores do sistema prisional no cenário
+                    pandêmico.
+                    <b>Trabalho,
+                        Educação e Saúde</b>, v. 21, e01224207, 2023. Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/tes/a/FX5FGyjLBYbsBH6myRdZRBP/?lang=pt
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    EVANS JUNIOR, D. J.; EVANS, D. G. Escherichia coli in Diarrheal Disease. In: BARON, S. (ed.).
+                    <b>Medical
+                        Microbiology</b>. 4.
+                    ed. Galveston: University of Texas Medical Branch at Galveston, 1996. cap. 25. Disponível em:
+                    <a class="underline link" href="https://www.ncbi.nlm.nih.gov/books/NBK7710/" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.ncbi.nlm.nih.gov/books/NBK7710/
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    EVERS, T. J. et al. Well-being interventions for correctional officers in a prison setting: a review
+                    and
+                    meta-analysis.
+                    <b>Criminal Justice and Behavior</b>, v. 47, n. 1, p. 3-21, 2019. Disponível em:
+                    <a class="underline link" href="https://journals.sagepub.com/doi/10.1177/0093854819869975"
+                        target="_blank" rel="noopener noreferrer">
+                        https://journals.sagepub.com/doi/10.1177/0093854819869975
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    FUSCO, S. F. B. et al. Ansiedade, qualidade do sono e compulsão alimentar em adultos com sobrepeso
+                    ou
+                    obesidade. <b>Revista
+                        da Escola de Enfermagem da USP</b>, v. 54, 2020. Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/reeusp/a/VbCfRCz8XWkBF7bTnXhS44G"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/reeusp/a/VbCfRCz8XWkBF7bTnXhS44G
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    INGLEZ-DIAS, A. et al. Políticas de redução de danos no Brasil. <b>Ciência & Saúde Coletiva</b>, v.
+                    19,
+                    n. 1,
+                    p. 147-158, 2014.
+                    Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/csc/a/6pVn96fF4WHzTkktfZTVWfC/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/csc/a/6pVn96fF4WHzTkktfZTVWfC/?lang=pt
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    KOUOTOU, E. A. et al. Prevalence, Drivers and Clinical Features of Human Scabies at the Mfou
+                    Principal
+                    Prison, Centre
+                    Region of Cameroon. <b>Journal of Clinical & Experimental Dermatology Research</b>, v. 7, n. 3,
+                    2016.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://www.longdom.org/open-access/prevalence-drivers-and-clinical-features-of-human-scabies-at-the-mfou-principal-prison-centre-region-of-cameroon-14031.html"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.longdom.org/open-access/prevalence-drivers-and-clinical-features-of-human-scabies-at-the-mfou-principal-prison-centre-region-of-cameroon-14031.html
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    LAROUZÉ, B.; SÁNCHEZ, A.; DIUANA, V. Tuberculosis behind bars in developing countries: a hidden
+                    shame to
+                    public health.
+                    <b>Transactions of the Royal Society of Tropical Medicine and Hygiene</b>, v. 102, n. 9, p. 841-842,
+                    2008. DOI:
+                    10.1016/j.trstmh.2008.04.020.
+                </p>
+                <p>
+                    LUCINDO, A. et al. Prática de atividade física no sistema prisional como alternativa didática e de
+                    qualidade de vida.
+                    <b>Revista de Estudos Interdisciplinares</b>, v. 5, n. 7, p. 233-247, 2024. Disponível em:
+                    <a class="underline link"
+                        href="https://revistas.ceeinter.com.br/revistadeestudosinterdisciplinar/article/view/999"
+                        target="_blank" rel="noopener noreferrer">
+                        https://revistas.ceeinter.com.br/revistadeestudosinterdisciplinar/article/view/999
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    MIN, J. et al. Scanned: The global investments in computer-aided detection and ultraportable X-ray
+                    for
+                    tuberculosis.
+                    <b>PLOS Global Public Health</b>, v. 5, n. 3, e0004232, 2025. Disponível em:
+                    <a class="underline link"
+                        href="https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0004232"
+                        target="_blank" rel="noopener noreferrer">
+                        https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0004232
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    NOGUEIRA, P. A.; ABRAHÃO, R. M. C. M.; GALESI, V. M. N. Infecção tuberculosa latente em
+                    profissionais
+                    contatos e não
+                    contatos de detentos de duas penitenciárias do Estado de São Paulo, Brasil, 2008. <b>Revista
+                        Brasileira
+                        de
+                        Epidemiologia</b>,
+                    v. 14, n. 3, p. 486-494, 2011. Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/rbepid/a/xSthsK5v6jsycZTCT4xvWWx/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/rbepid/a/xSthsK5v6jsycZTCT4xvWWx/
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    ORGANIZACIÓN PANAMERICANA DE LA SALUD. <b>Lineamientos para la respuesta a la tuberculosis, el VIH,
+                        las
+                        ITS
+                        y a las
+                        hepatitis virales en personas privadas de libertad en América Latina y el Caribe</b>.
+                    Washington,
+                    D.C.:
+                    OPAS, 2025.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://iris.paho.org/bitstream/handle/10665.2/65423/OPSCDEAFT250001_spa.pdf?sequence=5&isAllowed=y"
+                        target="_blank" rel="noopener noreferrer">
+                        https://iris.paho.org/bitstream/handle/10665.2/65423/OPSCDEAFT250001_spa.pdf?sequence=5&isAllowed=y
+                    </a>
+                    . Acesso em: 11 set. 2025.
+                </p>
+                <p>
+                    PEGORARO, Á. Peva também terá 'marmitas' individualizadas para os presos. <b>Folha do Mate</b>, 9
+                    jul.
+                    2020.
+                    Disponível em:
+                    <a class="underline link"
+                        href="https://folhadomate.com/noticias/policia/peva-tambem-tera-marmitas-individualizada-para-os-presos/"
+                        target="_blank" rel="noopener noreferrer">
+                        https://folhadomate.com/noticias/policia/peva-tambem-tera-marmitas-individualizada-para-os-presos/
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    ROSA, F. et al. Prevalência de anti-HCV em uma população privada de liberdade. <b>Revista da
+                        Associação
+                        Médica Brasileira</b>,
+                    v. 58, n. 5, p. 557-560, 2012. Disponível em:
+                    <a class="underline link"
+                        href="https://www.scielo.br/j/ramb/a/YY5vfkbcv83yqgtgYg6VDWf/?format=html&lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/ramb/a/YY5vfkbcv83yqgtgYg6VDWf/?format=html&lang=pt
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+                <p>
+                    SERRA, R. M. et al. Prevalência de doenças crônicas não transmissíveis no sistema prisional: um
+                    desafio
+                    para a saúde
+                    pública. <b>Ciência & Saúde Coletiva</b>, v. 27, n. 12, p. 4475-4484, 2022. Disponível em:
+                    <a class="underline link" href="https://www.scielo.br/j/csc/a/BqFTDBnq8xgNz9rqFttRDcN/?lang=pt"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.scielo.br/j/csc/a/BqFTDBnq8xgNz9rqFttRDcN/?lang=pt
+                    </a>
+                    . Acesso em: 30 jul. 2025.
+                </p>
+                <p>
+                    SILVA, J. P. L.; CARREIRO, H. K. C. <b>Panorama Nacional de Alimentação e Acesso à Água no Sistema
+                        Prisional</b>. Brasília:
+                    Ministério da Justiça e Segurança Pública; Secretaria Nacional de Políticas Penais, 2024. Disponível
+                    em:
+                    <a class="underline link"
+                        href="https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-publica-primeiro-panorama-nacional-de-alimentacao-e-acesso-a-agua-no-sistema-prisional/panorama_nacional_de_alimentacao_no_sistema_prisional.pdf
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+                <p>
+                    UNITED NATIONS OFFICE ON DRUGS AND CRIME. <b>Global prison population and trends</b>: a focus on
+                    rehabilitation. Viena: UNODC,
+                    2024. Disponível em:
+                    <a class="underline link"
+                        href="https://www.unodc.org/documents/data-and-analysis/briefs/Prison_brief_2024.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        https://www.unodc.org/documents/data-and-analysis/briefs/Prison_brief_2024.pdf
+                    </a>
+                    . Acesso em: 31 ago. 2025.
+                </p>
+            </div>
         </div>
 
-        <div class="bg-gray-100 py-10">
-            <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
-                <h1 class="text-3xl md:text-5xl font-bold">
-                    Minicurrículo dos Autores
-                </h1>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-1/3">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/eduarda.jpg"
-                            alt="Eduarda Gassen Boeira" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Eduarda Gassen Boeira</small>
-                            <hr />
-                        </div>
-                    </div>
-                    <div class="w-full md:w-2/3 px-0 md:px-5">
-                        <p>
-                            Eduarda Gassen Boeira. Biomédica pela Universidade de Santa Cruz do Sul (UNISC).
-                            Mestranda
-                            em Promoção da Saúde pelo
-                            Programa de Pós-Graduação em Promoção da Saúde da UNISC. Pós-graduada em "Saúde Pública"
-                            e
-                            "Epidemiologia e Vigilância
-                            em Saúde" pela Faculdade de Pós-Graduação Facuminas. Colaboradora no Núcleo de Pesquisa
-                            e
-                            Extensão com Foco no Sistema
-                            Prisional (NUPESISP) da UNISC. Membro da Diretoria do Conselho da Comunidade no âmbito
-                            da
-                            Execução Penal de Santa Cruz
-                            do Sul. Colaboradora do Projeto Elas 360, voltado a mulheres privadas de liberdade. Ao
-                            longo
-                            do último ano desenvolveu a
-                            pesquisa intitulada "Procura-C no Sistema Prisional do Rio Grande do Sul". Atualmente
-                            desenvolve seu projeto de mestrado
-                            intitulado "Implementação do Raio-X Digital Portátil com Interpretação por Inteligência
-                            Artificial na Rotina da Unidade
-                            de Saúde Prisional para Triagem de Mycobacterium tuberculosis".
-                            <br><br>
-                            Email: <a class="link" href="mail:eboeira@mx2.unisc.br" target="_blank"
-                                rel="noopener noreferrer">eboeira@mx2.unisc.br</a> <br>
-                            Lattes: <a class="link" href="http://lattes.cnpq.br/4221329924609182" target="_blank"
-                                rel="noopener noreferrer">http://lattes.cnpq.br/4221329924609182</a>
-                        </p>
+        <div id="autor" class="w-full flex flex-col justify-between py-10 px-5 max-w-[1000px] mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold">
+                Minicurrículo das Autoras
+            </h1>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/eduarda.jpg"
+                        alt="Eduarda Gassen Boeira" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Eduarda Gassen Boeira</small>
+                        <hr />
                     </div>
                 </div>
-                <hr>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
-                        <p>
-                            Lia Possuelo. Bióloga. Doutora em Ciências Biológicas, professora titular da
-                            Universidade de
-                            Santa Cruz do Sul, docente
-                            do corpo permanente do Programa de Pós-Graduação em Promoção da Saúde da UNISC.
-                            Coordenadora
-                            do Núcleo de pesquisa e
-                            extensão com foco no Sistema Prisional (NUPESISP) e da área de Tuberculose no Sistema
-                            Prisional da Rede Brasileira de
-                            Pesquisa em Tuberculose (REDE-TB), Membro do Comitê Estadual de Enfrentamento da
-                            Tuberculose/RS (CEETB/RS), do Comitê
-                            Técnico de Assessoramento da FAPERGS (2025-2027), do Conselho da Comunidade de Santa
-                            Cruz do
-                            Sul e do Conselho Municipal
-                            de Saúde de Santa Cruz do Sul.
-                            <br><br>
-                            Lattes: <a class="link" href="http://lattes.cnpq.br/9903194013924888" target="_blank"
-                                rel="noopener noreferrer">http://lattes.cnpq.br/9903194013924888</a>
-                        </p>
-                    </div>
-                    <div class="w-full md:w-1/3 order-1 md:order-2">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/lia.jpg"
-                            alt="Lia Possuelo" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Lia Possuelo</small>
-                            <hr />
-                        </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Biomédica pela Universidade de Santa Cruz do Sul (UNISC).
+                        Mestranda
+                        em Promoção da Saúde pelo
+                        Programa de Pós-Graduação em Promoção da Saúde da UNISC. Pós-graduada em "Saúde Pública"
+                        e
+                        "Epidemiologia e Vigilância
+                        em Saúde" pela Faculdade de Pós-Graduação Facuminas. Colaboradora no Núcleo de Pesquisa
+                        e
+                        Extensão com Foco no Sistema
+                        Prisional (NUPESISP) da UNISC. Membro da Diretoria do Conselho da Comunidade no âmbito
+                        da
+                        Execução Penal de Santa Cruz
+                        do Sul. Colaboradora do Projeto Elas 360, voltado a mulheres privadas de liberdade. Ao
+                        longo
+                        do último ano desenvolveu a
+                        pesquisa intitulada "Procura-C no Sistema Prisional do Rio Grande do Sul". Atualmente
+                        desenvolve seu projeto de mestrado
+                        intitulado "Implementação do Raio-X Digital Portátil com Interpretação por Inteligência
+                        Artificial na Rotina da Unidade
+                        de Saúde Prisional para Triagem de Mycobacterium tuberculosis".
+                        <br><br>
+                        <b>Email:</b> <a class="link" href="mail:eboeira@mx2.unisc.br" target="_blank"
+                            rel="noopener noreferrer">eboeira@mx2.unisc.br</a> <br>
+                        <b>Lattes:</b> <a class="link" href="http://lattes.cnpq.br/4221329924609182" target="_blank"
+                            rel="noopener noreferrer">http://lattes.cnpq.br/4221329924609182</a>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-2/3 px-0 md:px-5 order-2 md:order-1">
+                    <p>
+                        Bióloga. Doutora em Ciências Biológicas, professora titular da
+                        Universidade de
+                        Santa Cruz do Sul, docente
+                        do corpo permanente do Programa de Pós-Graduação em Promoção da Saúde da UNISC.
+                        Coordenadora
+                        do Núcleo de pesquisa e
+                        extensão com foco no Sistema Prisional (NUPESISP) e da área de Tuberculose no Sistema
+                        Prisional da Rede Brasileira de
+                        Pesquisa em Tuberculose (REDE-TB), Membro do Comitê Estadual de Enfrentamento da
+                        Tuberculose/RS (CEETB/RS), do Comitê
+                        Técnico de Assessoramento da FAPERGS (2025-2027), do Conselho da Comunidade de Santa
+                        Cruz do
+                        Sul e do Conselho Municipal
+                        de Saúde de Santa Cruz do Sul.
+                        <br><br>
+                        <b>Lattes:</b> <a class="link" href="http://lattes.cnpq.br/9903194013924888" target="_blank"
+                            rel="noopener noreferrer">http://lattes.cnpq.br/9903194013924888</a>
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 order-1 md:order-2">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/lia.jpg" alt="Lia Possuelo" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Lia Possuelo</small>
+                        <hr />
                     </div>
                 </div>
-                <hr>
-                <div class="flex flex-wrap my-5">
-                    <div class="w-full md:w-1/3">
-                        <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/karine.jpg"
-                            alt="Karine Zenatti Ely" />
-                        <div class="py-3">
-                            <small class="font-bold py-2">Karine Zenatti Ely</small>
-                            <hr />
-                        </div>
+            </div>
+            <hr>
+            <div class="flex flex-wrap my-5">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full h-auto rounded-lg overflow-hidden" src="./images/karine.jpg"
+                        alt="Karine Zenatti Ely" />
+                    <div class="py-3">
+                        <small class="font-bold py-2">Karine Zenatti Ely</small>
+                        <hr />
                     </div>
-                    <div class="w-full md:w-2/3 px-0 md:px-5">
-                        <p>
-                            Karine Zenatti Ely. Enfermeira, servidora pública na Secretaria Estadual de Saúde do Rio
-                            Grande do Sul, Doutora em
-                            Promoção da Saúde, pesquisadora do Núcleo de Pesquisa e Extensão com Foco no Sistema
-                            Prisional (NUPESISP/UNISC).
-                            <br><br>
-                            Lattes: <a class="link" href="http://lattes.cnpq.br/9035441979308817" target="_blank"
-                                rel="noopener noreferrer">http://lattes.cnpq.br/9035441979308817</a>
-                        </p>
-                    </div>
+                </div>
+                <div class="w-full md:w-2/3 px-0 md:px-5">
+                    <p>
+                        Enfermeira, servidora pública na Secretaria Estadual de Saúde do Rio
+                        Grande do Sul, Doutora em
+                        Promoção da Saúde, pesquisadora do Núcleo de Pesquisa e Extensão com Foco no Sistema
+                        Prisional (NUPESISP/UNISC).
+                        <br><br>
+                        <b>Lattes:</b> <a class="link" href="http://lattes.cnpq.br/9035441979308817" target="_blank"
+                            rel="noopener noreferrer">http://lattes.cnpq.br/9035441979308817</a>
+                    </p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="w-full py-10 bg-[var(--primary)] text-center">
-        <div class="max-w-[1000px] mx-auto px-5">
-            <a href="#" class="w-full justify-center flex text-xl font-bold text-gray-800 overflow-hidden">
-                <img src="./images/logo-atencao-primaria-prisional.svg" class="w-full max-w-[250px] object-contain p-4"
-                    alt="Logo" />
-            </a>
-            <small class="pt-5">Alguns direitos reservados. É permitida a reprodução, a
-                disseminação e a utilização desta obra, em parte ou em sua
-                totalidade, nos Termos de uso do ARES. Deve ser citada a
-                fonte e é vedada sua utilização comercial. © 2025.
-                Ministério da Saúde. Fundação Oswaldo Cruz Mato Grosso do
-                Sul.
-            </small>
+        <footer class="w-full bg-[var(--primary)]">
+
+        <!-- Corpo do rodapé -->
+        <div class="max-w-[1000px] mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-black/15 pb-10">
+
+                <!-- Coluna 1: Logo e identificação -->
+                <div class="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
+                    <img src="./images/logo-atencao-primaria-prisional.svg"
+                        class="max-w-[140px] w-full object-contain"
+                        alt="Logo QUALISaP" />
+                    <p class="text-sm font-bold tracking-wide uppercase">QUALISaP · PNAISP</p>
+                    <p class="text-xs opacity-70 leading-relaxed">
+                        Curso de Qualificação em Saúde Prisional para o Fortalecimento da PNAISP
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Informações institucionais -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Instituição
+                    </h4>
+                    <p class="text-sm font-semibold">Fundação Oswaldo Cruz</p>
+                    <p class="text-xs opacity-75">Mato Grosso do Sul &nbsp;·&nbsp; FIOCRUZ MS</p>
+                    <p class="text-xs opacity-65 leading-relaxed mt-1">
+                        Rua Gabriel Abrão, 92<br>
+                        Jardim das Nações, Campo Grande - MS<br>
+                        CEP 79081-746
+                    </p>
+                </div>
+
+                <!-- Coluna 3: Contato e acesso rápido -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <h4 class="font-bold text-xs uppercase tracking-widest border-b border-black/15 pb-2 mb-2 opacity-80">
+                        Contato
+                    </h4>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-phone mr-1.5"></i>(67) 3346-7220
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-envelope mr-1.5"></i>educacao.ms@fiocruz.br
+                    </p>
+                    <p class="text-xs opacity-75">
+                        <i class="fa-solid fa-globe mr-1.5"></i>www.matogrossodosul.fiocruz.br
+                    </p>
+                    <button onclick="estrutura.openModal('modalCreditos')"
+                        class="mt-3 text-xs font-semibold underline opacity-70 text-center md:text-left hover:opacity-100 transition-opacity w-fit mx-auto md:mx-0">
+                        <i class="fa-solid fa-users mr-1"></i> Ver créditos completos
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-7 text-center flex flex-col gap-2">
+                <small class="text-xs opacity-60 leading-relaxed block max-w-[700px] mx-auto">
+                    Alguns direitos reservados. É permitida a reprodução, a disseminação e a utilização desta obra,
+                    em parte ou em sua totalidade, nos Termos de uso do ARES. Deve ser citada a fonte e é vedada sua
+                    utilização comercial.
+                </small>
+                <small class="text-xs opacity-70 font-semibold block tracking-wide">
+                    © 2026 &nbsp;·&nbsp; Ministério da Saúde &nbsp;·&nbsp; Fundação Oswaldo Cruz Mato Grosso do Sul &nbsp;·&nbsp; Campo Grande, MS
+                </small>
+            </div>
         </div>
+
     </footer>
 
-    <script type="module" src="./js/tailwindcss.min.js"></script>
+    <script src="./js/tailwindcss.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/tippy.min.js"></script>
     <script type="text/javascript" src="./js/Sortable.min.js"></script>
