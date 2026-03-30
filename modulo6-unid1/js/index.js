@@ -346,7 +346,7 @@ var personalizado = {
         tippy("#caso_3", {
             content: `<p class="text-2xl"><b>REFLEXÃO</b>
             <br><br>
-            este conflito reflete a tensão estrutural no sistema prisional e requer uma abordagem 
+            Este conflito reflete a tensão estrutural no sistema prisional e requer uma abordagem 
             integrada que supere a dicotomia entre esses campos por meio do estabelecimento 
             de protocolos conjuntos com soluções como avaliações individualizadas de risco e 
             salas adequadas, que garantam a privacidade auditiva, a visibilidade da consulta 

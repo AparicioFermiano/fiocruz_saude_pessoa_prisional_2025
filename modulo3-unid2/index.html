@@ -125,16 +125,21 @@
                     <b>DEPARTAMENTO DE ESTRATÉGIAS E POLÍTICAS DE
                         SAÚDE COMUNITÁRIA
                     </b><br>
-                    José Eudes Barroso Vieira - Direto
+                    José Eudes Barroso Vieira - Diretor
                 </p>
                 <p>
-                    <b>COORDENAÇÃO- GERAL DO ACESSO E EQUIDADE (CGAEQ)
+                    <b>COORDENAÇÃO-GERAL DE SAÚDE DA FAMÍLIA ECOMUNIDADE (CGESCO)
+                    </b><br>
+                    Ana Cláudia Cardozo Chaves - Coordenadora
+                </p>
+                <p>
+                    <b>COORDENAÇÃO-GERAL DE ACESSO E EQUIDADE NA ATENÇÃO PRIMÁRIA À SAÚDE (CGAEQ)
                     </b><br>
                     Lilian Silva Gonçalves - Coordenadora
                 </p>
                 <p>
                     <b>
-                        COORDENAÇÃO DA ATENÇÃO ÀS PESSOAS EM CONFLITO COM A LEI
+                        COORDENAÇÃO DE ATENÇÃO ÀS PESSOAS EM CONFLITO COM A LEI
                     </b><br>
                     Ethel Proença Braga - Coordenadora
                 </p>
@@ -499,6 +504,9 @@
                 adicionais que podem e devem ser incluídos na equipe para garantia do acesso.
             </p>
             <div id="mapa" class="relative">
+                <p class="text-center pb-3">
+                    <small>Clique no ícone <strong>+</strong> para interagir</small>
+                </p>
                 <img class="w-full h-full rounded-xl" src="./images/profissionais.jpg" loading="lazy"
                     alt="Profissionais atuantes nas equipes de saúde da família" />
                 <button id="tooltip_1" class="botao-flutuante font-bold" style="top: 40%; left: 8%">
@@ -928,25 +936,43 @@
         </div>
 
         <div class="bg-gray-100 py-10">
-            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-col gap-7">
-                <h2 class="text-3xl md:text-5xl font-bold">
-                    Reflexão
-                </h2>
-                <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
-                    Imagine que uma mulher privada de liberdade tenha começado a apresentar febre, dor de cabeça, dor no
-                    corpo, sangramento
-                    gengival e dor abdominal intensa há dois dias. A eAPP inicialmente a acolheu e, após suspeita de
-                    dengue, solicitou
-                    exames de sangue e NS1 (teste para dengue), cujos resultados foram baixo número de plaquetas e
-                    positivo para dengue. Foi
-                    realizada hidratação no sistema prisional, mas, como ela apresentava sinais de alarme e mal estado
-                    geral, foi
-                    encaminhada para uma Unidade de Pronto Atendimento (UPA). Chegando lá, precisou ficar internada até
-                    a estabilização do
-                    quadro geral e a hidratação estar adequada. Após o encaminhamento do caso, a eAPP realizou uma
-                    atividade de educação em
-                    saúde na instituição penal para identificar criadouros do mosquito da dengue.
-                </h2>
+            <div class="w-full max-w-[1000px] mx-auto px-5 flex flex-wrap gap-7 items-start">
+                <div class="w-full md:flex-1 flex flex-col gap-7">
+                    <h2 class="text-3xl md:text-5xl font-bold">
+                        Reflexão
+                    </h2>
+                    <h2 class="text-2xl md:text-4xl leading-10 md:leading-14 mt-5 font-light">
+                        Imagine que uma mulher privada de liberdade tenha começado a apresentar febre, dor de cabeça, dor no
+                        corpo, sangramento
+                        gengival e dor abdominal intensa há dois dias. A eAPP inicialmente a acolheu e, após suspeita de
+                        dengue, solicitou
+                        exames de sangue e NS1 (teste para dengue), cujos resultados foram baixo número de plaquetas e
+                        positivo para dengue. Foi
+                        realizada hidratação no sistema prisional, mas, como ela apresentava sinais de alarme e mal estado
+                        geral, foi
+                        encaminhada para uma Unidade de Pronto Atendimento (UPA). Chegando lá, precisou ficar internada até
+                        a estabilização do
+                        quadro geral e a hidratação estar adequada. Após o encaminhamento do caso, a eAPP realizou uma
+                        atividade de educação em
+                        saúde na instituição penal para identificar criadouros do mosquito da dengue.
+                    </h2>
+                </div>
+                <div class="w-full md:flex-1 flex items-center justify-center py-4">
+                    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4 w-full max-w-[380px]">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-book-open text-3xl text-[var(--primary)]"></i>
+                            <h3 class="font-bold text-xl">Leitura complementar</h3>
+                        </div>
+                        <p class="font-semibold text-gray-800">Política Nacional de Atenção Integral à Saúde das Pessoas
+                            Privadas de Liberdade no Sistema Prisional</p>
+                        <p class="text-sm text-gray-500">BRASIL. Ministério da Saúde. Ministério da Justiça, 2014.</p>
+                        <a href="https://www.saude.mg.gov.br/wp-content/uploads/2025/01/Cartilha-PNAISP.pdf"
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn bg-[var(--primary)] text-center mt-2">
+                            <i class="fa-solid fa-external-link-alt mr-2"></i>Acessar Cartilha PNAISP
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1387,10 +1413,10 @@
                 Figura 5 - Classificação de risco e vulnerabilidades na demanda espontânea na Atenção Primária à Saúde
             </h3>
             <div class="flex flex-col gap-1">
-                <div class="rounded-xl bg-blue-700 text-center text-white">
+                <div class="rounded-xl bg-blue-200 text-center text-blue-900">
                     <p><b>Situação não aguda</b></p>
                 </div>
-                <div class="rounded-xl bg-blue-600 text-white p-5">
+                <div class="rounded-xl bg-blue-100 text-blue-900 p-5">
                     <p class=""><b>Condutas possíveis:</b></p>
                     <ul class="list-disc pl-5">
                         <li>Orientação específica e/ou sobre as ofertas da unidade.</li>
@@ -1403,13 +1429,13 @@
                         clínico da queixa.
                     </p>
                 </div>
-                <div class="rounded-xl bg-blue-900 text-center text-white">
+                <div class="rounded-xl bg-blue-300 text-center text-blue-900">
                     <p><b>Situação aguda ou crônica agudizada</b></p>
                 </div>
-                <div class="rounded-xl bg-blue-500 text-white px-5">
+                <div class="rounded-xl bg-blue-200 text-blue-900 px-5">
                     <p><b>Condutas possíveis:</b></p>
                 </div>
-                <div class="rounded-xl bg-red-500 text-white p-5">
+                <div class="rounded-xl bg-red-100 text-red-900 p-5">
                     <ul class="list-disc pl-5">
                         <li><b>Atendimento imediato (alto risco de vida):</b> necessita de intervenção da equipe no
                             mesmo momento, obrigatoriamente com a
@@ -1418,7 +1444,7 @@
                             consciência, dor severa.</li>
                     </ul>
                 </div>
-                <div class="rounded-xl bg-yellow-700 text-white p-5">
+                <div class="rounded-xl bg-yellow-100 text-yellow-900 p-5">
                     <ul class="list-disc pl-5">
                         <li><b>Atendimento prioritário (risco moderado):</b> necessita de intervenção breve da equipe,
                             podendo ser ofertada inicialmente medidas de conforto pela enfermagem até a
@@ -1431,7 +1457,7 @@
                             suspeita de violência.</li>
                     </ul>
                 </div>
-                <div class="rounded-xl bg-green-700 text-white p-5">
+                <div class="rounded-xl bg-green-100 text-green-900 p-5">
                     <ul class="list-disc pl-5">
                         <li><b>Atendimento no dia (risco baixo ou ausência de risco com vulnerabilidade importante):</b>
                             situação que precisa ser manejada no mesmo dia pela equipe levando em conta a estratificação
