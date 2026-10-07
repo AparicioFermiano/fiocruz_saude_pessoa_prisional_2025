@@ -1,13 +1,4 @@
-const carousels = {};
-const tabsState = {};
-
 var animacao = {
-    toggleCard: function (elemento, card) {
-        const conteudo = document.getElementById(card);
-        const flipped = conteudo.classList.toggle("is-flipped");
-        elemento.setAttribute("aria-pressed", flipped ? "true" : "false");
-    },
-
     toggleAccordion: function (elemento, grupo) {
         const accordion = document.getElementById(grupo);
         const header = document.getElementById(elemento);
@@ -42,42 +33,6 @@ var animacao = {
                 .classList.remove("rotate-180");
         }
     },
-
-    initCarousels: function() {
-        const containers = document.querySelectorAll(".carousel-container");
-
-        containers.forEach((container) => {
-            const id = container.dataset.carouselId;
-            const track = container.querySelector(".carousel-track");
-            const slides = track.querySelectorAll(".min-w-full");
-
-            carousels[id] = {
-                currentIndex: 0,
-                totalSlides: slides.length,
-                track: track,
-            };
-        });
-    },
-
-    updateCarousel: function(carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.track.style.transform = `translateX(-${carousel.currentIndex * 100
-            }%)`;
-    },
-
-    nextSlide: function(carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.currentIndex = (carousel.currentIndex + 1) % carousel.totalSlides;
-        animacao.updateCarousel(carouselId);
-    },
-
-    prevSlide: function(carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.currentIndex =
-            (carousel.currentIndex - 1 + carousel.totalSlides) %
-            carousel.totalSlides;
-        animacao.updateCarousel(carouselId);
-    }
 };
 
 var estrutura = {
@@ -186,91 +141,9 @@ var personalizado = {
         });
     },
 
-    exercicioCenario1: function (e) {
-        e.preventDefault();
-        const feedback = document.getElementById("feedback");
-        const resposta = document.querySelector('input[name="resposta"]:checked');
-        if (!resposta) {
-            feedback.className =
-                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
-            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
-            feedback.classList.remove("hidden");
-            return;
-        }
-        let mensagem = "";
-        let estilo = "";
-
-        if (resposta.value == "B") {
-            estilo = "bg-green-100 text-green-800";
-        }  else {
-            estilo = "bg-red-100 text-red-800";
-        }
-
-        mensagem = "<b>Resposta ideal:</b> Solicitar atendimento imediato da eAPP. <br><br> <b>Por quê?</b><br><br> Crises psíquicas, especialmente as que envolvem sintomas como alucinações auditivas (“ouve vozes”) e ameaças de autoagressão, podem indicar um quadro de psicose ou outra condição psiquiátrica grave que exige intervenção urgente e especializada. Ignorar esses sinais ou tentar um manejo inadequado pode agravar o quadro e representar risco à vida do indivíduo."
-
-        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
-        feedback.innerHTML = mensagem;
-        feedback.classList.remove("hidden");
-    },
-
-    exercicioCenario2: function (e) {
-        e.preventDefault();
-        const feedback = document.getElementById("feedback2");
-        const resposta = document.querySelector('input[name="resposta2"]:checked');
-        if (!resposta) {
-            feedback.className =
-                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
-            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
-            feedback.classList.remove("hidden");
-            return;
-        }
-        let mensagem = "";
-        let estilo = "";
-
-        if (resposta.value == "B") {
-            estilo = "bg-green-100 text-green-800";
-        }  else {
-            estilo = "bg-red-100 text-red-800";
-        }
-
-        mensagem = "<b>Resposta ideal:</b> Garantir atendimento de eAPP e, caso a equipe julgue necessário, compartilhar o caso ao CAPS AD. <br><br> <b>Por quê?</b><br><br> A atenção deve ser articulada e respeitar o direito à saúde mental, mesmo durante a privação de liberdade. O manejo de indivíduos com transtornos por uso de substâncias que apresentam sinais de abstinência e histórico de uso intenso de álcool e crack exige uma abordagem integrada e humanizada, especialmente em ambientes prisionais. A APS Prisional desempenha dois papeis fundamentais nesse contexto: o cuidado e a coordenação da assistência à saúde mental no sistema prisional."
-
-        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
-        feedback.innerHTML = mensagem;
-        feedback.classList.remove("hidden");
-    },
-
-    exercicioCenario3: function (e) {
-        e.preventDefault();
-        const feedback = document.getElementById("feedback3");
-        const resposta = document.querySelector('input[name="resposta3"]:checked');
-        if (!resposta) {
-            feedback.className =
-                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
-            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
-            feedback.classList.remove("hidden");
-            return;
-        }
-        let mensagem = "";
-        let estilo = "";
-
-        if (resposta.value == "B") {
-            estilo = "bg-green-100 text-green-800";
-        }  else {
-            estilo = "bg-red-100 text-red-800";
-        }
-
-        mensagem = "<b>Resposta ideal:</b> Orientar a continuidade dos cuidados após a saída e encaminhá-lo para a rede de saúde do território. <br><br> <b>Por quê?</b><br><br> O planejamento da alta e o acompanhamento posterior à soltura são etapas cruciais e legalmente respaldadas para a reintegração social e a continuidade do cuidado de saúde de pessoas egressas do sistema prisional. A interrupção abrupta do acompanhamento da saúde da pessoa egressa do sistema prisional, especialmente em casos de histórico de transtornos mentais ou uso de substâncias, pode ter consequências graves, como recaída no uso de substâncias, reincidência criminal e até elevação da mortalidade pós-aprisionamento."
-
-        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
-        feedback.innerHTML = mensagem;
-        feedback.classList.remove("hidden");
-    },
-
     init: function () {
         personalizado.TooltipsUnit1();
         personalizado.initMapTooltips();
-        animacao.initCarousels();
         window.addEventListener("scroll", () => {
             estrutura.eventScroll();
         });

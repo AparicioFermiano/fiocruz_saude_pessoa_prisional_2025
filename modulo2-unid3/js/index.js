@@ -1,13 +1,6 @@
-const carousels = {};
 const tabsState = {};
 
 var animacao = {
-    toggleCard: function (elemento, card) {
-        const conteudo = document.getElementById(card);
-        const flipped = conteudo.classList.toggle("is-flipped");
-        elemento.setAttribute("aria-pressed", flipped ? "true" : "false");
-    },
-
     toggleAccordion: function (elemento, grupo) {
         const accordion = document.getElementById(grupo);
         const header = document.getElementById(elemento);
@@ -41,42 +34,6 @@ var animacao = {
                 .getElementById("dropdown-arrow")
                 .classList.remove("rotate-180");
         }
-    },
-
-    initCarousels: function () {
-        const containers = document.querySelectorAll(".carousel-container");
-
-        containers.forEach((container) => {
-            const id = container.dataset.carouselId;
-            const track = container.querySelector(".carousel-track");
-            const slides = track.querySelectorAll(".min-w-full");
-
-            carousels[id] = {
-                currentIndex: 0,
-                totalSlides: slides.length,
-                track: track,
-            };
-        });
-    },
-
-    updateCarousel: function (carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.track.style.transform = `translateX(-${carousel.currentIndex * 100
-            }%)`;
-    },
-
-    nextSlide: function (carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.currentIndex = (carousel.currentIndex + 1) % carousel.totalSlides;
-        animacao.updateCarousel(carouselId);
-    },
-
-    prevSlide: function (carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.currentIndex =
-            (carousel.currentIndex - 1 + carousel.totalSlides) %
-            carousel.totalSlides;
-        animacao.updateCarousel(carouselId);
     },
 
     initTabs: function () {
@@ -258,7 +215,6 @@ var personalizado = {
         personalizado.TooltipsUnit1();
         animacao.initTabs();
         personalizado.initMapTooltips();
-        animacao.initCarousels();
         window.addEventListener("scroll", () => {
             estrutura.eventScroll();
         });
