@@ -1,6 +1,3 @@
-const carousels = {};
-const tabsState = {};
-
 var animacao = {
 	toggleCard: function (elemento, card) {
 		const conteudo = document.getElementById(card);

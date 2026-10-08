@@ -1,13 +1,4 @@
-const carousels = {};
-const tabsState = {};
-
 var animacao = {
-    toggleCard: function (elemento, card) {
-        const conteudo = document.getElementById(card);
-        const flipped = conteudo.classList.toggle("is-flipped");
-        elemento.setAttribute("aria-pressed", flipped ? "true" : "false");
-    },
-
     toggleAccordion: function (elemento, grupo) {
         const accordion = document.getElementById(grupo);
         const header = document.getElementById(elemento);
@@ -42,92 +33,6 @@ var animacao = {
                 .classList.remove("rotate-180");
         }
     },
-
-    initCarousels: function () {
-        const containers = document.querySelectorAll(".carousel-container");
-
-        containers.forEach((container) => {
-            const id = container.dataset.carouselId;
-            const track = container.querySelector(".carousel-track");
-            const slides = track.querySelectorAll(".min-w-full");
-
-            carousels[id] = {
-                currentIndex: 0,
-                totalSlides: slides.length,
-                track: track,
-            };
-        });
-    },
-
-    updateCarousel: function (carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.track.style.transform = `translateX(-${carousel.currentIndex * 100
-            }%)`;
-    },
-
-    nextSlide: function (carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.currentIndex = (carousel.currentIndex + 1) % carousel.totalSlides;
-        animacao.updateCarousel(carouselId);
-    },
-
-    prevSlide: function (carouselId) {
-        const carousel = carousels[carouselId];
-        carousel.currentIndex =
-            (carousel.currentIndex - 1 + carousel.totalSlides) %
-            carousel.totalSlides;
-        animacao.updateCarousel(carouselId);
-    },
-
-    initTabs: function () {
-        const containers = document.querySelectorAll('.tabs-container');
-
-        containers.forEach(container => {
-            const id = container.dataset.tabsId;
-            const buttons = container.querySelectorAll('.tab-button');
-            const contents = container.querySelectorAll('.tab-content');
-
-            tabsState[id] = {
-                currentIndex: 0,
-                buttons: buttons,
-                contents: contents
-            };
-        });
-    },
-
-    switchTab: function (tabsId, index) {
-        const tabs = tabsState[tabsId];
-
-        tabs.buttons.forEach((button, i) => {
-            if (i === index) {
-                if (button.classList.contains('border-b-2')) {
-                    button.classList.remove('border-transparent');
-                    button.classList.add('border-[var(--primary)]', 'text-[var(--primary)]');
-                } else {
-                    button.classList.remove('text-gray-700', 'hover:bg-gray-200');
-                    button.classList.add('bg-[var(--primary)]', 'text-[var(--primary)]');
-                }
-            } else {
-                if (button.classList.contains('border-b-2')) {
-                    button.classList.remove('border-[var(--primary)]', 'text-[var(--primary)]');
-                    button.classList.add('border-transparent');
-                } else {
-                    button.classList.remove('bg-[var(--primary)]');
-                }
-            }
-        });
-
-        // Mostra apenas o conteúdo selecionado
-        tabs.contents.forEach((content, i) => {
-            if (i === index) {
-                content.classList.remove('hidden');
-            } else {
-                content.classList.add('hidden');
-            }
-        });
-        tabs.currentIndex = index;
-    },
-
 };
 
 var estrutura = {
@@ -309,46 +214,6 @@ var personalizado = {
             interactive: true,
             delay: [100, 0],
         });
-    },
-
-    exercicioFixacao: function (e) {
-        e.preventDefault();
-        const feedback = document.getElementById("feedback");
-        const resposta = document.querySelector('input[name="resposta"]:checked');
-        if (!resposta) {
-            feedback.className =
-                "mt-6 text-center p-4 rounded-lg bg-yellow-100 text-yellow-800";
-            feedback.textContent = "⚠️ Por favor, selecione uma alternativa.";
-            feedback.classList.remove("hidden");
-            return;
-        }
-        let mensagem = "";
-        let estilo = "";
-        switch (resposta.value) {
-            case "A":
-                mensagem =
-                    "✅ Resposta correta! O direito à identidade de gênero foi violado, já que a pessoa trans não teve seu nome social e identidade respeitados no sistema prisional, contrariando as garantias legais estabelecidas no Brasil; o direito à assistência à saúde foi violado porque a personagem relatou a dificuldade de acesso a tratamentos médicos adequados, mostrando a violação do direito básico de assistência integral à saúde da pessoa privada de liberdade; o direito à proteção contra violência e discriminação foi violado porque a história evidencia a LGBTfobia sofrida na instituição penal, caracterizando falha na proteção contra violência e discriminação, o que é um direito garantido.";
-                estilo = "bg-green-100 text-green-800";
-                break;
-            case "B":
-                mensagem =
-                    "❌ Incorreto. Apenas com a ilustração não é possível realizar essa afirmação.";
-                estilo = "bg-red-100 text-red-800";
-                break;
-            case "C":
-                mensagem =
-                    "❌ Incorreto. Apenas com a ilustração não é possível realizar essa afirmação.";
-                estilo = "bg-red-100 text-red-800";
-                break;
-            case "D":
-                mensagem =
-                    "❌ Incorreto. O caso apresentado revela a violação de diversos direitos fundamentais, demonstrando a necessidade urgente de avanços na garantia da dignidade e cidadania de pessoas privadas de liberdade.";
-                estilo = "bg-red-100 text-red-800";
-                break;
-        }
-        feedback.className = `mt-6 text-center p-4 rounded-lg ${estilo}`;
-        feedback.textContent = mensagem;
-        feedback.classList.remove("hidden");
     },
 
     init: function () {
