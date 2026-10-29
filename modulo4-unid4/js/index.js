@@ -1,5 +1,4 @@
 const carousels = {};
-const tabsState = {};
 
 var animacao = {
     toggleCard: function (elemento, card) {
@@ -78,56 +77,6 @@ var animacao = {
             carousel.totalSlides;
         animacao.updateCarousel(carouselId);
     },
-
-    initTabs: function () {
-        const containers = document.querySelectorAll('.tabs-container');
-
-        containers.forEach(container => {
-            const id = container.dataset.tabsId;
-            const buttons = container.querySelectorAll('.tab-button');
-            const contents = container.querySelectorAll('.tab-content');
-
-            tabsState[id] = {
-                currentIndex: 0,
-                buttons: buttons,
-                contents: contents
-            };
-        });
-    },
-
-    switchTab: function (tabsId, index) {
-        const tabs = tabsState[tabsId];
-
-        tabs.buttons.forEach((button, i) => {
-            if (i === index) {
-                if (button.classList.contains('border-b-2')) {
-                    button.classList.remove('border-transparent');
-                    button.classList.add('border-[var(--primary)]', 'text-[var(--primary)]');
-                } else {
-                    button.classList.remove('text-gray-700', 'hover:bg-gray-200');
-                    button.classList.add('bg-[var(--primary)]', 'text-[var(--primary)]');
-                }
-            } else {
-                if (button.classList.contains('border-b-2')) {
-                    button.classList.remove('border-[var(--primary)]', 'text-[var(--primary)]');
-                    button.classList.add('border-transparent');
-                } else {
-                    button.classList.remove('bg-[var(--primary)]');
-                }
-            }
-        });
-
-        // Mostra apenas o conteúdo selecionado
-        tabs.contents.forEach((content, i) => {
-            if (i === index) {
-                content.classList.remove('hidden');
-            } else {
-                content.classList.add('hidden');
-            }
-        });
-        tabs.currentIndex = index;
-    },
-
 };
 
 var estrutura = {

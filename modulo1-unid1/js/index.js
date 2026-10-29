@@ -42,15 +42,6 @@ var animacao = {
 }
 
 var estrutura = {
-    eventOverlay: function (e) {
-        const overlay = e.target.closest(".modal-overlay");
-        if (!overlay) return;
-
-        if (!overlay.querySelector(".modal-content")?.contains(e.target)) {
-            closeModal(overlay.id);
-        }
-    },
-
     eventScroll: function () {
         const shouldShow = window.scrollY > 200;
 

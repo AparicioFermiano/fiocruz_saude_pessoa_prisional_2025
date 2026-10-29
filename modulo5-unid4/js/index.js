@@ -1,13 +1,6 @@
-const carousels = {};
 const tabsState = {};
 
 var animacao = {
-    toggleCard: function (elemento, card) {
-        const conteudo = document.getElementById(card);
-        const flipped = conteudo.classList.toggle("is-flipped");
-        elemento.setAttribute("aria-pressed", flipped ? "true" : "false");
-    },
-
     toggleAccordion: function (elemento, grupo) {
         const accordion = document.getElementById(grupo);
         const header = document.getElementById(elemento);
